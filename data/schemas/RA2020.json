@@ -1,0 +1,3266 @@
+{
+  "type": "DataFrameSchema",
+  "columns": {
+    "SIRET_1": {
+      "type": "string"
+    },
+    "SIRET": {
+      "type": "string"
+    },
+    "PACAGE_1": {
+      "type": "string"
+    },
+    "PACAGESURF2020": {
+      "type": "string"
+    },
+    "PACAGE": {
+      "type": "string"
+    },
+    "EDE_1": {
+      "type": "string"
+    },
+    "EDE_2": {
+      "type": "string"
+    },
+    "EDE_3": {
+      "type": "string"
+    },
+    "EDE_4": {
+      "type": "string"
+    },
+    "EDE_5": {
+      "type": "string"
+    },
+    "EDE_6": {
+      "type": "string"
+    },
+    "EDE_7": {
+      "type": "string"
+    },
+    "EDE_8": {
+      "type": "string"
+    },
+    "EDE_9": {
+      "type": "string"
+    },
+    "EDE_10": {
+      "type": "string"
+    },
+    "EDE_11": {
+      "type": "string"
+    },
+    "EDE_12": {
+      "type": "string"
+    },
+    "EDE_13": {
+      "type": "string"
+    },
+    "EDE_14": {
+      "type": "string"
+    },
+    "EDE_15": {
+      "type": "string"
+    },
+    "EDE_16": {
+      "type": "string"
+    },
+    "EDE_17": {
+      "type": "string"
+    },
+    "EDE_18": {
+      "type": "string"
+    },
+    "EVV_1": {
+      "type": "string"
+    },
+    "EVV_2": {
+      "type": "string"
+    },
+    "EVV_3": {
+      "type": "string"
+    },
+    "IMPUT_NR_TOT": {
+      "type": "float"
+    },
+    "NOM_DOSSIER": {
+      "type": "string"
+    },
+    "TYPE_QUESTIONNAIRE": {
+      "type": "string"
+    },
+    "SEUIL_IFS": {
+      "type": "bool"
+    },
+    "CHAMP_GEO": {
+      "type": "string"
+    },
+    "COEF_F": {
+      "type": "float"
+    },
+    "NUMSTRATE": {
+      "type": "float"
+    },
+    "STRATE": {
+      "type": "float"
+    },
+    "SIEGENAT": {
+      "type": "string"
+    },
+    "SIEGE_CODE_COM": {
+      "type": "string"
+    },
+    "SIEGE_LIEUDIT": {
+      "type": "string"
+    },
+    "SIEGE_LIEUDIT_CODE_DOM": {
+      "type": "string"
+    },
+    "SIEGE_LIB_COM": {
+      "type": "string"
+    },
+    "SIEGE_DEP": {
+      "type": "string"
+    },
+    "SIEGE_LIB_DEP": {
+      "type": "string"
+    },
+    "SIEGE_REG": {
+      "type": "string"
+    },
+    "SIEGE_LIB_REG": {
+      "type": "string"
+    },
+    "GEO_LCT": {
+      "type": "string"
+    },
+    "REGL_1305_2013": {
+      "type": "string"
+    },
+    "RDEV_15_02": {
+      "type": "bool"
+    },
+    "RDEV_16_03": {
+      "type": "bool"
+    },
+    "RDEV_17_04": {
+      "type": "bool"
+    },
+    "RDEV_18_05": {
+      "type": "bool"
+    },
+    "RDEV_19A1_061": {
+      "type": "bool"
+    },
+    "RDEV_19A3_063": {
+      "type": "bool"
+    },
+    "RDEV_21_08": {
+      "type": "bool"
+    },
+    "RDEV_28_10": {
+      "type": "bool"
+    },
+    "RDEV_29_11": {
+      "type": "bool"
+    },
+    "RDEV_31_13": {
+      "type": "bool"
+    },
+    "RDEV_36_17": {
+      "type": "bool"
+    },
+    "STATUT": {
+      "type": "string"
+    },
+    "PBSTOT_COEF17": {
+      "type": "string"
+    },
+    "CDEX_COEF2017": {
+      "type": "string"
+    },
+    "DIMECO_COEF2017": {
+      "type": "string"
+    },
+    "OTE64_COEF2017": {
+      "type": "string"
+    },
+    "OTEFDD_COEF17": {
+      "type": "string"
+    },
+    "OTEFDA_COEF17": {
+      "type": "string"
+    },
+    "ETP_REF": {
+      "type": "float"
+    },
+    "ETP_CHEF_COEXPL": {
+      "type": "float"
+    },
+    "ETP_MO_FAM": {
+      "type": "float"
+    },
+    "ETP_MO_NFAM": {
+      "type": "float"
+    },
+    "ETP_MONP": {
+      "type": "float"
+    },
+    "ETP_PRESTA_ECH": {
+      "type": "float"
+    },
+    "ETPTOT_HPRESTA": {
+      "type": "float"
+    },
+    "UGBAG.TOT": {
+      "type": "float"
+    },
+    "UGBTA.TOT": {
+      "type": "float"
+    },
+    "UGBPAC.TOT": {
+      "type": "float"
+    },
+    "UGBIFS.TOT": {
+      "type": "float"
+    },
+    "UGBAG.BOV": {
+      "type": "float"
+    },
+    "UGBTA.BOV": {
+      "type": "float"
+    },
+    "UGBPAC.BOV": {
+      "type": "float"
+    },
+    "UGBIFS.BOV": {
+      "type": "float"
+    },
+    "UGBAG.OVI": {
+      "type": "float"
+    },
+    "UGBTA.OVI": {
+      "type": "float"
+    },
+    "UGBPAC.OVI": {
+      "type": "float"
+    },
+    "UGBIFS.OVI": {
+      "type": "float"
+    },
+    "UGBAG.CAP": {
+      "type": "float"
+    },
+    "UGBTA.CAP": {
+      "type": "float"
+    },
+    "UGBPAC.CAP": {
+      "type": "float"
+    },
+    "UGBIFS.CAP": {
+      "type": "float"
+    },
+    "UGBTA.POR": {
+      "type": "float"
+    },
+    "UGBPAC.POR": {
+      "type": "float"
+    },
+    "UGBIFS.POR": {
+      "type": "float"
+    },
+    "UGBTA.VOL": {
+      "type": "float"
+    },
+    "UGBIFS.VOL": {
+      "type": "float"
+    },
+    "UGBAG.EQU": {
+      "type": "float"
+    },
+    "UGBTA.EQU": {
+      "type": "float"
+    },
+    "UGBTA.LAP": {
+      "type": "float"
+    },
+    "UGBIFS.LAP": {
+      "type": "float"
+    },
+    "SAU_TOT": {
+      "type": "float"
+    },
+    "CEREALES_SUR_TOT": {
+      "type": "float"
+    },
+    "OLEAG_SUR_TOT": {
+      "type": "float"
+    },
+    "PROTEA_SUR_TOT": {
+      "type": "float"
+    },
+    "FIBRE_SUR_TOT": {
+      "type": "float"
+    },
+    "INDUST_SUR_TOT": {
+      "type": "float"
+    },
+    "PPAM_SUR_TOT": {
+      "type": "float"
+    },
+    "TUBER_SUR_TOT": {
+      "type": "float"
+    },
+    "LEGUME_SUR_TOT": {
+      "type": "float"
+    },
+    "LEGUME_AIR_TOT": {
+      "type": "float"
+    },
+    "LEGUME_SERR_TOT": {
+      "type": "float"
+    },
+    "FOUR_STH_SUR_TOT": {
+      "type": "float"
+    },
+    "STH_SUR_TOT": {
+      "type": "float"
+    },
+    "HORTI_SUR_TOT": {
+      "type": "float"
+    },
+    "HORTI_AIR_TOT": {
+      "type": "float"
+    },
+    "HORTI_SERR_TOT": {
+      "type": "float"
+    },
+    "AUTRES_SUR_TOT": {
+      "type": "float"
+    },
+    "VIGNE_SUR_TOT": {
+      "type": "float"
+    },
+    "FRUITS_SUR_TOT": {
+      "type": "float"
+    },
+    "AUT_PERM_SUR_TOT": {
+      "type": "float"
+    },
+    "ESTIVE_TOT": {
+      "type": "float"
+    },
+    "JARDIN_MAHORAIS_ABATTIS": {
+      "type": "float"
+    },
+    "CAPITAL_W": {
+      "type": "float"
+    },
+    "CAPITAL_HORSW_FAM": {
+      "type": "float"
+    },
+    "CAPITAL_HORW_HORSFAM": {
+      "type": "float"
+    },
+    "CAPITAL_PERSPHY": {
+      "type": "float"
+    },
+    "CAPITAL_PERSMOR": {
+      "type": "float"
+    },
+    "CAPITAL_TOTAL": {
+      "type": "float"
+    },
+    "AUTRENTITE_FIL": {
+      "type": "float"
+    },
+    "AUTRENTITE_NB": {
+      "type": "float"
+    },
+    "AUTRENTITE_PROD": {
+      "type": "float"
+    },
+    "AUTRENTITE_NEGOCE": {
+      "type": "float"
+    },
+    "AUTRENTITE_EMPLOI": {
+      "type": "float"
+    },
+    "AUTRENTITE_IMMO": {
+      "type": "float"
+    },
+    "AUTRENTITE_AUTRE": {
+      "type": "float"
+    },
+    "BIO_FIL": {
+      "type": "float"
+    },
+    "BIO_ANNEECONV": {
+      "type": "string"
+    },
+    "BIO_INTEGRAL": {
+      "type": "float"
+    },
+    "LABEL": {
+      "type": "float"
+    },
+    "AOC": {
+      "type": "float"
+    },
+    "IGP": {
+      "type": "float"
+    },
+    "STG": {
+      "type": "float"
+    },
+    "QUALCA_ECH": {
+      "type": "string"
+    },
+    "AUTREDEM_FIL": {
+      "type": "float"
+    },
+    "BIODYNAMIE": {
+      "type": "float"
+    },
+    "NATUREPROGRES": {
+      "type": "float"
+    },
+    "HVE": {
+      "type": "float"
+    },
+    "GIEE": {
+      "type": "float"
+    },
+    "DEPHY": {
+      "type": "float"
+    },
+    "AUTRE": {
+      "type": "float"
+    },
+    "AUTRE_DETAIL": {
+      "type": "string"
+    },
+    "TRANSFOFIL": {
+      "type": "float"
+    },
+    "CIRCOUFIL": {
+      "type": "float"
+    },
+    "CIRCOU_COPFIL": {
+      "type": "float"
+    },
+    "CIRCOU_TUBFIL_DOM": {
+      "type": "float"
+    },
+    "CIRCOU_LEGFIL": {
+      "type": "float"
+    },
+    "CIRCOU_VINFIL": {
+      "type": "float"
+    },
+    "CIRCOU_HOLIFIL": {
+      "type": "float"
+    },
+    "CIRCOU_FRUITFIL": {
+      "type": "float"
+    },
+    "CIRCOU_AUTRFIL": {
+      "type": "float"
+    },
+    "CIRCOU_LAITFIL": {
+      "type": "float"
+    },
+    "CIRCOU_OVOLFIL": {
+      "type": "float"
+    },
+    "CIRCOU_ANIMFIL": {
+      "type": "float"
+    },
+    "CIRCOU_MIELFIL": {
+      "type": "float"
+    },
+    "CONTRAT_COP_ECH": {
+      "type": "float"
+    },
+    "CONTRAT_TUB_DOM": {
+      "type": "float"
+    },
+    "CONTRAT_LEG_ECH": {
+      "type": "float"
+    },
+    "CONTRAT_VIN_ECH": {
+      "type": "float"
+    },
+    "CONTRAT_HOLI_ECH": {
+      "type": "float"
+    },
+    "CONTRAT_FRUIT_ECH": {
+      "type": "float"
+    },
+    "CONTRAT_AUTR_ECH": {
+      "type": "float"
+    },
+    "CONTRAT_LAIT_ECH": {
+      "type": "float"
+    },
+    "CONTRAT_OVOL_ECH": {
+      "type": "float"
+    },
+    "CONTRAT_ANIM_ECH": {
+      "type": "float"
+    },
+    "CONTRAT_MIEL_ECH": {
+      "type": "float"
+    },
+    "DIVTOTCA_ECH": {
+      "type": "string"
+    },
+    "CHEFREFIL": {
+      "type": "float"
+    },
+    "REFANAIS": {
+      "type": "string"
+    },
+    "REFSEX": {
+      "type": "string"
+    },
+    "REFACTIVEXPL": {
+      "type": "string"
+    },
+    "EI_GESPRESTFIL": {
+      "type": "float"
+    },
+    "SOC_GESPRESTFIL": {
+      "type": "float"
+    },
+    "NBSEMPLUS60_ECH": {
+      "type": "float"
+    },
+    "NBSEMOINS30_ECH": {
+      "type": "float"
+    },
+    "NBWEEKAN_ECH": {
+      "type": "float"
+    },
+    "NBCONGAN_ECH": {
+      "type": "float"
+    },
+    "MOPFAMFIL_ECH": {
+      "type": "float"
+    },
+    "MOPNFAMFIL_ECH": {
+      "type": "float"
+    },
+    "MONF_F_DIR25_ECH": {
+      "type": "float"
+    },
+    "MONF_F_DIR25_50_ECH": {
+      "type": "float"
+    },
+    "MONF_F_DIR50_ECH": {
+      "type": "float"
+    },
+    "MONF_F_DIR50_75_ECH": {
+      "type": "float"
+    },
+    "MONF_F_DIR75_100_ECH": {
+      "type": "float"
+    },
+    "MONF_F_DIR100_ECH": {
+      "type": "float"
+    },
+    "MONF_M_DIR25_ECH": {
+      "type": "float"
+    },
+    "MONF_M_DIR25_50_ECH": {
+      "type": "float"
+    },
+    "MONF_M_DIR50_ECH": {
+      "type": "float"
+    },
+    "MONF_M_DIR50_75_ECH": {
+      "type": "float"
+    },
+    "MONF_M_DIR75_100_ECH": {
+      "type": "float"
+    },
+    "MONF_M_DIR100_ECH": {
+      "type": "float"
+    },
+    "MONF_F_TIER25_ECH": {
+      "type": "float"
+    },
+    "MONF_F_TIER25_50_ECH": {
+      "type": "float"
+    },
+    "MONF_F_TIER50_ECH": {
+      "type": "float"
+    },
+    "MONF_F_TIER50_75_ECH": {
+      "type": "float"
+    },
+    "MONF_F_TIER75_100_ECH": {
+      "type": "float"
+    },
+    "MONF_F_TIER100_ECH": {
+      "type": "float"
+    },
+    "MONF_M_TIER25_ECH": {
+      "type": "float"
+    },
+    "MONF_M_TIER25_50_ECH": {
+      "type": "float"
+    },
+    "MONF_M_TIER50_ECH": {
+      "type": "float"
+    },
+    "MONF_M_TIER50_75_ECH": {
+      "type": "float"
+    },
+    "MONF_M_TIER75_100_ECH": {
+      "type": "float"
+    },
+    "MONF_M_TIER100_ECH": {
+      "type": "float"
+    },
+    "MONF_ACTDIV_PRINC_ECH": {
+      "type": "float"
+    },
+    "MONF_ACTDIV_SEC_ECH": {
+      "type": "float"
+    },
+    "MOF_SAL_25": {
+      "type": "float"
+    },
+    "MOF_SAL_25_50": {
+      "type": "float"
+    },
+    "MOF_SAL_50": {
+      "type": "float"
+    },
+    "MOF_SAL_50_75": {
+      "type": "float"
+    },
+    "MOF_SAL_75_100": {
+      "type": "float"
+    },
+    "MOF_SAL_100": {
+      "type": "float"
+    },
+    "MOF_SAL_TOT": {
+      "type": "float"
+    },
+    "MOF_NSAL_25": {
+      "type": "float"
+    },
+    "MOF_NSAL_25_50": {
+      "type": "float"
+    },
+    "MOF_NSAL_50": {
+      "type": "float"
+    },
+    "MOF_NSAL_50_75": {
+      "type": "float"
+    },
+    "MOF_NSAL_75_100": {
+      "type": "float"
+    },
+    "MOF_NSAL_100": {
+      "type": "float"
+    },
+    "MOF_NSAL_TOT": {
+      "type": "float"
+    },
+    "MONF_25": {
+      "type": "float"
+    },
+    "MONF_25_50": {
+      "type": "float"
+    },
+    "MONF_50": {
+      "type": "float"
+    },
+    "MONF_50_75": {
+      "type": "float"
+    },
+    "MONF_75_100": {
+      "type": "float"
+    },
+    "MONF_100": {
+      "type": "float"
+    },
+    "MONF_TOT": {
+      "type": "float"
+    },
+    "NB_SAISON": {
+      "type": "float"
+    },
+    "NBCEXCOEX": {
+      "type": "float"
+    },
+    "SAISON_HEUR_DIR_ECH": {
+      "type": "float"
+    },
+    "SAISON_JOUR_DIR_ECH": {
+      "type": "float"
+    },
+    "SAISON_SEM_DIR_ECH": {
+      "type": "float"
+    },
+    "SAISON_MOIS_DIR_ECH": {
+      "type": "float"
+    },
+    "SAISON_HEUR_TIER_ECH": {
+      "type": "float"
+    },
+    "SAISON_JOUR_TIER_ECH": {
+      "type": "float"
+    },
+    "SAISON_SEM_TIER_ECH": {
+      "type": "float"
+    },
+    "SAISON_MOIS_TIER_ECH": {
+      "type": "float"
+    },
+    "SAISON_HEUR": {
+      "type": "float"
+    },
+    "SAISON_JOUR": {
+      "type": "float"
+    },
+    "SAISON_SEM": {
+      "type": "float"
+    },
+    "SAISON_MOIS": {
+      "type": "float"
+    },
+    "EXTERNALISFIL": {
+      "type": "float"
+    },
+    "EXTPRESTA1": {
+      "type": "float"
+    },
+    "EXTPRESTA2": {
+      "type": "float"
+    },
+    "EXTPRESTA3": {
+      "type": "float"
+    },
+    "EXTPRESTA4": {
+      "type": "float"
+    },
+    "TYPEXTPRESTA1_ECH": {
+      "type": "float"
+    },
+    "TYPEXTPRESTA2_DOM": {
+      "type": "float"
+    },
+    "TYPEXTPRESTA3_ECH": {
+      "type": "float"
+    },
+    "TYPEXTPRESTA4_ECH": {
+      "type": "float"
+    },
+    "TYPEXTPRESTA5_ECH": {
+      "type": "float"
+    },
+    "TYPEXTPRESTA6_DOM": {
+      "type": "float"
+    },
+    "TYPEXTPRESTA7_ECH": {
+      "type": "float"
+    },
+    "TYPEXTPRESTA8_ECH": {
+      "type": "float"
+    },
+    "INFOPRESTA7_ECH": {
+      "type": "string"
+    },
+    "INFOPRESTA9_ECH": {
+      "type": "string"
+    },
+    "JETA_ECH": {
+      "type": "float"
+    },
+    "JCUMA_ECH": {
+      "type": "float"
+    },
+    "JSICA_DOM": {
+      "type": "float"
+    },
+    "JPRESTA_ECH": {
+      "type": "float"
+    },
+    "EVALRISQ_ECH": {
+      "type": "string"
+    },
+    "IMPODET": {
+      "type": "string"
+    },
+    "COLL_ECHANGE_ECH": {
+      "type": "float"
+    },
+    "COLL_OPNC_ECH": {
+      "type": "float"
+    },
+    "COLL_CUMA_ECH": {
+      "type": "float"
+    },
+    "COLL_TRAVAIL_ECH": {
+      "type": "float"
+    },
+    "RISQUE_CLIM_ECH": {
+      "type": "string"
+    },
+    "RISQUE_CLIM_MONO_ECH": {
+      "type": "string"
+    },
+    "RISQUE_CA_ECH": {
+      "type": "string"
+    },
+    "RISQUE_DEP_ECH": {
+      "type": "string"
+    },
+    "RISQUE_MAT_ECH": {
+      "type": "string"
+    },
+    "RISQUE_FMSEHORSMSA_ECH": {
+      "type": "string"
+    },
+    "RISQUE_AUTRE_ECH": {
+      "type": "string"
+    },
+    "NUM_GESTION_ECH": {
+      "type": "float"
+    },
+    "NUM_CULT_ECH": {
+      "type": "float"
+    },
+    "NUM_ELEV_ECH": {
+      "type": "float"
+    },
+    "NUM_INTERV_ECH": {
+      "type": "float"
+    },
+    "DEVENIR": {
+      "type": "string"
+    },
+    "IRRIFIL": {
+      "type": "float"
+    },
+    "COLLECTIFFIL": {
+      "type": "float"
+    },
+    "BIOSURCERTIF": {
+      "type": "float"
+    },
+    "BIOSURCONV": {
+      "type": "float"
+    },
+    "BIOSURTOT": {
+      "type": "float"
+    },
+    "CHAMPFIL": {
+      "type": "float"
+    },
+    "CHAMPQ": {
+      "type": "float"
+    },
+    "CHAMPBIO": {
+      "type": "float"
+    },
+    "CHICONFIL": {
+      "type": "float"
+    },
+    "CHICONQ": {
+      "type": "float"
+    },
+    "CHICONBIO": {
+      "type": "float"
+    },
+    "SURF_MADFIL": {
+      "type": "float"
+    },
+    "SURF_MAD_MEL": {
+      "type": "float"
+    },
+    "SURF_MAD_PDT": {
+      "type": "float"
+    },
+    "SURF_MAD_LIN": {
+      "type": "float"
+    },
+    "SURF_MAD_AUT": {
+      "type": "float"
+    },
+    "CULT_MAD_AUT": {
+      "type": "string"
+    },
+    "FV_PROP_IND": {
+      "type": "float"
+    },
+    "FV_COPRO_IND_DOM": {
+      "type": "float"
+    },
+    "FV_FERM_IND": {
+      "type": "float"
+    },
+    "FV_AUT_IND": {
+      "type": "float"
+    },
+    "FV_ETAT_IND_DOM": {
+      "type": "float"
+    },
+    "FV_MET_IND_DOM": {
+      "type": "float"
+    },
+    "FV_LOCPRO_IND_DOM": {
+      "type": "float"
+    },
+    "FV_PRET_IND_DOM": {
+      "type": "float"
+    },
+    "FV_COUTUM_IND_DOM": {
+      "type": "float"
+    },
+    "FV_STITRE_IND_DOM": {
+      "type": "float"
+    },
+    "FV_DOM_AUT_IND_DOM": {
+      "type": "float"
+    },
+    "FV_DOM_COMMENT_IND_DOM": {
+      "type": "float"
+    },
+    "FV_TOT_IND": {
+      "type": "float"
+    },
+    "FV_PROP_ENT": {
+      "type": "float"
+    },
+    "FV_FERM_ENT": {
+      "type": "float"
+    },
+    "FV_ETAT_ENT_DOM": {
+      "type": "float"
+    },
+    "FV_MAD_PROP_ENT": {
+      "type": "float"
+    },
+    "FV_MAD_LOC_ENT": {
+      "type": "float"
+    },
+    "FV_AUT_ENT": {
+      "type": "float"
+    },
+    "FV_MET_ENT_DOM": {
+      "type": "float"
+    },
+    "FV_LOCPRO_ENT_DOM": {
+      "type": "float"
+    },
+    "FV_PRET_ENT_DOM": {
+      "type": "float"
+    },
+    "FV_COUTUM_ENT_DOM": {
+      "type": "float"
+    },
+    "FV_STITRE_ENT_DOM": {
+      "type": "float"
+    },
+    "FV_DOM_AUT_ENT_DOM": {
+      "type": "float"
+    },
+    "FV_DOM_COMMENT_ENT_DOM": {
+      "type": "float"
+    },
+    "FV_TOT_ENT": {
+      "type": "float"
+    },
+    "AGROFORFIL": {
+      "type": "float"
+    },
+    "AGROFOR_SURF": {
+      "type": "float"
+    },
+    "IRRIGABFIL": {
+      "type": "float"
+    },
+    "IRRIGAB": {
+      "type": "float"
+    },
+    "IRRIRESEAUEXT": {
+      "type": "float"
+    },
+    "IRRIRESEAUIND": {
+      "type": "float"
+    },
+    "IRRIETANG": {
+      "type": "float"
+    },
+    "IRRIEAUEXT": {
+      "type": "float"
+    },
+    "IRRIPUITS": {
+      "type": "float"
+    },
+    "IRRIEAUAUTRE": {
+      "type": "float"
+    },
+    "IRRIEAUPOT_DOM": {
+      "type": "float"
+    },
+    "IRRIEAUPLUIE_DOM": {
+      "type": "float"
+    },
+    "IRRIASPERSION": {
+      "type": "float"
+    },
+    "IRRIMICROIRRIGATION": {
+      "type": "float"
+    },
+    "IRRIGRAVITE": {
+      "type": "float"
+    },
+    "IRRIGOUT_DOM": {
+      "type": "float"
+    },
+    "IRRIMANU_DOM": {
+      "type": "float"
+    },
+    "INTERMFIL_ECH": {
+      "type": "float"
+    },
+    "INTERM_CIPAN_ECH": {
+      "type": "float"
+    },
+    "INTERM_ENERG_ECH": {
+      "type": "float"
+    },
+    "INTERM_AUT_ECH": {
+      "type": "float"
+    },
+    "INTERM_DEROB_DOM": {
+      "type": "float"
+    },
+    "LABOUR_ECH": {
+      "type": "float"
+    },
+    "CONSERVATION_ECH": {
+      "type": "float"
+    },
+    "SEMISDIRECT_ECH": {
+      "type": "float"
+    },
+    "STOCK_GRAIN_FIL_ECH": {
+      "type": "float"
+    },
+    "STOCK_GRAIN_Q_ECH": {
+      "type": "float"
+    },
+    "STOCK_POM_FIL": {
+      "type": "float"
+    },
+    "STOCK_POM_Q": {
+      "type": "float"
+    },
+    "ABATTI_NB_PARC": {
+      "type": "float"
+    },
+    "ABATTIFIL": {
+      "type": "float"
+    },
+    "TERRE_ARABLE_HORSSERRE_TOT": {
+      "type": "float"
+    },
+    "TERRE_ARABLE_TOT": {
+      "type": "float"
+    },
+    "CULT_ANNUELLES": {
+      "type": "float"
+    },
+    "IRRISUR_CULT_TOT": {
+      "type": "float"
+    },
+    "BIOSUR_CULT_TOT": {
+      "type": "float"
+    },
+    "TAILLIS": {
+      "type": "float"
+    },
+    "FORETS": {
+      "type": "float"
+    },
+    "FRICHE": {
+      "type": "float"
+    },
+    "COURSFERME": {
+      "type": "float"
+    },
+    "AUTSUPERFICIES": {
+      "type": "float"
+    },
+    "ESTIVE_GRAPH_PT": {
+      "type": "float"
+    },
+    "ESTIVE_ADM_PT": {
+      "type": "float"
+    },
+    "ESTIVE_GRAPH_Ppprod": {
+      "type": "float"
+    },
+    "ESTIVE_ADM_Ppprod": {
+      "type": "float"
+    },
+    "ESTIVE_GRAPH_Pppeuprod": {
+      "type": "float"
+    },
+    "ESTIVE_ADM_Pppeuprod": {
+      "type": "float"
+    },
+    "ESTIVE_GRAPH_BP": {
+      "type": "float"
+    },
+    "ESTIVE_ADM_BP": {
+      "type": "float"
+    },
+    "RETRAITMT_SURF_ADM": {
+      "type": "float"
+    },
+    "CULT_RA_CODE": {
+      "type": "string"
+    },
+    "CULTSUR": {
+      "type": "float"
+    },
+    "BIOSUR": {
+      "type": "float"
+    },
+    "IRRISUR": {
+      "type": "float"
+    },
+    "CULTSUR_collecte": {
+      "type": "float"
+    },
+    "GRAPSUR": {
+      "type": "float"
+    },
+    "ANIMAUXFIL": {
+      "type": "float"
+    },
+    "BOVINFIL": {
+      "type": "float"
+    },
+    "CHEPTQ_110000": {
+      "type": "float"
+    },
+    "CHEPTQ_111000": {
+      "type": "float"
+    },
+    "CHEPTQ_111100": {
+      "type": "float"
+    },
+    "CHEPTQ_111200": {
+      "type": "float"
+    },
+    "CHEPTQ_111300": {
+      "type": "float"
+    },
+    "CHEPTQ_112210": {
+      "type": "float"
+    },
+    "CHEPTQ_112220": {
+      "type": "float"
+    },
+    "CHEPTQ_112300": {
+      "type": "float"
+    },
+    "CHEPTQ_113010": {
+      "type": "float"
+    },
+    "CHEPTQ_113030": {
+      "type": "float"
+    },
+    "CHEPTQ_113020": {
+      "type": "float"
+    },
+    "CHEPTQ_113021_DOM": {
+      "type": "float"
+    },
+    "CHEPTQ_113022_DOM": {
+      "type": "float"
+    },
+    "CHEPTQ_113040": {
+      "type": "float"
+    },
+    "BOVINENGRFIL": {
+      "type": "float"
+    },
+    "VEAU_ENGR": {
+      "type": "float"
+    },
+    "JBOVIN_ENGR": {
+      "type": "float"
+    },
+    "BOEUF_ENGR": {
+      "type": "float"
+    },
+    "GENIS_ENGR": {
+      "type": "float"
+    },
+    "CHEPTBIO_111100": {
+      "type": "float"
+    },
+    "CHEPTBIO_114000": {
+      "type": "float"
+    },
+    "OVINFIL": {
+      "type": "float"
+    },
+    "CHEPTQ_410000": {
+      "type": "float"
+    },
+    "CHEPTQ_410100": {
+      "type": "float"
+    },
+    "CHEPTQ_410200": {
+      "type": "float"
+    },
+    "CHEPTQ_411100": {
+      "type": "float"
+    },
+    "CHEPTQ_411200": {
+      "type": "float"
+    },
+    "CHEPTQ_419110": {
+      "type": "float"
+    },
+    "CHEPTQ_419120": {
+      "type": "float"
+    },
+    "CHEPTQ_419210": {
+      "type": "float"
+    },
+    "CHEPTQ_419220": {
+      "type": "float"
+    },
+    "CHEPTQ_419911": {
+      "type": "float"
+    },
+    "CHEPTQ_419912": {
+      "type": "float"
+    },
+    "CHEPTQ_419921": {
+      "type": "float"
+    },
+    "CHEPTQ_419922": {
+      "type": "float"
+    },
+    "AGNEAUENGRFIL": {
+      "type": "float"
+    },
+    "AGNEAUENGR": {
+      "type": "float"
+    },
+    "CHEPTBIO_410100": {
+      "type": "float"
+    },
+    "CHEPTBIO_410200": {
+      "type": "float"
+    },
+    "CAPRINFIL": {
+      "type": "float"
+    },
+    "CHEPTQ_310000": {
+      "type": "float"
+    },
+    "CHEPTQ_311100": {
+      "type": "float"
+    },
+    "CHEPTQ_319100": {
+      "type": "float"
+    },
+    "CHEPTQ_319200": {
+      "type": "float"
+    },
+    "CHEPTQ_319910": {
+      "type": "float"
+    },
+    "CHEPTQ_319920": {
+      "type": "float"
+    },
+    "CHEVREAUENGRFIL": {
+      "type": "float"
+    },
+    "CHEVREAUENGR": {
+      "type": "float"
+    },
+    "CHEPTBIO_310000": {
+      "type": "float"
+    },
+    "PORCINFIL": {
+      "type": "float"
+    },
+    "CHEPTQ_510000": {
+      "type": "float"
+    },
+    "CHEPTQ_511110": {
+      "type": "float"
+    },
+    "CHEPTQ_511120": {
+      "type": "float"
+    },
+    "CHEPTQ_511130": {
+      "type": "float"
+    },
+    "CHEPTQ_511210": {
+      "type": "float"
+    },
+    "CHEPTQ_511220": {
+      "type": "float"
+    },
+    "CHEPTQ_511300": {
+      "type": "float"
+    },
+    "CHEPTQ_511410": {
+      "type": "float"
+    },
+    "CHEPTQ_511420": {
+      "type": "float"
+    },
+    "CHEPTQ_511430": {
+      "type": "float"
+    },
+    "CHEPTQ_511510": {
+      "type": "float"
+    },
+    "CHEPTQ_511520": {
+      "type": "float"
+    },
+    "CHEPTBIO_510000": {
+      "type": "float"
+    },
+    "PORCENGRFIL": {
+      "type": "float"
+    },
+    "PORCENGR": {
+      "type": "float"
+    },
+    "VOLAILLEFIL": {
+      "type": "float"
+    },
+    "CHEPTQ_711110": {
+      "type": "float"
+    },
+    "CHEPTQ_711111": {
+      "type": "float"
+    },
+    "CHEPTQ_711112": {
+      "type": "float"
+    },
+    "CHEPTQ_711113": {
+      "type": "float"
+    },
+    "CHEPTQ_711120": {
+      "type": "float"
+    },
+    "CHEPTQ_711121": {
+      "type": "float"
+    },
+    "CHEPTQ_711122": {
+      "type": "float"
+    },
+    "CHEPTQ_711130": {
+      "type": "float"
+    },
+    "CHEPTQ_711140": {
+      "type": "float"
+    },
+    "CHEPTQ_711151": {
+      "type": "float"
+    },
+    "CHEPTQ_711152": {
+      "type": "float"
+    },
+    "CHEPTQ_711310": {
+      "type": "float"
+    },
+    "CHEPTQ_711320": {
+      "type": "float"
+    },
+    "CHEPTQ_711321": {
+      "type": "float"
+    },
+    "CHEPTQ_711322": {
+      "type": "float"
+    },
+    "CHEPTQ_711330": {
+      "type": "float"
+    },
+    "CHEPTQ_711340": {
+      "type": "float"
+    },
+    "CHEPTQ_711410": {
+      "type": "float"
+    },
+    "CHEPTQ_711411": {
+      "type": "float"
+    },
+    "CHEPTQ_711412": {
+      "type": "float"
+    },
+    "CHEPTQ_711413": {
+      "type": "float"
+    },
+    "CHEPTQ_711421": {
+      "type": "float"
+    },
+    "CHEPTQ_711422": {
+      "type": "float"
+    },
+    "CHEPTQ_711510": {
+      "type": "float"
+    },
+    "CHEPTQ_711520": {
+      "type": "float"
+    },
+    "CHEPTQ_711600": {
+      "type": "float"
+    },
+    "CHEPTQ_712110": {
+      "type": "float"
+    },
+    "CHEPTQ_712120": {
+      "type": "float"
+    },
+    "CHEPTQ_719010": {
+      "type": "float"
+    },
+    "CHEPTPROD_711110": {
+      "type": "float"
+    },
+    "CHEPTPROD_711111": {
+      "type": "float"
+    },
+    "CHEPTPROD_711112": {
+      "type": "float"
+    },
+    "CHEPTPROD_711113": {
+      "type": "float"
+    },
+    "CHEPTPROD_711120": {
+      "type": "float"
+    },
+    "CHEPTPROD_711121": {
+      "type": "float"
+    },
+    "CHEPTPROD_711122": {
+      "type": "float"
+    },
+    "CHEPTPROD_711130": {
+      "type": "float"
+    },
+    "CHEPTPROD_711140": {
+      "type": "float"
+    },
+    "CHEPTPROD_711151": {
+      "type": "float"
+    },
+    "CHEPTPROD_711152": {
+      "type": "float"
+    },
+    "CHEPTPROD_711310": {
+      "type": "float"
+    },
+    "CHEPTPROD_711320": {
+      "type": "float"
+    },
+    "CHEPTPROD_711321": {
+      "type": "float"
+    },
+    "CHEPTPROD_711322": {
+      "type": "float"
+    },
+    "CHEPTPROD_711330": {
+      "type": "float"
+    },
+    "CHEPTPROD_711340": {
+      "type": "float"
+    },
+    "CHEPTPROD_711410": {
+      "type": "float"
+    },
+    "CHEPTPROD_711411": {
+      "type": "float"
+    },
+    "CHEPTPROD_711412": {
+      "type": "float"
+    },
+    "CHEPTPROD_711413": {
+      "type": "float"
+    },
+    "CHEPTPROD_711421": {
+      "type": "float"
+    },
+    "CHEPTPROD_711422": {
+      "type": "float"
+    },
+    "CHEPTPROD_711510": {
+      "type": "float"
+    },
+    "CHEPTPROD_711520": {
+      "type": "float"
+    },
+    "CHEPTPROD_711600": {
+      "type": "float"
+    },
+    "CHEPTPROD_712110": {
+      "type": "float"
+    },
+    "CHEPTPROD_712120": {
+      "type": "float"
+    },
+    "CHEPTPROD_719010": {
+      "type": "float"
+    },
+    "CHEPTBIO_711110": {
+      "type": "float"
+    },
+    "CHEPTBIO_711120": {
+      "type": "float"
+    },
+    "CHEPTBIO_711130": {
+      "type": "float"
+    },
+    "CHEPTBIO_711140": {
+      "type": "float"
+    },
+    "CHEPTBIO_711151": {
+      "type": "float"
+    },
+    "CHEPTBIO_711152": {
+      "type": "float"
+    },
+    "CHEPTBIO_711310": {
+      "type": "float"
+    },
+    "CHEPTBIO_711320": {
+      "type": "float"
+    },
+    "CHEPTBIO_711410": {
+      "type": "float"
+    },
+    "CHEPTBIO_711411": {
+      "type": "float"
+    },
+    "CHEPTBIO_711510": {
+      "type": "float"
+    },
+    "CHEPTBIO_711520": {
+      "type": "float"
+    },
+    "CHEPTBIO_711600": {
+      "type": "float"
+    },
+    "CHEPTBIO_712110": {
+      "type": "float"
+    },
+    "CHEPTBIO_712120": {
+      "type": "float"
+    },
+    "CHEPTBIO_719010": {
+      "type": "float"
+    },
+    "PPCOUVSURF": {
+      "type": "float"
+    },
+    "COUVOIRFIL": {
+      "type": "float"
+    },
+    "COUVOIRCAPA": {
+      "type": "float"
+    },
+    "GALLUSFIL": {
+      "type": "float"
+    },
+    "GAVAGECAPA": {
+      "type": "float"
+    },
+    "EQUIDEFIL": {
+      "type": "float"
+    },
+    "CHEPTQ_210000": {
+      "type": "float"
+    },
+    "CHEPTQ_211110": {
+      "type": "float"
+    },
+    "CHEPTQ_211130": {
+      "type": "float"
+    },
+    "CHEPTQ_211140": {
+      "type": "float"
+    },
+    "CHEPTQ_211200": {
+      "type": "float"
+    },
+    "CHEPTQ_212110": {
+      "type": "float"
+    },
+    "CHEPTQ_212130": {
+      "type": "float"
+    },
+    "CHEPTQ_212140": {
+      "type": "float"
+    },
+    "CHEPTQ_212200": {
+      "type": "float"
+    },
+    "CHEPTQ_210010": {
+      "type": "float"
+    },
+    "CHEPTQ_210030": {
+      "type": "float"
+    },
+    "CHEPTQ_210040": {
+      "type": "float"
+    },
+    "CHEPTQ_210200": {
+      "type": "float"
+    },
+    "CHEPTQ_213100": {
+      "type": "float"
+    },
+    "EQUINAISS": {
+      "type": "float"
+    },
+    "CHEPTBIO_210000": {
+      "type": "float"
+    },
+    "LAPINFIL": {
+      "type": "float"
+    },
+    "CHEPTQ_611100": {
+      "type": "float"
+    },
+    "LAPCOMFIL": {
+      "type": "float"
+    },
+    "LAPM_CG": {
+      "type": "float"
+    },
+    "LAPM_ALT": {
+      "type": "float"
+    },
+    "LAPM_CLAP": {
+      "type": "float"
+    },
+    "LAP_CG": {
+      "type": "float"
+    },
+    "LAP_ALT": {
+      "type": "float"
+    },
+    "LAP_CLAP": {
+      "type": "float"
+    },
+    "CHEPTBIO_611100": {
+      "type": "float"
+    },
+    "APICULTFIL": {
+      "type": "float"
+    },
+    "CHEPTQ_820000": {
+      "type": "float"
+    },
+    "CHEPTQ_821000": {
+      "type": "float"
+    },
+    "CHEPTQ_822000": {
+      "type": "float"
+    },
+    "CHEPTBIO_820000": {
+      "type": "float"
+    },
+    "ELEVAUTFIL": {
+      "type": "float"
+    },
+    "ELEVFOUR": {
+      "type": "float"
+    },
+    "ELEVGIB": {
+      "type": "float"
+    },
+    "ELEVCERV": {
+      "type": "float"
+    },
+    "ELEVBISON": {
+      "type": "float"
+    },
+    "ELEVESCAR": {
+      "type": "float"
+    },
+    "ELEVCAME": {
+      "type": "float"
+    },
+    "ELEVAUT1": {
+      "type": "float"
+    },
+    "ELEVFOUR_BIO": {
+      "type": "float"
+    },
+    "ELEVGIB_BIO": {
+      "type": "float"
+    },
+    "ELEVCERV_BIO": {
+      "type": "float"
+    },
+    "ELEVBISON_BIO": {
+      "type": "float"
+    },
+    "ELEVESCAR_BIO": {
+      "type": "float"
+    },
+    "ELEVCAME_BIO": {
+      "type": "float"
+    },
+    "ELEVAUT1_BIO": {
+      "type": "float"
+    },
+    "PATCOL_C": {
+      "type": "float"
+    },
+    "PATCOL": {
+      "type": "float"
+    },
+    "BOVINPLEINAIRFIL_ECH": {
+      "type": "string"
+    },
+    "VL_PLEINAIR_ECH": {
+      "type": "float"
+    },
+    "VA_PLEINAIR_ECH": {
+      "type": "float"
+    },
+    "BE_PLEINAIR_ECH": {
+      "type": "float"
+    },
+    "AB_PLEINAIR_ECH": {
+      "type": "float"
+    },
+    "VA_PLEINAIR1_DOM": {
+      "type": "float"
+    },
+    "BE_PLEINAIR1_DOM": {
+      "type": "float"
+    },
+    "AB_PLEINAIR1_DOM": {
+      "type": "float"
+    },
+    "VL_PLEINAIR2_DOM": {
+      "type": "float"
+    },
+    "VA_PLEINAIR2_DOM": {
+      "type": "float"
+    },
+    "BE_PLEINAIR2_DOM": {
+      "type": "float"
+    },
+    "AB_PLEINAIR2_DOM": {
+      "type": "float"
+    },
+    "VL_PLEINAIR3_DOM": {
+      "type": "float"
+    },
+    "VA_PLEINAIR3_DOM": {
+      "type": "float"
+    },
+    "BE_PLEINAIR3_DOM": {
+      "type": "float"
+    },
+    "AB_PLEINAIR3_DOM": {
+      "type": "float"
+    },
+    "PATEXPFIL_ECH": {
+      "type": "float"
+    },
+    "PATMOISVL_ECH": {
+      "type": "float"
+    },
+    "PATMOISVA_ECH": {
+      "type": "float"
+    },
+    "PATMOISBM1_ECH": {
+      "type": "float"
+    },
+    "PATMOISBP1_ECH": {
+      "type": "float"
+    },
+    "PATSURFVL_ECH": {
+      "type": "float"
+    },
+    "VL_STABENTF_ECH": {
+      "type": "float"
+    },
+    "VL_STABENTL_ECH": {
+      "type": "float"
+    },
+    "VL_STABLIBLIT_ECH": {
+      "type": "float"
+    },
+    "VL_STABLIBF_ECH": {
+      "type": "float"
+    },
+    "VL_STABLIBPTE_ECH": {
+      "type": "float"
+    },
+    "VL_STABLIBL_ECH": {
+      "type": "float"
+    },
+    "VL_STABLIBLOGF_ECH": {
+      "type": "float"
+    },
+    "VL_STABLIBLOGL_ECH": {
+      "type": "float"
+    },
+    "VA_STABENTF_ECH": {
+      "type": "float"
+    },
+    "VA_STABENTL_ECH": {
+      "type": "float"
+    },
+    "VA_STABLIBLIT_ECH": {
+      "type": "float"
+    },
+    "VA_STABLIBF_ECH": {
+      "type": "float"
+    },
+    "VA_STABLIBPTE_ECH": {
+      "type": "float"
+    },
+    "VA_STABLIBL_ECH": {
+      "type": "float"
+    },
+    "VA_STABLIBLOGF_ECH": {
+      "type": "float"
+    },
+    "VA_STABLIBLOGL_ECH": {
+      "type": "float"
+    },
+    "AB_STABENTF_ECH": {
+      "type": "float"
+    },
+    "AB_STABENTL_ECH": {
+      "type": "float"
+    },
+    "AB_STABLIBLIT_ECH": {
+      "type": "float"
+    },
+    "AB_STABLIBF_ECH": {
+      "type": "float"
+    },
+    "AB_STABLIBPTE_ECH": {
+      "type": "float"
+    },
+    "AB_STABLIBL_ECH": {
+      "type": "float"
+    },
+    "AB_STABLIBLOGF_ECH": {
+      "type": "float"
+    },
+    "AB_STABLIBLOGL_ECH": {
+      "type": "float"
+    },
+    "AB_STABLIBBXC_ECH": {
+      "type": "float"
+    },
+    "BE_STABENTF_ECH": {
+      "type": "float"
+    },
+    "BE_STABENTL_ECH": {
+      "type": "float"
+    },
+    "BE_STABLIBLIT_ECH": {
+      "type": "float"
+    },
+    "BE_STABLIBF_ECH": {
+      "type": "float"
+    },
+    "BE_STABLIBPTE_ECH": {
+      "type": "float"
+    },
+    "BE_STABLIBL_ECH": {
+      "type": "float"
+    },
+    "BE_STABLIBLOGF_ECH": {
+      "type": "float"
+    },
+    "BE_STABLIBLOGL_ECH": {
+      "type": "float"
+    },
+    "BE_STABLIBBXC_ECH": {
+      "type": "float"
+    },
+    "VE_STABENTF_ECH": {
+      "type": "float"
+    },
+    "VE_STABENTL_ECH": {
+      "type": "float"
+    },
+    "VE_STABLIBLIT_ECH": {
+      "type": "float"
+    },
+    "VE_STABLIBF_ECH": {
+      "type": "float"
+    },
+    "VE_STABLIBPTE_ECH": {
+      "type": "float"
+    },
+    "VE_STABLIBL_ECH": {
+      "type": "float"
+    },
+    "VE_STABLIBLOGF_ECH": {
+      "type": "float"
+    },
+    "VE_STABLIBLOGL_ECH": {
+      "type": "float"
+    },
+    "VE_STABLIBBXIF_ECH": {
+      "type": "float"
+    },
+    "VE_STABLIBBXIL_ECH": {
+      "type": "float"
+    },
+    "VE_STABLIBBXC_ECH": {
+      "type": "float"
+    },
+    "VL_AIREXT_ECH": {
+      "type": "float"
+    },
+    "AUTBOV_AIREXT_ECH": {
+      "type": "float"
+    },
+    "PORCPLEINAIRFIL_ECH": {
+      "type": "string"
+    },
+    "TRUIE_PLEINAIR_ECH": {
+      "type": "float"
+    },
+    "PSEVR_PLEINAIR_ECH": {
+      "type": "float"
+    },
+    "PENGR_PLEINAIR_ECH": {
+      "type": "float"
+    },
+    "PAUT_PLEINAIR_ECH": {
+      "type": "float"
+    },
+    "TRMAT_TOT_ECH": {
+      "type": "float"
+    },
+    "TRMAT_CAILINT_ECH": {
+      "type": "float"
+    },
+    "TRMAT_CAILPART_ECH": {
+      "type": "float"
+    },
+    "TRMAT_LITIERE_ECH": {
+      "type": "float"
+    },
+    "TRMAT_SOLPL_ECH": {
+      "type": "float"
+    },
+    "TRMAT_AUTLOG_ECH": {
+      "type": "float"
+    },
+    "TRGST_TOT_ECH": {
+      "type": "float"
+    },
+    "TRGST_CAILINT_ECH": {
+      "type": "float"
+    },
+    "TRGST_CAILPART_ECH": {
+      "type": "float"
+    },
+    "TRGST_LITIERE_ECH": {
+      "type": "float"
+    },
+    "TRGST_SOLPL_ECH": {
+      "type": "float"
+    },
+    "TRGST_AUTLOG_ECH": {
+      "type": "float"
+    },
+    "PSEVR_TOT_ECH": {
+      "type": "float"
+    },
+    "PSEVR_CAILINT_ECH": {
+      "type": "float"
+    },
+    "PSEVR_CAILPART_ECH": {
+      "type": "float"
+    },
+    "PSEVR_LITIERE_ECH": {
+      "type": "float"
+    },
+    "PSEVR_SOLPL_ECH": {
+      "type": "float"
+    },
+    "PSEVR_AUTLOG_ECH": {
+      "type": "float"
+    },
+    "PENGR_TOT_ECH": {
+      "type": "float"
+    },
+    "PENGR_CAILINT_ECH": {
+      "type": "float"
+    },
+    "PENGR_CAILPART_ECH": {
+      "type": "float"
+    },
+    "PENGR_LITIERE_ECH": {
+      "type": "float"
+    },
+    "PENGR_SOLPL_ECH": {
+      "type": "float"
+    },
+    "PENGR_AUTLOG_ECH": {
+      "type": "float"
+    },
+    "PAUT_TOT_ECH": {
+      "type": "float"
+    },
+    "PAUT_CAILINT_ECH": {
+      "type": "float"
+    },
+    "PAUT_CAILPART_ECH": {
+      "type": "float"
+    },
+    "PAUT_LITIERE_ECH": {
+      "type": "float"
+    },
+    "PAUT_SOLPL_ECH": {
+      "type": "float"
+    },
+    "PAUT_AUTLOG_ECH": {
+      "type": "float"
+    },
+    "PATMOISTRUIE_ECH": {
+      "type": "float"
+    },
+    "PORCAUT_AIREXT_ECH": {
+      "type": "float"
+    },
+    "PPO_TOT_ECH": {
+      "type": "float"
+    },
+    "PPO_CGPROF_ECH": {
+      "type": "float"
+    },
+    "PPO_CGSSCONV_ECH": {
+      "type": "float"
+    },
+    "PPO_CGCONV_ECH": {
+      "type": "float"
+    },
+    "PPO_LIT2_ECH": {
+      "type": "float"
+    },
+    "PPO_LIT1_ECH": {
+      "type": "float"
+    },
+    "PPO_LIT0_ECH": {
+      "type": "float"
+    },
+    "PPO_VOL2_ECH": {
+      "type": "float"
+    },
+    "PPO_VOL1_ECH": {
+      "type": "float"
+    },
+    "PPO_VOL0_ECH": {
+      "type": "float"
+    },
+    "PPO_SOL2_ECH": {
+      "type": "float"
+    },
+    "PPO_SOL1_ECH": {
+      "type": "float"
+    },
+    "PPO_SOL0_ECH": {
+      "type": "float"
+    },
+    "PPO_CAB1_ECH": {
+      "type": "float"
+    },
+    "PPO_CAB0_ECH": {
+      "type": "float"
+    },
+    "PPO_AUT3_ECH": {
+      "type": "float"
+    },
+    "PPO_AUT2_ECH": {
+      "type": "float"
+    },
+    "PPO_AUT1_ECH": {
+      "type": "float"
+    },
+    "PPO_AUT0_ECH": {
+      "type": "float"
+    },
+    "PPO_CGAUT_ECH": {
+      "type": "float"
+    },
+    "PPC_TOT_ECH": {
+      "type": "float"
+    },
+    "PPC_CGPROF_ECH": {
+      "type": "float"
+    },
+    "PPC_CGSSCONV_ECH": {
+      "type": "float"
+    },
+    "PPC_CGCONV_ECH": {
+      "type": "float"
+    },
+    "PPC_LIT_ECH": {
+      "type": "float"
+    },
+    "PPC_VOL_ECH": {
+      "type": "float"
+    },
+    "PPC_SOL_ECH": {
+      "type": "float"
+    },
+    "PPC_AUT_ECH": {
+      "type": "float"
+    },
+    "PP_TOT": {
+      "type": "float"
+    },
+    "PPJARHIVFIL_ECH": {
+      "type": "float"
+    },
+    "CHAIREXTFIL_ECH": {
+      "type": "string"
+    },
+    "CHAIR_SOL_ECH": {
+      "type": "float"
+    },
+    "CHAIR_CAIL_ECH": {
+      "type": "float"
+    },
+    "CHAIR_AUTSOL_ECH": {
+      "type": "float"
+    },
+    "CHAIR_CAB_ECH": {
+      "type": "float"
+    },
+    "CHAIR_AUT_ECH": {
+      "type": "float"
+    },
+    "CHAIR_TOT": {
+      "type": "float"
+    },
+    "AALIMBOVF_ECH": {
+      "type": "string"
+    },
+    "AALIMBOVC_ECH": {
+      "type": "string"
+    },
+    "AALIMOVF_ECH": {
+      "type": "string"
+    },
+    "AALIMOVC_ECH": {
+      "type": "string"
+    },
+    "AALIMCAPF_ECH": {
+      "type": "string"
+    },
+    "AALIMCAPC_ECH": {
+      "type": "string"
+    },
+    "AALIMPORC_ECH": {
+      "type": "string"
+    },
+    "AALIMPOUC_ECH": {
+      "type": "string"
+    },
+    "AALIMVOLC_ECH": {
+      "type": "string"
+    },
+    "AALIMGAVC_ECH": {
+      "type": "string"
+    },
+    "FERTILMINS_ECH": {
+      "type": "float"
+    },
+    "FERTILDEJS_ECH": {
+      "type": "float"
+    },
+    "FERTILORGS_ECH": {
+      "type": "float"
+    },
+    "FERTILBOUES_ECH": {
+      "type": "float"
+    },
+    "FERTILORGQ_ECH": {
+      "type": "float"
+    },
+    "DEJIMPFIL_ECH": {
+      "type": "float"
+    },
+    "DEJIMPLISFIL_ECH": {
+      "type": "float"
+    },
+    "DEJIMPFUMFIL_ECH": {
+      "type": "float"
+    },
+    "DEJIMPLISQ_ECH": {
+      "type": "float"
+    },
+    "DEJIMPFUMQT_ECH": {
+      "type": "float"
+    },
+    "DEJIMPFUMQM_ECH": {
+      "type": "float"
+    },
+    "IMPDIJESTFIL_ECH": {
+      "type": "float"
+    },
+    "DEJEXPFIL_ECH": {
+      "type": "float"
+    },
+    "DEJEXPLISFIL_ECH": {
+      "type": "float"
+    },
+    "DEJEXPFUMFIL_ECH": {
+      "type": "float"
+    },
+    "DEJEXPLISQ_ECH": {
+      "type": "float"
+    },
+    "DEJEXPFUMQT_ECH": {
+      "type": "float"
+    },
+    "DEJEXPFUMQM_ECH": {
+      "type": "float"
+    },
+    "DEJEXPMETHFIL_ECH": {
+      "type": "float"
+    },
+    "DEJEXPMETH50_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDFIL_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDFUM4_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDFUM12_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDFUM24_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDFUMSS_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDMAN4_DOM": {
+      "type": "float"
+    },
+    "DEJEPANDMAN12_DOM": {
+      "type": "float"
+    },
+    "DEJEPANDMAN24_DOM": {
+      "type": "float"
+    },
+    "DEJEPANDMANSS_DOM": {
+      "type": "float"
+    },
+    "DEJEPANDAIR4_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDAIR12_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDAIR24_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDAIRSS_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDTUY4_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDTUY12_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDTUY24_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDTUYSS_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDSAB4_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDSAB12_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDSAB24_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDSABSS_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDINJS4_ECH": {
+      "type": "float"
+    },
+    "DEJEPANDINJP4_ECH": {
+      "type": "float"
+    },
+    "DEJSTKFIL_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_CHAMP_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_COMP_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_FUMNCV_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_FUMCV_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_LIT_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_FOSPR_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_CAIL_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_LISNCV_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_LISCVN_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_LISCVR_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_LISCVS_ECH": {
+      "type": "float"
+    },
+    "DEJSTKQ_AUT_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_CHAMP_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_COMP_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_FUMNCV_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_FUMCV_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_LIT_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_FOSPR_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_CAIL_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_LISNCV_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_LISCVN_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_LISCVR_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_LISCVS_ECH": {
+      "type": "float"
+    },
+    "DEJSTKD_AUT_ECH": {
+      "type": "float"
+    },
+    "TRAITEFFLU_ECH": {
+      "type": "float"
+    },
+    "DIVACTCOD": {
+      "type": "string"
+    },
+    "DIVACTEXP": {
+      "type": "float"
+    },
+    "DIVACTAUT": {
+      "type": "float"
+    },
+    "TRANSFOSST": {
+      "type": "float"
+    },
+    "CIRCOU_CODE": {
+      "type": "string"
+    },
+    "CIRCOU_COP": {
+      "type": "float"
+    },
+    "CIRCOU_TUB_DOM": {
+      "type": "float"
+    },
+    "CIRCOU_LEG": {
+      "type": "float"
+    },
+    "CIRCOU_VIN": {
+      "type": "float"
+    },
+    "CIRCOU_HOLI": {
+      "type": "float"
+    },
+    "CIRCOU_FRUIT": {
+      "type": "float"
+    },
+    "CIRCOU_AUTR": {
+      "type": "float"
+    },
+    "CIRCOU_LAIT": {
+      "type": "float"
+    },
+    "CIRCOU_OVOL": {
+      "type": "float"
+    },
+    "CIRCOU_ANIM": {
+      "type": "float"
+    },
+    "CIRCOU_MIEL": {
+      "type": "float"
+    },
+    "COMM_CIRCUIT_ECH": {
+      "type": "string"
+    },
+    "COMM_COP_ECH": {
+      "type": "float"
+    },
+    "COMM_TUB_DOM": {
+      "type": "float"
+    },
+    "COMM_LEG_ECH": {
+      "type": "float"
+    },
+    "COMM_VIN_ECH": {
+      "type": "float"
+    },
+    "COMM_HOLI_ECH": {
+      "type": "float"
+    },
+    "COMM_FRUIT_ECH": {
+      "type": "float"
+    },
+    "COMM_AUTR_ECH": {
+      "type": "float"
+    },
+    "COMM_LAIT_ECH": {
+      "type": "float"
+    },
+    "COMM_OVOL_ECH": {
+      "type": "float"
+    },
+    "COMM_ANIM_ECH": {
+      "type": "float"
+    },
+    "COMM_MIEL_ECH": {
+      "type": "float"
+    },
+    "MOF_SEX_ECH": {
+      "type": "string"
+    },
+    "MOF_ANAIS_ECH": {
+      "type": "float"
+    },
+    "LIENCHEFCOEXP_ECH": {
+      "type": "string"
+    },
+    "MOF_ACTIVEXP_ECH": {
+      "type": "string"
+    },
+    "MOF_SAL_ECH": {
+      "type": "float"
+    },
+    "MOF_PACTDIV_ECH": {
+      "type": "string"
+    },
+    "MOF_TYPLURACT_ECH": {
+      "type": "string"
+    },
+    "MOF_PLURACT_ECH": {
+      "type": "string"
+    },
+    "STATUTDIRIG": {
+      "type": "string"
+    },
+    "SEX": {
+      "type": "string"
+    },
+    "ANAIS": {
+      "type": "float"
+    },
+    "SITCONJ_ECH": {
+      "type": "string"
+    },
+    "ACTCONJ_ECH": {
+      "type": "string"
+    },
+    "LIENCHEF": {
+      "type": "string"
+    },
+    "ACTIVEXP": {
+      "type": "string"
+    },
+    "MOSAL": {
+      "type": "float"
+    },
+    "ANCHEF": {
+      "type": "float"
+    },
+    "INSTALLCF": {
+      "type": "string"
+    },
+    "MOFGENE": {
+      "type": "string"
+    },
+    "MOFAGRI": {
+      "type": "string"
+    },
+    "MOFCONTI": {
+      "type": "float"
+    },
+    "MOPACTDIV_ECH": {
+      "type": "string"
+    },
+    "MOTYPLURACT_ECH": {
+      "type": "string"
+    },
+    "MOPLURACT_ECH": {
+      "type": "string"
+    },
+    "LEGCODE": {
+      "type": "float"
+    },
+    "LEGFIL": {
+      "type": "float"
+    },
+    "LEGDEV": {
+      "type": "float"
+    },
+    "IMPUT_LEG.x": {
+      "type": "float"
+    },
+    "IMPUT_LEG.y": {
+      "type": "float"
+    },
+    "ABATTICODE": {
+      "type": "string"
+    },
+    "ABATTI_P1": {
+      "type": "string"
+    },
+    "ABATTI_P2": {
+      "type": "string"
+    },
+    "ABATTI_P3": {
+      "type": "string"
+    },
+    "ABATTI_P4": {
+      "type": "string"
+    },
+    "ABATTI_P5": {
+      "type": "string"
+    },
+    "ABATTI_P6": {
+      "type": "string"
+    },
+    "ABATTI_P7": {
+      "type": "string"
+    },
+    "ABATTI_P8": {
+      "type": "string"
+    },
+    "ABATTI_SURF_P1": {
+      "type": "float"
+    },
+    "ABATTI_SURF_P2": {
+      "type": "float"
+    },
+    "ABATTI_SURF_P3": {
+      "type": "float"
+    },
+    "ABATTI_SURF_P4": {
+      "type": "float"
+    },
+    "ABATTI_SURF_P5": {
+      "type": "float"
+    },
+    "ABATTI_SURF_P6": {
+      "type": "float"
+    },
+    "ABATTI_SURF_P7": {
+      "type": "float"
+    },
+    "ABATTI_SURF_P8": {
+      "type": "float"
+    },
+    "ABATTI_SERRE_P1": {
+      "type": "float"
+    },
+    "ABATTI_SERRE_P2": {
+      "type": "float"
+    },
+    "ABATTI_SERRE_P3": {
+      "type": "float"
+    },
+    "ABATTI_SERRE_P4": {
+      "type": "float"
+    },
+    "ABATTI_SERRE_P5": {
+      "type": "float"
+    },
+    "ABATTI_SERRE_P6": {
+      "type": "float"
+    },
+    "ABATTI_SERRE_P7": {
+      "type": "float"
+    },
+    "ABATTI_SERRE_P8": {
+      "type": "float"
+    },
+    "PPAM100": {
+      "type": "float"
+    },
+    "PPAM110": {
+      "type": "float"
+    },
+    "PPAM120": {
+      "type": "float"
+    },
+    "PPAM130": {
+      "type": "float"
+    },
+    "PPAM140": {
+      "type": "float"
+    },
+    "PPAM150": {
+      "type": "float"
+    },
+    "PPAM160": {
+      "type": "float"
+    },
+    "PPAM170": {
+      "type": "float"
+    },
+    "PPAM180": {
+      "type": "float"
+    },
+    "PPAM190": {
+      "type": "float"
+    },
+    "PPAM200": {
+      "type": "float"
+    },
+    "PPAM210": {
+      "type": "float"
+    },
+    "PPAM220": {
+      "type": "float"
+    },
+    "PPAM230": {
+      "type": "float"
+    },
+    "PPAM240": {
+      "type": "float"
+    },
+    "PPAM250": {
+      "type": "float"
+    },
+    "PPAM260": {
+      "type": "float"
+    },
+    "PPAM270": {
+      "type": "float"
+    },
+    "PPAM280": {
+      "type": "float"
+    },
+    "PPAM290": {
+      "type": "float"
+    },
+    "PPAM300": {
+      "type": "float"
+    },
+    "PPAM311": {
+      "type": "float"
+    },
+    "PPAM312": {
+      "type": "float"
+    },
+    "PPAM313": {
+      "type": "float"
+    },
+    "PPAM320": {
+      "type": "float"
+    },
+    "PPAM330": {
+      "type": "float"
+    },
+    "PPAM340": {
+      "type": "float"
+    },
+    "PPAM350": {
+      "type": "float"
+    },
+    "SAU_11234300": {
+      "type": "float"
+    },
+    "SAU_11234400": {
+      "type": "float"
+    },
+    "HORTI_AIR_SUR_100": {
+      "type": "float"
+    },
+    "HORTI_AIR_SUR_200": {
+      "type": "float"
+    },
+    "HORTI_AIR_SUR_300": {
+      "type": "float"
+    },
+    "HORTI_AIR_SUR_400": {
+      "type": "float"
+    },
+    "HORTI_AIR_SUR_500": {
+      "type": "float"
+    },
+    "HORTI_AIR_SUR_600": {
+      "type": "float"
+    },
+    "HORTI_SERR_SUR_100": {
+      "type": "float"
+    },
+    "HORTI_SERR_SUR_200": {
+      "type": "float"
+    },
+    "HORTI_SERR_SUR_300": {
+      "type": "float"
+    },
+    "HORTI_SERR_SUR_400": {
+      "type": "float"
+    },
+    "HORTI_SERR_SUR_500": {
+      "type": "float"
+    },
+    "HORTI_SERR_SUR_600": {
+      "type": "float"
+    },
+    "HORTIFIL_110": {
+      "type": "float"
+    },
+    "HORTIPROD_110": {
+      "type": "float"
+    },
+    "HORTIFIL_120": {
+      "type": "float"
+    },
+    "HORTIPROD_120": {
+      "type": "float"
+    },
+    "HORTIFIL_130": {
+      "type": "float"
+    },
+    "HORTIPROD_130": {
+      "type": "float"
+    },
+    "HORTIFIL_140": {
+      "type": "float"
+    },
+    "HORTIPROD_140": {
+      "type": "float"
+    },
+    "HORTIFIL_150": {
+      "type": "float"
+    },
+    "HORTIPROD_150": {
+      "type": "float"
+    },
+    "HORTIFIL_160": {
+      "type": "float"
+    },
+    "HORTIPROD_160": {
+      "type": "float"
+    },
+    "HORTIFIL_170": {
+      "type": "float"
+    },
+    "HORTIPROD_170": {
+      "type": "float"
+    },
+    "HORTIFIL_205": {
+      "type": "float"
+    },
+    "HORTIPROD_205": {
+      "type": "float"
+    },
+    "HORTIFIL_210": {
+      "type": "float"
+    },
+    "HORTIPROD_210": {
+      "type": "float"
+    },
+    "HORTIFIL_220": {
+      "type": "float"
+    },
+    "HORTIPROD_220": {
+      "type": "float"
+    },
+    "HORTIFIL_230": {
+      "type": "float"
+    },
+    "HORTIPROD_230": {
+      "type": "float"
+    },
+    "HORTIFIL_240": {
+      "type": "float"
+    },
+    "HORTIPROD_240": {
+      "type": "float"
+    },
+    "HORTIFIL_250": {
+      "type": "float"
+    },
+    "HORTIPROD_250": {
+      "type": "float"
+    },
+    "HORTIFIL_260": {
+      "type": "float"
+    },
+    "HORTIPROD_260": {
+      "type": "float"
+    },
+    "HORTIFIL_270": {
+      "type": "float"
+    },
+    "HORTIPROD_270": {
+      "type": "float"
+    },
+    "HORTIFIL_310": {
+      "type": "float"
+    },
+    "HORTIPROD_310": {
+      "type": "float"
+    },
+    "HORTIFIL_320": {
+      "type": "float"
+    },
+    "HORTIPROD_320": {
+      "type": "float"
+    },
+    "HORTIFIL_330": {
+      "type": "float"
+    },
+    "HORTIPROD_330": {
+      "type": "float"
+    },
+    "HORTIFIL_340": {
+      "type": "float"
+    },
+    "HORTIPROD_340": {
+      "type": "float"
+    },
+    "HORTIFIL_350": {
+      "type": "float"
+    },
+    "HORTIPROD_350": {
+      "type": "float"
+    },
+    "HORTIFIL_410": {
+      "type": "float"
+    },
+    "HORTIPROD_410": {
+      "type": "float"
+    },
+    "HORTIFIL_420": {
+      "type": "float"
+    },
+    "HORTIPROD_420": {
+      "type": "float"
+    },
+    "HORTIFIL_430": {
+      "type": "float"
+    },
+    "HORTIPROD_430": {
+      "type": "float"
+    },
+    "HORTIFIL_510": {
+      "type": "float"
+    },
+    "HORTIPROD_510": {
+      "type": "float"
+    },
+    "HORTIFIL_520": {
+      "type": "float"
+    },
+    "HORTIPROD_520": {
+      "type": "float"
+    },
+    "HORTIFIL_600": {
+      "type": "float"
+    },
+    "HORTIPROD_600": {
+      "type": "float"
+    },
+    "PEPIFIL_700": {
+      "type": "float"
+    },
+    "PEPIPROD_700": {
+      "type": "float"
+    },
+    "PEPIFIL_710": {
+      "type": "float"
+    },
+    "PEPIPROD_710": {
+      "type": "float"
+    },
+    "PEPIFIL_720": {
+      "type": "float"
+    },
+    "PEPIPROD_720": {
+      "type": "float"
+    },
+    "PEPIFIL_730": {
+      "type": "float"
+    },
+    "PEPIPROD_730": {
+      "type": "float"
+    },
+    "PEPIFIL_740": {
+      "type": "float"
+    },
+    "PEPIPROD_740": {
+      "type": "float"
+    },
+    "SAU_13521100": {
+      "type": "float"
+    },
+    "SAU_13521200": {
+      "type": "float"
+    },
+    "pb01": {
+      "type": "string"
+    },
+    "pb02": {
+      "type": "string"
+    },
+    "pb03": {
+      "type": "string"
+    },
+    "pb04": {
+      "type": "string"
+    },
+    "pb05": {
+      "type": "string"
+    },
+    "pb06": {
+      "type": "string"
+    },
+    "pb07": {
+      "type": "string"
+    },
+    "pb08": {
+      "type": "string"
+    },
+    "pb10": {
+      "type": "string"
+    },
+    "pb11": {
+      "type": "string"
+    },
+    "pb12": {
+      "type": "string"
+    },
+    "pb13": {
+      "type": "string"
+    },
+    "pb14": {
+      "type": "string"
+    },
+    "pb15": {
+      "type": "string"
+    },
+    "pb16": {
+      "type": "string"
+    },
+    "pb18": {
+      "type": "string"
+    },
+    "pb19": {
+      "type": "string"
+    },
+    "pb20": {
+      "type": "string"
+    },
+    "pb21": {
+      "type": "string"
+    },
+    "pb22": {
+      "type": "string"
+    },
+    "pb23": {
+      "type": "string"
+    },
+    "pb24": {
+      "type": "string"
+    },
+    "pb25": {
+      "type": "string"
+    },
+    "pb26": {
+      "type": "string"
+    },
+    "pb27": {
+      "type": "string"
+    },
+    "pb28": {
+      "type": "string"
+    },
+    "pb29": {
+      "type": "string"
+    },
+    "pb30": {
+      "type": "string"
+    },
+    "pb31": {
+      "type": "string"
+    },
+    "pb32": {
+      "type": "string"
+    },
+    "pb33": {
+      "type": "string"
+    },
+    "pb34": {
+      "type": "string"
+    },
+    "pb35": {
+      "type": "string"
+    },
+    "pb36": {
+      "type": "string"
+    },
+    "pb37": {
+      "type": "string"
+    },
+    "pb39": {
+      "type": "string"
+    },
+    "pb41": {
+      "type": "string"
+    },
+    "pb42": {
+      "type": "string"
+    },
+    "pb43": {
+      "type": "string"
+    },
+    "pb46": {
+      "type": "string"
+    },
+    "pb47": {
+      "type": "string"
+    },
+    "pb48": {
+      "type": "string"
+    },
+    "pb49": {
+      "type": "string"
+    },
+    "pb50": {
+      "type": "string"
+    },
+    "pb53a": {
+      "type": "string"
+    },
+    "pb53b": {
+      "type": "string"
+    },
+    "pb54": {
+      "type": "string"
+    },
+    "pb55": {
+      "type": "string"
+    },
+    "pb57": {
+      "type": "string"
+    },
+    "pb58a": {
+      "type": "string"
+    },
+    "pb58b": {
+      "type": "string"
+    },
+    "pb45": {
+      "type": "string"
+    },
+    "pb62": {
+      "type": "string"
+    },
+    "pb63": {
+      "type": "string"
+    },
+    "pb64": {
+      "type": "string"
+    },
+    "pb65": {
+      "type": "string"
+    },
+    "pb66": {
+      "type": "string"
+    },
+    "pb67": {
+      "type": "string"
+    },
+    "pb68": {
+      "type": "string"
+    },
+    "pb69": {
+      "type": "string"
+    },
+    "pb70": {
+      "type": "string"
+    },
+    "pb71": {
+      "type": "string"
+    },
+    "pb72": {
+      "type": "string"
+    },
+    "pb73": {
+      "type": "string"
+    },
+    "pb75": {
+      "type": "string"
+    },
+    "pb74": {
+      "type": "string"
+    },
+    "pb76": {
+      "type": "string"
+    },
+    "pb77": {
+      "type": "string"
+    },
+    "pb78": {
+      "type": "string"
+    },
+    "pb79": {
+      "type": "string"
+    },
+    "pb80": {
+      "type": "string"
+    },
+    "pb81": {
+      "type": "string"
+    },
+    "pb60": {
+      "type": "string"
+    },
+    "pb61": {
+      "type": "string"
+    },
+    "GL": {
+      "type": "string"
+    },
+    "p151": {
+      "type": "string"
+    },
+    "p15": {
+      "type": "string"
+    },
+    "p16": {
+      "type": "string"
+    },
+    "FCP1": {
+      "type": "string"
+    },
+    "FCP4": {
+      "type": "string"
+    },
+    "p17": {
+      "type": "string"
+    },
+    "p1": {
+      "type": "string"
+    },
+    "cop": {
+      "type": "string"
+    },
+    "p2": {
+      "type": "string"
+    },
+    "serre": {
+      "type": "string"
+    },
+    "pleinair": {
+      "type": "string"
+    },
+    "pb53": {
+      "type": "string"
+    },
+    "p3": {
+      "type": "string"
+    },
+    "vignobl": {
+      "type": "string"
+    },
+    "pb58": {
+      "type": "string"
+    },
+    "fruit": {
+      "type": "string"
+    },
+    "oliv": {
+      "type": "string"
+    },
+    "p4": {
+      "type": "string"
+    },
+    "p45": {
+      "type": "string"
+    },
+    "p46": {
+      "type": "string"
+    },
+    "p51": {
+      "type": "string"
+    },
+    "p52": {
+      "type": "string"
+    },
+    "p5": {
+      "type": "string"
+    },
+    "veget": {
+      "type": "string"
+    },
+    "ani": {
+      "type": "string"
+    }
+  }
+}

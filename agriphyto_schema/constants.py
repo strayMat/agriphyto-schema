@@ -7,3 +7,4 @@ DIR2ROOT = Path(__file__).parent.parent.absolute()
 
 DIR2DATA = DIR2ROOT / "data"
 DIR2DICO = DIR2DATA / "raw"
+DIR2SCHEMA = DIR2DATA / "schemas"
