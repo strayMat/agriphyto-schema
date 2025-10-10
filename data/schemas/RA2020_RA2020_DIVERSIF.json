@@ -1,1 +1,96 @@
-"{\n    \"schema_type\": \"dataframe\",\n    \"version\": \"0.26.1\",\n    \"columns\": {\n        \"NOM_DOSSIER\": {\n            \"title\": \"Num\\u00e9ro interne de dossier\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"TYPE_QUESTIONNAIRE\": {\n            \"title\": \"Type de questionnaire\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"DIVACTCOD\": {\n            \"title\": \"Type d'activit\\u00e9 de diversification\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"DIVACTEXP\": {\n            \"title\": \"Activit\\u00e9 en nom propre\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"DIVACTAUT\": {\n            \"title\": \"Activit\\u00e9 par le biais d'une autre entit\\u00e9\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"TRANSFOSST\": {\n            \"title\": \"Transformation en sous-traitance\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"IMPUT_NR_TOT\": {\n            \"title\": \"Indicatrice d'imputation de la non r\\u00e9ponse totale (dossiers enti\\u00e8rement imput\\u00e9s)\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        }\n    },\n    \"checks\": null,\n    \"index\": null,\n    \"dtype\": null,\n    \"coerce\": true,\n    \"strict\": true,\n    \"name\": \"RA2020_RA2020_DIVERSIF\",\n    \"ordered\": false,\n    \"unique\": null,\n    \"report_duplicates\": \"all\",\n    \"unique_column_names\": false,\n    \"add_missing_columns\": false,\n    \"title\": null,\n    \"description\": \"Schema for table RA2020_DIVERSIF from data dictionary RA2020\"\n}"
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DIVACTCOD": {
+            "title": "Type d'activité de diversification",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DIVACTEXP": {
+            "title": "Activité en nom propre",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DIVACTAUT": {
+            "title": "Activité par le biais d'une autre entité",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "TRANSFOSST": {
+            "title": "Transformation en sous-traitance",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "RA2020_RA2020_DIVERSIF",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table RA2020_DIVERSIF from data dictionary RA2020"
+}

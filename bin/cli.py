@@ -4,7 +4,7 @@ import logging
 import click
 
 from agriphyto_schema.constants import LOG_LEVEL
-from agriphyto_schema.utils import hello
+from agriphyto_schema.parse_dicos import AVAILABLE_DICOS, parse_dico
 
 logging.basicConfig(
     level=logging.getLevelName(LOG_LEVEL),
@@ -18,11 +18,14 @@ def cli():
     pass
 
 
-@cli.command()
-def main() -> None:
-    """agriphyto_schema Main entrypoint"""
-    click.secho(hello(), fg="green")
 
+@cli.command()
+@click.option("--dico_name", "-d", required=True, help=f"Parse an Excel data dictionary to create a pandera schema for data validation. Available dicos are {list(AVAILABLE_DICOS.keys())}")
+def parse(dico_name: str) -> None:
+    """
+    Parse an Excel data dictionary to create a pandera schema for data validation.
+    """
+    parse_dico(dico_name)
 
 if __name__ == "__main__":
     cli()

@@ -1,1 +1,140 @@
-"{\n    \"schema_type\": \"dataframe\",\n    \"version\": \"0.26.1\",\n    \"columns\": {\n        \"NOM_DOSSIER\": {\n            \"title\": \"Num\\u00e9ro interne de dossier\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"TYPE_QUESTIONNAIRE\": {\n            \"title\": \"Type de questionnaire\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"MOF_SEX_ECH\": {\n            \"title\": \"Sexe\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"MOF_ANAIS_ECH\": {\n            \"title\": \"Ann\\u00e9e de naissance\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"LIENCHEFCOEXP_ECH\": {\n            \"title\": \"Lien familial avec le chef d'exploitation ou l'un des coexploitants\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"MOF_ACTIVEXP_ECH\": {\n            \"title\": \"Temps de travail sur l'exploitation\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"MOF_SAL_ECH\": {\n            \"title\": \"Salari\\u00e9 de l'exploitation\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"MOF_PACTDIV_ECH\": {\n            \"title\": \"Participation aux activit\\u00e9s de diversification\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"MOF_TYPLURACT_ECH\": {\n            \"title\": \"Type de pluriactivit\\u00e9\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"MOF_PLURACT_ECH\": {\n            \"title\": \"Importance de la pluriactivit\\u00e9 dans le temps de travail\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"IMPUT_NR_TOT\": {\n            \"title\": \"Indicatrice d'imputation de la non r\\u00e9ponse totale (dossiers enti\\u00e8rement imput\\u00e9s)\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        }\n    },\n    \"checks\": null,\n    \"index\": null,\n    \"dtype\": null,\n    \"coerce\": true,\n    \"strict\": true,\n    \"name\": \"RA2020_RA2020_MO_FAM\",\n    \"ordered\": false,\n    \"unique\": null,\n    \"report_duplicates\": \"all\",\n    \"unique_column_names\": false,\n    \"add_missing_columns\": false,\n    \"title\": null,\n    \"description\": \"Schema for table RA2020_MO_FAM from data dictionary RA2020\"\n}"
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOF_SEX_ECH": {
+            "title": "Sexe",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOF_ANAIS_ECH": {
+            "title": "Année de naissance",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "LIENCHEFCOEXP_ECH": {
+            "title": "Lien familial avec le chef d'exploitation ou l'un des coexploitants",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOF_ACTIVEXP_ECH": {
+            "title": "Temps de travail sur l'exploitation",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOF_SAL_ECH": {
+            "title": "Salarié de l'exploitation",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOF_PACTDIV_ECH": {
+            "title": "Participation aux activités de diversification",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOF_TYPLURACT_ECH": {
+            "title": "Type de pluriactivité",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOF_PLURACT_ECH": {
+            "title": "Importance de la pluriactivité dans le temps de travail",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "RA2020_RA2020_MO_FAM",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table RA2020_MO_FAM from data dictionary RA2020"
+}

@@ -1,4 +1,3 @@
-# %%
 """
 
 Parse an Excel data dictionary to create a pandera schema for data validation.
@@ -8,92 +7,126 @@ A schema is named after : the data dictionary name (e.g. RA2020) and the table n
 It is saved in agriphyto_schema/schemas/
 """
 
+import json
+from logging import getLogger
+
 import pandas as pd
 import pandera as pa
-import json
-from constants import DIR2DICO, DIR2SCHEMA
-from logging import getLogger
+
+from agriphyto_schema.constants import (
+        COLNAME_LIBELLE,
+        COLNAME_PANDERA_TYPE,
+        COLNAME_TABLE,
+        COLNAME_TYPE,
+        COLNAME_VARIABLE,
+        DIR2DICO,
+        DIR2SCHEMA,
+        MAP_TYPES,
+)
 
 logger = getLogger(__name__)
 logger.setLevel("DEBUG")
 
-# FIXME: move to constants
-COLNAME_TABLE = "table"
-COLNAME_VARIABLE = "variable"
-COLNAME_LIBELLE = "label"
-COLNAME_TYPE = "type"
-COLNAME_PANDERA_TYPE = "pandera_type"
-# Simple mapping Excel type -> Pandera type
-MAP_TYPES = {"Numérique": "float", "Entier": "int", "Charactères": "string", "Booléen": "bool"}
-# %%
-dico_name = "RA2020"
-filepath2dico = "RA2020_Dictionnaire des variables_220415_CASD.xlsx"
-sheet_name_variables = "1_DICO_Variables"
-skiprows = 3  # number of rows to skip at the beginning of the sheet
-cols_to_use = {
-    "TABLE_DIFFUSION": COLNAME_TABLE,
-    "VARIABLE_DIFFUSION": COLNAME_VARIABLE,
-    "LIBELLE": COLNAME_LIBELLE,
-    "TYPE": COLNAME_TYPE,
+AVAILABLE_DICOS = {
+    "RA2020": {
+        "filename": "RA2020_Dictionnaire des variables_220415_CASD.xlsx",
+        "variable_sheet": "1_DICO_Variables",
+        "skiprows": 3,
+        "cols_to_use": {
+            "TABLE_DIFFUSION": COLNAME_TABLE,
+            "VARIABLE_DIFFUSION": COLNAME_VARIABLE,
+            "LIBELLE": COLNAME_LIBELLE,
+            "TYPE": COLNAME_TYPE,
+        },
+        "encoding": "latin1",
+    }
 }
 
-dico = pd.read_excel(DIR2DICO / filepath2dico, sheet_name=sheet_name_variables, skiprows=skiprows)
-dico.rename(columns=cols_to_use, inplace=True)
-dico = dico[cols_to_use.values()]
-dico = dico.dropna(subset=[COLNAME_VARIABLE]).reset_index(drop=True)
-# Drop empty rows
-table_names = dico[COLNAME_TABLE].dropna().unique().tolist()
-logger.info(f"Found tables: {table_names}")
-# %%
-# TODO: add modalities
-# --- nomenclature / modalities
-# mods = pd.read_excel(filepath2dico, sheet_name="2_MODALITES_Variables")
-# assuming it has at least columns: VARIABLE, MODALITE (adjust names if different)
-# mods.columns = [c.upper() for c in mods.columns]
-# %%
-
-
 def map_type(x):
-    for k, v in MAP_TYPES.items():
-        if isinstance(x, str) and k.lower() in x.lower():
-            return v
-    return "string"
+        """
+        Map Excel type to Pandera type using MAP_TYPES dictionary."""
+        for k, v in MAP_TYPES.items():
+            if isinstance(x, str) and k.lower() in x.lower():
+                return v
+        return "string"
 
+def parse_dico(dico_name: str) -> None:
+    """
+    Parse an Excel data dictionary to create a pandera schema for data validation.
 
-dico[COLNAME_PANDERA_TYPE] = dico[COLNAME_TYPE].apply(map_type)
-# FIXME: need to create one schema for each table
-for table in table_names:
-    n_vars = dico[dico[COLNAME_TABLE] == table].shape[0]
-    logger.info(f"Table {table} has {n_vars} variables")
-    table_dico = dico[dico[COLNAME_TABLE] == table].reset_index(drop=True)
-    # Assemble pandera schema with categories when available
-    pandera_schema = pa.DataFrameSchema(
-        columns={},
-        strict=True,
-        coerce=True,
-        name=f"{dico_name}_{table}",
-        description=f"Schema for table {table} from data dictionary {dico_name}",
+    Parameters
+    ----------
+    dico_name : str
+        The name of the data dictionary (e.g. "RA2020").
+
+    Returns
+    -------
+    None
+        Saves the pandera schema JSON files in agriphyto_schema/data/schemas/
+    """
+    filepath2dico = AVAILABLE_DICOS[dico_name]["filename"]
+    sheet_name_variables = AVAILABLE_DICOS[dico_name]["variable_sheet"]
+    skiprows = AVAILABLE_DICOS[dico_name]["skiprows"]
+    cols_to_use = AVAILABLE_DICOS[dico_name]["cols_to_use"]
+
+    dico = pd.read_excel(
+        DIR2DICO / filepath2dico,
+        sheet_name=sheet_name_variables,
+        skiprows=skiprows,
     )
-    # Add columns
-    for _, row in table_dico.iterrows():
-        var_name = row.get(COLNAME_VARIABLE)
-        col_schema = pa.Column(
-            name=var_name, dtype=row.get(COLNAME_PANDERA_TYPE), nullable=True, title=row.get(COLNAME_LIBELLE)
+    dico.rename(columns=cols_to_use, inplace=True)
+    dico = dico[cols_to_use.values()]
+    dico = dico.dropna(subset=[COLNAME_VARIABLE]).reset_index(drop=True)
+    # Drop empty rows
+    table_names = dico[COLNAME_TABLE].dropna().unique().tolist()
+    logger.info(f"Found tables: {table_names}")
+    # TODO: add modalities
+    # --- nomenclature / modalities
+    # mods = pd.read_excel(filepath2dico, sheet_name="2_MODALITES_Variables")
+    # assuming it has at least columns: VARIABLE, MODALITE (adjust names if different)
+    # mods.columns = [c.upper() for c in mods.columns]
+
+    dico[COLNAME_PANDERA_TYPE] = dico[COLNAME_TYPE].apply(map_type)
+    for table in table_names:
+        n_vars = dico[dico[COLNAME_TABLE] == table].shape[0]
+        logger.info(f"Table {table} has {n_vars} variables")
+        table_dico = dico[dico[COLNAME_TABLE] == table].reset_index(drop=True)
+        # Assemble pandera schema with categories when available
+        pandera_schema = pa.DataFrameSchema(
+            columns={},
+            strict=True,
+            coerce=True,
+            name=f"{dico_name}_{table}",
+            description=f"Schema for table {table} from data dictionary {dico_name}",
         )
-        pandera_schema.columns[var_name] = col_schema
-        # if row.VARIABLE in categories:
-        #     col_schema["checks"] = {
-        #         "isin": categories[row.VARIABLE]  # Pandera supports Check.isin([...])
-        #     }
+        # Add columns
+        for _, row in table_dico.iterrows():
+            var_name = row.get(COLNAME_VARIABLE)
+            col_schema = pa.Column(
+                name=var_name,
+                dtype=row.get(COLNAME_PANDERA_TYPE),
+                nullable=True,
+                title=row.get(COLNAME_LIBELLE),
+            )
+            pandera_schema.columns[var_name] = col_schema
+            # if row.VARIABLE in categories:
+            #     col_schema["checks"] = {
+            #         "isin": categories[row.VARIABLE]  # Pandera supports Check.isin([...])
+            #     }
 
-        # Build allowed categories dict from modalities
-        # categories = (
-        #     mods.groupby("VARIABLE")["MODALITE"]
-        #     .apply(lambda s: sorted(set(s.dropna().astype(str))))
-        #     .to_dict()
-        # )
+            # Build allowed categories dict from modalities
+            # categories = (
+            #     mods.groupby("VARIABLE")["MODALITE"]
+            #     .apply(lambda s: sorted(set(s.dropna().astype(str))))
+            #     .to_dict()
+            # )
         # Save to JSON
-        with open(DIR2SCHEMA / f"{pandera_schema.name}.json", "w", encoding="utf-8") as f:
-            json.dump(pandera_schema.to_json(indent=4), f, ensure_ascii=False)
-
-# %%
+        with open(
+            DIR2SCHEMA / f"{pandera_schema.name}.json",
+            "w",
+            encoding="utf-8",
+        ) as f:
+            f.write(
+                pandera_schema.to_json(indent=4, ensure_ascii=False)
+            )
+        logger.info(f"Saved schema for table {table} to {DIR2SCHEMA / f'{pandera_schema.name}.json'}")

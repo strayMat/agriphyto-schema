@@ -1,1 +1,184 @@
-"{\n    \"schema_type\": \"dataframe\",\n    \"version\": \"0.26.1\",\n    \"columns\": {\n        \"NOM_DOSSIER\": {\n            \"title\": \"Num\\u00e9ro interne de dossier\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"TYPE_QUESTIONNAIRE\": {\n            \"title\": \"Type de questionnaire\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_CIRCUIT_ECH\": {\n            \"title\": \"Circuit de commercialisation\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_COP_ECH\": {\n            \"title\": \"Produits c\\u00e9r\\u00e9aliers,  ol\\u00e9agineux et prot\\u00e9agineux, l\\u00e9gumes secs\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_TUB_DOM\": {\n            \"title\": \"Tubercules transform\\u00e9s (farine de manioc, kwak...)\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_LEG_ECH\": {\n            \"title\": \"L\\u00e9gumes frais et transform\\u00e9s, pommes de terre\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_VIN_ECH\": {\n            \"title\": \"Vin, raisin de table, alcools issus de vins\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_HOLI_ECH\": {\n            \"title\": \"Olive, huile d'olives\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_FRUIT_ECH\": {\n            \"title\": \"Fruits frais et transform\\u00e9s\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_AUTR_ECH\": {\n            \"title\": \"Autres produits v\\u00e9g\\u00e9taux, fleurs, horticulture\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_LAIT_ECH\": {\n            \"title\": \"Produits laitiers\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_OVOL_ECH\": {\n            \"title\": \"\\u0152ufs, volailles\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_ANIM_ECH\": {\n            \"title\": \"Viande hors volaille, autres produits animaux\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"COMM_MIEL_ECH\": {\n            \"title\": \"Miel, produits \\u00e0 base de miel\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"IMPUT_NR_TOT\": {\n            \"title\": \"Indicatrice d'imputation de la non r\\u00e9ponse totale (dossiers enti\\u00e8rement imput\\u00e9s)\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        }\n    },\n    \"checks\": null,\n    \"index\": null,\n    \"dtype\": null,\n    \"coerce\": true,\n    \"strict\": true,\n    \"name\": \"RA2020_RA2020_COM_CIRCUIT\",\n    \"ordered\": false,\n    \"unique\": null,\n    \"report_duplicates\": \"all\",\n    \"unique_column_names\": false,\n    \"add_missing_columns\": false,\n    \"title\": null,\n    \"description\": \"Schema for table RA2020_COM_CIRCUIT from data dictionary RA2020\"\n}"
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_CIRCUIT_ECH": {
+            "title": "Circuit de commercialisation",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_COP_ECH": {
+            "title": "Produits céréaliers,  oléagineux et protéagineux, légumes secs",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_TUB_DOM": {
+            "title": "Tubercules transformés (farine de manioc, kwak...)",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_LEG_ECH": {
+            "title": "Légumes frais et transformés, pommes de terre",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_VIN_ECH": {
+            "title": "Vin, raisin de table, alcools issus de vins",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_HOLI_ECH": {
+            "title": "Olive, huile d'olives",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_FRUIT_ECH": {
+            "title": "Fruits frais et transformés",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_AUTR_ECH": {
+            "title": "Autres produits végétaux, fleurs, horticulture",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_LAIT_ECH": {
+            "title": "Produits laitiers",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_OVOL_ECH": {
+            "title": "Œufs, volailles",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_ANIM_ECH": {
+            "title": "Viande hors volaille, autres produits animaux",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_MIEL_ECH": {
+            "title": "Miel, produits à base de miel",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "RA2020_RA2020_COM_CIRCUIT",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table RA2020_COM_CIRCUIT from data dictionary RA2020"
+}

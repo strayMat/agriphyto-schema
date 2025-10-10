@@ -1,1 +1,184 @@
-"{\n    \"schema_type\": \"dataframe\",\n    \"version\": \"0.26.1\",\n    \"columns\": {\n        \"NOM_DOSSIER\": {\n            \"title\": \"Num\\u00e9ro interne de dossier\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"TYPE_QUESTIONNAIRE\": {\n            \"title\": \"Type de questionnaire\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_CODE\": {\n            \"title\": \"CIRCOU_CODE\",\n            \"description\": null,\n            \"dtype\": \"string[python]\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_COP\": {\n            \"title\": \"Produits c\\u00e9r\\u00e9aliers (meunerie, pains, p\\u00e2tes, bi\\u00e8res), ol\\u00e9agineux et l\\u00e9gumes secs\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_TUB_DOM\": {\n            \"title\": \"Transformation de tubercules (farine de manioc etc)\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_LEG\": {\n            \"title\": \"L\\u00e9gumes frais et transform\\u00e9s et pommes de terre\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_VIN\": {\n            \"title\": \"Raisins, vins, alcools issus de vins\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_HOLI\": {\n            \"title\": \"Huile d'olive et olives\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_FRUIT\": {\n            \"title\": \"Fruits frais et transform\\u00e9s\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_AUTR\": {\n            \"title\": \"Autres produits agricoles, y compris cultures industrielles (betterave etc) et fleurs, horticulture\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_LAIT\": {\n            \"title\": \"Produits laitiers\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_OVOL\": {\n            \"title\": \"Oeufs et volailles\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_ANIM\": {\n            \"title\": \"Animaux vivants et autres produits animaux (hors  \\u0153ufs et volailles)\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"CIRCOU_MIEL\": {\n            \"title\": \"Miel\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        },\n        \"IMPUT_NR_TOT\": {\n            \"title\": \"Indicatrice d'imputation de la non r\\u00e9ponse totale (dossiers enti\\u00e8rement imput\\u00e9s)\",\n            \"description\": null,\n            \"dtype\": \"float64\",\n            \"nullable\": true,\n            \"checks\": null,\n            \"unique\": false,\n            \"coerce\": false,\n            \"required\": true,\n            \"regex\": false\n        }\n    },\n    \"checks\": null,\n    \"index\": null,\n    \"dtype\": null,\n    \"coerce\": true,\n    \"strict\": true,\n    \"name\": \"RA2020_RA2020_COM_CIRCOU\",\n    \"ordered\": false,\n    \"unique\": null,\n    \"report_duplicates\": \"all\",\n    \"unique_column_names\": false,\n    \"add_missing_columns\": false,\n    \"title\": null,\n    \"description\": \"Schema for table RA2020_COM_CIRCOU from data dictionary RA2020\"\n}"
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_CODE": {
+            "title": "CIRCOU_CODE",
+            "description": null,
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_COP": {
+            "title": "Produits céréaliers (meunerie, pains, pâtes, bières), oléagineux et légumes secs",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_TUB_DOM": {
+            "title": "Transformation de tubercules (farine de manioc etc)",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_LEG": {
+            "title": "Légumes frais et transformés et pommes de terre",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_VIN": {
+            "title": "Raisins, vins, alcools issus de vins",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_HOLI": {
+            "title": "Huile d'olive et olives",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_FRUIT": {
+            "title": "Fruits frais et transformés",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_AUTR": {
+            "title": "Autres produits agricoles, y compris cultures industrielles (betterave etc) et fleurs, horticulture",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_LAIT": {
+            "title": "Produits laitiers",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_OVOL": {
+            "title": "Oeufs et volailles",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_ANIM": {
+            "title": "Animaux vivants et autres produits animaux (hors  œufs et volailles)",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_MIEL": {
+            "title": "Miel",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
+            "description": null,
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "RA2020_RA2020_COM_CIRCOU",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table RA2020_COM_CIRCOU from data dictionary RA2020"
+}
