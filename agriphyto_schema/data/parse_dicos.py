@@ -7,13 +7,13 @@ A schema is named after : the data dictionary name (e.g. RA2020) and the table n
 It is saved in agriphyto_schema/schemas/
 """
 
-import json
 from logging import getLogger
 
 import pandas as pd
 import pandera as pa
 
 from agriphyto_schema.constants import (
+        AVAILABLE_DICOS,
         COLNAME_LIBELLE,
         COLNAME_PANDERA_TYPE,
         COLNAME_TABLE,
@@ -27,20 +27,7 @@ from agriphyto_schema.constants import (
 logger = getLogger(__name__)
 logger.setLevel("DEBUG")
 
-AVAILABLE_DICOS = {
-    "RA2020": {
-        "filename": "RA2020_Dictionnaire des variables_220415_CASD.xlsx",
-        "variable_sheet": "1_DICO_Variables",
-        "skiprows": 3,
-        "cols_to_use": {
-            "TABLE_DIFFUSION": COLNAME_TABLE,
-            "VARIABLE_DIFFUSION": COLNAME_VARIABLE,
-            "LIBELLE": COLNAME_LIBELLE,
-            "TYPE": COLNAME_TYPE,
-        },
-        "encoding": "latin1",
-    }
-}
+
 
 def map_type(x):
         """
@@ -64,6 +51,9 @@ def parse_dico(dico_name: str) -> None:
     None
         Saves the pandera schema JSON files in agriphyto_schema/data/schemas/
     """
+    if dico_name not in AVAILABLE_DICOS:
+        available_dico = list(AVAILABLE_DICOS.keys())
+        raise ValueError(f"Accepted dico_name: {available_dico}. Got {dico_name}")  # noqa: TRY003
     filepath2dico = AVAILABLE_DICOS[dico_name]["filename"]
     sheet_name_variables = AVAILABLE_DICOS[dico_name]["variable_sheet"]
     skiprows = AVAILABLE_DICOS[dico_name]["skiprows"]

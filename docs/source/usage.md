@@ -20,7 +20,11 @@ pip install agriphyto_schema
 
 ## Using the project
 
-- TODO
+### Running the application
+
+```shell
+uv run streamlit run agriphyto_schema/app/app.py
+```
 
 ### Running the project
 

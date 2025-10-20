@@ -23,3 +23,37 @@ MAP_TYPES = {
     "Charactères": "string",
     "Booléen": "bool",
 }
+
+# Configurations for loaded dictionnaries
+AVAILABLE_DICOS = {
+    "RA2020": {
+        "filename": "RA2020_Dictionnaire des variables_220415_CASD.xlsx",
+        "variable_sheet": "1_DICO_Variables",
+        "skiprows": 3,
+        "cols_to_use": {
+            "TABLE_DIFFUSION": COLNAME_TABLE,
+            "VARIABLE_DIFFUSION": COLNAME_VARIABLE,
+            "LIBELLE": COLNAME_LIBELLE,
+            "TYPE": COLNAME_TYPE,
+        },
+        "encoding": "latin1",
+    }
+}
+
+# Output dictionary columns
+COLNAME_OUT_DB = "Database"
+COLNAME_OUT_TABLE = "Table"
+COLNAME_OUT_VARIABLE = "Variable"
+COLNAME_OUT_PANDERA_TYPE = "Type"
+COLNAME_OUT_LIBELLE = "Label"
+COLNAME_OUT_NOMENCLATURE = "Nomenclature"
+COLNAMES_OUTPUT = [
+    COLNAME_OUT_DB,
+    COLNAME_OUT_TABLE,
+    COLNAME_OUT_VARIABLE,
+    COLNAME_OUT_LIBELLE,
+    COLNAME_OUT_PANDERA_TYPE,
+    COLNAME_OUT_NOMENCLATURE,
+]
+
+AGRIPHYTO_DICO_NAME = "agriphyto_data_dictionary"

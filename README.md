@@ -56,7 +56,7 @@
 
 ### Technologies
 
-> 📝 **Explication du contenu à rédiger**
+> python 3.12
 >
 > Donner quelques repères sur les technologies utilisées : langage, logiciels, éventuellement dossiers où trouver le code, etc.
 
@@ -73,13 +73,7 @@
 
 ## Contacts
 
-> 📝 **Explication du contenu à rédiger**
->
-> Description des contacts importants du projet, en précisant pour chacun :
->
-> - l'organisation (service, pôle, etc),
-> - le rôle sur le projet,
-> - le contact mail (générique et non personnel).
+D2E, division RPS ou macro : matthieu.doutreligne@insee.fr
 
 ## Détails techniques (optionnel)
 
