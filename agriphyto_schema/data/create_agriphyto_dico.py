@@ -8,6 +8,7 @@ import pandas as pd
 import pandera as pa
 
 from agriphyto_schema.constants import (
+    AGRIPHYTO_DICO_NAME,
     COLNAME_OUT_DB,
     COLNAME_OUT_LIBELLE,
     COLNAME_OUT_NOMENCLATURE,
@@ -16,7 +17,6 @@ from agriphyto_schema.constants import (
     COLNAME_OUT_VARIABLE,
     DIR2DATA,
     DIR2SCHEMA,
-    AGRIPHYTO_DICO_NAME,
 )
 
 logger = logging.getLogger(__name__)
@@ -45,7 +45,7 @@ def pandera_schema2df(
             COLNAME_OUT_VARIABLE: colname,
             COLNAME_OUT_LIBELLE: col_schema.title,
             COLNAME_OUT_PANDERA_TYPE: str(col_schema.dtype.type.name),
-            COLNAME_OUT_NOMENCLATURE: "",
+            COLNAME_OUT_NOMENCLATURE: col_schema.metadata.get("nomenclature_name", None)
         }
         table_dico.append(col_line)
     return pd.DataFrame(table_dico)

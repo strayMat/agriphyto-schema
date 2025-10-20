@@ -1,0 +1,5 @@
+,DIMECO,"Dimension économique, agrégée"
+0,1,Micro exploitations :  PBS inférieure à 25 000 euros
+1,2,Petites exploitations :  PBS comprise entre 25 000 et inférieure à 100 000 euros
+2,3,"Moyennes exploitations, PBS comprise entre 100 000 et inférieure à 250 000 euros"
+3,4,"Grandes exploitations, PBS supérieure ou égale à 250 000 euros"

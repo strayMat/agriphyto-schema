@@ -22,15 +22,18 @@ def cli():
     "--dico_name",
     "-d",
     required=True,
-    help=f"Parse an Excel data dictionary to create a pandera schema for data validation. Available dicos are {list(AVAILABLE_DICOS.keys())}",
+    help=f"Parse an Excel data dictionary to create a pandera schema for data validation. Available dicos are : 'all' or one in {list(AVAILABLE_DICOS.keys())}",
 )
 def parse(dico_name: str) -> None:
     """
     Parse an Excel data dictionary to create a pandera schema for data validation.
     """
     from agriphyto_schema.data.parse_dicos import parse_dico
-
-    parse_dico(dico_name)
+    if dico_name == "all":
+        for dico in AVAILABLE_DICOS:
+            parse_dico(dico)
+    else:
+        parse_dico(dico_name)
 
 
 @cli.command()

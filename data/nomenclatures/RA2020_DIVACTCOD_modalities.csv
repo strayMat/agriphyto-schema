@@ -1,0 +1,37 @@
+,DIVACTCOD,"Activités de diversification, dont transformation de produits agricoles"
+0,0110,"Transformation de céréales (meunerie, pain, pâtes, bières…)"
+1,0120,Transformation d’oléagineux (huiles de consommation ou pour combustibles)
+2,0130,Production d’huiles essentielles et hydrolats
+3,0140,"Transformation de légumes (soupe, conserves…)"
+4,0150,"Transformation de racines ou tubercules (farine de manioc, kwak,…)"
+5,0161,"Vinification à la ferme (y compris vin doux, Muscat, Pineau, Floc…)"
+6,0162,"Production d’alcool issu de vin (Armagnac, Cognac…)"
+7,0170,"Production issue de canne à sucre (jus de canne, rhum…)"
+8,0181,Production d’huile d’olive
+9,0182,"Transformation de fruits (confitures, sirops, liqueurs, jus de fruits, cidre, calvados, poiré…)"
+10,0210,"Transformation de lait (beurre, yaourts, fromages, crème…)"
+11,0221,"Transformation de viandes (pâtés, salaisons, conserves…)"
+12,0222,"Découpe de viandes, caissettes…"
+13,0230,Production de produits à base de miel
+14,0900,Transformation d’autres produits agricoles (hors aliments pour les animaux de l’exploitation)
+15,5020,"Travail agricole pour d’autres exploitations (moisson, fenaison, vendange, entretien de clôtures, curage de fossés…)"
+16,5030,"Travail non agricole (pour d’autres types d’entreprises : transport, chantiers, travaux publics, déneigement…)"
+17,1010,"Hébergement (chambres d’hôte, gîtes, camping à la ferme…)"
+18,1030,"Restauration (table d'hôte, ferme auberge)"
+19,1020,"Restauration (table d’hôte, ferme auberge…)"
+20,1040,"Service de santé, services sociaux ou éducatifs (ferme pédagogique, médiation animale…)"
+21,4040,Vente d'énergie Solaire / Photovoltaïque
+22,4049,"Mise à disposition de surfaces pour le Solaire/Photovoltaïque (toiture, parcelles…)"
+23,4031,Production individuelle de biogaz / unité de méthanisation
+24,4032,Production collective de biogaz / unité de méthanisation (détenue par plusieurs agriculteurs)
+25,4033,Production centralisée de biogaz / méthanisation (détenue par une collectivité ou une société privée)
+26,4010,Vente d'énergie éolienne
+27,4019,Mise à disposition de surfaces pour l’éolien
+28,4020,"Valorisation de biomasse (plaquettes, bois…)"
+29,4050,Production d'énergie hydraulique
+30,6010,Sylviculture (production de bois sur pied)
+31,6020,"Transformation de bois pour la vente (sciage, bois de chauffage…)/Exploitation forestière( y c. abattage et débardage)"
+32,2010,"Artisanat (vannerie, tannerie…)"
+33,5010,"Aquaculture (pisciculture, conchyliculture, algoculture, spiruline…)"
+34,8000,Activités de négoce : achat vente de produits agricoles en provenance d’autres exploitations
+35,9000,Autres  (gardiennage de caravane ou camping cars - hors pension d’animaux)

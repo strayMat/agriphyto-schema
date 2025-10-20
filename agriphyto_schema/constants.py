@@ -8,6 +8,7 @@ DIR2ROOT = Path(__file__).parent.parent.absolute()
 DIR2DATA = DIR2ROOT / "data"
 DIR2DICO = DIR2DATA / "raw"
 DIR2SCHEMA = DIR2DATA / "schemas"
+DIR2NOMENCLATURES = DIR2DATA / "nomenclatures"
 
 
 COLNAME_TABLE = "table"
@@ -24,17 +25,24 @@ MAP_TYPES = {
     "Booléen": "bool",
 }
 
-# Configurations for loaded dictionnaries
+# Configurations for loaded dictionaries
 AVAILABLE_DICOS = {
     "RA2020": {
         "filename": "RA2020_Dictionnaire des variables_220415_CASD.xlsx",
         "variable_sheet": "1_DICO_Variables",
         "skiprows": 3,
+        "modalites_sheet": "2_MODALITES_Variables",
+        "skiprows_modalites": 2,
         "cols_to_use": {
             "TABLE_DIFFUSION": COLNAME_TABLE,
             "VARIABLE_DIFFUSION": COLNAME_VARIABLE,
             "LIBELLE": COLNAME_LIBELLE,
             "TYPE": COLNAME_TYPE,
+        },
+        "modalites_cols_to_use": {
+            "TABLE": COLNAME_TABLE,
+            "VARIABLE et MODALITES par table  ": COLNAME_VARIABLE,
+            "LIBELLE": COLNAME_LIBELLE,
         },
         "encoding": "latin1",
     }
