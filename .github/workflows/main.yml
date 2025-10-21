@@ -13,12 +13,17 @@ on:
 jobs:
   quality:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.13"]
     steps:
       - name: Check out
         uses: actions/checkout@v4
 
       - name: Set up the environment
         uses: ./.github/actions/setup-python-env
+        with:
+          python-version: 3.13
 
       - name: Run checks
         run: make check
