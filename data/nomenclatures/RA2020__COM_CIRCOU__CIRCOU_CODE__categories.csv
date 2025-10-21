@@ -1,0 +1,14 @@
+CIRCOU_CODE,Type de circuit court
+0100,"Vente directe à la ferme (espace de vente sur l’exploitation, cueillette, marché à la ferme ou en bord de route…)"
+0200,Vente directe en point de vente collectif (ex magasin de producteurs)
+0300,Vente directe sur les marchés/halles
+0600,Vente en AMAP/paniers (ex les paniers du Val de Loire)
+0400,"Vente directe en tournée, à domicile (hors paniers)"
+0510,Vente via un site internet de l’exploitation
+0520,"Vente via une plateforme de commande en ligne (ex. drive fermier, ruche-qui-dit-oui, Pourdebon…)"
+0590,"Vente par autres correspondances (courriel, téléphone…)"
+0700,Vente en salons et foires
+0900,Vente à la restauration collective
+0800,Vente à des restaurants (hors restauration collective)
+1000,"Vente à des commerçants détaillants (bouchers, primeurs, épiciers de quartier…)"
+1100,Vente à la distribution (grandes et moyennes surfaces)

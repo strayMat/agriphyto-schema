@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 
@@ -24,7 +26,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     modification_container = st.container()
 
     with modification_container:
-        left, right = st.columns((1, 20))
+        _, right = st.columns((1, 20))
 
         # Filter in the label and variable columns using text
         user_text_input = right.text_input(
@@ -64,4 +66,17 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
             )
             df = df[df[COLNAME_OUT_TABLE].isin(user_cat_input)]
 
+    return df
+
+# Loading fonctions with caching
+@st.cache_data  # allow caching (mainly useful for development)
+def load_dico(path2dico: str | Path):
+    return pd.read_csv(path2dico)
+
+@st.cache_data
+def load_nomenclature(
+    path2nomenclature: str | Path,
+) -> pd.DataFrame:
+    # Lecture du fichier CSV
+    df = pd.read_csv(path2nomenclature)
     return df

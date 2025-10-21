@@ -1,0 +1,64 @@
+LEGCOD,Légume développé
+010,Ail
+020,Artichaut
+030,Asperge
+041,Aubergine plein air ou abri bas
+042,Aubergine sous serre ou abri haut
+050,Bette et carde
+060,Betterave potagère
+070,Brède
+080,Brocolis
+090,Carotte
+100,Céleri branche
+110,Céleri rave
+121,Chou blanc
+122,Chou de Bruxelles
+123,Chou chinois
+124,Chou à choucroute
+125,Chou fleur
+126,Chou vert
+127,Chou autres
+130,"Christophines, chayotte, chouchou"
+141,Concombre plein air ou abri bas
+142,Concombre sous serre ou abri haut
+151,Courgette plein air ou abri bas
+152,Courgette sous serre ou abri haut
+160,Echalote
+170,Epinard
+180,Fenouil
+190,Fève
+200,Flageolet
+201,Fraise plein air ou abri bas
+202,Fraise sous serre ou abri haut pleine terre
+203,Fraise sous serre ou abri haut hors sol
+210,Gombo
+220,Haricot à écosser et demi sec
+230,"Haricot vert, beurre"
+240,Maïs doux
+251,Melon plein air ou abri bas
+252,Melon sous serre ou abri haut
+260,Navet potager
+271,Oignon blanc
+272,Oignon de couleur
+273,"Oignon de pays (cive, oignon vert...)"
+274,Oignon autres
+280,Pastèque
+290,Petits pois
+300,Plants de légumes
+310,Poireau
+320,Poivron
+330,"Potiron, courge, giraumon, citrouille"
+340,Radis
+350,Raifort cultivé ou radis noir
+361,Salade plein air ou abri bas
+362,Salade sous serre ou abri haut
+371,Salade – chicorée
+372,Salade – laitue
+373,Salade – mâche
+374,Salade – cresson
+375,Salade – autres
+380,Salsifis
+391,Tomates plein air
+392,Tomates sous serre ou abri haut
+393,Tomates sous serre ou abri haut hors sol
+400,Légumes autres

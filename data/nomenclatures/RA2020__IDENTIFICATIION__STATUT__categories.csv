@@ -1,0 +1,6 @@
+STATUT,Statut juridique du siret saisi
+01,Exploitant individuel 
+02,GAEC
+03,EARL
+08,"Groupement de fait non doté de la personnalité morale (indivisions, société de fait, société en participation, fiducie…)"
+09,"Autres personnes morales (SCEA, SA, SARL, SAS…)"

@@ -18,6 +18,7 @@ from agriphyto_schema.constants import (
     DIR2DATA,
     DIR2SCHEMA,
 )
+from agriphyto_schema.utils import pandera_from_json
 
 logger = logging.getLogger(__name__)
 
@@ -39,13 +40,17 @@ def pandera_schema2df(
     """
     table_dico = []
     for colname, col_schema in schema.columns.items():
+        if col_schema.metadata:
+            nomenclature = col_schema.metadata.get("nomenclature", None)
+        else:
+            nomenclature = None
         col_line = {
             COLNAME_OUT_DB: db_name,
             COLNAME_OUT_TABLE: table_name,
             COLNAME_OUT_VARIABLE: colname,
             COLNAME_OUT_LIBELLE: col_schema.title,
             COLNAME_OUT_PANDERA_TYPE: str(col_schema.dtype.type.name),
-            COLNAME_OUT_NOMENCLATURE: col_schema.metadata.get("nomenclature_name", None)
+            COLNAME_OUT_NOMENCLATURE: nomenclature
         }
         table_dico.append(col_line)
     return pd.DataFrame(table_dico)
@@ -54,6 +59,7 @@ def pandera_schema2df(
 def aggregate_schemas() -> pd.DataFrame:
     """
     Aggregate multiple pandera schemas into one dictionary (pandas dataframe).
+    By default, aggregates all available schemas in DIR2SCHEMA.
 
     Returns
     -------
@@ -65,9 +71,9 @@ def aggregate_schemas() -> pd.DataFrame:
     aggregated_schemas_list = []
     for schema_path in available_schemas:
         schema_name = schema_path.stem
-        db_name, table_name = schema_name.split("_", 1)
+        db_name, table_name = schema_name.split("__", 1)
         schema_path = DIR2SCHEMA / f"{schema_name}.json"
-        schema = pa.DataFrameSchema.from_json(schema_path)
+        schema = pandera_from_json(schema_path)
         pd_dico = pandera_schema2df(schema, db_name, table_name)
         aggregated_schemas_list.append(pd_dico)
 

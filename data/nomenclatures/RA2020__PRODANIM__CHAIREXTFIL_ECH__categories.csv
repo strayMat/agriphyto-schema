@@ -1,0 +1,21 @@
+CHAIREXTFIL_ECH,"Accès à un parcours extérieur pour les volailles de chair, y compris prêt à gaver"
+1,"Oui, pour toutes les volailles de chair "
+2,"Oui, pour une partie des volailles de chair"
+3,Non
+AALIMBOVF_ECH,Bovins / fourrages
+AALIMBOVC_ECH,Bovins / concentrés
+AALIMOVF_ECH,Ovins / fourrages
+AALIMOVC_ECH,Ovins / concentrés
+AALIMCAPF_ECH,Caprins / fourrages
+AALIMCAPC_ECH,Caprins / concentrés
+AALIMPORC_ECH,Porcins / concentrés
+AALIMPOUC_ECH,Poules pondeuses et poulettes / concentrés
+AALIMVOLC_ECH,Volailles de chair et prêt-à-gaver / concentrés
+AALIMGAVC_ECH,Canards et oies en gavage / concentrés
+1,90 % et plus
+2,De 75 % à moins de 90 %
+3,De 50 % à moins de 75 %
+4,De 25 % à moins de 50 %
+5,Inférieur à 25 %
+6,Aucune autonomie (tout est acheté)
+7,"Sans objet, ce type d'aliment n'est pas utilisé"

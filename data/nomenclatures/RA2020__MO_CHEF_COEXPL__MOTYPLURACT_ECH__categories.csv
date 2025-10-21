@@ -1,0 +1,13 @@
+MOTYPLURACT_ECH,Type de pluriactivité
+1,Aucune
+2,Exploitant agricole (dans une autre exploitation)
+3,"Artisan, commerçant et chef d'entreprise"
+4,Cadre et profession intellectuelle supérieure
+5,"Profession intermédiaire (instituteur, technicien, …)"
+6,"Employé (secrétaire, agents de bureau, vendeurs,…)"
+7,Salarié agricole
+8,Ouvrier non agricole
+9,"Élu (maire, député, conseiller départemental)"
+10,"Élu agricole (chambre d'agriculture, coop, MSA, CUMA, …)"
+11,ETA
+12,Autre

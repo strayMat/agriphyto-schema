@@ -17,26 +17,9 @@ from agriphyto_schema.constants import (
     DIR2DICO
 
 )
-from agriphyto_schema.data.parse_dicos import parse_dico
-# %% 
+# %%
 dico_name = "RA2020"
 # %%
-# Find where variable names appear
-modalite_table_col = "TABLE"
-var_col = "VARIABLE et MODALITES par table  "
-label_col = "LIBELLE"
-
-mask = modalites_df[modalite_table_col].notna()
-starts = modalites_df.index[mask].tolist() + [len(modalites_df)]
-
-modalites_dfs_clean = {}
-for i in range(len(starts) - 1):
-    var_name = modalites_df.loc[starts[i], var_col]
-    sub = modalites_df.iloc[starts[i] + 1 : starts[i + 1]].copy()[[var_col, label_col]]
-    sub.columns = modalites_df.iloc[starts[i], :][[var_col, label_col]]  # use the header row
-    sub = sub.dropna(how="all")          # drop empty lines
-    if len(sub) > 0:
-        modalites_dfs_clean[var_name] = sub.reset_index(drop=True)
 
 # %%
 db_name = "RA2020"

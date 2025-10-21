@@ -36,17 +36,19 @@ You can run the project as follows:
 
 ### Locally via uv
 
-Run:
+#### Parse a dictionary
 
 ```shell script
-make install # Note: installs all dependencies!
-uv run jupyter notebook # Launch the Jupyter server
-uv run python bin/cli.py main # Run the project main entrypoint
+uv run python bin/cli.py parse --dico <DICO_NAME> # eg. RA2020
 ```
-> 📝 **Note**
-> If you want to launch the jupyter notebooks directly, simply use `make jupyter-notebook`.
 
+#### Aggregate dictionaries
 
+It aggregates all available schemas in the "data/schema" folder.
+
+```shell script
+uv run python bin/cli.py aggregate #
+```
 
 ## Development
 
