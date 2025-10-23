@@ -80,7 +80,7 @@ line-length = 120
 fix = true
 exclude = [
     "docs/source/conf.py",
-    "notebooks/*",
+    "notebooks/**",
 ]
 
 [tool.ruff.lint]
