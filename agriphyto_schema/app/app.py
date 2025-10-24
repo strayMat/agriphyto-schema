@@ -42,11 +42,7 @@ config = {
 
 # Affichage du dataframe principal avec selection des événements
 event = st.dataframe(
-    filtered_dico,
-    column_config=config,
-    hide_index=True,
-    on_select="rerun",
-    selection_mode="single-row"
+    filtered_dico, column_config=config, hide_index=True, on_select="rerun", selection_mode="single-row"
 )
 
 # Gestion des clics sur les lignes

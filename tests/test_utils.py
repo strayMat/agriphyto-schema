@@ -18,6 +18,7 @@ def test_clean_varname():
     result = clean_nomenclature_name(input_name)
     assert result == expected
 
+
 def test_pandera_to_from_json():
     """Test de la fonction pandera_from_json pour charger un schéma depuis JSON."""
     # Créer un schéma pandera simple
@@ -26,7 +27,7 @@ def test_pandera_to_from_json():
     })
 
     # Utiliser un fichier temporaire
-    with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as tmp_file:
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as tmp_file:
         temp_path = Path(tmp_file.name)
 
     try:

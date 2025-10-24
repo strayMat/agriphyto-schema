@@ -65,9 +65,7 @@ def parse_nomenclatures(db_name: str) -> dict:
     cols_to_use = AVAILABLE_DICOS[db_name]["modalites_cols_to_use"]
     modalites_df.rename(columns=cols_to_use, inplace=True)
     # La colonne variable contient à la fois les noms de variables et les modalités. Elle ne peut être vide. On filtre donc les lignes vides.
-    modalites_df = modalites_df[
-        modalites_df[COLNAME_VARIABLE].notna()
-    ].reset_index(drop=True)
+    modalites_df = modalites_df[modalites_df[COLNAME_VARIABLE].notna()].reset_index(drop=True)
 
     mask = modalites_df[COLNAME_TABLE].notna()
     starts = [*modalites_df.index[mask].tolist(), len(modalites_df)]
@@ -76,30 +74,20 @@ def parse_nomenclatures(db_name: str) -> dict:
     for i in range(len(starts) - 1):
         table_name = modalites_df.loc[starts[i], COLNAME_TABLE]
         var_name = modalites_df.loc[starts[i], COLNAME_VARIABLE]
-        sub = modalites_df.iloc[starts[i] + 1 : starts[i + 1]].copy()[
-            [COLNAME_VARIABLE, COLNAME_LIBELLE]
-        ]
-        sub.columns = modalites_df.iloc[starts[i], :][
-            [COLNAME_VARIABLE, COLNAME_LIBELLE]
-        ]  # use the header row
+        sub = modalites_df.iloc[starts[i] + 1 : starts[i + 1]].copy()[[COLNAME_VARIABLE, COLNAME_LIBELLE]]
+        sub.columns = modalites_df.iloc[starts[i], :][[COLNAME_VARIABLE, COLNAME_LIBELLE]]  # use the header row
         sub = sub.dropna(how="all")  # drop empty lines
         if len(sub) > 0:
             var_name_clean = clean_nomenclature_name(var_name, table_name)
             # log if the cleaned name differs from the original
             var_name_check = var_name_clean.replace(f"{table_name}__", "")
-            if  var_name_check != var_name:
-                logger.warning(
-                    f"!!! Variable name {var_name} differs from clean version {var_name_check}"
-                )
+            if var_name_check != var_name:
+                logger.warning(f"!!! Variable name {var_name} differs from clean version {var_name_check}")
             nomenclature = sub.reset_index(drop=True)
             modalites_dfs_clean[var_name_clean] = nomenclature
-            path2modalites = (
-                DIR2NOMENCLATURES / f"{db_name}__{var_name_clean}__categories.csv"
-            )
+            path2modalites = DIR2NOMENCLATURES / f"{db_name}__{var_name_clean}__categories.csv"
             nomenclature.to_csv(path2modalites, index=False)
-            logger.info(
-                f"Variable {var_name_clean} nomenclature saved at {path2modalites}"
-            )
+            logger.info(f"Variable {var_name_clean} nomenclature saved at {path2modalites}")
     return modalites_dfs_clean
 
 
@@ -152,7 +140,7 @@ def parse_dico(db_name: str) -> None:
             strict=True,
             coerce=True,
             name=f"{db_name}__{table_name_clean}",
-            description=f"Schema for table {table_name} from data dictionary {db_name}"
+            description=f"Schema for table {table_name} from data dictionary {db_name}",
         )
         # Add columns
         for _, row in table_dico.iterrows():
@@ -166,11 +154,7 @@ def parse_dico(db_name: str) -> None:
             varname_clean = clean_nomenclature_name(var_name, table_name_clean)
             if varname_clean in variables_w_modalities:
                 # Add strict categories instead of nomenclature dic ?
-                col_schema.metadata = {
-                    "nomenclature": varname_clean
-                }
+                col_schema.metadata = {"nomenclature": varname_clean}
             pandera_schema.columns[var_name] = col_schema
         pandera_to_json(pandera_schema, DIR2SCHEMA / f"{pandera_schema.name}.json")
-        logger.info(
-            f"Saved schema for table {table_name} to {DIR2SCHEMA / f'{pandera_schema.name}.json'}"
-        )
+        logger.info(f"Saved schema for table {table_name} to {DIR2SCHEMA / f'{pandera_schema.name}.json'}")

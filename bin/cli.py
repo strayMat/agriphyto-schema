@@ -29,6 +29,7 @@ def parse(dico_name: str) -> None:
     Parse an Excel data dictionary to create a pandera schema for data validation.
     """
     from agriphyto_schema.data.parse_dicos import parse_dico
+
     if dico_name == "all":
         for dico in AVAILABLE_DICOS:
             parse_dico(dico)
