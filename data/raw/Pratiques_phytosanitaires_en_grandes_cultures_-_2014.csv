@@ -1,0 +1,381 @@
+﻿"Pratiques phytosanitaires en grandes cultures - 2014"
+"L’Enquête sur les pratiques phytosanitaires en grandes cultures étudie les pratiques phytosanitaires sur les parcelles culturales. Elle enquête sur 12 cultures : blé tendre, blé dur, orge, triticale, colza, tournesol, pois protéagineux, maïs fourrage, maïs grain, betterave, pomme de terre, canne à sucre, avec des règles d'exclusion et des critères de tailles. 
+
+La campagne 2013/2014 a pris lieu après la récolte du précédent jusqu’à la récolte de la culture enquêtée incluse.  L’échantillon initial comprenait 21 188 parcelles. Mais en cours de collecte, l’échantillon a été renforcé dans certaines zones infra-régionales de Bourgogne et Champagne-Ardenne pour les cultures de blé tendre, orge et colza avec l’interrogation des remplaçants (+314 parcelles)."
+
+
+
+
+PHYTOGC2014
+"Fichier principal de l'enquête"
+
+"Nom de la variable";Libellé;Modalités
+identifiant_dossier;"Identifiant parcelle";
+IDUNITE;"Identifiant BALSA";
+SIRET;"Numéro SIRET de l'exploitation";
+PACAGE;"Numéro PACAGE de l'exploitation";
+ESPECE;"Culture enquêtée";"01 - Blé tendre";"02 - Blé dur";"03 - Orge";"04 - Triticale";"05 - Colza";"06 - Tournesol";"07 - Pois protéagineux";"08 - Maïs fourrage";"09 - Maïs grain";"10 - Betterave sucrière";"11 - Pomme de terre";"14 - Canne à sucre"
+ESPECEINI;"Culture enquêtée, code initial (maïs et blé, modification entre 08 et 09 ou entre 01 et 02)";"01 - Blé tendre";"02 - Blé dur";"03 - Orge";"04 - Triticale";"05 - Colza";"06 - Tournesol";"07 - Pois protéagineux";"08 - Maïs fourrage";"09 - Maïs grain";"10 - Betterave sucrière";"11 - Pomme de terre";"14 - Canne à sucre"
+REGPAR;"Code région de la parcelle";"Code région - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPPAR;"Département de localisation de la parcelle";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPCOMPAR;"Code commune de la parcelle";"Code commune - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+ZONE_INTERM;"Zones intermédiaires (R21 et R26)";"Z1 - Zone intermédiaire MAE";"Z2 - Reste de la région"
+BIO;"Appartenance à la strate « bio »";"0 - Non biologique";"1 - Biologique"
+ZONEVULN;"Appartenance à une zone vulnérable";"0 - L'exploitation n'a aucune parcelle en zone vulnérable";"1 - Toutes les parcelles en zone vulnérable";"2 - Une partie des parcelles en zone vulnérable"
+COEF1;"Coefficient d'extrapolation au niveau de la parcelle";
+COEF2;"Coefficient de pondération au niveau de la parcelle = COEF1*SUPP";
+DOUBLECULT;"Existence d'une autre culture récoltée en mélange dans le semoir";"1 - Oui";"0 - Non"
+ESPDOUBLE;"Autre culture en mélange récoltée : Code ESPDOUBLE Espèce(s) semée(s)";"01 - Graminées : Avoine";"02 - Graminées : Orge";"03 - Graminées : Seigle";"04 - Graminées : Triticale";"05 - Graminées : Blé";"06 - Graminées : Sorgho";"07 - Graminées : Autres (pures)";"08 - Graminées : Mélange (méteil)";"09 - Crucifères  : Colza";"10 - Crucifères : Autres (pures)";"11 - Crucifères : Mélange";"12 - Légumineuses : Pois";"13 - Légumineuses : Vesce";"14 - Légumineuses : Soja";"15 - Légumineuses : Trèfle";"16 - Légumineuses : Autres (pures)";"17 - Légumineuses : Mélange";"18 - Sarrasin";"19 - Phacélie";"20 - Tournesol";"21 - Mélange légumineuses graminées";"22 - Mélange légumineuses crucifères";"23 - Mélange légumineuses phacélie";"24 - Mélange graminées crucifères";"25 - Mélange graminées phacélie";"26 - Mélange crucifères phacélie";"27 - Autre Mélange avec légumineuse";"28 - Autre Mélange sans légumineuse";"29 - Autres"
+AUTESPDOUBLE;"Précision libellé autre culture récoltée";
+SAU;"Superficie agricole utilisée de l’exploitation";
+SUPESP;"Superficie totale de l'espèce enquêtée sur l'exploitation";
+TYPEXP;"Type d'exploitation";"1 - Spécialisée en grandes cultures";"2 - Spécialisée en élevage";"3 - Autre (polyculture élevage, horticulture, vergers, vignes, ...)"
+SUPP;"Superficie de la parcelle";
+DRAINP;"Existence d'un drainage de la parcelle (depuis 2009 inclus)";"1 - Oui";"0 - Non"
+EAU;"Existence d'un cours d’eau sur la parcelle ou adjacent à la parcelle";"1 - Oui";"0 - Non"
+BANDEHERB;"Existence sur la parcelle d'une bande enherbée le long d’un cours d’eau";"1 - Oui";"0 - Non"
+RANGPERP;"Si la parcelle est en pente, les rangs sont perpendiculaires à la pente ou non";"0 - Non";"1 - Oui";"2 - Pas de pente"
+ALTITUDE;"Altitude de la parcelle (en mètres)";
+TYPESOL;"Type de sol de la parcelle";"001 - Sol à tendance argileuse à tendance 'lourde'";"002 - Sol à tendance argileuse à tendance 'légère'";"003 - Sol à tendance limoneuse à tendance 'lourde'";"004 - Sol à tendance limoneuse à tendance 'légère'";"005 - Sol à tendance sableuse à tendance 'lourde'";"006 - Sol à tendance sableuse à tendance 'légère'";"007 - Sol limoneux-argileux à tendance 'lourde'";"008 - Sol limoneux-argileux à tendance 'légère'";"009 - Sol limoneux-sableux à tendance 'lourde'";"010 - Sol limoneux sableux à tendance 'légère'";"011 - Autres";"888 - Ne sait pas"
+AUTTYPESOL;"Libellé  de l'autre type de sol";
+CAHIERBIO;"Existence d'un cahier des charges en agriculture biologique";"0 - Non";"1 - Agriculture biologique certifiée (AB)";"2 - Autre mode biologique certifié (ex : nature et progrès)";"3 - Biodynamie (Demeter)";"4 - Autre mode biologique non certifié"
+ANBIO;"Nombre d'années en bio";
+SANSENGPHYTO;"Absence engagement réduction des phytosanitaires";"1 - Oui";"0 - Non"
+EAEPHYTO;"Existence d'un engagement agro-environnemental rémunéré (MAE) pour les interventions phytosanitaires";"1 - Oui";"0 - Non"
+CAHIERPHYTO;"Existence d'un cahier des charges de réduction des phytosanitaires hors MAE";"1 - Oui";"0 - Non"
+MOISPLAN;"Mois de plantation de la canne à sucre présente sur la parcelle";
+ANPLAN;"Année de plantation de la canne à sucre présente sur la parcelle";
+PREMAN;"Première année de mise en place d’une culture de canne à sucre sur la parcelle";"01 - 2014";"02 - 2013";"03 - 2012";"04 - 2011";"05 - 2010";"06 - 2009";"07 - 2008";"08 - 2007";"09 - 2006";"10 - 2005";"11 - 2004";"12 - Entre 10 et 20 ans";"13 - Entre 20 et 30 ans";"14 - Plus de 30 ans";"99 - Ne sait pas"
+TYPCAN;"Type de canne à sucre sur la parcelle";"1 - Canne issue d'une repousse de canne";"2 - Canne nouvellement plantée et coupée pour la première fois en 2014"
+PARCIRR;"Parcelle irriguée au cours de la campagne agricole";"1 - Oui";"0 - Non"
+REALREC;"Réalisation de la récolte";"1 - Oui";"0 - Non"
+OBJREND;"Hypothèse de rendement en début de campagne";
+RENDSAIS;"Rendement de la campagne : données aux normes";
+RENDEM;"Rendement de la campagne : données brutes";
+THUM;"Rendement de la campagne : Humidité à la récolte";
+IMPUR;"Rendement de la campagne : Impuretés";
+RICSUC;"Rendement de la campagne : rendement racine";
+RENDNORME;"Rendement aux normes (calculé)";
+RENDNIV;"Rapport entre rendement de la campagne et rendement moyen habituel de la culture";"1 - Normal";"2 - Faible (plus de 20% en dessous)";"3 - Fort (plus de 20% au dessus)"
+INTEMP;"Existence d'aléas exceptionnels sur la parcelle";"0 - Non";"1 - Climatique (grêle, orages, inondations, sécheresse, ...)";"2 - Sanitaire (ou gibiers, oiseaux, ...)";"3 - Les deux (climatiques et sanitaires)";"4 - Autre"
+AUTINTEMP;"Libellé  de l'autre aléa exceptionnel";
+DEBOUCHE;"Débouché de la récolte (vente ou consommation propre)";"1 - Consommation propre";"2 - Vente"
+DESTIN;"Destination du produit récolté";"1 - Production de plants";"2 - Consommation en frais";"3 - Consommation industrie";"4 - Féculerie";"8 - Destination inconnue"
+ENERGIE;"Destination du produit récolté : valorisation énergétique";"0 - Non";"1 - Oui";"2 - Valorisation inconnue"
+PROTEIN;"Connaissance de la teneur en protéines obtenue";"0 - Non";"1 - Oui";"9 - Sans objet (orge de brasserie)"
+TENPROT;"Teneur en protéines obtenue";
+CONNSUC;"Connaissance de la teneur totale en sucre obtenue";"1 - Oui";"0 - Non"
+RICSUC2;"Teneur totale en sucre obtenue";
+PRECULTCAN2013;"Culture récoltée ou fauchée sur la parcelle en 2013";"900 - Autres cultures";"910 - Céréales (y compris semences)";"920 - Cultures industrielles hors canne (oléagineux, plantes textiles, …)";"922 - Canne à sucre enquêtée";"923 - Autre canne à sucre";"930 - Légumes secs, légumes frais, fraise, melon";"940 - Tubercules";"950 - Fourrages, prairies";"961 - Fleurs et plantes ornementales, pépinières";"962 - Fruits";"963 - Vignes";"970 - Jachères";"988 - Ne sait pas";"990 - Friche"
+PRECULTCAN;"Nature de la culture ou jachère qui a précédé l’implantation de la canne à sucre actuelle";"900 - Autres cultures";"910 - Céréales (y compris semences)";"920 - Cultures industrielles hors canne (oléagineux, plantes textiles, …)";"923 - Autre canne à sucre";"930 - Légumes secs, légumes frais, fraise, melon";"940 - Tubercules";"950 - Fourrages, prairies";"961 - Fleurs et plantes ornementales, pépinières";"962 - Fruits";"963 - Vignes";"988 - Ne sait pas";"970 - Jachères";"990 - Friche"
+LABCAN;"Existence d'un labour avant mise en place de la canne à sucre enquêtée";"0 - Non";"1 - Oui";"8 - Ne sait pas"
+PRECULT2013;"Précédent cultural 2013";"1101 - Céréales : Avoine (y compris semences)";"1102 - Céréales : Blé dur (y compris semences)";"1103 - Céréales : Blé tendre (y compris semences)";"1105 - Céréales : Orge, escourgeon (y compris semences)";"1107 - Céréales : Seigle (y compris semences)";"1109 - Céréales : Triticale (y compris semences)";"1110 - Céréales : Autres (mélanges, sarrasin…)";"1111 - Autres cultures";"1202 - Cultures industrielles : Colza";"1206 - Cultures industrielles : Autres oléagineux (œillette, ricin…)";"1301 - Protéagineux, légumes : Fève, féverole, lupin doux (y compris semences)";"1303 - Protéagineux, légumes : Pois protéagineux (y compris semences)";"1304 - Protéagineux, légumes : Autres légumes secs (haricot…) (y compris semences)";"1502 - Fourrages : Plantes sarclées fourragères (chou, betterave….)";"1503 - Fourrages : Autres fourrages annuels (sorgho fourrager…)";"2104 - Céréales : Maïs grain et semence";"2106 - Céréales : Riz";"2108 - Céréales : Sorgho-grain (y compris semences)";"2201 - Cultures industrielles : Betterave";"2203 - Cultures industrielles : Lin oléagineux";"2204 - Cultures industrielles : Tournesol";"2205 - Cultures industrielles : Soja";"2207 - Cultures industrielles : Chanvre";"2208 - Cultures industrielles : Lin textile";"2302 - Protéagineux, légumes : Lentilles, pois chiches, vesces (y compris semences)";"2401 - Pomme de terre";"2501 - Fourrages : Maïs fourrage et ensilage";"9209 - Cultures industrielles : Autres plantes textiles";"9210 - Cultures industrielles : Houblon";"9211 - Cultures industrielles : Plantes médicinales, à parfum ou condiments";"9212 - Cultures industrielles : Semences grainières (légumières, florales…)";"9213 - Cultures industrielles : Tabac (y compris plants)";"9214 - Cultures industrielles : Autres (chanvre papier, chicorée à café…)";"9305 - Légumes : Légumes frais, fraises et melons";"9504 - Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)";"9505 - Prairies temporaires (moins de 6 ans, graminées)";"9506 - Prairies permanentes";"9601 - Cultures permanentes – Fleurs, plantes ornementales, pépinières";"9602 - Cultures permanentes – Vergers";"9603 - Cultures permanentes – Vignes";"9701 - Jachères en sol nu";"9702 - Jachères avec couvert végétal spontané";"9703 - Jachères avec couvert végétal semé";"9888 - Ne sait pas"
+PERIOD2013;"Période de semis 2013";"1 - Automne";"2 - Printemps"
+LAB2013;"Labour avant mise en place de la culture 2013";"1 - Oui";"0 - Non"
+PRECULT2012;"Précédent cultural 2012";"1101 - Céréales : Avoine (y compris semences)";"1102 - Céréales : Blé dur (y compris semences)";"1103 - Céréales : Blé tendre (y compris semences)";"1105 - Céréales : Orge, escourgeon (y compris semences)";"1107 - Céréales : Seigle (y compris semences)";"1109 - Céréales : Triticale (y compris semences)";"1110 - Céréales : Autres (mélanges, sarrasin…)";"1111 - Autres cultures";"1202 - Cultures industrielles : Colza";"1206 - Cultures industrielles : Autres oléagineux (œillette, ricin…)";"1301 - Protéagineux, légumes : Fève, féverole, lupin doux (y compris semences)";"1303 - Protéagineux, légumes : Pois protéagineux (y compris semences)";"1304 - Protéagineux, légumes : Autres légumes secs (haricot…) (y compris semences)";"1502 - Fourrages : Plantes sarclées fourragères (chou, betterave….)";"1503 - Fourrages : Autres fourrages annuels (sorgho fourrager…)";"2104 - Céréales : Maïs grain et semence";"2106 - Céréales : Riz";"2108 - Céréales : Sorgho-grain (y compris semences)";"2201 - Cultures industrielles : Betterave";"2203 - Cultures industrielles : Lin oléagineux";"2204 - Cultures industrielles : Tournesol";"2205 - Cultures industrielles : Soja";"2207 - Cultures industrielles : Chanvre";"2208 - Cultures industrielles : Lin textile";"2302 - Protéagineux, légumes : Lentilles, pois chiches, vesces (y compris semences)";"2401 - Pomme de terre";"2501 - Fourrages : Maïs fourrage et ensilage";"9209 - Cultures industrielles : Autres plantes textiles";"9210 - Cultures industrielles : Houblon";"9211 - Cultures industrielles : Plantes médicinales, à parfum ou condiments";"9212 - Cultures industrielles : Semences grainières (légumières, florales…)";"9213 - Cultures industrielles : Tabac (y compris plants)";"9214 - Cultures industrielles : Autres (chanvre papier, chicorée à café…)";"9305 - Légumes : Légumes frais, fraises et melons";"9504 - Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)";"9505 - Prairies temporaires (moins de 6 ans, graminées)";"9506 - Prairies permanentes";"9601 - Cultures permanentes – Fleurs, plantes ornementales, pépinières";"9602 - Cultures permanentes – Vergers";"9603 - Cultures permanentes – Vignes";"9701 - Jachères en sol nu";"9702 - Jachères avec couvert végétal spontané";"9703 - Jachères avec couvert végétal semé";"9888 - Ne sait pas"
+PERIOD2012;"Période de semis 2012";"1 - Automne";"2 - Printemps"
+LAB2012;"Labour avant mise en place de la culture 2012";"1 - Oui";"0 - Non"
+PRECULT2011;"Précédent cultural 2011";"1101 - Céréales : Avoine (y compris semences)";"1102 - Céréales : Blé dur (y compris semences)";"1103 - Céréales : Blé tendre (y compris semences)";"1105 - Céréales : Orge, escourgeon (y compris semences)";"1107 - Céréales : Seigle (y compris semences)";"1109 - Céréales : Triticale (y compris semences)";"1110 - Céréales : Autres (mélanges, sarrasin…)";"1111 - Autres cultures";"1202 - Cultures industrielles : Colza";"1206 - Cultures industrielles : Autres oléagineux (œillette, ricin…)";"1301 - Protéagineux, légumes : Fève, féverole, lupin doux (y compris semences)";"1303 - Protéagineux, légumes : Pois protéagineux (y compris semences)";"1304 - Protéagineux, légumes : Autres légumes secs (haricot…) (y compris semences)";"1502 - Fourrages : Plantes sarclées fourragères (chou, betterave….)";"1503 - Fourrages : Autres fourrages annuels (sorgho fourrager…)";"2104 - Céréales : Maïs grain et semence";"2106 - Céréales : Riz";"2108 - Céréales : Sorgho-grain (y compris semences)";"2201 - Cultures industrielles : Betterave";"2203 - Cultures industrielles : Lin oléagineux";"2204 - Cultures industrielles : Tournesol";"2205 - Cultures industrielles : Soja";"2207 - Cultures industrielles : Chanvre";"2208 - Cultures industrielles : Lin textile";"2302 - Protéagineux, légumes : Lentilles, pois chiches, vesces (y compris semences)";"2401 - Pomme de terre";"2501 - Fourrages : Maïs fourrage et ensilage";"9209 - Cultures industrielles : Autres plantes textiles";"9210 - Cultures industrielles : Houblon";"9211 - Cultures industrielles : Plantes médicinales, à parfum ou condiments";"9212 - Cultures industrielles : Semences grainières (légumières, florales…)";"9213 - Cultures industrielles : Tabac (y compris plants)";"9214 - Cultures industrielles : Autres (chanvre papier, chicorée à café…)";"9305 - Légumes : Légumes frais, fraises et melons";"9504 - Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)";"9505 - Prairies temporaires (moins de 6 ans, graminées)";"9506 - Prairies permanentes";"9601 - Cultures permanentes – Fleurs, plantes ornementales, pépinières";"9602 - Cultures permanentes – Vergers";"9603 - Cultures permanentes – Vignes";"9701 - Jachères en sol nu";"9702 - Jachères avec couvert végétal spontané";"9703 - Jachères avec couvert végétal semé";"9888 - Ne sait pas"
+PERIOD2011;"Période de semis 2011";"1 - Automne";"2 - Printemps"
+LAB2011;"Labour avant mise en place de la culture 2011";"1 - Oui";"0 - Non"
+PRECULT2010;"Précédent cultural 2010";"1101 - Céréales : Avoine (y compris semences)";"1102 - Céréales : Blé dur (y compris semences)";"1103 - Céréales : Blé tendre (y compris semences)";"1105 - Céréales : Orge, escourgeon (y compris semences)";"1107 - Céréales : Seigle (y compris semences)";"1109 - Céréales : Triticale (y compris semences)";"1110 - Céréales : Autres (mélanges, sarrasin…)";"1111 - Autres cultures";"1202 - Cultures industrielles : Colza";"1206 - Cultures industrielles : Autres oléagineux (œillette, ricin…)";"1301 - Protéagineux, légumes : Fève, féverole, lupin doux (y compris semences)";"1303 - Protéagineux, légumes : Pois protéagineux (y compris semences)";"1304 - Protéagineux, légumes : Autres légumes secs (haricot…) (y compris semences)";"1502 - Fourrages : Plantes sarclées fourragères (chou, betterave….)";"1503 - Fourrages : Autres fourrages annuels (sorgho fourrager…)";"2104 - Céréales : Maïs grain et semence";"2106 - Céréales : Riz";"2108 - Céréales : Sorgho-grain (y compris semences)";"2201 - Cultures industrielles : Betterave";"2203 - Cultures industrielles : Lin oléagineux";"2204 - Cultures industrielles : Tournesol";"2205 - Cultures industrielles : Soja";"2207 - Cultures industrielles : Chanvre";"2208 - Cultures industrielles : Lin textile";"2302 - Protéagineux, légumes : Lentilles, pois chiches, vesces (y compris semences)";"2401 - Pomme de terre";"2501 - Fourrages : Maïs fourrage et ensilage";"9209 - Cultures industrielles : Autres plantes textiles";"9210 - Cultures industrielles : Houblon";"9211 - Cultures industrielles : Plantes médicinales, à parfum ou condiments";"9212 - Cultures industrielles : Semences grainières (légumières, florales…)";"9213 - Cultures industrielles : Tabac (y compris plants)";"9214 - Cultures industrielles : Autres (chanvre papier, chicorée à café…)";"9305 - Légumes : Légumes frais, fraises et melons";"9504 - Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)";"9505 - Prairies temporaires (moins de 6 ans, graminées)";"9506 - Prairies permanentes";"9601 - Cultures permanentes – Fleurs, plantes ornementales, pépinières";"9602 - Cultures permanentes – Vergers";"9603 - Cultures permanentes – Vignes";"9701 - Jachères en sol nu";"9702 - Jachères avec couvert végétal spontané";"9703 - Jachères avec couvert végétal semé";"9888 - Ne sait pas"
+PERIOD2010;"Période de semis 2010";"1 - Automne";"2 - Printemps"
+LAB2010;"Labour avant mise en place de la culture 2010";"1 - Oui";"0 - Non"
+DPRECUL;"Date de récolte du précédent";
+RESIDUS;"Traitement des résidus";"1 - Laissés sur place et broyés";"2 - Laissés sur place non broyés";"3 - Laissés sur place, broyés et enfouis superficiellement (moins de 15 cm)";"4 - Laissés sur place, non broyés et enfouis superficiellement (moins de 15 cm)";"5 - Enlevés";"6 - Brûlés";"7 - Autres"
+INTERV;"Résidus laissés sur place sans enfouissement, présence d'une intervention";"1 - Oui";"0 - Non"
+REPOUSPREC;"Repousse du précédent cultural ayant couvert le sol : présence";"1 - Oui";"0 - Non"
+REPOUSDESMEC;"Mode de destruction mécanique des repousses du précédent : présence";"1 - Oui";"0 - Non"
+REPOUSDESCHI;"Mode de destruction chimique des repousses du précédent : présence";"1 - Oui";"0 - Non"
+REPOUSDESAUT;"Mode de destruction autres (gel, …) des repousses du précédent : présence";"1 - Oui";"0 - Non"
+ENGVERT;"Présence d'une culture intermédiaire qui a été détruite";"1 - Oui";"0 - Non"
+ESPENGVERT;"Culture intermédiaire détruite : Code COUVERT Espèce(s) semée(s)";"01 - Graminées : Avoine";"02 - Graminées : Orge";"03 - Graminées : Seigle";"04 - Graminées : Triticale";"05 - Graminées : Ray-grass";"06 - Graminées : Moha";"07 - Graminées : Autres (pures)";"08 - Graminées : Mélange (méteil)";"09 - Crucifères  : Colza";"10 - Crucifères  : Navette";"11 - Crucifères : Radis fourrager";"12 - Crucifères : Moutarde";"13 - Crucifères : Autres (pures)";"14 - Crucifères : Mélange";"15 - Légumineuses : Trèfle";"16 - Légumineuses : Autres (pures)";"17 - Légumineuses : Mélange";"18 - Sarrasin";"19 - Phacélie";"20 - Tournesol";"21 - Mélange légumineuses graminées";"22 - Mélange légumineuses crucifères";"23 - Mélange légumineuses phacélie";"24 - Mélange graminées crucifères";"25 - Mélange graminées phacélie";"26 - Mélange crucifères phacélie";"27 - Autre mélange avec légumineuse";"28 - Autre mélange sans légumineuse";"29 - Autres"
+ENGVDESMEC;"Culture intermédiaire détruite, existence d'un mode de destruction mécanique";"1 - Oui";"0 - Non"
+ENGVDESCHI;"Culture intermédiaire détruite, existence d'un mode de destruction chimique";"1 - Oui";"0 - Non"
+ENGVDESAUT;"Culture intermédiaire détruite, existence d'un mode de destruction autres (gel, …)";"1 - Oui";"0 - Non"
+DESENGVERT;"Culture intermédiaire : Période de destruction";"1 - Avant décembre 2013";"2 - Entre décembre 2013 et février 2014";"3 - En mars 2014 ou après"
+DEROBE;"Présence d'une culture dérobée";"1 - Oui";"0 - Non"
+ESPDEROB;"Culture dérobée récoltée ou pâturée : Code COUVERT Espèce(s) semée(s)";"01 - Graminées : Avoine";"02 - Graminées : Orge";"03 - Graminées : Seigle";"04 - Graminées : Triticale";"05 - Graminées : Ray-grass";"06 - Graminées : Moha";"07 - Graminées : Autres (pures)";"08 - Graminées : Mélange (méteil)";"09 - Crucifères  : Colza";"10 - Crucifères  : Navette";"11 - Crucifères : Radis fourrager";"12 - Crucifères : Moutarde";"13 - Crucifères : Autres (pures)";"14 - Crucifères : Mélange";"15 - Légumineuses : Trèfle";"16 - Légumineuses : Autres (pures)";"17 - Légumineuses : Mélange";"18 - Sarrasin";"19 - Phacélie";"20 - Tournesol";"21 - Mélange légumineuses graminées";"22 - Mélange légumineuses crucifères";"23 - Mélange légumineuses phacélie";"24 - Mélange graminées crucifères";"25 - Mélange graminées phacélie";"26 - Mélange crucifères phacélie";"27 - Autre mélange avec légumineuse";"28 - Autre mélange sans légumineuse";"29 - Autres"
+MODEXDEROB;"Culture dérobée : mode d'exploitation";"1 - Récolte";"2 - Pâture"
+EDEROB;"Culture dérobée : période de récolte ou de pâture";"1 - Avant décembre 2013";"2 - Entre décembre 2013 et février 2014";"3 - En mars 2014 ou après"
+DEROBCULT;"Type culture dérobée (canne à sucre)";"1 - Tomates";"2 - Maïs";"3 - Melon-pastèque";"4 - Haricot";"5 - Autres"
+AUTDEROBCULT;"Libellé  de l'autre type de culture dérobée (canne à sucre)";
+ESPINITNL;"Culture initiale non levée (C'est à dire non comptée CIPAN ou dérobée) : Code ESPECE Espèce(s) semée(s)";"01 - Blé tendre";"02 - Blé dur";"03 - Orge";"04 - Triticale";"05 - Colza";"06 - Tournesol";"07 - Pois protéagineux";"08 - Maïs fourrage";"09 - Maïs grain"
+SEMPROV;"Origine de la semence de la culture enquêtée";"1 - Semence certifiée (étiquette bleue SOC) ou G4 (étiquette blanche) ou plant certifié (pour Pomme de terre)";"2 - Mélange dans le semoir de semences certifiées et de ferme ou plant officiellement contrôlé (pour Pomme de terre)";"3 - Semence de ferme ou plant produit sur l'exploitation ou une exploitation voisine (pour Pomme de terre)"
+SEMPROVBIO;"Origine de la semence de la culture enquêtée pour les bio";"1 - Conventionnel(le) non traité(e) (en dérogation)";"2 - Certifié(e) bio"
+LUTTEOIS;"Lutte contre les oiseaux";"0 - Non";"1 - Oui, effarouchement (sonore, visuel)";"2 - Oui, régulation (tir, piégeage)";"3 - Oui, autres"
+TRAITSEM;"Existence d'une semence (certifiée ou de ferme) traitée";"1 - Oui";"0 - Non"
+TRAITSEMINS;"Semence (certifiée ou de ferme) traitée : Insecticides (hors anti-pucerons)";"1 - Oui";"0 - Non"
+TRAITSEMPUC;"Semence (certifiée ou de ferme) traitée : anti-pucerons";"1 - Oui";"0 - Non"
+TRAITSEMFON;"Semence (certifiée ou de ferme) traitée : Fongicides";"1 - Oui";"0 - Non"
+TRAITSEMLIM;"Semence (certifiée ou de ferme) traitée : Anti-limaces";"1 - Oui";"0 - Non"
+TRAITSEMOIS;"Semence (certifiée ou de ferme) traitée : Anti-oiseaux";"1 - Oui";"0 - Non"
+TRAITSEMNEM;"Semence (certifiée ou de ferme) traitée : Nématicides";"1 - Oui";"0 - Non"
+TRAITSEMAUT;"Semence (certifiée ou de ferme) traitée : Autres répulsifs";"1 - Oui";"0 - Non"
+TRAITSEMINC;"Traitement de semences : Inconnus";"1 - Oui";"0 - Non"
+NBVARIET;"Nombre de variétés semées sur la parcelle (en mélange dans le semoir)";
+VARIET;"Variété principale semée";
+LIBVARIET;"Libellé variété principale semée/plantée";
+AUTVARIET;"Libellé  de l'autre variété principale";
+VARIET2;"Variété secondaire semée en cas de plusieurs variétés (mélange)";
+LIBVARIET2;"Libellé variété secondaire semée";
+AUTVARIET2;"Libellé  de l'autre variété secondaire";
+VARIETDEP;"Variété principale (canne à sucre)";
+DBLERG;"Existence d'une plantation en double rang pour la canne à sucre";"1 - Oui";"0 - Non"
+GRAINM2;"Dose de semis : Nombre de grains par m2";
+POIDSURFSAIS;"Dose de semis : Poids de semence par ha (kg/ha)";
+POIDSURF;"Dose de semis : Poids de semence par ha (kg/ha) (calculé)";
+GRAINHA;"Dose de semis : Nombre de grains par ha";
+GRUNITHA;"Dose de semis : Nombre d’unités (100 000 semences) à l’ha";
+PLANHA;"Densité de plantation en nombre de plants par ha";
+CALIPLANT;"Calibre des plants en mm";
+BILLONS;"Existence d'une culture en billons ou en planches";"1 - Oui";"0 - Non"
+ENTRERANG;"Ecartement entre les rangs (en cm)";
+SEMDAT;"Date dernier semis";
+RESEMIS;Resemis;"1 - Oui";"0 - Non"
+RECDAT;"Date première récolte";
+LABOUREUR;Labour;"1 - Oui";"0 - Non"
+DEHMECAD;"Indicatrice désherbage mécanique avant récolte canne enquêtée en 2014";"1 - Oui";"0 - Non"
+PASSMECAD;"Nombre de désherbages mécaniques jusqu’à la récolte de la canne enquêtée en 2014";
+DEHMECAAV;"Indicatrice désherbage mécanique avant ou à l'implantation";"1 - Oui";"0 - Non"
+PASSMECAAV;"Nombre de désherbages mécaniques avant ou à l'implantation";
+DEHMECA;"Indicatrice désherbage mécanique après implantation";"1 - Oui";"0 - Non"
+PASSMECA;"Nombre de désherbages mécaniques après implantation";
+DEHMECACHI;"Indicatrice désherbage mécanique associé à du chimique";"1 - Oui";"0 - Non"
+DEHTHERM;"Indicatrice désherbage thermique";"1 - Oui";"0 - Non"
+DEHMAN;"Indicatrice désherbage manuel";"1 - Oui";"0 - Non"
+SEMDIR;"Semis direct";"1 - Oui";"0 - Non"
+FAUXSEM;"Faux semis";"1 - Oui";"0 - Non"
+DEFMECA;"Défanage mécanique";"1 - Oui";"0 - Non"
+DEFTHERM;"Défanage thermique";"1 - Oui";"0 - Non"
+FUMOFREQ;"Nombre d'années avec au moins un apport de fumure organique";
+AZOTFREQ;"Nombre d'années avec au moins un apport d'azote minéral";
+PHOSFREQ;"Nombre d'années avec au moins un apport de phosphore minéral";
+POTAFREQ;"Nombre d'années avec au moins un apport de potasse minérale";
+SOUFREQ;"Nombre d'années avec au moins un apport de soufre";
+CALCFREQ;"Nombre d'années avec au moins un amendement calcique ou magnésien";
+OLIGOFREQ;"Nombre d'années avec au moins un apport d'oligo-élément";
+BIOFREQ;"Nombre d'années avec au moins un apport de biostimulant";
+NBENGN;"Nombre de passages d’apport d’engrais minéraux : azote";
+FUMQNTOT;"Quantité d’azote minéral totale";
+PHOSPHORE;"Apport de phosphore minéral sur la campagne";"1 - Oui";"0 - Non"
+POTASSE;"Apport de potasse minérale sur la campagne";"1 - Oui";"0 - Non"
+SOUFRE;"Apport de soufre sur la campagne";"1 - Oui";"0 - Non"
+FUMO;"Apport de fumure organique sur la campagne";"1 - Oui";"0 - Non"
+ROUILLES;"Pression Rouilles";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+PIETIN;"Pression Piétin-verse";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+OIDIUM;"Pression Oïdium";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+SEPTO;"Pression Septoriose";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+FUSARIO;"Pression Fusariose";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+HELMINTHO;"Pression Helminthosporiose";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+RHYNCHO;"Pression Rhynchosporiose";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+MELIGETHE;"Pression Meligèthe";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+ALTISE;"Pression Altises (petites et grosses)";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+CHARANCONS;"Pression Charançons";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+ANTHRA;"Pression Anthracnose";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+SITONE;"Pression Sitones/Thrips";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+TORDEUSE;"Pression Tordeuses/Bruches";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+PYRALE;"Pression Pyrale";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+SESAMIE;"Pression Sésamie";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+MALFEUILL;"Pression Maladies du feuillage";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+MILDIOU;"Pression Mildiou";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+DORYPHORE;"Pression Doryphore";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+PUCERONS;"Pression Pucerons";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+VERSBLANCS;"Pression Vers blancs";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+RONGEURS;"Pression Rongeurs";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+ADVENTICES;"Pression Adventices";"1 - Forte";"2 - Moyenne";"3 - Faible ou nulle"
+VERSB;"Dégâts de vers blancs";"0 - Aucune de ces années";"1 - Oui, en 2013/2014";"2 - Oui, en 2012/2013";"3 - Oui, en 2011/2012"
+APPHYTO;"Existence d'un traitement phyto depuis la récolte du précédent cultural jusqu’à la récolte actuelle";"1 - Oui";"0 - Non"
+NBDEHTOT;"Traitements phytosanitaires : nombre de traitements herbicides - calcul";
+NBDEHPRL;"Traitements phytosanitaires : nombre de traitements herbicides avant levée (Pré-levée) - calcul";
+NBDEHPOL;"Traitements phytosanitaires : nombre de traitements herbicides après levée (Post-levée) - calcul";
+NBINSACTOT;"Traitements phytosanitaires : nombre de traitements insecticides ou acaricides - calcul";
+NBFONTOT;"Traitements phytosanitaires : nombre de traitements fongicides - calcul";
+NBMOLTOT;"Traitements phytosanitaires : nombre de traitements anti-limaces - calcul";
+NBRACCERPA;"Traitements phytosanitaires : nombre de traitements régulateurs de croissance - calcul";
+NBRONTOT;"Traitements phytosanitaires : nombre de traitements anti-rongeurs - calcul";
+NBAUTTOT;"Traitements phytosanitaires : nombre de traitements autres - calcul";
+NBADJTOT;"Traitements phytosanitaires : nombre de traitements adjuvants - calcul";
+TRAITTOT;"Traitements phytosanitaires : nombre total de traitements  - calcul";
+NBTRAIT;"Traitements phytosanitaires : nombre de traitements hors adjuvants - calcul";
+HERBITOT;"Traitements phytosanitaires : nombre de passages avec au moins un herbicide";
+HERBPRL;"Traitements phytosanitaires : nombre de passages herbicides avant levée (pré-levée)";
+HERBPOL;"Traitements phytosanitaires : nombre de passages herbicides après levée (post-levée)";
+INSACTOT;"Traitements phytosanitaires : nombre de passages avec au moins un insecticide ou acaricide";
+FONGITOT;"Traitements phytosanitaires : nombre de passages avec au moins un fongicide";
+LIMACTOT;"Traitements phytosanitaires : nombre de passages avec au moins un anti-limaces";
+REGULTOT;"Traitements phytosanitaires : nombre de passages avec au moins un régulateur de croissance";
+RONPASTOT;"Traitements phytosanitaires : nombre de passages avec au moins un anti-rongeurs";
+AUTPASTOT;"Traitements phytosanitaires : nombre de passages avec au moins un autre traitement";
+ADJPASTOT;"Traitements phytosanitaires : nombre de passages avec au moins un adjuvant";
+PHYTOPASTOT;"Traitements phytosanitaires : nombre de passages";
+BSV;"Lecture BSV";"1 - Oui";"0 - Non"
+CERTIPHYTO;"Suivi certiphyto";"1 - Oui";"0 - Non"
+ECOPHYTOPIC;"Consultation écophytoPIC";"1 - Oui";"0 - Non"
+CONDEPHY;"Connaissance réseau fermes DEPHY";"1 - Oui";"0 - Non"
+DEPHY;"Participation fermes DEPHY";"1 - Oui";"0 - Non"
+RAISHHAB;"Raisonnement herbicides : vos pratiques historiques et habituelles";"1 - Oui";"0 - Non"
+RAISHOBS;"Raisonnement herbicides : vos observations sur la parcelle en cours de culture";"1 - Oui";"0 - Non"
+RAISHCOMPT;"Raisonnement herbicides : vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)";"1 - Oui";"0 - Non"
+RAISHMETEO;"Raisonnement herbicides : les prévisions météorologiques et le niveau des précipitations";"1 - Oui";"0 - Non"
+RAISHBPPC;"Raisonnement herbicides : les bulletins de préconisation phyto certifiés";"1 - Oui";"0 - Non"
+RAISHFOURN;"Raisonnement herbicides : les conseils des fournisseurs";"1 - Oui";"0 - Non"
+RAISHINDEP;"Raisonnement herbicides : les recommandations d’organismes indépendants de la vente";"1 - Oui";"0 - Non"
+RAISHEXP;"Raisonnement herbicides : l'expérience d’autres agriculteurs";"1 - Oui";"0 - Non"
+RAISHPILOT;"Raisonnement herbicides : vos propres outils de pilotage";"1 - Oui";"0 - Non"
+RAISAHAB;"Raisonnement hors herbicides : vos pratiques historiques et habituelles";"1 - Oui";"0 - Non"
+RAISAOBS;"Raisonnement hors herbicides : vos observations sur la parcelle en cours de culture";"1 - Oui";"0 - Non"
+RAISACOMPT;"Raisonnement hors herbicides : vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)";"1 - Oui";"0 - Non"
+RAISAMETEO;"Raisonnement hors herbicides : les prévisions météorologiques et le niveau des précipitations";"1 - Oui";"0 - Non"
+RAISABSV;"Raisonnement hors herbicides : les bulletins de santé du végétal BSV";"1 - Oui";"0 - Non"
+RAISABPPC;"Raisonnement hors herbicides : les bulletins de préconisation phyto certifiés";"1 - Oui";"0 - Non"
+RAISAFOURN;"Raisonnement hors herbicides : les conseils des fournisseurs";"1 - Oui";"0 - Non"
+RAISAINDEP;"Raisonnement hors herbicides : les recommandations d’organismes indépendants de la vente";"1 - Oui";"0 - Non"
+RAISAEXP;"Raisonnement hors herbicides : l'expérience d’autres agriculteurs";"1 - Oui";"0 - Non"
+RAISAPILOT;"Raisonnement hors herbicides : vos propres outils de pilotage";"1 - Oui";"0 - Non"
+RAISH;"Raisonnement prioritaire herbicides";"1  - Vos pratiques historiques et habituelles";"2  - Vos observations sur la parcelle en cours de culture";"3  - Vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)";"4  - Les prévisions météorologiques et le niveau des précipitations";"6  - Les bulletins de préconisation phyto certifiés";"7  - Les conseils des fournisseurs";"8  - Les recommandations d’organismes indépendants de la vente";"9  - L'expérience d’autres agriculteurs";"10 - Vos propres outils de pilotage"
+RAISA;"Raisonnement prioritaire hors herbicides";"1  - Vos pratiques historiques et habituelles";"2  - Vos observations sur la parcelle en cours de culture";"3  - Vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)";"4  - Les prévisions météorologiques et le niveau des précipitations";"5  - Les bulletins de santé du végétal BSV";"6  - Les bulletins de préconisation phyto certifiés";"7  - Les conseils des fournisseurs";"8  - Les recommandations d’organismes indépendants de la vente";"9  - L'expérience d’autres agriculteurs";"10 - Vos propres outils de pilotage"
+REDUCROTATION;"Réduction des phytosanitaires par l'allongement des rotations";"1 - Oui";"0 - Non"
+REDUCTRAV;"Réduction des phytosanitaires par travail du sol, broyage des résidus, faux semis, gestion des repousses...";"1 - Oui";"0 - Non"
+REDUCDATSEM;"Réduction des phytosanitaires par le décalage des dates de semis";"1 - Oui";"0 - Non"
+REDUCDENSITE;"Réduction des phytosanitaires par ajustement de la densité de semis, de l'écartement entre les rangs";"1 - Oui";"0 - Non"
+REDUCVARIET;"Réduction des phytosanitaires par le choix variétal";"1 - Oui";"0 - Non"
+REDUCPREDA;"Réduction des phytosanitaires par ajout direct d'auxiliaires prédateurs";"1 - Oui";"0 - Non"
+REDUCHABITAT;"Réduction des phytosanitaires par aménagement d'habitat (haies, bandes enherbées...) ou apport alimentaire pour les auxiliaires prédateurs";"1 - Oui";"0 - Non"
+REDUCMELANG;"Réduction des phytosanitaires par les mélanges de cultures";"1 - Oui";"0 - Non"
+REDUCDOSE;"Réduction des phytosanitaires par ajustement à la baisse des doses";"1 - Oui";"0 - Non"
+REDUCAUT;"Réduction des phytosanitaires par d'autres moyens";"1 - Oui";"0 - Non"
+LIBREDUCAUT;"Libellé Réduction des phytosanitaires par d'autres moyens";
+REDUCAUCUNE;"Aucune pratique de réduction des phytosanitaires";"1 - Oui";"0 - Non"
+INFOGEN;"Pratique réduction des phytosanitaires : formation générale";"1 - Oui";"0 - Non"
+INFOFOURN;"Pratique réduction des phytosanitaires : conseils fournisseurs";"1 - Oui";"0 - Non"
+INFOINDEP;"Pratique réduction des phytosanitaires : conseils  techniciens indépendants";"1 - Oui";"0 - Non"
+INFOIBSV;"Pratique réduction des phytosanitaires : consultation BSV";"1 - Oui";"0 - Non"
+INFOCERTIPHYTO;"Pratique réduction des phytosanitaires : suivi formation certiphyto";"1 - Oui";"0 - Non"
+INFOECOPHYTOPIC;"Pratique réduction des phytosanitaires : consultation portail écophytoPIC";"1 - Oui";"0 - Non"
+INFODEPHY;"Pratique réduction des phytosanitaires : visite ferme DEPHY";"1 - Oui";"0 - Non"
+INFOAUT;"Pratique réduction des phytosanitaires : autre";"1 - Oui";"0 - Non"
+LIBINFOAUT;"Libellé  de l'autre pratique réduction des phytosanitaires";
+RAISONSANTE;"Raison réduction des phytosanitaires : santé";"1 - Oui";"0 - Non"
+RAISONEAUX;"Raison réduction des phytosanitaires : contamination eaux";"1 - Oui";"0 - Non"
+RAISONCOUT;"Raison réduction des phytosanitaires : coûts de production";"1 - Oui";"0 - Non"
+RAISONAUT;"Raison réduction des phytosanitaires : autre";"1 - Oui";"0 - Non"
+LIBRAISONAUT;"Libellé  de l'autre raison réduction des phytosanitaires";
+PROPPULV;"Propriété du pulvérisateur";"1 - En propriété ou copropriété en interne à l'exploitation";"2 - En CUMA";"3 - En entreprise"
+PROTECT;"Protection à l'application : équipement individuel";"0 - Jamais";"1 - Systématiquement";"2 - Occasionnellement";"8 - Ne sait pas"
+IFTHERB;"IFT Herbicide";
+IFTHERBBIO;"IFT Herbicide Biocontrôle";
+IFTFONG;"IFT Fongicide";
+IFTFONGBIO;"IFT Fongicide Biocontrôle";
+IFTINS;"IFT Insecticide";
+IFTINSBIO;"IFT Insecticide Biocontrôle";
+IFTAUT;"IFT Autre";
+IFTAUTBIO;"IFT Autre Biocontrôle";
+IFTSEM;"IFT Traitement semences";
+IFTTOTHERB0;"IFT Hors herbicide (sans traitement semences)";
+IFTTOTHERB0BIO;"IFT Biocontrôle Hors herbicide";
+IFTTOTHERB0SEM;"IFT Hors herbicide avec traitement de semences";
+IFTTOTSEM0;"IFT Total sans traitement semences";
+IFTTOTBIO;"IFT Total Biocontrôle";
+IFTTOTSEM;"IFT Total avec traitement semences";
+
+
+
+MATACT_PHYTOGC2014
+"Fichier des substances actives utilisées lors des traitements phytosanitaires"
+
+"Nom de la variable";Libellé;Modalités
+identifiant_dossier;"Identifiant parcelle";
+ESPECE;"Culture enquêtée";"01 - Blé tendre";"02 - Blé dur";"03 - Orge";"04 - Triticale";"05 - Colza";"06 - Tournesol";"07 - Pois protéagineux";"08 - Maïs fourrage";"09 - Maïs grain";"10 - Betterave sucrière";"11 - Pomme de terre";"14 - Canne à sucre"
+ESPECEINI;"Culture enquêtée, code initial (maïs et blé, modification entre 08 et 09 ou entre 01 et 02)";"01 - Blé tendre";"02 - Blé dur";"03 - Orge";"04 - Triticale";"05 - Colza";"06 - Tournesol";"07 - Pois protéagineux";"08 - Maïs fourrage";"09 - Maïs grain";"10 - Betterave sucrière";"11 - Pomme de terre";"14 - Canne à sucre"
+REGPAR;"Code région de la parcelle";"Code région - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPPAR;"Département de localisation de la parcelle";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPCOMPAR;"Code commune de la parcelle";"Code commune - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+BIO;"Appartenance à la strate « bio »";"0 - Non biologique";"1 - Biologique"
+ZONEVULN;"Appartenance à une zone vulnérable";"0 - L'exploitation n'a aucune parcelle en zone vulnérable";"1 - Toutes les parcelles en zone vulnérable";"2 - Une partie des parcelles en zone vulnérable"
+COEF1;"Coefficient d'extrapolation - niveau parcelle";
+COEF2;"Coefficient de pondération au niveau de la parcelle = COEF1*SUPP";
+SUPP;"Superficie de la parcelle";
+NOM_SUBSTANCE;"Nom de la substance active";
+QDOSEMATSURF;"Quantité de substance active en g/ha en tenant compte du pourcentage de parcelle traitée (par parcelle)";
+NBPASMATACT;"Nombre de traitements utilisant la substance active par parcelle";
+
+
+
+PHYTOS_PHYTOGC2014
+"Fichier du tableau des traitements phytosanitaires"
+
+"Nom de la variable";Libellé;Modalités
+identifiant_phytos;"Identifiant traitement phytosanitaire";
+identifiant_dossier;"Identifiant parcelle";
+ESPECE;"Culture enquêtée";"01 - Blé tendre";"02 - Blé dur";"03 - Orge";"04 - Triticale";"05 - Colza";"06 - Tournesol";"07 - Pois protéagineux";"08 - Maïs fourrage";"09 - Maïs grain";"10 - Betterave sucrière";"11 - Pomme de terre";"14 - Canne à sucre"
+ESPECEINI;"Culture enquêtée, code initial (maïs et blé, modification entre 08 et 09 ou entre 01 et 02)";"01 - Blé tendre";"02 - Blé dur";"03 - Orge";"04 - Triticale";"05 - Colza";"06 - Tournesol";"07 - Pois protéagineux";"08 - Maïs fourrage";"09 - Maïs grain";"10 - Betterave sucrière";"11 - Pomme de terre";"14 - Canne à sucre"
+REGPAR;"Code région de la parcelle";"Code région - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPPAR;"Département de localisation de la parcelle";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPCOMPAR;"Code commune de la parcelle";"Code commune - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+BIO;"Appartenance à la strate « bio »";"0 - Non biologique";"1 - Biologique"
+ZONEVULN;"Appartenance à une zone vulnérable";"0 - L'exploitation n'a aucune parcelle en zone vulnérable";"1 - Toutes les parcelles en zone vulnérable";"2 - Une partie des parcelles en zone vulnérable"
+COEF1;"Coefficient d'extrapolation au niveau de la parcelle";
+COEF2;"Coefficient de pondération au niveau de la parcelle = COEF1*SUPP";
+SUPP;"Superficie de la parcelle";
+PHYTORDR;"Traitements phytosanitaires sur la parcelle : numéro d’ordre, dans l'ordre chronologique";
+PHYTOPAS;"Traitements phytosanitaires sur la parcelle : numéro de passage";
+PHYTODAT;"Traitements phytosanitaires sur la parcelle : date d’apport";
+PHYTOSTAD;"Traitements phytosanitaires, stade cultural de l'espèce enquêtée";
+PHYTOAUTCULT;"Traitements phytosanitaires ne concernant pas culture enquêtée";"1 - Oui";"0 - Non"
+PHYTONAT;"Traitements phytosanitaires sur la parcelle de cannes à sucre, nature du traitement";"1 - Chimique";"2 - Biologique"
+PHYTOMOD;"Traitements phytosanitaires, mode de traitement";"1 - En plein";"2 - Sur le rang";"3 - Sur l'interrang";"4 - Sous clôture";"5 - Localisé ou en tâches"
+POURTRAIT;"Traitements phytosanitaires, proportion de la parcelle traitée en %";
+PHYTODOS;"Traitements phytosanitaires, dose de produit commercial apportée saisie";
+PHYTODOSHA;"Traitements phytosanitaires, dose de produit commercial apportée à l'ha - calculée";
+PHYTOUNI;"Traitements phytosanitaires, unité de la dose de produit commercial apportée";"1 - KG/HA";"2 - L/HA";"3 - KG/HL";"4 - L/HL";"5 - %";"6 - Autre";"9 - Sans dose"
+PHYTOBOUIL;"Traitements phytosanitaires, quantité de bouillie à l’ha (eau + produits + adjuvant)";
+PHYTOPROD;"Traitements phytosanitaires, code du produit commercial : numéro AMM (pouvant avoir plusieurs libellés)";
+PHYTOLIB;"Traitements phytosanitaires, libellé du produit commercial";
+PHYTOLIBAUTRE;"Traitements phytosanitaires : libellé de l'autre cible";
+PHYCIBHERB;"Traitements phytosanitaires, cible herbicide";"1 - Oui";"0 - Non"
+PHYCIBMALAD;"Traitements phytosanitaires, cible fongicide";"1 - Oui";"0 - Non"
+PHYCIBINSAC;"Traitements phytosanitaires, cible insecticides et acaricides";"1 - Oui";"0 - Non"
+PHYCIBCOU;"Traitements phytosanitaires, cible : destruction du couvert";"1 - Oui";"0 - Non"
+PHYCIBPREC;"Traitements phytosanitaires : destruction du précédent prairie";"1 - Oui";"0 - Non"
+PHYCIBREP;"Traitements phytosanitaires : destruction repousses du précédent";"1 - Oui";"0 - Non"
+PHYCIBADV;"Traitements phytosanitaires, cible : adventices";"1 - Oui";"0 - Non"
+PHYCIBDEF;"Traitements phytosanitaires, cible : défanants";"1 - Oui";"0 - Non"
+PHYCIBOID;"Traitements phytosanitaires, cible, maladies : Oïdium";"1 - Oui";"0 - Non"
+PHYCIBROU;"Traitements phytosanitaires, cible, maladies : Rouilles";"1 - Oui";"0 - Non"
+PHYCIBPIE;"Traitements phytosanitaires, cible, maladies : Piétin verse";"1 - Oui";"0 - Non"
+PHYCIBSEP;"Traitements phytosanitaires, cible, maladies : Septoriose";"1 - Oui";"0 - Non"
+PHYCIBFUS;"Traitements phytosanitaires, cible, maladies : Fusariose";"1 - Oui";"0 - Non"
+PHYCIBRHY;"Traitements phytosanitaires, cible, maladies : Rhynchosporiose";"1 - Oui";"0 - Non"
+PHYCIBHEL;"Traitements phytosanitaires, cible, maladies : Helminthosporiose";"1 - Oui";"0 - Non"
+PHYCIBANT;"Traitements phytosanitaires, cible, maladies : Anthracnose";"1 - Oui";"0 - Non"
+PHYCIBMDF;"Traitements phytosanitaires, cible : maladies du feuillage";"1 - Oui";"0 - Non"
+PHYCIBMIL;"Traitements phytosanitaires, cible, maladies : Mildiou";"1 - Oui";"0 - Non"
+PHYCIBAMA;"Traitements phytosanitaires, cible : autres maladies";"1 - Oui";"0 - Non"
+PHYCIBMAL;"Traitements phytosanitaires, cible : maladies";"1 - Oui";"0 - Non"
+PHYCIBPUC;"Traitements phytosanitaires, cible, insectes et acariens : Pucerons";"1 - Oui";"0 - Non"
+PHYCIBMEL;"Traitements phytosanitaires, cible, insectes et acariens : Méligèthes";"1 - Oui";"0 - Non"
+PHYCIBCHA;"Traitements phytosanitaires, cible, insectes et acariens : Charançons";"1 - Oui";"0 - Non"
+PHYCIBALT;"Traitements phytosanitaires, cible : Altises (petites et grosses)";"1 - Oui";"0 - Non"
+PHYCIBTOR;"Traitements phytosanitaires, cible, insectes et acariens : Tordeuses, Bruches";"1 - Oui";"0 - Non"
+PHYCIBSIT;"Traitements phytosanitaires, cible,  insectes et acariens : Sitones, Thrips";"1 - Oui";"0 - Non"
+PHYCIBPYR;"Traitements phytosanitaires, cible, insectes et acariens : Pyrale";"1 - Oui";"0 - Non"
+PHYCIBSES;"Traitements phytosanitaires, cible, insectes et acariens  : Sésamie";"1 - Oui";"0 - Non"
+PHYCIBDOR;"Traitements phytosanitaires, cible, insectes et acariens : Doryphore";"1 - Oui";"0 - Non"
+PHYCIBVER;"Traitements phytosanitaires, cible, insectes et acariens : Vers blancs";"1 - Oui";"0 - Non"
+PHYCIBAIA;"Traitements phytosanitaires, cible : Autres insectes et acariens";"1 - Oui";"0 - Non"
+PHYCIBRON;"Traitements phytosanitaires, cible : Rongeurs";"1 - Oui";"0 - Non"
+PHYCIBLIM;"Traitements phytosanitaires, cible : Limaces";"1 - Oui";"0 - Non"
+PHYCIBREG;"Traitements phytosanitaires, cible : Régulation de croissance";"1 - Oui";"0 - Non"
+PHYCIBADJ;"Traitements phytosanitaires, cible : Adjuvants";"1 - Oui";"0 - Non"
+PHYCIBAUT;"Traitements phytosanitaires, cible : Autres";"1 - Oui";"0 - Non"
+DR;"Dose de référence";
+UNITE_DR;"Unité de la dose de référence";
+Biocontrole_2015;"Indicatrice produit de biocontrôle";"1 - Oui";"0 - Non"
+PHERO;"Indicatrice produit de confusion sexuelle";"1 - Oui";"0 - Non"
+Segmentation_IFT;"Catégorie d'usage";
+IFT_TRAIT;"IFT traitement";
+Redressement;"Type de redressement de l'IFT traitement par la moyenne des IFT traitement de même catégorie d'usage sur la région";
+
+
+

@@ -1,0 +1,341 @@
+﻿"Pratiques phytosanitaires en viticulture - 2016"
+"Enquête réduite à quelques questions de pratiques culturales et axée sur les pratiques phytosanitaires.
+L’enquête porte sur des parcelles culturales générées par des sous-parcelles cadastrales. 
+Le Casier Viticole Informatisé (CVI)  de 2015 permet de déterminer la base de sondage. Elle est constituée des sous-parcelles cadastrales du CVI : situées dans les bassins enquêtés, plantées en vignes avec des raisins de cuve (excluant les vignes à raisin de table, les vignes mère de greffon et de porte-greffe), appartenant à une exploitation viti-vinicole active et produisant du vin.
+Les sous-parcelles cadastrales correspondant à des plantations de moins de trois ans ainsi que celles identifiées comme servant à une production auto-consommée ou à une production de jus de fruit sont exclues de la base de sondage."
+
+
+
+
+PHYTOVITI2016
+"Ensemble des données simples décrites sous Capibara. Les données des traitements structures répétées sont présentes sous forme de variables calculées et agrégées au niveau de la parcelle."
+
+"Nom de la variable";Libellé;Modalités
+IDENTPARC;"Identifiant de la parcelle";
+COEF1;"Coefficient d'extrapolation";
+COEF2;"Coefficient d'extrapolation pondéré par la superficie";
+TYPQUEST;"Type de parcelle";"1 - Parcelle de l'échantillon initial";"2 - Parcelle remplaçante"
+PANEL;"Appartenance de la parcelle au panel";"0 - Non";"1 - Oui"
+IDPKVITI13;"Parcelle répondante en 2013";"0 - nouvelle parcelle 2016";"1 - parcelle déjà  enquétée en 2013"
+IDBALSA;"Appartenance à BALSA";"0 - Non";"1 - Oui"
+SIRET;"Numéro SIRET de l'exploitation";
+REGPCV;"Région administrative de la parcelle culturale";
+DEPPCV;"Département de la parcelle culturale";
+REGVITI;"Région viticole de la parcelle culturale";"00 - Alsace";"01 - Aquitaine";"02 - Beaujolais";"03 - Bourgogne";"04 - Champagne";"05 - Charentes";"06 - Languedoc-Roussillon";"07 - Midi-Pyrénées";"08 - Provence-Alpes-Côte d Azur";"09 - Val-de-Loire";"10 - Côtes-du-Rhône";"11 - Corse";"12 - Bugey-Savoie"
+BASSINV;"Bassin viticole de la parcelle culturale";"00 - Alsace";"01 - Beaujolais";"02 - Bordelais";"03 - Bourgogne";"04 - Champagne";"05 - Charentes";"06 - Languedoc hors PO";"07 - Pyrénées-Orientales";"08 - PACA 83 84";"09 - Val de Loire hors Sancerre";"10 - Bouches-du-Rhône";"11 - Dordogne";"13 - Gers";"14 - Gaillac";"15 - Cahors";"16 - Lot-et-Garonne";"17 - CDR-nord";"18 - CDR-sud";"19 - Cher";"20 - Corse";"21 - Bugey-Savoie"
+SUPPVIGRC;"Superficie vigne raisin de cuve de l'exploitation (en hectare)";
+PERSRESP;"Personne responsable";"1 - Exploitant ou associé (si société)";"2 - Chef de culture salarié de l'exploitation";"3 - Autres"
+SUPP;"Superficie brute de la parcelle (en hectare)";
+ANPLAN;"Date de plantation de la parcelle";
+QANPLAN;"Age de la vigne";
+VICEP;"Code du cépage de la parcelle";
+CEPAGE;"Libellé du cépage";
+PORTEGREFFE;"Code du porte-greffe de la parcelle";
+LIBPG;"Libellé du porte-greffe";
+DISTRANG;"Distance entre les rangs (en cm)";
+DISTCEP;"Distance entre les ceps sur les rangs (en cm)";
+DENSITE;"Nombre de pieds de vigne à l'hectare";
+TYPVINPAR;"Type de vin revendiquable";"1 - AOP";"2 - IGP avec mention cépage";"3 - IGP sans mention cépage";"4 - Sans IG avec mention cépage";"5 - Sans IG";"6 - Vins aptes aux eaux-de-vie"
+CAHIERBIO;"Parcelle conduite selon un cahier des charges biologique ou en conversion";"0 - Non";"1 - Agriculture biologique-AB";"2 - Autre mode biologique certifié";"3 - Biodynamie";"4 - Mode biologique non certifié"
+PRATIQUEBIO;"Pratiques bio sur la parcelle";"0 - Non";"1 - Oui (1,2,3 ou 4 pour CAHIERBIO)"
+CAHIERAUT1;"La conduite de la parcelle est libre de tout engagement";"0 - Non";"1 - Oui"
+CAHIERAUT2;"Parcelle conduite en fonction d'un engagement envers une MAE (mesure agri-environnementale) de réduction de l'emploi des phytosanitaires";"0 - Non";"1 - Oui"
+CAHIERAUT3;"Parcelle conduite en fonction d'un respect d'un cahier des charges hors MAE (mesure agri-environnementale).";"0 - Non";"1 - Oui"
+REALREC;"Récolte de la parcelle";
+RECDQ;"Date de la récolte";
+MODEREC;"Mode de récolte";"1 - Manuelle";"2 - Mécanique"
+VINEXPL;"Destination de la vendange";"1 - Vinifiée en cave particulière";"2 - Vinifiée et distillée en cave particulière";"3 - Vinifiée en coopérative";"4 - Vendue en frais, jus ou moûts"
+RENDMAXVI;"Rendement maximal autorisé en vin (hl/hectare)";
+RENDMAXRAIS;"Rendement maximal autorisé en raisin (q/hectare)";
+RENDMAXALC;"Rendement maximal autorisé en alcool pur (hl/hectare)";
+OBJRENDVI;"Objectif rendement en vin (hl/hectare)";
+OBJRENDRAIS;"Objectif rendement en raisin (q/hectare)";
+OBJRENDALC;"Objectif rendement en alcool pur (hl/hectare)";
+RENDVIN;"Rendement en vin (hl/hectare)";
+RENDRAISIN;"Rendement en raisin (q/hectare)";
+RENDALC;"Rendement en alcool pur (hl/hectare)";
+RENDMOYVI;"Rendement moyen en vin sur les 5 dernières années (hl/hectare)";
+RENDMOYRAIS;"Rendement moyen en raisin sur les 5 dernières années (q/hectare)";
+RENDMOYALC;"Rendement moyen en alcool pur sur les 5 dernières années (hl/hectare)";
+DEPERIS;"Constatation d’un dépérissement même faible des ceps sur la parcelle";"0 - Non";"1 - Oui"
+DEPERISAN;"Année du début de la constatation du dépérissement";
+DEPERISPROP;"Proportion de pieds morts, manquants ou complants (jeune plant non productif) sur la parcelle (%)";
+DEPERISREMPL;"Remplacement des pieds morts ou manquants";"0 - Non";"1 - Oui"
+DEPERISRYTHM;"Rythme de remplacement (tous les x an(s))";
+DEPERISANREMPL;"Année du remplacement le plus récent";
+DEPERISRECEP;"Pratique ou intention de pratique du recépage";"0 - Non";"1 - Oui"
+DEPERISREGREF;"Pratique ou intention de pratique du regreffage";"0 - Non";"1 - Oui"
+DEPERISMARCOT;"Pratique ou intention de pratique du marcottage";"0 - Non";"1 - Oui"
+DEPERISCOMPLANT;"Pratique ou intention de pratique de la complantation";"0 - Non";"1 - Oui"
+INTEMP;"Existence d'aléas exceptionnels";"0 - non";"1 - Climatiques";"3 - Climatiques et sanitaires"
+ENHERBSR16;"Enherbement sous le rang de la parcelle";"0 - Non";"1 - Oui"
+ENHERBSR;"Enherbement sous le rang";"0 - Aucun enherbement";"1 - Permanent semé";"2 - Permanent spontané";"3 - Temporaire semé de type engrais vert";"4 - Autre temporaire semé";"5 - Temporaire spontané"
+TYPENHERBSRNUM;"Modalité de l’enherbement sous le rang : x rang(s)";
+TYPENHERBSRDENOM;"Modalité de l’enherbement sous le rang : sur y rang(s)";
+LARGENHERBSR;"Largeur de l’enherbement sous le rang (cm)";
+ENHERBIR16;"Enherbement sur inter-rang";"0 - Non";"1 - Oui"
+ENHERBIR;"Enherbement sur inter-rang";"0 - Aucun enherbement";"1 - Permanent semé";"2 - Permanent spontané";"3 - Temporaire semé de type engrais vert";"4 - Autre temporaire semé";"5 - Temporaire spontané";"6 - Permanent et temporaire semé type engrais vert";"7 - Temporaire semé et temporaire semé type engrais vert";"8 - Temporaire spontané et temporaire semé de type engrais vert";"9 - Permanent et autre temporaire semé"
+TYPENHERBNUM;"Numérateur de la modalité de l’enherbement inter-rang : x rang(s)";
+TYPENHERBDENOM;"Dénominateur de la modalité de l’enherbement inter-rangs : sur y rang(s)";
+TYPENHERBEVNUM;"Numérateur de la modalité de l’enherbement inter-rang temporaire semé de type engrais vert : x rang(s)";
+TYPENHERBEVDENOM;"Dénominateur de la modalité de l’enherbement inter-rangs  temporaire semé de type engrais vert : sur y rang(s)";
+TYPENHERBNUMTPSE;"Numérateur de la modalité de l’enherbement inter-rang temporaire semé : x rang(s)";
+TYPENHERBDENOMTPSE;"Dénominateur de la modalité de l’enherbement inter-rangs  temporaire semé: sur y rang(s)";
+LARGENHERB;"Largeur de l’enherbement inter-rangs  (cm)";
+LARGENHERBEV;"Largeur de l’enherbement inter-rangs temporaire semé de type engrais vert  (cm)";
+LARGENHERBTPSE;"Largeur de l’enherbement inter-rangs temporaire semé (cm)";
+MOISEMIS;"Mois du semis de l'enherbement temporaire semé (non engrais vert)";"1 - Septembre 2015";"2 - Octobre 2015";"3 - Novembre 2015";"4 - Décembre 2015";"5 - Janvier 2016";"6 - Février 2016";"7 - Mars 2016";"8 - Avril 2016";"9 - Mai 2016";"10 - Juin 2016";"11 - Juillet 2016";"12 - Août 2016"
+MOISEMISEV;"Mois du semis de l'enherbement temporaire semé de type engrais vert";"1 - Septembre 2015";"2 - Octobre 2015";"3 - Novembre 2015";"4 - Décembre 2015";"5 - Janvier 2016";"6 - Février 2016";"7 - Mars 2016";"8 - Avril 2016";"9 - Mai 2016";"10 - Juin 2016";"11 - Juillet 2016";"12 - Août 2016"
+DESTSEMIS;"Mois de destruction de l'enherbement temporaire semé (non engrais vert)";"1 - Septembre 2015";"2 - Octobre 2015";"3 - Novembre 2015";"4 - Décembre 2015";"5 - Janvier 2016";"6 - Février 2016";"7 - Mars 2016";"8 - Avril 2016";"9 - Mai 2016";"10 - Juin 2016";"11 - Juillet 2016";"12 - Août 2016"
+DESTSEMISEV;"Mois de destruction de l'enherbement temporaire semé de type engrais vert";"1 - Septembre 2015";"2 - Octobre 2015";"3 - Novembre 2015";"4 - Décembre 2015";"5 - Janvier 2016";"6 - Février 2016";"7 - Mars 2016";"8 - Avril 2016";"9 - Mai 2016";"10 - Juin 2016";"11 - Juillet 2016";"12 - Août 2016"
+DESTENHTEMP;"Mode de destruction de l'enherbement temporaire semé (non engrais vert)";"1 - Mécanique yc enfouissement";"2 - Chimique"
+DESTENHTEMPEV;"Mode de destruction de l'enherbement temporaire semé de type engrais vert";"1 - Mécanique yc enfouissement";"2 - Chimique";"3 - Pas de destruction ou autre type de destruction (naturelle, etc.)"
+NBTONTEIR;"Nombre de passages relatifs à la maîtrise de l'enherbement dans l'inter-rang hors engrais vert";
+NBTONTEIREV;"Nombre de passages relatifs à la maîtrise de l'enherbement dans l'inter-rang de type engrais vert";
+NBTONTESR;"Nombre de passages relatifs à la maîtrise de l'enherbement sous le rang";
+NBTONTES;"Nombre de passages relatifs à la maîtrise de l'enherbement";
+ENHERB2013;"Présence d'enherbement en 2013";"0 - Non";"1 - Oui"
+ARENHERB;"Intention d'arrêt de l'enherbement";"1 - Pour cette campagne uniquement";"2 - Pour plusieurs campagnes";"3 - Définitivement"
+ARCONCHYD;"Raisonnement de l'arrêt de l'enherbement : concurrence hydrique ou minérale trop élevée";"0 - Non";"1 - Oui"
+ARENDEMENT;"Raisonnement de l'arrêt de l'enherbement : recherche d'un rendement plus élevé";"0 - Non";"1 - Oui"
+ARCOUT;"Raisonnement de l'arrêt de l'enherbement : coût et temps passés trop élevés";"0 - Non";"1 - Oui"
+ARINTCOMPL;"Raisonnement de l'arrêt de l'enherbement : contraintes de mise en œuvre pour l'entretien (technicité, outillage, fenêtre d'action) trop élevées";"0 - Non";"1 - Oui"
+ARENHERBAUT;"Raisonnement de l'arrêt de l'enherbement : autre";"0 - Non";"1 - Oui"
+CMULCH;"Utilisation de mulch";"0 - Aucun";"1 - Sous le rang";"2 - Sur l'inter-rang";"3 - Sous le rang et sur l'inter-rang"
+DESHERB;"Désherbage mécanique ou thermique";"0 - Non";"1 - Oui"
+DESINTRANG;"Nombre total de passages mécaniques ou thermiques sur l'inter-rang ";
+DESINTCEP;"Nombre total de passages mécaniques ou thermiques sur l'inter-cep";
+MECATOT;"Nombre total de passages mécaniques ou thermiques sur l'inter-rang et sur l'inter-cep";
+EBOUMANU;"Nombre de passages pour ébourgeonnage manuel";
+EBOUMECA;"Nombre de passages pour ébourgeonnage mécanique";
+EPAMMANU;"Nombre de passages pour épamprage manuel";
+EPAMMECA;"Nombre de passages pour épamprage mécanique";
+EPAMCHIM;"Nombre de passages pour épamprage chimique";
+PALIMANU;"Nombre de passages pour palissage manuel";
+PALIMECA;"Nombre de passages pour palissage mécanique";
+ROGNMANU;"Nombre de passages pour rognage manuel";
+ROGNMECA;"Nombre de passages pour rognage mécanique";
+EFFEMANU;"Nombre de passages pour effeuillage manuel";
+EFFEMECA;"Nombre de passages pour effeuillage mécanique";
+EFFETHER;"Nombre de passages pour effeuillage thermique";
+VEVEMANU;"Nombre de passages pour éclaircissage manuel";
+VEVEMECA;"Nombre de passages pour éclaircissage mécanique";
+VEVECHIM;"Nombre de passages pour éclaircissage chimique";
+NBOPEBOURG;"Nombre de passage pour opérations d'ébourgeonnage";
+NBOPEPAMP;"Nombre de passage pour opérations d'épamprage";
+NBOPALIS;"Nombre de passage pour opérations de palissage";
+NBOPROGN;"Nombre de passage pour opérations de rognage";
+NBOPEFFEUIL;"Nombre de passage pour opérations d’effeuillage";
+NBOPECLAIR;"Nombre de passage pour opérations d'éclaircissage";
+NBPASMAN;"Nombre de passage manuel pour opérations en vert";
+NBPASMEC;"Nombre de passage mécanique pour opérations en vert";
+NBPASTHERM;"Nombre de passage thermique pour opérations en vert";
+NBPASCHIM;"Nombre de passage chimique pour opérations en vert";
+NBOPEVERT;"Nombre d'opérations en vert";
+MILDIOU;"Niveau de pression parasitaire mildiou";"1 - Forte";"2 - Moyenne";"3 - Faible"
+OIDIUM;"Niveau de pression parasitaire oïdium";"1 - Forte";"2 - Moyenne";"3 - Faible"
+BOTRYTIS;"Niveau de pression parasitaire botrytis";"1 - Forte";"2 - Moyenne";"3 - Faible"
+TORDEUSE;"Niveau de pression parasitaire tordeuse";"1 - Forte";"2 - Moyenne";"3 - Faible"
+FLAVE;"Nombre de traitements obligatoires contre la flavescence dorée";
+CONFUS;"Utilisation de la confusion sexuelle";"0 - Non";"1 - Oui"
+CONFUSCOD;"Nom du diffuseur";
+CONFUSDAT;"Date de mise en place des diffuseurs";
+CONFUSNBDIF;"Nombre de diffuseurs à l'hectare";
+RAISHIST;"Raisonnement traitements : historique de la parcelle";"0 - Non";"1 - Oui"
+RAISOBS;"Raisonnement traitements : observations maladies";"0 - Non";"1 - Oui"
+RAISCRAV;"Raisonnement traitements : comptage des ravageurs";"0 - Non";"1 - Oui"
+RAISCAUX;"Raisonnement traitements : comptage des auxiliaires";"0 - Non";"1 - Oui"
+RAISMETEO;"Raisonnement traitements : prévisions météorologiques";"0 - Non";"1 - Oui"
+RAISBSV;"Raisonnement traitements : bulletins de santé du végétal";"0 - Non";"1 - Oui"
+RAISFIURN;"Raisonnement traitements : conseils fournisseurs";"0 - Non";"1 - Oui"
+RAISINDEP;"Raisonnement traitements : conseils indépendants de la vente";"0 - Non";"1 - Oui"
+RAISOAD;"Raisonnement traitements : Outils d'Aide à la Décision";"0 - Non";"1 - Oui"
+RAISPRIO;"Raisonnement prioritaire";"1 - connaissances historiques";"2 - observations des maladies";"3 - comptages ravageurs";"4 - comptage auxiliaires";"5 - météo";"6 - BSV";"7 - conseils fournisseurs";"8 - conseils indépendants";"9 - outils d'aide à  la décision"
+ECOPHYTOPIC;"Consultation portail EcophytoPIC";"0 - Non";"1 - Oui"
+DEPHY;"Participation démonstration ou visites des fermes réseau DEPHY";"0 - Non";"1 - Oui"
+REDUCTIPP;"Adoption d'une ou plusieurs pratiques en vue de réduire l'utilisation des produits phytosanitaires";"0 - Non";"1 - Oui"
+CHOIXCPG;"Choix de cépages et porte-greffes selon leur résistance ou sensibilité à certaines maladies";"0 - Non";"1 - Oui"
+AMENAUX;"Maintien ou développement d'auxiliaires prédateurs";"0 - Non";"1 - Oui"
+OPTIDOSE;"Outils d'optimisation de la dose";"0 - Non";"1 - Oui"
+ARGILE;"Traitements à l'argile";"0 - Non";"1 - Oui"
+APPHYTO;"Existence intervention phytosanitaire";"0 - Non";"1 - Oui"
+AUTREDPP;"Autre pratique";"0 - Non";"1 - Oui"
+ENTREPULV;"Pulvérisations réalisées par une entreprise";"0 - Non";"1 - Oui"
+NBPULVP;"Nombre de pulvérisateurs intervenant sur la parcelle";
+PULVDIFF;"Choix du pulvérisateur en fonction du stade de développement de la vigne";"0 - Non";"1 - Oui"
+PROPPULVDV;"Type de propriété du pulvérisateur utilisé le plus souvent en début de végétation (appelé pulvérisateur DV pour les autres variables)";"1 - En propriété ou copropriété interne à l'exploitation";"2 - En CUMA"
+PROPPULV;"Type de propriété du pulvérisateur";"1 - En propriété ou copropriété interne à l'exploitation";"2 - En CUMA"
+AGEPULVDV;"Age du pulvérisateur DV";
+AGEPULV;"Age du pulvérisateur";
+TYPEPULVDV;"Type du pulvérisateur DV";"1 - Pulvérisateur porté";"2 - Pulvérisateur traîné";"3 - Pulvérisateur automoteur";"4 - Pulvérisateur portatif (manuel ou motorisé)";"5 - Pulvérisateur semi-porté"
+TYPEPULV;"Type du pulvérisateur";"1 - Pulvérisateur porté";"2 - Pulvérisateur traîné";"3 - Pulvérisateur automoteur";"4 - Pulvérisateur portatif (manuel ou motorisé)";"5 - Pulvérisateur semi-porté"
+VERIFBUSEDV;"Contrôle du débit des buses ou des pastilles du pulvérisateur DV systématique avant le début de chaque traitement";
+VERIFBUSE;"Contrôle du débit des buses ou des pastilles du pulvérisateur systématique avant le début de chaque traitement";
+TYPULVERISDV;"Type de pulvérisation DV";"1 - Pneumatique";"2 - Jet porté ou aéroconvecteurs";"3 - Jet projeté"
+TYPULVERIS;"Type de pulvérisation";"1 - Pneumatique";"2 - Jet porté ou aéroconvecteurs";"3 - Jet projeté"
+MODPULVDV;"Mode de pulvérisation du pulvérisateur DV";"1 - Au dessus de la végétation";"2 - Dans le rang";"3 - Mixte (dans le rang et au dessus de la végétation de type voûte mains/canons)";"4 - Aéroconvecteurs (de type arboriculture)";"5 - Confinée avec panneaux récupérateurs"
+MODPULV;"Mode de pulvérisation";"1 - Au dessus de la végétation";"2 - Dans le rang";"3 - Mixte (dans le rang et au dessus de la végétation de type voûte mains/canons)";"4 - Aéroconvecteurs (de type arboriculture)";"5 - Confinée avec panneaux récupérateurs"
+ANTIDERIVDV;"Équipé de buses anti-dérive homologuées des pulvérisateurs non pneumatiques DV";"0 - Non";"1 - Oui"
+ANTIDERIV;"Équipé de buses anti-dérive homologuées des pulvérisateurs non pneumatiques";"0 - Non";"1 - Oui"
+LARGPULVDV;"Capacité maximale de travail du pulvérisateur DV (nombre de rangs maximum touchés par la pulvérisation lors d'un passage)";
+LARGPULV;"Capacité maximale de travail du pulvérisateur (nombre de rangs maximum touchés par la pulvérisation lors d'un passage)";
+DPAEDV;"Équipé d'un Dispositif Proportionnel à l'avancement électronique (DPAE) du pulvérisateur DV";"0 - Non";"1 - Oui"
+DPAE;"Équipé d'un Dispositif Proportionnel à l'avancement électronique (DPAE)";"0 - Non";"1 - Oui"
+TRFPARFDV;"Possibilité pour le pulvérisateur DV d'effectuer un traitement face par face strict";"0 - Non";"1 - Oui"
+TRFPARF;"Possibilité d'effectuer un traitement face par face strict";"0 - Non";"1 - Oui"
+NBRANGTDV;"Nombre de rangs traités par passage en début de végétation";
+NBRANGT;"Nombre de rangs traités par passage en pleine végétation";
+VITPULV;"Vitesse d'avancement moyenne en pleine végétation (en km/h)";
+VITPULVDV;"Vitesse d'avancement moyenne en début de végétation (en km/h)";
+FERMBUSEDV;"Fréquence de fermeture d'une ou plusieurs sortie(s) pour adapter la pulvérisation au développement végétatif de la vigne";"1 - Jamais";"2 - Parfois";"3 - Souvent";"9 - Sans objet"
+FERMBUSE;"Fréquence de fermeture d'une ou plusieurs sortie(s) pour effectuer un traitement ciblé sur la grappe";"1 - Jamais";"2 - Parfois";"3 - Souvent";"9 - Sans objet"
+VALEUR;"Mode de rémunération du viticulteur";"1 - Prix du moût, du vin ou de l alcool;";"2 - Prix par degré alcoolique";"3 - Au prix du kilo de raisin"
+PRBOUT;"Prix du vin produit en bouteille (euros pour bouteille de 75 cl)";
+PRBOUTLIT;"Prix du vin produit au litre (euros par litre)";
+PRCUB;"Prix du vin produit en cubitainer ou en bag-in-box (euros par litre)";
+PRVRAC;"Prix du vin produit en vrac (euros par hectolitre)";
+ALCVIN;"Degré de vin";
+PRALC;"Prix par degré d'alcool (euros par degré d'alcool et par hectolitre)";
+PRRAIS;"Prix du raisin (euros par kilo)";
+HERBITOT;"Nombre de passages avec au moins un herbicide réalisés sur la parcelle";
+EPAMPTOT;"Nombre de passages avec au moins un traitement pour épamprage ou ébourgeonnage-éclaircissage réalisés sur la parcelle";
+FONGITOT;"Nombre de passages avec au moins un traitement fongicide réalisés sur la parcelle";
+MILTOT;"Nombre de passages avec au moins une cible mildiou réalisés sur la parcelle";
+OIDTOT;"Nombre de passages avec au moins une cible oïdium réalisés sur la parcelle";
+INSECTOT;"Nombre de passages avec au moins un traitement insecticide- acaricide réalisés sur la parcelle";
+AUTOT;"Nombre de passages avec au moins une cible ""autres traitements"" réalisés sur la parcelle";
+ADJTOT;"Nombre de passages avec au moins une cible ""adjuvants"" réalisés sur la parcelle";
+FERTOT;"Nombre de passages avec au moins une cible ""Fertilisation"" réalisés sur la parcelle";
+PASSTOT;"Nombre total de passages réalisés sur la parcelle";
+NBDEHTOT;"Nombre de traitements réalisés avec des produits herbicides sur la parcelle";
+NBEPAMTOT;"Nombre de traitements réalisés avec des produits d'épamprage ou d'ébourgeonnage sur la parcelle";
+NBFONTOT;"Nombre de traitements réalisés avec des produits fongicides sur la parcelle";
+NBMILTOT;"Nombre de traitements réalisés avec au moins une cible mildiou sur la parcelle";
+NBOIDTOT;"Nombre de traitements réalisés avec au moins une cible oïdium sur la parcelle";
+NBINSACARTOT;"Nombre de traitements réalisés avec des produits insecticides-acaricides sur la parcelle";
+NBPRODAUT;"Nombre de traitements réalisés avec des produits ayant au moins ""autres traitements"" comme cible ";
+NBPRODADJ;"Nombre de traitements réalisés avec des produits ayant adjuvant comme cible ";
+NBCICFDTOT;"Nombre de traitements réalisés avec des produits ayant au moins ""cicadelle de la flavescence dorée"" comme cible ";
+NBCICVTOT;"Nombre de traitements réalisés avec des produits ayant au moins ""cicadelle verte"" comme cible ";
+NBFERTOT;"Nombre de traitements réalisés avec des produits ayant au moins ""Fertilisation"" comme cible ";
+NBMULTI;"Nombre de traitements réalisés avec des produits multicible sur la parcelle";
+TRAITTOT;"Nombre total de traitements réalisés sur la parcelle (hors adjuvants)";
+TRAITTOT2;"Nombre total de traitements réalisés sur la parcelle (avec adjuvants)";
+IFTTOT;"IFT TOTAL";
+IFTOT_HBC;"IFT total - hors produits de biocontrôle";
+IFTOT_BC;"IFT total - produits de biocontrôle";
+IFTHH;"IFT hors herbicide";
+IFTHH_HBC;"IFT hors herbicide - hors produits de biocontrôle";
+IFTH;"IFT herbicide";
+IFTF;"IFT fongicide";
+IFTF_HBC;"IFT fongicide- hors produits de biocontrôle";
+IFTF_BC;"IFT fongicide- produits de biocontrôle";
+IFTI;"IFT insecticide";
+IFTI_HBC;"IFT insecticide - hors produits de biocontrôle";
+IFTI_BC;"IFT insecticide - produits de biocontrôle";
+IFTA;"IFT autre";
+IFTA_HBC;"IFT autre - hors produits de biocontrôle";
+IFTA_BC;"IFT autre - produits de biocontrôle";
+
+
+
+PHYTO_PHYTOVITI2016
+"Données du tableau des traitements phytosanitaires. L'unité statistique est le traitement phytosanitaire."
+
+"Nom de la variable";Libellé;Modalités
+IDENTPARC;"Identifiant de la parcelle";
+ID_PHYTOVITI2016_TMT_PHYTO;"Identifiant du traitement";
+PHYTORDR;"Numéro d'ordre du traitement";
+PHYTOPASS;"Numéro d'ordre du passage du traitement";
+PHYTODAT;"Date du traitement";
+CIBHER;"Cible du traitement : herbicide";"0 - Non";"1 - Oui"
+CIBEPA;"Cible du traitement : épamprage";"0 - Non";"1 - Oui"
+CIBMIL;"Cible du traitement : mildiou";"0 - Non";"1 - Oui"
+CIBOID;"Cible du traitement : oïdium";"0 - Non";"1 - Oui"
+CIBBOT;"Cible du traitement : botritys";"0 - Non";"1 - Oui"
+CIBBLR;"Cible du traitement : black-rot";"0 - Non";"1 - Oui"
+CIBEXC;"Cible du traitement : excoriose";"0 - Non";"1 - Oui"
+CIBAUTMAL;"Cible du traitement : autres champignons parasitaires";"0 - Non";"1 - Oui"
+CIBCIC;"Cible du traitement : cicadelles";"0 - Non";"1 - Oui"
+CIBTORD;"Cible du traitement : tordeuses";"0 - Non";"1 - Oui"
+CIBACA;"Cible du traitement : acariens";"0 - Non";"1 - Oui"
+CIBAIN;"Cible du traitement : autres insectes";"0 - Non";"1 - Oui"
+CIBADJ;"Cible du traitement : adjuvants";"0 - Non";"1 - Oui"
+CIBSUB;"Cible du traitement : substances de croissance";"0 - Non";"1 - Oui"
+CIBFERT;"Cible du traitement : fertilisant foliaire";"0 - Non";"1 - Oui"
+CIBAUT;"Cible du traitement : autres traitements";"0 - Non";"1 - Oui"
+CIBFONG;"Cible agrégée fongicide";"0 - Non";"1 - Oui"
+CIBINSEC;"Cible agrégée insecticide-acaricide";"0 - Non";"1 - Oui"
+AUTRCIB;"Cible agrégée autres";"0 - Non";"1 - Oui"
+AMM;"Numéro d'autorisation de mise sur le marché";
+PHYTOLIB;"Nom du produit commercial";
+PHYTOMODE;"Mode de traitement (pour herbicide)";"1 - En plein";"2 - Sous le rang";"3 - Sur l'inter-rang";"4 - Dirigé sous le rang et l'inter-rang";"5 - Localisé"
+PHYTOPSUPPT;"Part de la surface traitée (%)";
+DOSESAIS;"Dose saisie";
+PHYTOUNI;"Unité de la dose saisie quand le traitement est en plein (PHYTOPSUPPT=100)";"1 - Kg/ha";"2 - Litre/ha";"3 - Kg/hl";"4 - Litre/hl";"5 - Autres"
+PHYTOUNISURF;"Unité de la dose saisie quand le traitement n'est pas en plein (PHYTOPSUPPT<100)";"1 - Kg sur le % de surface traitée";"2 - Litre sur le % de surface traitée";"3 - Kg/hl";"4 - Litre/hl";"5 - Autres"
+PHYTOBOUIL;"Quantité de bouillie (litre/ha) à la part de surface traitée ";
+PHYTODOS;"Dose de produit à l'hectare en kg/ha ou l/ha ou 'autres' en plein";
+NBCIBLES;"Nombre de cibles du traitement";
+MULTICIBLES2;"Nombre de cibles agrégées du traitement";
+CHAMP_IFT;"Appartenance au calcul de l'IFT";"0 - Non";"1 - Oui"
+CL_CHAMP_IFT;"Classe d'exclusion au calcul de l'IFT";
+CIBLE_APP;"Cible d'appariement au référentiel pour le calcul de l'IFT";
+DR;"Dose de référence";
+BIOCONTROLE;"Appartenance au calcul des IFT de type biocontrôle";"0 - Non";"1 - Oui"
+COM_APPAR;"Commentaire relatif à l'appariement";
+TYPE_UNITE_PHYTO;"Type d'unité du traitement";
+TYPE_UNITE_DR;"Type d'unité de la dose de référence associée au traitement";
+RED;"Redressement effectué ou non pour le calcul de l'IFT";"0 - Non";"1 - Oui"
+SEGMENT;"Segmentation (pour le calcul de l'IFT)";
+
+
+
+MATACT_PHYTOVITI2016
+"Quantités utilisées par hectare, par parcelle, par substances actives et par cible"
+
+"Nom de la variable";Libellé;Modalités
+IDENTPARC;"Identifiant de la parcelle";
+NOM_SUBSTANCE;"Libellé de la substance active";
+QDOSEMATACT;"Quantité de matière active par hectare";
+UNITESA;"Unité de la quantité de matière par hectare";
+NBPASMATACT;"Nombre de traitements effectués sur la parcelle avec la même matière active et même cible";
+CIBLE;"Cible détaillée";
+CIBLEAGREG;"Cible agrégée";
+FAMILLESA;"Famille chimique de la substance active";
+
+
+
+MECA_PHYTOVITI2016
+"Données du tableau des désherbages mécaniques ou thermiques"
+
+"Nom de la variable";Libellé;Modalités
+IDENTPARC;"Identifiant de la parcelle";
+MECAPAS;"Numéro du passage sur la parcelle";
+DMECA;"Date de passage";
+IRDISC;"Passage inter-rang : appareil à disques";"0 - Non";"1 - Oui"
+IRDENT;"Passage inter-rang : appareil à dents (dont cultivateur)";"0 - Non";"1 - Oui"
+IRROTA;"Passage inter-rang : appareil type rotavator";"0 - Non";"1 - Oui"
+IRAUTR;"Passage inter-rang : autres appareils";"0 - Non";"1 - Oui"
+ICLAM;"Passage sous le rang : intercep à lames";"0 - Non";"1 - Oui"
+ICROTA;"Passage sous le rang : intercep rotatifs";"0 - Non";"1 - Oui"
+ICDECA;"Passage sous le rang : décavaillonneuse";"0 - Non";"1 - Oui"
+ICAUTR;"Passage sous le rang : autres appareils (dont thermique)";"0 - Non";"1 - Oui"
+DESINTRANG;"Passage d’appareil sur inter-rang";"1 - Si IRDISC ou IRDENT ou IRROTA ou IRAUTR égal 1";"0 - Sinon"
+DESINTCEP;"Passage d’appareil sous le rang";"1 - Si ICLAM ou ICROTA ou ICDECA ou ICAUTR égal à 1";"0 - Sinon"
+
+
+
+TONTE_PHYTOVITI2016
+"Données du tableau des maîtrises de l'enherbement"
+
+"Nom de la variable";Libellé;Modalités
+IDENTPARC;"Identifiant de la parcelle";
+TONTEPAS;"Numéro du passage sur la parcelle";
+DENHERB;"Date de passage";
+TONTEIR;"Passage sur l'enherbement inter-rang hors engrais vert";"0 - Non";"1 - Oui"
+TONTEIREV;"Passage sur l'enherbement inter-rang de type engrais vert";"0 - Non";"1 - Oui"
+TONTESR;"Passage sur l'enherbement présent sous le rang (tout type d'enherbement)";"0 - Non";"1 - Oui"
+
+
+

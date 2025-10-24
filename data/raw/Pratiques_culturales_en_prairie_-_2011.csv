@@ -1,0 +1,526 @@
+﻿"Pratiques culturales en prairie - 2011"
+"L’Enquête sur les pratiques culturales en prairie 2011 fait partie de l’enquête pratiques culturales des agriculteurs en grandes cultures et prairies en 2011 qui fait suite à celles réalisées en 1998 et 2006. 
+Elle porte sur les prairies temporaires et les prairies permanentes intensives. Comme pour l’enquête précédente de 2006, les questions posées en 2011 portent sur les interventions culturales réalisées à la récolte du précédent à la récolte de la culture interrogée. Elle donne des informations générales sur les exploitations et sur les parcelles, sur l'apport des fumures minérales et organiques et sur les interventions mécaniques.
+"
+
+
+
+
+exploit_pkgc2011
+"Table des données sur l'exploitation"
+
+"Nom de la variable";Libellé;Modalités
+Identifiant_exploit;"Numéro unique pour la table EXPLOIT";
+Identifiantdossier;"Numéro d'identifiant";
+ESPECE;"Culture enquêtée";"12 - Prairie temporaire";"13 - Prairie permanente"
+ESPECEINI;"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)";"12 - Prairie temporaire";"13 - Prairie permanente"
+PACAGEILOT;"Numéro de PACAGE + Numéro de l'ilot ";
+PACAGE;"Numéro de PACAGE de l'exploitation";
+SIRET;"Numéro SIRET de l’exploitation";
+REG;"Région du siège de l'exploitation";"Code région - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEP;"Département de localisation de la parcelle";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPCOMP;"Code commune de l'exploitant";"Code commune - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPEXPLOI;"Département de la commune de l'exploitation";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+BIO;"Appartenance à la strate « bio »";"1 - Bio";"0 - Ni l'un ni l'autre";"2 - MAE"
+ZONE;"Appartenance à la strate «zone vulnérable»";"1 - Zone vulnérable";"0 - Hors zone vulnérable"
+SUPP;"Superficie de la parcelle";
+tranche_superficie;"Tranche de superficie en hectares (strates utilisées pour le calcul des coefficients de pondération)";"01 - < 0.15";"02 - [ 0.15 ; 0.3 [";"03 - [ 0.3 ; 0.5 [";"04 - [ 0.5 ;  1 [";"05 - [ 1 ;  2 [";"06 - [ 2 ;  3 [";"07 - [ 3 ;  5 [";"08 - [ 5 ;  10 [";"09 - >=10";"12 - Regroupement des tranches 1 et 2";"13 - Regroupement des tranches 1, 2 et 3";"14 - Regroupement des tranches 1, 2, 3 et 4";"15 - Regroupement des tranches 1, 2, 3, 4 et 5";"16 - Regroupement des tranches 1, 2, 3, 4, 5 et 6";"18 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7 et 8";"19 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7, 8 et 9";"23 - Regroupement des tranches 2 et 3";"25 - Regroupement des tranches 2, 3, 4 et 5";"34 - Regroupement des tranches 3 et 4";"35 - Regroupement des tranches 3, 4 et 5";"36 - Regroupement des tranches 3, 4, 5 et 6";"39 - Regroupement des tranches 3, 4, 5, 6, 7, 8 et 9";"45 - Regroupement des tranches 4 et 5";"46 - Regroupement des tranches 4, 5 et 6";"47 - Regroupement des tranches 4, 5, 6 et 7";"49 - Regroupement des tranches 4, 5, 6, 7, 8 et 9";"56 - Regroupement des tranches 5 et 6";"57 - Regroupement des tranches 5, 6 et 7";"59 - Regroupement des tranches 5, 6, 7, 8 et 9";"67 - Regroupement des tranches 6 et 7";"69 - Regroupement des tranches 6, 7, 8 et 9";"78 - Regroupement des tranches 7 et 8";"79 - Regroupement des tranches 7, 8 et 9";"89 - Regroupement des tranches 8 et 9"
+COEF1;"Coefficient de pondération au niveau de la parcelle";
+COEF2;"Coefficient de pondération au niveau de la parcelle = COEF1*SUPP";
+COUPEP;"Exploitation de la prairie : numéro de passage";
+DATE;"Exploitation de la prairie : date de passage";
+MODE;"Mode d’exploitation de la prairie";"1 - Foin";"2 - Ensilage";"3 - Pâture";"4 - Affouragement en vert";"5 - Enrubannage"
+PATURE;"Exploitation de la prairie : durée de présence des animaux (jours)";
+FAUCHE;"Exploitation de la prairie : Rendement en tonne/ha";
+PRUNIT;"Exploitation de la prairie : Unité";"1 - Foin";"2 - Matière sèche ensilée"
+RATION;"Exploitation de la prairie : part de fourrage complémentaire nécessaire aux besoins du troupeau pâturant";
+POURPC;"Exploitation de la prairie : part de la parcelle concernée";
+UGBHA;"Exploitation de la prairie : Unité Gros Bétail par hectare";
+
+
+
+fummin_pkgc2011_prairies
+"Table des données sur la fumure minérale"
+
+"Nom de la variable";Libellé;Modalités
+Identifiant_fummin;"Numéro unique pour la table FUMMIN";
+Identifiantdossier;"Numéro d'identifiant";
+ESPECE;"Culture enquêtée";"12 - Prairie temporaire";"13 - Prairie permanente"
+ESPECEINI;"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)";"12 - Prairie temporaire";"13 - Prairie permanente"
+PACAGEILOT;"Numéro de PACAGE + Numéro de l'Ilot";
+PACAGE;"Numéro de PACAGE de l'exploitation";
+SIRET;"Numéro SIRET de l’exploitation";
+REG;"Région du siège de l'exploitation";"Code région - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEP;"Département de localisation de la parcelle";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPCOMP;"Code commune de l'exploitant";"Code commune - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPEXPLOI;"Département de la commune de l'exploitation";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+BIO;"Appartenance à la strate « bio »";"1 - Bio";"0 - Ni l'un ni l'autre";"2 - MAE"
+ZONE;"Appartenance à la strate «zone vulnérable»";"1 - Zone vulnérable";"0 - Hors zone vulnérable"
+SUPP;"Superficie de la parcelle";
+tranche_superficie;"Tranche de superficie en hectares (strates utilisées pour le calcul des coefficients de pondération)";"01 - < 0.15";"02 - [ 0.15 ; 0.3 [";"03 - [ 0.3 ; 0.5 [";"04 - [ 0.5 ;  1 [";"05 - [ 1 ;  2 [";"06 - [ 2 ;  3 [";"07 - [ 3 ;  5 [";"08 - [ 5 ;  10 [";"09 - >=10";"12 - Regroupement des tranches 1 et 2";"13 - Regroupement des tranches 1, 2 et 3";"14 - Regroupement des tranches 1, 2, 3 et 4";"15 - Regroupement des tranches 1, 2, 3, 4 et 5";"16 - Regroupement des tranches 1, 2, 3, 4, 5 et 6";"18 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7 et 8";"19 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7, 8 et 9";"23 - Regroupement des tranches 2 et 3";"25 - Regroupement des tranches 2, 3, 4 et 5";"34 - Regroupement des tranches 3 et 4";"35 - Regroupement des tranches 3, 4 et 5";"36 - Regroupement des tranches 3, 4, 5 et 6";"39 - Regroupement des tranches 3, 4, 5, 6, 7, 8 et 9";"45 - Regroupement des tranches 4 et 5";"46 - Regroupement des tranches 4, 5 et 6";"47 - Regroupement des tranches 4, 5, 6 et 7";"49 - Regroupement des tranches 4, 5, 6, 7, 8 et 9";"56 - Regroupement des tranches 5 et 6";"57 - Regroupement des tranches 5, 6 et 7";"59 - Regroupement des tranches 5, 6, 7, 8 et 9";"67 - Regroupement des tranches 6 et 7";"69 - Regroupement des tranches 6, 7, 8 et 9";"78 - Regroupement des tranches 7 et 8";"79 - Regroupement des tranches 7, 8 et 9";"89 - Regroupement des tranches 8 et 9"
+COEF1;"Coefficient de pondération au niveau de la parcelle";
+COEF2;"Coefficient de pondération au niveau de la parcelle = COEF1*SUPP";
+CODEFUM;"Fumure minérale : numéro d'ordre de l'apport, dans l'ordre chronologique";
+FUMPAS;"Fumure minérale : numéro de passage de l'apport";
+FUMDAT;"Fumure minérale : date de l’apport";
+FUMNAT;"Fumure minérale : type de fertilisant";"1 - (N) solution azotée";"2 - (N + S) solution azotée soufrée";"3 - (N) ammonitrate";"4 - (N + S) ammonitrate enrichi en soufre";"5 - (N) urée";"6 - (N) ammoniac";"7 - (N) nitrate de soude";"8 - (N) nitrate de chaux";"9 - (N + S) sulfate d’ammoniaque";"10 - (N + S) sulfate d’ammoniaque et urée";"11 - (N + S) sulfonitrate";"12 - (N) autre engrais azoté";"13 - (P) phosphate naturel";"14 - (P) scories thomas";"15 - (P) superphosphate";"16 - (P + S) phosphore et soufre";"17 - (K) chlorure de potassium";"18 - (K + S) sulfate de potassium";"19 - (K) autre potassique";"20 - (NP) phosphate d’ammoniaque (MAP, DAP)";"21 - (NP) autre azote et phosphore";"22 - (NP + S) autre engrais azote, phosphore et soufre";"23 - (NK) azote et potassium";"24 - (NK + S) azote, potassium et soufre";"25 - (PK) (super) phosphopotassique";"26 - (PK) superpotassique";"27 - (PK + S) potassium, phosphore et soufre";"28 - (NPK) azote, phosphore et potassium";"29 - (NPK + S) azote, phosphore, potassium et soufre";"30 - (S) soufre";"31 - (NP, NK, NPK) engrais organo-minéral normé/homologué";"32 - (NP, NK, NPK + S) engrais organo-minéral normé/homologué avec soufre";"33 - (NP, NK, NPK) engrais organique normé/homologué";"34 - (NP, NK, NPK + S) engrais organique normé/homologué avec soufre"
+FUMSTA;"Fumure minérale : stade cultural";"9 - Sans objet"
+FUMSTA1;"Fumure minérale : stade cultural simplifié";"9 - Sans objet"
+FUMAPPO;"Fumure minérale : mode d'apport";"1 - En plein";"2 - Localisé enfoui";"3 - Localisé non enfoui";"4 - En fertirragation";"9 - Sans objet"
+FUMDEL;"Fumure minérale, si enfouissement : délai entre l’apport et l’enfouissement de l’apport";"1 - Moins de 4 heures";"2 - De 4 à moins de 12 heures";"3 - De 12 à moins de 24 heures";"4 - 24 heures et plus";"9 - Sans objet"
+FUMCN;"Fumure minérale : Concentration en azote (en %)";
+FUMCP;"Fumure minérale : Concentration en phosphore (en %)";
+FUMCK;"Fumure minérale : Concentration en potassium (en %)";
+FUMCS;"Fumure minérale : Concentration en soufre (en %)";
+FUMUNI;"Fumure minérale : Unité";"1 - KG";"2 - Litre"
+FUMDOS;"Fumure minérale : Quantité d’engrais à l’ha (en kg ou en litre)";
+FUMQN;"Fumure minérale : Quantité d'azote apportée par ha (en kg)";
+FUMQP;"Fumure minérale : Quantité de phosphore apportée par ha (en kg)";
+FUMQK;"Fumure minérale : Quantité de potassium apportée par ha (en kg)";
+FUMQS;"Fumure minérale : Quantité de soufre apportée par ha (en kg)";
+filter__;"Filtre sur les prairies";
+
+
+
+fumorg_pkgc2011_prairies
+"Table des données sur la fumure organique"
+
+"Nom de la variable";Libellé;Modalités
+Identifiant_FUMORG;"Numéro unique pour la table FUMORG";
+Identifiantdossier;"Numéro d'identifiant";
+CODEFUMO;"Fumure organique : numéro d'ordre de l'apport, classé dans l'ordre chronologique";
+ESPECE;"Culture enquêtée";"12 - Prairie temporaire";"13 - Prairie permanente"
+ESPECEINI;"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)";"12 - Prairie temporaire";"13 - Prairie permanente"
+PACAGEILOT;"Numéro de PACAGE + Numéro de l'ilot";
+PACAGE;"Numéro de PACAGE de l'exploitation";
+SIRET;"Numéro SIRET de l’exploitation";
+REG;"Région du siège de l'exploitation";"Code région - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEP;"Département de localisation de la parcelle";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPCOMP;"Code commune de l'exploitant";"Code commune - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPEXPLOI;"Département de la commune de l'exploitation";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+BIO;"Appartenance à la strate « bio »";"1 - Oui";"0 - Non"
+ZONE;"Appartenance à la strate «zone vulnérable»";"1 - Oui";"0 - Non"
+SUPP;"Superficie de la parcelle";
+tranche_superficie;"Tranche de superficie (strates utilisées pour le calcul des coefficients de pondération)";"01 - < 0.15";"02 - [ 0.15 ; 0.3 [";"03 - [ 0.3 ; 0.5 [";"04 - [ 0.5 ;  1 [";"05 - [ 1 ;  2 [";"06 - [ 2 ;  3 [";"07 - [ 3 ;  5 [";"08 - [ 5 ;  10 [";"09 - >=10";"12 - Regroupement des tranches 1 et 2";"13 - Regroupement des tranches 1, 2 et 3";"14 - Regroupement des tranches 1, 2, 3 et 4";"15 - Regroupement des tranches 1, 2, 3, 4 et 5";"16 - Regroupement des tranches 1, 2, 3, 4, 5 et 6";"18 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7 et 8";"19 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7, 8 et 9";"23 - Regroupement des tranches 2 et 3";"25 - Regroupement des tranches 2, 3, 4 et 5";"34 - Regroupement des tranches 3 et 4";"35 - Regroupement des tranches 3, 4 et 5";"36 - Regroupement des tranches 3, 4, 5 et 6";"39 - Regroupement des tranches 3, 4, 5, 6, 7, 8 et 9";"45 - Regroupement des tranches 4 et 5";"46 - Regroupement des tranches 4, 5 et 6";"47 - Regroupement des tranches 4, 5, 6 et 7";"49 - Regroupement des tranches 4, 5, 6, 7, 8 et 9";"56 - Regroupement des tranches 5 et 6";"57 - Regroupement des tranches 5, 6 et 7";"59 - Regroupement des tranches 5, 6, 7, 8 et 9";"67 - Regroupement des tranches 6 et 7";"69 - Regroupement des tranches 6, 7, 8 et 9";"78 - Regroupement des tranches 7 et 8";"79 - Regroupement des tranches 7, 8 et 9";"89 - Regroupement des tranches 8 et 9"
+COEF1;"Coefficient de pondération au niveau de la parcelle";
+COEF2;"Coefficient de pondération au niveau de la parcelle = COEF1*SUPP";
+FUMODAT;"Fumure organique : date de l'apport";
+FUMONAT;"Fumure organique : code de la fumure";"01 - Fumier bovins";"02 - Fumier canards";"03 - Fumier ovins";"04 - Fumier de porcs";"05 - Fumier volailles de chair";"06 - Fientes sèches poules pondeuses";"07 - Fientes pâteuses poules pondeuses";"08 - Lisier bovins";"09 - Lisier lapins";"10 - Lisier ovins";"11 - Lisier porcs";"12 - Lisier poules pondeuses";"13 - Lisier veaux";"14 - Compost d’origine animale";"15 - Compost d’origine végétale";"16 - Compost d’ordures ménagères";"17 - Boues de station d’épuration urbaine";"18 - Eaux de sucrerie";"19 - Vinasse";"20 - Autres boues d’industries agro-alimentaires";"21 - Autres boues industrielles";"22 - Écume";"23 - Autres effluents"
+FUMODOS;"Fumure organique : Quantité brute de fumure organique à l’ha (en t/ha ou en m3/ha)";
+FUMOUNI;"Fumure organique : Unité";"1 - T/HA";"2 - M3/HA"
+FUMOPROV;"Fumure organique : Provenance de la fumure";"1 - Exploitation";"2 - Extérieur";"3 - Mixte"
+FUMOTYP;"Fumure organique : type de matériel d’épandage";"1 - Buse";"2 - Rampe";"3 - Rampe pendillard";"4 - Enfouisseur";"5 - Epandeur hérissons horizontaux";"6 - Epandeur hérissons verticaux";"7 - Epandeur avec table d'épandage";"8 - Autres"
+FUMODEL;"Fumure organique : si enfouissement, délai entre l’apport et l’enfouissement de l’apport";"1 - Moins de 4 heures";"2 - De 4 à moins de 12 heures";"3 - De 12 à moins de 24 heures";"4 - 24 heures et plus";"9 - Sans objet"
+QNORGTHEO;"Fumure organique : quantité d’azote théorique par apport en kg/ha";
+QNORG;"Fumure organique, fumiers, lisiers, compost : teneur en azote en kg par tonnes ou kg par m3";
+QPORG;"Fumure organique, fumiers, lisiers, compost : teneur en phosphore en kg par tonnes ou kg par m3";
+QKORG;"Fumure organique, fumiers, lisiers, compost : teneur en potassium en kg par tonnes ou kg par m3";
+QNORGCALC;"Fumure organique : quantité d'azote organique calculée en kg/ha pour fumiers, lisiers, compost";
+QNORGBOUE;"Fumure organique : quantité d'azote organique calculée en kg/ha pour les boues";
+FUMQNORG;"Fumure organique : quantité d’azote par apport en kg/ha";
+FUMQPORG;"Fumure organique : quantité de phosphore par apport en kg/ha";
+FUMQKORG;"Fumure organique : quantité de potasse par apport en kg/ha";
+
+
+
+mecanic_pkgc2011_prairies
+"Table des données sur les interventions mécaniques"
+
+"Nom de la variable";Libellé;Modalités
+Identifiant_MECANIC;"Numéro unique pour la table MECANIC";
+Identifiantdossier;"Numéro d'identifiant";
+ESPECE;"Culture enquêtée";"12 - Prairie temporaire";"13 - Prairie permanente"
+ESPECEINI;"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)";"12 - Prairie temporaire";"13 - Prairie permanente"
+PACAGEILOT;"Numéro de PACAGE  + Numéro de l'ilot";
+PACAGE;"Numéro de PACAGE de l'exploitation";
+SIRET;"Numéro SIRET de l’exploitation";
+REG;"Région du siège de l'exploitation";"Code région - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEP;"Département de localisation de la parcelle";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPCOMP;"Code commune de l'exploitant";"Code commune - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPEXPLOI;"Département de la commune de l'exploitation";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+BIO;"Appartenance à la strate « bio »";"1 - Bio";"2 - MAE";"0 - Ni l'un ni l'autre"
+ZONE;"Appartenance à la strate «zone vulnérable»";"1 - Zone vulnérable";"0 - Hors zone vulnérable"
+SUPP;"Superficie de la parcelle";
+tranche_superficie;"Tranche de superficie en hectares (strates utilisées pour le calcul des coefficients de pondération)";"01 - < 0.15";"02 - [ 0.15 ; 0.3 [";"03 - [ 0.3 ; 0.5 [";"04 - [ 0.5 ;  1 [";"05 - [ 1 ;  2 [";"06 - [ 2 ;  3 [";"07 - [ 3 ;  5 [";"08 - [ 5 ;  10 [";"09 - >=10";"12 - Regroupement des tranches 1 et 2";"13 - Regroupement des tranches 1, 2 et 3";"14 - Regroupement des tranches 1, 2, 3 et 4";"15 - Regroupement des tranches 1, 2, 3, 4 et 5";"16 - Regroupement des tranches 1, 2, 3, 4, 5 et 6";"18 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7 et 8";"19 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7, 8 et 9";"23 - Regroupement des tranches 2 et 3";"25 - Regroupement des tranches 2, 3, 4 et 5";"34 - Regroupement des tranches 3 et 4";"35 - Regroupement des tranches 3, 4 et 5";"36 - Regroupement des tranches 3, 4, 5 et 6";"39 - Regroupement des tranches 3, 4, 5, 6, 7, 8 et 9";"45 - Regroupement des tranches 4 et 5";"46 - Regroupement des tranches 4, 5 et 6";"47 - Regroupement des tranches 4, 5, 6 et 7";"49 - Regroupement des tranches 4, 5, 6, 7, 8 et 9";"56 - Regroupement des tranches 5 et 6";"57 - Regroupement des tranches 5, 6 et 7";"59 - Regroupement des tranches 5, 6, 7, 8 et 9";"67 - Regroupement des tranches 6 et 7";"69 - Regroupement des tranches 6, 7, 8 et 9";"78 - Regroupement des tranches 7 et 8";"79 - Regroupement des tranches 7, 8 et 9";"89 - Regroupement des tranches 8 et 9"
+COEF1;"Coefficient de pondération au niveau de la parcelle";
+COEF2;"Coefficient de pondération au niveau de la parcelle = COEF1*SUPP";
+CODMECA;"Numéro d'ordre de l'intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse, dans l'ordre chronologique";
+MECAPAS;"Numéro de passage de l'intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse";
+DMECA;"Date de l’intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse";
+MECALIB;"Libellé de l'intervention mécanique";
+TYPMECA;"Code Intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse";"110 - Travail superficiel du sol < 8 cm - Déchaumeur";"120 - Travail superficiel du sol < 8 cm - Vibroculteur";"131 - Travail superficiel du sol < 8 cm - Herse";"132 - Travail superficiel du sol < 8 cm - Herse animée";"133 - Travail superficiel du sol < 8 cm - Herse étrille";"140 - Travail superficiel du sol < 8 cm - Striptill";"150 - Travail superficiel du sol < 8 cm - Bineuse - Sarcleuse";"160 - Travail superficiel du sol < 8 cm - Ecrouteuse - Houe rotative ou picoteuse";"170 - Travail superficiel du sol < 8 cm - Desherbineuse";"180 - Travail superficiel du sol < 8 cm - Outil combiné désherbage mécanique et chimique";"190 - Travail superficiel du sol < 8 cm - Autres";"210 - Travail superficiel du sol entre 8 et 15 cm - Déchaumeur";"220 - Travail superficiel du sol entre 8 et 15 cm - Déchaumeur animé";"230 - Travail superficiel du sol entre 8 et 15 cm - Pulvériseur";"240 - Travail superficiel du sol entre 8 et 15 cm - Striptill";"250 - Travail superficiel du sol entre 8 et 15 cm - Cultivateur animé ou herse animée";"260 - Travail superficiel du sol entre 8 et 15 cm - Autres";"310 - Travail profond du sol sans retournement (>15 cm) - Sous-soleuse";"320 - Travail profond du sol sans retournement (>15 cm) - Décompacteur";"330 - Travail profond du sol sans retournement (>15 cm) - Cultivateur lourd ou chisel";"340 - Travail profond du sol sans retournement (>15 cm) - Cultivateur léger";"350 - Travail profond du sol sans retournement (>15 cm) - Pulvériseur";"360 - Travail profond du sol sans retournement (>15 cm) - Rotobêche";"370 - Travail profond du sol sans retournement (>15 cm) - Autres";"410 - Labour - Charrue versoir";"420 - Labour - Charrue à disque";"430 - Labour - Autres";"510 - Roulage - Rouleau lisse";"520 - Roulage - Rouleau non lisse";"530 - Roulage - Autres";"611 - Semis/plantation culture principale - Semoir à semis direct";"612 - Semis/plantation culture principale - Semoirs/outils de plantation non combinés";"613 - Semis/plantation culture principale - Combiné préparation du sol-semis";"614 - Semis/plantation culture principale - Combiné fertilisation-semis";"615 - Semis/plantation culture principale - Combiné phytosanitaire-semis";"616 - (DOM) plantation mécanique des boutures de canne";"621 - Semis couvert (intermédiaire ou dérobée) - Semoir à semis direct";"622 - Semis couvert (intermédiaire ou dérobée) - Autres semoirs non combiné";"623 - Semis couvert (intermédiaire ou dérobée) - Combiné préparation du sol-semis";"711 - Buttage";"712 - Défanage";"721 - (DOM) arrachage mécanique des anciennes souches de canne";"722 - (DOM) recouvrement mécanique des boutures de canne";"723 - (DOM) épierrage fin";"724 - (DOM) épierrage grossier";"725 - (DOM) broyage des pierres";"810 - Récolte culture principale";"811 - (DOM) coupe mécanique de la canne";"812 - (DOM) chargement mécanique de la canne";"820 - Récolte culture dérobée";"910 - Entretien prairie - Fauche ou broyage des refus";"920 - Entretien prairie - Étaupinage";"930 - Entretien prairie - Ébousage";"940 - Entretien prairie - Émoussage";"950 - Entretien prairie - Autre entretien de prairie"
+TYPMECA1;"Code Intervention mécanique simplifié 1";"1 - Travail superficiel < 8 cm ou broyage sans travail du sol";"2 - Travail superficiel du sol entre 8 et 15 cm";"3 - Travail profond du sol sans retournement (>15 cm)";"4 - Labour";"5 - Roulage";"6 - Semis/plantation";"7 - Autres opérations";"8 - Récolte";"9 - Entretien prairie"
+TYPMECA2;"Code Intervention mécanique simplifié 2";"10 - Broyage sans travail du sol";"11 - Travail superficiel du sol < 8 cm - Déchaumeur";"12 - Travail superficiel du sol < 8 cm - Vibroculteur";"13 - Travail superficiel du sol < 8 cm - Herse";"14 - Travail superficiel du sol < 8 cm - Striptill";"15 - Travail superficiel du sol < 8 cm - Bineuse";"16 - Travail superficiel du sol < 8 cm - Sarcleuse";"17 - Travail superficiel du sol < 8 cm - Desherbineuse";"18 - Travail superficiel du sol < 8 cm - outil combiné désherbage mécanique et chimique";"19 - Travail superficiel du sol < 8 cm - Autres";"21 - Travail superficiel du sol entre 8 et 15 cm - Déchaumeur";"22 - Travail superficiel du sol entre 8 et 15 cm - Déchaumeur animé";"23 - Travail superficiel du sol entre 8 et 15 cm - Pulvériseur";"24 - Travail superficiel du sol entre 8 et 15 cm - Striptill";"25 - Travail superficiel du sol entre 8 et 15 cm - Cultivateur animé ou  herse animée";"26 - Travail superficiel du sol entre 8 et 15 cm - Autres";"31 - Travail profond du sol sans retournement (>15 cm) - Sous-soleuse";"32 - Travail profond du sol sans retournement (>15 cm) - Décompacteur";"33 - Travail profond du sol sans retournement (>15 cm) - Cultivateur lourd ou chisel";"34 - Travail profond du sol sans retournement (>15 cm) - Cultivateur léger";"35 - Travail profond du sol sans retournement (>15 cm) - Pulvériseur";"36 - Travail profond du sol sans retournement (>15 cm) - Rotobêche";"37 - Travail profond du sol sans retournement (>15 cm) - Autres";"41 - Labour - Charrue versoir";"42 - Labour - Charrue à disque";"43 - Labour - Autres";"51 - Roulage - Rouleau lisse";"52 - Roulage - Rouleau non lisse";"53 - Roulage - Autres";"61 - Semis/plantation culture principale";"62 - Semis couvert (intermédiaire ou dérobée)";"71 - Opérations spécifiques pomme de terre";"72 - Opérations spécifiques canne à sucre";"81 - Récolte culture principale";"82 - Récolte culture dérobée";"91 - Entretien prairie - fauche ou broyage des refus";"92 - Entretien prairie - étaupinage";"93 - Entretien prairie - ébousage";"94 - Entretien prairie - émoussage";"95 - Entretien prairie - autre entretien de prairie"
+
+
+
+pkgc2011_prairies
+"Table des données concernant directement la parcelle"
+
+"Nom de la variable";Libellé;Modalités
+Identifiantdossier;"Numéro d'identifiant";
+ESPECE;"Culture enquêtée";"12 - Prairie temporaire";"13 - Prairie permanente"
+ESPECEINI;"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)";"12 - Prairie temporaire";"13 - Prairie permanente"
+PACAGEILOT;"Numéro de PACAGE + Numéro de l'ilot";
+PACAGE;"Numéro de PACAGE de l'exploitation";
+SIRET;"Numéro SIRET de l’exploitation";
+ID_RA;"Numéro d'identification au recensement agricole 2010";
+SIRETRA;"Numéro SIRET de l’exploitation issu du recensement agricole 2010";
+REG;"Région du siège de l'exploitation";"Code région - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEP;"Département de localisation de la parcelle";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPCOMP;"Code commune de l'exploitant";"Code commune - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+DEPEXPLOI;"Département de la commune de l'exploitation";"Code département - <a href='https://www.insee.fr/fr/information/2560452' target=""_blank""> cliquer ici</a>"
+BIO;"Appartenance à la strate «bio»";"1 - Bio";"2 - MAE";"0 - Ni l'un ni l'autre"
+ZONE;"Appartenance à la strate «zone vulnérable»";"1 - Zone vulnérable";"0 - Hors zone vulnérable"
+SUPP;"Superficie de la parcelle";
+tranche_superficie;"Tranche de superficie (strates utilisées pour le calcul des coefficients de pondération)";"01 - < 0.15";"02 - [ 0.15 ; 0.3 [";"03 - [ 0.3 ; 0.5 [";"04 - [ 0.5 ;  1 [";"05 - [ 1 ;  2 [";"06 - [ 2 ;  3 [";"07 - [ 3 ;  5 [";"08 - [ 5 ;  10 [";"09 - >=10";"12 - Regroupement des tranches 1 et 2";"13 - Regroupement des tranches 1, 2 et 3";"14 - Regroupement des tranches 1, 2, 3 et 4";"15 - Regroupement des tranches 1, 2, 3, 4 et 5";"16 - Regroupement des tranches 1, 2, 3, 4, 5 et 6";"18 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7 et 8";"19 - Regroupement des tranches 1, 2, 3, 4, 5, 6, 7, 8 et 9";"23 - Regroupement des tranches 2 et 3";"25 - Regroupement des tranches 2, 3, 4 et 5";"34 - Regroupement des tranches 3 et 4";"35 - Regroupement des tranches 3, 4 et 5";"36 - Regroupement des tranches 3, 4, 5 et 6";"39 - Regroupement des tranches 3, 4, 5, 6, 7, 8 et 9";"45 - Regroupement des tranches 4 et 5";"46 - Regroupement des tranches 4, 5 et 6";"47 - Regroupement des tranches 4, 5, 6 et 7";"49 - Regroupement des tranches 4, 5, 6, 7, 8 et 9";"56 - Regroupement des tranches 5 et 6";"57 - Regroupement des tranches 5, 6 et 7";"59 - Regroupement des tranches 5, 6, 7, 8 et 9";"67 - Regroupement des tranches 6 et 7";"69 - Regroupement des tranches 6, 7, 8 et 9";"78 - Regroupement des tranches 7 et 8";"79 - Regroupement des tranches 7, 8 et 9";"89 - Regroupement des tranches 8 et 9"
+COEF1;"Coefficient de pondération au niveau de la parcelle";
+COEF2;"Coefficient de pondération au niveau de la parcelle = COEF1*SUPP";
+SAU;"Superficie agricole utilisée de l’exploitation";
+FAMTOT;"Prairies : Superficie totale en prairies de l’exploitation (temporaires, permanentes, artificielles)";
+SUPESP;"Superficie de l’espèce enquêtée sur l’exploitation";
+SUPFOU;"Superficie en autres cultures fourragères (maïs, betterave, sorgho, avoine, …)";
+ANALYEXP;"Nombre d'années depuis 2006 inclus où une analyse de terre de l'exploitation a été effectuée";
+ANALYP;"Existence d'une analyse de terre sur la parcelle";"1 - Oui";"0 - Non"
+BILLONS;"Existence d'une culture en billons ou en planches";"1 - Oui";"0 - Non"
+ENTRERANG;"Écartement entre les rangs (en cm)";
+RANGPERP;"Si la parcelle est en pente, les rangs sont-ils perpendiculaires à la pente ?";"2 - Pas de pente";"1 - Oui";"0 - Non"
+ALTITUDE;"Altitude de la parcelle (en mètres)";
+CAHIERBIO;"Existence d'un cahier des charges en agriculture biologique";"1 - Oui";"0 - Non"
+EAEFERTI;"Existence d'un engagement agro-environnemental rémunéré (MAE) pour la fertilisation";"1 - Oui";"0 - Non"
+EAEPHYTO;"Existence d'un engagement agro-environnemental rémunéré (MAE) pour les interventions phytosanitaires";"1 - Oui";"0 - Non"
+EAECOUVERT;"Existence d'un engagement agro-environnemental rémunéré (MAE) pour la couverture des sols en hiver";"1 - Oui";"0 - Non"
+EAEDIVERSIF;"Existence d'un engagement agro-environnemental rémunéré (MAE) pour la diversification de l’assolement";"1 - Oui";"0 - Non"
+EAEAUTRE;"Existence d'un engagement agro-environnemental rémunéré (MAE) pour un autre engagement agro-environnemental";"1 - Oui";"0 - Non"
+CAHIERPHAE;"Existence d'un cahier des charges de la prime à l’herbe agro-environnementale (PHAE)";"1 - Oui";"0 - Non"
+CAHIEREXP;"Existence d'un cahier des charges qui encadre les modalités de fauche ou de pâturage";"1 - Oui";"0 - Non"
+EDESHERB;"Existence d'un engagement pour le désherbage";"1 - Oui";"0 - Non"
+DRAINP;"Existence d'un drainage de la parcelle";"1 - Oui";"0 - Non"
+EAU;"Existence d'un cours d’eau sur la parcelle ou adjacent à la parcelle";"1 - Oui";"0 - Non"
+BANDEHERB;"Existence sur la parcelle  d'une bande enherbée le long d’un cours d’eau";"1 - Oui";"0 - Non"
+TYPESOL;"Type de sol de la parcelle";
+MOISPLAN;"Mois de plantation de la canne à sucre présente sur la parcelle";
+ANPLAN;"Année de plantation de la canne à sucre présente sur la parcelle";
+PREMAN;"Première année de mise en place d’une culture de canne à sucre sur la parcelle";
+TYPCAN;"Type de canne à sucre sur la parcelle";"1 - Canne issue d'une repousse de canne coupée en 2010";"2 - Plantation de canne réalisée uniquement pour prélever des boutures";"3 - Canne nouvellement plantée en 2009 ou 2010 et coupée en 2011";"4 - Canne nouvellement plantée en 2009 ou 2010 et pas encore coupée"
+ANSEMPR;"Année de semis de la prairie";
+MOISSEM;"Mois d’implantation de la prairie (si semis de la prairie en 2010 ou 2011)";
+LEGUM;"Niveau de présence de légumineuses dans cette prairie à l’été 2011";"1 - Moins de 20%";"2 - Entre 20 et 40%";"3 - 40% et plus"
+TYPPERM;"Type de la prairie permanente (implantée avant l’automne 2005)";"1 - Semée depuis 6 à 10 ans (à l'automne 2001 ou après et avant l'automne 2005)";"2 - Semée depuis plus de 10 ans (avant l'automne 2001)";"3 - Naturelle"
+TYPRENQ;"Type de la prairie au moment du passage de l’enquêteur";"1 - Graminées pures";"2 - Graminées pures et petites légumineuses pour pâture";"3 - Mélange pour fauche";"4 - Mélange fauche et pâture";"5 - Autres"
+SUPTYP;"Superficie totale sur l’exploitation du type de prairie enquêtée";
+RIG;"Composition du type de prairie enquêtée : présence de Ray-grass d’Italie";"1 - Oui";"0 - Non"
+RGA;"Composition du type de prairie enquêtée : présence de Ray-grass anglais";"1 - Oui";"0 - Non"
+RGH;"Composition du type de prairie enquêtée : présence de Ray-grass hybride";"1 - Oui";"0 - Non"
+DACTYL;"Composition du type de prairie enquêtée : présence de Dactyle (pelotonné)";"1 - Oui";"0 - Non"
+FETUQ;"Composition du type de prairie enquêtée : présence de Fétuque élevée";"1 - Oui";"0 - Non"
+AUTGRAM;"Composition du type de prairie enquêtée : présence d'autres graminées de longue durée (fétuque des prés, fléole des prés, pâturin des prés)";"1 - Oui";"0 - Non"
+TREFLEB;"Composition du type de prairie enquêtée : présence de Trèfle blanc";"1 - Oui";"0 - Non"
+TREFLEH;"Composition du type de prairie enquêtée : présence de Trèfle hybride";"1 - Oui";"0 - Non"
+TREFLEV;"Composition du type de prairie enquêtée : présence de Trèfle violet";"1 - Oui";"0 - Non"
+LOTIER;"Composition du type de prairie enquêtée : présence de Lotier (corniculé)";"1 - Oui";"0 - Non"
+SAINFOIN;"Composition du type de prairie enquêtée : présence de Sainfoin";"1 - Oui";"0 - Non"
+MINET;"Composition du type de prairie enquêtée : présence de Minette";"1 - Oui";"0 - Non"
+LUZERN;"Composition du type de prairie enquêtée : présence de Luzerne autre que minette";"1 - Oui";"0 - Non"
+AUTLEG;"Composition du type de prairie enquêtée : présence d'autre(s) légumineuse(s)";"1 - Oui";"0 - Non"
+SEM20102011;"Concerne les prairies temporaires : Semis 2010-2011 (entre août 2010 et juillet 2011 inclus)";
+SEM2011;"Concerne les prairies temporaires : Semis 2011 (entre février et juillet 2011 inclus)";
+REALREC;"Réalisation de la récolte";"1 - Oui";"0 - Non"
+OBJREND;"Hypothèse de rendement en début de campagne";
+ENERGIE;"Destination du produit récolté : valorisation énergétique";"0 - Non";"1 - Oui";"2 - Valorisation inconnue"
+DESTIN;"Destination du produit récolté";"1 - Production de plants";"2 - Consommation en frais";"3 - Consommation industrie";"4 - Féculerie"
+RENDNORME;"Rendement aux normes";
+RENDNIV;"Rapport entre rendement de la campagne et rendement moyen de la culture";"1 - Normal";"2 - Faible (20% en dessous)";"3 - Fort (20% au-dessus)"
+INTEMP;"Existence d'aléas exceptionnels sur la parcelle";"0 - Non";"1 - Climatiques";"2 - Sanitaires";"3 - Les deux"
+RDMESUR;"Mesure du rendement";"1 - Estimé ou mesuré sur l'exploitation";"2 - Mesuré à la parcelle"
+PROTEIN;"Existence de la teneur en protéines obtenue";"1 - Oui";"0 - Non"
+TENPROT;"Teneur en protéines obtenue";
+AERIEN;"Existence de traitements aériens sur la parcelle enquêtée";"1 - Oui";"0 - Non"
+THUM;"Rendement de la campagne : Humidité à la récolte";
+IMPUR;"Rendement de la campagne : Impuretés";
+CONNSUC;"Connaissance de la teneur totale en sucre obtenue";"1 - Oui";"0 - Non"
+RICSUC;"Rendement de la campagne : rendement racine";
+RICSUC2;"Teneur totale en sucre obtenue";
+PRECULTCAN;"Nature de la culture ou jachère qui a précédé l’implantation de la canne à sucre actuelle";"9999 - Sans objet"
+PRECULT2010;"Précédent cultural 2010";"1101 - Céréales : Avoine (y compris semences)";"1102 - Céréales : Blé dur (y compris semences)";"1103 - Céréales : Blé tendre (y compris semences)";"2104 - Céréales : Maïs grain et semence";"1105 - Céréales : Orge, escourgeon (y compris semences)";"2106 - Céréales : Riz";"1107 - Céréales : Seigle (y compris semences)";"2108 - Céréales : Sorgho-grain (y compris semences)";"1109 - Céréales : Triticale (y compris semences)";"1110 - Autres céréales (mélanges, sarrasin…)";"2201 - Cultures industrielles : Betterave industrielle";"1202 - Cultures industrielles : Colza";"2203 - Cultures industrielles : Lin oléagineux";"2204 - Cultures industrielles : Tournesol";"2205 - Cultures industrielles : Soja";"1206 - Cultures industrielles : Autres oléagineux (œillette, ricin…)";"2207 - Cultures industrielles : Chanvre";"2208 - Cultures industrielles : Lin textile";"9209 - Cultures industrielles : Autres plantes textiles";"9210 - Cultures industrielles : Houblon";"9211 - Cultures industrielles : Plantes médicinales, à parfum ou condimentaires";"9212 - Cultures industrielles : Semences grainières (légumières, florales…)";"9213 - Cultures industrielles : Tabac (y compris plants)";"9214 - Autres cultures industrielles (chanvre papier, chicorée à café…)";"1301 - Protéagineux, légumes : Fève, féverole, lupin doux ( y compris semences)";"2302 - Protéagineux, légumes : Lentilles, pois chiches, vesces ( y compris semences)";"1303 - Protéagineux, légumes : Pois protéagineux ( y compris semences)";"1304 - Protéagineux, légumes : Autres légumes secs (haricot…) ( y compris semences)";"9305 - Protéagineux, légumes : Légumes frais, fraises et melons";"2401 - Pomme de terre";"2501 - Fourrages : Maïs fourrage et ensilage";"1502 - Fourrages : Plantes sarclées fourragères (chou, betterave….)";"1503 - Fourrages : Autres fourrages annuels (sorgho fourrager…)";"9504 - Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)";"9505 - Prairies temporaires (moins de 6 ans, graminées pures ou avec légumineuses)";"9506 - Prairies permanentes";"9601 - Cultures permanentes, fleurs - Fleurs et plantes ornementales, pépinières";"9602 - Cultures permanentes, fleurs – Vergers";"9603 - Cultures permanentes, fleurs – Vignes";"9701 - Jachères en sol nu";"9702 - Jachères avec couvert végétal spontané";"9703 - Jachères avec couvert végétal semé";"1111 - Autres cultures";"9888 - Ne sait pas";"9999 - Sans objet"
+LAB2010;"Existence d'un labour avant mise en place de la culture 2010";"1 - Oui";"0 - Non"
+PERIOD2010;"Période de semis 2010";"1 - Automne";"2 - Printemps";"9 - Sans objet"
+REND2010;"Rendement 2010";
+RDUNI2010;"Unité du rendement 2010";"1 - Q/HA";"2 - T/HA";"9 - Sans objet"
+PRECULT2009;"Précédent cultural 2009";"1101 - Céréales : Avoine (y compris semences)";"1102 - Céréales : Blé dur (y compris semences)";"1103 - Céréales : Blé tendre (y compris semences)";"2104 - Céréales : Maïs grain et semence";"1105 - Céréales : Orge, escourgeon (y compris semences)";"2106 - Céréales : Riz";"1107 - Céréales : Seigle (y compris semences)";"2108 - Céréales : Sorgho-grain (y compris semences)";"1109 - Céréales : Triticale (y compris semences)";"1110 - Autres céréales (mélanges, sarrasin…)";"2201 - Cultures industrielles : Betterave industrielle";"1202 - Cultures industrielles : Colza";"2203 - Cultures industrielles : Lin oléagineux";"2204 - Cultures industrielles : Tournesol";"2205 - Cultures industrielles : Soja";"1206 - Cultures industrielles : Autres oléagineux (œillette, ricin…)";"2207 - Cultures industrielles : Chanvre";"2208 - Cultures industrielles : Lin textile";"9209 - Cultures industrielles : Autres plantes textiles";"9210 - Cultures industrielles : Houblon";"9211 - Cultures industrielles : Plantes médicinales, à parfum ou condimentaires";"9212 - Cultures industrielles : Semences grainières (légumières, florales…)";"9213 - Cultures industrielles : Tabac (y compris plants)";"9214 - Autres cultures industrielles (chanvre papier, chicorée à café…)";"1301 - Protéagineux, légumes : Fève, féverole, lupin doux ( y compris semences)";"2302 - Protéagineux, légumes : Lentilles, pois chiches, vesces ( y compris semences)";"1303 - Protéagineux, légumes : Pois protéagineux ( y compris semences)";"1304 - Protéagineux, légumes : Autres légumes secs (haricot…) ( y compris semences)";"9305 - Protéagineux, légumes : Légumes frais, fraises et melons";"2401 - Pomme de terre";"2501 - Fourrages : Maïs fourrage et ensilage";"1502 - Fourrages : Plantes sarclées fourragères (chou, betterave….)";"1503 - Fourrages : Autres fourrages annuels (sorgho fourrager…)";"9504 - Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)";"9505 - Prairies temporaires (moins de 6 ans, graminées pures ou avec légumineuses)";"9506 - Prairies permanentes";"9601 - Cultures permanentes, fleurs - Fleurs et plantes ornementales, pépinières";"9602 - Cultures permanentes, fleurs – Vergers";"9603 - Cultures permanentes, fleurs – Vignes";"9701 - Jachères en sol nu";"9702 - Jachères avec couvert végétal spontané";"9703 - Jachères avec couvert végétal semé";"1111 - Autres cultures";"9888 - Ne sait pas";"9999 - Sans objet"
+LAB2009;"Existence d'un labour avant mise en place de la culture 2009";"1 - Oui";"0 - Non"
+PERIOD2009;"Période de semis 2009";"1 - Automne";"2 - Printemps";"9 - Sans objet"
+REND2009;"Rendement 2009";
+RDUNI2009;"Unité du rendement 2009";"1 - Q/HA";"2 - T/HA";"9 - Sans objet"
+PRECULT2008;"Précédent cultural 2008";"1101 - Céréales : Avoine (y compris semences)";"1102 - Céréales : Blé dur (y compris semences)";"1103 - Céréales : Blé tendre (y compris semences)";"2104 - Céréales : Maïs grain et semence";"1105 - Céréales : Orge, escourgeon (y compris semences)";"2106 - Céréales : Riz";"1107 - Céréales : Seigle (y compris semences)";"2108 - Céréales : Sorgho-grain (y compris semences)";"1109 - Céréales : Triticale (y compris semences)";"1110 - Autres céréales (mélanges, sarrasin…)";"2201 - Cultures industrielles : Betterave industrielle";"1202 - Cultures industrielles : Colza";"2203 - Cultures industrielles : Lin oléagineux";"2204 - Cultures industrielles : Tournesol";"2205 - Cultures industrielles : Soja";"1206 - Cultures industrielles : Autres oléagineux (œillette, ricin…)";"2207 - Cultures industrielles : Chanvre";"2208 - Cultures industrielles : Lin textile";"9209 - Cultures industrielles : Autres plantes textiles";"9210 - Cultures industrielles : Houblon";"9211 - Cultures industrielles : Plantes médicinales, à parfum ou condimentaires";"9212 - Cultures industrielles : Semences grainières (légumières, florales…)";"9213 - Cultures industrielles : Tabac (y compris plants)";"9214 - Autres cultures industrielles (chanvre papier, chicorée à café…)";"1301 - Protéagineux, légumes : Fève, féverole, lupin doux ( y compris semences)";"2302 - Protéagineux, légumes : Lentilles, pois chiches, vesces ( y compris semences)";"1303 - Protéagineux, légumes : Pois protéagineux ( y compris semences)";"1304 - Protéagineux, légumes : Autres légumes secs (haricot…) ( y compris semences)";"9305 - Protéagineux, légumes : Légumes frais, fraises et melons";"2401 - Pomme de terre";"2501 - Fourrages : Maïs fourrage et ensilage";"1502 - Fourrages : Plantes sarclées fourragères (chou, betterave….)";"1503 - Fourrages : Autres fourrages annuels (sorgho fourrager…)";"9504 - Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)";"9505 - Prairies temporaires (moins de 6 ans, graminées pures ou avec légumineuses)";"9506 - Prairies permanentes";"9601 - Cultures permanentes, fleurs - Fleurs et plantes ornementales, pépinières";"9602 - Cultures permanentes, fleurs – Vergers";"9603 - Cultures permanentes, fleurs – Vignes";"9701 - Jachères en sol nu";"9702 - Jachères avec couvert végétal spontané";"9703 - Jachères avec couvert végétal semé";"1111 - Autres cultures";"9888 - Ne sait pas";"9999 - Sans objet"
+LAB2008;"Existence d'un labour avant mise en place de la culture 2008";"1 - Oui";"0 - Non"
+PERIOD2008;"Période de semis 2008";"1 - Automne";"2 - Printemps";"9 - Sans objet"
+REND2008;"Rendement 2008";
+RDUNI2008;"Unité du rendement 2008";"1 - Q/HA";"2 - T/HA";"9 - Sans objet"
+PRECULT2007;"Précédent cultural 2007";"1101 - Céréales : Avoine (y compris semences)";"1102 - Céréales : Blé dur (y compris semences)";"1103 - Céréales : Blé tendre (y compris semences)";"2104 - Céréales : Maïs grain et semence";"1105 - Céréales : Orge, escourgeon (y compris semences)";"2106 - Céréales : Riz";"1107 - Céréales : Seigle (y compris semences)";"2108 - Céréales : Sorgho-grain (y compris semences)";"1109 - Céréales : Triticale (y compris semences)";"1110 - Autres céréales (mélanges, sarrasin…)";"2201 - Cultures industrielles : Betterave industrielle";"1202 - Cultures industrielles : Colza";"2203 - Cultures industrielles : Lin oléagineux";"2204 - Cultures industrielles : Tournesol";"2205 - Cultures industrielles : Soja";"1206 - Cultures industrielles : Autres oléagineux (œillette, ricin…)";"2207 - Cultures industrielles : Chanvre";"2208 - Cultures industrielles : Lin textile";"9209 - Cultures industrielles : Autres plantes textiles";"9210 - Cultures industrielles : Houblon";"9211 - Cultures industrielles : Plantes médicinales, à parfum ou condimentaires";"9212 - Cultures industrielles : Semences grainières (légumières, florales…)";"9213 - Cultures industrielles : Tabac (y compris plants)";"9214 - Autres cultures industrielles (chanvre papier, chicorée à café…)";"1301 - Protéagineux, légumes : Fève, féverole, lupin doux ( y compris semences)";"2302 - Protéagineux, légumes : Lentilles, pois chiches, vesces ( y compris semences)";"1303 - Protéagineux, légumes : Pois protéagineux ( y compris semences)";"1304 - Protéagineux, légumes : Autres légumes secs (haricot…) ( y compris semences)";"9305 - Protéagineux, légumes : Légumes frais, fraises et melons";"2401 - Pomme de terre";"2501 - Fourrages : Maïs fourrage et ensilage";"1502 - Fourrages : Plantes sarclées fourragères (chou, betterave….)";"1503 - Fourrages : Autres fourrages annuels (sorgho fourrager…)";"9504 - Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)";"9505 - Prairies temporaires (moins de 6 ans, graminées pures ou avec légumineuses)";"9506 - Prairies permanentes";"9601 - Cultures permanentes, fleurs - Fleurs et plantes ornementales, pépinières";"9602 - Cultures permanentes, fleurs – Vergers";"9603 - Cultures permanentes, fleurs – Vignes";"9701 - Jachères en sol nu";"9702 - Jachères avec couvert végétal spontané";"9703 - Jachères avec couvert végétal semé";"1111 - Autres cultures";"9888 - Ne sait pas";"9999 - Sans objet"
+LAB2007;"Existence d'un labour avant mise en place de la culture 2007";"1 - Oui";"0 - Non"
+PERIOD2007;"Période de semis 2007";"1 - Automne";"2 - Printemps";"9 - Sans objet"
+REND2007;"Rendement 2007";
+RDUNI2007;"Unité du rendement 2007";"1 - Q/HA";"2 - T/HA";"9 - Sans objet"
+PRECULT2006;"Précédent cultural 2006";"1101 - Céréales : Avoine (y compris semences)";"1102 - Céréales : Blé dur (y compris semences)";"1103 - Céréales : Blé tendre (y compris semences)";"2104 - Céréales : Maïs grain et semence";"1105 - Céréales : Orge, escourgeon (y compris semences)";"2106 - Céréales : Riz";"1107 - Céréales : Seigle (y compris semences)";"2108 - Céréales : Sorgho-grain (y compris semences)";"1109 - Céréales : Triticale (y compris semences)";"1110 - Autres céréales (mélanges, sarrasin…)";"2201 - Cultures industrielles : Betterave industrielle";"1202 - Cultures industrielles : Colza";"2203 - Cultures industrielles : Lin oléagineux";"2204 - Cultures industrielles : Tournesol";"2205 - Cultures industrielles : Soja";"1206 - Cultures industrielles : Autres oléagineux (œillette, ricin…)";"2207 - Cultures industrielles : Chanvre";"2208 - Cultures industrielles : Lin textile";"9209 - Cultures industrielles : Autres plantes textiles";"9210 - Cultures industrielles : Houblon";"9211 - Cultures industrielles : Plantes médicinales, à parfum ou condimentaires";"9212 - Cultures industrielles : Semences grainières (légumières, florales…)";"9213 - Cultures industrielles : Tabac (y compris plants)";"9214 - Autres cultures industrielles (chanvre papier, chicorée à café…)";"1301 - Protéagineux, légumes : Fève, féverole, lupin doux ( y compris semences)";"2302 - Protéagineux, légumes : Lentilles, pois chiches, vesces ( y compris semences)";"1303 - Protéagineux, légumes : Pois protéagineux ( y compris semences)";"1304 - Protéagineux, légumes : Autres légumes secs (haricot…) ( y compris semences)";"9305 - Protéagineux, légumes : Légumes frais, fraises et melons";"2401 - Pomme de terre";"2501 - Fourrages : Maïs fourrage et ensilage";"1502 - Fourrages : Plantes sarclées fourragères (chou, betterave….)";"1503 - Fourrages : Autres fourrages annuels (sorgho fourrager…)";"9504 - Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)";"9505 - Prairies temporaires (moins de 6 ans, graminées pures ou avec légumineuses)";"9506 - Prairies permanentes";"9601 - Cultures permanentes, fleurs - Fleurs et plantes ornementales, pépinières";"9602 - Cultures permanentes, fleurs – Vergers";"9603 - Cultures permanentes, fleurs – Vignes";"9701 - Jachères en sol nu";"9702 - Jachères avec couvert végétal spontané";"9703 - Jachères avec couvert végétal semé";"1111 - Autres cultures";"9888 - Ne sait pas";"9999 - Sans objet"
+LAB2006;"Existence d'un labour avant mise en place de la culture 2006";"1 - Oui";"0 - Non"
+PERIOD2006;"Période de semis 2006";"1 - Automne";"2 - Printemps";"9 - Sans objet"
+REND2006;"Rendement 2006";
+RDUNI2006;"Unité du rendement 2006";"1 - Q/HA";"2 - T/HA";"9 - Sans objet"
+DPRECUL;"Date de récolte du précédent 2010";
+RESIDUS;"Traitement des résidus du précédent cultural";"1 - Laissés sur place et broyés";"2 - Laissés sur place non broyés";"3 - Laissés sur place, broyés et enfouis superficiellement (moins de 15 cm)";"4 - Laissés sur place, non broyés et enfouis superficiellement (moins de 15 cm)"
+REPOUSPREC;"Repousse du précédent cultural ayant couvert le sol : présence";"1 - Oui";"0 - Non"
+DDESREPOUS;"Date de destruction des repousses du précédent";
+REPOUSDESMEC;"Mode de destruction mécanique : présence";"1 - Oui";"0 - Non"
+REPOUSDESCHI;"Mode de destruction chimique : présence";"1 - Oui";"0 - Non"
+REPOUSDESAUT;"Mode de destruction autres (gel, …) : présence";"1 - Oui";"0 - Non"
+INTERV;"Cannes à sucre laissées sur place, présence d'une intervention";"1 - Oui";"0 - Non"
+LABCAN;"Existence d'un labour avant mise en place de la culture de cannes à sucre";"1 - Oui";"0 - Non"
+ENGVERT;"Présence d'une culture intermédiaire qui a été détruite";"1 - Oui";"0 - Non"
+DEROBE;"Présence d'une culture dérobée qui a été récoltée ou pâturée";"1 - Oui";"0 - Non"
+DSEMENGVERT;"Culture intermédiaire détruite : date de semis";
+ESPENGVERT;"Culture intermédiaire détruite";"01 - Céréales : Avoine";"02 - Céréales : Orge";"03 - Céréales : Seigle";"04 - Céréales : Triticale";"05 - Céréales : Sarrasin";"06 - Autres céréales, N.C.A.";"07 - Mélange de céréales";"08 - Tournesol";"09 - Crucifères : Colza";"10 - Crucifères : Navette";"11 - Crucifères : Radis fourrager";"12 - Crucifères : Moutarde";"13 - Autres crucifères pures";"14 - Mélange de crucifères";"15 - Phacélie";"16 - Légumineuses : Trèfle";"17 - Légumineuses : Trèfle d'Alexandrie";"18 - Autres légumineuses pures";"19 - Mélange de légumineuses";"20 - Graminées : Ray-grass";"21 - Graminées : Moha";"22 - Autres graminées pures";"23 - Mélange de graminées";"24 - Mélange de graminées et légumineuses";"25 - Mélange de graminées et de crucifères";"26 - Mélange de phacélie et graminées";"27 - Mélange de phacélie et légumineuses";"28 - Mélange de phacélie et crucifères";"29 - Mélange de légumineuses et crucifères"
+ENGVSSCV;"Culture intermédiaire détruite, existence d'une implantation sous couvert de la culture principale";"1 - Oui";"0 - Non"
+DDESENGVERT;"Culture intermédiaire détruite : date de destruction";
+ENGVDESMEC;"Culture intermédiaire détruite, existence d'un mode de destruction mécanique";"1 - Oui";"0 - Non"
+ENGVDESCHI;"Culture intermédiaire détruite, existence d'un mode de destruction chimique";"1 - Oui";"0 - Non"
+ENGVDESAUT;"Culture intermédiaire détruite, existence d'un mode de destruction autres (gel, …)";"1 - Oui";"0 - Non"
+DSEMDEROB;"Culture dérobée récoltée ou pâturée : date de semis";
+ESPDEROB;"Culture dérobée récoltée ou pâturée";"01 - Céréales : Avoine";"02 - Céréales : Orge";"03 - Céréales : Seigle";"04 - Céréales : Triticale";"05 - Céréales : Sarrasin";"06 - Autres céréales, N.C.A.";"07 - Mélange de céréales";"08 - Tournesol";"09 - Crucifères : Colza";"10 - Crucifères : Navette";"11 - Crucifères : Radis fourrager";"12 - Crucifères : Moutarde";"13 - Autres crucifères pures";"14 - Mélange de crucifères";"15 - Phacélie";"16 - Légumineuses : Trèfle";"17 - Légumineuses : Trèfle d'Alexandrie";"18 - Autres légumineuses pures";"19 - Mélange de légumineuses";"20 - Graminées : Ray-grass";"21 - Graminées : Moha";"22 - Autres graminées pures";"23 - Mélange de graminées";"24 - Mélange de graminées et légumineuses";"25 - Mélange de graminées et de crucifères";"26 - Mélange de phacélie et graminées";"27 - Mélange de phacélie et légumineuses";"28 - Mélange de phacélie et crucifères";"29 - Mélange de légumineuses et crucifères"
+DEROBSSCV;"Culture dérobée récoltée ou pâturée, existence d'une implantation sous couvert de la culture principale";"1 - Oui";"0 - Non"
+DEXDEROB;"Culture dérobée récoltée ou pâturée : date de récolte ou de pâture";
+MODEXDEROB;"Culture dérobée récoltée ou pâturée : mode d'exploitation";"1 - Récolte"
+DEROBTOMAT;"Existence d'une culture dérobée en tomates";"1 - Oui";"0 - Non"
+DEROBMAIS;"Existence d'une culture dérobée en Maïs";"1 - Oui";"0 - Non"
+DEROBMELON;"Existence d'une culture dérobée en Melon - Pastèque";"1 - Oui";"0 - Non"
+DEROBHARIC;"Existence d'une culture dérobée en Haricot";"1 - Oui";"0 - Non"
+DEROBAUT;"Existence d'une culture dérobée en Autres";"1 - Oui";"0 - Non"
+DATTOMAT;"Date implantation Tomates";
+DATMAIS;"Date implantation Maïs";
+DATMELON;"Date implantation Melon - Pastèque";
+DATHARIC;"Date implantation Haricot";
+DATAUT;"Date implantation Autres";
+SUPTOMAT;"Superficie développée Tomates";
+SUPMAIS;"Superficie développée Maïs";
+SUPMELON;"Superficie développée Melon - Pastèque";
+SUPHARIC;"Superficie développée Haricot";
+SUPAUT;"Superficie développée Autres";
+SEMPROV;"Origine de la semence de la culture principale";"1 - Semence certifiée (étiquette bleue du SOC) ou G4 (étiquette blanche)";"2 - Semence de ferme produite sur l'exploitation";"3 - Semence de ferme produite par un autre agriculteur";"4 - Mélange dans le semoir de semences certifiées et de semences de ferme"
+SEMTRI;"Mode de tri de la semence de la culture principale";"0 - Aucun tri";"1 - Tri par l'agriculteur";"2 - Tri par une entreprise ou CUMA (trieur ambulant ou en poste fixe)"
+TRAITSEM;"Existence d'une semence (certifiée ou de ferme) traitée";"1 - Oui";"0 - Non"
+CONTRAIT;"Semence (certifiée ou de ferme) traitée, connaissance des traitements";"1 - Oui";"0 - Non"
+TRAITSEMINS;"Semence (certifiée ou de ferme) : existence de traitement Insecticides (hors anti-pucerons)";"1 - Oui";"0 - Non"
+TRAITSEMFON;"Semence (certifiée ou de ferme) : existence de traitement Fongicides";"1 - Oui";"0 - Non"
+TRAITSEMOIS;"Semence (certifiée ou de ferme) : existence de traitement Anti-oiseaux";"1 - Oui";"0 - Non"
+TRAITSEMAUT;"Semence (certifiée ou de ferme) : existence de traitement Autres répulsifs";"1 - Oui";"0 - Non"
+TRAITSEMPUC;"Semence (certifiée ou de ferme) : existence de traitement Anti-pucerons";"1 - Oui";"0 - Non"
+TRAITSEMLIM;"Semence (certifiée ou de ferme) : existence de traitement Anti-limaces";"1 - Oui";"0 - Non"
+NBVARIET;"Nombre de variétés semées sur la parcelle (en mélange dans le semoir)";
+VARIET;"Variété principale semée";
+VARIET2;"Variété secondaire semée en cas de plusieurs variétés (mélange)";
+VARIETDEP;"Code pour les variétés spécifiques à la Réunion et à la Guadeloupe";
+LIBVARIET;"Libellé de la variable principale semée";
+LIBVARIET2;"Libellé de la variable secondaire semée";
+AZOTENFOUI;"Matériel d’enfouissement de l’azote avec le semoir";"1 - Oui";"0 - Non"
+GRUNITHA;"Dose de semis : Nombre d’unités (100 000 semences) à l’ha";
+GRAINHA;"Dose de semis : Nombre de grains par ha";
+PLANHA;"Densité de plantation en nombre de plants par ha";
+CALIPLANT;"Calibre des plants en mm";
+POIDSURFSAIS;"Dose de semis : Poids de semence par ha (kg/ha)";
+GRAINM2;"Dose de semis : Nombre de grains par m2";
+POIDSURF;"Dose de semis (kg/ha)";
+DBLERG;"Existence d'une plantation en double rang pour la canne à sucre";"1 - Oui";"0 - Non"
+MECA;"Existence d'une intervention mécanique sur la parcelle au cours de la campagne 2010-2011";"1 - Oui";"0 - Non"
+MODCOUPE;"Mode de coupe des cannes à sucre";"1 - Manuel";"2 - Mécanisé"
+MATCOUPE;"Matériel utilisé à la Réunion pour couper les cannes à sucre";"1 - Mini ou moto coupeuse";"2 - Coupeuse ""Péi""";"3 - Coupeuse tronçonneuse";"4 - Autres types de matériel"
+BRULE;"Cannes à sucre brûlées intentionnellement : présence";"1 - Oui";"0 - Non"
+MODCHARG;"Mode de chargement des cannes à sucre";"1 - Manuel";"2 - Mécanisé"
+MATCHARG;"Matériel utilisé à la Réunion pour charger les cannes à sucre";"1 - Bell";"2 - Farmi";"3 - Chargement frontal";"4 - Coupeuse tronçonneuse";"5 - Autres types de matériel"
+LABOUREUR;Labour;
+SEMDIR;Semis-direct;
+NBTOTPASS;"Nombre total de passages";
+NBPASMEC;"Nombre de passages mécaniques";
+PASSMECA;"Nombre de désherbages mécaniques";
+SEMDAT;"Date dernier semis";
+PERIODE;"Période de semis";"1 - Automne (avant 1er janvier, soit en 2010)";"2 - Printemps (1er janvier et après, soit en 2011)"
+DLABOUR;"Date dernier labour";
+RECDAT;"Date première récolte";
+DEHMECA;"Existence de désherbage mécanique";"1 - Oui";"0 - Non"
+FUMO;"Existence d'un apport de fumure organique sur la parcelle";"1 - Oui";"0 - Non"
+TENAZOT;"Teneur en azote de la fumure organique épandue sur la parcelle";"0 - Non";"1 - Oui, par analyses et références techniques";"2 - Oui, par analyses (à la ferme ou en laboratoire)"
+PESEPAND;"Fumure organique : Pesée de l'épandeur pour la parcelle";"0 - Non";"1 - Oui";"2 - Pas d'apport de fumier"
+APPORTMIN;"Existence d'un apport de fumure minérale sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+MAGNE;"Existence d'un apport en magnésie sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+BORE;"Existence d'un apport en bore sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+MANGA;"Existence d'un apport en manganèse sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+CUI;"Existence d'un apport en cuivre sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+APFER;"Existence d'un apport en fer sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+ZN;"Existence d'un apport en zinc sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+ALGUE;"Existence d'un apport en crème d’algues sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+MOLY;"Existence d'un apport en molybdène sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+OLIGO;"Existence d'un apport en oligo-élément ou autre sur la parcelle au cours de la campagne";"1 - Oui";"0 - Non"
+RAISFUMORG;"Prise en compte de la fumure organique pour calculer la dose d'azote minéral";"1 - Oui";"0 - Non"
+DHFUMN;"Déterminant de la dose totale d'azote à apporter : dose moyenne habituelle";"1 - Oui";"0 - Non"
+PCULTFUMN;"Déterminant de la dose totale d'azote à apporter : précédent cultural";"1 - Oui";"0 - Non"
+RDTEFUMN;"Déterminant de la dose totale d'azote à apporter : hypothèse de rendement";"1 - Oui";"0 - Non"
+RTHEOFUMN;"Déterminant de la dose totale d'azote à apporter : reliquats estimés";"1 - Oui";"0 - Non"
+MESRFUMN;"Déterminant de la dose totale d'azote à apporter : reliquats mesurés sortie hiver sur l'exploitation";"1 - Oui";"0 - Non"
+BILANFUMN;"Déterminant de la dose totale d'azote à apporter : utilisation d'un outil de calcul de bilan";"1 - Oui";"0 - Non"
+TECHFUMN;"Déterminant de la dose totale d'azote à apporter : utilisation d'un calcul de bilan complet fait par un technicien externe";"1 - Oui";"0 - Non"
+PESFUMN;"Déterminant de la dose totale d'azote à apporter : pesée en vert du colza";"1 - Oui";"0 - Non"
+EXPORTFUMN;"Déterminant de la dose totale d'azote à apporter sur les cannes à sucre : l’exportation ou non des pailles";"1 - Oui";"0 - Non"
+FUMNRAIS;"Raisonnement prioritaire pour la dose d’azote à apporter parmi les déterminants cochés « oui »";"1 - A partir de la dose moyenne habituelle sur cette culture";"2 - A partir d’une hypothèse de rendement";"3 - En tenant compte du précédent cultural";"4 - En tenant compte des reliquats estimés";"5 - En tenant compte des reliquats mesurés sortie hiver sur votre exploitation";"6 - En utilisant vous-même un outil de calcul de bilan";"7 - En utilisant un calcul de bilan complet fait par un technicien externe";"8 - Par une pesée en vert du colza (ESPECE = colza)";"9 - En tenant compte de l’exportation ou non des pailles (ESPECE = Canne à sucre)"
+RAISENG;"Raisonnement prioritaire pour le type d’engrais utilisé pour les cannes à sucre parmi les choix cochés « oui »";"1 - Du prix";"2 - Des analyses de sol";"3 - Des conseils du technicien";"4 - Des conseils du vendeur";"5 - De l’expérience personnelle";"6 - Autres facteurs"
+ENGPRIX;"Choix du type d’engrais pour les cannes à sucre : prise en compte du prix";"1 - Oui";"0 - Non"
+ENGSOL;"Choix du type d’engrais pour les cannes à sucre : prise en compte des analyses de sol";"1 - Oui";"0 - Non"
+ENGTECH;"Choix du type d’engrais pour les cannes à sucre : prise en compte des conseils du technicien";"1 - Oui";"0 - Non"
+ENGVEND;"Choix du type d’engrais pour les cannes à sucre : prise en compte des conseils du vendeur";"1 - Oui";"0 - Non"
+ENGEXP;"Choix du type d’engrais pour les cannes à sucre : prise en compte de l’expérience personnelle";"1 - Oui";"0 - Non"
+ENGAUT;"Choix du type d’engrais pour les cannes à sucre : prise en compte d'autres facteurs";"1 - Oui";"0 - Non"
+MODIFFUMN;"Existence d'une révision à la hausse ou à la baisse de la dose totale d’azote prévue";"1 - Oui";"0 - Non"
+PILOTFUMN;"Existence d'une réévaluation de la dose totale d’azote avec des outils de pilotage de la fertilisation azotée";"1 - Oui";"0 - Non"
+FUMSPE;"Existence d'un apport spécifique pour atteindre un objectif de teneur en protéines";"1 - Oui";"0 - Non"
+CALCIQ;"Existence d'un apport calcique (apport de chaux, y compris boues chaulées) au cours de la campagne";"1 - Oui";"0 - Non"
+CENDRE;"Existence d'un apport en cendres sur les cannes à sucre au cours de la campagne";"1 - Oui";"0 - Non"
+PHYSIOL;"Existence d'un apport en physiolith sur les cannes à sucre au cours de la campagne";"1 - Oui";"0 - Non"
+ORG2006;"Fumure, existence d'un apport organique au cours de la campagne 2005/2006";"1 - Oui";"0 - Non"
+ORG2007;"Fumure, existence d'un apport organique au cours de la campagne 2006/2007";"1 - Oui";"0 - Non"
+ORG2008;"Fumure, existence d'un apport organique au cours de la campagne 2007/2008";"1 - Oui";"0 - Non"
+ORG2009;"Fumure, existence d'un apport organique au cours de la campagne 2008/2009";"1 - Oui";"0 - Non"
+ORG2010;"Fumure, existence d'un apport organique au cours de la campagne 2009/2010";"1 - Oui";"0 - Non"
+NMIN2006;"Fumure, existence d'un apport minéral azoté au cours de la campagne 2005/2006";"1 - Oui";"0 - Non"
+NMIN2007;"Fumure, existence d'un apport minéral azoté au cours de la campagne 2006/2007";"1 - Oui";"0 - Non"
+NMIN2008;"Fumure, existence d'un apport minéral azoté au cours de la campagne 2007/2008";"1 - Oui";"0 - Non"
+NMIN2009;"Fumure, existence d'un apport minéral azoté au cours de la campagne 2008/2009";"1 - Oui";"0 - Non"
+NMIN2010;"Fumure, existence d'un apport minéral azoté au cours de la campagne 2009/2010";"1 - Oui";"0 - Non"
+PMIN2006;"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2005/2006";"1 - Oui";"0 - Non"
+PMIN2007;"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2006/2007";"1 - Oui";"0 - Non"
+PMIN2008;"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2007/2008";"1 - Oui";"0 - Non"
+PMIN2009;"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2008/2009";"1 - Oui";"0 - Non"
+PMIN2010;"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2009/2010";"1 - Oui";"0 - Non"
+KMIN2006;"Fumure, existence d'un apport minéral potassique au cours de la campagne 2005/2006";"1 - Oui";"0 - Non"
+KMIN2007;"Fumure, existence d'un apport minéral potassique au cours de la campagne 2006/2007";"1 - Oui";"0 - Non"
+KMIN2008;"Fumure, existence d'un apport minéral potassique au cours de la campagne 2007/2008";"1 - Oui";"0 - Non"
+KMIN2009;"Fumure, existence d'un apport minéral potassique au cours de la campagne 2008/2009";"1 - Oui";"0 - Non"
+KMIN2010;"Fumure, existence d'un apport minéral potassique au cours de la campagne 2009/2010";"1 - Oui";"0 - Non"
+CMIN2006;"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2005/2006";"1 - Oui";"0 - Non"
+CMIN2007;"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2006/2007";"1 - Oui";"0 - Non"
+CMIN2008;"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2007/2008";"1 - Oui";"0 - Non"
+CMIN2009;"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2008/2009";"1 - Oui";"0 - Non"
+CMIN2010;"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2009/2010";"1 - Oui";"0 - Non"
+QNMIN2009;"Fumure, quantité d'azote apportée au cours de la campagne 2008/2009";
+QNMIN2010;"Fumure, quantité d'azote apportée au cours de la campagne 2009/2010";
+QPMIN2009;"Fumure, quantité de phosphate apportée au cours de la campagne 2008/2009";
+QPMIN2010;"Fumure, quantité de phosphate apportée au cours de la campagne 2009/2010";
+QKMIN2009;"Fumure, quantité de potasse apportée au cours de la campagne 2008/2009";
+QKMIN2010;"Fumure, quantité de potasse apportée au cours de la campagne 2009/2010";
+M2010;"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2009/2010";"1 - Oui";"0 - Non"
+M2009;"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2008/2009";"1 - Oui";"0 - Non"
+M2008;"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2007/2008";"1 - Oui";"0 - Non"
+M2007;"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2006/2007";"1 - Oui";"0 - Non"
+M2006;"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2005/2006";"1 - Oui";"0 - Non"
+QNORGTOT;"Quantité d’azote organique totale en kg/ha, calculé sur la structure répétée FUMORG";
+NBFUMO;"Nombre d’apports de fumure organique, calculée sur la structure répétée FUMORG";
+NBENGN;"Nombre de passages d’apport d’engrais minéraux : azoté";
+NBENGP;"Nombre de passages d’apport d’engrais minéraux : phosphore";
+NBENGK;"Nombre de passages d’apport d’engrais minéraux : potasse";
+NBENGS;"Nombre de passages d’apport d’engrais minéraux : soufre";
+NBENGTOT;"Nombre total de passages d’apport d’engrais minéraux";
+FNTOT;"Quantité d’azote (minérale et organique) totale";
+FUMQNTOT;"Quantité d’azote minéral totale";
+FUMQPTOT;"Quantité de phosphore minéral totale";
+FUMQKTOT;"Quantité de potasse minérale totale";
+FUMQSTOT;"Quantité de soufre minéral totale";
+APPHYTO;"Existence d'un traitement phytosanitaire sur la parcelle depuis la récolte du précédent cultural jusqu’à la récolte actuelle";"1 - Oui";"0 - Non"
+CHRYSO;"Nombre de passages obligatoires pour le traitement contre la chrysomèle, pour la campagne";
+VERSB2011;"Existence de dégâts provoqués par des vers blancs sur la parcelle, en 2010/2011";"1 - Oui";"0 - Non";"8 - Ne sait pas"
+VERSB2010;"Existence de dégâts provoqués par des vers blancs sur la parcelle, en 2009/2010";"1 - Oui";"0 - Non";"8 - Ne sait pas"
+VERSB2009;"Existence de dégâts provoqués par des vers blancs sur la parcelle, en 2008/2009";"1 - Oui";"0 - Non";"8 - Ne sait pas"
+PROPPULV;"Propriété du pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle";"1 - En CUMA";"3 - En entreprise"
+AGEPULV;"Âge du pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle (nombre d'années)";
+TYPEPULV;"Type de pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle";"1 - Pulvérisateur porté";"2 - Pulvérisateur traîné";"3 - Pulvérisateur automoteur"
+CABINE;"Protection : existence d’une cabine sur le tracteur ou le pulvérisateur";"1 - Oui";"0 - Non"
+TYPCAB;"Protection : Type de cabine sur le tracteur ou le pulvérisateur";"1 - Ouverte (ne concerne pas les pulvérisateurs automoteurs)";"2 - Fermée";"3 - Filtrée (filtre à charbon)";"4 - Filtrée et climatisée"
+VERIFBUS;"Pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle : nombre de vérifications du débit des buses depuis 2006 (hors diagnostic obligatoire)";
+ANTIDERIV;"Pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle : existence d’un dispositif antidérive (buses homologuées)";"1 - Oui";"0 - Non"
+PROTECTCAB;"Protection du manipulateur : existence de précautions particulières";"0 - Jamais";"1 - Systématiquement";"2 - Occasionnellement"
+TYPPROTECTCAB;"Protection du manipulateur : type de précautions particulières";"1 - Porter un équipement individuel";"2 - s'éloigner de la zone traitée";"3 - Avant de remonter, se laver les mains et si équipement le retirer";"4 - Autres"
+PROTECT;"Protection du manipulateur : utilisation de l’équipement individuel approprié";"0 - Jamais";"1 - Systématiquement";"2 - Occasionnellement"
+DUREETRAITH;"Durée moyenne (heures) de l’application d’un produit phytosanitaire sur cette parcelle (à l’ha)";
+DUREETRAITMIN;"Durée moyenne (minutes) de l’application d’un produit phytosanitaire sur cette parcelle (à l’ha)";
+CONNAISDEL;"Connaissance du délai de réentrée approprié pour les produits utilisés sur cette parcelle";"1 - Oui";"0 - Non"
+RESPDEL;"Application du délai de réentrée sur cette parcelle";"1 - Oui";"0 - Non"
+ADJPASTOT;"Traitements phytosanitaires : nombre de passages avec au moins un adjuvant";
+AUTPASTOT;"Traitements phytosanitaires : nombre de passages avec au moins un autre traitement";
+REGULTOT;"Traitements phytosanitaires : nombre de passages avec au moins un régulateur de croissance";
+FONGITOT;"Traitements phytosanitaires : nombre de passages avec au moins un fongicide";
+HERBITOT;"Traitements phytosanitaires : nombre de passages avec au moins un herbicide";
+INSACTOT;"Traitements phytosanitaires : nombre de passages avec au moins un insecticide ou acaricide";
+LIMACTOT;"Traitements phytosanitaires : nombre de passages avec au moins un anti-limaces";
+RONPASTOT;"Traitements phytosanitaires : nombre de passages avec au moins un anti-rongeurs";
+VIRUSTOT;"Traitements phytosanitaires : nombre de passages avec au moins un virucide";
+PHYTOPASTOT;"Traitements phytosanitaires : nombre total de passages tous traitements";
+NBADJTOT;"Traitements phytosanitaires : nombre de produits adjuvants";
+NBAUTTOT;"Traitements phytosanitaires : nombre de produits autres traitements";
+NBRACCERPA;"Traitements phytosanitaires : nombre de produits régulateurs de croissance";
+NBFONTOT;"Traitements phytosanitaires : nombre de produits fongicides";
+NBDEHTOT;"Traitements phytosanitaires : nombre de produits herbicides";
+NBINSACTOT;"Traitements phytosanitaires : nombre de produits insecticides ou acaricides";
+NBMOLTOT;"Traitements phytosanitaires : nombre de produits anti-limaces";
+NBRONTOT;"Traitements phytosanitaires : nombre de produits anti-rongeurs";
+NBVIRUSTOT;"Traitements phytosanitaires : nombre de produits virucides";
+TRAITTOT;"Traitements phytosanitaires : nombre total de produits tous traitements";
+RAISHHAB;"Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après vos pratiques habituelles";"1 - Oui";"0 - Non"
+RAISHOBS;"Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après vos observations sur la parcelle en cours de culture";"1 - Oui";"0 - Non"
+RAISHFOURN;"Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après les conseils des fournisseurs";"1 - Oui";"0 - Non"
+RAISHINDEP;"Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après les recommandations d’organismes indépendants de la vente";"1 - Oui";"0 - Non"
+RAISHEXP;"Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après votre expérience ou celle d’autres agriculteurs";"1 - Oui";"0 - Non"
+RAISHPILOT;"Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle grâce à vos propres outils de pilotage";"1 - Oui";"0 - Non"
+RAISAHAB;"Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides) sur la parcelle d’après vos pratiques habituelles";"1 - Oui";"0 - Non"
+RAISAOBS;"Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides) d’après les observations sur la parcelle en cours de culture";"1 - Oui";"0 - Non"
+RAISABSV;"Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides) sur la parcelle d’après les bulletins de santé du végétal";"1 - Oui";"0 - Non"
+RAISAFOURN;"Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides)  sur la parcelle d’après les conseils des fournisseurs";"1 - Oui";"0 - Non"
+RAISAINDEP;"Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides)  sur la parcelle d’après les recommandations d’organismes indépendants de la vente";"1 - Oui";"0 - Non"
+RAISAEXP;"Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides)  sur la parcelle d’après votre expérience ou celle d’autres agriculteurs";"1 - Oui";"0 - Non"
+RAISAPILOT;"Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides) sur la parcelle grâce à vos propres outils de pilotage";"1 - Oui";"0 - Non"
+RAISH;"Traitements phytosanitaires : Raisonnement prioritaire pour les herbicides parmi ceux cochés « oui »";"1 - D'après vos pratiques habituelles";"2 - D'après vos observations sur la parcelle en cours de culture";"3 - D'après les bulletins de santé du végétal";"4 - D'après les conseils des fournisseurs";"5 - D'après les recommandations d'organismes indépendants de la vente";"6 - D'après votre expérience ou celle d'autres agriculteurs";"7 - Grâce à vos propres outils de pilotage"
+RAISA;"Traitements phytosanitaires : Raisonnement prioritaire pour les autres traitements parmi ceux cochés « oui »";"1 - D'après vos pratiques habituelles";"2 - D'après vos observations sur la parcelle en cours de culture";"3 - D'après les bulletins de santé du végétal";"4 - D'après les conseils des fournisseurs";"5 - D'après les recommandations d'organismes indépendants de la vente";"6 - D'après votre expérience ou celle d'autres agriculteurs";"7 - Grâce à vos propres outils de pilotage"
+PARCIRR;"Parcelle irriguée au cours de la campagne agricole : présence";"1 - Oui";"0 - Non"
+IRRDATDEB;"Date première irrigation";
+IRRDATFIN;"Date dernière irrigation";
+IRRAVS;"Irrigation avant semis ou au semis : présence";"1 - Oui";"0 - Non"
+NBPASAVS;"Irrigation : nombre de passages effectués sur la parcelle avant le semis ou au semis";
+NBPASAPS;"Irrigation : nombre de passages effectués sur la parcelle après le semis";
+MMEAU;"Irrigation : apport total sur la parcelle (en millimètres)";
+MCUBEHA;"Irrigation : apport total en eau sur la parcelle (en m3/ha)";
+ACCES;"Accès à l’eau d’irrigation";"1 - En individuel";"2 - En collectif"
+PROV;"Provenance de la principale eau d’irrigation";"1 - Cours d'eau";"2 - Lac collinaire";"3 - Forage";"4 - Réseau"
+TYPMAT;"Irrigation : type de matériel utilisé sur la parcelle";"1 - Pivot ou rampe mobile";"2 - Enrouleur";"3 - Goutte à goutte";"4 - Autres";"5 - Sprinkler"
+COUPUR;"Pas d'irrigation pour cause de coupure d’eau";"1 - Oui";"0 - Non"
+DURCOUPUR;"Durée de la coupure d’eau en jours";
+CONNAPO;"Connaissance de l'apport total en eau sur la parcelle";"1 - Estimation";"2 - Relevé"
+IRRNITR;"Nitrates dans l'eau d’irrigation : connaissance";"1 - Oui";"0 - Non"
+IRRFUMN;"Nitrates dans l'eau d’irrigation : prise en compte pour gérer la fertilisation azotée";"1 - Oui";"0 - Non"
+DECLIRRHAB;"Déclenchement de l'irrigation en fonction des usages courants";"1 - Oui";"0 - Non"
+DECLIRROBS;"Déclenchement de l'irrigation après avoir observé votre parcelle";"1 - Oui";"0 - Non"
+DECLIRRTECH;"Déclenchement de l'irrigation d’après les recommandations d’organismes techniques";"1 - Oui";"0 - Non"
+DECLIRRPILOT;"Déclenchement de l'irrigation en utilisant des outils de pilotage de l’irrigation (tensiomètres, bilans hydriques)";"1 - Oui";"0 - Non"
+DECLIRRIMP;"Déclenchement de l'irrigation en fonction des tours d’eau imposés";"1 - Oui";"0 - Non"
+DECLIRR;"Raisonnement prioritaire pour le déclenchement de l’irrigation parmi ceux cochés « oui »";"1 - Des usages courants";"2 - Après avoir observé votre parcelle";"3 - D'après les recommandations d'organismes techniques";"4 - En utilisant des outils de pilotage de l'irrigation (tensiomètres, bilans hydriques";"5 - Des tous d'eau imposés"
+PREXPLOIT;"Exploitation de la prairie sur la campagne 2010-2011";"1 - Oui";"0 - Non"
+NBCOUPEP;"Exploitation de la prairie : Nombre de passages";
+RDTF;"Exploitation de la prairie : Rendement Fauche";
+RDTP;"Exploitation de la prairie : Rendement Pâture";
+RDTTOT;"Exploitation de la prairie : Rendement total : Fauche + Pâture";
+IFTH;"Indicateur de fréquence de traitement (IFT) herbicide";
+IFTF;"Indicateur de fréquence de traitement (IFT) fongicide";
+IFTI;"Indicateur de fréquence de traitement (IFT) insecticide et acaricide";
+IFTC;"Indicateur de fréquence de traitement (IFT) substances de croissance";
+IFTV;"Indicateur de fréquence de traitement (IFT) virucide";
+IFTM;"Indicateur de fréquence de traitement (IFT) molluscicide";
+IFTTOT;"Indicateur de fréquence de traitement (IFT) total (herbicides, fongicides, insecticides, autre)";
+IFTA;"Indicateur de fréquence de traitement (IFT) autre (substances de croissance, virucide, mollusicide)";
+IFTHH;"Indicateur de fréquence de traitement (IFT) hors herbicides (fongicides, insecticides, autres)";
+
+
+
