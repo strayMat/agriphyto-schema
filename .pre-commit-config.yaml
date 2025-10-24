@@ -9,12 +9,17 @@ repos:
       - id: check-json
       - id: pretty-format-json
         args: [--autofix]
+        exclude: ^data/
       - id: end-of-file-fixer
+        exclude: ^(notebooks|data)/
       - id: trailing-whitespace
+        exclude: ^(notebooks|data)/
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: "v0.6.3"
     hooks:
       - id: ruff
         args: [--exit-non-zero-on-fix]
+        exclude: ^(notebooks|data)/
       - id: ruff-format
+        exclude: ^(notebooks|data)/

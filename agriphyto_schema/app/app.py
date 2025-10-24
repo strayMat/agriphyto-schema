@@ -1,8 +1,13 @@
-import pandas as pd
 import streamlit as st
 
-from agriphyto_schema.app.utils import filter_dataframe, load_nomenclature, load_dico
-from agriphyto_schema.constants import AGRIPHYTO_DICO_NAME, DIR2DATA, DIR2NOMENCLATURES, COLNAME_OUT_DB, COLNAME_OUT_NOMENCLATURE
+from agriphyto_schema.app.utils import filter_dataframe, load_dico, load_nomenclature
+from agriphyto_schema.constants import (
+    AGRIPHYTO_DICO_NAME,
+    COLNAME_OUT_DB,
+    COLNAME_OUT_NOMENCLATURE,
+    DIR2DATA,
+    DIR2NOMENCLATURES,
+)
 
 
 # Layout stuff
@@ -37,11 +42,7 @@ config = {
 
 # Affichage du dataframe principal avec selection des événements
 event = st.dataframe(
-    filtered_dico,
-    column_config=config,
-    hide_index=True,
-    on_select="rerun",
-    selection_mode="single-row"
+    filtered_dico, column_config=config, hide_index=True, on_select="rerun", selection_mode="single-row"
 )
 
 # Gestion des clics sur les lignes

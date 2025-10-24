@@ -34,18 +34,8 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
         )
         if user_text_input:
             df = df[
-                (
-                    df[COLNAME_OUT_LIBELLE]
-                    .astype(str)
-                    .str.lower()
-                    .str.contains(user_text_input)
-                )
-                | (
-                    df[COLNAME_OUT_VARIABLE]
-                    .astype(str)
-                    .str.lower()
-                    .str.contains(user_text_input)
-                )
+                (df[COLNAME_OUT_LIBELLE].astype(str).str.lower().str.contains(user_text_input))
+                | (df[COLNAME_OUT_VARIABLE].astype(str).str.lower().str.contains(user_text_input))
             ]
         # Optional filters
         modify = st.checkbox("Add table or database filters")
@@ -68,10 +58,12 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
     return df
 
+
 # Loading fonctions with caching
 @st.cache_data  # allow caching (mainly useful for development)
 def load_dico(path2dico: str | Path):
     return pd.read_csv(path2dico)
+
 
 @st.cache_data
 def load_nomenclature(
