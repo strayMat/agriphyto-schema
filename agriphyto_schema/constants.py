@@ -15,6 +15,7 @@ COLNAME_TABLE = "table"
 COLNAME_VARIABLE = "variable"
 COLNAME_LIBELLE = "label"
 COLNAME_TYPE = "type"
+COLNAME_NOMENCLATURE = "nomenclature"
 COLNAME_PANDERA_TYPE = "pandera_type"
 
 # Simple mapping Excel type -> Pandera type
@@ -45,9 +46,16 @@ AVAILABLE_DICOS = {
             "LIBELLE": COLNAME_LIBELLE,
         },
         "encoding": "latin1",
-    }
+    },
+    "PHYTOVITI2016": {
+        "filename": "Pratiques_phytosanitaires_en_viticulture_-_2016.csv",
+        "skiprows": 9,
+        "encoding": "utf-8-sig",
+        "parser": "dico_from_casd_csv",
+    },
 }
-
+CASD_BOOL_MODALITIES = ['"0 - Non";"1 - Oui"']
+USELESS_MODALITIES = [*CASD_BOOL_MODALITIES]
 # Output dictionary columns
 COLNAME_OUT_DB = "Database"
 COLNAME_OUT_TABLE = "Table"

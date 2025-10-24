@@ -1,0 +1,3 @@
+variable,label
+1,Si ICLAM ou ICROTA ou ICDECA ou ICAUTR égal à 1
+0,Sinon

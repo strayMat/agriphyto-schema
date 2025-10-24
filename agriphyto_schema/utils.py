@@ -8,6 +8,11 @@ from pandas.api.types import is_numeric_dtype
 def clean_nomenclature_name(var_name: str | float, table_name: str | None = None) -> str:
     """
     Clean variable name by replacing special characters.
+    Args:
+        var_name (str | float): Original variable name
+        table_name (str | None): Optional table name to prefix
+    Returns:
+        str: Cleaned variable name prefixed by table name if provided.
     """
     if is_numeric_dtype(type(var_name)):
         var_name = str(var_name)

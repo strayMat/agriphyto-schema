@@ -4,6 +4,7 @@ import logging
 import click
 
 from agriphyto_schema.constants import AVAILABLE_DICOS, LOG_LEVEL
+from agriphyto_schema.data.parse_dicos import parse_dico
 
 logging.basicConfig(
     level=logging.getLevelNamesMapping()[LOG_LEVEL],
@@ -28,7 +29,6 @@ def parse(dico_name: str) -> None:
     """
     Parse an Excel data dictionary to create a pandera schema for data validation.
     """
-    from agriphyto_schema.data.parse_dicos import parse_dico
 
     if dico_name == "all":
         for dico in AVAILABLE_DICOS:
