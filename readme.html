@@ -394,96 +394,56 @@
                   
   <section id="agriphyto-schema">
 <h1>agriphyto-schema<a class="headerlink" href="#agriphyto-schema" title="Link to this heading">#</a></h1>
-<p><a class="reference external" href="https://gitlab.com/strayMat/agriphyto-schema/-/pipelines"><img alt="Pipeline status" src="https://gitlab.com/strayMat/agriphyto-schema/badges/main/pipeline.svg" /></a>
-<a class="reference external" href="https://gitlab.com/strayMat/agriphyto-schema/-/graphs/main"><img alt="Coverage report" src="https://gitlab.com/strayMat/agriphyto-schema/badges/main/coverage.svg" /></a>
-<a class="reference external" href="https://strayMat.gitlab.io/agriphyto-schema/"><img alt="Documentation" src="https://img.shields.io/badge/docs-latest-blue.svg" /></a>
+<p><a class="reference external" href="https://github.com/straymat/agrophyto-schema/actions"><img alt="Pipeline status" src="https://github.com/straymat/agrophyto-schema/actions/workflows/ci.yml/badge.svg" /></a>
+<a class="reference external" href="https://straymat.github.io/agrophyto-schema/readme.html"><img alt="Documentation" src="https://img.shields.io/badge/docs-latest-blue.svg" /></a>
 <a class="reference external" href="https://gitlab.com/strayMat/agriphyto-schema/-/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/gitlab/license/strayMat/agriphyto-schema" /></a></p>
-<blockquote>
-<div><p>📝 <strong>Note</strong>
-Utilisez le français pour tout le contenu de ce projet</p>
-</div></blockquote>
 <hr class="docutils" />
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>📝 <strong>Explication du contenu à rédiger</strong></p>
-<p>Cette partie présente brièvement le contexte général du projet.
-Elle contient les éléments suivants dans un ou plusieurs paragraphes :</p>
 <ul class="simple">
-<li><p>Objectif du projet</p></li>
-<li><p>Livrables : rapport, données, application, etc.</p></li>
-<li><p>Public visé</p></li>
-<li><p>Contexte historique (optionnel)</p></li>
-<li><p>Acteurs impliqués : services, externes, etc.</p></li>
-<li><p>Temporalité du projet : date de démarrage, autres dates marquantes</p></li>
+<li><p>Objectif du projet : Disposer d’un schéma de données standardisé et d’une visualisation ergonomique du dictionnaire de données pour les données de la base Agrophyto.</p></li>
+<li><p>Livrables : schéma de données (standard <a class="reference external" href="https://pandera.readthedocs.io/en/stable/">pandera</a>) et application du dictionnaire.</p></li>
+<li><p>Public visé : utilisateurs de la base Agrophyto.</p></li>
+<li><p>Acteurs impliqués : D2E, Insee.</p></li>
+<li><p>Temporalité du projet : octobre 2025 pour le prototype.</p></li>
 </ul>
-<p>Optionnel : une image qui permet de visualiser le résultat du projet
-Ex :</p>
-<ul class="simple">
-<li><p>capture d’écran d’un tableau de bord ou d’une application</p></li>
-<li><p>figure marquante d’un rapport, etc.</p></li>
-</ul>
-</div></blockquote>
+<p><img alt="Aperçu du projet" src="_images/app_capture.png" /></p>
 </section>
 <section id="liens-utiles">
 <h2>Liens utiles<a class="headerlink" href="#liens-utiles" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Documentation :</p></li>
-<li><p>Code source :</p></li>
+<li><p>Documentation : https://straymat.github.io/agrophyto-schema/readme.html</p></li>
+<li><p>Code source : https://github.com/straymat/agrophyto-schema</p></li>
 </ul>
-<blockquote>
-<div><p>📝 <strong>Explication du contenu à rédiger</strong></p>
-<p>Vous pouvez aussi rajouter d’autres liens utiles : protocole, rapport d’étude, lien site internet, tutoriels, guide utilisateur</p>
-</div></blockquote>
 </section>
 <section id="contexte-technique">
 <h2>Contexte technique<a class="headerlink" href="#contexte-technique" title="Link to this heading">#</a></h2>
 <section id="donnees-utilisees">
 <h3>Données utilisées<a class="headerlink" href="#donnees-utilisees" title="Link to this heading">#</a></h3>
-<blockquote>
-<div><p>📝 <strong>Explication du contenu à rédiger</strong></p>
-<p>Décrire les données utilisées et leur éventuelles restrictions d’accès.</p>
-</div></blockquote>
+<p>Dictionnaires des différentes bases de données composant Agrophyto :</p>
+<p>TODO:</p>
 </section>
 <section id="schema-flux-de-donnees-optionnel">
 <h3>Schéma flux de données (optionnel)<a class="headerlink" href="#schema-flux-de-donnees-optionnel" title="Link to this heading">#</a></h3>
 </section>
 <section id="technologies">
 <h3>Technologies<a class="headerlink" href="#technologies" title="Link to this heading">#</a></h3>
-<blockquote>
-<div><p>python 3.12</p>
-<p>Donner quelques repères sur les technologies utilisées : langage, logiciels, éventuellement dossiers où trouver le code, etc.</p>
-</div></blockquote>
+<p>python 3.13, pandera, streamlit</p>
 </section>
 <section id="maintenance">
 <h3>Maintenance<a class="headerlink" href="#maintenance" title="Link to this heading">#</a></h3>
-<blockquote>
-<div><p>📝 <strong>Explication du contenu à rédiger</strong></p>
-<p>Expliquer si le projet est maintenu et comment, par exemple parmi les alternatives suivantes :</p>
 <ul class="simple">
 <li><p>Projet en développement actif</p></li>
-<li><p>Projet finalisé ✅, sans maintenance ni modification</p></li>
-<li><p>Maintenance minimale 📞, pour mettre à jour les dépendances ou en cas de problème</p></li>
-<li><p>Maintenance planifiée ⏰, avec des tâches récurrentes à réaliser (auquel cas décrire les tâches et leur fréquence)</p></li>
 </ul>
-</div></blockquote>
 </section>
 </section>
 <section id="contacts">
 <h2>Contacts<a class="headerlink" href="#contacts" title="Link to this heading">#</a></h2>
 <p>D2E, division RPS ou macro : matthieu.doutreligne&#64;insee.fr</p>
 </section>
-<section id="details-techniques-optionnel">
-<h2>Détails techniques (optionnel)<a class="headerlink" href="#details-techniques-optionnel" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>📝 <strong>Explication du contenu à rédiger</strong></p>
-<p>Section optionnelle, à utiliser lorsque le README est la seule page de documentation, pour alléger la partie “Contexte technique”.</p>
-<p>Par exemple, si les informations sont trop conséquentes mettre ici :</p>
-<ul class="simple">
-<li><p>le détail de la description des données</p></li>
-<li><p>le flux de données, etc.</p></li>
-</ul>
-</div></blockquote>
+<section id="details-techniques">
+<h2>Détails techniques<a class="headerlink" href="#details-techniques" title="Link to this heading">#</a></h2>
+<p>Se référer à la documentation en ligne : https://straymat.github.io/agrophyto-schema/readme.html</p>
 </section>
 </section>
 
@@ -544,7 +504,7 @@ Ex :</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contacts">Contacts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#details-techniques-optionnel">Détails techniques (optionnel)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#details-techniques">Détails techniques</a></li>
 </ul>
   </nav></div>
 
