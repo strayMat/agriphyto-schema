@@ -31,6 +31,7 @@ build: clean-build ## Build wheel file
 clean-build: ## Clean build artifacts
 	@echo "🚀 Removing build artifacts"
 	@uv run python -c "import shutil; import os; shutil.rmtree('dist') if os.path.exists('dist') else None"
+
 .PHONY: docs-clean
 docs-clean: ## Clean the documentation
 	rm -rf docs/_build
@@ -45,7 +46,9 @@ jupyter-notebook:
 	cd notebooks
 	@uv run jupyter notebook --config=config.py --notebook-dir=notebooks
 
-
+.PHONY: app ## Launches the streamlit app
+app:
+	@uv run streamlit run agriphyto_schema/app/app.py
 
 .PHONY: help
 help:
