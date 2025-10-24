@@ -25,9 +25,9 @@
 
 ### Données utilisées
 
-Dictionnaires des différentes bases de données composant Agrophyto : 
+Dictionnaires des différentes bases de données composant Agrophyto :
 
-TODO: 
+TODO:
 
 ### Schéma flux de données (optionnel)
 
