@@ -30,7 +30,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
         # Filter in the label and variable columns using text
         user_text_input = right.text_input(
-            f"Substring or regex in {COLNAME_OUT_LIBELLE} or {COLNAME_OUT_VARIABLE} (case insensitive)",
+            f"Match exact ou regex sur les colonnes {COLNAME_OUT_LIBELLE} ou {COLNAME_OUT_VARIABLE} (non sensible à la casse)",
         )
         if user_text_input:
             df = df[
@@ -38,7 +38,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
                 | (df[COLNAME_OUT_VARIABLE].astype(str).str.lower().str.contains(user_text_input))
             ]
         # Optional filters
-        modify = st.checkbox("Add table or database filters")
+        modify = st.checkbox("Ajout d'un filtre par table ou par base de données")
         if modify:
             # Filter on database
             db_choices = list(df[COLNAME_OUT_DB].unique())
