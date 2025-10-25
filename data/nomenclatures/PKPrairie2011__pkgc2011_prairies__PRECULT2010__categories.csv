@@ -1,0 +1,46 @@
+variable,label
+1101,Céréales : Avoine (y compris semences)
+1102,Céréales : Blé dur (y compris semences)
+1103,Céréales : Blé tendre (y compris semences)
+2104,Céréales : Maïs grain et semence
+1105,"Céréales : Orge, escourgeon (y compris semences)"
+2106,Céréales : Riz
+1107,Céréales : Seigle (y compris semences)
+2108,Céréales : Sorgho-grain (y compris semences)
+1109,Céréales : Triticale (y compris semences)
+1110,"Autres céréales (mélanges, sarrasin…)"
+2201,Cultures industrielles : Betterave industrielle
+1202,Cultures industrielles : Colza
+2203,Cultures industrielles : Lin oléagineux
+2204,Cultures industrielles : Tournesol
+2205,Cultures industrielles : Soja
+1206,"Cultures industrielles : Autres oléagineux (œillette, ricin…)"
+2207,Cultures industrielles : Chanvre
+2208,Cultures industrielles : Lin textile
+9209,Cultures industrielles : Autres plantes textiles
+9210,Cultures industrielles : Houblon
+9211,"Cultures industrielles : Plantes médicinales, à parfum ou condimentaires"
+9212,"Cultures industrielles : Semences grainières (légumières, florales…)"
+9213,Cultures industrielles : Tabac (y compris plants)
+9214,"Autres cultures industrielles (chanvre papier, chicorée à café…)"
+1301,"Protéagineux, légumes : Fève, féverole, lupin doux ( y compris semences)"
+2302,"Protéagineux, légumes : Lentilles, pois chiches, vesces ( y compris semences)"
+1303,"Protéagineux, légumes : Pois protéagineux ( y compris semences)"
+1304,"Protéagineux, légumes : Autres légumes secs (haricot…) ( y compris semences)"
+9305,"Protéagineux, légumes : Légumes frais, fraises et melons"
+2401,Pomme de terre
+2501,Fourrages : Maïs fourrage et ensilage
+1502,"Fourrages : Plantes sarclées fourragères (chou, betterave….)"
+1503,Fourrages : Autres fourrages annuels (sorgho fourrager…)
+9504,"Prairies artificielles (trèfle, luzerne, sainfoin, minette, lotier…)"
+9505,"Prairies temporaires (moins de 6 ans, graminées pures ou avec légumineuses)"
+9506,Prairies permanentes
+9601,"Cultures permanentes, fleurs - Fleurs et plantes ornementales, pépinières"
+9602,"Cultures permanentes, fleurs – Vergers"
+9603,"Cultures permanentes, fleurs – Vignes"
+9701,Jachères en sol nu
+9702,Jachères avec couvert végétal spontané
+9703,Jachères avec couvert végétal semé
+1111,Autres cultures
+9888,Ne sait pas
+9999,Sans objet

@@ -1,0 +1,9 @@
+variable,label
+P,Taxation à titre principal et paiement d’une taxe d'habitation
+p,Taxation à titre principal et non paiement d’une taxe d'habitation
+E,"Taxation principale sans abattement, avec dégrèvement et paiement d’une taxe d'habitation"
+e,"Taxation principale sans abattement, avec dégrèvement et non paiement d’une taxe d'habitation"
+S,Taxation à titre secondaire et paiement d’une taxe d'habitation
+s,Taxation à titre secondaire et non paiement d’une taxe d'habitation
+Autres,Ces modalités correspondent à celles de la variable occ lorsque la variable ltax est vide et que le foyer est rattaché au logement (nataff=R)
+,Pas de taxation du local ou du contribuable

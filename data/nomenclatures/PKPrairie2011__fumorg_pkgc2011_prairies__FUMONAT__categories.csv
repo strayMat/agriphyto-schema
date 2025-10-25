@@ -1,0 +1,24 @@
+variable,label
+01,Fumier bovins
+02,Fumier canards
+03,Fumier ovins
+04,Fumier de porcs
+05,Fumier volailles de chair
+06,Fientes sèches poules pondeuses
+07,Fientes pâteuses poules pondeuses
+08,Lisier bovins
+09,Lisier lapins
+10,Lisier ovins
+11,Lisier porcs
+12,Lisier poules pondeuses
+13,Lisier veaux
+14,Compost d’origine animale
+15,Compost d’origine végétale
+16,Compost d’ordures ménagères
+17,Boues de station d’épuration urbaine
+18,Eaux de sucrerie
+19,Vinasse
+20,Autres boues d’industries agro-alimentaires
+21,Autres boues industrielles
+22,Écume
+23,Autres effluents

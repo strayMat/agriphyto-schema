@@ -1,0 +1,12 @@
+variable,label
+1,État
+2,Région
+3,Département
+4,Commune
+5,Habitation à loyer modéré (HLM)
+6,Société d'économie mixte (SEM)
+7,Copropriété
+8,Associés
+9,SNCF
+0,Autres personnes morales
+,Personnes physiques

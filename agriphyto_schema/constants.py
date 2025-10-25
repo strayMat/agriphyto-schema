@@ -53,8 +53,26 @@ AVAILABLE_DICOS = {
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
     },
+    "FIDELI2020": {
+        "filename": "Fichier_Démographique_sur_les_Logements_et_les_Individus_(FIDELI)_-_2022.csv",
+        "skiprows": 6,
+        "encoding": "utf-8-sig",
+        "parser": "dico_from_casd_csv",
+    },
+    "PKPrairie2011": {
+        "filename": "Pratiques_culturales_en_prairie_-_2011.csv",
+        "skiprows": 8,
+        "encoding": "utf-8-sig",
+        "parser": "dico_from_casd_csv",
+    },
+    "PKGC2014": {
+        "filename": "Pratiques_phytosanitaires_en_grandes_cultures_-_2014.csv",
+        "skiprows": 8,
+        "encoding": "utf-8-sig",
+        "parser": "dico_from_casd_csv",
+    },
 }
-CASD_BOOL_MODALITIES = ['"0 - Non";"1 - Oui"']
+CASD_BOOL_MODALITIES = ['"0 - Non";"1 - Oui"', '"1 - Oui";"0 - Non"']
 USELESS_MODALITIES = [*CASD_BOOL_MODALITIES]
 # Output dictionary columns
 COLNAME_OUT_DB = "Database"

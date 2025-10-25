@@ -1,0 +1,35 @@
+variable,label
+1,(N) solution azotée
+2,(N + S) solution azotée soufrée
+3,(N) ammonitrate
+4,(N + S) ammonitrate enrichi en soufre
+5,(N) urée
+6,(N) ammoniac
+7,(N) nitrate de soude
+8,(N) nitrate de chaux
+9,(N + S) sulfate d’ammoniaque
+10,(N + S) sulfate d’ammoniaque et urée
+11,(N + S) sulfonitrate
+12,(N) autre engrais azoté
+13,(P) phosphate naturel
+14,(P) scories thomas
+15,(P) superphosphate
+16,(P + S) phosphore et soufre
+17,(K) chlorure de potassium
+18,(K + S) sulfate de potassium
+19,(K) autre potassique
+20,"(NP) phosphate d’ammoniaque (MAP, DAP)"
+21,(NP) autre azote et phosphore
+22,"(NP + S) autre engrais azote, phosphore et soufre"
+23,(NK) azote et potassium
+24,"(NK + S) azote, potassium et soufre"
+25,(PK) (super) phosphopotassique
+26,(PK) superpotassique
+27,"(PK + S) potassium, phosphore et soufre"
+28,"(NPK) azote, phosphore et potassium"
+29,"(NPK + S) azote, phosphore, potassium et soufre"
+30,(S) soufre
+31,"(NP, NK, NPK) engrais organo-minéral normé/homologué"
+32,"(NP, NK, NPK + S) engrais organo-minéral normé/homologué avec soufre"
+33,"(NP, NK, NPK) engrais organique normé/homologué"
+34,"(NP, NK, NPK + S) engrais organique normé/homologué avec soufre"

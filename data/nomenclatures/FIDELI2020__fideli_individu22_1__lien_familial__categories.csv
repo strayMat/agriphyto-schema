@@ -1,0 +1,11 @@
+variable,label
+10,Référent fiscal
+21,Conjoint légal
+22,Conjoint de fait
+31,Enfant (du référent fiscal ou du conjoint)
+32,Enfant adopté
+40,Conjoint enfant
+50,Frère ou soeur
+60,Parent
+70,Autre avec homonymie
+80,Autre sans homonymie

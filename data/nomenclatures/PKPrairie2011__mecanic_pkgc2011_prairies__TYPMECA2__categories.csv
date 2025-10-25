@@ -1,0 +1,41 @@
+variable,label
+10,Broyage sans travail du sol
+11,Travail superficiel du sol < 8 cm - Déchaumeur
+12,Travail superficiel du sol < 8 cm - Vibroculteur
+13,Travail superficiel du sol < 8 cm - Herse
+14,Travail superficiel du sol < 8 cm - Striptill
+15,Travail superficiel du sol < 8 cm - Bineuse
+16,Travail superficiel du sol < 8 cm - Sarcleuse
+17,Travail superficiel du sol < 8 cm - Desherbineuse
+18,Travail superficiel du sol < 8 cm - outil combiné désherbage mécanique et chimique
+19,Travail superficiel du sol < 8 cm - Autres
+21,Travail superficiel du sol entre 8 et 15 cm - Déchaumeur
+22,Travail superficiel du sol entre 8 et 15 cm - Déchaumeur animé
+23,Travail superficiel du sol entre 8 et 15 cm - Pulvériseur
+24,Travail superficiel du sol entre 8 et 15 cm - Striptill
+25,Travail superficiel du sol entre 8 et 15 cm - Cultivateur animé ou  herse animée
+26,Travail superficiel du sol entre 8 et 15 cm - Autres
+31,Travail profond du sol sans retournement (>15 cm) - Sous-soleuse
+32,Travail profond du sol sans retournement (>15 cm) - Décompacteur
+33,Travail profond du sol sans retournement (>15 cm) - Cultivateur lourd ou chisel
+34,Travail profond du sol sans retournement (>15 cm) - Cultivateur léger
+35,Travail profond du sol sans retournement (>15 cm) - Pulvériseur
+36,Travail profond du sol sans retournement (>15 cm) - Rotobêche
+37,Travail profond du sol sans retournement (>15 cm) - Autres
+41,Labour - Charrue versoir
+42,Labour - Charrue à disque
+43,Labour - Autres
+51,Roulage - Rouleau lisse
+52,Roulage - Rouleau non lisse
+53,Roulage - Autres
+61,Semis/plantation culture principale
+62,Semis couvert (intermédiaire ou dérobée)
+71,Opérations spécifiques pomme de terre
+72,Opérations spécifiques canne à sucre
+81,Récolte culture principale
+82,Récolte culture dérobée
+91,Entretien prairie - fauche ou broyage des refus
+92,Entretien prairie - étaupinage
+93,Entretien prairie - ébousage
+94,Entretien prairie - émoussage
+95,Entretien prairie - autre entretien de prairie

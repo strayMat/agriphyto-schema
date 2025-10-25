@@ -1,0 +1,6 @@
+variable,label
+1,Homme
+2,Femme
+P,Individus ayant un revenu dans Pote mais non présent dans Fip (la variable sexe n’existe pas dans Pote)
+C,"Conjoints dans Fip qui ont les mêmes nom, prénom, date et lieu de naissance que le déclarant"
+,Individus uniquement présents dans Pote (pour l’essentiel des enfants)

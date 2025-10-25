@@ -1,0 +1,30 @@
+variable,label
+01,Graminées : Avoine
+02,Graminées : Orge
+03,Graminées : Seigle
+04,Graminées : Triticale
+05,Graminées : Ray-grass
+06,Graminées : Moha
+07,Graminées : Autres (pures)
+08,Graminées : Mélange (méteil)
+09,Crucifères  : Colza
+10,Crucifères  : Navette
+11,Crucifères : Radis fourrager
+12,Crucifères : Moutarde
+13,Crucifères : Autres (pures)
+14,Crucifères : Mélange
+15,Légumineuses : Trèfle
+16,Légumineuses : Autres (pures)
+17,Légumineuses : Mélange
+18,Sarrasin
+19,Phacélie
+20,Tournesol
+21,Mélange légumineuses graminées
+22,Mélange légumineuses crucifères
+23,Mélange légumineuses phacélie
+24,Mélange graminées crucifères
+25,Mélange graminées phacélie
+26,Mélange crucifères phacélie
+27,Autre mélange avec légumineuse
+28,Autre mélange sans légumineuse
+29,Autres

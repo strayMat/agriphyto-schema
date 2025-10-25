@@ -1,0 +1,30 @@
+variable,label
+01,Céréales : Avoine
+02,Céréales : Orge
+03,Céréales : Seigle
+04,Céréales : Triticale
+05,Céréales : Sarrasin
+06,"Autres céréales, N.C.A."
+07,Mélange de céréales
+08,Tournesol
+09,Crucifères : Colza
+10,Crucifères : Navette
+11,Crucifères : Radis fourrager
+12,Crucifères : Moutarde
+13,Autres crucifères pures
+14,Mélange de crucifères
+15,Phacélie
+16,Légumineuses : Trèfle
+17,Légumineuses : Trèfle d'Alexandrie
+18,Autres légumineuses pures
+19,Mélange de légumineuses
+20,Graminées : Ray-grass
+21,Graminées : Moha
+22,Autres graminées pures
+23,Mélange de graminées
+24,Mélange de graminées et légumineuses
+25,Mélange de graminées et de crucifères
+26,Mélange de phacélie et graminées
+27,Mélange de phacélie et légumineuses
+28,Mélange de phacélie et crucifères
+29,Mélange de légumineuses et crucifères

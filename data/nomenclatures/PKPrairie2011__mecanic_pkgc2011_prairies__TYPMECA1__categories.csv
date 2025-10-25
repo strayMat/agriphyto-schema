@@ -1,0 +1,10 @@
+variable,label
+1,Travail superficiel < 8 cm ou broyage sans travail du sol
+2,Travail superficiel du sol entre 8 et 15 cm
+3,Travail profond du sol sans retournement (>15 cm)
+4,Labour
+5,Roulage
+6,Semis/plantation
+7,Autres opérations
+8,Récolte
+9,Entretien prairie

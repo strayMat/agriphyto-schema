@@ -1,0 +1,42 @@
+variable,label
+01,< 0.15
+02,[ 0.15
+0.3 [,0.3 [
+03,[ 0.3
+0.5 [,0.5 [
+04,[ 0.5
+1 [,1 [
+05,[ 1
+2 [,2 [
+06,[ 2
+3 [,3 [
+07,[ 3
+5 [,5 [
+08,[ 5
+10 [,10 [
+09,>=10
+12,Regroupement des tranches 1 et 2
+13,"Regroupement des tranches 1, 2 et 3"
+14,"Regroupement des tranches 1, 2, 3 et 4"
+15,"Regroupement des tranches 1, 2, 3, 4 et 5"
+16,"Regroupement des tranches 1, 2, 3, 4, 5 et 6"
+18,"Regroupement des tranches 1, 2, 3, 4, 5, 6, 7 et 8"
+19,"Regroupement des tranches 1, 2, 3, 4, 5, 6, 7, 8 et 9"
+23,Regroupement des tranches 2 et 3
+25,"Regroupement des tranches 2, 3, 4 et 5"
+34,Regroupement des tranches 3 et 4
+35,"Regroupement des tranches 3, 4 et 5"
+36,"Regroupement des tranches 3, 4, 5 et 6"
+39,"Regroupement des tranches 3, 4, 5, 6, 7, 8 et 9"
+45,Regroupement des tranches 4 et 5
+46,"Regroupement des tranches 4, 5 et 6"
+47,"Regroupement des tranches 4, 5, 6 et 7"
+49,"Regroupement des tranches 4, 5, 6, 7, 8 et 9"
+56,Regroupement des tranches 5 et 6
+57,"Regroupement des tranches 5, 6 et 7"
+59,"Regroupement des tranches 5, 6, 7, 8 et 9"
+67,Regroupement des tranches 6 et 7
+69,"Regroupement des tranches 6, 7, 8 et 9"
+78,Regroupement des tranches 7 et 8
+79,"Regroupement des tranches 7, 8 et 9"
+89,Regroupement des tranches 8 et 9

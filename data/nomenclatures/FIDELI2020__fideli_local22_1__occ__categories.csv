@@ -1,0 +1,13 @@
+variable,label
+,Code occupation du rattaché
+/,Libération du local
+B,"Locaux meublés à usage d’habitation, faisant l’objet de locations occasionnelles, permanentes ou saisonnières"
+D,Local démoli
+G,Occupation à titre gratuit
+L,Occupation par un locataire
+N,Local dépendance non imposable
+P,Occupation par le propriétaire
+T,Local imposé à la taxe professionnelle
+V,Local vacant
+W,Local vide
+X,Occupation par bail rural

@@ -139,6 +139,274 @@ RA2020,MO_CHEF_COEXPL,MOPACTDIV_ECH,Participation aux activités de diversificat
 RA2020,MO_CHEF_COEXPL,MOTYPLURACT_ECH,Type de pluriactivité,string,MO_CHEF_COEXPL__MOTYPLURACT_ECH
 RA2020,MO_CHEF_COEXPL,MOPLURACT_ECH,Importance de la pluriactivité dans le temps de travail,string,MO_CHEF_COEXPL__MOPLURACT_ECH
 RA2020,MO_CHEF_COEXPL,IMPUT_NR_TOT,Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés),float64,
+PKGC2014,PHYTOGC2014,identifiant_dossier,Identifiant parcelle,string,
+PKGC2014,PHYTOGC2014,IDUNITE,Identifiant BALSA,string,
+PKGC2014,PHYTOGC2014,SIRET,Numéro SIRET de l'exploitation,string,
+PKGC2014,PHYTOGC2014,PACAGE,Numéro PACAGE de l'exploitation,float64,
+PKGC2014,PHYTOGC2014,ESPECE,Culture enquêtée,string,PHYTOGC2014__ESPECE
+PKGC2014,PHYTOGC2014,ESPECEINI,"Culture enquêtée, code initial (maïs et blé, modification entre 08 et 09 ou entre 01 et 02)",string,PHYTOGC2014__ESPECEINI
+PKGC2014,PHYTOGC2014,REGPAR,Code région de la parcelle,string,PHYTOGC2014__REGPAR
+PKGC2014,PHYTOGC2014,DEPPAR,Département de localisation de la parcelle,string,PHYTOGC2014__DEPPAR
+PKGC2014,PHYTOGC2014,DEPCOMPAR,Code commune de la parcelle,string,PHYTOGC2014__DEPCOMPAR
+PKGC2014,PHYTOGC2014,ZONE_INTERM,Zones intermédiaires (R21 et R26),string,PHYTOGC2014__ZONE_INTERM
+PKGC2014,PHYTOGC2014,BIO,Appartenance à la strate « bio »,string,PHYTOGC2014__BIO
+PKGC2014,PHYTOGC2014,ZONEVULN,Appartenance à une zone vulnérable,string,PHYTOGC2014__ZONEVULN
+PKGC2014,PHYTOGC2014,COEF1,Coefficient d'extrapolation au niveau de la parcelle,float64,
+PKGC2014,PHYTOGC2014,COEF2,Coefficient de pondération au niveau de la parcelle = COEF1*SUPP,float64,
+PKGC2014,PHYTOGC2014,DOUBLECULT,Existence d'une autre culture récoltée en mélange dans le semoir,string,PHYTOGC2014__DOUBLECULT
+PKGC2014,PHYTOGC2014,ESPDOUBLE,Autre culture en mélange récoltée : Code ESPDOUBLE Espèce(s) semée(s),string,PHYTOGC2014__ESPDOUBLE
+PKGC2014,PHYTOGC2014,AUTESPDOUBLE,Précision libellé autre culture récoltée,string,
+PKGC2014,PHYTOGC2014,SAU,Superficie agricole utilisée de l’exploitation,string,
+PKGC2014,PHYTOGC2014,SUPESP,Superficie totale de l'espèce enquêtée sur l'exploitation,string,
+PKGC2014,PHYTOGC2014,TYPEXP,Type d'exploitation,string,PHYTOGC2014__TYPEXP
+PKGC2014,PHYTOGC2014,SUPP,Superficie de la parcelle,float64,
+PKGC2014,PHYTOGC2014,DRAINP,Existence d'un drainage de la parcelle (depuis 2009 inclus),string,PHYTOGC2014__DRAINP
+PKGC2014,PHYTOGC2014,EAU,Existence d'un cours d’eau sur la parcelle ou adjacent à la parcelle,string,PHYTOGC2014__EAU
+PKGC2014,PHYTOGC2014,BANDEHERB,Existence sur la parcelle d'une bande enherbée le long d’un cours d’eau,string,PHYTOGC2014__BANDEHERB
+PKGC2014,PHYTOGC2014,RANGPERP,"Si la parcelle est en pente, les rangs sont perpendiculaires à la pente ou non",string,PHYTOGC2014__RANGPERP
+PKGC2014,PHYTOGC2014,ALTITUDE,Altitude de la parcelle (en mètres),string,
+PKGC2014,PHYTOGC2014,TYPESOL,Type de sol de la parcelle,string,PHYTOGC2014__TYPESOL
+PKGC2014,PHYTOGC2014,AUTTYPESOL,Libellé  de l'autre type de sol,string,
+PKGC2014,PHYTOGC2014,CAHIERBIO,Existence d'un cahier des charges en agriculture biologique,string,PHYTOGC2014__CAHIERBIO
+PKGC2014,PHYTOGC2014,ANBIO,Nombre d'années en bio,float64,
+PKGC2014,PHYTOGC2014,SANSENGPHYTO,Absence engagement réduction des phytosanitaires,string,PHYTOGC2014__SANSENGPHYTO
+PKGC2014,PHYTOGC2014,EAEPHYTO,Existence d'un engagement agro-environnemental rémunéré (MAE) pour les interventions phytosanitaires,string,PHYTOGC2014__EAEPHYTO
+PKGC2014,PHYTOGC2014,CAHIERPHYTO,Existence d'un cahier des charges de réduction des phytosanitaires hors MAE,string,PHYTOGC2014__CAHIERPHYTO
+PKGC2014,PHYTOGC2014,MOISPLAN,Mois de plantation de la canne à sucre présente sur la parcelle,string,
+PKGC2014,PHYTOGC2014,ANPLAN,Année de plantation de la canne à sucre présente sur la parcelle,string,
+PKGC2014,PHYTOGC2014,PREMAN,Première année de mise en place d’une culture de canne à sucre sur la parcelle,string,PHYTOGC2014__PREMAN
+PKGC2014,PHYTOGC2014,TYPCAN,Type de canne à sucre sur la parcelle,string,PHYTOGC2014__TYPCAN
+PKGC2014,PHYTOGC2014,PARCIRR,Parcelle irriguée au cours de la campagne agricole,string,PHYTOGC2014__PARCIRR
+PKGC2014,PHYTOGC2014,REALREC,Réalisation de la récolte,string,PHYTOGC2014__REALREC
+PKGC2014,PHYTOGC2014,OBJREND,Hypothèse de rendement en début de campagne,float64,
+PKGC2014,PHYTOGC2014,RENDSAIS,Rendement de la campagne : données aux normes,float64,
+PKGC2014,PHYTOGC2014,RENDEM,Rendement de la campagne : données brutes,float64,
+PKGC2014,PHYTOGC2014,THUM,Rendement de la campagne : Humidité à la récolte,string,
+PKGC2014,PHYTOGC2014,IMPUR,Rendement de la campagne : Impuretés,string,
+PKGC2014,PHYTOGC2014,RICSUC,Rendement de la campagne : rendement racine,string,
+PKGC2014,PHYTOGC2014,RENDNORME,Rendement aux normes (calculé),float64,
+PKGC2014,PHYTOGC2014,RENDNIV,Rapport entre rendement de la campagne et rendement moyen habituel de la culture,float64,PHYTOGC2014__RENDNIV
+PKGC2014,PHYTOGC2014,INTEMP,Existence d'aléas exceptionnels sur la parcelle,string,PHYTOGC2014__INTEMP
+PKGC2014,PHYTOGC2014,AUTINTEMP,Libellé  de l'autre aléa exceptionnel,string,
+PKGC2014,PHYTOGC2014,DEBOUCHE,Débouché de la récolte (vente ou consommation propre),string,PHYTOGC2014__DEBOUCHE
+PKGC2014,PHYTOGC2014,DESTIN,Destination du produit récolté,string,PHYTOGC2014__DESTIN
+PKGC2014,PHYTOGC2014,ENERGIE,Destination du produit récolté : valorisation énergétique,string,PHYTOGC2014__ENERGIE
+PKGC2014,PHYTOGC2014,PROTEIN,Connaissance de la teneur en protéines obtenue,string,PHYTOGC2014__PROTEIN
+PKGC2014,PHYTOGC2014,TENPROT,Teneur en protéines obtenue,string,
+PKGC2014,PHYTOGC2014,CONNSUC,Connaissance de la teneur totale en sucre obtenue,string,PHYTOGC2014__CONNSUC
+PKGC2014,PHYTOGC2014,RICSUC2,Teneur totale en sucre obtenue,string,
+PKGC2014,PHYTOGC2014,PRECULTCAN2013,Culture récoltée ou fauchée sur la parcelle en 2013,string,PHYTOGC2014__PRECULTCAN2013
+PKGC2014,PHYTOGC2014,PRECULTCAN,Nature de la culture ou jachère qui a précédé l’implantation de la canne à sucre actuelle,string,PHYTOGC2014__PRECULTCAN
+PKGC2014,PHYTOGC2014,LABCAN,Existence d'un labour avant mise en place de la canne à sucre enquêtée,string,PHYTOGC2014__LABCAN
+PKGC2014,PHYTOGC2014,PRECULT2013,Précédent cultural 2013,string,PHYTOGC2014__PRECULT2013
+PKGC2014,PHYTOGC2014,PERIOD2013,Période de semis 2013,string,PHYTOGC2014__PERIOD2013
+PKGC2014,PHYTOGC2014,LAB2013,Labour avant mise en place de la culture 2013,string,PHYTOGC2014__LAB2013
+PKGC2014,PHYTOGC2014,PRECULT2012,Précédent cultural 2012,string,PHYTOGC2014__PRECULT2012
+PKGC2014,PHYTOGC2014,PERIOD2012,Période de semis 2012,string,PHYTOGC2014__PERIOD2012
+PKGC2014,PHYTOGC2014,LAB2012,Labour avant mise en place de la culture 2012,string,PHYTOGC2014__LAB2012
+PKGC2014,PHYTOGC2014,PRECULT2011,Précédent cultural 2011,string,PHYTOGC2014__PRECULT2011
+PKGC2014,PHYTOGC2014,PERIOD2011,Période de semis 2011,string,PHYTOGC2014__PERIOD2011
+PKGC2014,PHYTOGC2014,LAB2011,Labour avant mise en place de la culture 2011,string,PHYTOGC2014__LAB2011
+PKGC2014,PHYTOGC2014,PRECULT2010,Précédent cultural 2010,string,PHYTOGC2014__PRECULT2010
+PKGC2014,PHYTOGC2014,PERIOD2010,Période de semis 2010,string,PHYTOGC2014__PERIOD2010
+PKGC2014,PHYTOGC2014,LAB2010,Labour avant mise en place de la culture 2010,string,PHYTOGC2014__LAB2010
+PKGC2014,PHYTOGC2014,DPRECUL,Date de récolte du précédent,string,
+PKGC2014,PHYTOGC2014,RESIDUS,Traitement des résidus,string,PHYTOGC2014__RESIDUS
+PKGC2014,PHYTOGC2014,INTERV,"Résidus laissés sur place sans enfouissement, présence d'une intervention",string,PHYTOGC2014__INTERV
+PKGC2014,PHYTOGC2014,REPOUSPREC,Repousse du précédent cultural ayant couvert le sol : présence,string,PHYTOGC2014__REPOUSPREC
+PKGC2014,PHYTOGC2014,REPOUSDESMEC,Mode de destruction mécanique des repousses du précédent : présence,string,PHYTOGC2014__REPOUSDESMEC
+PKGC2014,PHYTOGC2014,REPOUSDESCHI,Mode de destruction chimique des repousses du précédent : présence,string,PHYTOGC2014__REPOUSDESCHI
+PKGC2014,PHYTOGC2014,REPOUSDESAUT,"Mode de destruction autres (gel, …) des repousses du précédent : présence",string,PHYTOGC2014__REPOUSDESAUT
+PKGC2014,PHYTOGC2014,ENGVERT,Présence d'une culture intermédiaire qui a été détruite,string,PHYTOGC2014__ENGVERT
+PKGC2014,PHYTOGC2014,ESPENGVERT,Culture intermédiaire détruite : Code COUVERT Espèce(s) semée(s),string,PHYTOGC2014__ESPENGVERT
+PKGC2014,PHYTOGC2014,ENGVDESMEC,"Culture intermédiaire détruite, existence d'un mode de destruction mécanique",string,PHYTOGC2014__ENGVDESMEC
+PKGC2014,PHYTOGC2014,ENGVDESCHI,"Culture intermédiaire détruite, existence d'un mode de destruction chimique",string,PHYTOGC2014__ENGVDESCHI
+PKGC2014,PHYTOGC2014,ENGVDESAUT,"Culture intermédiaire détruite, existence d'un mode de destruction autres (gel, …)",string,PHYTOGC2014__ENGVDESAUT
+PKGC2014,PHYTOGC2014,DESENGVERT,Culture intermédiaire : Période de destruction,string,PHYTOGC2014__DESENGVERT
+PKGC2014,PHYTOGC2014,DEROBE,Présence d'une culture dérobée,string,PHYTOGC2014__DEROBE
+PKGC2014,PHYTOGC2014,ESPDEROB,Culture dérobée récoltée ou pâturée : Code COUVERT Espèce(s) semée(s),string,PHYTOGC2014__ESPDEROB
+PKGC2014,PHYTOGC2014,MODEXDEROB,Culture dérobée : mode d'exploitation,string,PHYTOGC2014__MODEXDEROB
+PKGC2014,PHYTOGC2014,EDEROB,Culture dérobée : période de récolte ou de pâture,string,PHYTOGC2014__EDEROB
+PKGC2014,PHYTOGC2014,DEROBCULT,Type culture dérobée (canne à sucre),string,PHYTOGC2014__DEROBCULT
+PKGC2014,PHYTOGC2014,AUTDEROBCULT,Libellé  de l'autre type de culture dérobée (canne à sucre),string,
+PKGC2014,PHYTOGC2014,ESPINITNL,Culture initiale non levée (C'est à dire non comptée CIPAN ou dérobée) : Code ESPECE Espèce(s) semée(s),string,PHYTOGC2014__ESPINITNL
+PKGC2014,PHYTOGC2014,SEMPROV,Origine de la semence de la culture enquêtée,string,PHYTOGC2014__SEMPROV
+PKGC2014,PHYTOGC2014,SEMPROVBIO,Origine de la semence de la culture enquêtée pour les bio,string,PHYTOGC2014__SEMPROVBIO
+PKGC2014,PHYTOGC2014,LUTTEOIS,Lutte contre les oiseaux,string,PHYTOGC2014__LUTTEOIS
+PKGC2014,PHYTOGC2014,TRAITSEM,Existence d'une semence (certifiée ou de ferme) traitée,string,PHYTOGC2014__TRAITSEM
+PKGC2014,PHYTOGC2014,TRAITSEMINS,Semence (certifiée ou de ferme) traitée : Insecticides (hors anti-pucerons),string,PHYTOGC2014__TRAITSEMINS
+PKGC2014,PHYTOGC2014,TRAITSEMPUC,Semence (certifiée ou de ferme) traitée : anti-pucerons,string,PHYTOGC2014__TRAITSEMPUC
+PKGC2014,PHYTOGC2014,TRAITSEMFON,Semence (certifiée ou de ferme) traitée : Fongicides,string,PHYTOGC2014__TRAITSEMFON
+PKGC2014,PHYTOGC2014,TRAITSEMLIM,Semence (certifiée ou de ferme) traitée : Anti-limaces,string,PHYTOGC2014__TRAITSEMLIM
+PKGC2014,PHYTOGC2014,TRAITSEMOIS,Semence (certifiée ou de ferme) traitée : Anti-oiseaux,string,PHYTOGC2014__TRAITSEMOIS
+PKGC2014,PHYTOGC2014,TRAITSEMNEM,Semence (certifiée ou de ferme) traitée : Nématicides,string,PHYTOGC2014__TRAITSEMNEM
+PKGC2014,PHYTOGC2014,TRAITSEMAUT,Semence (certifiée ou de ferme) traitée : Autres répulsifs,string,PHYTOGC2014__TRAITSEMAUT
+PKGC2014,PHYTOGC2014,TRAITSEMINC,Traitement de semences : Inconnus,string,PHYTOGC2014__TRAITSEMINC
+PKGC2014,PHYTOGC2014,NBVARIET,Nombre de variétés semées sur la parcelle (en mélange dans le semoir),float64,
+PKGC2014,PHYTOGC2014,VARIET,Variété principale semée,string,
+PKGC2014,PHYTOGC2014,LIBVARIET,Libellé variété principale semée/plantée,string,
+PKGC2014,PHYTOGC2014,AUTVARIET,Libellé  de l'autre variété principale,string,
+PKGC2014,PHYTOGC2014,VARIET2,Variété secondaire semée en cas de plusieurs variétés (mélange),string,
+PKGC2014,PHYTOGC2014,LIBVARIET2,Libellé variété secondaire semée,string,
+PKGC2014,PHYTOGC2014,AUTVARIET2,Libellé  de l'autre variété secondaire,string,
+PKGC2014,PHYTOGC2014,VARIETDEP,Variété principale (canne à sucre),string,
+PKGC2014,PHYTOGC2014,DBLERG,Existence d'une plantation en double rang pour la canne à sucre,string,PHYTOGC2014__DBLERG
+PKGC2014,PHYTOGC2014,GRAINM2,Dose de semis : Nombre de grains par m2,string,
+PKGC2014,PHYTOGC2014,POIDSURFSAIS,Dose de semis : Poids de semence par ha (kg/ha),string,
+PKGC2014,PHYTOGC2014,POIDSURF,Dose de semis : Poids de semence par ha (kg/ha) (calculé),string,
+PKGC2014,PHYTOGC2014,GRAINHA,Dose de semis : Nombre de grains par ha,string,
+PKGC2014,PHYTOGC2014,GRUNITHA,Dose de semis : Nombre d’unités (100 000 semences) à l’ha,string,
+PKGC2014,PHYTOGC2014,PLANHA,Densité de plantation en nombre de plants par ha,string,
+PKGC2014,PHYTOGC2014,CALIPLANT,Calibre des plants en mm,string,
+PKGC2014,PHYTOGC2014,BILLONS,Existence d'une culture en billons ou en planches,string,PHYTOGC2014__BILLONS
+PKGC2014,PHYTOGC2014,ENTRERANG,Ecartement entre les rangs (en cm),string,
+PKGC2014,PHYTOGC2014,SEMDAT,Date dernier semis,string,
+PKGC2014,PHYTOGC2014,RESEMIS,Resemis,string,PHYTOGC2014__RESEMIS
+PKGC2014,PHYTOGC2014,RECDAT,Date première récolte,string,
+PKGC2014,PHYTOGC2014,LABOUREUR,Labour,string,PHYTOGC2014__LABOUREUR
+PKGC2014,PHYTOGC2014,DEHMECAD,Indicatrice désherbage mécanique avant récolte canne enquêtée en 2014,string,PHYTOGC2014__DEHMECAD
+PKGC2014,PHYTOGC2014,PASSMECAD,Nombre de désherbages mécaniques jusqu’à la récolte de la canne enquêtée en 2014,string,
+PKGC2014,PHYTOGC2014,DEHMECAAV,Indicatrice désherbage mécanique avant ou à l'implantation,string,PHYTOGC2014__DEHMECAAV
+PKGC2014,PHYTOGC2014,PASSMECAAV,Nombre de désherbages mécaniques avant ou à l'implantation,string,
+PKGC2014,PHYTOGC2014,DEHMECA,Indicatrice désherbage mécanique après implantation,string,PHYTOGC2014__DEHMECA
+PKGC2014,PHYTOGC2014,PASSMECA,Nombre de désherbages mécaniques après implantation,string,
+PKGC2014,PHYTOGC2014,DEHMECACHI,Indicatrice désherbage mécanique associé à du chimique,string,PHYTOGC2014__DEHMECACHI
+PKGC2014,PHYTOGC2014,DEHTHERM,Indicatrice désherbage thermique,string,PHYTOGC2014__DEHTHERM
+PKGC2014,PHYTOGC2014,DEHMAN,Indicatrice désherbage manuel,string,PHYTOGC2014__DEHMAN
+PKGC2014,PHYTOGC2014,SEMDIR,Semis direct,string,PHYTOGC2014__SEMDIR
+PKGC2014,PHYTOGC2014,FAUXSEM,Faux semis,string,PHYTOGC2014__FAUXSEM
+PKGC2014,PHYTOGC2014,DEFMECA,Défanage mécanique,string,PHYTOGC2014__DEFMECA
+PKGC2014,PHYTOGC2014,DEFTHERM,Défanage thermique,string,PHYTOGC2014__DEFTHERM
+PKGC2014,PHYTOGC2014,FUMOFREQ,Nombre d'années avec au moins un apport de fumure organique,string,
+PKGC2014,PHYTOGC2014,AZOTFREQ,Nombre d'années avec au moins un apport d'azote minéral,string,
+PKGC2014,PHYTOGC2014,PHOSFREQ,Nombre d'années avec au moins un apport de phosphore minéral,string,
+PKGC2014,PHYTOGC2014,POTAFREQ,Nombre d'années avec au moins un apport de potasse minérale,string,
+PKGC2014,PHYTOGC2014,SOUFREQ,Nombre d'années avec au moins un apport de soufre,string,
+PKGC2014,PHYTOGC2014,CALCFREQ,Nombre d'années avec au moins un amendement calcique ou magnésien,string,
+PKGC2014,PHYTOGC2014,OLIGOFREQ,Nombre d'années avec au moins un apport d'oligo-élément,string,
+PKGC2014,PHYTOGC2014,BIOFREQ,Nombre d'années avec au moins un apport de biostimulant,string,
+PKGC2014,PHYTOGC2014,NBENGN,Nombre de passages d’apport d’engrais minéraux : azote,float64,
+PKGC2014,PHYTOGC2014,FUMQNTOT,Quantité d’azote minéral totale,string,
+PKGC2014,PHYTOGC2014,PHOSPHORE,Apport de phosphore minéral sur la campagne,string,PHYTOGC2014__PHOSPHORE
+PKGC2014,PHYTOGC2014,POTASSE,Apport de potasse minérale sur la campagne,string,PHYTOGC2014__POTASSE
+PKGC2014,PHYTOGC2014,SOUFRE,Apport de soufre sur la campagne,string,PHYTOGC2014__SOUFRE
+PKGC2014,PHYTOGC2014,FUMO,Apport de fumure organique sur la campagne,string,PHYTOGC2014__FUMO
+PKGC2014,PHYTOGC2014,ROUILLES,Pression Rouilles,string,PHYTOGC2014__ROUILLES
+PKGC2014,PHYTOGC2014,PIETIN,Pression Piétin-verse,string,PHYTOGC2014__PIETIN
+PKGC2014,PHYTOGC2014,OIDIUM,Pression Oïdium,string,PHYTOGC2014__OIDIUM
+PKGC2014,PHYTOGC2014,SEPTO,Pression Septoriose,string,PHYTOGC2014__SEPTO
+PKGC2014,PHYTOGC2014,FUSARIO,Pression Fusariose,string,PHYTOGC2014__FUSARIO
+PKGC2014,PHYTOGC2014,HELMINTHO,Pression Helminthosporiose,string,PHYTOGC2014__HELMINTHO
+PKGC2014,PHYTOGC2014,RHYNCHO,Pression Rhynchosporiose,string,PHYTOGC2014__RHYNCHO
+PKGC2014,PHYTOGC2014,MELIGETHE,Pression Meligèthe,string,PHYTOGC2014__MELIGETHE
+PKGC2014,PHYTOGC2014,ALTISE,Pression Altises (petites et grosses),string,PHYTOGC2014__ALTISE
+PKGC2014,PHYTOGC2014,CHARANCONS,Pression Charançons,string,PHYTOGC2014__CHARANCONS
+PKGC2014,PHYTOGC2014,ANTHRA,Pression Anthracnose,string,PHYTOGC2014__ANTHRA
+PKGC2014,PHYTOGC2014,SITONE,Pression Sitones/Thrips,string,PHYTOGC2014__SITONE
+PKGC2014,PHYTOGC2014,TORDEUSE,Pression Tordeuses/Bruches,string,PHYTOGC2014__TORDEUSE
+PKGC2014,PHYTOGC2014,PYRALE,Pression Pyrale,string,PHYTOGC2014__PYRALE
+PKGC2014,PHYTOGC2014,SESAMIE,Pression Sésamie,string,PHYTOGC2014__SESAMIE
+PKGC2014,PHYTOGC2014,MALFEUILL,Pression Maladies du feuillage,string,PHYTOGC2014__MALFEUILL
+PKGC2014,PHYTOGC2014,MILDIOU,Pression Mildiou,string,PHYTOGC2014__MILDIOU
+PKGC2014,PHYTOGC2014,DORYPHORE,Pression Doryphore,string,PHYTOGC2014__DORYPHORE
+PKGC2014,PHYTOGC2014,PUCERONS,Pression Pucerons,string,PHYTOGC2014__PUCERONS
+PKGC2014,PHYTOGC2014,VERSBLANCS,Pression Vers blancs,string,PHYTOGC2014__VERSBLANCS
+PKGC2014,PHYTOGC2014,RONGEURS,Pression Rongeurs,string,PHYTOGC2014__RONGEURS
+PKGC2014,PHYTOGC2014,ADVENTICES,Pression Adventices,string,PHYTOGC2014__ADVENTICES
+PKGC2014,PHYTOGC2014,VERSB,Dégâts de vers blancs,string,PHYTOGC2014__VERSB
+PKGC2014,PHYTOGC2014,APPHYTO,Existence d'un traitement phyto depuis la récolte du précédent cultural jusqu’à la récolte actuelle,string,PHYTOGC2014__APPHYTO
+PKGC2014,PHYTOGC2014,NBDEHTOT,Traitements phytosanitaires : nombre de traitements herbicides - calcul,float64,
+PKGC2014,PHYTOGC2014,NBDEHPRL,Traitements phytosanitaires : nombre de traitements herbicides avant levée (Pré-levée) - calcul,float64,
+PKGC2014,PHYTOGC2014,NBDEHPOL,Traitements phytosanitaires : nombre de traitements herbicides après levée (Post-levée) - calcul,float64,
+PKGC2014,PHYTOGC2014,NBINSACTOT,Traitements phytosanitaires : nombre de traitements insecticides ou acaricides - calcul,float64,
+PKGC2014,PHYTOGC2014,NBFONTOT,Traitements phytosanitaires : nombre de traitements fongicides - calcul,float64,
+PKGC2014,PHYTOGC2014,NBMOLTOT,Traitements phytosanitaires : nombre de traitements anti-limaces - calcul,float64,
+PKGC2014,PHYTOGC2014,NBRACCERPA,Traitements phytosanitaires : nombre de traitements régulateurs de croissance - calcul,float64,
+PKGC2014,PHYTOGC2014,NBRONTOT,Traitements phytosanitaires : nombre de traitements anti-rongeurs - calcul,float64,
+PKGC2014,PHYTOGC2014,NBAUTTOT,Traitements phytosanitaires : nombre de traitements autres - calcul,float64,
+PKGC2014,PHYTOGC2014,NBADJTOT,Traitements phytosanitaires : nombre de traitements adjuvants - calcul,float64,
+PKGC2014,PHYTOGC2014,TRAITTOT,Traitements phytosanitaires : nombre total de traitements  - calcul,string,
+PKGC2014,PHYTOGC2014,NBTRAIT,Traitements phytosanitaires : nombre de traitements hors adjuvants - calcul,float64,
+PKGC2014,PHYTOGC2014,HERBITOT,Traitements phytosanitaires : nombre de passages avec au moins un herbicide,string,
+PKGC2014,PHYTOGC2014,HERBPRL,Traitements phytosanitaires : nombre de passages herbicides avant levée (pré-levée),string,
+PKGC2014,PHYTOGC2014,HERBPOL,Traitements phytosanitaires : nombre de passages herbicides après levée (post-levée),string,
+PKGC2014,PHYTOGC2014,INSACTOT,Traitements phytosanitaires : nombre de passages avec au moins un insecticide ou acaricide,string,
+PKGC2014,PHYTOGC2014,FONGITOT,Traitements phytosanitaires : nombre de passages avec au moins un fongicide,string,
+PKGC2014,PHYTOGC2014,LIMACTOT,Traitements phytosanitaires : nombre de passages avec au moins un anti-limaces,string,
+PKGC2014,PHYTOGC2014,REGULTOT,Traitements phytosanitaires : nombre de passages avec au moins un régulateur de croissance,string,
+PKGC2014,PHYTOGC2014,RONPASTOT,Traitements phytosanitaires : nombre de passages avec au moins un anti-rongeurs,string,
+PKGC2014,PHYTOGC2014,AUTPASTOT,Traitements phytosanitaires : nombre de passages avec au moins un autre traitement,string,
+PKGC2014,PHYTOGC2014,ADJPASTOT,Traitements phytosanitaires : nombre de passages avec au moins un adjuvant,string,
+PKGC2014,PHYTOGC2014,PHYTOPASTOT,Traitements phytosanitaires : nombre de passages,string,
+PKGC2014,PHYTOGC2014,BSV,Lecture BSV,string,PHYTOGC2014__BSV
+PKGC2014,PHYTOGC2014,CERTIPHYTO,Suivi certiphyto,string,PHYTOGC2014__CERTIPHYTO
+PKGC2014,PHYTOGC2014,ECOPHYTOPIC,Consultation écophytoPIC,string,PHYTOGC2014__ECOPHYTOPIC
+PKGC2014,PHYTOGC2014,CONDEPHY,Connaissance réseau fermes DEPHY,string,PHYTOGC2014__CONDEPHY
+PKGC2014,PHYTOGC2014,DEPHY,Participation fermes DEPHY,string,PHYTOGC2014__DEPHY
+PKGC2014,PHYTOGC2014,RAISHHAB,Raisonnement herbicides : vos pratiques historiques et habituelles,string,PHYTOGC2014__RAISHHAB
+PKGC2014,PHYTOGC2014,RAISHOBS,Raisonnement herbicides : vos observations sur la parcelle en cours de culture,string,PHYTOGC2014__RAISHOBS
+PKGC2014,PHYTOGC2014,RAISHCOMPT,"Raisonnement herbicides : vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)",string,PHYTOGC2014__RAISHCOMPT
+PKGC2014,PHYTOGC2014,RAISHMETEO,Raisonnement herbicides : les prévisions météorologiques et le niveau des précipitations,string,PHYTOGC2014__RAISHMETEO
+PKGC2014,PHYTOGC2014,RAISHBPPC,Raisonnement herbicides : les bulletins de préconisation phyto certifiés,string,PHYTOGC2014__RAISHBPPC
+PKGC2014,PHYTOGC2014,RAISHFOURN,Raisonnement herbicides : les conseils des fournisseurs,string,PHYTOGC2014__RAISHFOURN
+PKGC2014,PHYTOGC2014,RAISHINDEP,Raisonnement herbicides : les recommandations d’organismes indépendants de la vente,string,PHYTOGC2014__RAISHINDEP
+PKGC2014,PHYTOGC2014,RAISHEXP,Raisonnement herbicides : l'expérience d’autres agriculteurs,string,PHYTOGC2014__RAISHEXP
+PKGC2014,PHYTOGC2014,RAISHPILOT,Raisonnement herbicides : vos propres outils de pilotage,string,PHYTOGC2014__RAISHPILOT
+PKGC2014,PHYTOGC2014,RAISAHAB,Raisonnement hors herbicides : vos pratiques historiques et habituelles,string,PHYTOGC2014__RAISAHAB
+PKGC2014,PHYTOGC2014,RAISAOBS,Raisonnement hors herbicides : vos observations sur la parcelle en cours de culture,string,PHYTOGC2014__RAISAOBS
+PKGC2014,PHYTOGC2014,RAISACOMPT,"Raisonnement hors herbicides : vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)",string,PHYTOGC2014__RAISACOMPT
+PKGC2014,PHYTOGC2014,RAISAMETEO,Raisonnement hors herbicides : les prévisions météorologiques et le niveau des précipitations,string,PHYTOGC2014__RAISAMETEO
+PKGC2014,PHYTOGC2014,RAISABSV,Raisonnement hors herbicides : les bulletins de santé du végétal BSV,string,PHYTOGC2014__RAISABSV
+PKGC2014,PHYTOGC2014,RAISABPPC,Raisonnement hors herbicides : les bulletins de préconisation phyto certifiés,string,PHYTOGC2014__RAISABPPC
+PKGC2014,PHYTOGC2014,RAISAFOURN,Raisonnement hors herbicides : les conseils des fournisseurs,string,PHYTOGC2014__RAISAFOURN
+PKGC2014,PHYTOGC2014,RAISAINDEP,Raisonnement hors herbicides : les recommandations d’organismes indépendants de la vente,string,PHYTOGC2014__RAISAINDEP
+PKGC2014,PHYTOGC2014,RAISAEXP,Raisonnement hors herbicides : l'expérience d’autres agriculteurs,string,PHYTOGC2014__RAISAEXP
+PKGC2014,PHYTOGC2014,RAISAPILOT,Raisonnement hors herbicides : vos propres outils de pilotage,string,PHYTOGC2014__RAISAPILOT
+PKGC2014,PHYTOGC2014,RAISH,Raisonnement prioritaire herbicides,string,PHYTOGC2014__RAISH
+PKGC2014,PHYTOGC2014,RAISA,Raisonnement prioritaire hors herbicides,string,PHYTOGC2014__RAISA
+PKGC2014,PHYTOGC2014,REDUCROTATION,Réduction des phytosanitaires par l'allongement des rotations,string,PHYTOGC2014__REDUCROTATION
+PKGC2014,PHYTOGC2014,REDUCTRAV,"Réduction des phytosanitaires par travail du sol, broyage des résidus, faux semis, gestion des repousses...",string,PHYTOGC2014__REDUCTRAV
+PKGC2014,PHYTOGC2014,REDUCDATSEM,Réduction des phytosanitaires par le décalage des dates de semis,string,PHYTOGC2014__REDUCDATSEM
+PKGC2014,PHYTOGC2014,REDUCDENSITE,"Réduction des phytosanitaires par ajustement de la densité de semis, de l'écartement entre les rangs",string,PHYTOGC2014__REDUCDENSITE
+PKGC2014,PHYTOGC2014,REDUCVARIET,Réduction des phytosanitaires par le choix variétal,string,PHYTOGC2014__REDUCVARIET
+PKGC2014,PHYTOGC2014,REDUCPREDA,Réduction des phytosanitaires par ajout direct d'auxiliaires prédateurs,string,PHYTOGC2014__REDUCPREDA
+PKGC2014,PHYTOGC2014,REDUCHABITAT,"Réduction des phytosanitaires par aménagement d'habitat (haies, bandes enherbées...) ou apport alimentaire pour les auxiliaires prédateurs",string,PHYTOGC2014__REDUCHABITAT
+PKGC2014,PHYTOGC2014,REDUCMELANG,Réduction des phytosanitaires par les mélanges de cultures,string,PHYTOGC2014__REDUCMELANG
+PKGC2014,PHYTOGC2014,REDUCDOSE,Réduction des phytosanitaires par ajustement à la baisse des doses,float64,PHYTOGC2014__REDUCDOSE
+PKGC2014,PHYTOGC2014,REDUCAUT,Réduction des phytosanitaires par d'autres moyens,string,PHYTOGC2014__REDUCAUT
+PKGC2014,PHYTOGC2014,LIBREDUCAUT,Libellé Réduction des phytosanitaires par d'autres moyens,string,
+PKGC2014,PHYTOGC2014,REDUCAUCUNE,Aucune pratique de réduction des phytosanitaires,string,PHYTOGC2014__REDUCAUCUNE
+PKGC2014,PHYTOGC2014,INFOGEN,Pratique réduction des phytosanitaires : formation générale,string,PHYTOGC2014__INFOGEN
+PKGC2014,PHYTOGC2014,INFOFOURN,Pratique réduction des phytosanitaires : conseils fournisseurs,string,PHYTOGC2014__INFOFOURN
+PKGC2014,PHYTOGC2014,INFOINDEP,Pratique réduction des phytosanitaires : conseils  techniciens indépendants,string,PHYTOGC2014__INFOINDEP
+PKGC2014,PHYTOGC2014,INFOIBSV,Pratique réduction des phytosanitaires : consultation BSV,string,PHYTOGC2014__INFOIBSV
+PKGC2014,PHYTOGC2014,INFOCERTIPHYTO,Pratique réduction des phytosanitaires : suivi formation certiphyto,string,PHYTOGC2014__INFOCERTIPHYTO
+PKGC2014,PHYTOGC2014,INFOECOPHYTOPIC,Pratique réduction des phytosanitaires : consultation portail écophytoPIC,string,PHYTOGC2014__INFOECOPHYTOPIC
+PKGC2014,PHYTOGC2014,INFODEPHY,Pratique réduction des phytosanitaires : visite ferme DEPHY,string,PHYTOGC2014__INFODEPHY
+PKGC2014,PHYTOGC2014,INFOAUT,Pratique réduction des phytosanitaires : autre,string,PHYTOGC2014__INFOAUT
+PKGC2014,PHYTOGC2014,LIBINFOAUT,Libellé  de l'autre pratique réduction des phytosanitaires,string,
+PKGC2014,PHYTOGC2014,RAISONSANTE,Raison réduction des phytosanitaires : santé,string,PHYTOGC2014__RAISONSANTE
+PKGC2014,PHYTOGC2014,RAISONEAUX,Raison réduction des phytosanitaires : contamination eaux,string,PHYTOGC2014__RAISONEAUX
+PKGC2014,PHYTOGC2014,RAISONCOUT,Raison réduction des phytosanitaires : coûts de production,string,PHYTOGC2014__RAISONCOUT
+PKGC2014,PHYTOGC2014,RAISONAUT,Raison réduction des phytosanitaires : autre,string,PHYTOGC2014__RAISONAUT
+PKGC2014,PHYTOGC2014,LIBRAISONAUT,Libellé  de l'autre raison réduction des phytosanitaires,string,
+PKGC2014,PHYTOGC2014,PROPPULV,Propriété du pulvérisateur,string,PHYTOGC2014__PROPPULV
+PKGC2014,PHYTOGC2014,PROTECT,Protection à l'application : équipement individuel,string,PHYTOGC2014__PROTECT
+PKGC2014,PHYTOGC2014,IFTHERB,IFT Herbicide,string,
+PKGC2014,PHYTOGC2014,IFTHERBBIO,IFT Herbicide Biocontrôle,string,
+PKGC2014,PHYTOGC2014,IFTFONG,IFT Fongicide,string,
+PKGC2014,PHYTOGC2014,IFTFONGBIO,IFT Fongicide Biocontrôle,string,
+PKGC2014,PHYTOGC2014,IFTINS,IFT Insecticide,string,
+PKGC2014,PHYTOGC2014,IFTINSBIO,IFT Insecticide Biocontrôle,string,
+PKGC2014,PHYTOGC2014,IFTAUT,IFT Autre,string,
+PKGC2014,PHYTOGC2014,IFTAUTBIO,IFT Autre Biocontrôle,string,
+PKGC2014,PHYTOGC2014,IFTSEM,IFT Traitement semences,string,
+PKGC2014,PHYTOGC2014,IFTTOTHERB0,IFT Hors herbicide (sans traitement semences),string,
+PKGC2014,PHYTOGC2014,IFTTOTHERB0BIO,IFT Biocontrôle Hors herbicide,string,
+PKGC2014,PHYTOGC2014,IFTTOTHERB0SEM,IFT Hors herbicide avec traitement de semences,string,
+PKGC2014,PHYTOGC2014,IFTTOTSEM0,IFT Total sans traitement semences,string,
+PKGC2014,PHYTOGC2014,IFTTOTBIO,IFT Total Biocontrôle,string,
+PKGC2014,PHYTOGC2014,IFTTOTSEM,IFT Total avec traitement semences,string,
 RA2020,PBS_OTEX_COMMUNALES,SIEGE_CODE_COM,Code commune,string,
 RA2020,PBS_OTEX_COMMUNALES,pb01,Production brute de la commune pour :  Blé tendre et épeautre,string,
 RA2020,PBS_OTEX_COMMUNALES,pb02,Production brute de la commune pour :  Blé dur,string,
@@ -246,6 +514,371 @@ RA2020,PBS_OTEX_COMMUNALES,DIMECO_COEF2017,"Dimention économique de la commune,
 RA2020,PBS_OTEX_COMMUNALES,OTE64_COEF2017,"Orientation économique de la commune, coefficients PBS 2017 (64 postes)",string,
 RA2020,PBS_OTEX_COMMUNALES,OTEFDD_COEF17,"Orientation économique de la commune,, coefficients PBS 2017 (nomenclature détaillée)",string,
 RA2020,PBS_OTEX_COMMUNALES,OTEFDA_COEF17,"Orientation économique de la commune,, coefficients PBS 2017 (nomenclature agrégée)",string,
+FIDELI2020,fideli_dependance22,id_loc,Identifiant local,string,
+FIDELI2020,fideli_dependance22,cconad,Nature de dépendance,string,fideli_dependance22__cconad
+PKPrairie2011,pkgc2011_prairies,Identifiantdossier,Numéro d'identifiant,string,
+PKPrairie2011,pkgc2011_prairies,ESPECE,Culture enquêtée,string,pkgc2011_prairies__ESPECE
+PKPrairie2011,pkgc2011_prairies,ESPECEINI,"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)",string,pkgc2011_prairies__ESPECEINI
+PKPrairie2011,pkgc2011_prairies,PACAGEILOT,Numéro de PACAGE + Numéro de l'ilot,float64,
+PKPrairie2011,pkgc2011_prairies,PACAGE,Numéro de PACAGE de l'exploitation,float64,
+PKPrairie2011,pkgc2011_prairies,SIRET,Numéro SIRET de l’exploitation,string,
+PKPrairie2011,pkgc2011_prairies,ID_RA,Numéro d'identification au recensement agricole 2010,string,
+PKPrairie2011,pkgc2011_prairies,SIRETRA,Numéro SIRET de l’exploitation issu du recensement agricole 2010,string,
+PKPrairie2011,pkgc2011_prairies,REG,Région du siège de l'exploitation,string,pkgc2011_prairies__REG
+PKPrairie2011,pkgc2011_prairies,DEP,Département de localisation de la parcelle,string,pkgc2011_prairies__DEP
+PKPrairie2011,pkgc2011_prairies,DEPCOMP,Code commune de l'exploitant,string,pkgc2011_prairies__DEPCOMP
+PKPrairie2011,pkgc2011_prairies,DEPEXPLOI,Département de la commune de l'exploitation,string,pkgc2011_prairies__DEPEXPLOI
+PKPrairie2011,pkgc2011_prairies,BIO,Appartenance à la strate «bio»,string,pkgc2011_prairies__BIO
+PKPrairie2011,pkgc2011_prairies,ZONE,Appartenance à la strate «zone vulnérable»,string,pkgc2011_prairies__ZONE
+PKPrairie2011,pkgc2011_prairies,SUPP,Superficie de la parcelle,float64,
+PKPrairie2011,pkgc2011_prairies,tranche_superficie,Tranche de superficie (strates utilisées pour le calcul des coefficients de pondération),string,pkgc2011_prairies__tranche_superficie
+PKPrairie2011,pkgc2011_prairies,COEF1,Coefficient de pondération au niveau de la parcelle,float64,
+PKPrairie2011,pkgc2011_prairies,COEF2,Coefficient de pondération au niveau de la parcelle = COEF1*SUPP,float64,
+PKPrairie2011,pkgc2011_prairies,SAU,Superficie agricole utilisée de l’exploitation,string,
+PKPrairie2011,pkgc2011_prairies,FAMTOT,"Prairies : Superficie totale en prairies de l’exploitation (temporaires, permanentes, artificielles)",string,
+PKPrairie2011,pkgc2011_prairies,SUPESP,Superficie de l’espèce enquêtée sur l’exploitation,string,
+PKPrairie2011,pkgc2011_prairies,SUPFOU,"Superficie en autres cultures fourragères (maïs, betterave, sorgho, avoine, …)",string,
+PKPrairie2011,pkgc2011_prairies,ANALYEXP,Nombre d'années depuis 2006 inclus où une analyse de terre de l'exploitation a été effectuée,string,
+PKPrairie2011,pkgc2011_prairies,ANALYP,Existence d'une analyse de terre sur la parcelle,string,pkgc2011_prairies__ANALYP
+PKPrairie2011,pkgc2011_prairies,BILLONS,Existence d'une culture en billons ou en planches,string,pkgc2011_prairies__BILLONS
+PKPrairie2011,pkgc2011_prairies,ENTRERANG,Écartement entre les rangs (en cm),string,
+PKPrairie2011,pkgc2011_prairies,RANGPERP,"Si la parcelle est en pente, les rangs sont-ils perpendiculaires à la pente ?",string,pkgc2011_prairies__RANGPERP
+PKPrairie2011,pkgc2011_prairies,ALTITUDE,Altitude de la parcelle (en mètres),string,
+PKPrairie2011,pkgc2011_prairies,CAHIERBIO,Existence d'un cahier des charges en agriculture biologique,string,pkgc2011_prairies__CAHIERBIO
+PKPrairie2011,pkgc2011_prairies,EAEFERTI,Existence d'un engagement agro-environnemental rémunéré (MAE) pour la fertilisation,string,pkgc2011_prairies__EAEFERTI
+PKPrairie2011,pkgc2011_prairies,EAEPHYTO,Existence d'un engagement agro-environnemental rémunéré (MAE) pour les interventions phytosanitaires,string,pkgc2011_prairies__EAEPHYTO
+PKPrairie2011,pkgc2011_prairies,EAECOUVERT,Existence d'un engagement agro-environnemental rémunéré (MAE) pour la couverture des sols en hiver,string,pkgc2011_prairies__EAECOUVERT
+PKPrairie2011,pkgc2011_prairies,EAEDIVERSIF,Existence d'un engagement agro-environnemental rémunéré (MAE) pour la diversification de l’assolement,string,pkgc2011_prairies__EAEDIVERSIF
+PKPrairie2011,pkgc2011_prairies,EAEAUTRE,Existence d'un engagement agro-environnemental rémunéré (MAE) pour un autre engagement agro-environnemental,string,pkgc2011_prairies__EAEAUTRE
+PKPrairie2011,pkgc2011_prairies,CAHIERPHAE,Existence d'un cahier des charges de la prime à l’herbe agro-environnementale (PHAE),string,pkgc2011_prairies__CAHIERPHAE
+PKPrairie2011,pkgc2011_prairies,CAHIEREXP,Existence d'un cahier des charges qui encadre les modalités de fauche ou de pâturage,string,pkgc2011_prairies__CAHIEREXP
+PKPrairie2011,pkgc2011_prairies,EDESHERB,Existence d'un engagement pour le désherbage,string,pkgc2011_prairies__EDESHERB
+PKPrairie2011,pkgc2011_prairies,DRAINP,Existence d'un drainage de la parcelle,string,pkgc2011_prairies__DRAINP
+PKPrairie2011,pkgc2011_prairies,EAU,Existence d'un cours d’eau sur la parcelle ou adjacent à la parcelle,string,pkgc2011_prairies__EAU
+PKPrairie2011,pkgc2011_prairies,BANDEHERB,Existence sur la parcelle  d'une bande enherbée le long d’un cours d’eau,string,pkgc2011_prairies__BANDEHERB
+PKPrairie2011,pkgc2011_prairies,TYPESOL,Type de sol de la parcelle,string,
+PKPrairie2011,pkgc2011_prairies,MOISPLAN,Mois de plantation de la canne à sucre présente sur la parcelle,string,
+PKPrairie2011,pkgc2011_prairies,ANPLAN,Année de plantation de la canne à sucre présente sur la parcelle,string,
+PKPrairie2011,pkgc2011_prairies,PREMAN,Première année de mise en place d’une culture de canne à sucre sur la parcelle,string,
+PKPrairie2011,pkgc2011_prairies,TYPCAN,Type de canne à sucre sur la parcelle,string,pkgc2011_prairies__TYPCAN
+PKPrairie2011,pkgc2011_prairies,ANSEMPR,Année de semis de la prairie,string,
+PKPrairie2011,pkgc2011_prairies,MOISSEM,Mois d’implantation de la prairie (si semis de la prairie en 2010 ou 2011),string,
+PKPrairie2011,pkgc2011_prairies,LEGUM,Niveau de présence de légumineuses dans cette prairie à l’été 2011,string,pkgc2011_prairies__LEGUM
+PKPrairie2011,pkgc2011_prairies,TYPPERM,Type de la prairie permanente (implantée avant l’automne 2005),string,pkgc2011_prairies__TYPPERM
+PKPrairie2011,pkgc2011_prairies,TYPRENQ,Type de la prairie au moment du passage de l’enquêteur,string,pkgc2011_prairies__TYPRENQ
+PKPrairie2011,pkgc2011_prairies,SUPTYP,Superficie totale sur l’exploitation du type de prairie enquêtée,string,
+PKPrairie2011,pkgc2011_prairies,RIG,Composition du type de prairie enquêtée : présence de Ray-grass d’Italie,string,pkgc2011_prairies__RIG
+PKPrairie2011,pkgc2011_prairies,RGA,Composition du type de prairie enquêtée : présence de Ray-grass anglais,string,pkgc2011_prairies__RGA
+PKPrairie2011,pkgc2011_prairies,RGH,Composition du type de prairie enquêtée : présence de Ray-grass hybride,string,pkgc2011_prairies__RGH
+PKPrairie2011,pkgc2011_prairies,DACTYL,Composition du type de prairie enquêtée : présence de Dactyle (pelotonné),string,pkgc2011_prairies__DACTYL
+PKPrairie2011,pkgc2011_prairies,FETUQ,Composition du type de prairie enquêtée : présence de Fétuque élevée,string,pkgc2011_prairies__FETUQ
+PKPrairie2011,pkgc2011_prairies,AUTGRAM,"Composition du type de prairie enquêtée : présence d'autres graminées de longue durée (fétuque des prés, fléole des prés, pâturin des prés)",string,pkgc2011_prairies__AUTGRAM
+PKPrairie2011,pkgc2011_prairies,TREFLEB,Composition du type de prairie enquêtée : présence de Trèfle blanc,string,pkgc2011_prairies__TREFLEB
+PKPrairie2011,pkgc2011_prairies,TREFLEH,Composition du type de prairie enquêtée : présence de Trèfle hybride,string,pkgc2011_prairies__TREFLEH
+PKPrairie2011,pkgc2011_prairies,TREFLEV,Composition du type de prairie enquêtée : présence de Trèfle violet,string,pkgc2011_prairies__TREFLEV
+PKPrairie2011,pkgc2011_prairies,LOTIER,Composition du type de prairie enquêtée : présence de Lotier (corniculé),string,pkgc2011_prairies__LOTIER
+PKPrairie2011,pkgc2011_prairies,SAINFOIN,Composition du type de prairie enquêtée : présence de Sainfoin,string,pkgc2011_prairies__SAINFOIN
+PKPrairie2011,pkgc2011_prairies,MINET,Composition du type de prairie enquêtée : présence de Minette,string,pkgc2011_prairies__MINET
+PKPrairie2011,pkgc2011_prairies,LUZERN,Composition du type de prairie enquêtée : présence de Luzerne autre que minette,string,pkgc2011_prairies__LUZERN
+PKPrairie2011,pkgc2011_prairies,AUTLEG,Composition du type de prairie enquêtée : présence d'autre(s) légumineuse(s),string,pkgc2011_prairies__AUTLEG
+PKPrairie2011,pkgc2011_prairies,SEM20102011,Concerne les prairies temporaires : Semis 2010-2011 (entre août 2010 et juillet 2011 inclus),string,
+PKPrairie2011,pkgc2011_prairies,SEM2011,Concerne les prairies temporaires : Semis 2011 (entre février et juillet 2011 inclus),string,
+PKPrairie2011,pkgc2011_prairies,REALREC,Réalisation de la récolte,string,pkgc2011_prairies__REALREC
+PKPrairie2011,pkgc2011_prairies,OBJREND,Hypothèse de rendement en début de campagne,float64,
+PKPrairie2011,pkgc2011_prairies,ENERGIE,Destination du produit récolté : valorisation énergétique,string,pkgc2011_prairies__ENERGIE
+PKPrairie2011,pkgc2011_prairies,DESTIN,Destination du produit récolté,string,pkgc2011_prairies__DESTIN
+PKPrairie2011,pkgc2011_prairies,RENDNORME,Rendement aux normes,float64,
+PKPrairie2011,pkgc2011_prairies,RENDNIV,Rapport entre rendement de la campagne et rendement moyen de la culture,float64,pkgc2011_prairies__RENDNIV
+PKPrairie2011,pkgc2011_prairies,INTEMP,Existence d'aléas exceptionnels sur la parcelle,string,pkgc2011_prairies__INTEMP
+PKPrairie2011,pkgc2011_prairies,RDMESUR,Mesure du rendement,string,pkgc2011_prairies__RDMESUR
+PKPrairie2011,pkgc2011_prairies,PROTEIN,Existence de la teneur en protéines obtenue,string,pkgc2011_prairies__PROTEIN
+PKPrairie2011,pkgc2011_prairies,TENPROT,Teneur en protéines obtenue,string,
+PKPrairie2011,pkgc2011_prairies,AERIEN,Existence de traitements aériens sur la parcelle enquêtée,string,pkgc2011_prairies__AERIEN
+PKPrairie2011,pkgc2011_prairies,THUM,Rendement de la campagne : Humidité à la récolte,string,
+PKPrairie2011,pkgc2011_prairies,IMPUR,Rendement de la campagne : Impuretés,string,
+PKPrairie2011,pkgc2011_prairies,CONNSUC,Connaissance de la teneur totale en sucre obtenue,string,pkgc2011_prairies__CONNSUC
+PKPrairie2011,pkgc2011_prairies,RICSUC,Rendement de la campagne : rendement racine,string,
+PKPrairie2011,pkgc2011_prairies,RICSUC2,Teneur totale en sucre obtenue,string,
+PKPrairie2011,pkgc2011_prairies,PRECULTCAN,Nature de la culture ou jachère qui a précédé l’implantation de la canne à sucre actuelle,string,pkgc2011_prairies__PRECULTCAN
+PKPrairie2011,pkgc2011_prairies,PRECULT2010,Précédent cultural 2010,string,pkgc2011_prairies__PRECULT2010
+PKPrairie2011,pkgc2011_prairies,LAB2010,Existence d'un labour avant mise en place de la culture 2010,string,pkgc2011_prairies__LAB2010
+PKPrairie2011,pkgc2011_prairies,PERIOD2010,Période de semis 2010,string,pkgc2011_prairies__PERIOD2010
+PKPrairie2011,pkgc2011_prairies,REND2010,Rendement 2010,float64,
+PKPrairie2011,pkgc2011_prairies,RDUNI2010,Unité du rendement 2010,string,pkgc2011_prairies__RDUNI2010
+PKPrairie2011,pkgc2011_prairies,PRECULT2009,Précédent cultural 2009,string,pkgc2011_prairies__PRECULT2009
+PKPrairie2011,pkgc2011_prairies,LAB2009,Existence d'un labour avant mise en place de la culture 2009,string,pkgc2011_prairies__LAB2009
+PKPrairie2011,pkgc2011_prairies,PERIOD2009,Période de semis 2009,string,pkgc2011_prairies__PERIOD2009
+PKPrairie2011,pkgc2011_prairies,REND2009,Rendement 2009,float64,
+PKPrairie2011,pkgc2011_prairies,RDUNI2009,Unité du rendement 2009,string,pkgc2011_prairies__RDUNI2009
+PKPrairie2011,pkgc2011_prairies,PRECULT2008,Précédent cultural 2008,string,pkgc2011_prairies__PRECULT2008
+PKPrairie2011,pkgc2011_prairies,LAB2008,Existence d'un labour avant mise en place de la culture 2008,string,pkgc2011_prairies__LAB2008
+PKPrairie2011,pkgc2011_prairies,PERIOD2008,Période de semis 2008,string,pkgc2011_prairies__PERIOD2008
+PKPrairie2011,pkgc2011_prairies,REND2008,Rendement 2008,float64,
+PKPrairie2011,pkgc2011_prairies,RDUNI2008,Unité du rendement 2008,string,pkgc2011_prairies__RDUNI2008
+PKPrairie2011,pkgc2011_prairies,PRECULT2007,Précédent cultural 2007,string,pkgc2011_prairies__PRECULT2007
+PKPrairie2011,pkgc2011_prairies,LAB2007,Existence d'un labour avant mise en place de la culture 2007,string,pkgc2011_prairies__LAB2007
+PKPrairie2011,pkgc2011_prairies,PERIOD2007,Période de semis 2007,string,pkgc2011_prairies__PERIOD2007
+PKPrairie2011,pkgc2011_prairies,REND2007,Rendement 2007,float64,
+PKPrairie2011,pkgc2011_prairies,RDUNI2007,Unité du rendement 2007,string,pkgc2011_prairies__RDUNI2007
+PKPrairie2011,pkgc2011_prairies,PRECULT2006,Précédent cultural 2006,string,pkgc2011_prairies__PRECULT2006
+PKPrairie2011,pkgc2011_prairies,LAB2006,Existence d'un labour avant mise en place de la culture 2006,string,pkgc2011_prairies__LAB2006
+PKPrairie2011,pkgc2011_prairies,PERIOD2006,Période de semis 2006,string,pkgc2011_prairies__PERIOD2006
+PKPrairie2011,pkgc2011_prairies,REND2006,Rendement 2006,float64,
+PKPrairie2011,pkgc2011_prairies,RDUNI2006,Unité du rendement 2006,string,pkgc2011_prairies__RDUNI2006
+PKPrairie2011,pkgc2011_prairies,DPRECUL,Date de récolte du précédent 2010,string,
+PKPrairie2011,pkgc2011_prairies,RESIDUS,Traitement des résidus du précédent cultural,string,pkgc2011_prairies__RESIDUS
+PKPrairie2011,pkgc2011_prairies,REPOUSPREC,Repousse du précédent cultural ayant couvert le sol : présence,string,pkgc2011_prairies__REPOUSPREC
+PKPrairie2011,pkgc2011_prairies,DDESREPOUS,Date de destruction des repousses du précédent,string,
+PKPrairie2011,pkgc2011_prairies,REPOUSDESMEC,Mode de destruction mécanique : présence,string,pkgc2011_prairies__REPOUSDESMEC
+PKPrairie2011,pkgc2011_prairies,REPOUSDESCHI,Mode de destruction chimique : présence,string,pkgc2011_prairies__REPOUSDESCHI
+PKPrairie2011,pkgc2011_prairies,REPOUSDESAUT,"Mode de destruction autres (gel, …) : présence",string,pkgc2011_prairies__REPOUSDESAUT
+PKPrairie2011,pkgc2011_prairies,INTERV,"Cannes à sucre laissées sur place, présence d'une intervention",string,pkgc2011_prairies__INTERV
+PKPrairie2011,pkgc2011_prairies,LABCAN,Existence d'un labour avant mise en place de la culture de cannes à sucre,string,pkgc2011_prairies__LABCAN
+PKPrairie2011,pkgc2011_prairies,ENGVERT,Présence d'une culture intermédiaire qui a été détruite,string,pkgc2011_prairies__ENGVERT
+PKPrairie2011,pkgc2011_prairies,DEROBE,Présence d'une culture dérobée qui a été récoltée ou pâturée,string,pkgc2011_prairies__DEROBE
+PKPrairie2011,pkgc2011_prairies,DSEMENGVERT,Culture intermédiaire détruite : date de semis,string,
+PKPrairie2011,pkgc2011_prairies,ESPENGVERT,Culture intermédiaire détruite,string,pkgc2011_prairies__ESPENGVERT
+PKPrairie2011,pkgc2011_prairies,ENGVSSCV,"Culture intermédiaire détruite, existence d'une implantation sous couvert de la culture principale",string,pkgc2011_prairies__ENGVSSCV
+PKPrairie2011,pkgc2011_prairies,DDESENGVERT,Culture intermédiaire détruite : date de destruction,string,
+PKPrairie2011,pkgc2011_prairies,ENGVDESMEC,"Culture intermédiaire détruite, existence d'un mode de destruction mécanique",string,pkgc2011_prairies__ENGVDESMEC
+PKPrairie2011,pkgc2011_prairies,ENGVDESCHI,"Culture intermédiaire détruite, existence d'un mode de destruction chimique",string,pkgc2011_prairies__ENGVDESCHI
+PKPrairie2011,pkgc2011_prairies,ENGVDESAUT,"Culture intermédiaire détruite, existence d'un mode de destruction autres (gel, …)",string,pkgc2011_prairies__ENGVDESAUT
+PKPrairie2011,pkgc2011_prairies,DSEMDEROB,Culture dérobée récoltée ou pâturée : date de semis,string,
+PKPrairie2011,pkgc2011_prairies,ESPDEROB,Culture dérobée récoltée ou pâturée,string,pkgc2011_prairies__ESPDEROB
+PKPrairie2011,pkgc2011_prairies,DEROBSSCV,"Culture dérobée récoltée ou pâturée, existence d'une implantation sous couvert de la culture principale",string,pkgc2011_prairies__DEROBSSCV
+PKPrairie2011,pkgc2011_prairies,DEXDEROB,Culture dérobée récoltée ou pâturée : date de récolte ou de pâture,string,
+PKPrairie2011,pkgc2011_prairies,MODEXDEROB,Culture dérobée récoltée ou pâturée : mode d'exploitation,string,pkgc2011_prairies__MODEXDEROB
+PKPrairie2011,pkgc2011_prairies,DEROBTOMAT,Existence d'une culture dérobée en tomates,string,pkgc2011_prairies__DEROBTOMAT
+PKPrairie2011,pkgc2011_prairies,DEROBMAIS,Existence d'une culture dérobée en Maïs,string,pkgc2011_prairies__DEROBMAIS
+PKPrairie2011,pkgc2011_prairies,DEROBMELON,Existence d'une culture dérobée en Melon - Pastèque,string,pkgc2011_prairies__DEROBMELON
+PKPrairie2011,pkgc2011_prairies,DEROBHARIC,Existence d'une culture dérobée en Haricot,string,pkgc2011_prairies__DEROBHARIC
+PKPrairie2011,pkgc2011_prairies,DEROBAUT,Existence d'une culture dérobée en Autres,string,pkgc2011_prairies__DEROBAUT
+PKPrairie2011,pkgc2011_prairies,DATTOMAT,Date implantation Tomates,string,
+PKPrairie2011,pkgc2011_prairies,DATMAIS,Date implantation Maïs,string,
+PKPrairie2011,pkgc2011_prairies,DATMELON,Date implantation Melon - Pastèque,string,
+PKPrairie2011,pkgc2011_prairies,DATHARIC,Date implantation Haricot,string,
+PKPrairie2011,pkgc2011_prairies,DATAUT,Date implantation Autres,string,
+PKPrairie2011,pkgc2011_prairies,SUPTOMAT,Superficie développée Tomates,string,
+PKPrairie2011,pkgc2011_prairies,SUPMAIS,Superficie développée Maïs,string,
+PKPrairie2011,pkgc2011_prairies,SUPMELON,Superficie développée Melon - Pastèque,string,
+PKPrairie2011,pkgc2011_prairies,SUPHARIC,Superficie développée Haricot,string,
+PKPrairie2011,pkgc2011_prairies,SUPAUT,Superficie développée Autres,string,
+PKPrairie2011,pkgc2011_prairies,SEMPROV,Origine de la semence de la culture principale,string,pkgc2011_prairies__SEMPROV
+PKPrairie2011,pkgc2011_prairies,SEMTRI,Mode de tri de la semence de la culture principale,string,pkgc2011_prairies__SEMTRI
+PKPrairie2011,pkgc2011_prairies,TRAITSEM,Existence d'une semence (certifiée ou de ferme) traitée,string,pkgc2011_prairies__TRAITSEM
+PKPrairie2011,pkgc2011_prairies,CONTRAIT,"Semence (certifiée ou de ferme) traitée, connaissance des traitements",string,pkgc2011_prairies__CONTRAIT
+PKPrairie2011,pkgc2011_prairies,TRAITSEMINS,Semence (certifiée ou de ferme) : existence de traitement Insecticides (hors anti-pucerons),string,pkgc2011_prairies__TRAITSEMINS
+PKPrairie2011,pkgc2011_prairies,TRAITSEMFON,Semence (certifiée ou de ferme) : existence de traitement Fongicides,string,pkgc2011_prairies__TRAITSEMFON
+PKPrairie2011,pkgc2011_prairies,TRAITSEMOIS,Semence (certifiée ou de ferme) : existence de traitement Anti-oiseaux,string,pkgc2011_prairies__TRAITSEMOIS
+PKPrairie2011,pkgc2011_prairies,TRAITSEMAUT,Semence (certifiée ou de ferme) : existence de traitement Autres répulsifs,string,pkgc2011_prairies__TRAITSEMAUT
+PKPrairie2011,pkgc2011_prairies,TRAITSEMPUC,Semence (certifiée ou de ferme) : existence de traitement Anti-pucerons,string,pkgc2011_prairies__TRAITSEMPUC
+PKPrairie2011,pkgc2011_prairies,TRAITSEMLIM,Semence (certifiée ou de ferme) : existence de traitement Anti-limaces,string,pkgc2011_prairies__TRAITSEMLIM
+PKPrairie2011,pkgc2011_prairies,NBVARIET,Nombre de variétés semées sur la parcelle (en mélange dans le semoir),float64,
+PKPrairie2011,pkgc2011_prairies,VARIET,Variété principale semée,string,
+PKPrairie2011,pkgc2011_prairies,VARIET2,Variété secondaire semée en cas de plusieurs variétés (mélange),string,
+PKPrairie2011,pkgc2011_prairies,VARIETDEP,Code pour les variétés spécifiques à la Réunion et à la Guadeloupe,string,
+PKPrairie2011,pkgc2011_prairies,LIBVARIET,Libellé de la variable principale semée,string,
+PKPrairie2011,pkgc2011_prairies,LIBVARIET2,Libellé de la variable secondaire semée,string,
+PKPrairie2011,pkgc2011_prairies,AZOTENFOUI,Matériel d’enfouissement de l’azote avec le semoir,string,pkgc2011_prairies__AZOTENFOUI
+PKPrairie2011,pkgc2011_prairies,GRUNITHA,Dose de semis : Nombre d’unités (100 000 semences) à l’ha,string,
+PKPrairie2011,pkgc2011_prairies,GRAINHA,Dose de semis : Nombre de grains par ha,string,
+PKPrairie2011,pkgc2011_prairies,PLANHA,Densité de plantation en nombre de plants par ha,string,
+PKPrairie2011,pkgc2011_prairies,CALIPLANT,Calibre des plants en mm,string,
+PKPrairie2011,pkgc2011_prairies,POIDSURFSAIS,Dose de semis : Poids de semence par ha (kg/ha),string,
+PKPrairie2011,pkgc2011_prairies,GRAINM2,Dose de semis : Nombre de grains par m2,string,
+PKPrairie2011,pkgc2011_prairies,POIDSURF,Dose de semis (kg/ha),string,
+PKPrairie2011,pkgc2011_prairies,DBLERG,Existence d'une plantation en double rang pour la canne à sucre,string,pkgc2011_prairies__DBLERG
+PKPrairie2011,pkgc2011_prairies,MECA,Existence d'une intervention mécanique sur la parcelle au cours de la campagne 2010-2011,string,pkgc2011_prairies__MECA
+PKPrairie2011,pkgc2011_prairies,MODCOUPE,Mode de coupe des cannes à sucre,string,pkgc2011_prairies__MODCOUPE
+PKPrairie2011,pkgc2011_prairies,MATCOUPE,Matériel utilisé à la Réunion pour couper les cannes à sucre,string,pkgc2011_prairies__MATCOUPE
+PKPrairie2011,pkgc2011_prairies,BRULE,Cannes à sucre brûlées intentionnellement : présence,string,pkgc2011_prairies__BRULE
+PKPrairie2011,pkgc2011_prairies,MODCHARG,Mode de chargement des cannes à sucre,string,pkgc2011_prairies__MODCHARG
+PKPrairie2011,pkgc2011_prairies,MATCHARG,Matériel utilisé à la Réunion pour charger les cannes à sucre,string,pkgc2011_prairies__MATCHARG
+PKPrairie2011,pkgc2011_prairies,LABOUREUR,Labour,string,
+PKPrairie2011,pkgc2011_prairies,SEMDIR,Semis-direct,string,
+PKPrairie2011,pkgc2011_prairies,NBTOTPASS,Nombre total de passages,float64,
+PKPrairie2011,pkgc2011_prairies,NBPASMEC,Nombre de passages mécaniques,float64,
+PKPrairie2011,pkgc2011_prairies,PASSMECA,Nombre de désherbages mécaniques,string,
+PKPrairie2011,pkgc2011_prairies,SEMDAT,Date dernier semis,string,
+PKPrairie2011,pkgc2011_prairies,PERIODE,Période de semis,string,pkgc2011_prairies__PERIODE
+PKPrairie2011,pkgc2011_prairies,DLABOUR,Date dernier labour,string,
+PKPrairie2011,pkgc2011_prairies,RECDAT,Date première récolte,string,
+PKPrairie2011,pkgc2011_prairies,DEHMECA,Existence de désherbage mécanique,string,pkgc2011_prairies__DEHMECA
+PKPrairie2011,pkgc2011_prairies,FUMO,Existence d'un apport de fumure organique sur la parcelle,string,pkgc2011_prairies__FUMO
+PKPrairie2011,pkgc2011_prairies,TENAZOT,Teneur en azote de la fumure organique épandue sur la parcelle,string,pkgc2011_prairies__TENAZOT
+PKPrairie2011,pkgc2011_prairies,PESEPAND,Fumure organique : Pesée de l'épandeur pour la parcelle,string,pkgc2011_prairies__PESEPAND
+PKPrairie2011,pkgc2011_prairies,APPORTMIN,Existence d'un apport de fumure minérale sur la parcelle au cours de la campagne,string,pkgc2011_prairies__APPORTMIN
+PKPrairie2011,pkgc2011_prairies,MAGNE,Existence d'un apport en magnésie sur la parcelle au cours de la campagne,string,pkgc2011_prairies__MAGNE
+PKPrairie2011,pkgc2011_prairies,BORE,Existence d'un apport en bore sur la parcelle au cours de la campagne,string,pkgc2011_prairies__BORE
+PKPrairie2011,pkgc2011_prairies,MANGA,Existence d'un apport en manganèse sur la parcelle au cours de la campagne,string,pkgc2011_prairies__MANGA
+PKPrairie2011,pkgc2011_prairies,CUI,Existence d'un apport en cuivre sur la parcelle au cours de la campagne,string,pkgc2011_prairies__CUI
+PKPrairie2011,pkgc2011_prairies,APFER,Existence d'un apport en fer sur la parcelle au cours de la campagne,string,pkgc2011_prairies__APFER
+PKPrairie2011,pkgc2011_prairies,ZN,Existence d'un apport en zinc sur la parcelle au cours de la campagne,string,pkgc2011_prairies__ZN
+PKPrairie2011,pkgc2011_prairies,ALGUE,Existence d'un apport en crème d’algues sur la parcelle au cours de la campagne,string,pkgc2011_prairies__ALGUE
+PKPrairie2011,pkgc2011_prairies,MOLY,Existence d'un apport en molybdène sur la parcelle au cours de la campagne,string,pkgc2011_prairies__MOLY
+PKPrairie2011,pkgc2011_prairies,OLIGO,Existence d'un apport en oligo-élément ou autre sur la parcelle au cours de la campagne,string,pkgc2011_prairies__OLIGO
+PKPrairie2011,pkgc2011_prairies,RAISFUMORG,Prise en compte de la fumure organique pour calculer la dose d'azote minéral,string,pkgc2011_prairies__RAISFUMORG
+PKPrairie2011,pkgc2011_prairies,DHFUMN,Déterminant de la dose totale d'azote à apporter : dose moyenne habituelle,string,pkgc2011_prairies__DHFUMN
+PKPrairie2011,pkgc2011_prairies,PCULTFUMN,Déterminant de la dose totale d'azote à apporter : précédent cultural,string,pkgc2011_prairies__PCULTFUMN
+PKPrairie2011,pkgc2011_prairies,RDTEFUMN,Déterminant de la dose totale d'azote à apporter : hypothèse de rendement,string,pkgc2011_prairies__RDTEFUMN
+PKPrairie2011,pkgc2011_prairies,RTHEOFUMN,Déterminant de la dose totale d'azote à apporter : reliquats estimés,string,pkgc2011_prairies__RTHEOFUMN
+PKPrairie2011,pkgc2011_prairies,MESRFUMN,Déterminant de la dose totale d'azote à apporter : reliquats mesurés sortie hiver sur l'exploitation,string,pkgc2011_prairies__MESRFUMN
+PKPrairie2011,pkgc2011_prairies,BILANFUMN,Déterminant de la dose totale d'azote à apporter : utilisation d'un outil de calcul de bilan,string,pkgc2011_prairies__BILANFUMN
+PKPrairie2011,pkgc2011_prairies,TECHFUMN,Déterminant de la dose totale d'azote à apporter : utilisation d'un calcul de bilan complet fait par un technicien externe,string,pkgc2011_prairies__TECHFUMN
+PKPrairie2011,pkgc2011_prairies,PESFUMN,Déterminant de la dose totale d'azote à apporter : pesée en vert du colza,string,pkgc2011_prairies__PESFUMN
+PKPrairie2011,pkgc2011_prairies,EXPORTFUMN,Déterminant de la dose totale d'azote à apporter sur les cannes à sucre : l’exportation ou non des pailles,string,pkgc2011_prairies__EXPORTFUMN
+PKPrairie2011,pkgc2011_prairies,FUMNRAIS,Raisonnement prioritaire pour la dose d’azote à apporter parmi les déterminants cochés « oui »,string,pkgc2011_prairies__FUMNRAIS
+PKPrairie2011,pkgc2011_prairies,RAISENG,Raisonnement prioritaire pour le type d’engrais utilisé pour les cannes à sucre parmi les choix cochés « oui »,string,pkgc2011_prairies__RAISENG
+PKPrairie2011,pkgc2011_prairies,ENGPRIX,Choix du type d’engrais pour les cannes à sucre : prise en compte du prix,float64,pkgc2011_prairies__ENGPRIX
+PKPrairie2011,pkgc2011_prairies,ENGSOL,Choix du type d’engrais pour les cannes à sucre : prise en compte des analyses de sol,string,pkgc2011_prairies__ENGSOL
+PKPrairie2011,pkgc2011_prairies,ENGTECH,Choix du type d’engrais pour les cannes à sucre : prise en compte des conseils du technicien,string,pkgc2011_prairies__ENGTECH
+PKPrairie2011,pkgc2011_prairies,ENGVEND,Choix du type d’engrais pour les cannes à sucre : prise en compte des conseils du vendeur,string,pkgc2011_prairies__ENGVEND
+PKPrairie2011,pkgc2011_prairies,ENGEXP,Choix du type d’engrais pour les cannes à sucre : prise en compte de l’expérience personnelle,string,pkgc2011_prairies__ENGEXP
+PKPrairie2011,pkgc2011_prairies,ENGAUT,Choix du type d’engrais pour les cannes à sucre : prise en compte d'autres facteurs,string,pkgc2011_prairies__ENGAUT
+PKPrairie2011,pkgc2011_prairies,MODIFFUMN,Existence d'une révision à la hausse ou à la baisse de la dose totale d’azote prévue,string,pkgc2011_prairies__MODIFFUMN
+PKPrairie2011,pkgc2011_prairies,PILOTFUMN,Existence d'une réévaluation de la dose totale d’azote avec des outils de pilotage de la fertilisation azotée,string,pkgc2011_prairies__PILOTFUMN
+PKPrairie2011,pkgc2011_prairies,FUMSPE,Existence d'un apport spécifique pour atteindre un objectif de teneur en protéines,string,pkgc2011_prairies__FUMSPE
+PKPrairie2011,pkgc2011_prairies,CALCIQ,"Existence d'un apport calcique (apport de chaux, y compris boues chaulées) au cours de la campagne",string,pkgc2011_prairies__CALCIQ
+PKPrairie2011,pkgc2011_prairies,CENDRE,Existence d'un apport en cendres sur les cannes à sucre au cours de la campagne,string,pkgc2011_prairies__CENDRE
+PKPrairie2011,pkgc2011_prairies,PHYSIOL,Existence d'un apport en physiolith sur les cannes à sucre au cours de la campagne,string,pkgc2011_prairies__PHYSIOL
+PKPrairie2011,pkgc2011_prairies,ORG2006,"Fumure, existence d'un apport organique au cours de la campagne 2005/2006",string,pkgc2011_prairies__ORG2006
+PKPrairie2011,pkgc2011_prairies,ORG2007,"Fumure, existence d'un apport organique au cours de la campagne 2006/2007",string,pkgc2011_prairies__ORG2007
+PKPrairie2011,pkgc2011_prairies,ORG2008,"Fumure, existence d'un apport organique au cours de la campagne 2007/2008",string,pkgc2011_prairies__ORG2008
+PKPrairie2011,pkgc2011_prairies,ORG2009,"Fumure, existence d'un apport organique au cours de la campagne 2008/2009",string,pkgc2011_prairies__ORG2009
+PKPrairie2011,pkgc2011_prairies,ORG2010,"Fumure, existence d'un apport organique au cours de la campagne 2009/2010",string,pkgc2011_prairies__ORG2010
+PKPrairie2011,pkgc2011_prairies,NMIN2006,"Fumure, existence d'un apport minéral azoté au cours de la campagne 2005/2006",string,pkgc2011_prairies__NMIN2006
+PKPrairie2011,pkgc2011_prairies,NMIN2007,"Fumure, existence d'un apport minéral azoté au cours de la campagne 2006/2007",string,pkgc2011_prairies__NMIN2007
+PKPrairie2011,pkgc2011_prairies,NMIN2008,"Fumure, existence d'un apport minéral azoté au cours de la campagne 2007/2008",string,pkgc2011_prairies__NMIN2008
+PKPrairie2011,pkgc2011_prairies,NMIN2009,"Fumure, existence d'un apport minéral azoté au cours de la campagne 2008/2009",string,pkgc2011_prairies__NMIN2009
+PKPrairie2011,pkgc2011_prairies,NMIN2010,"Fumure, existence d'un apport minéral azoté au cours de la campagne 2009/2010",string,pkgc2011_prairies__NMIN2010
+PKPrairie2011,pkgc2011_prairies,PMIN2006,"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2005/2006",string,pkgc2011_prairies__PMIN2006
+PKPrairie2011,pkgc2011_prairies,PMIN2007,"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2006/2007",string,pkgc2011_prairies__PMIN2007
+PKPrairie2011,pkgc2011_prairies,PMIN2008,"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2007/2008",string,pkgc2011_prairies__PMIN2008
+PKPrairie2011,pkgc2011_prairies,PMIN2009,"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2008/2009",string,pkgc2011_prairies__PMIN2009
+PKPrairie2011,pkgc2011_prairies,PMIN2010,"Fumure, existence d'un apport minéral phosphaté au cours de la campagne 2009/2010",string,pkgc2011_prairies__PMIN2010
+PKPrairie2011,pkgc2011_prairies,KMIN2006,"Fumure, existence d'un apport minéral potassique au cours de la campagne 2005/2006",string,pkgc2011_prairies__KMIN2006
+PKPrairie2011,pkgc2011_prairies,KMIN2007,"Fumure, existence d'un apport minéral potassique au cours de la campagne 2006/2007",string,pkgc2011_prairies__KMIN2007
+PKPrairie2011,pkgc2011_prairies,KMIN2008,"Fumure, existence d'un apport minéral potassique au cours de la campagne 2007/2008",string,pkgc2011_prairies__KMIN2008
+PKPrairie2011,pkgc2011_prairies,KMIN2009,"Fumure, existence d'un apport minéral potassique au cours de la campagne 2008/2009",string,pkgc2011_prairies__KMIN2009
+PKPrairie2011,pkgc2011_prairies,KMIN2010,"Fumure, existence d'un apport minéral potassique au cours de la campagne 2009/2010",string,pkgc2011_prairies__KMIN2010
+PKPrairie2011,pkgc2011_prairies,CMIN2006,"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2005/2006",string,pkgc2011_prairies__CMIN2006
+PKPrairie2011,pkgc2011_prairies,CMIN2007,"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2006/2007",string,pkgc2011_prairies__CMIN2007
+PKPrairie2011,pkgc2011_prairies,CMIN2008,"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2007/2008",string,pkgc2011_prairies__CMIN2008
+PKPrairie2011,pkgc2011_prairies,CMIN2009,"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2008/2009",string,pkgc2011_prairies__CMIN2009
+PKPrairie2011,pkgc2011_prairies,CMIN2010,"Fumure, existence d'un apport en amendements calciques (calcium) au cours de la campagne 2009/2010",string,pkgc2011_prairies__CMIN2010
+PKPrairie2011,pkgc2011_prairies,QNMIN2009,"Fumure, quantité d'azote apportée au cours de la campagne 2008/2009",string,
+PKPrairie2011,pkgc2011_prairies,QNMIN2010,"Fumure, quantité d'azote apportée au cours de la campagne 2009/2010",string,
+PKPrairie2011,pkgc2011_prairies,QPMIN2009,"Fumure, quantité de phosphate apportée au cours de la campagne 2008/2009",string,
+PKPrairie2011,pkgc2011_prairies,QPMIN2010,"Fumure, quantité de phosphate apportée au cours de la campagne 2009/2010",string,
+PKPrairie2011,pkgc2011_prairies,QKMIN2009,"Fumure, quantité de potasse apportée au cours de la campagne 2008/2009",string,
+PKPrairie2011,pkgc2011_prairies,QKMIN2010,"Fumure, quantité de potasse apportée au cours de la campagne 2009/2010",string,
+PKPrairie2011,pkgc2011_prairies,M2010,"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2009/2010",string,pkgc2011_prairies__M2010
+PKPrairie2011,pkgc2011_prairies,M2009,"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2008/2009",string,pkgc2011_prairies__M2009
+PKPrairie2011,pkgc2011_prairies,M2008,"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2007/2008",string,pkgc2011_prairies__M2008
+PKPrairie2011,pkgc2011_prairies,M2007,"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2006/2007",string,pkgc2011_prairies__M2007
+PKPrairie2011,pkgc2011_prairies,M2006,"Fumure, existence d'un apport en amendements de magnésium sur la parcelle de cannes à sucre au cours de la campagne 2005/2006",string,pkgc2011_prairies__M2006
+PKPrairie2011,pkgc2011_prairies,QNORGTOT,"Quantité d’azote organique totale en kg/ha, calculé sur la structure répétée FUMORG",string,
+PKPrairie2011,pkgc2011_prairies,NBFUMO,"Nombre d’apports de fumure organique, calculée sur la structure répétée FUMORG",float64,
+PKPrairie2011,pkgc2011_prairies,NBENGN,Nombre de passages d’apport d’engrais minéraux : azoté,float64,
+PKPrairie2011,pkgc2011_prairies,NBENGP,Nombre de passages d’apport d’engrais minéraux : phosphore,float64,
+PKPrairie2011,pkgc2011_prairies,NBENGK,Nombre de passages d’apport d’engrais minéraux : potasse,float64,
+PKPrairie2011,pkgc2011_prairies,NBENGS,Nombre de passages d’apport d’engrais minéraux : soufre,float64,
+PKPrairie2011,pkgc2011_prairies,NBENGTOT,Nombre total de passages d’apport d’engrais minéraux,float64,
+PKPrairie2011,pkgc2011_prairies,FNTOT,Quantité d’azote (minérale et organique) totale,string,
+PKPrairie2011,pkgc2011_prairies,FUMQNTOT,Quantité d’azote minéral totale,string,
+PKPrairie2011,pkgc2011_prairies,FUMQPTOT,Quantité de phosphore minéral totale,string,
+PKPrairie2011,pkgc2011_prairies,FUMQKTOT,Quantité de potasse minérale totale,string,
+PKPrairie2011,pkgc2011_prairies,FUMQSTOT,Quantité de soufre minéral totale,string,
+PKPrairie2011,pkgc2011_prairies,APPHYTO,Existence d'un traitement phytosanitaire sur la parcelle depuis la récolte du précédent cultural jusqu’à la récolte actuelle,string,pkgc2011_prairies__APPHYTO
+PKPrairie2011,pkgc2011_prairies,CHRYSO,"Nombre de passages obligatoires pour le traitement contre la chrysomèle, pour la campagne",string,
+PKPrairie2011,pkgc2011_prairies,VERSB2011,"Existence de dégâts provoqués par des vers blancs sur la parcelle, en 2010/2011",string,pkgc2011_prairies__VERSB2011
+PKPrairie2011,pkgc2011_prairies,VERSB2010,"Existence de dégâts provoqués par des vers blancs sur la parcelle, en 2009/2010",string,pkgc2011_prairies__VERSB2010
+PKPrairie2011,pkgc2011_prairies,VERSB2009,"Existence de dégâts provoqués par des vers blancs sur la parcelle, en 2008/2009",string,pkgc2011_prairies__VERSB2009
+PKPrairie2011,pkgc2011_prairies,PROPPULV,Propriété du pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle,string,pkgc2011_prairies__PROPPULV
+PKPrairie2011,pkgc2011_prairies,AGEPULV,Âge du pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle (nombre d'années),float64,
+PKPrairie2011,pkgc2011_prairies,TYPEPULV,Type de pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle,string,pkgc2011_prairies__TYPEPULV
+PKPrairie2011,pkgc2011_prairies,CABINE,Protection : existence d’une cabine sur le tracteur ou le pulvérisateur,string,pkgc2011_prairies__CABINE
+PKPrairie2011,pkgc2011_prairies,TYPCAB,Protection : Type de cabine sur le tracteur ou le pulvérisateur,string,pkgc2011_prairies__TYPCAB
+PKPrairie2011,pkgc2011_prairies,VERIFBUS,Pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle : nombre de vérifications du débit des buses depuis 2006 (hors diagnostic obligatoire),string,
+PKPrairie2011,pkgc2011_prairies,ANTIDERIV,Pulvérisateur le plus couramment utilisé pour les traitements phytosanitaires sur la parcelle : existence d’un dispositif antidérive (buses homologuées),string,pkgc2011_prairies__ANTIDERIV
+PKPrairie2011,pkgc2011_prairies,PROTECTCAB,Protection du manipulateur : existence de précautions particulières,string,pkgc2011_prairies__PROTECTCAB
+PKPrairie2011,pkgc2011_prairies,TYPPROTECTCAB,Protection du manipulateur : type de précautions particulières,string,pkgc2011_prairies__TYPPROTECTCAB
+PKPrairie2011,pkgc2011_prairies,PROTECT,Protection du manipulateur : utilisation de l’équipement individuel approprié,string,pkgc2011_prairies__PROTECT
+PKPrairie2011,pkgc2011_prairies,DUREETRAITH,Durée moyenne (heures) de l’application d’un produit phytosanitaire sur cette parcelle (à l’ha),string,
+PKPrairie2011,pkgc2011_prairies,DUREETRAITMIN,Durée moyenne (minutes) de l’application d’un produit phytosanitaire sur cette parcelle (à l’ha),string,
+PKPrairie2011,pkgc2011_prairies,CONNAISDEL,Connaissance du délai de réentrée approprié pour les produits utilisés sur cette parcelle,string,pkgc2011_prairies__CONNAISDEL
+PKPrairie2011,pkgc2011_prairies,RESPDEL,Application du délai de réentrée sur cette parcelle,string,pkgc2011_prairies__RESPDEL
+PKPrairie2011,pkgc2011_prairies,ADJPASTOT,Traitements phytosanitaires : nombre de passages avec au moins un adjuvant,string,
+PKPrairie2011,pkgc2011_prairies,AUTPASTOT,Traitements phytosanitaires : nombre de passages avec au moins un autre traitement,string,
+PKPrairie2011,pkgc2011_prairies,REGULTOT,Traitements phytosanitaires : nombre de passages avec au moins un régulateur de croissance,string,
+PKPrairie2011,pkgc2011_prairies,FONGITOT,Traitements phytosanitaires : nombre de passages avec au moins un fongicide,string,
+PKPrairie2011,pkgc2011_prairies,HERBITOT,Traitements phytosanitaires : nombre de passages avec au moins un herbicide,string,
+PKPrairie2011,pkgc2011_prairies,INSACTOT,Traitements phytosanitaires : nombre de passages avec au moins un insecticide ou acaricide,string,
+PKPrairie2011,pkgc2011_prairies,LIMACTOT,Traitements phytosanitaires : nombre de passages avec au moins un anti-limaces,string,
+PKPrairie2011,pkgc2011_prairies,RONPASTOT,Traitements phytosanitaires : nombre de passages avec au moins un anti-rongeurs,string,
+PKPrairie2011,pkgc2011_prairies,VIRUSTOT,Traitements phytosanitaires : nombre de passages avec au moins un virucide,string,
+PKPrairie2011,pkgc2011_prairies,PHYTOPASTOT,Traitements phytosanitaires : nombre total de passages tous traitements,string,
+PKPrairie2011,pkgc2011_prairies,NBADJTOT,Traitements phytosanitaires : nombre de produits adjuvants,float64,
+PKPrairie2011,pkgc2011_prairies,NBAUTTOT,Traitements phytosanitaires : nombre de produits autres traitements,float64,
+PKPrairie2011,pkgc2011_prairies,NBRACCERPA,Traitements phytosanitaires : nombre de produits régulateurs de croissance,float64,
+PKPrairie2011,pkgc2011_prairies,NBFONTOT,Traitements phytosanitaires : nombre de produits fongicides,float64,
+PKPrairie2011,pkgc2011_prairies,NBDEHTOT,Traitements phytosanitaires : nombre de produits herbicides,float64,
+PKPrairie2011,pkgc2011_prairies,NBINSACTOT,Traitements phytosanitaires : nombre de produits insecticides ou acaricides,float64,
+PKPrairie2011,pkgc2011_prairies,NBMOLTOT,Traitements phytosanitaires : nombre de produits anti-limaces,float64,
+PKPrairie2011,pkgc2011_prairies,NBRONTOT,Traitements phytosanitaires : nombre de produits anti-rongeurs,float64,
+PKPrairie2011,pkgc2011_prairies,NBVIRUSTOT,Traitements phytosanitaires : nombre de produits virucides,float64,
+PKPrairie2011,pkgc2011_prairies,TRAITTOT,Traitements phytosanitaires : nombre total de produits tous traitements,string,
+PKPrairie2011,pkgc2011_prairies,RAISHHAB,Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après vos pratiques habituelles,string,pkgc2011_prairies__RAISHHAB
+PKPrairie2011,pkgc2011_prairies,RAISHOBS,Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après vos observations sur la parcelle en cours de culture,string,pkgc2011_prairies__RAISHOBS
+PKPrairie2011,pkgc2011_prairies,RAISHFOURN,Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après les conseils des fournisseurs,string,pkgc2011_prairies__RAISHFOURN
+PKPrairie2011,pkgc2011_prairies,RAISHINDEP,Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après les recommandations d’organismes indépendants de la vente,string,pkgc2011_prairies__RAISHINDEP
+PKPrairie2011,pkgc2011_prairies,RAISHEXP,Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle d’après votre expérience ou celle d’autres agriculteurs,string,pkgc2011_prairies__RAISHEXP
+PKPrairie2011,pkgc2011_prairies,RAISHPILOT,Traitements phytosanitaires : déclenchement des traitements herbicides sur la parcelle grâce à vos propres outils de pilotage,string,pkgc2011_prairies__RAISHPILOT
+PKPrairie2011,pkgc2011_prairies,RAISAHAB,Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides) sur la parcelle d’après vos pratiques habituelles,string,pkgc2011_prairies__RAISAHAB
+PKPrairie2011,pkgc2011_prairies,RAISAOBS,Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides) d’après les observations sur la parcelle en cours de culture,string,pkgc2011_prairies__RAISAOBS
+PKPrairie2011,pkgc2011_prairies,RAISABSV,Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides) sur la parcelle d’après les bulletins de santé du végétal,string,pkgc2011_prairies__RAISABSV
+PKPrairie2011,pkgc2011_prairies,RAISAFOURN,Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides)  sur la parcelle d’après les conseils des fournisseurs,string,pkgc2011_prairies__RAISAFOURN
+PKPrairie2011,pkgc2011_prairies,RAISAINDEP,Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides)  sur la parcelle d’après les recommandations d’organismes indépendants de la vente,string,pkgc2011_prairies__RAISAINDEP
+PKPrairie2011,pkgc2011_prairies,RAISAEXP,Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides)  sur la parcelle d’après votre expérience ou celle d’autres agriculteurs,string,pkgc2011_prairies__RAISAEXP
+PKPrairie2011,pkgc2011_prairies,RAISAPILOT,Traitements phytosanitaires : déclenchement des autres traitements phytosanitaires (hormis herbicides) sur la parcelle grâce à vos propres outils de pilotage,string,pkgc2011_prairies__RAISAPILOT
+PKPrairie2011,pkgc2011_prairies,RAISH,Traitements phytosanitaires : Raisonnement prioritaire pour les herbicides parmi ceux cochés « oui »,string,pkgc2011_prairies__RAISH
+PKPrairie2011,pkgc2011_prairies,RAISA,Traitements phytosanitaires : Raisonnement prioritaire pour les autres traitements parmi ceux cochés « oui »,string,pkgc2011_prairies__RAISA
+PKPrairie2011,pkgc2011_prairies,PARCIRR,Parcelle irriguée au cours de la campagne agricole : présence,string,pkgc2011_prairies__PARCIRR
+PKPrairie2011,pkgc2011_prairies,IRRDATDEB,Date première irrigation,string,
+PKPrairie2011,pkgc2011_prairies,IRRDATFIN,Date dernière irrigation,string,
+PKPrairie2011,pkgc2011_prairies,IRRAVS,Irrigation avant semis ou au semis : présence,string,pkgc2011_prairies__IRRAVS
+PKPrairie2011,pkgc2011_prairies,NBPASAVS,Irrigation : nombre de passages effectués sur la parcelle avant le semis ou au semis,float64,
+PKPrairie2011,pkgc2011_prairies,NBPASAPS,Irrigation : nombre de passages effectués sur la parcelle après le semis,float64,
+PKPrairie2011,pkgc2011_prairies,MMEAU,Irrigation : apport total sur la parcelle (en millimètres),string,
+PKPrairie2011,pkgc2011_prairies,MCUBEHA,Irrigation : apport total en eau sur la parcelle (en m3/ha),string,
+PKPrairie2011,pkgc2011_prairies,ACCES,Accès à l’eau d’irrigation,string,pkgc2011_prairies__ACCES
+PKPrairie2011,pkgc2011_prairies,PROV,Provenance de la principale eau d’irrigation,string,pkgc2011_prairies__PROV
+PKPrairie2011,pkgc2011_prairies,TYPMAT,Irrigation : type de matériel utilisé sur la parcelle,string,pkgc2011_prairies__TYPMAT
+PKPrairie2011,pkgc2011_prairies,COUPUR,Pas d'irrigation pour cause de coupure d’eau,string,pkgc2011_prairies__COUPUR
+PKPrairie2011,pkgc2011_prairies,DURCOUPUR,Durée de la coupure d’eau en jours,string,
+PKPrairie2011,pkgc2011_prairies,CONNAPO,Connaissance de l'apport total en eau sur la parcelle,string,pkgc2011_prairies__CONNAPO
+PKPrairie2011,pkgc2011_prairies,IRRNITR,Nitrates dans l'eau d’irrigation : connaissance,string,pkgc2011_prairies__IRRNITR
+PKPrairie2011,pkgc2011_prairies,IRRFUMN,Nitrates dans l'eau d’irrigation : prise en compte pour gérer la fertilisation azotée,string,pkgc2011_prairies__IRRFUMN
+PKPrairie2011,pkgc2011_prairies,DECLIRRHAB,Déclenchement de l'irrigation en fonction des usages courants,string,pkgc2011_prairies__DECLIRRHAB
+PKPrairie2011,pkgc2011_prairies,DECLIRROBS,Déclenchement de l'irrigation après avoir observé votre parcelle,string,pkgc2011_prairies__DECLIRROBS
+PKPrairie2011,pkgc2011_prairies,DECLIRRTECH,Déclenchement de l'irrigation d’après les recommandations d’organismes techniques,string,pkgc2011_prairies__DECLIRRTECH
+PKPrairie2011,pkgc2011_prairies,DECLIRRPILOT,"Déclenchement de l'irrigation en utilisant des outils de pilotage de l’irrigation (tensiomètres, bilans hydriques)",string,pkgc2011_prairies__DECLIRRPILOT
+PKPrairie2011,pkgc2011_prairies,DECLIRRIMP,Déclenchement de l'irrigation en fonction des tours d’eau imposés,string,pkgc2011_prairies__DECLIRRIMP
+PKPrairie2011,pkgc2011_prairies,DECLIRR,Raisonnement prioritaire pour le déclenchement de l’irrigation parmi ceux cochés « oui »,string,pkgc2011_prairies__DECLIRR
+PKPrairie2011,pkgc2011_prairies,PREXPLOIT,Exploitation de la prairie sur la campagne 2010-2011,string,pkgc2011_prairies__PREXPLOIT
+PKPrairie2011,pkgc2011_prairies,NBCOUPEP,Exploitation de la prairie : Nombre de passages,float64,
+PKPrairie2011,pkgc2011_prairies,RDTF,Exploitation de la prairie : Rendement Fauche,string,
+PKPrairie2011,pkgc2011_prairies,RDTP,Exploitation de la prairie : Rendement Pâture,string,
+PKPrairie2011,pkgc2011_prairies,RDTTOT,Exploitation de la prairie : Rendement total : Fauche + Pâture,string,
+PKPrairie2011,pkgc2011_prairies,IFTH,Indicateur de fréquence de traitement (IFT) herbicide,string,
+PKPrairie2011,pkgc2011_prairies,IFTF,Indicateur de fréquence de traitement (IFT) fongicide,string,
+PKPrairie2011,pkgc2011_prairies,IFTI,Indicateur de fréquence de traitement (IFT) insecticide et acaricide,string,
+PKPrairie2011,pkgc2011_prairies,IFTC,Indicateur de fréquence de traitement (IFT) substances de croissance,string,
+PKPrairie2011,pkgc2011_prairies,IFTV,Indicateur de fréquence de traitement (IFT) virucide,string,
+PKPrairie2011,pkgc2011_prairies,IFTM,Indicateur de fréquence de traitement (IFT) molluscicide,string,
+PKPrairie2011,pkgc2011_prairies,IFTTOT,"Indicateur de fréquence de traitement (IFT) total (herbicides, fongicides, insecticides, autre)",string,
+PKPrairie2011,pkgc2011_prairies,IFTA,"Indicateur de fréquence de traitement (IFT) autre (substances de croissance, virucide, mollusicide)",string,
+PKPrairie2011,pkgc2011_prairies,IFTHH,"Indicateur de fréquence de traitement (IFT) hors herbicides (fongicides, insecticides, autres)",string,
 RA2020,ABATTIS,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,ABATTIS,TYPE_QUESTIONNAIRE,Type de questionnaire,string,
 RA2020,ABATTIS,ABATTICODE,Code des cultures sous abattis / jardins mahorais ou créoles,string,
@@ -274,6 +907,336 @@ RA2020,ABATTIS,ABATTI_SERRE_P6,Déclaration des surfaces de serres ou d'abri hau
 RA2020,ABATTIS,ABATTI_SERRE_P7,Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles,float64,
 RA2020,ABATTIS,ABATTI_SERRE_P8,Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles,float64,
 RA2020,ABATTIS,IMPUT_NR_TOT,Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés),float64,
+PKGC2014,MATACT_PHYTOGC2014,identifiant_dossier,Identifiant parcelle,string,
+PKGC2014,MATACT_PHYTOGC2014,ESPECE,Culture enquêtée,string,MATACT_PHYTOGC2014__ESPECE
+PKGC2014,MATACT_PHYTOGC2014,ESPECEINI,"Culture enquêtée, code initial (maïs et blé, modification entre 08 et 09 ou entre 01 et 02)",string,MATACT_PHYTOGC2014__ESPECEINI
+PKGC2014,MATACT_PHYTOGC2014,REGPAR,Code région de la parcelle,string,MATACT_PHYTOGC2014__REGPAR
+PKGC2014,MATACT_PHYTOGC2014,DEPPAR,Département de localisation de la parcelle,string,MATACT_PHYTOGC2014__DEPPAR
+PKGC2014,MATACT_PHYTOGC2014,DEPCOMPAR,Code commune de la parcelle,string,MATACT_PHYTOGC2014__DEPCOMPAR
+PKGC2014,MATACT_PHYTOGC2014,BIO,Appartenance à la strate « bio »,string,MATACT_PHYTOGC2014__BIO
+PKGC2014,MATACT_PHYTOGC2014,ZONEVULN,Appartenance à une zone vulnérable,string,MATACT_PHYTOGC2014__ZONEVULN
+PKGC2014,MATACT_PHYTOGC2014,COEF1,Coefficient d'extrapolation - niveau parcelle,float64,
+PKGC2014,MATACT_PHYTOGC2014,COEF2,Coefficient de pondération au niveau de la parcelle = COEF1*SUPP,float64,
+PKGC2014,MATACT_PHYTOGC2014,SUPP,Superficie de la parcelle,float64,
+PKGC2014,MATACT_PHYTOGC2014,NOM_SUBSTANCE,Nom de la substance active,string,
+PKGC2014,MATACT_PHYTOGC2014,QDOSEMATSURF,Quantité de substance active en g/ha en tenant compte du pourcentage de parcelle traitée (par parcelle),float64,
+PKGC2014,MATACT_PHYTOGC2014,NBPASMATACT,Nombre de traitements utilisant la substance active par parcelle,float64,
+PKPrairie2011,exploit_pkgc2011,Identifiant_exploit,Numéro unique pour la table EXPLOIT,string,
+PKPrairie2011,exploit_pkgc2011,Identifiantdossier,Numéro d'identifiant,string,
+PKPrairie2011,exploit_pkgc2011,ESPECE,Culture enquêtée,string,exploit_pkgc2011__ESPECE
+PKPrairie2011,exploit_pkgc2011,ESPECEINI,"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)",string,exploit_pkgc2011__ESPECEINI
+PKPrairie2011,exploit_pkgc2011,PACAGEILOT,Numéro de PACAGE + Numéro de l'ilot ,float64,
+PKPrairie2011,exploit_pkgc2011,PACAGE,Numéro de PACAGE de l'exploitation,float64,
+PKPrairie2011,exploit_pkgc2011,SIRET,Numéro SIRET de l’exploitation,string,
+PKPrairie2011,exploit_pkgc2011,REG,Région du siège de l'exploitation,string,exploit_pkgc2011__REG
+PKPrairie2011,exploit_pkgc2011,DEP,Département de localisation de la parcelle,string,exploit_pkgc2011__DEP
+PKPrairie2011,exploit_pkgc2011,DEPCOMP,Code commune de l'exploitant,string,exploit_pkgc2011__DEPCOMP
+PKPrairie2011,exploit_pkgc2011,DEPEXPLOI,Département de la commune de l'exploitation,string,exploit_pkgc2011__DEPEXPLOI
+PKPrairie2011,exploit_pkgc2011,BIO,Appartenance à la strate « bio »,string,exploit_pkgc2011__BIO
+PKPrairie2011,exploit_pkgc2011,ZONE,Appartenance à la strate «zone vulnérable»,string,exploit_pkgc2011__ZONE
+PKPrairie2011,exploit_pkgc2011,SUPP,Superficie de la parcelle,float64,
+PKPrairie2011,exploit_pkgc2011,tranche_superficie,Tranche de superficie en hectares (strates utilisées pour le calcul des coefficients de pondération),string,exploit_pkgc2011__tranche_superficie
+PKPrairie2011,exploit_pkgc2011,COEF1,Coefficient de pondération au niveau de la parcelle,float64,
+PKPrairie2011,exploit_pkgc2011,COEF2,Coefficient de pondération au niveau de la parcelle = COEF1*SUPP,float64,
+PKPrairie2011,exploit_pkgc2011,COUPEP,Exploitation de la prairie : numéro de passage,string,
+PKPrairie2011,exploit_pkgc2011,DATE,Exploitation de la prairie : date de passage,string,
+PKPrairie2011,exploit_pkgc2011,MODE,Mode d’exploitation de la prairie,string,exploit_pkgc2011__MODE
+PKPrairie2011,exploit_pkgc2011,PATURE,Exploitation de la prairie : durée de présence des animaux (jours),string,
+PKPrairie2011,exploit_pkgc2011,FAUCHE,Exploitation de la prairie : Rendement en tonne/ha,string,
+PKPrairie2011,exploit_pkgc2011,PRUNIT,Exploitation de la prairie : Unité,string,exploit_pkgc2011__PRUNIT
+PKPrairie2011,exploit_pkgc2011,RATION,Exploitation de la prairie : part de fourrage complémentaire nécessaire aux besoins du troupeau pâturant,string,
+PKPrairie2011,exploit_pkgc2011,POURPC,Exploitation de la prairie : part de la parcelle concernée,string,
+PKPrairie2011,exploit_pkgc2011,UGBHA,Exploitation de la prairie : Unité Gros Bétail par hectare,string,
+FIDELI2020,fideli_individu22_1,id_num,Identifiant d’individu,string,
+FIDELI2020,fideli_individu22_1,id_foy_n_1,Identifiant du foyer fiscal de bilocalisation l'année N-1,string,
+FIDELI2020,fideli_individu22_1,type_fisc_n_1,Type d'individu fiscal l'année N-1,string,fideli_individu22_1__type_fisc_n_1
+FIDELI2020,fideli_individu22_1,"A à Z, Enfant mineur (issue du Fichier Pote)",y ou z - Ex-conjoint décédé (poids=0),string,
+FIDELI2020,fideli_individu22_1,biloc_final_n_1,Individu bilocalisé l'année N-1,string,fideli_individu22_1__biloc_final_n_1
+FIDELI2020,fideli_individu22_1,rev_princ_n_1,Type de revenu principal l'année N-1,string,fideli_individu22_1__rev_princ_n_1
+FIDELI2020,fideli_individu22_1,csdep_n_1,Code département de l’adresse fiscale de traitement l'année N-1,string,fideli_individu22_1__csdep_n_1
+FIDELI2020,fideli_individu22_1,cne1_n_1,Code commune de l’adresse fiscale de traitement l'année N-1,string,fideli_individu22_1__cne1_n_1
+FIDELI2020,fideli_individu22_1,rue1_n_1,Numéro de rue au cadastre de l’adresse fiscale de traitement : Code RIVOLI l'année N-1,string,
+FIDELI2020,fideli_individu22_1,noimm1_n_1,Numéro d'immeuble de l’adresse fiscale de traitement l'année N-1,string,
+FIDELI2020,fideli_individu22_1,btq1_n_1,Indice de répétition de l’adresse fiscale de traitement l'année N-1,string,
+FIDELI2020,fideli_individu22_1,id_log_n_1,Identifiant du logement l'année N-1,string,
+FIDELI2020,fideli_individu22_1,nataff_n_1,Nature de la taxation l'année N-1,string,fideli_individu22_1__nataff_n_1
+FIDELI2020,fideli_individu22_1,ltax_n_1,Type de taxation l'année N-1,string,fideli_individu22_1__ltax_n_1
+FIDELI2020,fideli_individu22_1,natloc_n_1,Nature du local l'année N-1,string,fideli_individu22_1__natloc_n_1
+FIDELI2020,fideli_individu22_1,lien_familial_n_1,Lien familial avec le référent fiscal l'année N-1,string,fideli_individu22_1__lien_familial_n_1
+FIDELI2020,fideli_individu22_1,type_menf_n_1,Type de ménage fiscal l'année N-1,string,fideli_individu22_1__type_menf_n_1
+FIDELI2020,fideli_individu22_1,alterne_n_1,Indicateur de garde alternée l'année N-1,string,fideli_individu22_1__alterne_n_1
+FIDELI2020,fideli_individu22_1,sal_n_1,"Traitements, salaires l'année N-1",string,
+FIDELI2020,fideli_individu22_1,chom_n_1,Allocations chômage et préretraites l'année N-1,string,
+FIDELI2020,fideli_individu22_1,pens_n_1,"Pensions, retraites et rentes perçues l'année N-1",string,
+FIDELI2020,fideli_individu22_1,alim_n_1,Pensions alimentaires reçues l'année N-1,string,
+FIDELI2020,fideli_individu22_1,ben_agri_n_1,Bénéfices agricoles l'année N-1,string,
+FIDELI2020,fideli_individu22_1,ben_ind_n_1,Bénéfices industriels et commerciaux l'année N-1,string,
+FIDELI2020,fideli_individu22_1,ben_non_com_n_1,Bénéfices non commerciaux l'année N-1,string,
+FIDELI2020,fideli_individu22_1,x_n_1,Coordonnées géographiques x l'année N-1,string,
+FIDELI2020,fideli_individu22_1,y_n_1,Coordonnées géographiques y l'année N-1,string,
+FIDELI2020,fideli_individu22_1,iris_n_1,Numéro d'Ilots Regroupés pour l'Information Statistique (IRIS) l'année N-1,string,fideli_individu22_1__iris_n_1
+FIDELI2020,fideli_individu22_1,depcom_n_1,Code commune en géographie l'année N-1,string,fideli_individu22_1__depcom_n_1
+FIDELI2020,fideli_individu22_1,qpv_n_1,Nouveau Quartier Prioritaire de la politique de la Ville (QPV) l'année N-1,string,
+FIDELI2020,fideli_individu22_1,sexe_co,Sexe,string,fideli_individu22_1__sexe_co
+FIDELI2020,fideli_individu22_1,anais_co,Année de naissance,string,
+FIDELI2020,fideli_individu22_1,codnais_co,Code de la commune de naissance,string,fideli_individu22_1__codnais_co
+FIDELI2020,fideli_individu22_1,pres_ind,Présence de l'individu en N et/ou en N-1,string,fideli_individu22_1__pres_ind
+FIDELI2020,fideli_individu22_1,id_foy,Identifiant du foyer fiscal,string,
+FIDELI2020,fideli_individu22_1,type_fisc,Type d'individu fiscal ,string,fideli_individu22_1__type_fisc
+FIDELI2020,fideli_individu22_1,id_foy_bi,Identifiant du foyer fiscal de bilocalisation,string,
+FIDELI2020,fideli_individu22_1,rev_princ,Type de revenu principal,string,fideli_individu22_1__rev_princ
+FIDELI2020,fideli_individu22_1,zoxyzd2,Dernier évènement matrimonial dans le foyer fiscal,string,fideli_individu22_1__zoxyzd2
+FIDELI2020,fideli_individu22_1,zoxyzd2_n_1,Dernier évènement matrimonial dans le foyer fiscal l'année N-1,string,fideli_individu22_1__zoxyzd2_n_1
+FIDELI2020,fideli_individu22_1,dacoed2,Date du dernier événement matrimonial,string,
+FIDELI2020,fideli_individu22_1,dacoed2_n_1,Date du dernier événement matrimonial l'année N-1,string,
+FIDELI2020,fideli_individu22_1,situf_deb,Situation matrimoniale du référant en début d'année,string,fideli_individu22_1__situf_deb
+FIDELI2020,fideli_individu22_1,situf_deb_n_1,Situation matrimoniale du référant en début d'année N-1,string,fideli_individu22_1__situf_deb_n_1
+FIDELI2020,fideli_individu22_1,csdep,Code département de l’adresse fiscale de traitement,string,fideli_individu22_1__csdep
+FIDELI2020,fideli_individu22_1,cne1,Code commune de l’adresse fiscale de traitement,string,fideli_individu22_1__cne1
+FIDELI2020,fideli_individu22_1,rue1,Numéro de rue au cadastre de l’adresse fiscale de traitement : Code RIVOLI,string,
+FIDELI2020,fideli_individu22_1,noimm1,Numéro d'immeuble de l’adresse fiscale de traitement,string,
+FIDELI2020,fideli_individu22_1,btq1,Indice de répétition de l’adresse fiscale de traitement,string,
+FIDELI2020,fideli_individu22_1,reg,Code région,string,fideli_individu22_1__reg
+FIDELI2020,fideli_individu22_1,mob_final,Mobilité résidentielle,string,fideli_individu22_1__mob_final
+FIDELI2020,fideli_individu22_1,id_log,Identifiant du logement,string,
+FIDELI2020,fideli_individu22_1,id_log_sec1,Identifiant de la première résidence secondaire,string,
+FIDELI2020,fideli_individu22_1,id_log_sec2,Identifiant de la deuxième résidence secondaire,string,
+FIDELI2020,fideli_individu22_1,nataff,Nature de la taxation,string,fideli_individu22_1__nataff
+FIDELI2020,fideli_individu22_1,natloc,Nature du local,string,fideli_individu22_1__natloc
+FIDELI2020,fideli_individu22_1,situf_fin,Situation matrimoniale du référant en fin d'année,string,fideli_individu22_1__situf_fin
+FIDELI2020,fideli_individu22_1,situf_fin_n_1,Situation matrimoniale du référant en fin d'année N-1,string,fideli_individu22_1__situf_fin_n_1
+FIDELI2020,fideli_individu22_1,alterne,Indicateur de garde alternée,string,fideli_individu22_1__alterne
+FIDELI2020,fideli_individu22_1,poids,Variable de pondération des individus ,string,
+FIDELI2020,fideli_individu22_1,biloc_final,Individu bilocalisé,string,fideli_individu22_1__biloc_final
+FIDELI2020,fideli_individu22_1,resid_anchang,L'année du dernier changement de commune,string,
+FIDELI2020,fideli_individu22_1,situf_anchang,L'année du dernier événement matrimonial,string,
+FIDELI2020,fideli_individu22_1,depcom,Code commune en géographie,string,fideli_individu22_1__depcom
+FIDELI2020,fideli_individu22_1,andec_co,Année de décès,string,
+FIDELI2020,fideli_individu22_1,x,Coordonnées géographiques x,string,
+FIDELI2020,fideli_individu22_1,y,Coordonnées géographiques y,string,
+FIDELI2020,fideli_individu22_1,iris,Numéro d'Ilots Regroupés pour l'Information Statistique (IRIS),string,fideli_individu22_1__iris
+FIDELI2020,fideli_individu22_1,qpv,Nouveau Quartier Prioritaire de la politique de la Ville (QPV),string,
+FIDELI2020,fideli_individu22_1,lien_familial,Lien familial avec le référent fiscal,string,fideli_individu22_1__lien_familial
+FIDELI2020,fideli_individu22_1,type_menf,Type de ménage fiscal,string,fideli_individu22_1__type_menf
+FIDELI2020,fideli_individu22_1,ltax,Type de taxation,string,fideli_individu22_1__ltax
+FIDELI2020,fideli_individu22_1,sal,"Traitements, salaires",string,
+FIDELI2020,fideli_individu22_1,chom,Allocations chômage et préretraites,string,
+FIDELI2020,fideli_individu22_1,pens,"Pensions, retraites et rentes perçues",string,
+FIDELI2020,fideli_individu22_1,alim,Pensions alimentaires reçues,string,
+FIDELI2020,fideli_individu22_1,ben_agri,Bénéfices agricoles,string,
+FIDELI2020,fideli_individu22_1,ben_ind,Bénéfices industriels et commerciaux,string,
+FIDELI2020,fideli_individu22_1,ben_non_com,Bénéfices non commerciaux,string,
+FIDELI2020,fideli_individu22_1,type_fisc_bi,Type d’individu fiscal de la deuxième localisation,string,fideli_individu22_1__type_fisc_bi
+FIDELI2020,fideli_individu22_1,prec_xy_diffusion,"Indicateur de qualité du point (x, y)",string,fideli_individu22_1__prec_xy_diffusion
+FIDELI2020,fideli_individu22_1,prec_iris_diffusion,Indicateur de précision du géocodage pour les îlots regroupés pour l'information statistique (IRIS),string,fideli_individu22_1__prec_iris_diffusion
+FIDELI2020,fideli_individu22_1,prec_nqpv_diffusion,Indicateur de précision du géocodage pour les quartiers prioritaires de la ville (QPV),string,fideli_individu22_1__prec_nqpv_diffusion
+FIDELI2020,fideli_individu22_1,prec_qva_diffusion,Indicateur de précision du géocodage pour les quartiers de veille active (QVA),string,fideli_individu22_1__prec_qva_diffusion
+PKGC2014,PHYTOS_PHYTOGC2014,identifiant_phytos,Identifiant traitement phytosanitaire,string,
+PKGC2014,PHYTOS_PHYTOGC2014,identifiant_dossier,Identifiant parcelle,string,
+PKGC2014,PHYTOS_PHYTOGC2014,ESPECE,Culture enquêtée,string,PHYTOS_PHYTOGC2014__ESPECE
+PKGC2014,PHYTOS_PHYTOGC2014,ESPECEINI,"Culture enquêtée, code initial (maïs et blé, modification entre 08 et 09 ou entre 01 et 02)",string,PHYTOS_PHYTOGC2014__ESPECEINI
+PKGC2014,PHYTOS_PHYTOGC2014,REGPAR,Code région de la parcelle,string,PHYTOS_PHYTOGC2014__REGPAR
+PKGC2014,PHYTOS_PHYTOGC2014,DEPPAR,Département de localisation de la parcelle,string,PHYTOS_PHYTOGC2014__DEPPAR
+PKGC2014,PHYTOS_PHYTOGC2014,DEPCOMPAR,Code commune de la parcelle,string,PHYTOS_PHYTOGC2014__DEPCOMPAR
+PKGC2014,PHYTOS_PHYTOGC2014,BIO,Appartenance à la strate « bio »,string,PHYTOS_PHYTOGC2014__BIO
+PKGC2014,PHYTOS_PHYTOGC2014,ZONEVULN,Appartenance à une zone vulnérable,string,PHYTOS_PHYTOGC2014__ZONEVULN
+PKGC2014,PHYTOS_PHYTOGC2014,COEF1,Coefficient d'extrapolation au niveau de la parcelle,float64,
+PKGC2014,PHYTOS_PHYTOGC2014,COEF2,Coefficient de pondération au niveau de la parcelle = COEF1*SUPP,float64,
+PKGC2014,PHYTOS_PHYTOGC2014,SUPP,Superficie de la parcelle,float64,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTORDR,"Traitements phytosanitaires sur la parcelle : numéro d’ordre, dans l'ordre chronologique",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOPAS,Traitements phytosanitaires sur la parcelle : numéro de passage,string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTODAT,Traitements phytosanitaires sur la parcelle : date d’apport,string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOSTAD,"Traitements phytosanitaires, stade cultural de l'espèce enquêtée",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOAUTCULT,Traitements phytosanitaires ne concernant pas culture enquêtée,string,PHYTOS_PHYTOGC2014__PHYTOAUTCULT
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTONAT,"Traitements phytosanitaires sur la parcelle de cannes à sucre, nature du traitement",string,PHYTOS_PHYTOGC2014__PHYTONAT
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOMOD,"Traitements phytosanitaires, mode de traitement",string,PHYTOS_PHYTOGC2014__PHYTOMOD
+PKGC2014,PHYTOS_PHYTOGC2014,POURTRAIT,"Traitements phytosanitaires, proportion de la parcelle traitée en %",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTODOS,"Traitements phytosanitaires, dose de produit commercial apportée saisie",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTODOSHA,"Traitements phytosanitaires, dose de produit commercial apportée à l'ha - calculée",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOUNI,"Traitements phytosanitaires, unité de la dose de produit commercial apportée",string,PHYTOS_PHYTOGC2014__PHYTOUNI
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOBOUIL,"Traitements phytosanitaires, quantité de bouillie à l’ha (eau + produits + adjuvant)",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOPROD,"Traitements phytosanitaires, code du produit commercial : numéro AMM (pouvant avoir plusieurs libellés)",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOLIB,"Traitements phytosanitaires, libellé du produit commercial",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOLIBAUTRE,Traitements phytosanitaires : libellé de l'autre cible,string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBHERB,"Traitements phytosanitaires, cible herbicide",string,PHYTOS_PHYTOGC2014__PHYCIBHERB
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMALAD,"Traitements phytosanitaires, cible fongicide",string,PHYTOS_PHYTOGC2014__PHYCIBMALAD
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBINSAC,"Traitements phytosanitaires, cible insecticides et acaricides",string,PHYTOS_PHYTOGC2014__PHYCIBINSAC
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBCOU,"Traitements phytosanitaires, cible : destruction du couvert",string,PHYTOS_PHYTOGC2014__PHYCIBCOU
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPREC,Traitements phytosanitaires : destruction du précédent prairie,string,PHYTOS_PHYTOGC2014__PHYCIBPREC
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBREP,Traitements phytosanitaires : destruction repousses du précédent,string,PHYTOS_PHYTOGC2014__PHYCIBREP
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBADV,"Traitements phytosanitaires, cible : adventices",string,PHYTOS_PHYTOGC2014__PHYCIBADV
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBDEF,"Traitements phytosanitaires, cible : défanants",string,PHYTOS_PHYTOGC2014__PHYCIBDEF
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBOID,"Traitements phytosanitaires, cible, maladies : Oïdium",string,PHYTOS_PHYTOGC2014__PHYCIBOID
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBROU,"Traitements phytosanitaires, cible, maladies : Rouilles",string,PHYTOS_PHYTOGC2014__PHYCIBROU
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPIE,"Traitements phytosanitaires, cible, maladies : Piétin verse",string,PHYTOS_PHYTOGC2014__PHYCIBPIE
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBSEP,"Traitements phytosanitaires, cible, maladies : Septoriose",string,PHYTOS_PHYTOGC2014__PHYCIBSEP
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBFUS,"Traitements phytosanitaires, cible, maladies : Fusariose",string,PHYTOS_PHYTOGC2014__PHYCIBFUS
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBRHY,"Traitements phytosanitaires, cible, maladies : Rhynchosporiose",string,PHYTOS_PHYTOGC2014__PHYCIBRHY
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBHEL,"Traitements phytosanitaires, cible, maladies : Helminthosporiose",string,PHYTOS_PHYTOGC2014__PHYCIBHEL
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBANT,"Traitements phytosanitaires, cible, maladies : Anthracnose",string,PHYTOS_PHYTOGC2014__PHYCIBANT
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMDF,"Traitements phytosanitaires, cible : maladies du feuillage",string,PHYTOS_PHYTOGC2014__PHYCIBMDF
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMIL,"Traitements phytosanitaires, cible, maladies : Mildiou",string,PHYTOS_PHYTOGC2014__PHYCIBMIL
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBAMA,"Traitements phytosanitaires, cible : autres maladies",string,PHYTOS_PHYTOGC2014__PHYCIBAMA
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMAL,"Traitements phytosanitaires, cible : maladies",string,PHYTOS_PHYTOGC2014__PHYCIBMAL
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPUC,"Traitements phytosanitaires, cible, insectes et acariens : Pucerons",string,PHYTOS_PHYTOGC2014__PHYCIBPUC
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMEL,"Traitements phytosanitaires, cible, insectes et acariens : Méligèthes",string,PHYTOS_PHYTOGC2014__PHYCIBMEL
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBCHA,"Traitements phytosanitaires, cible, insectes et acariens : Charançons",string,PHYTOS_PHYTOGC2014__PHYCIBCHA
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBALT,"Traitements phytosanitaires, cible : Altises (petites et grosses)",string,PHYTOS_PHYTOGC2014__PHYCIBALT
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBTOR,"Traitements phytosanitaires, cible, insectes et acariens : Tordeuses, Bruches",string,PHYTOS_PHYTOGC2014__PHYCIBTOR
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBSIT,"Traitements phytosanitaires, cible,  insectes et acariens : Sitones, Thrips",string,PHYTOS_PHYTOGC2014__PHYCIBSIT
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPYR,"Traitements phytosanitaires, cible, insectes et acariens : Pyrale",string,PHYTOS_PHYTOGC2014__PHYCIBPYR
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBSES,"Traitements phytosanitaires, cible, insectes et acariens  : Sésamie",string,PHYTOS_PHYTOGC2014__PHYCIBSES
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBDOR,"Traitements phytosanitaires, cible, insectes et acariens : Doryphore",string,PHYTOS_PHYTOGC2014__PHYCIBDOR
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBVER,"Traitements phytosanitaires, cible, insectes et acariens : Vers blancs",string,PHYTOS_PHYTOGC2014__PHYCIBVER
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBAIA,"Traitements phytosanitaires, cible : Autres insectes et acariens",string,PHYTOS_PHYTOGC2014__PHYCIBAIA
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBRON,"Traitements phytosanitaires, cible : Rongeurs",string,PHYTOS_PHYTOGC2014__PHYCIBRON
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBLIM,"Traitements phytosanitaires, cible : Limaces",string,PHYTOS_PHYTOGC2014__PHYCIBLIM
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBREG,"Traitements phytosanitaires, cible : Régulation de croissance",string,PHYTOS_PHYTOGC2014__PHYCIBREG
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBADJ,"Traitements phytosanitaires, cible : Adjuvants",string,PHYTOS_PHYTOGC2014__PHYCIBADJ
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBAUT,"Traitements phytosanitaires, cible : Autres",string,PHYTOS_PHYTOGC2014__PHYCIBAUT
+PKGC2014,PHYTOS_PHYTOGC2014,DR,Dose de référence,string,
+PKGC2014,PHYTOS_PHYTOGC2014,UNITE_DR,Unité de la dose de référence,string,
+PKGC2014,PHYTOS_PHYTOGC2014,Biocontrole_2015,Indicatrice produit de biocontrôle,string,PHYTOS_PHYTOGC2014__Biocontrole_2015
+PKGC2014,PHYTOS_PHYTOGC2014,PHERO,Indicatrice produit de confusion sexuelle,string,PHYTOS_PHYTOGC2014__PHERO
+PKGC2014,PHYTOS_PHYTOGC2014,Segmentation_IFT,Catégorie d'usage,string,
+PKGC2014,PHYTOS_PHYTOGC2014,IFT_TRAIT,IFT traitement,string,
+PKGC2014,PHYTOS_PHYTOGC2014,Redressement,Type de redressement de l'IFT traitement par la moyenne des IFT traitement de même catégorie d'usage sur la région,string,
+FIDELI2020,fideli_local22_1,id_log,Identifiant logement,string,
+FIDELI2020,fideli_local22_1,id_loc,Identifiant local,string,
+FIDELI2020,fideli_local22_1,dteloc,Type de local,string,fideli_local22_1__dteloc
+FIDELI2020,fideli_local22_1,dloy48a,Loyer de 48 en valeur de l'année,string,
+FIDELI2020,fideli_local22_1,nbniv,Nombre de niveaux,float64,
+FIDELI2020,fideli_local22_1,elec,Présence d'électricité,string,fideli_local22_1__elec
+FIDELI2020,fideli_local22_1,gaz,Présence du gaz,string,fideli_local22_1__gaz
+FIDELI2020,fideli_local22_1,nbpp,Nombre de pièces principales,float64,
+FIDELI2020,fideli_local22_1,nbcuis8,Nombre de cuisines de moins de 9 m2,float64,
+FIDELI2020,fideli_local22_1,nbcuis9,Nombre de cuisines d'au moins 9 m2,float64,
+FIDELI2020,fideli_local22_1,nbpiec,Nombre de pièces,float64,
+FIDELI2020,fideli_local22_1,cne,Code commune de l’adresse fiscale de traitement,string,fideli_local22_1__cne
+FIDELI2020,fideli_local22_1,rue,Numéro de rue au cadastre de l’adresse fiscale de traitement,string,
+FIDELI2020,fideli_local22_1,imm,Numéro d’immeuble de l’adresse fiscale de traitement,string,
+FIDELI2020,fideli_local22_1,btq,Indice de répétition de l’adresse fiscale de traitement,string,
+FIDELI2020,fideli_local22_1,occ,"Occupation du local (propriétaire, locataire, vacant...)",string,fideli_local22_1__occ
+FIDELI2020,fideli_local22_1,nivf,Etage du local,string,
+FIDELI2020,fideli_local22_1,natloc,Code nature du local,string,fideli_local22_1__natloc
+FIDELI2020,fideli_local22_1,catloc,Catégorie du local,string,fideli_local22_1__catloc
+FIDELI2020,fideli_local22_1,refcad,Références cadastrales,string,
+FIDELI2020,fideli_local22_1,nbsam,Nombre de salles à manger,float64,
+FIDELI2020,fideli_local22_1,nbch,Nombre de chambres,float64,
+FIDELI2020,fideli_local22_1,nbcuis,Nombre de cuisines,float64,
+FIDELI2020,fideli_local22_1,nbsdb,Nombre de salles de bain,float64,
+FIDELI2020,fideli_local22_1,nbwc,Nombre de WC,float64,
+FIDELI2020,fideli_local22_1,nbbaig,Nombre de baignoires,float64,
+FIDELI2020,fideli_local22_1,nbdouc,Nombre de douches,float64,
+FIDELI2020,fideli_local22_1,surftot,Surface totale du local,string,
+FIDELI2020,fideli_local22_1,loi48,Logement soumis à la loi de 1948,string,fideli_local22_1__loi48
+FIDELI2020,fideli_local22_1,datachev,Année d'achèvement du local,string,
+FIDELI2020,fideli_local22_1,ascenseur,Présence d'ascenseur (appartement),string,fideli_local22_1__ascenseur
+FIDELI2020,fideli_local22_1,typpmo,Type de personne morale,string,fideli_local22_1__typpmo
+FIDELI2020,fideli_local22_1,dateacte,Date acte de propriété correspondant à la dernière mutation du local,string,
+FIDELI2020,fideli_local22_1,csdep,Code département de l’adresse fiscale de traitement,string,fideli_local22_1__csdep
+FIDELI2020,fideli_local22_1,logement,Indicatrice de logement suivant le filtre Recensement de la Population (RP),string,fideli_local22_1__logement
+FIDELI2020,fideli_local22_1,eau,Présence d'eau,string,fideli_local22_1__eau
+FIDELI2020,fideli_local22_1,egout,Présence du tout à l'égout,string,fideli_local22_1__egout
+FIDELI2020,fideli_local22_1,chauff,Présence du chauffage central,string,fideli_local22_1__chauff
+FIDELI2020,fideli_local22_1,adrenv,Adresse d'envoi du propriétaire : code commune,string,fideli_local22_1__adrenv
+FIDELI2020,fideli_local22_1,reg,Code région dans la taxe d'habitation,string,fideli_local22_1__reg
+FIDELI2020,fideli_local22_1,x,Coordonnées géographiques x,string,
+FIDELI2020,fideli_local22_1,y,Coordonnées géographiques y,string,
+FIDELI2020,fideli_local22_1,iris,Numéro d'Ilots Regroupés pour l'Information Statistique (IRIS),string,fideli_local22_1__iris
+FIDELI2020,fideli_local22_1,qpv,Nouveau Quartier Prioritaire de la politique de la Ville (QPV),string,
+FIDELI2020,fideli_local22_1,depcom_geo_n,Code commune en géographie,string,fideli_local22_1__depcom_geo_n
+FIDELI2020,fideli_local22_1,type_res1,Occupation du local version 1,string,fideli_local22_1__type_res1
+FIDELI2020,fideli_local22_1,type_res2,Occupation du local version 2,string,fideli_local22_1__type_res2
+FIDELI2020,fideli_local22_1,dteloc_n_1,Type de local l'année N-1,string,fideli_local22_1__dteloc_n_1
+FIDELI2020,fideli_local22_1,dloy48a_n_1,Loyer de 48 en valeur de l'année N-1,string,
+FIDELI2020,fideli_local22_1,nbniv_n_1,Nombre de niveaux l'année N-1,float64,
+FIDELI2020,fideli_local22_1,elec_n_1,Présence d'électricité l'année N-1,string,fideli_local22_1__elec_n_1
+FIDELI2020,fideli_local22_1,gaz_n_1,Présence du gaz l'année N-1,string,fideli_local22_1__gaz_n_1
+FIDELI2020,fideli_local22_1,nbpp_n_1,Nombre de pièces principales l'année N-1,float64,
+FIDELI2020,fideli_local22_1,nbcuis8_n_1,Nombre de cuisines de moins de 9 m2 l'année N-1,float64,
+FIDELI2020,fideli_local22_1,nbcuis9_n_1,Nombre de cuisines d'au moins 9 m2 l'année N-1,float64,
+FIDELI2020,fideli_local22_1,nbpiec_n_1,Nombre de pièces l'année N-1,float64,
+FIDELI2020,fideli_local22_1,cne_n_1,Code commune de l’adresse fiscale de traitement l'année N-1,string,fideli_local22_1__cne_n_1
+FIDELI2020,fideli_local22_1,rue_n_1,Numéro de rue au cadastre de l’adresse fiscale de traitement l'année N-1,string,
+FIDELI2020,fideli_local22_1,imm_n_1,Numéro d’immeuble de l’adresse fiscale de traitement l'année N-1,string,
+FIDELI2020,fideli_local22_1,btq_n_1,Indice de répétition de l’adresse fiscale de traitement l'année N-1,string,
+FIDELI2020,fideli_local22_1,occ_n_1,"Occupation du local (propriétaire, locataire, vacant...) l'année N-1",string,fideli_local22_1__occ_n_1
+FIDELI2020,fideli_local22_1,nivf_n_1,Etage du local l'année N-1,string,
+FIDELI2020,fideli_local22_1,natloc_n_1,Code nature du local l'année N-1,string,fideli_local22_1__natloc_n_1
+FIDELI2020,fideli_local22_1,catloc_n_1,Catégorie du local l'année N-1,string,fideli_local22_1__catloc_n_1
+FIDELI2020,fideli_local22_1,refcad_n_1,Références cadastrales l'année N-1,string,
+FIDELI2020,fideli_local22_1,nbsam_n_1,Nombre de salles à manger l'année N-1,float64,
+FIDELI2020,fideli_local22_1,nbch_n_1,Nombre de chambres l'année N-1,float64,
+FIDELI2020,fideli_local22_1,nbcuis_n_1,Nombre de cuisines l'année N-1,float64,
+FIDELI2020,fideli_local22_1,nbsdb_n_1,Nombre de salles de bain l'année N-1,float64,
+FIDELI2020,fideli_local22_1,nbwc_n_1,Nombre de WC l'année N-1,float64,
+FIDELI2020,fideli_local22_1,nbbaig_n_1,Nombre de baignoires l'année N-1,float64,
+FIDELI2020,fideli_local22_1,nbdouc_n_1,Nombre de douches l'année N-1,float64,
+FIDELI2020,fideli_local22_1,surftot_n_1,Surface totale du local l'année N-1,string,
+FIDELI2020,fideli_local22_1,loi48_n_1,Logement soumis à la loi de 1948 l'année N-1,string,fideli_local22_1__loi48_n_1
+FIDELI2020,fideli_local22_1,datachev_n_1,Année d'achèvement du local l'année N-1,string,
+FIDELI2020,fideli_local22_1,ascenseur_n_1,Présence d'ascenseur (appartement) l'année N-1,string,fideli_local22_1__ascenseur_n_1
+FIDELI2020,fideli_local22_1,typpmo_n_1,Type de personne morale l'année N-1,string,fideli_local22_1__typpmo_n_1
+FIDELI2020,fideli_local22_1,dateacte_n_1,Date acte de propriété correspondant à la dernière mutation du local l'année N-1,string,
+FIDELI2020,fideli_local22_1,csdep_n_1,Code département de l’adresse fiscale de traitement l'année N-1,string,fideli_local22_1__csdep_n_1
+FIDELI2020,fideli_local22_1,logement_n_1,Indicatrice de logement suivant le filtre Recensement de la Population (RP) l'année N-1,string,fideli_local22_1__logement_n_1
+FIDELI2020,fideli_local22_1,eau_n_1,Présence d'eau l'année N-1,string,fideli_local22_1__eau_n_1
+FIDELI2020,fideli_local22_1,egout_n_1,Présence du tout à l'égout l'année N-1,string,fideli_local22_1__egout_n_1
+FIDELI2020,fideli_local22_1,chauff_n_1,Présence du chauffage central l'année N-1,string,fideli_local22_1__chauff_n_1
+FIDELI2020,fideli_local22_1,reg_n_1,Code région dans la taxe d'habitation l'année N-1,string,fideli_local22_1__reg_n_1
+FIDELI2020,fideli_local22_1,depcom_n_1,Code commune en géographie l'année N-1,string,fideli_local22_1__depcom_n_1
+FIDELI2020,fideli_local22_1,type_res1_n_1,Occupation du local version 1 l'année N-1,string,fideli_local22_1__type_res1_n_1
+FIDELI2020,fideli_local22_1,type_res2_n_1,Occupation du local version 2 l'année N-1,string,fideli_local22_1__type_res2_n_1
+FIDELI2020,fideli_local22_1,date_const,Année de construction redressée,string,
+FIDELI2020,fideli_local22_1,id_copro,Numéro de copropriété,string,
+FIDELI2020,fideli_local22_1,tax,Taxation du logement,string,fideli_local22_1__tax
+FIDELI2020,fideli_local22_1,datenais,Année de naissance du propriétaire,string,
+FIDELI2020,fideli_local22_1,lgt_soc,Indicatrice de logement social,string,fideli_local22_1__lgt_soc
+FIDELI2020,fideli_local22_1,ind_bati,Indicatrice d’appartenance au bâti,string,fideli_local22_1__ind_bati
+FIDELI2020,fideli_local22_1,nbimput,Nombre de variables imputées à l’aide de l’information disponible en N-1,float64,
+FIDELI2020,fideli_local22_1,x_n_1,Coordonnées géographiques x l'année N-1,string,
+FIDELI2020,fideli_local22_1,y_n_1,Coordonnées géographiques y l'année N-1,string,
+FIDELI2020,fideli_local22_1,iris_n_1,Numéro d'Ilots Regroupés pour l'Information Statistique (IRIS) l'année N-1,string,fideli_local22_1__iris_n_1
+FIDELI2020,fideli_local22_1,qpv_n_1,Nouveau Quartier Prioritaire de la politique de la Ville (QPV) l'année N-1,string,
+FIDELI2020,fideli_local22_1,pres_loc,Présence du local en N et N-1,string,fideli_local22_1__pres_loc
+FIDELI2020,fideli_local22_1,dvltrt,Valeur locative d’un local complet (1970),string,
+FIDELI2020,fideli_local22_1,dvlpera,Valeur locative actualisée,string,
+FIDELI2020,fideli_local22_1,dvltpe,Valeur locative d’une PEV (partie d'évaluation) (1970),string,
+FIDELI2020,fideli_local22_1,prec_xy_diffusion,"Indicateur de qualité du point (x, y)",string,fideli_local22_1__prec_xy_diffusion
+FIDELI2020,fideli_local22_1,prec_nqpv_diffusion,Indicateur de précision du géocodage pour les Quartiers Prioritaires de la Ville (QPV),string,fideli_local22_1__prec_nqpv_diffusion
+FIDELI2020,fideli_local22_1,prec_qva_diffusion,Indicateur de précision du géocodage pour les Quartiers de Veille Active (QVA),string,fideli_local22_1__prec_qva_diffusion
+FIDELI2020,fideli_local22_1,prec_iris_diffusion,Indicateur de précision du géocodage pour les Ilots Regroupés pour l'Information Statistique (IRIS),string,fideli_local22_1__prec_iris_diffusion
+FIDELI2020,fideli_revenus_menage22,id_log,Identifiant logement,string,
+FIDELI2020,fideli_revenus_menage22,id_log_n_1,Identifiant logement l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,zalvm,Pensions alimentaires versées,string,
+FIDELI2020,fideli_revenus_menage22,zfonm,Revenus fonciers du foyer,string,
+FIDELI2020,fideli_revenus_menage22,zvamm,Revenus de valeurs mobilières,string,
+FIDELI2020,fideli_revenus_menage22,m_aplm,Montant annuel versé pour la prestation Aide personnalisée au logement (APL),string,
+FIDELI2020,fideli_revenus_menage22,m_alfm,Montant annuel versé pour la prestation Allocation de Logement Familiale (ALF),string,
+FIDELI2020,fideli_revenus_menage22,m_alsm,Montant annuel versé pour la prestation Allocation de Logement Sociale (ALS),string,
+FIDELI2020,fideli_revenus_menage22,m_alsetm,Montant annuel versé pour la prestation ALSET,string,
+FIDELI2020,fideli_revenus_menage22,logtm,Montant annuel versé pour les prestations logement,string,
+FIDELI2020,fideli_revenus_menage22,pfamm,Montant annuel versé pour les prestations familiales,string,
+FIDELI2020,fideli_revenus_menage22,minim,Montant annuel versé pour les minima sociaux,string,
+FIDELI2020,fideli_revenus_menage22,revdispm,Revenu disponible monétaire,string,
+FIDELI2020,fideli_revenus_menage22,nivviem,Niveau de vie,string,
+FIDELI2020,fideli_revenus_menage22,i_pauvre60m,Indicatrice de ménage pauvre à 60%,string,fideli_revenus_menage22__i_pauvre60m
+FIDELI2020,fideli_revenus_menage22,nb_uc,Nombre d’unités de consommation,float64,
+FIDELI2020,fideli_revenus_menage22,zalvm_n_1,Pensions alimentaires versées l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,zfonm_n_1,Revenus fonciers du foyer l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,zvamm_n_1,Revenus de valeurs mobilières l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,m_aplm_n_1,Montant annuel versé pour la prestation Aide personnalisée au logement (APL) l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,m_alfm_n_1,Montant annuel versé pour la prestation Allocation de Logement Familiale (ALF) l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,m_alsm_n_1,Montant annuel versé pour la prestation Allocation de Logement Sociale (ALS) l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,m_alsetm_n_1,Montant annuel versé pour la prestation ALSET l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,logtm_n_1,Montant annuel versé pour les prestations logement l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,pfamm_n_1,Montant annuel versé pour les prestations familiales l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,minim_n_1,Montant annuel versé pour les minima sociaux l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,revdispm_n_1,Revenu disponible monétaire l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,nivviem_n_1,Niveau de vie l'année N-1,string,
+FIDELI2020,fideli_revenus_menage22,i_pauvre60m_n_1,Indicatrice de ménage pauvre à 60% l'année N-1,string,fideli_revenus_menage22__i_pauvre60m_n_1
+FIDELI2020,fideli_revenus_menage22,nb_uc_n_1,Nombre d’unités de consommation l'année N-1,float64,
 RA2020,PPAM,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,PPAM,TYPE_QUESTIONNAIRE,Type de questionnaire,string,
 RA2020,PPAM,PPAM100,Basilic,float64,
@@ -390,6 +1353,40 @@ RA2020,COM_CIRCOU,CIRCOU_OVOL,Oeufs et volailles,float64,
 RA2020,COM_CIRCOU,CIRCOU_ANIM,Animaux vivants et autres produits animaux (hors  œufs et volailles),float64,
 RA2020,COM_CIRCOU,CIRCOU_MIEL,Miel,float64,
 RA2020,COM_CIRCOU,IMPUT_NR_TOT,Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés),float64,
+FIDELI2020,fideli_adresses_hors_th22,csdep,Code département de l’adresse fiscale de traitement,string,fideli_adresses_hors_th22__csdep
+FIDELI2020,fideli_adresses_hors_th22,cne1,Code commune de l’adresse fiscale de traitement,string,fideli_adresses_hors_th22__cne1
+FIDELI2020,fideli_adresses_hors_th22,rue1,Numéro de rue au cadastre de l’adresse fiscale de traitement : Code RIVOLI,string,
+FIDELI2020,fideli_adresses_hors_th22,noimm1,Numéro immeuble de l’adresse fiscale de traitement,string,
+FIDELI2020,fideli_adresses_hors_th22,btq1,Indice de répétition dans la Taxe d'habitation,string,
+FIDELI2020,fideli_adresses_hors_th22,adresse_rh,Présence d'une résidence hôtelière à l'adresse,string,fideli_adresses_hors_th22__adresse_rh
+FIDELI2020,fideli_adresses_hors_th22,id_scat1,Identifiant de la communauté,string,fideli_adresses_hors_th22__id_scat1
+FIDELI2020,fideli_adresses_hors_th22,id_scat2,Identifiant de la deuxième communauté,string,fideli_adresses_hors_th22__id_scat2
+FIDELI2020,fideli_adresses_hors_th22,nature,"Nature de l'adresse hors taxe d'habitation, n'étant pas une communauté connue au répertoire des communautés",string,fideli_adresses_hors_th22__nature
+FIDELI2020,fideli_adresses_hors_th22,carac_adr,Nature de l'adresse hors taxe d'habitation,string,fideli_adresses_hors_th22__carac_adr
+PKPrairie2011,mecanic_pkgc2011_prairies,Identifiant_MECANIC,Numéro unique pour la table MECANIC,string,
+PKPrairie2011,mecanic_pkgc2011_prairies,Identifiantdossier,Numéro d'identifiant,string,
+PKPrairie2011,mecanic_pkgc2011_prairies,ESPECE,Culture enquêtée,string,mecanic_pkgc2011_prairies__ESPECE
+PKPrairie2011,mecanic_pkgc2011_prairies,ESPECEINI,"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)",string,mecanic_pkgc2011_prairies__ESPECEINI
+PKPrairie2011,mecanic_pkgc2011_prairies,PACAGEILOT,Numéro de PACAGE  + Numéro de l'ilot,float64,
+PKPrairie2011,mecanic_pkgc2011_prairies,PACAGE,Numéro de PACAGE de l'exploitation,float64,
+PKPrairie2011,mecanic_pkgc2011_prairies,SIRET,Numéro SIRET de l’exploitation,string,
+PKPrairie2011,mecanic_pkgc2011_prairies,REG,Région du siège de l'exploitation,string,mecanic_pkgc2011_prairies__REG
+PKPrairie2011,mecanic_pkgc2011_prairies,DEP,Département de localisation de la parcelle,string,mecanic_pkgc2011_prairies__DEP
+PKPrairie2011,mecanic_pkgc2011_prairies,DEPCOMP,Code commune de l'exploitant,string,mecanic_pkgc2011_prairies__DEPCOMP
+PKPrairie2011,mecanic_pkgc2011_prairies,DEPEXPLOI,Département de la commune de l'exploitation,string,mecanic_pkgc2011_prairies__DEPEXPLOI
+PKPrairie2011,mecanic_pkgc2011_prairies,BIO,Appartenance à la strate « bio »,string,mecanic_pkgc2011_prairies__BIO
+PKPrairie2011,mecanic_pkgc2011_prairies,ZONE,Appartenance à la strate «zone vulnérable»,string,mecanic_pkgc2011_prairies__ZONE
+PKPrairie2011,mecanic_pkgc2011_prairies,SUPP,Superficie de la parcelle,float64,
+PKPrairie2011,mecanic_pkgc2011_prairies,tranche_superficie,Tranche de superficie en hectares (strates utilisées pour le calcul des coefficients de pondération),string,mecanic_pkgc2011_prairies__tranche_superficie
+PKPrairie2011,mecanic_pkgc2011_prairies,COEF1,Coefficient de pondération au niveau de la parcelle,float64,
+PKPrairie2011,mecanic_pkgc2011_prairies,COEF2,Coefficient de pondération au niveau de la parcelle = COEF1*SUPP,float64,
+PKPrairie2011,mecanic_pkgc2011_prairies,CODMECA,"Numéro d'ordre de l'intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse, dans l'ordre chronologique",string,
+PKPrairie2011,mecanic_pkgc2011_prairies,MECAPAS,Numéro de passage de l'intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse,string,
+PKPrairie2011,mecanic_pkgc2011_prairies,DMECA,Date de l’intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse,string,
+PKPrairie2011,mecanic_pkgc2011_prairies,MECALIB,Libellé de l'intervention mécanique,string,
+PKPrairie2011,mecanic_pkgc2011_prairies,TYPMECA,Code Intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse,string,mecanic_pkgc2011_prairies__TYPMECA
+PKPrairie2011,mecanic_pkgc2011_prairies,TYPMECA1,Code Intervention mécanique simplifié 1,string,mecanic_pkgc2011_prairies__TYPMECA1
+PKPrairie2011,mecanic_pkgc2011_prairies,TYPMECA2,Code Intervention mécanique simplifié 2,string,mecanic_pkgc2011_prairies__TYPMECA2
 RA2020,PRODANIM,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,PRODANIM,TYPE_QUESTIONNAIRE,Type de questionnaire,string,
 RA2020,PRODANIM,ANIMAUXFIL,Élevez-vous des animaux sur votre exploitation pour l'élevage ou l'autoconsommation ? ,float64,
@@ -1229,6 +2226,40 @@ RA2020,MO_FAM,MOF_PACTDIV_ECH,Participation aux activités de diversification,st
 RA2020,MO_FAM,MOF_TYPLURACT_ECH,Type de pluriactivité,string,MO_FAM__MOF_TYPLURACT_ECH
 RA2020,MO_FAM,MOF_PLURACT_ECH,Importance de la pluriactivité dans le temps de travail,string,MO_FAM__MOF_PLURACT_ECH
 RA2020,MO_FAM,IMPUT_NR_TOT,Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés),float64,
+PKPrairie2011,fumorg_pkgc2011_prairies,Identifiant_FUMORG,Numéro unique pour la table FUMORG,string,
+PKPrairie2011,fumorg_pkgc2011_prairies,Identifiantdossier,Numéro d'identifiant,string,
+PKPrairie2011,fumorg_pkgc2011_prairies,CODEFUMO,"Fumure organique : numéro d'ordre de l'apport, classé dans l'ordre chronologique",string,
+PKPrairie2011,fumorg_pkgc2011_prairies,ESPECE,Culture enquêtée,string,fumorg_pkgc2011_prairies__ESPECE
+PKPrairie2011,fumorg_pkgc2011_prairies,ESPECEINI,"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)",string,fumorg_pkgc2011_prairies__ESPECEINI
+PKPrairie2011,fumorg_pkgc2011_prairies,PACAGEILOT,Numéro de PACAGE + Numéro de l'ilot,float64,
+PKPrairie2011,fumorg_pkgc2011_prairies,PACAGE,Numéro de PACAGE de l'exploitation,float64,
+PKPrairie2011,fumorg_pkgc2011_prairies,SIRET,Numéro SIRET de l’exploitation,string,
+PKPrairie2011,fumorg_pkgc2011_prairies,REG,Région du siège de l'exploitation,string,fumorg_pkgc2011_prairies__REG
+PKPrairie2011,fumorg_pkgc2011_prairies,DEP,Département de localisation de la parcelle,string,fumorg_pkgc2011_prairies__DEP
+PKPrairie2011,fumorg_pkgc2011_prairies,DEPCOMP,Code commune de l'exploitant,string,fumorg_pkgc2011_prairies__DEPCOMP
+PKPrairie2011,fumorg_pkgc2011_prairies,DEPEXPLOI,Département de la commune de l'exploitation,string,fumorg_pkgc2011_prairies__DEPEXPLOI
+PKPrairie2011,fumorg_pkgc2011_prairies,BIO,Appartenance à la strate « bio »,string,fumorg_pkgc2011_prairies__BIO
+PKPrairie2011,fumorg_pkgc2011_prairies,ZONE,Appartenance à la strate «zone vulnérable»,string,fumorg_pkgc2011_prairies__ZONE
+PKPrairie2011,fumorg_pkgc2011_prairies,SUPP,Superficie de la parcelle,float64,
+PKPrairie2011,fumorg_pkgc2011_prairies,tranche_superficie,Tranche de superficie (strates utilisées pour le calcul des coefficients de pondération),string,fumorg_pkgc2011_prairies__tranche_superficie
+PKPrairie2011,fumorg_pkgc2011_prairies,COEF1,Coefficient de pondération au niveau de la parcelle,float64,
+PKPrairie2011,fumorg_pkgc2011_prairies,COEF2,Coefficient de pondération au niveau de la parcelle = COEF1*SUPP,float64,
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMODAT,Fumure organique : date de l'apport,string,
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMONAT,Fumure organique : code de la fumure,string,fumorg_pkgc2011_prairies__FUMONAT
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMODOS,Fumure organique : Quantité brute de fumure organique à l’ha (en t/ha ou en m3/ha),string,
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMOUNI,Fumure organique : Unité,string,fumorg_pkgc2011_prairies__FUMOUNI
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMOPROV,Fumure organique : Provenance de la fumure,string,fumorg_pkgc2011_prairies__FUMOPROV
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMOTYP,Fumure organique : type de matériel d’épandage,string,fumorg_pkgc2011_prairies__FUMOTYP
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMODEL,"Fumure organique : si enfouissement, délai entre l’apport et l’enfouissement de l’apport",string,fumorg_pkgc2011_prairies__FUMODEL
+PKPrairie2011,fumorg_pkgc2011_prairies,QNORGTHEO,Fumure organique : quantité d’azote théorique par apport en kg/ha,string,
+PKPrairie2011,fumorg_pkgc2011_prairies,QNORG,"Fumure organique, fumiers, lisiers, compost : teneur en azote en kg par tonnes ou kg par m3",string,
+PKPrairie2011,fumorg_pkgc2011_prairies,QPORG,"Fumure organique, fumiers, lisiers, compost : teneur en phosphore en kg par tonnes ou kg par m3",string,
+PKPrairie2011,fumorg_pkgc2011_prairies,QKORG,"Fumure organique, fumiers, lisiers, compost : teneur en potassium en kg par tonnes ou kg par m3",string,
+PKPrairie2011,fumorg_pkgc2011_prairies,QNORGCALC,"Fumure organique : quantité d'azote organique calculée en kg/ha pour fumiers, lisiers, compost",string,
+PKPrairie2011,fumorg_pkgc2011_prairies,QNORGBOUE,Fumure organique : quantité d'azote organique calculée en kg/ha pour les boues,string,
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMQNORG,Fumure organique : quantité d’azote par apport en kg/ha,string,
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMQPORG,Fumure organique : quantité de phosphore par apport en kg/ha,string,
+PKPrairie2011,fumorg_pkgc2011_prairies,FUMQKORG,Fumure organique : quantité de potasse par apport en kg/ha,string,
 RA2020,HORTI_PEPI,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,HORTI_PEPI,TYPE_QUESTIONNAIRE,Type de questionnaire,string,
 RA2020,HORTI_PEPI,HORTI_AIR_SUR_100,Fleurs et feuillages coupés - Surfaces plein air ou abri bas,float64,
@@ -1318,6 +2349,42 @@ RA2020,SURF_SAU,CULTSUR_collecte,"Surfaces, initialisées si déclaration de sur
 RA2020,SURF_SAU,GRAPSUR,Surfaces graphiques source pac pour les prairies peu productives et bois pâturés,float64,
 RA2020,SURF_SAU,RETRAITMT_SURF_ADM,Indicatrice de retraitement des surfaces par les admissibles pour les prairies peu productives et bois pâturés,float64,
 RA2020,SURF_SAU,IMPUT_NR_TOT,Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés),float64,
+PKPrairie2011,fummin_pkgc2011_prairies,Identifiant_fummin,Numéro unique pour la table FUMMIN,string,
+PKPrairie2011,fummin_pkgc2011_prairies,Identifiantdossier,Numéro d'identifiant,string,
+PKPrairie2011,fummin_pkgc2011_prairies,ESPECE,Culture enquêtée,string,fummin_pkgc2011_prairies__ESPECE
+PKPrairie2011,fummin_pkgc2011_prairies,ESPECEINI,"Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)",string,fummin_pkgc2011_prairies__ESPECEINI
+PKPrairie2011,fummin_pkgc2011_prairies,PACAGEILOT,Numéro de PACAGE + Numéro de l'Ilot,float64,
+PKPrairie2011,fummin_pkgc2011_prairies,PACAGE,Numéro de PACAGE de l'exploitation,float64,
+PKPrairie2011,fummin_pkgc2011_prairies,SIRET,Numéro SIRET de l’exploitation,string,
+PKPrairie2011,fummin_pkgc2011_prairies,REG,Région du siège de l'exploitation,string,fummin_pkgc2011_prairies__REG
+PKPrairie2011,fummin_pkgc2011_prairies,DEP,Département de localisation de la parcelle,string,fummin_pkgc2011_prairies__DEP
+PKPrairie2011,fummin_pkgc2011_prairies,DEPCOMP,Code commune de l'exploitant,string,fummin_pkgc2011_prairies__DEPCOMP
+PKPrairie2011,fummin_pkgc2011_prairies,DEPEXPLOI,Département de la commune de l'exploitation,string,fummin_pkgc2011_prairies__DEPEXPLOI
+PKPrairie2011,fummin_pkgc2011_prairies,BIO,Appartenance à la strate « bio »,string,fummin_pkgc2011_prairies__BIO
+PKPrairie2011,fummin_pkgc2011_prairies,ZONE,Appartenance à la strate «zone vulnérable»,string,fummin_pkgc2011_prairies__ZONE
+PKPrairie2011,fummin_pkgc2011_prairies,SUPP,Superficie de la parcelle,float64,
+PKPrairie2011,fummin_pkgc2011_prairies,tranche_superficie,Tranche de superficie en hectares (strates utilisées pour le calcul des coefficients de pondération),string,fummin_pkgc2011_prairies__tranche_superficie
+PKPrairie2011,fummin_pkgc2011_prairies,COEF1,Coefficient de pondération au niveau de la parcelle,float64,
+PKPrairie2011,fummin_pkgc2011_prairies,COEF2,Coefficient de pondération au niveau de la parcelle = COEF1*SUPP,float64,
+PKPrairie2011,fummin_pkgc2011_prairies,CODEFUM,"Fumure minérale : numéro d'ordre de l'apport, dans l'ordre chronologique",string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMPAS,Fumure minérale : numéro de passage de l'apport,string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMDAT,Fumure minérale : date de l’apport,string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMNAT,Fumure minérale : type de fertilisant,string,fummin_pkgc2011_prairies__FUMNAT
+PKPrairie2011,fummin_pkgc2011_prairies,FUMSTA,Fumure minérale : stade cultural,string,fummin_pkgc2011_prairies__FUMSTA
+PKPrairie2011,fummin_pkgc2011_prairies,FUMSTA1,Fumure minérale : stade cultural simplifié,string,fummin_pkgc2011_prairies__FUMSTA1
+PKPrairie2011,fummin_pkgc2011_prairies,FUMAPPO,Fumure minérale : mode d'apport,string,fummin_pkgc2011_prairies__FUMAPPO
+PKPrairie2011,fummin_pkgc2011_prairies,FUMDEL,"Fumure minérale, si enfouissement : délai entre l’apport et l’enfouissement de l’apport",string,fummin_pkgc2011_prairies__FUMDEL
+PKPrairie2011,fummin_pkgc2011_prairies,FUMCN,Fumure minérale : Concentration en azote (en %),string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMCP,Fumure minérale : Concentration en phosphore (en %),string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMCK,Fumure minérale : Concentration en potassium (en %),string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMCS,Fumure minérale : Concentration en soufre (en %),string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMUNI,Fumure minérale : Unité,string,fummin_pkgc2011_prairies__FUMUNI
+PKPrairie2011,fummin_pkgc2011_prairies,FUMDOS,Fumure minérale : Quantité d’engrais à l’ha (en kg ou en litre),string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMQN,Fumure minérale : Quantité d'azote apportée par ha (en kg),string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMQP,Fumure minérale : Quantité de phosphore apportée par ha (en kg),string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMQK,Fumure minérale : Quantité de potassium apportée par ha (en kg),string,
+PKPrairie2011,fummin_pkgc2011_prairies,FUMQS,Fumure minérale : Quantité de soufre apportée par ha (en kg),string,
+PKPrairie2011,fummin_pkgc2011_prairies,filter__,Filtre sur les prairies,string,
 RA2020,DIVERSIF,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,DIVERSIF,TYPE_QUESTIONNAIRE,Type de questionnaire,string,
 RA2020,DIVERSIF,DIVACTCOD,Type d'activité de diversification,string,DIVERSIF__DIVACTCOD

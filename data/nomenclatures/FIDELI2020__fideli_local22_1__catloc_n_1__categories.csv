@@ -1,0 +1,14 @@
+variable,label
+,Ces modalités peuvent être suivies d’un ‘M’ pour les dépendances ordinaires ou d’un ‘S’ pour les dépendances d’agrément pour signifier qu’il s’agit d’une catégorie intermédiaire
+1,Grand luxe
+2,Luxe
+3,Très confortable
+4,Confortable
+5,Assez confortable
+6,Ordinaire
+7,Médiocre
+8,Très médiocre
+A,Bonne
+B,Passable
+C,Médiocre
+D,Mauvaise
