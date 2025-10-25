@@ -24,6 +24,7 @@ MAP_TYPES = {
     "Entier": "int",
     "Charactères": "string",
     "Booléen": "bool",
+    "Chaîne": "string",
 }
 
 # Configurations for loaded dictionaries
@@ -46,6 +47,7 @@ AVAILABLE_DICOS = {
             "LIBELLE": COLNAME_LIBELLE,
         },
         "encoding": "latin1",
+        "parser": "dico_from_excel",
     },
     "PHYTOVITI2016": {
         "filename": "Pratiques_phytosanitaires_en_viticulture_-_2016.csv",
@@ -71,8 +73,25 @@ AVAILABLE_DICOS = {
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
     },
+    "PKfruits2015": {
+        "filename": "20210726_PKfruits2015_dico_variables.ods",
+        "variable_sheet": "data",
+        "skiprows": 0,
+        "modalites_sheet": None,
+        "skiprows_modalites": None,
+        "cols_to_use": {
+            "Fichier": COLNAME_TABLE,
+            "NOM_variable": COLNAME_VARIABLE,
+            "LIBELLE": COLNAME_LIBELLE,
+            "TYPE": COLNAME_TYPE,
+            "VALEURS": COLNAME_NOMENCLATURE,
+        },
+        "modalites_cols_to_use": None,
+        "encoding": None,
+        "parser": "dico_from_excel",
+    },
 }
-CASD_BOOL_MODALITIES = ['"0 - Non";"1 - Oui"', '"1 - Oui";"0 - Non"']
+CASD_BOOL_MODALITIES = ['"0 - Non";"1 - Oui"', '"1 - Oui";"0 - Non"', "oui/non"]
 USELESS_MODALITIES = [*CASD_BOOL_MODALITIES]
 # Output dictionary columns
 COLNAME_OUT_DB = "Database"

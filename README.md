@@ -37,7 +37,7 @@ dictionnaire est disponible en téléchargement.
 |-------|-----|-------|--------------|-----------------------------------|----------|
 | PKGC | Pratiques Culturales Grandes Cultures | 2006, 2011, 2017 | 3033 | 20190802_DOC_BSVA_dico_variables_PKGC2017.ods | |
 | PKPrairies | Pratiques Culturales Prairies (regroupées dans Grandes Cultures à partir de 2017) | 2006, 2011 | 1158 | Pratiques_culturales_en_prairie_-_2011.csv |✅ |
-| PKfruits | Pratiques Culturales Fruits (aussi nommé PKArbo) | 2015 | 2597 | 20210726_PKfruits2015_dico_variables.ods | |
+| PKfruits | Pratiques Culturales Fruits (aussi nommé PKArbo) | 2015 | 2597 | 20210726_PKfruits2015_dico_variables.ods |✅|
 | PKLEG | Pratiques Culturales Légumes | 2013 | 1393 | PKLEG13_DESC.ods | |
 | PhytoViti | Phytosanitaires Viticulture | 2010, 2016 | 2609 | Pratiques_phytosanitaires_en_viticulture_-_2016.csv|✅|
 | PKViti | Pratiques Culturales Viticulture | 2006, 2014, 2019 | 4173 | PKViti2019_dico_variables_definitif.ods | |

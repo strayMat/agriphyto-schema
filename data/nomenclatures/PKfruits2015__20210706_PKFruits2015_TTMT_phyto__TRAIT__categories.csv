@@ -1,0 +1,8 @@
+variable,label
+Type de traitement retenu : ADJ,Adjuvants
+AUT,Autres produits phytosanitaires
+FERT,Fertilisants
+FONG,Fongicides
+HERB,Herbicides
+INS,Insecticides
+NON PPP NON FERTI,produits non phytosanitaires non fertilisants

@@ -153,31 +153,31 @@ PKGC2014,PHYTOGC2014,BIO,Appartenance à la strate « bio »,string,PHYTOGC201
 PKGC2014,PHYTOGC2014,ZONEVULN,Appartenance à une zone vulnérable,string,PHYTOGC2014__ZONEVULN
 PKGC2014,PHYTOGC2014,COEF1,Coefficient d'extrapolation au niveau de la parcelle,float64,
 PKGC2014,PHYTOGC2014,COEF2,Coefficient de pondération au niveau de la parcelle = COEF1*SUPP,float64,
-PKGC2014,PHYTOGC2014,DOUBLECULT,Existence d'une autre culture récoltée en mélange dans le semoir,string,PHYTOGC2014__DOUBLECULT
+PKGC2014,PHYTOGC2014,DOUBLECULT,Existence d'une autre culture récoltée en mélange dans le semoir,string,
 PKGC2014,PHYTOGC2014,ESPDOUBLE,Autre culture en mélange récoltée : Code ESPDOUBLE Espèce(s) semée(s),string,PHYTOGC2014__ESPDOUBLE
 PKGC2014,PHYTOGC2014,AUTESPDOUBLE,Précision libellé autre culture récoltée,string,
 PKGC2014,PHYTOGC2014,SAU,Superficie agricole utilisée de l’exploitation,string,
 PKGC2014,PHYTOGC2014,SUPESP,Superficie totale de l'espèce enquêtée sur l'exploitation,string,
 PKGC2014,PHYTOGC2014,TYPEXP,Type d'exploitation,string,PHYTOGC2014__TYPEXP
 PKGC2014,PHYTOGC2014,SUPP,Superficie de la parcelle,float64,
-PKGC2014,PHYTOGC2014,DRAINP,Existence d'un drainage de la parcelle (depuis 2009 inclus),string,PHYTOGC2014__DRAINP
-PKGC2014,PHYTOGC2014,EAU,Existence d'un cours d’eau sur la parcelle ou adjacent à la parcelle,string,PHYTOGC2014__EAU
-PKGC2014,PHYTOGC2014,BANDEHERB,Existence sur la parcelle d'une bande enherbée le long d’un cours d’eau,string,PHYTOGC2014__BANDEHERB
+PKGC2014,PHYTOGC2014,DRAINP,Existence d'un drainage de la parcelle (depuis 2009 inclus),string,
+PKGC2014,PHYTOGC2014,EAU,Existence d'un cours d’eau sur la parcelle ou adjacent à la parcelle,string,
+PKGC2014,PHYTOGC2014,BANDEHERB,Existence sur la parcelle d'une bande enherbée le long d’un cours d’eau,string,
 PKGC2014,PHYTOGC2014,RANGPERP,"Si la parcelle est en pente, les rangs sont perpendiculaires à la pente ou non",string,PHYTOGC2014__RANGPERP
 PKGC2014,PHYTOGC2014,ALTITUDE,Altitude de la parcelle (en mètres),string,
 PKGC2014,PHYTOGC2014,TYPESOL,Type de sol de la parcelle,string,PHYTOGC2014__TYPESOL
 PKGC2014,PHYTOGC2014,AUTTYPESOL,Libellé  de l'autre type de sol,string,
 PKGC2014,PHYTOGC2014,CAHIERBIO,Existence d'un cahier des charges en agriculture biologique,string,PHYTOGC2014__CAHIERBIO
 PKGC2014,PHYTOGC2014,ANBIO,Nombre d'années en bio,float64,
-PKGC2014,PHYTOGC2014,SANSENGPHYTO,Absence engagement réduction des phytosanitaires,string,PHYTOGC2014__SANSENGPHYTO
-PKGC2014,PHYTOGC2014,EAEPHYTO,Existence d'un engagement agro-environnemental rémunéré (MAE) pour les interventions phytosanitaires,string,PHYTOGC2014__EAEPHYTO
-PKGC2014,PHYTOGC2014,CAHIERPHYTO,Existence d'un cahier des charges de réduction des phytosanitaires hors MAE,string,PHYTOGC2014__CAHIERPHYTO
+PKGC2014,PHYTOGC2014,SANSENGPHYTO,Absence engagement réduction des phytosanitaires,string,
+PKGC2014,PHYTOGC2014,EAEPHYTO,Existence d'un engagement agro-environnemental rémunéré (MAE) pour les interventions phytosanitaires,string,
+PKGC2014,PHYTOGC2014,CAHIERPHYTO,Existence d'un cahier des charges de réduction des phytosanitaires hors MAE,string,
 PKGC2014,PHYTOGC2014,MOISPLAN,Mois de plantation de la canne à sucre présente sur la parcelle,string,
 PKGC2014,PHYTOGC2014,ANPLAN,Année de plantation de la canne à sucre présente sur la parcelle,string,
 PKGC2014,PHYTOGC2014,PREMAN,Première année de mise en place d’une culture de canne à sucre sur la parcelle,string,PHYTOGC2014__PREMAN
 PKGC2014,PHYTOGC2014,TYPCAN,Type de canne à sucre sur la parcelle,string,PHYTOGC2014__TYPCAN
-PKGC2014,PHYTOGC2014,PARCIRR,Parcelle irriguée au cours de la campagne agricole,string,PHYTOGC2014__PARCIRR
-PKGC2014,PHYTOGC2014,REALREC,Réalisation de la récolte,string,PHYTOGC2014__REALREC
+PKGC2014,PHYTOGC2014,PARCIRR,Parcelle irriguée au cours de la campagne agricole,string,
+PKGC2014,PHYTOGC2014,REALREC,Réalisation de la récolte,string,
 PKGC2014,PHYTOGC2014,OBJREND,Hypothèse de rendement en début de campagne,float64,
 PKGC2014,PHYTOGC2014,RENDSAIS,Rendement de la campagne : données aux normes,float64,
 PKGC2014,PHYTOGC2014,RENDEM,Rendement de la campagne : données brutes,float64,
@@ -193,37 +193,37 @@ PKGC2014,PHYTOGC2014,DESTIN,Destination du produit récolté,string,PHYTOGC2014_
 PKGC2014,PHYTOGC2014,ENERGIE,Destination du produit récolté : valorisation énergétique,string,PHYTOGC2014__ENERGIE
 PKGC2014,PHYTOGC2014,PROTEIN,Connaissance de la teneur en protéines obtenue,string,PHYTOGC2014__PROTEIN
 PKGC2014,PHYTOGC2014,TENPROT,Teneur en protéines obtenue,string,
-PKGC2014,PHYTOGC2014,CONNSUC,Connaissance de la teneur totale en sucre obtenue,string,PHYTOGC2014__CONNSUC
+PKGC2014,PHYTOGC2014,CONNSUC,Connaissance de la teneur totale en sucre obtenue,string,
 PKGC2014,PHYTOGC2014,RICSUC2,Teneur totale en sucre obtenue,string,
 PKGC2014,PHYTOGC2014,PRECULTCAN2013,Culture récoltée ou fauchée sur la parcelle en 2013,string,PHYTOGC2014__PRECULTCAN2013
 PKGC2014,PHYTOGC2014,PRECULTCAN,Nature de la culture ou jachère qui a précédé l’implantation de la canne à sucre actuelle,string,PHYTOGC2014__PRECULTCAN
 PKGC2014,PHYTOGC2014,LABCAN,Existence d'un labour avant mise en place de la canne à sucre enquêtée,string,PHYTOGC2014__LABCAN
 PKGC2014,PHYTOGC2014,PRECULT2013,Précédent cultural 2013,string,PHYTOGC2014__PRECULT2013
 PKGC2014,PHYTOGC2014,PERIOD2013,Période de semis 2013,string,PHYTOGC2014__PERIOD2013
-PKGC2014,PHYTOGC2014,LAB2013,Labour avant mise en place de la culture 2013,string,PHYTOGC2014__LAB2013
+PKGC2014,PHYTOGC2014,LAB2013,Labour avant mise en place de la culture 2013,string,
 PKGC2014,PHYTOGC2014,PRECULT2012,Précédent cultural 2012,string,PHYTOGC2014__PRECULT2012
 PKGC2014,PHYTOGC2014,PERIOD2012,Période de semis 2012,string,PHYTOGC2014__PERIOD2012
-PKGC2014,PHYTOGC2014,LAB2012,Labour avant mise en place de la culture 2012,string,PHYTOGC2014__LAB2012
+PKGC2014,PHYTOGC2014,LAB2012,Labour avant mise en place de la culture 2012,string,
 PKGC2014,PHYTOGC2014,PRECULT2011,Précédent cultural 2011,string,PHYTOGC2014__PRECULT2011
 PKGC2014,PHYTOGC2014,PERIOD2011,Période de semis 2011,string,PHYTOGC2014__PERIOD2011
-PKGC2014,PHYTOGC2014,LAB2011,Labour avant mise en place de la culture 2011,string,PHYTOGC2014__LAB2011
+PKGC2014,PHYTOGC2014,LAB2011,Labour avant mise en place de la culture 2011,string,
 PKGC2014,PHYTOGC2014,PRECULT2010,Précédent cultural 2010,string,PHYTOGC2014__PRECULT2010
 PKGC2014,PHYTOGC2014,PERIOD2010,Période de semis 2010,string,PHYTOGC2014__PERIOD2010
-PKGC2014,PHYTOGC2014,LAB2010,Labour avant mise en place de la culture 2010,string,PHYTOGC2014__LAB2010
+PKGC2014,PHYTOGC2014,LAB2010,Labour avant mise en place de la culture 2010,string,
 PKGC2014,PHYTOGC2014,DPRECUL,Date de récolte du précédent,string,
 PKGC2014,PHYTOGC2014,RESIDUS,Traitement des résidus,string,PHYTOGC2014__RESIDUS
-PKGC2014,PHYTOGC2014,INTERV,"Résidus laissés sur place sans enfouissement, présence d'une intervention",string,PHYTOGC2014__INTERV
-PKGC2014,PHYTOGC2014,REPOUSPREC,Repousse du précédent cultural ayant couvert le sol : présence,string,PHYTOGC2014__REPOUSPREC
-PKGC2014,PHYTOGC2014,REPOUSDESMEC,Mode de destruction mécanique des repousses du précédent : présence,string,PHYTOGC2014__REPOUSDESMEC
-PKGC2014,PHYTOGC2014,REPOUSDESCHI,Mode de destruction chimique des repousses du précédent : présence,string,PHYTOGC2014__REPOUSDESCHI
-PKGC2014,PHYTOGC2014,REPOUSDESAUT,"Mode de destruction autres (gel, …) des repousses du précédent : présence",string,PHYTOGC2014__REPOUSDESAUT
-PKGC2014,PHYTOGC2014,ENGVERT,Présence d'une culture intermédiaire qui a été détruite,string,PHYTOGC2014__ENGVERT
+PKGC2014,PHYTOGC2014,INTERV,"Résidus laissés sur place sans enfouissement, présence d'une intervention",string,
+PKGC2014,PHYTOGC2014,REPOUSPREC,Repousse du précédent cultural ayant couvert le sol : présence,string,
+PKGC2014,PHYTOGC2014,REPOUSDESMEC,Mode de destruction mécanique des repousses du précédent : présence,string,
+PKGC2014,PHYTOGC2014,REPOUSDESCHI,Mode de destruction chimique des repousses du précédent : présence,string,
+PKGC2014,PHYTOGC2014,REPOUSDESAUT,"Mode de destruction autres (gel, …) des repousses du précédent : présence",string,
+PKGC2014,PHYTOGC2014,ENGVERT,Présence d'une culture intermédiaire qui a été détruite,string,
 PKGC2014,PHYTOGC2014,ESPENGVERT,Culture intermédiaire détruite : Code COUVERT Espèce(s) semée(s),string,PHYTOGC2014__ESPENGVERT
-PKGC2014,PHYTOGC2014,ENGVDESMEC,"Culture intermédiaire détruite, existence d'un mode de destruction mécanique",string,PHYTOGC2014__ENGVDESMEC
-PKGC2014,PHYTOGC2014,ENGVDESCHI,"Culture intermédiaire détruite, existence d'un mode de destruction chimique",string,PHYTOGC2014__ENGVDESCHI
-PKGC2014,PHYTOGC2014,ENGVDESAUT,"Culture intermédiaire détruite, existence d'un mode de destruction autres (gel, …)",string,PHYTOGC2014__ENGVDESAUT
+PKGC2014,PHYTOGC2014,ENGVDESMEC,"Culture intermédiaire détruite, existence d'un mode de destruction mécanique",string,
+PKGC2014,PHYTOGC2014,ENGVDESCHI,"Culture intermédiaire détruite, existence d'un mode de destruction chimique",string,
+PKGC2014,PHYTOGC2014,ENGVDESAUT,"Culture intermédiaire détruite, existence d'un mode de destruction autres (gel, …)",string,
 PKGC2014,PHYTOGC2014,DESENGVERT,Culture intermédiaire : Période de destruction,string,PHYTOGC2014__DESENGVERT
-PKGC2014,PHYTOGC2014,DEROBE,Présence d'une culture dérobée,string,PHYTOGC2014__DEROBE
+PKGC2014,PHYTOGC2014,DEROBE,Présence d'une culture dérobée,string,
 PKGC2014,PHYTOGC2014,ESPDEROB,Culture dérobée récoltée ou pâturée : Code COUVERT Espèce(s) semée(s),string,PHYTOGC2014__ESPDEROB
 PKGC2014,PHYTOGC2014,MODEXDEROB,Culture dérobée : mode d'exploitation,string,PHYTOGC2014__MODEXDEROB
 PKGC2014,PHYTOGC2014,EDEROB,Culture dérobée : période de récolte ou de pâture,string,PHYTOGC2014__EDEROB
@@ -233,15 +233,15 @@ PKGC2014,PHYTOGC2014,ESPINITNL,Culture initiale non levée (C'est à dire non co
 PKGC2014,PHYTOGC2014,SEMPROV,Origine de la semence de la culture enquêtée,string,PHYTOGC2014__SEMPROV
 PKGC2014,PHYTOGC2014,SEMPROVBIO,Origine de la semence de la culture enquêtée pour les bio,string,PHYTOGC2014__SEMPROVBIO
 PKGC2014,PHYTOGC2014,LUTTEOIS,Lutte contre les oiseaux,string,PHYTOGC2014__LUTTEOIS
-PKGC2014,PHYTOGC2014,TRAITSEM,Existence d'une semence (certifiée ou de ferme) traitée,string,PHYTOGC2014__TRAITSEM
-PKGC2014,PHYTOGC2014,TRAITSEMINS,Semence (certifiée ou de ferme) traitée : Insecticides (hors anti-pucerons),string,PHYTOGC2014__TRAITSEMINS
-PKGC2014,PHYTOGC2014,TRAITSEMPUC,Semence (certifiée ou de ferme) traitée : anti-pucerons,string,PHYTOGC2014__TRAITSEMPUC
-PKGC2014,PHYTOGC2014,TRAITSEMFON,Semence (certifiée ou de ferme) traitée : Fongicides,string,PHYTOGC2014__TRAITSEMFON
-PKGC2014,PHYTOGC2014,TRAITSEMLIM,Semence (certifiée ou de ferme) traitée : Anti-limaces,string,PHYTOGC2014__TRAITSEMLIM
-PKGC2014,PHYTOGC2014,TRAITSEMOIS,Semence (certifiée ou de ferme) traitée : Anti-oiseaux,string,PHYTOGC2014__TRAITSEMOIS
-PKGC2014,PHYTOGC2014,TRAITSEMNEM,Semence (certifiée ou de ferme) traitée : Nématicides,string,PHYTOGC2014__TRAITSEMNEM
-PKGC2014,PHYTOGC2014,TRAITSEMAUT,Semence (certifiée ou de ferme) traitée : Autres répulsifs,string,PHYTOGC2014__TRAITSEMAUT
-PKGC2014,PHYTOGC2014,TRAITSEMINC,Traitement de semences : Inconnus,string,PHYTOGC2014__TRAITSEMINC
+PKGC2014,PHYTOGC2014,TRAITSEM,Existence d'une semence (certifiée ou de ferme) traitée,string,
+PKGC2014,PHYTOGC2014,TRAITSEMINS,Semence (certifiée ou de ferme) traitée : Insecticides (hors anti-pucerons),string,
+PKGC2014,PHYTOGC2014,TRAITSEMPUC,Semence (certifiée ou de ferme) traitée : anti-pucerons,string,
+PKGC2014,PHYTOGC2014,TRAITSEMFON,Semence (certifiée ou de ferme) traitée : Fongicides,string,
+PKGC2014,PHYTOGC2014,TRAITSEMLIM,Semence (certifiée ou de ferme) traitée : Anti-limaces,string,
+PKGC2014,PHYTOGC2014,TRAITSEMOIS,Semence (certifiée ou de ferme) traitée : Anti-oiseaux,string,
+PKGC2014,PHYTOGC2014,TRAITSEMNEM,Semence (certifiée ou de ferme) traitée : Nématicides,string,
+PKGC2014,PHYTOGC2014,TRAITSEMAUT,Semence (certifiée ou de ferme) traitée : Autres répulsifs,string,
+PKGC2014,PHYTOGC2014,TRAITSEMINC,Traitement de semences : Inconnus,string,
 PKGC2014,PHYTOGC2014,NBVARIET,Nombre de variétés semées sur la parcelle (en mélange dans le semoir),float64,
 PKGC2014,PHYTOGC2014,VARIET,Variété principale semée,string,
 PKGC2014,PHYTOGC2014,LIBVARIET,Libellé variété principale semée/plantée,string,
@@ -250,7 +250,7 @@ PKGC2014,PHYTOGC2014,VARIET2,Variété secondaire semée en cas de plusieurs var
 PKGC2014,PHYTOGC2014,LIBVARIET2,Libellé variété secondaire semée,string,
 PKGC2014,PHYTOGC2014,AUTVARIET2,Libellé  de l'autre variété secondaire,string,
 PKGC2014,PHYTOGC2014,VARIETDEP,Variété principale (canne à sucre),string,
-PKGC2014,PHYTOGC2014,DBLERG,Existence d'une plantation en double rang pour la canne à sucre,string,PHYTOGC2014__DBLERG
+PKGC2014,PHYTOGC2014,DBLERG,Existence d'une plantation en double rang pour la canne à sucre,string,
 PKGC2014,PHYTOGC2014,GRAINM2,Dose de semis : Nombre de grains par m2,string,
 PKGC2014,PHYTOGC2014,POIDSURFSAIS,Dose de semis : Poids de semence par ha (kg/ha),string,
 PKGC2014,PHYTOGC2014,POIDSURF,Dose de semis : Poids de semence par ha (kg/ha) (calculé),string,
@@ -258,25 +258,25 @@ PKGC2014,PHYTOGC2014,GRAINHA,Dose de semis : Nombre de grains par ha,string,
 PKGC2014,PHYTOGC2014,GRUNITHA,Dose de semis : Nombre d’unités (100 000 semences) à l’ha,string,
 PKGC2014,PHYTOGC2014,PLANHA,Densité de plantation en nombre de plants par ha,string,
 PKGC2014,PHYTOGC2014,CALIPLANT,Calibre des plants en mm,string,
-PKGC2014,PHYTOGC2014,BILLONS,Existence d'une culture en billons ou en planches,string,PHYTOGC2014__BILLONS
+PKGC2014,PHYTOGC2014,BILLONS,Existence d'une culture en billons ou en planches,string,
 PKGC2014,PHYTOGC2014,ENTRERANG,Ecartement entre les rangs (en cm),string,
 PKGC2014,PHYTOGC2014,SEMDAT,Date dernier semis,string,
-PKGC2014,PHYTOGC2014,RESEMIS,Resemis,string,PHYTOGC2014__RESEMIS
+PKGC2014,PHYTOGC2014,RESEMIS,Resemis,string,
 PKGC2014,PHYTOGC2014,RECDAT,Date première récolte,string,
-PKGC2014,PHYTOGC2014,LABOUREUR,Labour,string,PHYTOGC2014__LABOUREUR
-PKGC2014,PHYTOGC2014,DEHMECAD,Indicatrice désherbage mécanique avant récolte canne enquêtée en 2014,string,PHYTOGC2014__DEHMECAD
+PKGC2014,PHYTOGC2014,LABOUREUR,Labour,string,
+PKGC2014,PHYTOGC2014,DEHMECAD,Indicatrice désherbage mécanique avant récolte canne enquêtée en 2014,string,
 PKGC2014,PHYTOGC2014,PASSMECAD,Nombre de désherbages mécaniques jusqu’à la récolte de la canne enquêtée en 2014,string,
-PKGC2014,PHYTOGC2014,DEHMECAAV,Indicatrice désherbage mécanique avant ou à l'implantation,string,PHYTOGC2014__DEHMECAAV
+PKGC2014,PHYTOGC2014,DEHMECAAV,Indicatrice désherbage mécanique avant ou à l'implantation,string,
 PKGC2014,PHYTOGC2014,PASSMECAAV,Nombre de désherbages mécaniques avant ou à l'implantation,string,
-PKGC2014,PHYTOGC2014,DEHMECA,Indicatrice désherbage mécanique après implantation,string,PHYTOGC2014__DEHMECA
+PKGC2014,PHYTOGC2014,DEHMECA,Indicatrice désherbage mécanique après implantation,string,
 PKGC2014,PHYTOGC2014,PASSMECA,Nombre de désherbages mécaniques après implantation,string,
-PKGC2014,PHYTOGC2014,DEHMECACHI,Indicatrice désherbage mécanique associé à du chimique,string,PHYTOGC2014__DEHMECACHI
-PKGC2014,PHYTOGC2014,DEHTHERM,Indicatrice désherbage thermique,string,PHYTOGC2014__DEHTHERM
-PKGC2014,PHYTOGC2014,DEHMAN,Indicatrice désherbage manuel,string,PHYTOGC2014__DEHMAN
-PKGC2014,PHYTOGC2014,SEMDIR,Semis direct,string,PHYTOGC2014__SEMDIR
-PKGC2014,PHYTOGC2014,FAUXSEM,Faux semis,string,PHYTOGC2014__FAUXSEM
-PKGC2014,PHYTOGC2014,DEFMECA,Défanage mécanique,string,PHYTOGC2014__DEFMECA
-PKGC2014,PHYTOGC2014,DEFTHERM,Défanage thermique,string,PHYTOGC2014__DEFTHERM
+PKGC2014,PHYTOGC2014,DEHMECACHI,Indicatrice désherbage mécanique associé à du chimique,string,
+PKGC2014,PHYTOGC2014,DEHTHERM,Indicatrice désherbage thermique,string,
+PKGC2014,PHYTOGC2014,DEHMAN,Indicatrice désherbage manuel,string,
+PKGC2014,PHYTOGC2014,SEMDIR,Semis direct,string,
+PKGC2014,PHYTOGC2014,FAUXSEM,Faux semis,string,
+PKGC2014,PHYTOGC2014,DEFMECA,Défanage mécanique,string,
+PKGC2014,PHYTOGC2014,DEFTHERM,Défanage thermique,string,
 PKGC2014,PHYTOGC2014,FUMOFREQ,Nombre d'années avec au moins un apport de fumure organique,string,
 PKGC2014,PHYTOGC2014,AZOTFREQ,Nombre d'années avec au moins un apport d'azote minéral,string,
 PKGC2014,PHYTOGC2014,PHOSFREQ,Nombre d'années avec au moins un apport de phosphore minéral,string,
@@ -287,10 +287,10 @@ PKGC2014,PHYTOGC2014,OLIGOFREQ,Nombre d'années avec au moins un apport d'oligo-
 PKGC2014,PHYTOGC2014,BIOFREQ,Nombre d'années avec au moins un apport de biostimulant,string,
 PKGC2014,PHYTOGC2014,NBENGN,Nombre de passages d’apport d’engrais minéraux : azote,float64,
 PKGC2014,PHYTOGC2014,FUMQNTOT,Quantité d’azote minéral totale,string,
-PKGC2014,PHYTOGC2014,PHOSPHORE,Apport de phosphore minéral sur la campagne,string,PHYTOGC2014__PHOSPHORE
-PKGC2014,PHYTOGC2014,POTASSE,Apport de potasse minérale sur la campagne,string,PHYTOGC2014__POTASSE
-PKGC2014,PHYTOGC2014,SOUFRE,Apport de soufre sur la campagne,string,PHYTOGC2014__SOUFRE
-PKGC2014,PHYTOGC2014,FUMO,Apport de fumure organique sur la campagne,string,PHYTOGC2014__FUMO
+PKGC2014,PHYTOGC2014,PHOSPHORE,Apport de phosphore minéral sur la campagne,string,
+PKGC2014,PHYTOGC2014,POTASSE,Apport de potasse minérale sur la campagne,string,
+PKGC2014,PHYTOGC2014,SOUFRE,Apport de soufre sur la campagne,string,
+PKGC2014,PHYTOGC2014,FUMO,Apport de fumure organique sur la campagne,string,
 PKGC2014,PHYTOGC2014,ROUILLES,Pression Rouilles,string,PHYTOGC2014__ROUILLES
 PKGC2014,PHYTOGC2014,PIETIN,Pression Piétin-verse,string,PHYTOGC2014__PIETIN
 PKGC2014,PHYTOGC2014,OIDIUM,Pression Oïdium,string,PHYTOGC2014__OIDIUM
@@ -314,7 +314,7 @@ PKGC2014,PHYTOGC2014,VERSBLANCS,Pression Vers blancs,string,PHYTOGC2014__VERSBLA
 PKGC2014,PHYTOGC2014,RONGEURS,Pression Rongeurs,string,PHYTOGC2014__RONGEURS
 PKGC2014,PHYTOGC2014,ADVENTICES,Pression Adventices,string,PHYTOGC2014__ADVENTICES
 PKGC2014,PHYTOGC2014,VERSB,Dégâts de vers blancs,string,PHYTOGC2014__VERSB
-PKGC2014,PHYTOGC2014,APPHYTO,Existence d'un traitement phyto depuis la récolte du précédent cultural jusqu’à la récolte actuelle,string,PHYTOGC2014__APPHYTO
+PKGC2014,PHYTOGC2014,APPHYTO,Existence d'un traitement phyto depuis la récolte du précédent cultural jusqu’à la récolte actuelle,string,
 PKGC2014,PHYTOGC2014,NBDEHTOT,Traitements phytosanitaires : nombre de traitements herbicides - calcul,float64,
 PKGC2014,PHYTOGC2014,NBDEHPRL,Traitements phytosanitaires : nombre de traitements herbicides avant levée (Pré-levée) - calcul,float64,
 PKGC2014,PHYTOGC2014,NBDEHPOL,Traitements phytosanitaires : nombre de traitements herbicides après levée (Post-levée) - calcul,float64,
@@ -338,57 +338,57 @@ PKGC2014,PHYTOGC2014,RONPASTOT,Traitements phytosanitaires : nombre de passages 
 PKGC2014,PHYTOGC2014,AUTPASTOT,Traitements phytosanitaires : nombre de passages avec au moins un autre traitement,string,
 PKGC2014,PHYTOGC2014,ADJPASTOT,Traitements phytosanitaires : nombre de passages avec au moins un adjuvant,string,
 PKGC2014,PHYTOGC2014,PHYTOPASTOT,Traitements phytosanitaires : nombre de passages,string,
-PKGC2014,PHYTOGC2014,BSV,Lecture BSV,string,PHYTOGC2014__BSV
-PKGC2014,PHYTOGC2014,CERTIPHYTO,Suivi certiphyto,string,PHYTOGC2014__CERTIPHYTO
-PKGC2014,PHYTOGC2014,ECOPHYTOPIC,Consultation écophytoPIC,string,PHYTOGC2014__ECOPHYTOPIC
-PKGC2014,PHYTOGC2014,CONDEPHY,Connaissance réseau fermes DEPHY,string,PHYTOGC2014__CONDEPHY
-PKGC2014,PHYTOGC2014,DEPHY,Participation fermes DEPHY,string,PHYTOGC2014__DEPHY
-PKGC2014,PHYTOGC2014,RAISHHAB,Raisonnement herbicides : vos pratiques historiques et habituelles,string,PHYTOGC2014__RAISHHAB
-PKGC2014,PHYTOGC2014,RAISHOBS,Raisonnement herbicides : vos observations sur la parcelle en cours de culture,string,PHYTOGC2014__RAISHOBS
-PKGC2014,PHYTOGC2014,RAISHCOMPT,"Raisonnement herbicides : vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)",string,PHYTOGC2014__RAISHCOMPT
-PKGC2014,PHYTOGC2014,RAISHMETEO,Raisonnement herbicides : les prévisions météorologiques et le niveau des précipitations,string,PHYTOGC2014__RAISHMETEO
-PKGC2014,PHYTOGC2014,RAISHBPPC,Raisonnement herbicides : les bulletins de préconisation phyto certifiés,string,PHYTOGC2014__RAISHBPPC
-PKGC2014,PHYTOGC2014,RAISHFOURN,Raisonnement herbicides : les conseils des fournisseurs,string,PHYTOGC2014__RAISHFOURN
-PKGC2014,PHYTOGC2014,RAISHINDEP,Raisonnement herbicides : les recommandations d’organismes indépendants de la vente,string,PHYTOGC2014__RAISHINDEP
-PKGC2014,PHYTOGC2014,RAISHEXP,Raisonnement herbicides : l'expérience d’autres agriculteurs,string,PHYTOGC2014__RAISHEXP
-PKGC2014,PHYTOGC2014,RAISHPILOT,Raisonnement herbicides : vos propres outils de pilotage,string,PHYTOGC2014__RAISHPILOT
-PKGC2014,PHYTOGC2014,RAISAHAB,Raisonnement hors herbicides : vos pratiques historiques et habituelles,string,PHYTOGC2014__RAISAHAB
-PKGC2014,PHYTOGC2014,RAISAOBS,Raisonnement hors herbicides : vos observations sur la parcelle en cours de culture,string,PHYTOGC2014__RAISAOBS
-PKGC2014,PHYTOGC2014,RAISACOMPT,"Raisonnement hors herbicides : vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)",string,PHYTOGC2014__RAISACOMPT
-PKGC2014,PHYTOGC2014,RAISAMETEO,Raisonnement hors herbicides : les prévisions météorologiques et le niveau des précipitations,string,PHYTOGC2014__RAISAMETEO
-PKGC2014,PHYTOGC2014,RAISABSV,Raisonnement hors herbicides : les bulletins de santé du végétal BSV,string,PHYTOGC2014__RAISABSV
-PKGC2014,PHYTOGC2014,RAISABPPC,Raisonnement hors herbicides : les bulletins de préconisation phyto certifiés,string,PHYTOGC2014__RAISABPPC
-PKGC2014,PHYTOGC2014,RAISAFOURN,Raisonnement hors herbicides : les conseils des fournisseurs,string,PHYTOGC2014__RAISAFOURN
-PKGC2014,PHYTOGC2014,RAISAINDEP,Raisonnement hors herbicides : les recommandations d’organismes indépendants de la vente,string,PHYTOGC2014__RAISAINDEP
-PKGC2014,PHYTOGC2014,RAISAEXP,Raisonnement hors herbicides : l'expérience d’autres agriculteurs,string,PHYTOGC2014__RAISAEXP
-PKGC2014,PHYTOGC2014,RAISAPILOT,Raisonnement hors herbicides : vos propres outils de pilotage,string,PHYTOGC2014__RAISAPILOT
+PKGC2014,PHYTOGC2014,BSV,Lecture BSV,string,
+PKGC2014,PHYTOGC2014,CERTIPHYTO,Suivi certiphyto,string,
+PKGC2014,PHYTOGC2014,ECOPHYTOPIC,Consultation écophytoPIC,string,
+PKGC2014,PHYTOGC2014,CONDEPHY,Connaissance réseau fermes DEPHY,string,
+PKGC2014,PHYTOGC2014,DEPHY,Participation fermes DEPHY,string,
+PKGC2014,PHYTOGC2014,RAISHHAB,Raisonnement herbicides : vos pratiques historiques et habituelles,string,
+PKGC2014,PHYTOGC2014,RAISHOBS,Raisonnement herbicides : vos observations sur la parcelle en cours de culture,string,
+PKGC2014,PHYTOGC2014,RAISHCOMPT,"Raisonnement herbicides : vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)",string,
+PKGC2014,PHYTOGC2014,RAISHMETEO,Raisonnement herbicides : les prévisions météorologiques et le niveau des précipitations,string,
+PKGC2014,PHYTOGC2014,RAISHBPPC,Raisonnement herbicides : les bulletins de préconisation phyto certifiés,string,
+PKGC2014,PHYTOGC2014,RAISHFOURN,Raisonnement herbicides : les conseils des fournisseurs,string,
+PKGC2014,PHYTOGC2014,RAISHINDEP,Raisonnement herbicides : les recommandations d’organismes indépendants de la vente,string,
+PKGC2014,PHYTOGC2014,RAISHEXP,Raisonnement herbicides : l'expérience d’autres agriculteurs,string,
+PKGC2014,PHYTOGC2014,RAISHPILOT,Raisonnement herbicides : vos propres outils de pilotage,string,
+PKGC2014,PHYTOGC2014,RAISAHAB,Raisonnement hors herbicides : vos pratiques historiques et habituelles,string,
+PKGC2014,PHYTOGC2014,RAISAOBS,Raisonnement hors herbicides : vos observations sur la parcelle en cours de culture,string,
+PKGC2014,PHYTOGC2014,RAISACOMPT,"Raisonnement hors herbicides : vos comptages (ravageurs, auxiliaires, fréquence symptômes, pression adventices...)",string,
+PKGC2014,PHYTOGC2014,RAISAMETEO,Raisonnement hors herbicides : les prévisions météorologiques et le niveau des précipitations,string,
+PKGC2014,PHYTOGC2014,RAISABSV,Raisonnement hors herbicides : les bulletins de santé du végétal BSV,string,
+PKGC2014,PHYTOGC2014,RAISABPPC,Raisonnement hors herbicides : les bulletins de préconisation phyto certifiés,string,
+PKGC2014,PHYTOGC2014,RAISAFOURN,Raisonnement hors herbicides : les conseils des fournisseurs,string,
+PKGC2014,PHYTOGC2014,RAISAINDEP,Raisonnement hors herbicides : les recommandations d’organismes indépendants de la vente,string,
+PKGC2014,PHYTOGC2014,RAISAEXP,Raisonnement hors herbicides : l'expérience d’autres agriculteurs,string,
+PKGC2014,PHYTOGC2014,RAISAPILOT,Raisonnement hors herbicides : vos propres outils de pilotage,string,
 PKGC2014,PHYTOGC2014,RAISH,Raisonnement prioritaire herbicides,string,PHYTOGC2014__RAISH
 PKGC2014,PHYTOGC2014,RAISA,Raisonnement prioritaire hors herbicides,string,PHYTOGC2014__RAISA
-PKGC2014,PHYTOGC2014,REDUCROTATION,Réduction des phytosanitaires par l'allongement des rotations,string,PHYTOGC2014__REDUCROTATION
-PKGC2014,PHYTOGC2014,REDUCTRAV,"Réduction des phytosanitaires par travail du sol, broyage des résidus, faux semis, gestion des repousses...",string,PHYTOGC2014__REDUCTRAV
-PKGC2014,PHYTOGC2014,REDUCDATSEM,Réduction des phytosanitaires par le décalage des dates de semis,string,PHYTOGC2014__REDUCDATSEM
-PKGC2014,PHYTOGC2014,REDUCDENSITE,"Réduction des phytosanitaires par ajustement de la densité de semis, de l'écartement entre les rangs",string,PHYTOGC2014__REDUCDENSITE
-PKGC2014,PHYTOGC2014,REDUCVARIET,Réduction des phytosanitaires par le choix variétal,string,PHYTOGC2014__REDUCVARIET
-PKGC2014,PHYTOGC2014,REDUCPREDA,Réduction des phytosanitaires par ajout direct d'auxiliaires prédateurs,string,PHYTOGC2014__REDUCPREDA
-PKGC2014,PHYTOGC2014,REDUCHABITAT,"Réduction des phytosanitaires par aménagement d'habitat (haies, bandes enherbées...) ou apport alimentaire pour les auxiliaires prédateurs",string,PHYTOGC2014__REDUCHABITAT
-PKGC2014,PHYTOGC2014,REDUCMELANG,Réduction des phytosanitaires par les mélanges de cultures,string,PHYTOGC2014__REDUCMELANG
-PKGC2014,PHYTOGC2014,REDUCDOSE,Réduction des phytosanitaires par ajustement à la baisse des doses,float64,PHYTOGC2014__REDUCDOSE
-PKGC2014,PHYTOGC2014,REDUCAUT,Réduction des phytosanitaires par d'autres moyens,string,PHYTOGC2014__REDUCAUT
+PKGC2014,PHYTOGC2014,REDUCROTATION,Réduction des phytosanitaires par l'allongement des rotations,string,
+PKGC2014,PHYTOGC2014,REDUCTRAV,"Réduction des phytosanitaires par travail du sol, broyage des résidus, faux semis, gestion des repousses...",string,
+PKGC2014,PHYTOGC2014,REDUCDATSEM,Réduction des phytosanitaires par le décalage des dates de semis,string,
+PKGC2014,PHYTOGC2014,REDUCDENSITE,"Réduction des phytosanitaires par ajustement de la densité de semis, de l'écartement entre les rangs",string,
+PKGC2014,PHYTOGC2014,REDUCVARIET,Réduction des phytosanitaires par le choix variétal,string,
+PKGC2014,PHYTOGC2014,REDUCPREDA,Réduction des phytosanitaires par ajout direct d'auxiliaires prédateurs,string,
+PKGC2014,PHYTOGC2014,REDUCHABITAT,"Réduction des phytosanitaires par aménagement d'habitat (haies, bandes enherbées...) ou apport alimentaire pour les auxiliaires prédateurs",string,
+PKGC2014,PHYTOGC2014,REDUCMELANG,Réduction des phytosanitaires par les mélanges de cultures,string,
+PKGC2014,PHYTOGC2014,REDUCDOSE,Réduction des phytosanitaires par ajustement à la baisse des doses,float64,
+PKGC2014,PHYTOGC2014,REDUCAUT,Réduction des phytosanitaires par d'autres moyens,string,
 PKGC2014,PHYTOGC2014,LIBREDUCAUT,Libellé Réduction des phytosanitaires par d'autres moyens,string,
-PKGC2014,PHYTOGC2014,REDUCAUCUNE,Aucune pratique de réduction des phytosanitaires,string,PHYTOGC2014__REDUCAUCUNE
-PKGC2014,PHYTOGC2014,INFOGEN,Pratique réduction des phytosanitaires : formation générale,string,PHYTOGC2014__INFOGEN
-PKGC2014,PHYTOGC2014,INFOFOURN,Pratique réduction des phytosanitaires : conseils fournisseurs,string,PHYTOGC2014__INFOFOURN
-PKGC2014,PHYTOGC2014,INFOINDEP,Pratique réduction des phytosanitaires : conseils  techniciens indépendants,string,PHYTOGC2014__INFOINDEP
-PKGC2014,PHYTOGC2014,INFOIBSV,Pratique réduction des phytosanitaires : consultation BSV,string,PHYTOGC2014__INFOIBSV
-PKGC2014,PHYTOGC2014,INFOCERTIPHYTO,Pratique réduction des phytosanitaires : suivi formation certiphyto,string,PHYTOGC2014__INFOCERTIPHYTO
-PKGC2014,PHYTOGC2014,INFOECOPHYTOPIC,Pratique réduction des phytosanitaires : consultation portail écophytoPIC,string,PHYTOGC2014__INFOECOPHYTOPIC
-PKGC2014,PHYTOGC2014,INFODEPHY,Pratique réduction des phytosanitaires : visite ferme DEPHY,string,PHYTOGC2014__INFODEPHY
-PKGC2014,PHYTOGC2014,INFOAUT,Pratique réduction des phytosanitaires : autre,string,PHYTOGC2014__INFOAUT
+PKGC2014,PHYTOGC2014,REDUCAUCUNE,Aucune pratique de réduction des phytosanitaires,string,
+PKGC2014,PHYTOGC2014,INFOGEN,Pratique réduction des phytosanitaires : formation générale,string,
+PKGC2014,PHYTOGC2014,INFOFOURN,Pratique réduction des phytosanitaires : conseils fournisseurs,string,
+PKGC2014,PHYTOGC2014,INFOINDEP,Pratique réduction des phytosanitaires : conseils  techniciens indépendants,string,
+PKGC2014,PHYTOGC2014,INFOIBSV,Pratique réduction des phytosanitaires : consultation BSV,string,
+PKGC2014,PHYTOGC2014,INFOCERTIPHYTO,Pratique réduction des phytosanitaires : suivi formation certiphyto,string,
+PKGC2014,PHYTOGC2014,INFOECOPHYTOPIC,Pratique réduction des phytosanitaires : consultation portail écophytoPIC,string,
+PKGC2014,PHYTOGC2014,INFODEPHY,Pratique réduction des phytosanitaires : visite ferme DEPHY,string,
+PKGC2014,PHYTOGC2014,INFOAUT,Pratique réduction des phytosanitaires : autre,string,
 PKGC2014,PHYTOGC2014,LIBINFOAUT,Libellé  de l'autre pratique réduction des phytosanitaires,string,
-PKGC2014,PHYTOGC2014,RAISONSANTE,Raison réduction des phytosanitaires : santé,string,PHYTOGC2014__RAISONSANTE
-PKGC2014,PHYTOGC2014,RAISONEAUX,Raison réduction des phytosanitaires : contamination eaux,string,PHYTOGC2014__RAISONEAUX
-PKGC2014,PHYTOGC2014,RAISONCOUT,Raison réduction des phytosanitaires : coûts de production,string,PHYTOGC2014__RAISONCOUT
-PKGC2014,PHYTOGC2014,RAISONAUT,Raison réduction des phytosanitaires : autre,string,PHYTOGC2014__RAISONAUT
+PKGC2014,PHYTOGC2014,RAISONSANTE,Raison réduction des phytosanitaires : santé,string,
+PKGC2014,PHYTOGC2014,RAISONEAUX,Raison réduction des phytosanitaires : contamination eaux,string,
+PKGC2014,PHYTOGC2014,RAISONCOUT,Raison réduction des phytosanitaires : coûts de production,string,
+PKGC2014,PHYTOGC2014,RAISONAUT,Raison réduction des phytosanitaires : autre,string,
 PKGC2014,PHYTOGC2014,LIBRAISONAUT,Libellé  de l'autre raison réduction des phytosanitaires,string,
 PKGC2014,PHYTOGC2014,PROPPULV,Propriété du pulvérisateur,string,PHYTOGC2014__PROPPULV
 PKGC2014,PHYTOGC2014,PROTECT,Protection à l'application : équipement individuel,string,PHYTOGC2014__PROTECT
@@ -407,6 +407,8 @@ PKGC2014,PHYTOGC2014,IFTTOTHERB0SEM,IFT Hors herbicide avec traitement de semenc
 PKGC2014,PHYTOGC2014,IFTTOTSEM0,IFT Total sans traitement semences,string,
 PKGC2014,PHYTOGC2014,IFTTOTBIO,IFT Total Biocontrôle,string,
 PKGC2014,PHYTOGC2014,IFTTOTSEM,IFT Total avec traitement semences,string,
+PKfruits2015,20210630_PKFruits15_AMM_SA,AMM,numéro d'autorisation de mise sur le marché du produit phytosanitaire,string,
+PKfruits2015,20210630_PKFruits15_AMM_SA,CONCENTRATION,Concentration de la substance active (BNVD),string,
 RA2020,PBS_OTEX_COMMUNALES,SIEGE_CODE_COM,Code commune,string,
 RA2020,PBS_OTEX_COMMUNALES,pb01,Production brute de la commune pour :  Blé tendre et épeautre,string,
 RA2020,PBS_OTEX_COMMUNALES,pb02,Production brute de la commune pour :  Blé dur,string,
@@ -921,6 +923,8 @@ PKGC2014,MATACT_PHYTOGC2014,SUPP,Superficie de la parcelle,float64,
 PKGC2014,MATACT_PHYTOGC2014,NOM_SUBSTANCE,Nom de la substance active,string,
 PKGC2014,MATACT_PHYTOGC2014,QDOSEMATSURF,Quantité de substance active en g/ha en tenant compte du pourcentage de parcelle traitée (par parcelle),float64,
 PKGC2014,MATACT_PHYTOGC2014,NBPASMATACT,Nombre de traitements utilisant la substance active par parcelle,float64,
+PKfruits2015,20210631_PKFruits15_MATACT,HERBICIDE,Indicatrice d'utilisation de la matière active dans au moins un traitement herbicide.,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto & 20210630_PKFruits15_MATACT & 20180511_PKFruits2015_FERTILISATION & 20210706_PKFruits2015_definitif,REG,,string,
 PKPrairie2011,exploit_pkgc2011,Identifiant_exploit,Numéro unique pour la table EXPLOIT,string,
 PKPrairie2011,exploit_pkgc2011,Identifiantdossier,Numéro d'identifiant,string,
 PKPrairie2011,exploit_pkgc2011,ESPECE,Culture enquêtée,string,exploit_pkgc2011__ESPECE
@@ -1047,7 +1051,7 @@ PKGC2014,PHYTOS_PHYTOGC2014,PHYTORDR,"Traitements phytosanitaires sur la parcell
 PKGC2014,PHYTOS_PHYTOGC2014,PHYTOPAS,Traitements phytosanitaires sur la parcelle : numéro de passage,string,
 PKGC2014,PHYTOS_PHYTOGC2014,PHYTODAT,Traitements phytosanitaires sur la parcelle : date d’apport,string,
 PKGC2014,PHYTOS_PHYTOGC2014,PHYTOSTAD,"Traitements phytosanitaires, stade cultural de l'espèce enquêtée",string,
-PKGC2014,PHYTOS_PHYTOGC2014,PHYTOAUTCULT,Traitements phytosanitaires ne concernant pas culture enquêtée,string,PHYTOS_PHYTOGC2014__PHYTOAUTCULT
+PKGC2014,PHYTOS_PHYTOGC2014,PHYTOAUTCULT,Traitements phytosanitaires ne concernant pas culture enquêtée,string,
 PKGC2014,PHYTOS_PHYTOGC2014,PHYTONAT,"Traitements phytosanitaires sur la parcelle de cannes à sucre, nature du traitement",string,PHYTOS_PHYTOGC2014__PHYTONAT
 PKGC2014,PHYTOS_PHYTOGC2014,PHYTOMOD,"Traitements phytosanitaires, mode de traitement",string,PHYTOS_PHYTOGC2014__PHYTOMOD
 PKGC2014,PHYTOS_PHYTOGC2014,POURTRAIT,"Traitements phytosanitaires, proportion de la parcelle traitée en %",string,
@@ -1058,46 +1062,46 @@ PKGC2014,PHYTOS_PHYTOGC2014,PHYTOBOUIL,"Traitements phytosanitaires, quantité d
 PKGC2014,PHYTOS_PHYTOGC2014,PHYTOPROD,"Traitements phytosanitaires, code du produit commercial : numéro AMM (pouvant avoir plusieurs libellés)",string,
 PKGC2014,PHYTOS_PHYTOGC2014,PHYTOLIB,"Traitements phytosanitaires, libellé du produit commercial",string,
 PKGC2014,PHYTOS_PHYTOGC2014,PHYTOLIBAUTRE,Traitements phytosanitaires : libellé de l'autre cible,string,
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBHERB,"Traitements phytosanitaires, cible herbicide",string,PHYTOS_PHYTOGC2014__PHYCIBHERB
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMALAD,"Traitements phytosanitaires, cible fongicide",string,PHYTOS_PHYTOGC2014__PHYCIBMALAD
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBINSAC,"Traitements phytosanitaires, cible insecticides et acaricides",string,PHYTOS_PHYTOGC2014__PHYCIBINSAC
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBCOU,"Traitements phytosanitaires, cible : destruction du couvert",string,PHYTOS_PHYTOGC2014__PHYCIBCOU
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPREC,Traitements phytosanitaires : destruction du précédent prairie,string,PHYTOS_PHYTOGC2014__PHYCIBPREC
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBREP,Traitements phytosanitaires : destruction repousses du précédent,string,PHYTOS_PHYTOGC2014__PHYCIBREP
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBADV,"Traitements phytosanitaires, cible : adventices",string,PHYTOS_PHYTOGC2014__PHYCIBADV
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBDEF,"Traitements phytosanitaires, cible : défanants",string,PHYTOS_PHYTOGC2014__PHYCIBDEF
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBOID,"Traitements phytosanitaires, cible, maladies : Oïdium",string,PHYTOS_PHYTOGC2014__PHYCIBOID
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBROU,"Traitements phytosanitaires, cible, maladies : Rouilles",string,PHYTOS_PHYTOGC2014__PHYCIBROU
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPIE,"Traitements phytosanitaires, cible, maladies : Piétin verse",string,PHYTOS_PHYTOGC2014__PHYCIBPIE
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBSEP,"Traitements phytosanitaires, cible, maladies : Septoriose",string,PHYTOS_PHYTOGC2014__PHYCIBSEP
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBFUS,"Traitements phytosanitaires, cible, maladies : Fusariose",string,PHYTOS_PHYTOGC2014__PHYCIBFUS
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBRHY,"Traitements phytosanitaires, cible, maladies : Rhynchosporiose",string,PHYTOS_PHYTOGC2014__PHYCIBRHY
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBHEL,"Traitements phytosanitaires, cible, maladies : Helminthosporiose",string,PHYTOS_PHYTOGC2014__PHYCIBHEL
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBANT,"Traitements phytosanitaires, cible, maladies : Anthracnose",string,PHYTOS_PHYTOGC2014__PHYCIBANT
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMDF,"Traitements phytosanitaires, cible : maladies du feuillage",string,PHYTOS_PHYTOGC2014__PHYCIBMDF
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMIL,"Traitements phytosanitaires, cible, maladies : Mildiou",string,PHYTOS_PHYTOGC2014__PHYCIBMIL
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBAMA,"Traitements phytosanitaires, cible : autres maladies",string,PHYTOS_PHYTOGC2014__PHYCIBAMA
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMAL,"Traitements phytosanitaires, cible : maladies",string,PHYTOS_PHYTOGC2014__PHYCIBMAL
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPUC,"Traitements phytosanitaires, cible, insectes et acariens : Pucerons",string,PHYTOS_PHYTOGC2014__PHYCIBPUC
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMEL,"Traitements phytosanitaires, cible, insectes et acariens : Méligèthes",string,PHYTOS_PHYTOGC2014__PHYCIBMEL
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBCHA,"Traitements phytosanitaires, cible, insectes et acariens : Charançons",string,PHYTOS_PHYTOGC2014__PHYCIBCHA
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBALT,"Traitements phytosanitaires, cible : Altises (petites et grosses)",string,PHYTOS_PHYTOGC2014__PHYCIBALT
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBTOR,"Traitements phytosanitaires, cible, insectes et acariens : Tordeuses, Bruches",string,PHYTOS_PHYTOGC2014__PHYCIBTOR
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBSIT,"Traitements phytosanitaires, cible,  insectes et acariens : Sitones, Thrips",string,PHYTOS_PHYTOGC2014__PHYCIBSIT
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPYR,"Traitements phytosanitaires, cible, insectes et acariens : Pyrale",string,PHYTOS_PHYTOGC2014__PHYCIBPYR
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBSES,"Traitements phytosanitaires, cible, insectes et acariens  : Sésamie",string,PHYTOS_PHYTOGC2014__PHYCIBSES
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBDOR,"Traitements phytosanitaires, cible, insectes et acariens : Doryphore",string,PHYTOS_PHYTOGC2014__PHYCIBDOR
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBVER,"Traitements phytosanitaires, cible, insectes et acariens : Vers blancs",string,PHYTOS_PHYTOGC2014__PHYCIBVER
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBAIA,"Traitements phytosanitaires, cible : Autres insectes et acariens",string,PHYTOS_PHYTOGC2014__PHYCIBAIA
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBRON,"Traitements phytosanitaires, cible : Rongeurs",string,PHYTOS_PHYTOGC2014__PHYCIBRON
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBLIM,"Traitements phytosanitaires, cible : Limaces",string,PHYTOS_PHYTOGC2014__PHYCIBLIM
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBREG,"Traitements phytosanitaires, cible : Régulation de croissance",string,PHYTOS_PHYTOGC2014__PHYCIBREG
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBADJ,"Traitements phytosanitaires, cible : Adjuvants",string,PHYTOS_PHYTOGC2014__PHYCIBADJ
-PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBAUT,"Traitements phytosanitaires, cible : Autres",string,PHYTOS_PHYTOGC2014__PHYCIBAUT
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBHERB,"Traitements phytosanitaires, cible herbicide",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMALAD,"Traitements phytosanitaires, cible fongicide",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBINSAC,"Traitements phytosanitaires, cible insecticides et acaricides",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBCOU,"Traitements phytosanitaires, cible : destruction du couvert",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPREC,Traitements phytosanitaires : destruction du précédent prairie,string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBREP,Traitements phytosanitaires : destruction repousses du précédent,string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBADV,"Traitements phytosanitaires, cible : adventices",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBDEF,"Traitements phytosanitaires, cible : défanants",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBOID,"Traitements phytosanitaires, cible, maladies : Oïdium",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBROU,"Traitements phytosanitaires, cible, maladies : Rouilles",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPIE,"Traitements phytosanitaires, cible, maladies : Piétin verse",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBSEP,"Traitements phytosanitaires, cible, maladies : Septoriose",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBFUS,"Traitements phytosanitaires, cible, maladies : Fusariose",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBRHY,"Traitements phytosanitaires, cible, maladies : Rhynchosporiose",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBHEL,"Traitements phytosanitaires, cible, maladies : Helminthosporiose",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBANT,"Traitements phytosanitaires, cible, maladies : Anthracnose",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMDF,"Traitements phytosanitaires, cible : maladies du feuillage",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMIL,"Traitements phytosanitaires, cible, maladies : Mildiou",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBAMA,"Traitements phytosanitaires, cible : autres maladies",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMAL,"Traitements phytosanitaires, cible : maladies",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPUC,"Traitements phytosanitaires, cible, insectes et acariens : Pucerons",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBMEL,"Traitements phytosanitaires, cible, insectes et acariens : Méligèthes",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBCHA,"Traitements phytosanitaires, cible, insectes et acariens : Charançons",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBALT,"Traitements phytosanitaires, cible : Altises (petites et grosses)",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBTOR,"Traitements phytosanitaires, cible, insectes et acariens : Tordeuses, Bruches",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBSIT,"Traitements phytosanitaires, cible,  insectes et acariens : Sitones, Thrips",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBPYR,"Traitements phytosanitaires, cible, insectes et acariens : Pyrale",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBSES,"Traitements phytosanitaires, cible, insectes et acariens  : Sésamie",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBDOR,"Traitements phytosanitaires, cible, insectes et acariens : Doryphore",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBVER,"Traitements phytosanitaires, cible, insectes et acariens : Vers blancs",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBAIA,"Traitements phytosanitaires, cible : Autres insectes et acariens",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBRON,"Traitements phytosanitaires, cible : Rongeurs",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBLIM,"Traitements phytosanitaires, cible : Limaces",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBREG,"Traitements phytosanitaires, cible : Régulation de croissance",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBADJ,"Traitements phytosanitaires, cible : Adjuvants",string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHYCIBAUT,"Traitements phytosanitaires, cible : Autres",string,
 PKGC2014,PHYTOS_PHYTOGC2014,DR,Dose de référence,string,
 PKGC2014,PHYTOS_PHYTOGC2014,UNITE_DR,Unité de la dose de référence,string,
-PKGC2014,PHYTOS_PHYTOGC2014,Biocontrole_2015,Indicatrice produit de biocontrôle,string,PHYTOS_PHYTOGC2014__Biocontrole_2015
-PKGC2014,PHYTOS_PHYTOGC2014,PHERO,Indicatrice produit de confusion sexuelle,string,PHYTOS_PHYTOGC2014__PHERO
+PKGC2014,PHYTOS_PHYTOGC2014,Biocontrole_2015,Indicatrice produit de biocontrôle,string,
+PKGC2014,PHYTOS_PHYTOGC2014,PHERO,Indicatrice produit de confusion sexuelle,string,
 PKGC2014,PHYTOS_PHYTOGC2014,Segmentation_IFT,Catégorie d'usage,string,
 PKGC2014,PHYTOS_PHYTOGC2014,IFT_TRAIT,IFT traitement,string,
 PKGC2014,PHYTOS_PHYTOGC2014,Redressement,Type de redressement de l'IFT traitement par la moyenne des IFT traitement de même catégorie d'usage sur la région,string,
@@ -1270,6 +1274,12 @@ RA2020,PPAM,PPAM350,Autres plantes médicinales,float64,
 RA2020,PPAM,SAU_11234300,"plantes à parfum, aromatiques, médicinales en plein air ou sous abri bas",float64,
 RA2020,PPAM,SAU_11234400,"plantes à parfum, aromatiques, médicinales sous serre ou abri haut",float64,
 RA2020,PPAM,IMPUT_NR_TOT,Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés),float64,
+PKfruits2015,20210630_PKFruits15_MATACT,AUTRE,"Indicatrice d'utilisation de la matière active dans au moins un traitement autre que fongicide, insecticide ou herbicide.",string,
+PKfruits2015,20210630_PKFruits15_MATACT,CIBLE_SA,Segment de la substance active selon la classification Eurostat,string,
+PKfruits2015,20210630_PKFruits15_MATACT,LIB_ESPECE,Espece,string,
+PKfruits2015,20210630_PKFruits15_MATACT,FONGICIDE,Indicatrice d'utilisation de la matière active dans au moins un traitement fongicide.,string,
+PKfruits2015,20210630_PKFruits15_MATACT,QDOSEMATSURF,Quantité de la matière active par hectare sur la parcelle,float64,
+PKfruits2015,20210630_PKFruits15_MATACT,REGION,région,string,
 RA2020,LEGUMES,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,LEGUMES,TYPE_QUESTIONNAIRE,Type de questionnaire,string,
 RA2020,LEGUMES,LEGCODE,Codes légumes,float64,
@@ -1363,6 +1373,8 @@ FIDELI2020,fideli_adresses_hors_th22,id_scat1,Identifiant de la communauté,stri
 FIDELI2020,fideli_adresses_hors_th22,id_scat2,Identifiant de la deuxième communauté,string,fideli_adresses_hors_th22__id_scat2
 FIDELI2020,fideli_adresses_hors_th22,nature,"Nature de l'adresse hors taxe d'habitation, n'étant pas une communauté connue au répertoire des communautés",string,fideli_adresses_hors_th22__nature
 FIDELI2020,fideli_adresses_hors_th22,carac_adr,Nature de l'adresse hors taxe d'habitation,string,fideli_adresses_hors_th22__carac_adr
+PKfruits2015,20210630_PKFruits15_AMM_SA & 20210630_PKFruits15_MATACT,unite_concentration,Unité de la Concentration de la substance active (BNVD),string,
+PKfruits2015,20210630_PKFruits15_AMM_SA & 20210630_PKFruits15_MATACT,NOM_SUBSTANCE,Nom de la substance active,string,
 PKPrairie2011,mecanic_pkgc2011_prairies,Identifiant_MECANIC,Numéro unique pour la table MECANIC,string,
 PKPrairie2011,mecanic_pkgc2011_prairies,Identifiantdossier,Numéro d'identifiant,string,
 PKPrairie2011,mecanic_pkgc2011_prairies,ESPECE,Culture enquêtée,string,mecanic_pkgc2011_prairies__ESPECE
@@ -2099,6 +2111,8 @@ PHYTOVITI2016,MECA_PHYTOVITI2016,ICDECA,Passage sous le rang : décavaillonneuse
 PHYTOVITI2016,MECA_PHYTOVITI2016,ICAUTR,Passage sous le rang : autres appareils (dont thermique),string,
 PHYTOVITI2016,MECA_PHYTOVITI2016,DESINTRANG,Passage d’appareil sur inter-rang,string,MECA_PHYTOVITI2016__DESINTRANG
 PHYTOVITI2016,MECA_PHYTOVITI2016,DESINTCEP,Passage d’appareil sous le rang,string,MECA_PHYTOVITI2016__DESINTCEP
+PKfruits2015,20210706_PKFruits2015_definitif & 20210630_PKFruits2015_MATACT,COEF_EXP,coefficient à utiliser au niveau exploitation,float64,
+PKfruits2015,20210706_PKFruits2015_definitif & 20210630_PKFruits2015_MATACT,COEF_LOT,coefficient à utiliser au niveau du lot,float64,
 RA2020,COEFS_PBS17,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,COEFS_PBS17,pb01,Production brute de l'exploitation pour :  Blé tendre et épeautre,float64,
 RA2020,COEFS_PBS17,pb02,Production brute de l'exploitation pour :  Blé dur,float64,
@@ -2215,6 +2229,616 @@ PHYTOVITI2016,MATACT_PHYTOVITI2016,NBPASMATACT,Nombre de traitements effectués 
 PHYTOVITI2016,MATACT_PHYTOVITI2016,CIBLE,Cible détaillée,string,
 PHYTOVITI2016,MATACT_PHYTOVITI2016,CIBLEAGREG,Cible agrégée,string,
 PHYTOVITI2016,MATACT_PHYTOVITI2016,FAMILLESA,Famille chimique de la substance active,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NOM_DOSSIER,Identifiant du questionnaire,string,
+PKfruits2015,20210706_PKFruits2015_definitif,REG_AFF,REG_AFF,string,
+PKfruits2015,20210706_PKFruits2015_definitif,BALSA,Identifiant Balsa,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ESPECE,0.1 Culture enquêtée,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AALGUE,2.3 présence ou non Activateurs bio-stimulants ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ABANDON_BC,Abandon en cours d'entretien,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ABORE,2.3 présence ou non Bore,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ACALC,2.3 présence ou non Chaux vive calcium,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ACCEPT,Acceptation du questionnaire calculé en fin enquête,string,20210706_PKFruits2015_definitif__ACCEPT
+PKfruits2015,20210706_PKFruits2015_definitif,ACCEPT_QUEST,Résultat contact,string,20210706_PKFruits2015_definitif__ACCEPT_QUEST
+PKfruits2015,20210706_PKFruits2015_definitif,ACTIVPRINC,0.84 DOM Activité principale de l'exploitation,string,20210706_PKFruits2015_definitif__ACTIVPRINC
+PKfruits2015,20210706_PKFruits2015_definitif,ACTIVSEC,0.841 DOM Activité secondaire de l'exploitation,string,20210706_PKFruits2015_definitif__ACTIVSEC
+PKfruits2015,20210706_PKFruits2015_definitif,ACUIVRE,2.3 présence ou non Cuivre,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AFER,2.3 présence ou non Fer,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AGEPULV,6.3 Age du pulvérisateur (nombre d'années),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,AJUSTDOSE,5.4 DOM Ajustement dose en fonction pression parasitaire ou développement végétatif,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ALGUE,2.108  Activateurs bio-stimulants ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,AMAGNE,2.3 présence ou non Magnésie/magnésium,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AMANGA,2.3 présence ou non Manganèse,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AMOLYB,2.3 présence ou non Molybdène,string,
+PKfruits2015,20210706_PKFruits2015_definitif,APFER,2.102 Fer ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,APPHYTO,4.1 Y-a-t-il eu au moins un passage de pulvérisation sur le lot ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ASIRRILOT,"1.24 En cas d'aspersion, l'irrigation se fait",string,20210706_PKFruits2015_definitif__ASIRRILOT
+PKfruits2015,20210706_PKFruits2015_definitif,ASOUFRE,2.3 présence ou non Soufre,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AUTBAN,1.6 DOM Nature du précédent ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AUTCOMP,2.203 Nb apports sur la campagne  Autres composts,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,AUTMECIR,3.7 Nb passages ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,AUTMECSR,3.7 Nb passages ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,AUTNONCOMP,2.210 Nb apports sur la campagne Autre fumure non compostée (y c. tourteaux de ricin),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,AUTREDPP,5.4 DOM Autres pratiques pour réduire l utilisation des produits phytosanitaires,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AZINC,2.3 présence ou non Zinc,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AZOTE_FERTIRRIGATION,quantite d'azote apportee en fertirrigation en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,AZOTE_SOL,quantite d'azote apportee au sol en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,BAGAS,2.204 DOM Nb apports Bagasse (résidus de canne à sucre),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,BORE,2.103 Bore  ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,BOUES,2.209 Nb apports sur la campagne Boues de stations d'épuration,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,BUSEAD,6.8 Le pulvérisateur est-il équipé de buses anti-dérive homologuées ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,BUSEAG,6.9 Le pulvérisateur est-il équipé de buses anti-gouttes ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CABINE,6.13 Disposez-vous d'une cabine sur le tracteur ou le pulvérisateur?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CAHIERBIO,1.28 Le lot est-il conduit en mode biologique (y compris conversion) ?,string,20210706_PKFruits2015_definitif__CAHIERBIO
+PKfruits2015,20210706_PKFruits2015_definitif,CAHIERPHYTO,1.29 Existence d'un cahier des charges de réduction des phytosanitaires hors MAE,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CALCIUM_FERTIRRIGATION,quantite de calcium apportee en fertirrigation en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,CALCIUM_SOL,quantite de calcium apportee au sol en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,CAMASO5,2.109 Méso-éléments( calcium magnesium soufre) ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,CENDRE,2.211 DOM Nb apports Cendres,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,CERTIPHYTO,5.1 Suivi formation pour obtention certiphyto ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CHAMP,Champ de l'enquête,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CMULCH,3.6 Comme couverture du sol sur le rang utilisez vous du mulch des écorces du paillage ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENT,Présence commentaires,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTAIRE_ADR,Commentaire sur adresses exploitant (REF) et répondant (REP),string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTAIRE_DOSS,Commentaire global sur le contenu du dossier,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTAIRE_FILTRES,Commentaire onglet Filtres,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTCENTRAL,Commentaire gestionnaire Central,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTGEN,Commentaire Généralités,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTPHYTO,Commentaire Phytos,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTPRESSION,Commentaire Pression,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTRAISPULV,Commentaire Raisonnement Pulvérisateur,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTSOL,Commentaire Sol,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTSRISE,Commentaire gestionnaire Srise,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTTABFUMMIN,2.5 ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMENTTABPHYTO,4.2 ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMERPLANTA,1.42 DOM Commercialisation de la production,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPORGA,2.201 Nb apports sur la campagne sur la campagne sur la campagne Compost d origine animale,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTALEBAN,13.21 Banane Réalisation comptages pour Aleurodes,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTCERCOBAN,13.31 Banane Réalisation comptages pour Cercosporiose,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTCHABAN,13.31 Banane Réalisation comptages pour Charançons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTCOLBAN,13.31 Banane Réalisation comptages pour Coléoptères,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTFUSABAN,13.31 Banane Réalisation comptages pour Fusariose,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMCOBAN,13.31 Banane Réalisation comptages pour Maladies de conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTNEMBAN,13.31 Banane Réalisation comptages pour Nématodes,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTRONBAN,13.31 Banane Réalisation comptages pour Rongeurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTTHRBAN,13.31 Banane Réalisation comptages pour Thrips,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPVEG,2.202 Nb apports sur la campagne sur la campagne Compost d origine végétale,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,CUIVRE,2.105 Cuivre ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DATE_NAISSANCE,0.61 Date naissance exploitant (REF),string,
+PKfruits2015,20210706_PKFruits2015_definitif,DATE_NAISSANCE_1,0.61 Ancienne date naissance du REF,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DECGL,0.89 DOM Double rang Largeur du grand interligne en cm,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DECSURA,0.91 DOM Double rang Distance entre les plants sur la ligne en cm,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DEP,0.0 Département de gestion,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DEPCL,0.90 DOM Double rang Largeur du petit interligne en cm,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DEPHY,5.1 Participation fermes Dephy,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DESMECIR,3.7 Nb passages ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DESMECSR,3.7 Nb passages ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DESTAUT,1.8 DOM Destruction de la plantation précédente par un autre mode,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DESTCHIM,1.8 DOM Destruction chimique de la plantation précédente,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DESTHIR,3.7 Nb passages ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DESTHSR,3.7 Nb passages ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DESTINTEMP,1.8 DOM Destruction de la plantation précédente par les intempéries,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DESTMECA,1.8 DOM Destruction mécanique de la plantation précédente,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECKG1,4.32 Quantité de produit commercial utilise produit 1,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECKG2,4.32 Quantité de produit commercial utilise  produit 2,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECKG3,4.32 Quantité de produit commercial utilise produit 3,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECKG4,4.32 Quantité de produit commercial utilise  produit 4,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECKG5,4.32 Dose de produit commercial utilise  (kg)produit 5,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECL1,4.32 Dose de produit commercial utilise produit 1,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECL2,4.32 Dose de produit commercial utilise produit 2,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECL3,4.32 Dose de produit commercial utilise produit 3,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECL4,4.32 Dose de produit commercial utilise produit 4,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DOSEPOSTRECL5,4.32 Dose de produit commercial utilise produit 5,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DRAINP,1.22 Le lot est-il drainé (drains fonctionnels) ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DUREEPREC,1.7 DOM Durée du précédent,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DUREEQUEST,Durée de l'entretien (minutes)  + Durée de la saisie hors entretien (minutes),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,EAEPHYTO,1.29 Existence engagement agri-environnemental rémunéré (MAE) de réduction des phytosanitaires,string,
+PKfruits2015,20210706_PKFruits2015_definitif,EAU,1.21 Y a-t-il  un  cours d'eau adjacent au (ou sur) lot ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ECOPHYTOPIC,5.1 Consultation portail écophytoPIC ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ECORCES,2.205 Nb apports sur la campagne Ecorces de feuillus et/ou résineux,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,EFFEU,3.92 DOM Nb passages réalisés sur le lot pour l'effeuillage,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,ENGAIN,5.4 DOM Engainage precoce,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ENHERBGIR,3.22 DOM Double rang/Nature de l'enherbement sur le grand inter rang,string,20210706_PKFruits2015_definitif__ENHERBGIR
+PKfruits2015,20210706_PKFruits2015_definitif,ENHERBPIR,3.23 DOM Double rang/Nature du couvert végétal sur le petit inter rang,string,20210706_PKFruits2015_definitif__ENHERBPIR
+PKfruits2015,20210706_PKFruits2015_definitif,ENHERBSIR,3.21 DOM Simple rang/Nature du couvert végétal sur l inter rang,string,20210706_PKFruits2015_definitif__ENHERBSIR
+PKfruits2015,20210706_PKFruits2015_definitif,ENHERBSRDOM,3.11 DOM Nature du couvert végétal sous (sur) le rang,string,20210706_PKFruits2015_definitif__ENHERBSRDOM
+PKfruits2015,20210706_PKFruits2015_definitif,ENT_DUREE_TOT,Durée entretien totale en minutes,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,EPISTCH,5.4 DOM Epistillage au champ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,EQEPI,6.18 Mettre un équipement de protection individuel (EPI) adapte,string,
+PKfruits2015,20210706_PKFruits2015_definitif,EQGANT,6.18 Porter des gants (imperméables),string,
+PKfruits2015,20210706_PKFruits2015_definitif,EST_PERS_PHYS,Indicatrice du REF personne physique,string,
+PKfruits2015,20210706_PKFruits2015_definitif,FERMBUS,6.6 Fermeture des sorties du  pulvérisateur,string,20210706_PKFruits2015_definitif__FERMBUS
+PKfruits2015,20210706_PKFruits2015_definitif,FERTIMIN,2.4 Apport élément fertilisant minéral ou organo-minéral au sol ou en fertirrigation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,FERTIRRI,1.25 Pratiquez-vous la fertirrigation ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,FOSSE,1.221 DOM Y a-t-il des fossés sur le lot ou en bordure du lot ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,FUMIER,2.207 Nb apports sur la campagne Fumier tous types,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,FUMORG5,2.101 Fumure  organique ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,HNAGE,1.341 DOM Rendement hors norme en raison de l'age de plantation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,HNAUT,1.341 DOM Rendement hors norme pour d'autres raisons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,HNNAT,1.341 DOM Rendement hors norme en raison de la nature du sol,string,
+PKfruits2015,20210706_PKFruits2015_definitif,INFDEPHY,5.1 Connaissance réseau fermes DEPHY ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,INTEMP,1.35 Le lot a-t-il subi durant la campagne des aléas exceptionnels ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,INTEMPCLIM,1.36 Aléas climatiques,string,
+PKfruits2015,20210706_PKFruits2015_definitif,INTEMPIED,1.361 DOM % de pieds atteints ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,INTEMPSAN,1.36 Aléas sanitaires,string,
+PKfruits2015,20210706_PKFruits2015_definitif,IRRIASP,1.23 Mode irrigation ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,IRRIGOU,1.23 Mode irrigation ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,IRRIGRA,1.23 Mode irrigation ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,IRRILOT,1.23 Le lot est-il irrigué ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,IRRIMIC,1.23 Mode irrigation ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,JACHERE,5.4 DOM utilisation Jachere pour reduire utilisation produits phytos,string,
+PKfruits2015,20210706_PKFruits2015_definitif,JACPRECNU,1.6 DOM Nature du précédent ,string,20210706_PKFruits2015_definitif__JACPRECNU
+PKfruits2015,20210706_PKFruits2015_definitif,JACPRECPL,1.6 DOM Nature du précédent ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LARGENHERBGIR,3.52 Double rang grand inter rang Quelle est la largeur de la partie enherbée en cm ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,LARGENHERBPIR,3.53 Double rang petit inter rang Quelle est la largeur de la partie enherbée en cm ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,LARGENHERBSR,3.51  Simple rang Quelle est la largeur de la partie enherbée en cm ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,LIBP0STREC1,4.32 libelle produit commercial post recolte 1,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LIBP0STREC2,4.32 libelle produit commercial post recolte 2,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LIBP0STREC3,4.32 libelle produit commercial post recolte 3,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LIBP0STREC4,4.32 libelle produit commercial post recolte 4,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LIBP0STREC5,4.32 libelle produit commercial post recolte 5,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LOTCOMM,LOTCOMM,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LOTSDEP,LOTSDEP,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LVMAIN,6.18 Avant de remonter se laver les mains et si équipement le retirer,string,
+PKfruits2015,20210706_PKFruits2015_definitif,MAGNESIUM_FERTIRRIGATION,quantite de magnesium apportee en fertirrigation en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,MAGNESIUM_SOL,quantite de magnesium apportee au sol en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,MANGA,2.106 Manganèse ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,MINORG5,2.110 Fertilisants minéraux organo-minéraux ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,MOBD,2.107 Molybdène ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,MODPLANT,0.86 DOM Mode de plantation du lot,string,20210706_PKFruits2015_definitif__MODPLANT
+PKfruits2015,20210706_PKFruits2015_definitif,NANPLANLOT,0.85 Nouvelle Année de première feuille,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_AUT,Nombre de traitements Autres (y c rodenticides) issu du tableau PHYTO,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_RONG,Nombre de traitements Rodenticides issu du tableau PHYTO,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBAZ_FERTIRRIGATION,nombre d'apports d'azote en fertirrigation,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBAZ_SOL,nombre d'apports d'azote au sol,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBCA_FERTIRRIGATION,nombre d'apports de calcium en fertirrigation,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBCA_SOL,nombre d'apports de calcium au sol,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_FONG,nombre de traitements fongicides sur le lot,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_HERB,nombre de traitements herbicides sur le lot,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_INS,nombre de traitementsinsecticides-acaricides sur le lot,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,nblignes_FERTIRRIGATION,nbe passages engrais en fertirrigation,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,nblignes_SOL,nbe passages engrais au sol,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBMAG_FERTIRRIGATION,nombre d'apports de magnesium en fertirrigation,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBMAG_SOL,nombre d'apports de magnesium au sol,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBPH_FERTIRRIGATION,nombre d'apports de phosphore en fetrirrigation,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBPH_SOL,nombre d'apports de phosphore au sol,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBPHYTO,4.21 Nombre de traitements phytos saisis,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBPO_FERTIRRIGATION,nombre d'apports de potasse en fertirrigation,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBPO_SOL,nombre d'apports de potasse au sol,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBSO_FERTIRRIGATION,nombre d'apports de soufre en fertirrigation,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NBSO_SOL,nombre d'apports de soufre au sol,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_TOT,Calcul issu du tableau PHYTO hors fertlisation foliaire,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NDENSITELOT,0.85 Nouvelle Densité (calcul capibara),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NSUPLOT,0.85 Nouvelle superficie du lot (en ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NUM_PACAGE,0.85 Nouveaur NÂ° Pacage connu,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NUM_PACAGE_1,Dernier NÂ° Pacage connu,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NUMILOT,0.85 DOM Nouveau NÂ° de l'ilot,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NUMILOT_1,DOM Ancien NÂ° de l'ilot,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSALEBAN,13.21 Banane Réalisation observations pour Aleurodes,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSCERCOBAN,13.21 Banane Réalisation observations pour Cercosporiose,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSCHABAN,13.21 Banane Réalisation observations pour Charançons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSCOLBAN,13.21 Banane Réalisation observations pour Coléoptères,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSFUSABAN,13.21 Banane Réalisation observations pour Fusariose,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMCOBAN,13.21 Banane Réalisation observations pour Maladies de conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSNEMBAN,13.21 Banane Réalisation observations pour Nématodes,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSRONBAN,13.21 Banane Réalisation observations pour Rongeurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSTHRBAN,13.21 Banane Réalisation observations pour Thrips,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OILENT,3.92 DOM Nb passages réalisés sur le lot pour l'oeilletonnage d'entretien,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,oligo_FERTIRRIGATION,nbe passages oligo-elements en fertirrigation,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,oligo_SOL,nbe passages oligo-elements au sol,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,ORIGIPLANT,0.860 DOM Origine des plants à l implantation actuelle,string,20210706_PKFruits2015_definitif__ORIGIPLANT
+PKfruits2015,20210706_PKFruits2015_definitif,PARTPOSTREC1,4.32 Part traitee de la production 2015 de la plantation produit 1,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PARTPOSTREC2,4.32 Part traitee de la production 2015 de la plantation produit 2,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PARTPOSTREC3,4.32 Part traitee de la production 2015 de la plantation produit 3,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PARTPOSTREC4,4.32 Part traitee de la production 2015 de la plantation produit 4,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PARTPOSTREC5,4.32 Part traitee de la production 2015 de la plantation produit 5,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PATVERG,3.8 Faites-vous pÃ¢turer des animaux pour entretenir le verger ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PATVERGDOM,3.8 Faites-vous paturer des animaux pour entretenir la plantation ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PCOMCOURT,1.55 DOM Vente directe frais ou transformé en %,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PCOMLONG,1.56 DOM Autres circuits que la vente directe en %,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PCONDIT,1.57 DOM Part de production conditionnée sur l'exploitation en %,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PERSRESP,0.83 La personne responsable de la conduite du verger est-elle ?,string,20210706_PKFruits2015_definitif__PERSRESP
+PKfruits2015,20210706_PKFruits2015_definitif,PHOSPHORE_FERTIRRIGATION,quantite de phosphore apportee en fertirrigation en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PHOSPHORE_SOL,quantite de phosphore apportee au sol en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PIEDCYC,1.362 DOM Si aléas pourcentage de pieds cyclonés ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PIEDREMP,1.363 DOM Si aléas pourcentage de pieds recourés ou remplacés,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PIEGMAS,5.4 Piégeage massif (pièges bandes pièges  ),string,
+PKfruits2015,20210706_PKFruits2015_definitif,PLABEL,1.58 DOM Part de production commercialisée sous label en %,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PLANTESER,5.4 DOM Utilisation de plantes de service,string,
+PKfruits2015,20210706_PKFruits2015_definitif,POSTRECBUBV,4.31  Traitement post recolte par buse bas volume,string,
+PKfruits2015,20210706_PKFruits2015_definitif,POSTRECBUS,4.31  Traitement post recolte par buses à debit eleve,string,
+PKfruits2015,20210706_PKFruits2015_definitif,POSTRECLAM,4.31  Traitement post recolte par lame,string,
+PKfruits2015,20210706_PKFruits2015_definitif,POSTRECPULV,4.31  Traitement post recolte par pulverisateur,string,
+PKfruits2015,20210706_PKFruits2015_definitif,POSTRECTREMP,4.31  Traitement post recolte par trempage,string,
+PKfruits2015,20210706_PKFruits2015_definitif,POTASSE_FERTIRRIGATION,quantite de potasse apportee en fertirrigation en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,POTASSE_SOL,quantite de potasse apportee au sol en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PRECANA,1.6 DOM Nature du précédent ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRECAUT,1.6 DOM Nature du précédent ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRECCAN,1.6 DOM Nature du précédent ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRECOLT,1.52 DOM Part de production récoltée en %,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,PRECPLF,1.6 DOM Nature du précédent ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PREPBOUTR,6.12 La personne qui prépare la bouillie est-elle la même que celle qui réalise le traitement ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PREPEPI,6.11  équipement de protection individuelle ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSALEBAN,13.11 Banane Niveau parasitaire de ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSCERCOBAN,13.11 Banane Niveau parasitaire de ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSCHABAN,13.11 Banane Niveau parasitaire de  ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSCOLBAN,13.11 Banane Niveau parasitaire de  ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSFUSABAN,13.11 Banane Niveau parasitaire de ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSMCOBAN,13.11 Banane Niveau parasitaire de  ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSNEMBAN,13.11 Banane Niveau parasitaire de ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSRONBAN,13.11 Banane Niveau parasitaire de ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSTHRBAN,13.11 Banane Niveau parasitaire de  ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PROD,0.2 Ce lot est-il toujours en production ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRODREF,0.3 L'exploitation a-t-elle d'autres lots en production de l'espèce enquêtée ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PROPPULV,6.2 Propriété du pulvérisateur,string,20210706_PKFruits2015_definitif__PROPPULV
+PKfruits2015,20210706_PKFruits2015_definitif,QANPLANT,Année de plantation du lot,string,
+PKfruits2015,20210706_PKFruits2015_definitif,QCOM,1.53 DOM Quantité livrée ou commercialisée (hors destruction) en tonnes,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,QRECOLT,1.50 DOM Quantité récoltée en tonnes,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISANAFOL,2.6 Analyse foliaire,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISANATER,2.6 Analyse de terre,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISAUT,2.6 Autre raisonnement,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISAUTARB,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISAVIS,2.6 Avis de techniciens,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISBSV,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISCLIM,2.6 Conditions climatiques,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISCOMPARB,2.6 Comportement des arbres,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISCOUT,2.6 CoÃ»t de la fertilisation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISCRAV,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISFOUR,2.6  Avis de fournisseurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISFOURN,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISFUM,2.6 Apports éléments fertilisants années précédentes,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISHIST,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISIND,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISINDIC,2.6 Autre indicateur ou outil,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISMETEO,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISOBJREND,2.6 Objectif de rendement,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISOBS,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISOUTIL,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRECO,5.2 Réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO01,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO02,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO03,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO04,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO05,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO06,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO07,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO08,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO09,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RAISPRIO10,5.2 Priorité réal Phytos ,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RCOUT,5.5 Réduction coÃ»ts de production,string,
+PKfruits2015,20210706_PKFruits2015_definitif,REATRAITFE,6.16 Masque  à cartouche pour personne réalisant application produits,string,20210706_PKFruits2015_definitif__REATRAITFE
+PKfruits2015,20210706_PKFruits2015_definitif,REATRAITFI,6.17 Précautions particulières en cas de descente sur le lot,string,20210706_PKFruits2015_definitif__REATRAITFI
+PKfruits2015,20210706_PKFruits2015_definitif,REATRAITO,6.15 Equipement de protection individuelle adapté pour personne réalisant application produits,string,20210706_PKFruits2015_definitif__REATRAITO
+PKfruits2015,20210706_PKFruits2015_definitif,REATRPULV,6.01 Qui réalise les traitements par pulvérisateur ?,string,20210706_PKFruits2015_definitif__REATRPULV
+PKfruits2015,20210706_PKFruits2015_definitif,RECOLT,1.31 Une récolte (même partielle) a-t-elle été réalisée ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,REDEFFEU,5.4 DOM Effeuillage,string,
+PKfruits2015,20210706_PKFruits2015_definitif,REDUCDENS,5.4 DOM Réduction de la densité des plants,string,
+PKfruits2015,20210706_PKFruits2015_definitif,REDUTIPP,5.3 Pratiques pour réduire utilisation produits phytosanitaires,string,
+PKfruits2015,20210706_PKFruits2015_definitif,REENTREE,6.19 Connaissance délai de re-entrée approprié pour les produits utilisés sur ce lot,string,
+PKfruits2015,20210706_PKFruits2015_definitif,REENTREEAR,6.20 après réalisation d' un traitement respectez-vous le délai de re-entrée pour vous,string,20210706_PKFruits2015_definitif__REENTREEAR
+PKfruits2015,20210706_PKFruits2015_definitif,REF_SEXE,0.61 Sexe  de l'exploitant (REF),string,
+PKfruits2015,20210706_PKFruits2015_definitif,REF_SEXE_1,0.61 Sexe  de l'exploitant ( REF)  enquête précédente,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RENDB,1.33 Quel a été le rendement du lot ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RENDNORM,1.34 Par rapport au rendement moyen sur ce lot des 5 dernières années ce rendement est,string,20210706_PKFruits2015_definitif__RENDNORM
+PKfruits2015,20210706_PKFruits2015_definitif,RESBAN,1.9 DOM Destination des residus de bananes,string,20210706_PKFruits2015_definitif__RESBAN
+PKfruits2015,20210706_PKFruits2015_definitif,RESVEGET,2.206 Nb apports sur la campagne Résidus végétaux déchets verts,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RGGIRENHERB1,3.42 DOM Double rang Combien de grands  inter-rangs sont-ils enherbés ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RGGIRENHERB2,3.42 DOM Double rang Sur combien de grands inter-rangs ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RGPIRENHERB1,3.43 Double rang Combien de petits  inter-rangs sont-ils enherbés ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RGPIRENHERB2,3.43 Double rang Sur combien de petits inter-rangs ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RGSENHERB1,3.41 Simple rang Combien d inter-rangs sont-ils enherbés ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RGSENHERB2,3.41 Simple rang Sur combien d inter-rangs ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RIMAGE,5.5 Amélioration image de marque de votre production,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ROTCULT,5.4 DOM La rotation de cultures,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ROULIR,3.7 Nb passages ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RRAUT,5.5 Autre raison pour réduction phytos,string,
+PKfruits2015,20210706_PKFruits2015_definitif,RRISQUE,5.5 Réduction risques pour environnement (eau air),string,
+PKfruits2015,20210706_PKFruits2015_definitif,RSAN,5.5 Réduction risques pour votre santé,string,
+PKfruits2015,20210706_PKFruits2015_definitif,SAISIEDUREE,Durée de la saisie hors entretien,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SANSENGPHYTO,1.29 Absence engagement réduction des phytosanitaires,string,
+PKfruits2015,20210706_PKFruits2015_definitif,SAU,0.81 Surface agricole utile ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SAU_1,0.81 Surface agricole utile (issu de Balsa ha),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SECENRA,0.87 DOM Simple rang Distance entre les lignes en cm,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SECSURA,0.88 DOM Simple rang Distance entre les plants sur la ligne en cm,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SOINFRUIT,3.92 DOM Nb passages réalisés sur le lot pour les soins aux fruits (habillage degagement regime),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SORZONE,6.18 Sortir du rang pour sÂ’éloigner de la zone traitée,string,
+PKfruits2015,20210706_PKFruits2015_definitif,SOUFRE_FERTIRRIGATION,quantite de soufre apportee en fertirrigation en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SOUFRE_SOL,quantite de soufre apportee au sol en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,STATUT_JUR,0.61 Statut Juridique de l'exploitant (REF),string,20210706_PKFruits2015_definitif__STATUT_JUR
+PKfruits2015,20210706_PKFruits2015_definitif,STATUT_JUR_1,0.0 Ancien Statut Juridique de l'exploitant (REF),string,20210706_PKFruits2015_definitif__STATUT_JUR_1
+PKfruits2015,20210706_PKFruits2015_definitif,STRATE,Strate,string,
+PKfruits2015,20210706_PKFruits2015_definitif,SUPERFICIE,superficie des lots de l espece enquêtée,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_BANANE,0.82 DOM Surface de bananiers,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_BANANE_1,0.82 DOM Surface de bananiers (issu de Balsa ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TEMPSTRAITHA_corr,Temps de traitement à l ha en mn corrige et redressé,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TONTEIR,3.7 Nb passages ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TONTESR,3.7 Nb passages ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TOTALMESO_FERTIRRIGATION,quantite de meso-elements apportee en fertirrigation en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TOTALCORR_SOL,quantite de (NPK et meso-elements) apportee au sol en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TOTALCORR_FERTIRRIGATION,quantite de (NPK et meso-elements) apportee en fertirrigation en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TOTALMESO_SOL,quantite de meso-elements apportee au sol en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TOTALNPK_FERTIRRIGATION,quantite de NPK apportee en fertirrigation en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TOTALNPK_SOL,quantite de NPK apportee au sol en kg ou l/ha,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TOURBE,2.208 Nb apports sur la campagne Tourbe,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TRAITPOSTREC,4.3 Des traitements post-récolte sont-ils réalisés sur la plantation ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,TRENHERBGIR,3.32 Double rang Tous les grands inter-rangs sont-ils enherbés ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,TRENHERBPIR,3.33 Double rang Tous les petits inter-rangs sont-ils enherbés ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,TRENHERBSR,3.31 DOM Simple rang  Tous les inter-rangs sont-ils enherbés ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,TYPE_CONTACT,Contact  lors de l'enquête,string,20210706_PKFruits2015_definitif__TYPE_CONTACT
+PKfruits2015,20210706_PKFruits2015_definitif,TYPECABINE,6.14 Quel est le type de cabine ?,string,20210706_PKFruits2015_definitif__TYPECABINE
+PKfruits2015,20210706_PKFruits2015_definitif,TYPEPULV,6.4 Type du pulvérisateur,string,20210706_PKFruits2015_definitif__TYPEPULV
+PKfruits2015,20210706_PKFruits2015_definitif,TYPULVERIS,6.5 Type de pulvérisation,string,20210706_PKFruits2015_definitif__TYPULVERIS
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRKG1,4.32 Unité quantité produit 1 utilisé,string,20210706_PKFruits2015_definitif__UNITPRKG1
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRKG2,4.32 Unité quantité produit 2 utilisé,string,20210706_PKFruits2015_definitif__UNITPRKG2
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRKG3,4.32 Unité quantité produit 3 utilisé,string,20210706_PKFruits2015_definitif__UNITPRKG3
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRKG4,4.32 Unité quantité produit 4 utilisé,string,20210706_PKFruits2015_definitif__UNITPRKG4
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRKG5,4.32 Unité quantité produit 5 utilisé,string,20210706_PKFruits2015_definitif__UNITPRKG5
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRL1,4.32 Unité dose post-récolte produit 1,string,20210706_PKFruits2015_definitif__UNITPRL1
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRL2,4.32 Unité dose post-récolte produit 2,string,20210706_PKFruits2015_definitif__UNITPRL2
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRL3,4.32 Unité dose post-récolte produit 3,string,20210706_PKFruits2015_definitif__UNITPRL3
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRL4,4.32 Unité dose post-récolte produit 4,string,20210706_PKFruits2015_definitif__UNITPRL4
+PKfruits2015,20210706_PKFruits2015_definitif,UNITPRL5,4.32 Unité dose post-récolte produit 5,string,20210706_PKFruits2015_definitif__UNITPRL5
+PKfruits2015,20210706_PKFruits2015_definitif,VALVERG,0.82 Validation du verger,string,
+PKfruits2015,20210706_PKFruits2015_definitif,VERIFBUSE,6.7 Nombre de vérifications du débit des buses ou des pastilles depuis 2010,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,ZN,2.104 Zinc ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTTOT,IFT total (yc biocontrôle),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTTOTBIO,IFT total - produits de biocontrôle uniquement,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTTOTNBIO,IFT total - hors produits de biocontrôle,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTTOTHORSHERB,IFT Hors herbicide (yc biocontrôle) total,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTTOTNBIOHORSHERB,IFT Hors herbicide – hors produits de biocontrôle,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTHERB,IFT Herbicide total (yc biocontrôle),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTFONG,IFT Fongicide-bactéricide total (yc biocontrôle),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTFONGBIO,IFT Fongicide-bactéricide - produits de biocontrôle uniquement,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTFONGNBIO,IFT Fongicide-bactéricide - hors produits de biocontrôle,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTINS,IFT Insecticide - acaricide total (yc biocontrôle),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTINSBIO,IFT Insecticide - acaricide - produits de biocontrôle uniquement,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTINSNBIO,IFT Insecticide - acaricide - hors produits de biocontrôle,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTAUT,IFT Autre total (yc biocontrôle),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTAUTBIO,IFT Autre - produits de biocontrôle uniquement,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,IFTAUTNBIO,IFT Autre - hors produits de biocontrôle,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,REGDEP,,string,
+PKfruits2015,20210706_PKFruits2015_definitif,BIO,,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AGELOT,age du lot,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,AJAUX,5.4 Ajouts directs auxiliaires prédateurs par des lÃ¢chers,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AMENAUX,5.4 Aménagements habitat (haies bandes enherbées) apports aliments pour auxiliaires prédateurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ANPLANLOT,0.1 Année de première feuille du lot initialisé,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,APENAZ,8.2  Pomme Réal appli engrais azoté (urée) pour diminution inoculum tavelure d'automne,string,
+PKfruits2015,20210706_PKFruits2015_definitif,APPOP,1.30 Appartenez-vous à une OP pour l' espèce enquêtée ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,apportolig,indicateur calcule,string,20210706_PKFruits2015_definitif__apportolig
+PKfruits2015,20210706_PKFruits2015_definitif,ARGILE,5.4 Traitements à l argile contre les pucerons mouches...,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ASPGEL,1.41 Aspersion (classique mini-aspersion micro-aspersion),string,
+PKfruits2015,20210706_PKFruits2015_definitif,ASSGRELE,1.37 Disposez vous d'une assurance contre la grêle ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,AUTCULT,0.5 Indicatrice d'exploitation déjà enquêtée pour une autre culture,string,
+PKfruits2015,20210706_PKFruits2015_definitif,BACHES,5.4 Utilisation de bÃ¢ches anti-pluie,string,
+PKfruits2015,20210706_PKFruits2015_definitif,BROYFAT,5.4 Broyage spécifique des feuilles au sol avant la taille,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CANONGRELE,1.39 Canons pare-grêle,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CHAUFGEL,1.41 Chauffage (bougies anti-gel...),string,
+PKfruits2015,20210706_PKFruits2015_definitif,CHOIXPGV,5.4 Choix des variétés et porte-greffe selon leur résistance à certaines maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COEFinit,COEF,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMERCOURT,1.43 Vente directe frais ou transformé,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMERLONG,1.43 Autres circuits de commercialisation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMERLOT,1.42 La production du lot pour la campagne a-t-elle été commercialisée ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMMERTRANS,1.43 Vente destinée à la transformation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPLEMENT,,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTACAAUT,5.4 Comptages /observations,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTACAPOM,8.13 Pomme Réalisation comptages  pour  Acariens,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTACAPRED,5.4 Comptages /observations,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTACAPRU,10.13 Prune Réalisation comptages pour Acariens,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTANAAB,11.13 Abricot Réalisation comptages pour Anarsia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTMALAB,11.13 Abricot Réalisation comptages pour Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTMALCE,12.13 Cerise Réalisation comptages pour Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTMALPEC,9.13 Pêche Réalisation comptages pour Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTMALPOM,8.13 Pomme Réalisation comptages  pour Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTMALPRU,10.13 Prune Réalisation comptages pour Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTPOM,8.13 Pomme Réalisation comptages  pour  Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTRAVAB,11.13 Abricot Réalisation comptages pour Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTRAVCE,12.13 Cerise Réalisation comptages pour Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTRAVPEC,9.13 Pêche Réalisation comptages pour Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTAUTRAVPRU,10.13 Prune Réalisation comptages pour Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTBACAB,11.13 Abricot Réalisation comptages pour Bacterioses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTBACCE,12.13 Cerise Réalisation comptages pour Bacteriose,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTCARPOPOM,8.13 Pomme Réalisation comptages  pour  Carpocapses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTCARPOPRU,10.13 Prune Réalisation comptages pour Carpocapses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTCLOPEC,9.13 Pêche Réalisation comptages pour Cloque,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTCOCPEC,9.13 Pêche Réalisation comptages pour Cochenilles,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTCYLCE,12.13 Cerise Réalisation comptages pour Cylindrosporiose,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMALCONSAB,11.13 Abricot Réalisation comptages pour Maladies de conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMALCONSPEC,9.13 Pêche Réalisation comptages pour Maladies de conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMALCONSPRU,10.13 Prune Réalisation comptages pour Maladies de conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMCOPOM,8.13 Pomme Réalisation comptages  pour Maladies conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMONAB,11.13 Abricot Réalisation comptages pour Monilia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMONCE,12.13 Cerise Réalisation comptages pour Monilia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMONPEC,9.13 Pêche Réalisation comptages pour Monilia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMONPRU,10.13 Prune Réalisation comptages pour Monilia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTMOUCE,12.13 Cerise Réalisation comptages pour Mouches de la cerise,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTOIDAB,11.13 Abricot Réalisation comptages pour Oïdium,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTOIDPEC,9.13 Pêche Réalisation comptages pour  Oïdium,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTOIDPOM,8.13 Pomme Réalisation comptages  pour Oidium,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTPUCAB,11.13 Abricot Réalisation comptages pour Pucerons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTPUCCE,12.13 Cerise Réalisation comptages pour Pucerons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTPUCPEC,9.13 Pêche Réalisation comptages pour Pucerons noirs verts,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTPUCPOM,8.13 Pomme Réalisation comptages  pour  Pucerons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTPUCPRU,10.13 Prune Réalisation comptages pour Pucerons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTROUPRU,10.13 Prune Réalisation comptages pour Rouille,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTSHAPRU,10.13 Prune Réalisation comptages pour Sharka,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTSUKAB,11.13 Abricot Réalisation comptages pour Mouche susuki,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTSUKCE,12.13 Cerise Réalisation comptages pour Mouche susuki,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTTAVPOM,8.13 Pomme Réalisation comptages  pour Tavelure,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTTAVPRU,10.13 Prune Réalisation comptages pour Tavelure,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTTORDPEC,9.13 Pêche Réalisation comptages pour Tordeuses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,COMPTTORDPOM,8.13 Pomme Réalisation comptages  pour  Tordeuses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFSEX,5.4 Confusion sexuelle,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFSEXU,7.1  Confusion sexuelle pour lutte contre chenilles (carpocapses tordeuse),string,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFUSCOD1,7.21  Nom commercial du diffuseur 1,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFUSCOD2,7.21  Nom commercial du diffuseur 2,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFUSCOD3,7.21  Nom commercial du diffuseur 3,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFUSDAT1,7.22 Date de mise en place des diffuseurs 1,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFUSDAT2,7.22 Date de mise en place des diffuseurs 2,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFUSDAT3,7.22 Date de mise en place des diffuseurs 3,string,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFUSNBDIF1,7.23 Nombre de diffuseurs à l'hectare 1,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFUSNBDIF2,7.23 Nombre de diffuseurs à l'hectare 2,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,CONFUSNBDIF3,7.23 Nombre de diffuseurs à l'hectare 3,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,DATERECOLT,1.32 Date de la récolte,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DEJA_ENQUETEE,0.5 Exploitation aussi enquêtée pour autre espèce,string,
+PKfruits2015,20210706_PKFruits2015_definitif,DENSITELOT,0.1 Densité du lot initialisé,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,ECENRALOT,0.1 Ecartement entre les rangs du lot initialisé en cm,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,ECLAIMAN,3.91 Nb passages réalisés sur lot pour éclaircissage manuel (secouage pour pruniers),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,ECSURALOT,0.1 Ecartement sur le rang du lot initialisé en cm,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,EGECVEG,5.4 Egourmandage et éclaircissage pour aérer la végétation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ENHERBIR,3.2 Nature de l'enherbement sur l'inter-rang (entre les rangs),string,20210706_PKFruits2015_definitif__ENHERBIR
+PKfruits2015,20210706_PKFruits2015_definitif,ENHERBSR,3.1 Nature de l'enherbement sous (sur) le rang,string,20210706_PKFruits2015_definitif__ENHERBSR
+PKfruits2015,20210706_PKFruits2015_definitif,ENLEVFR,5.4 Enlèvement des fruits tombés au sol,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ENLEVMOM,5.4 Enlèvement des momies sur les arbres en dehors de la taille,string,
+PKfruits2015,20210706_PKFruits2015_definitif,ENLEVPAL,5.4 Entreposage des palox en bois loin du verger (hors période de récolte),string,
+PKfruits2015,20210706_PKFruits2015_definitif,FILCARPO,5.4 Utilisation de filets type Alt'Carpo,string,
+PKfruits2015,20210706_PKFruits2015_definitif,FILETGRELE,1.39 Filets pare-grêle couvertures parapluie,string,
+PKfruits2015,20210706_PKFruits2015_definitif,FORMLOT,1.26 Quelle est la forme structurelle des arbres du lot ?,string,20210706_PKFruits2015_definitif__FORMLOT
+PKfruits2015,20210706_PKFruits2015_definitif,FRUITDET,calcul espece detaillee,string,
+PKfruits2015,20210706_PKFruits2015_definitif,FUSEGRELE,1.39 Fusées vortex,string,
+PKfruits2015,20210706_PKFruits2015_definitif,GROUPELOT,0.1 Groupe du lot initialisé (Pommes et prunes),string,
+PKfruits2015,20210706_PKFruits2015_definitif,HFROND,1.27 Quelle est la hauteur de la frondaison ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,LARGENHERB,3.5 Quelle est la largeur de la partie enherbée en cm ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,LDLOT,0.1 Lieu-dit du lot initialisé,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LUTTEGEL,1.40 Utilisez-vous un moyen de lutte contre le gel ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,LUTTEGRELE,1.38 Utilisez-vous un moyen de lutte contre la grêle,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NECENRALOT,0.85 Nouvel écartement entre les rangs (cm),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NECSURALOT,0.85 Nouvel écartement sur le rang (cm),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NGROUPLOTPOM,0.85 Nouveau Groupe Pomme,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NGROUPLOTPRUNE,0.85 Nouveau Groupe Prune,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NLOTSCOM,NLOTSCOM,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NLOTSDEP,NLOTSDEP,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NPGLOT,0.85 Nouveau Porte-greffe,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NSTRATEBIO,NSTRATEBIO,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSACAPOM,8.12 Pomme Réalisation observations pour Acariens,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSACAPRU,10.12 Prune Réalisation observations pour Acariens,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSANAAB,11.12 Abricot Réalisation observations pour Anarsia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTMALAB,11.12 Abricot Réalisation observations pour Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTMALCE,12.12 Cerise Réalisation observations pour Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTMALPEC,9.12 Pêche Réalisation observations pour  Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTMALPOM,8.12 Pomme Réalisation observations pour Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTMALPRU,10.12 Prune Réalisation observations pour Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTPOM,8.12 Pomme Réalisation observations pour Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTRAVAB,11.12 Abricot Réalisation observations pour Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTRAVCE,12.12 Cerise Réalisation observations pour Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTRAVPEC,9.12 Pêche Réalisation observations pour  Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSAUTRAVPRU,10.12 Prune Réalisation observations pour Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSBACAB,11.12 Abricot Réalisation observations pour Bacterioses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSBACCE,12.12 Cerise Réalisation observations pour Bacteriose,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSCARPOPOM,8.12 Pomme Réalisation observations pour Carpocapses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSCARPOPRU,10.12 Prune Réalisation observations pour Carpocapses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSCLOPEC,9.12 Pêche Réalisation observations pour  Cloque,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSCOCPEC,9.12 Pêche Réalisation observations pour Cochenilles,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSCYLCE,12.12 Cerise Réalisation observations pour Cylindrosporiose,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMALCONSAB,11.12 Abricot Réalisation observations pour Maladies de conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMALCONSPEC,9.12 Pêche Réalisation observations pour  Maladies de conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMALCONSPRU,10.12 Prune Réalisation observations pour Maladies de conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMCOPOM,8.12 Pomme Réalisation observations pour Maladies conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMONAB,11.12 Abricot Réalisation observations pour Monilia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMONCE,12.12 Cerise Réalisation observations pour Monilia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMONPEC,9.12 Pêche Réalisation observations pour  Monilia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMONPRU,10.12 Prune Réalisation observations pour Monilia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSMOUCE,12.12 Cerise Réalisation observations pour Mouches de la cerise,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSOIDAB,11.12 Abricot Réalisation observations pour Oïdium,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSOIDPEC,9.12 Pêche Réalisation observations pour  Oïdium,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSOIDPOM,8.12 Pomme Réalisation observations pour Oidium,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSPUCAB,11.12 Abricot Réalisation observations pour Pucerons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSPUCCE,12.12 Cerise Réalisation observations pour Pucerons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSPUCPEC,9.12 Pêche Réalisation observations pour  Pucerons noirs verts,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSPUCPOM,8.12 Pomme Réalisation observations pour Pucerons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSPUCPRU,10.12 Prune Réalisation observations pour Pucerons,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSROUPRU,10.12 Prune Réalisation observations pour Rouille,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSSHAPRU,10.12 Prune Réalisation observations pour Sharka,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSSUKAB,11.12 Abricot Réalisation observations pour Mouche susuki,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSSUKCE,12.12 Cerise Réalisation observations pour Mouche susuki,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSTAVPOM,8.12 Pomme Réalisation observations pour Tavelure,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSTAVPRU,10.12 Prune Réalisation observations pour Tavelure,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSTORDPEC,9.12 Pêche Réalisation observations pour  Tordeuses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,OBSTORDPOM,8.12 Pomme Réalisation observations pour Tordeuses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PGLOT,0.1 Porte-greffe de la variété du lot initialisé,string,
+PKfruits2015,20210706_PKFruits2015_definitif,POUSSINF,5.4 Elimination manuelle des pousses infectées,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSACAPOM,8.11 Pomme Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSACAPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSANAAB,11.11 Abricot Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTMALAB,11.11 Abricot Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTMALCE,12.11 Cerise Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTMALPEC,9.11 Pêche Niveau parasitaire de Autres maladies,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTMALPOM,8.11 Pomme Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTMALPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTRAVAB,11.11 Abricot Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTRAVCE,12.11 Cerise Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTRAVPEC,9.11 Pêche Niveau parasitaire de Autres ravageurs,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTRAVPOM,8.11 Pomme Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSAUTRAVPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSBACAB,11.11 Abricot Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSBACCE,12.11 Cerise Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSCARPOPOM,8.11 Pomme Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSCARPOPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSCLOPEC,9.11 Pêche Niveau parasitaire de Cloque,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSCOCPEC,9.11 Pêche Niveau parasitaire de Cochenilles,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSCONSPOM,8.11 Pomme Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSCYLCE,12.11 Cerise Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSMALCONSAB,11.11 Abricot Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSMALCONSPEC,9.11 Pêche Niveau parasitaire de Maladies de conservation,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSMALCONSPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSMONAB,11.11 Abricot Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSMONCE,12.11 Cerise Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSMONPEC,9.11 Pêche Niveau parasitaire de Monilia,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSMONPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSMOUCE,12.11 Cerise Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSOIDAB,11.11 Abricot Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSOIDPEC,9.11 Pêche Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSOIDPOM,8.11 Pomme Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSPUCAB,11.11 Abricot Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSPUCCE,12.11 Cerise Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSPUCPEC,9.11 Pêche Niveau parasitaire de Pucerons noirs verts,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSPUCPOM,8.11 Pomme Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSPUCPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSROUPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSSHAPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSSUKAB,11.11 Abricot Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSSUKCE,12.11 Cerise Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSTAVPOM,8.11 Pomme Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSTAVPRU,10.11 Prune Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSTORDPEC,9.11 Pêche Niveau parasitaire de Tordeuses,string,
+PKfruits2015,20210706_PKFruits2015_definitif,PRESSTORDPOM,8.11 Pomme Niveau parasitaire de,string,
+PKfruits2015,20210706_PKFruits2015_definitif,rajoutfoliairesnonsaisis,,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RENDPRFR,1.332 Rendement en frais en t/ha (Prune d'Ente),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RENDPRSE,1.331 Rendement en sec en t/ha (Prune d'Ente),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RGENHERB1,3.4 Combien d inter-rangs sont-ils enherbés ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,RGENHERB2,3.4 Sur combien d inter-rangs ?,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,STRATE_DEFINITIVE,,string,
+PKfruits2015,20210706_PKFruits2015_definitif,STRATEBIO,,string,
+PKfruits2015,20210706_PKFruits2015_definitif,SUPLOT,0.1 Superficie du lot initialisé,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_ABRICOT,0.82 Surface d’abricotiers ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_ABRICOT_1,0.82 Surface d'abricotiers (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_AGRUME,0.82 Surface en agrumes ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_AGRUME_1,0.82 Surface en agrumes (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_CERISE,0.82 Surface de cerisiers ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_CERISE_1,0.82 Surface de cerisiers (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_KIWI,0.82 Surface dédiée aux kiwis ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_KIWI_1,0.82 Surface dédiée aux kiwis (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_NOIX,0.82 Surface de noyers ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_NOIX_1,0.82 Surface de noyers (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_PECHE_NECTA,0.82 Surface dédiées aux pêches et nectarines ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_PECHE_NECTA_1,0.82 Surface dédiées aux pêches et nectarines (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_POIRE_TABLE,0.82 Surface de poires de table ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_POIRE_TABLE_1,0.82 Surface de poires de table (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_POMME_TABLE,0.82 Surface de pomme de table ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_POMME_TABLE_1,0.82 Surface de pomme de table (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_PRUNE,0.82 Surface de pruniers ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_PRUNE_1,0.82 Surface de pruniers (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_RAISIN_TABLE,0.82 Surface en raisins de table ares,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,SURF_RAISIN_TABLE_1,0.82 Surface en raisins de table (issu d'IVER2012 ares),float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TAILLEHIV,3.91 Nb passages réalisés sur le lot pour la taille d hiver,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TAILLEVERT,3.91 Nb passages réalisés sur le lot pour la taille en vert,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,TRAITCU,5.4 Traitements à base de cuivre à la chute des feuilles,string,
+PKfruits2015,20210706_PKFruits2015_definitif,TRENHERB,3.3 Tous les inter-rangs sont-ils enherbés ?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,VARLOT,VARLOT,string,
+PKfruits2015,20210706_PKFruits2015_definitif,VENTGEL,1.41 Ventilation-brassage de l'air tours à vent éoliennes,string,
+PKfruits2015,20210706_PKFruits2015_definitif,VERG,0.4 L'exploitation cultive-t-elle d''autres vergers que celui de l espèce enquêtée?,string,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_ADJ,nombre de traitements pour adjuvants,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_TOTADJ,nombre total de pulvérisations avec adjuvant ,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_TOTADJRONG,nombre total de pulvérisations avec rodenticides et adjuvants,float64,
+PKfruits2015,20210706_PKFruits2015_definitif,NB_TOTRONG,nombre total de pulvérisations avec rodenticides,float64,
 RA2020,MO_FAM,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,MO_FAM,TYPE_QUESTIONNAIRE,Type de questionnaire,string,
 RA2020,MO_FAM,MOF_SEX_ECH,Sexe,string,
@@ -2260,6 +2884,7 @@ PKPrairie2011,fumorg_pkgc2011_prairies,QNORGBOUE,Fumure organique : quantité d'
 PKPrairie2011,fumorg_pkgc2011_prairies,FUMQNORG,Fumure organique : quantité d’azote par apport en kg/ha,string,
 PKPrairie2011,fumorg_pkgc2011_prairies,FUMQPORG,Fumure organique : quantité de phosphore par apport en kg/ha,string,
 PKPrairie2011,fumorg_pkgc2011_prairies,FUMQKORG,Fumure organique : quantité de potasse par apport en kg/ha,string,
+PKfruits2015,20210632_PKFruits15_MATACT,INSECTICIDE,Indicatrice d'utilisation de la matière active dans au moins un traitement insecticide.,string,
 RA2020,HORTI_PEPI,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,HORTI_PEPI,TYPE_QUESTIONNAIRE,Type de questionnaire,string,
 RA2020,HORTI_PEPI,HORTI_AIR_SUR_100,Fleurs et feuillages coupés - Surfaces plein air ou abri bas,float64,
@@ -2339,6 +2964,159 @@ RA2020,HORTI_PEPI,PEPIPROD_740,Autres plantes de pépinière,float64,
 RA2020,HORTI_PEPI,SAU_13521100,"pépinières ornementales :  reproduction de plantes ligneuses (y c. rosiers), surface en plein air",float64,
 RA2020,HORTI_PEPI,SAU_13521200,"pépinières ornementales :  reproduction de plantes ligneuses (y c. rosiers), surface sous serre ou abri haut",float64,
 RA2020,HORTI_PEPI,IMPUT_NR_TOT,Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés),float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,ID_DOSSIER,numero interne capibara,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,BALSA,BALSA,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,NOM_DOSSIER,,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,espece,,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,ID_LIGNE,,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,IDLIGNE_BIS,mise de l id_ligne en format chaine,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,idlignephyto,"concatenation NOM_DOSSIER, IDLIGNE_BIS) pour rendre unique chaque ligne saisie",string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTORDR,4.2 : Iterventions de pulvérisation : numéro d'ordre,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTOPASS,4.2 Numéro de passage,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,NUMERO_PASSAGE,4.2 Numéro de passage remis chronologiquement,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTODAT,4.2 Date du passage,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,QUALIFenquete,"concatenation des fonctions (herbicide,fongicide, insecticide-acaricide, autrespredateurs,stimulant, adjuvant,divers,fertilisants)",string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,QUALIFCorrige,"concatenation des fonctions corrigees (herbicide,fongicide, insecticide-acaricide, autrespredateurs,stimulant, adjuvant,divers,fertilisants)",string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PRODCOURT,2.5 Libellé court,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTOLIBAUTRE,4.2 Nom du produit Autre,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,COMMENTAIRE,,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,commentaire_corrections,,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBHER,4.2 Cible adventices (herbicides),float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,HERBICIDE,4.2 Fonction Herbicide,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBBACT,4.2 Cible maladies : bactérioses,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBCERCO,4.2 Cible maladies : cercosporiose,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBCLOQUE,4.2 Cible maladies : cloque,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBCYLIN,4.2 Cible maladies : cylindrosporiose,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBFUSA,4.2 Cible maladies : fusariose,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBMONI,4.2 Cible maladies : monilia,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBOID,4.2 Cible maladies : oïdium,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBROUIL,4.2 Cible maladies : rouille,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBTAV,4.2 Cible maladies : tavelure,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBMALCONS,4.2 Cible maladies de conservation,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBAUTMAL,4.2 Cible autres maladies,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,FONG,4.2 Fonction Fongicide,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,NFONG,4.2 Nombre de fongicides,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBACA,4.2 Cible insectes et acariens : acariens,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBALEU,4.2 Cible insectes et acariens : aleurodes,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBANA,4.2 Cible insectes et acariens : anarsia,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBCARPO,4.2 Cible insectes et acariens : carpocapse,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBCHAR,4.2 Cible insectes et acariens : charançons,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBCOCH,4.2 Cible insectes et acariens : cochenilles,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBCOLEO,4.2 Cible insectes et acariens : coléoptères,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBMOUCHE,4.2 Cible insectes et acariens : mouches autres que susuki,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBSUSUKI,4.2 Cible insectes et acariens : mouche suzukii,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBPUCE,4.2 Cible insectes et acariens : pucerons,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBTHR,4.2 Cible insectes et acariens : thrips,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBTORD,4.2 Cible insectes et acariens : tordeuses,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBNEM,4.2 Cible nématodes,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBAIA,4.2 Cible autres insectes et acariens,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,INSAC,4.2 Fonction Inecticide-acaricide,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,NINSAC,4.2 Nombre d insecticides-acaricides,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBRONG,4.2 Cible rongeurs,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,AUTPRED,4.2 Fonction Autres Prédateurs,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBEEE,4.2 Cible éclaircissage chimique régulateur de croissance activateur chute de fruits,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,STIMUL,4.2 Fonction Stimulant,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBADJ,4.2 Cible adjuvants,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,ADJUVANT,4.2 Fonction Adjuvant,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBDIV,"4.2 Cible : divers (autres ravageurs, ...)",float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,DIVERS,4.2 Fonction Divers,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBFERT,4.2 Cible fertilisation,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,FERTILISANT,4.2 Fonction Fertilisant,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTOPROD,4.2 Produit commercial,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTODOSE,4.2 Dose de produit commercial utilisée /ha,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTOUNI,4.2 Unité de la dose de produit commercial apportée,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTOPSUPPT,4.2 Part du lot traitée (% de superficie),float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CONAIDOFERTIF,4.2 Composition du fertilisant connue.,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,QFUMF,4.2 Quantité de fertilisant apportée à l'ha,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,UFUMF,4.2 Unité quantité fertilisant apportée à l'ha,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMCN,4.2 Concentration en azote,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMCP,4.2 Concentration en phosphore,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMCK,4.2 Concentration en potassium,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMCSO,4.2 Concentration en soufre,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMCMAG,4.2 Concentration en magnésium,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMCCA,4.2 Concentration en calcium-chaux,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMCCU,4.2 Concentration en cuivre,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMUNI,4.2 Unité des éléments apportés,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMQN,4.2 Qté par ha d'azote,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMQP,4.2 Qté par ha de phosphore,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMQK,4.2 Qté par ha de potassium,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMQSO,4.2 Qté par ha de soufre,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMQMAG,4.2 Qté par ha de magnésium,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMQCA,4.2 Qté par ha de calcium-chaux,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,EFUMQCU,4.2 Qté par ha de cuivre,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,COMMENTFICHEPHYTO,4.2 Observations (Fiche de saisie phytosanitaire),string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CONAIDOSE,4.2 DOM Connaissez vous la dose utilisee /ha,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,VOLMESURE,4.2 DOM Volume de la mesure utilisee pour le produit en centilitres,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,VOLUMEFUT,4.2 DOM Volume en litres du fut ou de la pompe utilisee,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,NOMBREFUT,4.2 DOM Nombre de futs ou de pompe passés sur le lot,float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,LIBINTRANT,,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CULTURE,,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,TRAIT,Type du traitement applliqué,string,20210706_PKFruits2015_TTMT_phyto__TRAIT
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,LISTE_CIBLES,Liste des cibles du traitement,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,dose_equivalent_bouillie_bordelaise,"pour les produits fertilisants utilisés comme produit phyto, c'est l'équivalent en dose de bouillie bordelaise.",float64,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,N_AMM,numéro d'AMM,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,UNITE_DR,unité de la dose de référence,string,20210706_PKFruits2015_TTMT_phyto__UNITE_DR
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,Biocontrole,Produit de bio-contrôle,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,DR,dose de référence du traitement,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,CIBLE_AP,Cible d'appariement pour le calcul de l'IFT,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,TYPE_TRAIT,Type de traitement retenu pour le calcul de l'IFT,string,20210706_PKFruits2015_TTMT_phyto__TYPE_TRAIT
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTODOSE.comp,dose de produit commercial utilisée,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTODOSE.ha,dose de produit commercial utilisé rapportée à l'hectare,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,DR_dose_ha,Dose de référence du traitement rapportée à l'hectare,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,REDCOM,Traitement IFT redressé,string,20210706_PKFruits2015_TTMT_phyto__REDCOM
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,IFT_TRAIT_red,IFT du traitement après redressement,string,
+PKfruits2015,20210706_PKFruits2015_TTMT_phyto,PHYTOBOUIL, Quantité de bouillie utilisée  à l'ha (eau + produits + adjuvant),string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,identifiant_dossier,,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,NOM_DOSSIER,,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,NSUPLOT,0.85 Nouvelle superficie du lot (en ares),float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,espece,,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,iddossierligne,"concatenation NOM_DOSSIER, idlignetexte) pour rendre unique chaque ligne saisie",string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,ID_LIGNE,,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,idlignetexte,mise de l id_ligne en format chaine,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMORDR,2.5 Fumure minérale : numéro d'ordre,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMPASS,2.5 Fumure minérale : Numéro du passage,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMDAT,2.5 Fumure minérale : Date apport,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMTYP,2.5 Fumure minérale : Type apport,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMCAT,2.5 Fumure minérale : Catégorie apport,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMCOD,2.5 Fumure minérale : produit fertilisant,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMAUT,2.5 Fumure minérale : Autre apport,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,CONAIDOFERTI,2.5 Fumure minérale : Connaissance unité,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,QFUMM,2.5 Fumure minérale : Quantité de fertilisant apportée à l'ha,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,UFUMM,2.5 Fumure minérale : Unité apport minéral,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMCN,2.5 Fumure minérale : Concentration en azote,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMCP,2.5 Fumure minérale : Concentration en phosphore,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMCK,2.5 Fumure minérale : Concentration en potassium,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMCSO,2.5 Fumure minérale : Concentration en soufre,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMCMAG,2.5 Fumure minérale : Concentration en magnésium,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMCCA,2.5 Fumure minérale : Concentration en calcium-chaux,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMUNI,2.5 Fumure minérale : Unité des éléments apportés,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMQN,2.5 Fumure minérale : Qté par ha d' azote,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMQP,2.5 Fumure minérale : Qté par ha de phosphore,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMQK,2.5 Fumure minérale : Qté par ha de potassium,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMQSO,2.5 Fumure minérale : Qté par ha de soufre,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMQMAG,2.5 Fumure minérale : Qté par ha de magnésium,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMQCA,2.5 Fumure minérale : Qté par ha de calcium-chaux,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,COMMENTFICHEFERTIL,2.5 Fumure minérale : commentaire fiche,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,FUMLIB1,,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,commentmjd,,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,AZOTE,Q/ha azote calcul final =(QFUMM*(FUMCN/100)) si CONAIDIFERTI = 1 ou = FUMQN si CONAIDOFERTI=2 ,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,PHOSPHORE,Q/ha phosphore calcul final  =(QFUMM*(FUMCP/100)) si CONAIDIFERTI = 1 ou = FUMQP si CONAIDOFERTI=2 ,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,POTASSE,Q/ha potasse calcul final  =(QFUMM*(FUMCKN/100)) si CONAIDIFERTI = 1 ou = FUMQK si CONAIDOFERTI=2 ,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,SOUFRE,Q/ha soufre calcul final  =(QFUMM*(FUMCSO/100)) si CONAIDIFERTI = 1 ou = FUMQSO si CONAIDOFERTI=2 ,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,MAGNESIUM,Q/ha magnesium calcul final  =(QFUMM*(FUMCMAG/100)) si CONAIDIFERTI = 1 ou = FUMQMAG si CONAIDOFERTI=2 ,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,CALCIUM,Q/ha calcium calcul final  =(QFUMM*(FUMCCA/100)) si CONAIDIFERTI = 1 ou = FUMQCA si CONAIDOFERTI=2 ,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,TOTALNPK,Q/ha calcul AZOTE+PHOSPHORE+POTASSE,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,TOTALMESO,Q/ha calcul SOUFRE+MAGNESIUM+CALCIUM,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,TOTALCORR,Q/ha calcul NPK+MESO,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,presenceNPKseul,1 si TOTALNPK>0 et TOTALMESO=0; 0 sinon,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,presenceMESO,1 si TOTALNPK=0 et TOTALMESO>0; 0 sinon,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,oligo,1 si presence signalee d oligoelements,float64,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,apport,concatenation (presenceNPKseul; presenceMESOseul),string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,fertsol,1 si FUMTYP=1,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,fertir,1 si FUMTYP=2,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,bilfert,concatenation (fertsol; fertir),string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,indicdoublefert,l exploitation pratique fertilisation au sol et fertirrigation,string,
+PKfruits2015,20180511_PKFruits2015_FERTILISATION,presfertirrigation,l exploitation pratique la fertirrigation,string,
 RA2020,SURF_SAU,NOM_DOSSIER,Numéro interne de dossier,string,
 RA2020,SURF_SAU,TYPE_QUESTIONNAIRE,Type de questionnaire,string,
 RA2020,SURF_SAU,CULT_RA_CODE,Code des cultures dans nomenclature RA,string,

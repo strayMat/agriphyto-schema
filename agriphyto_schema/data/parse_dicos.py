@@ -80,11 +80,13 @@ def infer_type_from_varname(var_name: str) -> str:
     return pandera_type
 
 
-def nomenclature_from_excel(db_name: str) -> dict:
+def nomenclature_from_excel(db_name: str) -> dict:  # noqa: C901
     """
     Parse nomenclatures / modalities from the data dictionary.
-    For now, adapted to RA2020 structure.
-
+    Two behaviors are supported:
+    - 1) either the modalities are in the same sheet as the variables,
+    - 2) the modalities are in a separate sheet.
+    The behavior is set to 1) if the COLNAME_NOMENCLATURE is in the cols_to_use of the AVAILABLE_DICOS[db_name] configuration else 2).
     Parameters
     ----------
     db_name : str
@@ -96,39 +98,106 @@ def nomenclature_from_excel(db_name: str) -> dict:
         A dictionary mapping variable names to lists of allowed categories.
     """
     filepath2dico = AVAILABLE_DICOS[db_name]["filename"]
-    sheet_name_modalites = AVAILABLE_DICOS[db_name]["modalites_sheet"]
-    skiprows_modalites = AVAILABLE_DICOS[db_name]["skiprows_modalites"]
-    modalites_df = pd.read_excel(
-        DIR2DICO / filepath2dico,
-        sheet_name=sheet_name_modalites,
-        skiprows=skiprows_modalites,
-    )
-    cols_to_use = AVAILABLE_DICOS[db_name]["modalites_cols_to_use"]
-    modalites_df.rename(columns=cols_to_use, inplace=True)
-    # La colonne variable contient à la fois les noms de variables et les modalités. Elle ne peut être vide. On filtre donc les lignes vides.
-    modalites_df = modalites_df[modalites_df[COLNAME_VARIABLE].notna()].reset_index(drop=True)
+    cols_to_use = AVAILABLE_DICOS[db_name]["cols_to_use"]
+    if COLNAME_NOMENCLATURE in cols_to_use.values():
+        # Behavior 1) modalities are in the same sheet as the variables
+        dico = pd.read_excel(
+            DIR2DICO / filepath2dico,
+            sheet_name=AVAILABLE_DICOS[db_name]["variable_sheet"],
+            skiprows=AVAILABLE_DICOS[db_name]["skiprows"],
+        )
+        dico.rename(columns=cols_to_use, inplace=True)
+        dico = dico[cols_to_use.values()]
+        dico = dico.dropna(subset=[COLNAME_VARIABLE]).reset_index(drop=True)
+        # Extract nomenclatures
+        modalites_dfs_clean = {}
+        dico_w_modalities = dico[dico[COLNAME_NOMENCLATURE].notna() & (dico[COLNAME_NOMENCLATURE] != "")].reset_index(
+            drop=True
+        )
+        for _, row in dico_w_modalities.iterrows():
+            var_name = row[COLNAME_VARIABLE]
+            nomenclature_raw = row[COLNAME_NOMENCLATURE]
+            clean_modalites = []
+            if "\n" in nomenclature_raw:
+                splitted_nomenclatures = nomenclature_raw.split("\n")
+            elif ";" in nomenclature_raw:
+                splitted_nomenclatures = nomenclature_raw.split(";")
+            elif "," in nomenclature_raw:
+                splitted_nomenclatures = nomenclature_raw.split(",")
+            elif " ou " in nomenclature_raw:
+                splitted_nomenclatures = nomenclature_raw.split(" ou ")
+            else:
+                splitted_nomenclatures = [nomenclature_raw]
+            if len(splitted_nomenclatures) > 1:
+                # FIXME: extract and refactor into a function
+                for mod in splitted_nomenclatures:
+                    if mod and mod != "":
+                        # Split on " - " to separate code from label
+                        if " - " in mod:
+                            code, label = mod.split(" - ", 1)
+                            clean_modalites.append({
+                                "code": code.strip(),
+                                "label": label.strip(),
+                            })
+                        elif "=" in mod:
+                            code, label = mod.split("=", 1)
+                            clean_modalites.append({
+                                "code": code.strip(),
+                                "label": label.strip(),
+                            })
+                        elif ":" in mod:
+                            code, label = mod.split(":", 1)
+                            clean_modalites.append({
+                                "code": code.strip(),
+                                "label": label.strip(),
+                            })
+                        else:
+                            clean_modalites.append({
+                                "code": mod.strip(),
+                                "label": mod.strip(),
+                            })
+                var_name_clean = clean_nomenclature_name(var_name, row[COLNAME_TABLE])
+                nomenclature = pd.DataFrame(clean_modalites)
+                nomenclature.columns = [COLNAME_VARIABLE, COLNAME_LIBELLE]
+                modalites_dfs_clean[var_name_clean] = nomenclature
+                path2modalites = DIR2NOMENCLATURES / f"{db_name}__{var_name_clean}__categories.csv"
+                nomenclature.to_csv(path2modalites, index=False)
+                logger.info(f"Variable {var_name_clean} nomenclature saved at {path2modalites}")
+        return modalites_dfs_clean
+    else:  # Behavior 2) modalities are in a separate sheet
+        sheet_name_modalites = AVAILABLE_DICOS[db_name]["modalites_sheet"]
+        skiprows_modalites = AVAILABLE_DICOS[db_name]["skiprows_modalites"]
+        modalites_df = pd.read_excel(
+            DIR2DICO / filepath2dico,
+            sheet_name=sheet_name_modalites,
+            skiprows=skiprows_modalites,
+        )
+        cols_to_use = AVAILABLE_DICOS[db_name]["modalites_cols_to_use"]
+        modalites_df.rename(columns=cols_to_use, inplace=True)
+        # La colonne variable contient à la fois les noms de variables et les modalités. Elle ne peut être vide. On filtre donc les lignes vides.
+        modalites_df = modalites_df[modalites_df[COLNAME_VARIABLE].notna()].reset_index(drop=True)
 
-    mask = modalites_df[COLNAME_TABLE].notna()
-    starts = [*modalites_df.index[mask].tolist(), len(modalites_df)]
+        mask = modalites_df[COLNAME_TABLE].notna()
+        starts = [*modalites_df.index[mask].tolist(), len(modalites_df)]
 
-    modalites_dfs_clean = {}
-    for i in range(len(starts) - 1):
-        table_name = modalites_df.loc[starts[i], COLNAME_TABLE]
-        var_name = modalites_df.loc[starts[i], COLNAME_VARIABLE]
-        sub = modalites_df.iloc[starts[i] + 1 : starts[i + 1]].copy()[[COLNAME_VARIABLE, COLNAME_LIBELLE]]
-        sub.columns = modalites_df.iloc[starts[i], :][[COLNAME_VARIABLE, COLNAME_LIBELLE]]  # use the header row
-        sub = sub.dropna(how="all")  # drop empty lines
-        if len(sub) > 0:
-            var_name_clean = clean_nomenclature_name(var_name, table_name)
-            # log if the cleaned name differs from the original
-            var_name_check = var_name_clean.replace(f"{table_name}__", "")
-            if var_name_check != var_name:
-                logger.warning(f"!!! Variable name {var_name} differs from clean version {var_name_check}")
-            nomenclature = sub.reset_index(drop=True)
-            modalites_dfs_clean[var_name_clean] = nomenclature
-            path2modalites = DIR2NOMENCLATURES / f"{db_name}__{var_name_clean}__categories.csv"
-            nomenclature.to_csv(path2modalites, index=False)
-            logger.info(f"Variable {var_name_clean} nomenclature saved at {path2modalites}")
+        modalites_dfs_clean = {}
+        for i in range(len(starts) - 1):
+            table_name = modalites_df.loc[starts[i], COLNAME_TABLE]
+            var_name = modalites_df.loc[starts[i], COLNAME_VARIABLE]
+            sub = modalites_df.iloc[starts[i] + 1 : starts[i + 1]].copy()[[COLNAME_VARIABLE, COLNAME_LIBELLE]]
+            sub.columns = modalites_df.iloc[starts[i], :][[COLNAME_VARIABLE, COLNAME_LIBELLE]]  # use the header row
+            sub = sub.dropna(how="all")  # drop empty lines
+            if len(sub) > 0:
+                var_name_clean = clean_nomenclature_name(var_name, table_name)
+                # log if the cleaned name differs from the original
+                var_name_check = var_name_clean.replace(f"{table_name}__", "")
+                if var_name_check != var_name:
+                    logger.warning(f"!!! Variable name {var_name} differs from clean version {var_name_check}")
+                nomenclature = sub.reset_index(drop=True)
+                modalites_dfs_clean[var_name_clean] = nomenclature
+                path2modalites = DIR2NOMENCLATURES / f"{db_name}__{var_name_clean}__categories.csv"
+                nomenclature.to_csv(path2modalites, index=False)
+                logger.info(f"Variable {var_name_clean} nomenclature saved at {path2modalites}")
     return modalites_dfs_clean
 
 

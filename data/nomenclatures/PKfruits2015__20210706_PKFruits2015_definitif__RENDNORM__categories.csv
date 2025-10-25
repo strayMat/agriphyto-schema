@@ -1,0 +1,4 @@
+variable,label
+Normal,1
+Faible (< 20% en dessous),2
+Fort (>20% au-dessus),3

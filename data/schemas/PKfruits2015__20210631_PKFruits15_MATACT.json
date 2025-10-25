@@ -1,0 +1,30 @@
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "HERBICIDE": {
+            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement herbicide.",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "PKfruits2015__20210631_PKFruits15_MATACT",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table 20210631_PKFruits15_MATACT from data dictionary PKfruits2015"
+}

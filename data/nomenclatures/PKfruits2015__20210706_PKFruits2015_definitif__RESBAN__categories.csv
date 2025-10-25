@@ -1,0 +1,8 @@
+variable,label
+laissés sur place et broyés,1
+laissés sur place non broyés,2
+"laissés sur place, broyés et enfouis superficiellement (moins de 15 cm)",3
+"laissés sur place, non broyés et enfouis superficiellement (moins de 15 cm)",4
+enlevés,5
+brûlés,6
+autres,7

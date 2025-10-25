@@ -1,0 +1,30 @@
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "REG": {
+            "title": NaN,
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "PKfruits2015__20210706_PKFruits2015_TTMT_phyto & 20210630_PKFruits15_MATACT & 20180511_PKFruits2015_FERTILISATION & 20210706_PKFruits2015_definitif",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table 20210706_PKFruits2015_TTMT_phyto & 20210630_PKFruits15_MATACT & 20180511_PKFruits2015_FERTILISATION & 20210706_PKFruits2015_definitif from data dictionary PKfruits2015"
+}
