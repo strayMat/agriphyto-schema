@@ -1,0 +1,10 @@
+modality_code,label
+<0.1:sous-dosage inférieur à 1/10 de la dose de référence,<0.1:sous-dosage inférieur à 1/10 de la dose de référence
+<0.1:sous-dosage inférieur à 1/10 de la dose de référence,<0.1:sous-dosage inférieur à 1/10 de la dose de référence
+<0.1,sous-dosage inférieur à 1/10 de la dose de référence
+non validé (cf. variable VALID_DOSE)>2:sur-dosage supérieur à 2 fois la dose de référence,non validé (cf. variable VALID_DOSE)>2:sur-dosage supérieur à 2 fois la dose de référence
+non validé (cf. variable VALID_DOSE)>2:sur-dosage supérieur à 2 fois la dose de référence,non validé (cf. variable VALID_DOSE)>2:sur-dosage supérieur à 2 fois la dose de référence
+non validé (cf. variable VALID_DOSE)>2,sur-dosage supérieur à 2 fois la dose de référence
+non validé (cf. variable VALID_DOSE)ABS:absence de dose de référenceOK:pas de redressementNA:sans objet,non validé (cf. variable VALID_DOSE)ABS:absence de dose de référenceOK:pas de redressementNA:sans objet
+non validé (cf. variable VALID_DOSE)ABS:absence de dose de référenceOK:pas de redressementNA:sans objet,non validé (cf. variable VALID_DOSE)ABS:absence de dose de référenceOK:pas de redressementNA:sans objet
+non validé (cf. variable VALID_DOSE)ABS,absence de dose de référenceOK:pas de redressementNA:sans objet

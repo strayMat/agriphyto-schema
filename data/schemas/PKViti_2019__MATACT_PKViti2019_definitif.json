@@ -1,0 +1,151 @@
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "IDENTPARC": {
+            "title": "Identifiant de la parcelle",
+            "description": "{\"nomenclature\": \"MATACT_PKViti2019_definitif__IDENTPARC\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COEF": {
+            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COEF2": {
+            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "NOM_SUBSTANCE": {
+            "title": "Libellé de la substance active selon la BNVD",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "NOM_SUBSTANCE_EUROSTAT": {
+            "title": "Libellé de la substance active dans la nomenclature Eurostat",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "QDOSEMATACT": {
+            "title": "Quantité de matière active administrée par hectare de parcelle (en g/ha). Pour obtenir la quantité en g, multiplier par la surface de la parcelle : SUPP2019. Lorsque la matière active n'a pu être exprimée en g/ha, la donnée est absente (cas de certains micro-organismes notamment).",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "NBPASMATACT": {
+            "title": "Nombre de traitements (et non de passages) effectués sur la parcelle avec un produit contenant la matière active",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "HERBICIDE": {
+            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type herbicide",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "INSECTICIDE": {
+            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type insecticide",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FONGICIDE": {
+            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type fongicide",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "AUTRE": {
+            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement autre que fongicide, insecticide ou herbicide",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBLE_SA": {
+            "title": "Segment de la matière active selon la classification Eurostat",
+            "description": "{\"nomenclature\": \"MATACT_PKViti2019_definitif__CIBLE_SA\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "PKViti_2019__MATACT_PKViti2019_definitif",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table MATACT_PKViti2019_definitif from data dictionary PKViti_2019"
+}

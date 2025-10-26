@@ -30,13 +30,14 @@ MAP_TYPES = {
 }
 
 # Configurations for loaded dictionaries
+# TODO: document this better or put this into a documented config class
 AVAILABLE_DICOS = {
-    "RA2020": {
+    "RA_2020": {
         "filename": "RA2020_Dictionnaire des variables_220415_CASD.xlsx",
         "variable_sheet": "1_DICO_Variables",
         "skiprows": 3,
-        "modalites_sheet": "2_MODALITES_Variables",
-        "skiprows_modalites": 2,
+        "nomenclature_sheet": "2_MODALITES_Variables",
+        "skiprows_nomenclatures": 2,
         "cols_to_use": {
             "TABLE_DIFFUSION": COLNAME_TABLE,
             "VARIABLE_DIFFUSION": COLNAME_VARIABLE,
@@ -51,36 +52,33 @@ AVAILABLE_DICOS = {
         "encoding": "latin1",
         "parser": "dico_from_excel",
     },
-    "PHYTOVITI2016": {
+    "PHYTOVITI_2016": {
         "filename": "Pratiques_phytosanitaires_en_viticulture_-_2016.csv",
         "skiprows": 9,
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
     },
-    "FIDELI2020": {
+    "FIDELI_2020": {
         "filename": "Fichier_Démographique_sur_les_Logements_et_les_Individus_(FIDELI)_-_2022.csv",
         "skiprows": 6,
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
     },
-    "PKPrairie2011": {
+    "PKPrairie_2011": {
         "filename": "Pratiques_culturales_en_prairie_-_2011.csv",
         "skiprows": 8,
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
     },
-    "PKGC2014": {
+    "PKGC_2014": {
         "filename": "Pratiques_phytosanitaires_en_grandes_cultures_-_2014.csv",
         "skiprows": 8,
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
     },
-    "PKfruits2015": {
+    "PKfruits_2015": {
         "filename": "20210726_PKfruits2015_dico_variables.ods",
         "variable_sheet": "data",
-        "skiprows": 0,
-        "modalites_sheet": None,
-        "skiprows_modalites": None,
         "cols_to_use": {
             "Fichier": COLNAME_TABLE,
             "NOM_variable": COLNAME_VARIABLE,
@@ -88,16 +86,11 @@ AVAILABLE_DICOS = {
             "TYPE": COLNAME_TYPE,
             "VALEURS": COLNAME_NOMENCLATURE,
         },
-        "modalites_cols_to_use": None,
-        "encoding": None,
         "parser": "dico_from_excel",
     },
-    "PKLeg2013": {
+    "PKLeg_2013": {
         "filename": "PKLEG13_DESC.ods",
         "variable_sheet": "Data",
-        "skiprows": 0,
-        "modalites_sheet": None,
-        "skiprows_modalites": None,
         "cols_to_use": {
             "Fichier": COLNAME_TABLE,
             "Nom": COLNAME_VARIABLE,
@@ -106,8 +99,17 @@ AVAILABLE_DICOS = {
             "Nomenc": COLNAME_NOMENCLATURE,
             "Filtre": COLNAME_NOMENCLATURE_2,
         },
-        "modalites_cols_to_use": None,
-        "encoding": None,
+        "parser": "dico_from_excel",
+    },
+    "PKViti_2019": {  # I manually searched and replaced all ";" code-lable separators in the modalities column with ":" to avoid confusion with the ";" used to separate modalities
+        "filename": "PKViti2019_dico_variables_definitif.ods",
+        "variable_sheet": ["PKViti2019_definitif","PKViti2019_gest_enherb_definitif", "PKViti2019_ope_cult_definitif", "PKViti2019_IFT_trait_definitif", "MATACT_PKViti2019_definitif", "PKViti2019_AMM_SA"],
+        "cols_to_use": {
+            "NOM": COLNAME_VARIABLE,
+            "DESCRIPTION (avec éventuelle référence dans le questionnaire)": COLNAME_LIBELLE,
+            "TYPE": COLNAME_TYPE,
+            "MODALITES": COLNAME_NOMENCLATURE,
+        },
         "parser": "dico_from_excel",
     },
 }

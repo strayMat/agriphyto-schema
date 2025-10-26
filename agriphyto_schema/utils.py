@@ -2,32 +2,8 @@ import json
 from pathlib import Path
 
 import pandera.pandas as pa
-from pandas.api.types import is_numeric_dtype
 
-
-def clean_nomenclature_name(var_name: str | float, table_name: str | None = None) -> str:
-    """
-    Clean variable name by replacing special characters.
-    Args:
-        var_name (str | float): Original variable name
-        table_name (str | None): Optional table name to prefix
-    Returns:
-        str: Cleaned variable name prefixed by table name if provided.
-    """
-    if is_numeric_dtype(type(var_name)):
-        var_name = str(var_name)
-    var_name = var_name.replace("*", "star")
-    var_name = var_name.replace(" ", "_")
-    var_name = var_name.replace("-", "_")
-    var_name = var_name.replace(";", "_")
-    var_name = var_name.replace("<", "_")
-    var_name = var_name.replace(">", "_")
-    var_name = var_name.replace("(", "")
-    var_name = var_name.replace(")", "")
-    var_name = var_name.replace("\xa0", "_")
-    if table_name:
-        var_name = f"{table_name}__{var_name}"
-    return var_name
+from agriphyto_schema.constants import AVAILABLE_DICOS
 
 
 # Workaround to save/load pandera schema with metadata
@@ -55,3 +31,22 @@ def pandera_from_json(schema_path: Path):
                 col.metadata = metadata
                 schema.columns[col.name] = col
     return schema
+
+
+def check_db_name(db_name: str) -> None:
+    """
+    Check if the provided db_name is in AVAILABLE_DICOS.
+    Parameters
+    ----------
+    db_name : str
+
+        The name of the data dictionary (e.g. "RA2020").
+    Raises
+    -------
+    ValueError
+        If db_name is not in AVAILABLE_DICOS.
+    """
+    if db_name not in AVAILABLE_DICOS:
+        msg = f"Accepted db_name: {list(AVAILABLE_DICOS.keys())}. Got {db_name}"
+        raise ValueError(msg)
+

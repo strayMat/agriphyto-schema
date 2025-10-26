@@ -1,0 +1,85 @@
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "AMM": {
+            "title": "Numéro d'autorisation de mise sur le marché du produit phytosanitaire",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "NOM_SUBSTANCE": {
+            "title": "Libellé de la substance active (selon la BNVD)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "NOM_SUBSTANCE_EUROSTAT": {
+            "title": "Libellé de la substance active dans la nomenclature Eurostat",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CONCENTRATION": {
+            "title": "Concentration de la substance active",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "UNITE_CONCENTRATION": {
+            "title": "Unité de concentration de la substance active (elle s'exprime en « g/diffuseur » pour les diffuseurs de phéromones)",
+            "description": "{\"nomenclature\": \"PKViti2019_AMM_SA__UNITE_CONCENTRATION\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBLE_SA": {
+            "title": "Segment de la substance active selon la classification Eurostat",
+            "description": "{\"nomenclature\": \"PKViti2019_AMM_SA__CIBLE_SA\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "PKViti_2019__PKViti2019_AMM_SA",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table PKViti2019_AMM_SA from data dictionary PKViti_2019"
+}
