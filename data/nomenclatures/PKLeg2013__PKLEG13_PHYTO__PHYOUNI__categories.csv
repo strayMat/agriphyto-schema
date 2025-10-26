@@ -1,0 +1,10 @@
+modality_code,label
+01,KG/HA
+02,L/HA
+03,KG/HL
+04,L/HL
+05,%
+06,CM3/HL
+07,ML/HL
+08,Sans dose
+10,Autre

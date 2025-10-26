@@ -1,0 +1,6 @@
+modality_code,label
+1,Moins de 4 heures
+2,de 4 à moins de 12 heures
+3,de 12 à moins de 24 heures
+4,24 heures et plus
+5,Pas d'enfouissement

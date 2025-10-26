@@ -1,0 +1,30 @@
+modality_code,label
+28,Amendements calcaire ou magnésien mixtes (mélange de produits crus et cuits)
+26,Amendements calcaires ou magnésiens (produits crus)
+27,Amendements chaux calciques ou magnésiennes :  vives ou éteintes (produits cuits)
+19,"Boues de station d’épuration urbaine (chaulées,..)"
+16,Compost d’ordures ménagères
+14,Compost d’origine animale
+15,Compost d’origine végétale
+17,Eaux de sucrerie
+07,Fientes pateuses poules pondeuses
+06,Fientes sèches poules pondeuses
+01,Fumier bovins
+02,Fumier canards
+23,Fumier caprins
+03,Fumier ovins
+04,Fumier porcs
+05,Fumier volailles de chair
+08,Lisier bovins
+09,Lisier lapins
+10,Lisier ovins
+11,Lisier porcs
+12,Lisier poules pondeuses
+13,Lisier veaux
+24,Résidus de sucrerie
+18,Vinasse
+20,Autres boues d’industries agro-alimentaires
+21,Autres boues industrielles
+29,Autres amendements
+22,Autres effluents
+25,Autres fumures organiques ou  organo-minérales non normées ou non-homologuées

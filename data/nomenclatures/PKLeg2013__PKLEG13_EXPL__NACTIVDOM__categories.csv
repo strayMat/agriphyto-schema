@@ -1,0 +1,23 @@
+modality_code,label
+52,Aviculture
+45,Bovins en orientation lait
+46,Bovins en orientation élevage et viande
+47,Bovins lait et élevage à viande combinés
+38,Combinaisons de cultures permanentes
+15,"Céréales, oléagineux et protéagineux"
+53,Diverses combinaisons de granivores
+84,Exploitations mixtes avec diverses combinaisons cultures et élevage
+83,Exploitations mixtes grandes cultures et herbivores
+90,Exploitations non classées
+36,Fruits et agrumes
+21,Horticulture d'intérieur (légumes et plantes ornementales d'intérieur)
+22,Horticulture de plein air (légumes et plantes ornementales de plein air)
+37,Oléiculture
+48,"Ovins, caprins et autres herbivores"
+74,Poly élevage à orientation granivores
+73,Poly élevage à orientation herbivores
+61,Polyculture
+51,Porcins
+35,Viticulture
+16,"Autres grandes cultures annuelles (légumes de plein champ, cultures industrielles...)"
+23,"Autres types d'horticulture (champignons, pépinières...)"

@@ -1,0 +1,21 @@
+modality_code,label
+01,AMAP
+02,Carreau des producteurs au MIN
+03,Cueillette libre à la ferme
+04,Centrale d'achat
+05,"Coopérative, SICA"
+06,Export
+07,Grossiste hors MIN
+08,Grossiste du MIN
+09,"Industrie (Contrat, ...)"
+10,Marché au cadran
+11,Metteur en marché
+12,Mise au retrait
+13,Non commercialisée
+14,Production transformée sur l'exploitation
+15,Vente à terme
+16,Vente directe par internet
+17,Vente directe à la ferme
+18,Vente directe à un petit commerce ou GMS
+19,Vente directe marchés 'de plein vent'
+20,Autres

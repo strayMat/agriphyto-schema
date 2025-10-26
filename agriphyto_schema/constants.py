@@ -16,6 +16,8 @@ COLNAME_VARIABLE = "variable"
 COLNAME_LIBELLE = "label"
 COLNAME_TYPE = "type"
 COLNAME_NOMENCLATURE = "nomenclature"
+COLNAME_NOMENCLATURE_2 = "nomenclature_2"  # sometimes two columns are used for nomenclature...
+COLNAME_CODE = "modality_code"
 COLNAME_PANDERA_TYPE = "pandera_type"
 
 # Simple mapping Excel type -> Pandera type
@@ -85,6 +87,24 @@ AVAILABLE_DICOS = {
             "LIBELLE": COLNAME_LIBELLE,
             "TYPE": COLNAME_TYPE,
             "VALEURS": COLNAME_NOMENCLATURE,
+        },
+        "modalites_cols_to_use": None,
+        "encoding": None,
+        "parser": "dico_from_excel",
+    },
+    "PKLeg2013": {
+        "filename": "PKLEG13_DESC.ods",
+        "variable_sheet": "Data",
+        "skiprows": 0,
+        "modalites_sheet": None,
+        "skiprows_modalites": None,
+        "cols_to_use": {
+            "Fichier": COLNAME_TABLE,
+            "Nom": COLNAME_VARIABLE,
+            "Label": COLNAME_LIBELLE,
+            "Type": COLNAME_TYPE,
+            "Nomenc": COLNAME_NOMENCLATURE,
+            "Filtre": COLNAME_NOMENCLATURE_2,
         },
         "modalites_cols_to_use": None,
         "encoding": None,

@@ -1,0 +1,21 @@
+modality_code,label
+02,Aide familial
+12,Ancien agriculteur exploitant
+07,"Artisan, commerçant et assimilé , chef d’entreprise de 10 salariés ou plus"
+13,Autre retraité
+03,"Cadre, contremaître, agent de maîtrise (chef de culture, gérant, …)"
+14,Chômeur n’ayant jamais travaillé
+10,Employé
+06,"ETA, exploitant forestier, patron pêcheur"
+01,Exploitant agricole
+15,"Inactif divers (fem e au foyer, élève, stagiaire)"
+08,"Médecin, pharmacien, avocat, professeur, ingénieur, …"
+18,Non salarié agricole
+05,"Ouvrier agricole (éleveur, conducteur d’engins, apprenti agricole, …)"
+11,Ouvrier non agricole (y compris apprenti non agricole)
+09,"Profession intermédiaire (instituteur, infirmier, technicien, contremaître,…)"
+19,"Profession libérale , autre cadre , profession intellectuelle et artistique"
+17,Salarié agricole
+20,Sans activité professionnelle
+04,"Technicien (responsable d’un atelier d’élevage, …)"
+16,"Élu (maire, député, conseil er général, chambre d’agriculture, copérative, MSA…)"
