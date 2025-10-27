@@ -23,10 +23,14 @@ COLNAME_PANDERA_TYPE = "pandera_type"
 # Simple mapping Excel type -> Pandera type
 MAP_TYPES = {
     "Numérique": "float",
+    "NumericalCode": "int",
     "Entier": "int",
-    "Charactères": "string",
+    "OuiNon": "bool",
     "Booléen": "bool",
+    "Charactères": "string",
+    "Caractère": "string",
     "Chaîne": "string",
+    "Date": "datetime64[ns]",
 }
 
 # Configurations for loaded dictionaries
@@ -112,6 +116,17 @@ AVAILABLE_DICOS = {
         },
         "parser": "dico_from_excel",
     },
+    "PKGC_2017": { # I manually searched and replaced all ";" code-lable separators in the modalities column with ":" to avoid confusion with the ";" used to separate modalities
+        "filename": "PKGC2017_dico_variables.ods",
+        "variable_sheet": "PKGC2017_dicoVar_global",
+        "cols_to_use": {
+            "NOM_VARIABLE": COLNAME_VARIABLE,
+            "LIBELLE": COLNAME_LIBELLE,
+            "TYPE": COLNAME_TYPE,
+            "NOMENCLATURE": COLNAME_NOMENCLATURE,
+        },
+        "parser": "dico_from_excel",
+    }
 }
 CASD_BOOL_MODALITIES = ['"0 - Non";"1 - Oui"', '"1 - Oui";"0 - Non"', "oui/non"]
 USELESS_MODALITIES = [*CASD_BOOL_MODALITIES]

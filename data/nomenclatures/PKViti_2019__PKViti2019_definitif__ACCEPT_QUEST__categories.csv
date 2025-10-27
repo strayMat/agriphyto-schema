@@ -1,4 +1,5 @@
 modality_code,label
-1:Questionnaire accepté2:Injoignable3:Impossibilité de répondre9:Refus,1:Questionnaire accepté2:Injoignable3:Impossibilité de répondre9:Refus
-1:Questionnaire accepté2:Injoignable3:Impossibilité de répondre9:Refus,1:Questionnaire accepté2:Injoignable3:Impossibilité de répondre9:Refus
-1,Questionnaire accepté2:Injoignable3:Impossibilité de répondre9:Refus
+1,Questionnaire accepté
+2,Injoignable
+3,Impossibilité de répondre
+9,Refus

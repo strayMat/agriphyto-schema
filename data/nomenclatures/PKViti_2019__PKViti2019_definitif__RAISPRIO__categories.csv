@@ -1,4 +1,10 @@
 modality_code,label
-1:connaissances historiques2:observations des maladies3:comptages ravageurs4:comptage auxiliaires5:météo6:BSV7:conseils fournisseurs8:conseils indépendants9:outils d'aide à la décision,1:connaissances historiques2:observations des maladies3:comptages ravageurs4:comptage auxiliaires5:météo6:BSV7:conseils fournisseurs8:conseils indépendants9:outils d'aide à la décision
-1:connaissances historiques2:observations des maladies3:comptages ravageurs4:comptage auxiliaires5:météo6:BSV7:conseils fournisseurs8:conseils indépendants9:outils d'aide à la décision,1:connaissances historiques2:observations des maladies3:comptages ravageurs4:comptage auxiliaires5:météo6:BSV7:conseils fournisseurs8:conseils indépendants9:outils d'aide à la décision
-1,connaissances historiques2:observations des maladies3:comptages ravageurs4:comptage auxiliaires5:météo6:BSV7:conseils fournisseurs8:conseils indépendants9:outils d'aide à la décision
+1,connaissances historiques
+2,observations des maladies
+3,comptages ravageurs
+4,comptage auxiliaires
+5,météo
+6,BSV
+7,conseils fournisseurs
+8,conseils indépendants
+9,outils d'aide à la décision

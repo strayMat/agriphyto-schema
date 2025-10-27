@@ -1,4 +1,10 @@
 modality_code,label
-01:compost de fumiers02:compost de déchets verts03:compost de marc de raisin04:autres composts11:fumier ovin12:fumier bovin13:autre type de fumier16:autre fumure non compostée21:Produits du commerce,01:compost de fumiers02:compost de déchets verts03:compost de marc de raisin04:autres composts11:fumier ovin12:fumier bovin13:autre type de fumier16:autre fumure non compostée21:Produits du commerce
-01:compost de fumiers02:compost de déchets verts03:compost de marc de raisin04:autres composts11:fumier ovin12:fumier bovin13:autre type de fumier16:autre fumure non compostée21:Produits du commerce,01:compost de fumiers02:compost de déchets verts03:compost de marc de raisin04:autres composts11:fumier ovin12:fumier bovin13:autre type de fumier16:autre fumure non compostée21:Produits du commerce
-01,compost de fumiers02:compost de déchets verts03:compost de marc de raisin04:autres composts11:fumier ovin12:fumier bovin13:autre type de fumier16:autre fumure non compostée21:Produits du commerce
+01,compost de fumiers
+02,compost de déchets verts
+03,compost de marc de raisin
+04,autres composts
+11,fumier ovin
+12,fumier bovin
+13,autre type de fumier
+16,autre fumure non compostée
+21,Produits du commerce

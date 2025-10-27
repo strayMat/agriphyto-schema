@@ -23,7 +23,8 @@ def cli():
     "--dico_name",
     "-d",
     required=True,
-    help=f"Parse an Excel data dictionary to create a pandera schema for data validation. Available dicos are : 'all' or one in {list(AVAILABLE_DICOS.keys())}",
+    type=click.Choice([*AVAILABLE_DICOS.keys(), "all"]),
+    help="Parse an Excel data dictionary to create a pandera schema for data validation.",
 )
 def parse(dico_name: str) -> None:
     """

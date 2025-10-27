@@ -1658,6 +1658,795 @@ PKGC2014,PHYTOS_PHYTOGC2014,PHERO,Indicatrice produit de confusion sexuelle,stri
 PKGC2014,PHYTOS_PHYTOGC2014,Segmentation_IFT,Catégorie d'usage,string,
 PKGC2014,PHYTOS_PHYTOGC2014,IFT_TRAIT,IFT traitement,string,
 PKGC2014,PHYTOS_PHYTOGC2014,Redressement,Type de redressement de l'IFT traitement par la moyenne des IFT traitement de même catégorie d'usage sur la région,string,
+PKGC_2017,PKGC2017_dicoVar_global,ACARIENS,5.1 Pression parasitaire : Acariens,int64,PKGC2017_dicoVar_global__ACARIENS
+PKGC_2017,PKGC2017_dicoVar_global,ACCES,10.7 Modalité d'accès à l'eau d'irrigation,int64,PKGC2017_dicoVar_global__ACCES
+PKGC_2017,PKGC2017_dicoVar_global,ACCTDOM,1.5.2 Diagnostic énergétique : ACCT DOM,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ADJPASTOT,5.6 Traitements phytosanitaires : nombre de passages avec au moins un adjuvant,float64,
+PKGC_2017,PKGC2017_dicoVar_global,ADVENTICES,5.1 Pression parasitaire : Adventices,int64,PKGC2017_dicoVar_global__ADVENTICES
+PKGC_2017,PKGC2017_dicoVar_global,AGEPULV,9.4.1 Age pulvérisateur,float64,
+PKGC_2017,PKGC2017_dicoVar_global,ALGUE,6.1.2 Apport crème d'algues,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ALTISE,5.1 Pression parasitaire : Altises (petites et grosses),int64,PKGC2017_dicoVar_global__ALTISE
+PKGC_2017,PKGC2017_dicoVar_global,ALTITUDE,1.7.7 Altitude de la parcelle,float64,
+PKGC_2017,PKGC2017_dicoVar_global,AMBROISIE,5.1 Pression parasitaire : Ambroisie,int64,PKGC2017_dicoVar_global__AMBROISIE
+PKGC_2017,PKGC2017_dicoVar_global,AMMREF,AMM du produit utilisé,int64,
+PKGC_2017,PKGC2017_dicoVar_global,ANALYEXP,1.4.1 Nombre d'années avec analyse de terre depuis 2012,float64,
+PKGC_2017,PKGC2017_dicoVar_global,ANALYP,1.4.1.1 Analyse de terre sur la parcelle,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ANNEEBIO,1.9.1.1 Année conversion bio,int64,
+PKGC_2017,PKGC2017_dicoVar_global,ANPLAN,1.10.1 Année de plantation canne à sucre,int64,
+PKGC_2017,PKGC2017_dicoVar_global,ANSEMPR,1.11.1 Année de semis de la prairie,int64,
+PKGC_2017,PKGC2017_dicoVar_global,ANTHRA,5.1 Pression parasitaire : Ascochytose,int64,PKGC2017_dicoVar_global__ANTHRA
+PKGC_2017,PKGC2017_dicoVar_global,ANTIDERIV,9.4.6 Pulvérisateur avec buses anti-dérive homologuées,bool,
+PKGC_2017,PKGC2017_dicoVar_global,APFER,6.1.2 Apport fer,bool,
+PKGC_2017,PKGC2017_dicoVar_global,APPHYTO,5.3 Traitements phytos : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,APPORTMIN,5.3 Fumure minérale : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,AUTESPDOUBLE,0.5.1.1 Autre culture dans semoir : libellé autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,AUTGRAM,1.11.8 composition prairie : Autre(s) graminée(s),bool,
+PKGC_2017,PKGC2017_dicoVar_global,AUTINTEMP,1.13.2 Aléas exceptionnels : libellé autres,string,
+PKGC_2017,PKGC2017_dicoVar_global,AUTLEG,1.11.8 composition prairie : Autre(s) légumineuse(s),bool,
+PKGC_2017,PKGC2017_dicoVar_global,AUTPASTOT,5.6 Traitements phytosanitaires : nombre de passages avec au moins un autre traitement,float64,
+PKGC_2017,PKGC2017_dicoVar_global,AUTTYPESOL,1.8.1 Type sol : libellé autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,AUTVARIET,4.7.2.1 Variété principale : libellé autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,AUTVARIET2,4.7.3.1 Variété secondaire : libellé autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,AZOTENFOUI,4.9 Semoir combiné à matériel enfouissement azote,bool,
+PKGC_2017,PKGC2017_dicoVar_global,BANDEHERB,1.7.4 Bande enherbée le long cours d'eau,bool,
+PKGC_2017,PKGC2017_dicoVar_global,BILANFUMN,7.1 Détermination dose totale azote : m?méthode calcul de bilan perso,bool,
+PKGC_2017,PKGC2017_dicoVar_global,BILANHUM,1.4.2 Réalisation calculs de bilan humique,int64,PKGC2017_dicoVar_global__BILANHUM
+PKGC_2017,PKGC2017_dicoVar_global,BILLONS,4.12 Culture en billons ou en planches,bool,
+PKGC_2017,PKGC2017_dicoVar_global,BIO,"1.9.1 Mode biologique (modalités 1, 2 , 3 ou 4 pour CAHIERBIO)",int64,
+PKGC_2017,PKGC2017_dicoVar_global,BIOCONTROLE,Indicateur d'appartenance au champ de calcul de l'IFT biocontrôle,int64,PKGC2017_dicoVar_global__BIOCONTROLE
+PKGC_2017,PKGC2017_dicoVar_global,BORE,6.1.2 Apport bore,bool,
+PKGC_2017,PKGC2017_dicoVar_global,BOTRYTIS,5.1 Pression parasitaire : Botrytis,int64,PKGC2017_dicoVar_global__BOTRYTIS
+PKGC_2017,PKGC2017_dicoVar_global,BRUCHES,5.1 Pression parasitaire : Bruches,int64,PKGC2017_dicoVar_global__BRUCHES
+PKGC_2017,PKGC2017_dicoVar_global,BRULE,5.10 Cannes brûlées intentionnellement,bool,
+PKGC_2017,PKGC2017_dicoVar_global,BSV,8.1 Information générale : BSV,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CABINE,9.5.3 Cabine sur le tracteur ou pulvé : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERAUT,1.3 Engagé Autre démarche agro-écologique,int64,PKGC2017_dicoVar_global__CAHIERAUT
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERBIO,1.9.1 Conduite en mode biologique (yc conversion),int64,PKGC2017_dicoVar_global__CAHIERBIO
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERCEEA1,1.3 Engagé certif environnementale exploit agri niv 1,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERCEEA2,1.3 Engagé certif environnementale exploit agri niv 2,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERDEPHY,1.3 Engagé Fermes DEPHY,int64,PKGC2017_dicoVar_global__CAHIERDEPHY
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERGIEE,1.3 Engagé GIEE,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERGR30000,1.3 Engagé? Groupe des 30000 plan Ecophyto,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERHVE,1.3 Engagé? HVE certif environnementale exploit agri niv 3,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERMAEC,1.3 Engagé MAEC,int64,PKGC2017_dicoVar_global__CAHIERMAEC
+PKGC_2017,PKGC2017_dicoVar_global,CAHIERPHYTO,1.9.2 Engagée cahier des charges réduction phytos hors MAEC,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CALCIC,6.1.1 Amendement minéral basique au cours campagne,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CALCIFT,8.4.1 Calcul IFT chaque année,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CALIPLANT,4.11 Calibre des plants (mm),float64,
+PKGC_2017,PKGC2017_dicoVar_global,CAP2ER,1.5.2 Diagnostic énergétique : Cap2'er,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CAUSERESEMIS,4.15.1 Resemis : cause principale,int64,PKGC2017_dicoVar_global__CAUSERESEMIS
+PKGC_2017,PKGC2017_dicoVar_global,CENDRE,6.1.3 Apport de cendres : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CHAMP_IFT,Indicateur d'appartenance au champ de calcul de l'IFT,string,PKGC2017_dicoVar_global__CHAMP_IFT
+PKGC_2017,PKGC2017_dicoVar_global,CHARANCONS,5.1 Pression parasitaire : Charançons,int64,PKGC2017_dicoVar_global__CHARANCONS
+PKGC_2017,PKGC2017_dicoVar_global,CMIN2012,6.2 Apport en amendements minéraux basiques en 2012,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CMIN2013,6.2 Apport en amendements minéraux basiques en 2013,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CMIN2014,6.2 Apport en amendements minéraux basiques en 2014,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CMIN2015,6.2 Apport en amendements minéraux basiques en 2015,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CMIN2016,6.2 Apport en amendements minéraux basiques en 2016,bool,
+PKGC_2017,PKGC2017_dicoVar_global,COEF1,Coefficient d'exploitation (à utiliser que pour les variables au niveau de l'exploitation),float64,
+PKGC_2017,PKGC2017_dicoVar_global,COEF2,Coefficient parcelle multiplié par la superficie (à utiliser pour toutes les variables indépendante de la superficie),float64,
+PKGC_2017,PKGC2017_dicoVar_global,COLEOPT,5.1 Pression parasitaire : Coléoptères,int64,PKGC2017_dicoVar_global__COLEOPT
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_EXPLOIT,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_FILTRE,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_FUMTOT,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_GEN,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_IDENT,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_IMPLANT,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_IRRIG,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_OPERATIONS,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_PREC1,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_PREC2,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_PULVE,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_RAISFERTI,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_ONG_RAISPHYTOS,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COM_VALID_GESTCENT,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COMMENTAIRE,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,COMMENTAIRE_DOSS,Commentaire application,string,
+PKGC_2017,PKGC2017_dicoVar_global,CONDEPHY,8.1 Information générale : connaissance réseau DEPHY,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CONNAPPO,10.6.1 Provenance connaissance apport total irrigation,int64,PKGC2017_dicoVar_global__CONNAPPO
+PKGC_2017,PKGC2017_dicoVar_global,CONNHAAN,9.4.2 Pulvérisateur : connaissance nombre ha trait?s/an,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CONNIFT,8.4 Connaissance IFT,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CONNSUC,1.19 Connaissance teneur en sucre,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CONTRAITSEM,4.5.1 Semence/plant traité(e) : connaissance traitements,bool,
+PKGC_2017,PKGC2017_dicoVar_global,COUPEP,11.3 Numéro de passage,int64,
+PKGC_2017,PKGC2017_dicoVar_global,COUPTRONC,9.4.5 Pulvérisateur à rampe équipé coupures de tronçons,int64,PKGC2017_dicoVar_global__COUPTRONC
+PKGC_2017,PKGC2017_dicoVar_global,COUPUR,10.3 Coupure d'eau : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,CUI,6.1.2 Apport cuivre,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DACTYL,1.11.8 composition prairie : Dactyle (pelotoné),bool,
+PKGC_2017,PKGC2017_dicoVar_global,DAGRIPAYS,1.5.1 Diagnostic agro-écologique : agriculture paysanne,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DAGROAUCUN,1.5.1 Diagnostic agro-écologique : aucun,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DAGROAUT,1.5.1 Diagnostic agro-écologique : autres,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DATAUT,3.3.1 Culture dérobée - autres : date implantation,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DATHARIC,3.3.1 Culture dérobée - haricot : date implantation,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DATMAIS,3.3.1 Culture dérobée – maïs : date implantation,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DATMELON,3.3.1 Culture dérobée - melon : date implantation,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DATTOMAT,3.3.1 Culture dérobée - tomates : date implantation,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DBLERG,4.13 Plantation en double rang,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DDESENGVERT,3.1 Culture intermédiaire détruite : date destruction,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DDESREPOUS,2.7.2 Repousses du précédent : date destruction,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DEBOUCHE,1.14 Débouché principal,int64,PKGC2017_dicoVar_global__DEBOUCHE
+PKGC_2017,PKGC2017_dicoVar_global,DECLIRR,10.10.1 Déclenchement irrigation : raisonnement prioritaire,int64,PKGC2017_dicoVar_global__DECLIRR
+PKGC_2017,PKGC2017_dicoVar_global,DECLIRRHAB,10.10 Déclenchement irrigation selon usages courants,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DECLIRRIMP,10.10 Déclenchement irrigation en fonction des tours d'eau imposés,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DECLIRROBS,10.10 Déclenchement irrigation après observation parcelle,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DECLIRRPILOT,10.10 Déclenchement irrigation en utilisant des outils de pilotage,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DECLIRRTECH,10.10 Déclenchement irrigation d'après recommandations organismes techniques,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEFTHERM,5.8.1 Défanage thermique : indicatrice,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEHMAN,5.7.2 Désherbage manuel : indicatrice,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEHMECA,5.6 Indicatrice désherbage mécanique (calculée),bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEHTHERM,5.7.1 Désherbage thermique : indicatrice,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEPCOMPAR,Commune de la parcelle,string,
+PKGC_2017,PKGC2017_dicoVar_global,DEPHY,8.1 Information générale : participation démo/visites fermes DEPHY,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEPPAR,Département de la parcelle,string,
+PKGC_2017,PKGC2017_dicoVar_global,DEROBAUT,3.3.1 Culture dérobée - autres : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEROBE,3.2 Culture dérobée : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEROBHARIC,3.3.1 Culture dérobée - haricot : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEROBLIBAUT,3.3.1 Culture dérobée - autres : libellé,string,
+PKGC_2017,PKGC2017_dicoVar_global,DEROBMAIS,3.3.1 Culture dérobée - maïs : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEROBMELON,3.3.1 Culture dérobée - melon : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEROBSSCV,3.2 Culture dérobée : implantation sous couvert,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DEROBTOMAT,3.3.1 Culture dérobée - tomates : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DESTIN,1.15 Destination de la récolte,int64,PKGC2017_dicoVar_global__DESTIN
+PKGC_2017,PKGC2017_dicoVar_global,DESTINALIM,1.16 Destination alimentaire soja,int64,PKGC2017_dicoVar_global__DESTINALIM
+PKGC_2017,PKGC2017_dicoVar_global,DEXDEROB,3.2 Culture dérobée : date récolte ou pâture,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DHFUMK,7.7 Détermination dose totale K : habitude,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DHFUMN,7.1 Détermination dose totale azote : habitude,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DHFUMP,7.6 Détermination dose totale P : habitude,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DIALECTE,1.5.1 Diagnostic agro-écologique : DIALECTE,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DIATERRE,1.5.2 Diagnostic énergétique : Dia'terre,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DISPOVEGET,1.7.4 Autre dispositif végétalisé le long cours d'eau,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DLABOUR,5.6 Date du dernier labour (calculée),datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DNRJAUCUN,1.5.2 Diagnostic énergétique : aucun,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DNRJAUT,1.5.2 Diagnostic énergétique : Autres,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DORYPHORE,5.1 Pression parasitaire : Doryphore,int64,PKGC2017_dicoVar_global__DORYPHORE
+PKGC_2017,PKGC2017_dicoVar_global,DOUBLECULT,0.5 Autre culture dans semoir : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DPRECUL,2.5 Date récolte culture 2016,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DRAD,1.5.1 Diagnostic agro-écologique : du RAD,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DRAINP,1.7.1 Réseau de drainage fonctionnel,bool,
+PKGC_2017,PKGC2017_dicoVar_global,DSEMDEROB,3.2 Culture dérobée : date semis,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DSEMENGVERT,3.1 Culture intermédiaire détruite : date semis,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,DURCOUPUR,10.3.1 Coupure d'eau : durée (jours),float64,
+PKGC_2017,PKGC2017_dicoVar_global,DUREEHAH,9.6 Durée moyenne traitement ha/h,float64,
+PKGC_2017,PKGC2017_dicoVar_global,DUREETRAITH,9.6 Durée moyenne traitement parcelle (heures),float64,
+PKGC_2017,PKGC2017_dicoVar_global,DUREETRAITMN,9.6 Durée moyenne traitement parcelle (minutes),float64,
+PKGC_2017,PKGC2017_dicoVar_global,EAU,1.7.3 Présence cours d'eau sur ou adjacent la parcelle,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ECOPHYTOPIC,8.1 Information générale : écophytoPIC,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENERGIE,1.17 Valorisation énergétique,int64,PKGC2017_dicoVar_global__ENERGIE
+PKGC_2017,PKGC2017_dicoVar_global,ENGAUT,7.4 Choix type d'engrais : autres,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGEXP,7.4 Choix type d'engrais : expérience personnelle,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGMAEC,1.9.2 Parcelle engagée MAEC,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGPRIX,7.4 Choix type d'engrais : prix,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGSOL,7.4 Choix type d'engrais : analyses sol,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGTECH,7.4 Choix type d'engrais : conseils technicien,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGVDESAUT,3.1 Culture intermédiaire détruite : destruction autre,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGVDESCHI,3.1 Culture intermédiaire détruite : destruction chimique,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGVDESMEC,3.1 Culture intermédiaire détruite : destruction mécanique,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGVEND,7.4 Choix type d'engrais : conseils vendeur,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGVERT,3.1 Culture intermédiaire détruite : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENGVSSCV,3.1 Culture intermédiaire détruite : implantation sous couvert,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENRPRATIC,12.1 Utilisation logiciel enregistrement des pratiques,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ENTRERANG,4.14 Écartement entre les rangs,float64,
+PKGC_2017,PKGC2017_dicoVar_global,EQEPI,9.5.7.1 Précautions : mettre un EPI,bool,
+PKGC_2017,PKGC2017_dicoVar_global,EQGANT,9.5.7.1 Précautions : porter des gants,bool,
+PKGC_2017,PKGC2017_dicoVar_global,EQPREPBOT,9.5.1 Équipement préparation bouillie : bottes,int64,PKGC2017_dicoVar_global__EQPREPBOT
+PKGC_2017,PKGC2017_dicoVar_global,EQPREPGAN,9.5.1 Équipement préparation bouillie : gants,int64,PKGC2017_dicoVar_global__EQPREPGAN
+PKGC_2017,PKGC2017_dicoVar_global,EQPREPLUN,9.5.1 Équipement préparation bouillie : lunettes/visières,int64,PKGC2017_dicoVar_global__EQPREPLUN
+PKGC_2017,PKGC2017_dicoVar_global,EQPREPMASQ,9.5.1 Équipement préparation bouillie : masque,int64,PKGC2017_dicoVar_global__EQPREPMASQ
+PKGC_2017,PKGC2017_dicoVar_global,EQPREPVET,9.5.1 Équipement préparation bouillie : vêtement de protection,int64,PKGC2017_dicoVar_global__EQPREPVET
+PKGC_2017,PKGC2017_dicoVar_global,ESPDEROB,3.2 Culture dérobée : espèce(s),int64,PKGC2017_dicoVar_global__ESPDEROB
+PKGC_2017,PKGC2017_dicoVar_global,ESPDOUBLE,0.5.1 Autre culture dans semoir : libellé,int64,PKGC2017_dicoVar_global__ESPDOUBLE
+PKGC_2017,PKGC2017_dicoVar_global,ESPECE,Espèce,int64,PKGC2017_dicoVar_global__ESPECE
+PKGC_2017,PKGC2017_dicoVar_global,ESPENGVERT,3.1 Culture intermédiaire détruite : espèce(s),int64,PKGC2017_dicoVar_global__ESPENGVERT
+PKGC_2017,PKGC2017_dicoVar_global,EXPLOITDATE,11.3 Date (coupe ou entrée animaux),datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,EXPORTFUMN,7.1.1 Calcul de bilan : exportation ou non pailles,bool,
+PKGC_2017,PKGC2017_dicoVar_global,FAUCHE,11.3 Coupe : rendement t/ha,float64,
+PKGC_2017,PKGC2017_dicoVar_global,FAUCHECALC,11.3 Coupe : rendement t/ha (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FETUQ,1.11.8 composition prairie : Fétuque élevée,bool,
+PKGC_2017,PKGC2017_dicoVar_global,FNTOT,5.6 Quantité d'azote (minérale et organique) totale en kg/ha (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FONGITOT,5.6 Traitements phytosanitaires : nombre de passages avec au moins un fongicide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,FOURNDATA,12.1.2 Communication données au SSP,bool,
+PKGC_2017,PKGC2017_dicoVar_global,FOURNSOL,7.1.1.3 Valeur globale fourniture sol,float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMAPPO,5.6 FUMIN mode apport,int64,PKGC2017_dicoVar_global__FUMAPPO
+PKGC_2017,PKGC2017_dicoVar_global,FUMCK,5.6 FUMIN concentration K potassium,float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMCN,5.6 FUMIN concentration N azote,float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMCP,5.6 FUMIN concentration P phosphore,float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMCS,5.6 FUMIN concentration S soufre,float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMDEL,5.6 FUMIN délai entre apport et enfouissement,int64,PKGC2017_dicoVar_global__FUMDEL
+PKGC_2017,PKGC2017_dicoVar_global,FUMDOS,5.6 FUMIN quantité engrais /ha (kg ou L),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMLIB,5.6 FUMIN libellé fertilisant,string,
+PKGC_2017,PKGC2017_dicoVar_global,FUMNAT,5.6 FUMIN type fertilisant,int64,PKGC2017_dicoVar_global__FUMNAT
+PKGC_2017,PKGC2017_dicoVar_global,FUMO,5.3 Fumure organique : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,FUMODEL,5.6 FUMO délai entre apport et enfouissement,int64,PKGC2017_dicoVar_global__FUMODEL
+PKGC_2017,PKGC2017_dicoVar_global,FUMODOS,5.6 FUMO quantité brute /ha,float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMODOSCALC,5.6 FUMO aide quantité brute /ha (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMOFUMN,7.1.1 Calcul de bilan : fumure organique,bool,
+PKGC_2017,PKGC2017_dicoVar_global,FUMOLIB,5.6 FUMO libellé fumure,string,
+PKGC_2017,PKGC2017_dicoVar_global,FUMONAT,5.6 FUMO nature fumure,int64,PKGC2017_dicoVar_global__FUMONAT
+PKGC_2017,PKGC2017_dicoVar_global,FUMOPROV,5.6 FUMO provenance,int64,PKGC2017_dicoVar_global__FUMOPROV
+PKGC_2017,PKGC2017_dicoVar_global,FUMOTYP,5.6 FUMO type matériel épandage,int64,PKGC2017_dicoVar_global__FUMOTYP
+PKGC_2017,PKGC2017_dicoVar_global,FUMOUNI,5.6 FUMO unité,int64,PKGC2017_dicoVar_global__FUMOUNI
+PKGC_2017,PKGC2017_dicoVar_global,FUMQK,5.6 FUMIN quantité K potassium (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQKCALC,5.6 FUMIN quantité K potassium (kg/ha) (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQKTOT,5.6 Quantité de potasse minérale totale en kg/ha (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQN,5.6 FUMIN quantité N azote (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQNCALC,5.6 FUMIN quantité N azote (kg/ha) (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQNTOT,5.6 Quantité d'azote minéral totale en kg/ha (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQP,5.6 FUMIN quantité P phosphore (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQPCALC,5.6 FUMIN quantité P phosphore (kg/ha) (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQPTOT,5.6 Quantité de phosphore minéral totale en kg/ha (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQS,5.6 FUMIN quantité S soufre (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQSCALC,5.6 FUMIN quantité S soufre (kg/ha) (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMQSTOT,5.6 Quantité de soufre minéral totale en kg/ha (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,FUMSPE,7.3 Apport spécifique pour teneur protéines,bool,
+PKGC_2017,PKGC2017_dicoVar_global,FUMUNI,5.6 FUMIN unité,int64,PKGC2017_dicoVar_global__FUMUNI
+PKGC_2017,PKGC2017_dicoVar_global,FUSARIO,5.1 Pression parasitaire : Fusariose,int64,PKGC2017_dicoVar_global__FUSARIO
+PKGC_2017,PKGC2017_dicoVar_global,GERANIUM,5.1 Pression parasitaire : Géranium ou autres crucifères,int64,PKGC2017_dicoVar_global__GERANIUM
+PKGC_2017,PKGC2017_dicoVar_global,GRAINHA,4.8 Dose de semis : nombre de grains à l'ha,float64,
+PKGC_2017,PKGC2017_dicoVar_global,GRAINM2,4.8 Dose de semis : nombre de grains par m2,float64,
+PKGC_2017,PKGC2017_dicoVar_global,GRUNITHA,4.8 Dose de semis : nombre d'unités (100000 semences) ? l'ha,float64,
+PKGC_2017,PKGC2017_dicoVar_global,HAIEESSLOC,1.7.2.4 Haie : essences locales,bool,
+PKGC_2017,PKGC2017_dicoVar_global,HAIEFLOAUT,1.7.2.5 Haie : floraison automnale,bool,
+PKGC_2017,PKGC2017_dicoVar_global,HAIEFLOETE,1.7.2.5 Haie : floraison estivale,bool,
+PKGC_2017,PKGC2017_dicoVar_global,HAIEFLOHIV,1.7.2.5 Haie : floraison hivernale,bool,
+PKGC_2017,PKGC2017_dicoVar_global,HAIEFLOPRIN,1.7.2.5 Haie : floraison printanière,bool,
+PKGC_2017,PKGC2017_dicoVar_global,HAIEMLIN,1.7.2.1 Haie : mètres linéaires,float64,
+PKGC_2017,PKGC2017_dicoVar_global,HAIENBCOTES,1.7.2 Haie : nombre côtés bordés,int64,PKGC2017_dicoVar_global__HAIENBCOTES
+PKGC_2017,PKGC2017_dicoVar_global,HAIENBESS,1.7.2.3 Haie : nombre essences,int64,PKGC2017_dicoVar_global__HAIENBESS
+PKGC_2017,PKGC2017_dicoVar_global,HAIESTARBO,1.7.2.2 Haie : strate grande (2 mètres et plus),bool,
+PKGC_2017,PKGC2017_dicoVar_global,HAIESTARBU,1.7.2.2 Haie : strate moyenne (de 1 à moins de 2 mètres),bool,
+PKGC_2017,PKGC2017_dicoVar_global,HAIESTHERB,1.7.2.2 Haie : strate petite (moins de 1 mètre),bool,
+PKGC_2017,PKGC2017_dicoVar_global,HELMINTHO,5.1 Pression parasitaire : Helminthosporiose,int64,PKGC2017_dicoVar_global__HELMINTHO
+PKGC_2017,PKGC2017_dicoVar_global,HERBITOT,5.6 Traitements phytosanitaires : nombre de passages avec au moins un herbicide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,ID_PKGC2017_CARNET_PLAINE,5.6 Identifiant opération,string,
+PKGC_2017,PKGC2017_dicoVar_global,ID_PKGC2017_EXPLOIT,11.3 Identifiant de l'opération d'exploitation de la prairie,string,
+PKGC_2017,PKGC2017_dicoVar_global,ID_PKGC2017_MELANGE, Identifiant pour l'ordre des espèces dans le mélange,int64,
+PKGC_2017,PKGC2017_dicoVar_global,ID_PKGC2017_MELANGE_GEN, Identifiant pour l'ordre des espèces dans le mélange,int64,
+PKGC_2017,PKGC2017_dicoVar_global,ID_PKGC2017_MELANGE_IMPLANT, Identifiant pour l'ordre des espèces dans le mélange,int64,
+PKGC_2017,PKGC2017_dicoVar_global,ID_UNITE,Identifiant BALSA,int64,
+PKGC_2017,PKGC2017_dicoVar_global,IDEA,1.5.2 Diagnostic énergétique : IDEA,bool,
+PKGC_2017,PKGC2017_dicoVar_global,IFT_traitement,IFT pour l'opération de traitement,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTAUT,IFT autre,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTAUTBIO,IFT autre bio,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTAUTNBIO,IFT autre non bio,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTFONG,IFT fongicide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTFONGBIO,IFT fongicide bio,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTFONGNBIO,IFT fongicide non bio,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTHERB,IFT herbicide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTINS,IFT insecticide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTINSBIO,IFT insecticide bio,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTINSNBIO,IFT insecticide non bio,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTSEM,IFT semences,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTTOT,IFT total,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTTOTBIO,IFT total en bio contrôle,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTTOTHORSHERB,IFT total hors herbicide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTTOTHORSSEM,IFT total hors traitement de semences,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTTOTNBIO,IFT total hors bio contrôle,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IFTTOTNBIOHORSHERB,IFT total non bio hors herbicide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,IMPUR,1.12.4 Impuretés (%),float64,
+PKGC_2017,PKGC2017_dicoVar_global,INFOAUT,8.6 Vecteur d'information : autre,bool,
+PKGC_2017,PKGC2017_dicoVar_global,INFOBSV,8.6 Vecteur d'information : consultation BSV,bool,
+PKGC_2017,PKGC2017_dicoVar_global,INFOCERTIPHYTO,8.6 Vecteur d'information : suivi formation certiphyto,bool,
+PKGC_2017,PKGC2017_dicoVar_global,INFODEPHY,8.6 Vecteur d'information : participation visite/démo fermes DEPHY,bool,
+PKGC_2017,PKGC2017_dicoVar_global,INFOECOPHYTOPIC,8.6 Vecteur d'information : consultation écophytoPIC,bool,
+PKGC_2017,PKGC2017_dicoVar_global,INFOFOURN,8.6 Vecteur d'information : conseils fournisseurs,bool,
+PKGC_2017,PKGC2017_dicoVar_global,INFOGEN,8.6 Vecteur d'information : formation générale,bool,
+PKGC_2017,PKGC2017_dicoVar_global,INFOINDEP,8.6 Vecteur d'information : conseils techniciens indépendants,bool,
+PKGC_2017,PKGC2017_dicoVar_global,INFOMEDIA,8.6 Vecteur d'information : presse/médias spécialisés,bool,
+PKGC_2017,PKGC2017_dicoVar_global,INOCULATION,4.6 Inoculation,int64,PKGC2017_dicoVar_global__INOCULATION
+PKGC_2017,PKGC2017_dicoVar_global,INSACTOT,5.6 Traitements phytosanitaires : nombre de passages avec au moins un insecticide ou acaricide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,INTEMP,1.13 Perte production d'au moins 30% (al?a),bool,
+PKGC_2017,PKGC2017_dicoVar_global,INTERV,2.6.1 Intervention résidus laissés sur place,bool,
+PKGC_2017,PKGC2017_dicoVar_global,IRRDATDEB,10.2 Date de première irrigation,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,IRRDATFIN,10.2 Date de dernière irrigation,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,IRRFUMN,10.11.1.1 Prise en compte teneur nitrate eau irrigation pour gérer fertilisation azotée,bool,
+PKGC_2017,PKGC2017_dicoVar_global,IRRNITR,10.11.1 Connaissance nitrates dans eau irrigation,bool,
+PKGC_2017,PKGC2017_dicoVar_global,KABATIEL,5.1 Pression parasitaire : Kabatiellose,int64,PKGC2017_dicoVar_global__KABATIEL
+PKGC_2017,PKGC2017_dicoVar_global,KMIN2012,6.2 Apport minéral potassique en 2012,bool,
+PKGC_2017,PKGC2017_dicoVar_global,KMIN2013,6.2 Apport minéral potassique en 2013,bool,
+PKGC_2017,PKGC2017_dicoVar_global,KMIN2014,6.2 Apport minéral potassique en 2014,bool,
+PKGC_2017,PKGC2017_dicoVar_global,KMIN2015,6.2 Apport minéral potassique en 2015,bool,
+PKGC_2017,PKGC2017_dicoVar_global,KMIN2016,6.2 Apport minéral potassique en 2016,bool,
+PKGC_2017,PKGC2017_dicoVar_global,LAB2012,2.1 Précédent 2012 : labour,bool,
+PKGC_2017,PKGC2017_dicoVar_global,LAB2013,2.1 Précédent 2013 : labour,bool,
+PKGC_2017,PKGC2017_dicoVar_global,LAB2014,2.1 Précédent 2014 : labour,bool,
+PKGC_2017,PKGC2017_dicoVar_global,LAB2015,2.1 Précédent 2015 : labour,bool,
+PKGC_2017,PKGC2017_dicoVar_global,LAB2016,2.1 Précédent 2016 : labour,bool,
+PKGC_2017,PKGC2017_dicoVar_global,LABCAN,2.4 Labour avant mise en place canne enquêté,int64,PKGC2017_dicoVar_global__LABCAN
+PKGC_2017,PKGC2017_dicoVar_global,LABOUREUR,5.6 Indicatrice labour (calculée),bool,
+PKGC_2017,PKGC2017_dicoVar_global,LARGBANDEHERB,1.7.5 Largeur bande enherbée long cours d'eau,float64,
+PKGC_2017,PKGC2017_dicoVar_global,LEGUM,1.11.3 Niveau de présence de légumineuses été 2017,int64,PKGC2017_dicoVar_global__LEGUM
+PKGC_2017,PKGC2017_dicoVar_global,LIB_ANC_REG,Libellé des anciennes régions (en majuscules),string,
+PKGC_2017,PKGC2017_dicoVar_global,Lib_anc_reg,Libellé des anciennes régions (en minuscules),string,
+PKGC_2017,PKGC2017_dicoVar_global,LIB_ANC_REG_CODE,Libellé des anciennes régions avec code numerique(en majuscules),string,
+PKGC_2017,PKGC2017_dicoVar_global,Lib_anc_reg_code,Libellé des anciennes régions avec code numérique (en minuscules),string,
+PKGC_2017,PKGC2017_dicoVar_global,LIB_ESPECE,Libellé des espèces ,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIB_ESPECE_CODE,Libellé des espèces + code numérique,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIB_FUMNAT,Libellé de la fumure minérale,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIB_FUMONAT,Libellé de la fumure organique,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIB_MECA,Libellé de l'intervention mécanique,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIB_NV_REG,Libellé des nouvelles régions (en majuscules),string,
+PKGC_2017,PKGC2017_dicoVar_global,lib_nv_reg,Libellé des nouvelles régions (en minuscules),string,
+PKGC_2017,PKGC2017_dicoVar_global,LIB_NV_REG_CODE,Libellé des nouvelles régions + code numérique (en majuscules),string,
+PKGC_2017,PKGC2017_dicoVar_global,lib_nv_reg_code,Libellé des nouvelles régions + code numérique (en minuscules),string,
+PKGC_2017,PKGC2017_dicoVar_global,LIB_PRECEDENT,2.1 Libellé du précédent cultural,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBCAHIERAUT,1.3 Engagé autre démarche : libellé,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBCAHIERBIOAUT,1.9.1 Mode agri bio non certifié : libellé autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBDAGROAUT,1.5.1 Diagnostic agro-écologique : libellé Autres,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBDNRJAUT,1.5.2 Diagnostic énergétique : libellé Autres,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBINFOAUT,8.6 Vecteur d'information : libellé autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBINTRANT,Libellé du produit phyto utilisé,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBMALADIES,5.1 Pression maladies moyenne/forte : détails,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBPRESSIONAUT,5.1.1.1 Autre pression forte : libellé,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBRAISONAUT,8.7 Raisons réduction phytos : libellé autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBREDUCAUT,8.5 Pratique réduction phytos : libellé autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBRESIDUSAUT,2.6 Traitement des résidus du précédent autre : libellé,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBVARIET,4. Libellé variété principale semée/plantée,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIBVARIET2,4. Libellé variété secondaire semée,string,
+PKGC_2017,PKGC2017_dicoVar_global,LIMACES,5.1 Pression parasitaire : Limaces,int64,PKGC2017_dicoVar_global__LIMACES
+PKGC_2017,PKGC2017_dicoVar_global,LIMACTOT,5.6 Traitements phytosanitaires : nombre de passages avec au moins un anti-limaces,float64,
+PKGC_2017,PKGC2017_dicoVar_global,LOGICIEL,12.1.1 Logiciel enregistrement des pratiques,int64,PKGC2017_dicoVar_global__LOGICIEL
+PKGC_2017,PKGC2017_dicoVar_global,LOGICIELAUT,12.1.1 Logiciel : libellé autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,LONGRAMP,9.4.4 Longueur rampe pulvérisateur (m),float64,
+PKGC_2017,PKGC2017_dicoVar_global,LOTIER,1.11.8 composition prairie : Lotier,bool,
+PKGC_2017,PKGC2017_dicoVar_global,LUTTEOIS,4.4 Dispositifs pour limiter attaques d'oiseaux,int64,PKGC2017_dicoVar_global__LUTTEOIS
+PKGC_2017,PKGC2017_dicoVar_global,LUZERN,1.11.8 composition prairie : Luzerne autre que minette,bool,
+PKGC_2017,PKGC2017_dicoVar_global,LVMAIN,"9.5.7.1 Précautions : se laver mains, retirer équipement avant de remonter",bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAAFACTA,1.5.1 Diagnostic agro-écologique : MAA-ACTA,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECAUT,1.9.2.1 MAEC autre,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECLIRRIG,1.9.2.1 MAEC localisée gestion systèmes irrigués,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECLOUVMIL,1.9.2.1 MAEC localisée ouverture des milieux,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECLPHYTO,1.9.2.1 MAEC localisée réduction/suppression phytos,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECLSOL,1.9.2.1 MAEC localisée couverture sol ou lutte contre érosion,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECLSURF,1.9.2.1 MAEC localisée gestion surfaces herbacées ou milieux remarquables,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECLTOPO,1.9.2.1 MAEC localisée entretien éléments topographiques,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECPPOLLIN,1.9.2.1 MAEC préservation pollinisateurs,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECPRESVEG,1.9.2.1 MAEC préservation ressources végétales menacées d'érosion génétique,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECSGC,1.9.2.1 MAEC systèmes grandes cultures,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECSHERB,1.9.2.1 MAEC systèmes herbagers et pastoraux,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAECSPOLYEL,1.9.2.1 MAEC systèmes polyculture élevage,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MAGNE,6.1.2 Apport magnésium,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MALADIES,5.1 Pression parasitaire : Maladies,int64,PKGC2017_dicoVar_global__MALADIES
+PKGC_2017,PKGC2017_dicoVar_global,MALFEUILL,5.1 Pression parasitaire : Maladies du feuillage,int64,PKGC2017_dicoVar_global__MALFEUILL
+PKGC_2017,PKGC2017_dicoVar_global,MANGA,6.1.2 Apport manganèse,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MATCHARG,5.11.1.1 Chargement mécanisé : matériel,int64,PKGC2017_dicoVar_global__MATCHARG
+PKGC_2017,PKGC2017_dicoVar_global,MATCOUPE,5.9.1.1 Coupe mécanisée : matériel,int64,PKGC2017_dicoVar_global__MATCOUPE
+PKGC_2017,PKGC2017_dicoVar_global,MCUBE,10.6 Apport total irrigation (m3),float64,
+PKGC_2017,PKGC2017_dicoVar_global,MECA,5.4 Interventions mécaniques : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MECALIB,5.6 MECA libellé en clair de l'intervention,string,
+PKGC_2017,PKGC2017_dicoVar_global,MEL_ID, Identifiant pour l'ordre des espèces dans le mélange,int64,
+PKGC_2017,PKGC2017_dicoVar_global,MEL2012,2.1 Précédent 2012 : culture en mélange ?,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MEL2013,2.1 Précédent 2013 : culture en mélange ?,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MEL2014,2.1 Précédent 2014 : culture en mélange ?,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MEL2015,2.1 Précédent 2015 : culture en mélange ?,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MEL2016,2.1 Précédent 2016 : culture en mélange ?,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELAUTCULTURE,0.6.1 Mélange : libellé autre espèce,string,
+PKGC_2017,PKGC2017_dicoVar_global,MELCULTURE,0.6.1 Mélange : espèce,int64,PKGC2017_dicoVar_global__MELCULTURE
+PKGC_2017,PKGC2017_dicoVar_global,MELDEBOUCHE,1.12.7.2 Mélange : débouché principal,int64,PKGC2017_dicoVar_global__MELDEBOUCHE
+PKGC_2017,PKGC2017_dicoVar_global,MELDOSESEMIS,4.0 Mélange : dose semis,float64,
+PKGC_2017,PKGC2017_dicoVar_global,MELDOSESEMUNI,4.0 Mélange : unité dose semis,int64,PKGC2017_dicoVar_global__MELDOSESEMUNI
+PKGC_2017,PKGC2017_dicoVar_global,MELGEN_NOM,1.12.7.2 Nom des espèces du mélange,string,
+PKGC_2017,PKGC2017_dicoVar_global,MELGEN_ORDR,2.12.7.2 Numéro d'ordre de l'espèce du mélange,int64,
+PKGC_2017,PKGC2017_dicoVar_global,MELIGETHE,5.1 Pression parasitaire : Méligèthes,int64,PKGC2017_dicoVar_global__MELIGETHE
+PKGC_2017,PKGC2017_dicoVar_global,MELIIMPLANT_NOM,4.0 Nom des espèces du mélange,string,
+PKGC_2017,PKGC2017_dicoVar_global,MELIMPLANT_ORDR,4.0 Numéro d'ordre de l'espèce du mélange,int64,
+PKGC_2017,PKGC2017_dicoVar_global,MELNBESP,0.6 Mélange : nombre espèces différentes,float64,
+PKGC_2017,PKGC2017_dicoVar_global,MELORDR,4.0 Identifiant pour l'ordre des espèces dans le mélange,int64,
+PKGC_2017,PKGC2017_dicoVar_global,MELRDGLOBAL,1.12.7.1 Mélange : rendement global (q/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,MELRDUNI,1.12.7.2 Mélange : unité du rendement,int64,PKGC2017_dicoVar_global__MELRDUNI
+PKGC_2017,PKGC2017_dicoVar_global,MELREND,1.12.7.2 Mélange : rendement,float64,
+PKGC_2017,PKGC2017_dicoVar_global,MELSEMPROV,4.0 Mélange : origine semence,int64,PKGC2017_dicoVar_global__MELSEMPROV
+PKGC_2017,PKGC2017_dicoVar_global,MELSEMPROVBIO,4.0 Mélange : provenance semence bio,int64,PKGC2017_dicoVar_global__MELSEMPROVBIO
+PKGC_2017,PKGC2017_dicoVar_global,MELTRAITSEM,4.0 Mélange : semence traitée,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTRAITSEMAUT,4.0 Mélange : traitements semences autres répulsifs,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTRAITSEMFON,4.0 Mélange : traitements semences fongicides,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTRAITSEMINC,4.0 Mélange : traitements semences inconnus,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTRAITSEMINS,4.0 Mélange : traitements semences insecticides (hors anti-pucerons),bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTRAITSEMLIM,4.0 Mélange : traitements semences anti-limaces,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTRAITSEMNEM,4.0 Mélange : traitements semences nématicides,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTRAITSEMOIS,4.0 Mélange : traitements semences anti-oiseaux,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTRAITSEMPUC,4.0 Mélange : traitements semences anti-pucerons,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTRIREC,1.12.7 Mélange : tri de la récolte,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MELTYP2012,"2.1 Précédent 2012 : culture en mélange, type",int64,PKGC2017_dicoVar_global__MELTYP2012
+PKGC_2017,PKGC2017_dicoVar_global,MELTYP2013,"2.1 Précédent 2013 : culture en mélange, type",int64,PKGC2017_dicoVar_global__MELTYP2013
+PKGC_2017,PKGC2017_dicoVar_global,MELTYP2014,"2.1 Précédent 2014 : culture en mélange, type",int64,PKGC2017_dicoVar_global__MELTYP2014
+PKGC_2017,PKGC2017_dicoVar_global,MELTYP2015,"2.1 Précédent 2015 : culture en mélange, type",int64,PKGC2017_dicoVar_global__MELTYP2015
+PKGC_2017,PKGC2017_dicoVar_global,MELTYP2016,"2.1 Précédent 2016 : culture en mélange, type",int64,PKGC2017_dicoVar_global__MELTYP2016
+PKGC_2017,PKGC2017_dicoVar_global,MESFUMN,7.1.1 Calcul de bilan : mesure en vert du colza,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MILDIOU,5.1 Pression parasitaire : Mildiou,int64,PKGC2017_dicoVar_global__MILDIOU
+PKGC_2017,PKGC2017_dicoVar_global,MINET,1.11.8 composition prairie : Minette,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MMEAU,10.5 Apport total irrigation (mm),float64,
+PKGC_2017,PKGC2017_dicoVar_global,MMIN2012,6.2 Apport en amendements de magnésium en 2012,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MMIN2013,6.2 Apport en amendements de magnésium en 2013,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MMIN2014,6.2 Apport en amendements de magnésium en 2014,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MMIN2015,6.2 Apport en amendements de magnésium en 2015,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MMIN2016,6.2 Apport en amendements de magnésium en 2016,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MODCHARG,5.11.1 Mode de chargement,int64,PKGC2017_dicoVar_global__MODCHARG
+PKGC_2017,PKGC2017_dicoVar_global,MODCOUPE,5.9.1 Mode de coupe,int64,PKGC2017_dicoVar_global__MODCOUPE
+PKGC_2017,PKGC2017_dicoVar_global,MODE,11.3 Mode d'exploitation,int64,PKGC2017_dicoVar_global__MODE
+PKGC_2017,PKGC2017_dicoVar_global,MODEXDEROB,3.2 Culture dérobée : mode d'exploitation,int64,PKGC2017_dicoVar_global__MODEXDEROB
+PKGC_2017,PKGC2017_dicoVar_global,MODIFFUMN,7.2 Dose prévue d'azote révisée,int64,PKGC2017_dicoVar_global__MODIFFUMN
+PKGC_2017,PKGC2017_dicoVar_global,MODIFPHYTO,8.3 Réajustement plan initial phytos,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MODULFUMN,7.5 Modulation intra-parcellaire azote,bool,
+PKGC_2017,PKGC2017_dicoVar_global,MOISPLAN,1.10.1 Mois de plantation canne à sucre,string,
+PKGC_2017,PKGC2017_dicoVar_global,MOISSEM,1.11.2 Mois de semis de la prairie,string,
+PKGC_2017,PKGC2017_dicoVar_global,MOLY,6.1.2 Apport molybdène,bool,
+PKGC_2017,PKGC2017_dicoVar_global,NB_ADJ,Nombre de traitements adjuvant,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NB_AUT,Nombre de traitements autre,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NB_FONG,Nombre de traitements fongicide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NB_HERB,Nombre de traitements herbicide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NB_INS,Nombre de traitements insecticide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NB_ROD,Nombre de traitements rodonticide,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NB_TOT,Nombre total de traitements,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NB_TOTADJ,"Nombre total de traitements, adjuvant inclus",float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBADJTOT,5.6 Nombre traitements : adjuvant (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM01,11.3 Pâture : nombre Vaches laitières ? moins de 8000 kg de production,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM02,11.3 Pâture : nombre Vaches laitières à 8000kg ou plus de production,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM03,11.3 Pâture : nombre Vaches nourrices ou allaitantes,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM04,11.3 Pâture : nombre Autres bovins femelles de 2 ans et plus,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM05,11.3 Pâture : nombre Autres bovins mâles de 2 ans et plus,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM06,11.3 Pâture : nombre Bovins mâles ou femelles de 1 à moins de 2 ans,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM07,11.3 Pâture : nombre Veaux de boucherie,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM08,11.3 Pâture : nombre Autres bovins femelles de moins de 1 an,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM09,11.3 Pâture : nombre Autres bovins mâles de moins de 1 an,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM10,"11.3 Pâture : nombre Juments et ponettes poulinières selle, course",float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM11,11.3 Pâture : nombre Juments et ponettes poulinières races lourdes,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM12,"11.3 Pâture : nombre Chevaux et poneys selle, course",float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM13,"11.3 Pâture : nombre Chevaux et poneys trait, boucherie, maigre",float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM14,"11.3 Pâture : nombre ânes, mulets bardots",float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM15,11.3 Pâture : nombre Chèvres y compris réforme et boucs,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM16,11.3 Pâture : nombre Chevrettes pour la souche et chevreaux,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM17,11.3 Pâture : nombre Brebis mères nourrices ou laitières,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM18,11.3 Pâture : nombre Agnelles pour la souche,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBANIM19,11.3 Pâture : nombre Autres ovins,float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbAutresEffluents,5.6 Nombre de « Autres effluents »,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBAUTTOT,5.6 Nombre traitements : autre (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBBAL,11.3 Coupe : nombre de balles,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBBOT,11.3 Coupe : nombre de bottes de foin,float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbBroyage,5.6 Nombre d'opérations de broyage,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBCOUPEP,11.3 Exploitation de la prairie : nombre de passage (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBDEHTOT,5.6 Nombre traitements : herbicide (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbEnfouissement,5.6 Nombre d'opérations d'enfouissement,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBENGK,5.6 Nombre apports : potassium minéral (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBENGN,5.6 Nombre apports : azote minéral (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBENGP,5.6 Nombre apports : phosphore minéral (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBENGS,5.6 Nombre apports : soufre minéral (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBENGTOT,5.6 Nombre total d'apports d'engrais minéraux (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBFONTOT,5.6 Nombre traitements : fongicide (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbFumierCompost,5.6 Nombre d'opérations d'apport de fumure ou compost,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBFUMO,5.6 Nombre d'apports de fumure organique (calculé)- nombre d'opérations,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBHAAN,9.4.2.1 Pulvérisateur : nombre moyen hectares trait?s par an,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBPASFUMO,5.6 Nombre d'apports de fumure organique (calculé)- nombre de passages,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBINSACTOT,5.6 Nombre traitements : insecticide acaricide (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbLabour,5.6 Nombre d'opérations de labour,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBMOLTOT,5.6 Nombre traitements : anti-limaces (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBPASAPS,10.4.2 Nombre passages irrigation après semis,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBPASAVS,10.4.1 Nombre passages irrigation avant semis,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBPASMEC,5.6 Nombre d'interventions mécaniques (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbPhycibcou,5.6 Nombre d'opérations de destruction du couvert,float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbPhycibpre,5.6 Nombre d'opérations de destruction du précedent prairie ou jachère,float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbPhycibrep,5.6 Nombre d'opérations de destruction des repousses du précédent,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBPULVP,9.1 Nombre de pulvérisateurs intervenant sur la parcelle,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBRACCERPA,5.6 Nombre traitements : régulateur de croissance (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbRecFin,5.6 Nombre d'opérations de récolte avant la date limite,float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbRecolte,5.6 Nombre d'opérations de récolte,float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbRecolteDerob,5.6 Nombre de récoltes de culture dérobée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBREM,5.6 FUMO nombre remorques (aide),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBRONTOT,5.6 Nombre traitements : anti-rongeurs (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbSemdir,5.6 Nombre de semis directes,float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbSemis,5.6 Nombre de semis,float64,
+PKGC_2017,PKGC2017_dicoVar_global,nbSemiscouvert,5.6 Nombre de semis couvert,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBTRAIT,5.6 Nombre traitements : total hors adjuvants (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,NBVARIET,4.7.1 Nombre de variétés semées,float64,
+PKGC_2017,PKGC2017_dicoVar_global,NIVCENGVERT,3.1.1 Niveau croissance culture intermédiaire,int64,PKGC2017_dicoVar_global__NIVCENGVERT
+PKGC_2017,PKGC2017_dicoVar_global,NMIN2012,6.2 Apport minéral azoté en 2012,bool,
+PKGC_2017,PKGC2017_dicoVar_global,NMIN2013,6.2 Apport minéral azoté en 2013,bool,
+PKGC_2017,PKGC2017_dicoVar_global,NMIN2014,6.2 Apport minéral azoté en 2014,bool,
+PKGC_2017,PKGC2017_dicoVar_global,NMIN2015,6.2 Apport minéral azoté en 2015,bool,
+PKGC_2017,PKGC2017_dicoVar_global,NMIN2016,6.2 Apport minéral azoté en 2016,bool,
+PKGC_2017,PKGC2017_dicoVar_global,NOM_DOSSIER,Identifiant dossier,string,
+PKGC_2017,PKGC2017_dicoVar_global,NOM_TYPE_SOL,1.8 Libellé du type de sol,int64,
+PKGC_2017,PKGC2017_dicoVar_global,OBJPROTEIN,1.12.3 Objectif de teneur en protéines,bool,
+PKGC_2017,PKGC2017_dicoVar_global,OBJREND,1.12.2 Objectif de rendement,float64,
+PKGC_2017,PKGC2017_dicoVar_global,OBJTENPROT,1.12.3.1 Objectif teneur en protéines (%),float64,
+PKGC_2017,PKGC2017_dicoVar_global,OBSDEL,9.7.1 Observation délai de rentrée,bool,
+PKGC_2017,PKGC2017_dicoVar_global,OIDIUM,5.1 Pression parasitaire : Oïdium,int64,PKGC2017_dicoVar_global__OIDIUM
+PKGC_2017,PKGC2017_dicoVar_global,OPEDAT,5.6 Date opération culturale,datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,OPEORDR,5.6 Numéro d'ordre,int64,
+PKGC_2017,PKGC2017_dicoVar_global,OPEPAS,5.6 Numéro de passage,int64,
+PKGC_2017,PKGC2017_dicoVar_global,OPEPASTOT,5.6 Traitements phytosanitaires : nombre de passages,float64,
+PKGC_2017,PKGC2017_dicoVar_global,ORG2012,6.2 Apport organique en 2012,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ORG2013,6.2 Apport organique en 2013,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ORG2014,6.2 Apport organique en 2014,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ORG2015,6.2 Apport organique en 2015,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ORG2016,6.2 Apport organique en 2016,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PACAGE,Numéro pacage,string,
+PKGC_2017,PKGC2017_dicoVar_global,PAILFUMK,7.7 Détermination dose totale K : restitution des pailles du précédent,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PARCIRR,10.1 Irrigation au cours de la campagne,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PASSMECA,5.6 Nombre de désherbages mécaniques (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,PATURE,11.3 Pâture : durée de présence des animaux,float64,
+PKGC_2017,PKGC2017_dicoVar_global,PATURTOURN,11.2 Pâturage tournant,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PCULTFUMN,7.1.1 Calcul de bilan : précèdent cultural,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PERIOD2012,2.1 Précédent 2012 : période de semis,int64,PKGC2017_dicoVar_global__PERIOD2012
+PKGC_2017,PKGC2017_dicoVar_global,PERIOD2013,2.1 Précédent 2013 : période de semis,int64,PKGC2017_dicoVar_global__PERIOD2013
+PKGC_2017,PKGC2017_dicoVar_global,PERIOD2014,2.1 Précédent 2014 : période de semis,int64,PKGC2017_dicoVar_global__PERIOD2014
+PKGC_2017,PKGC2017_dicoVar_global,PERIOD2015,2.1 Précédent 2015 : période de semis,int64,PKGC2017_dicoVar_global__PERIOD2015
+PKGC_2017,PKGC2017_dicoVar_global,PERIOD2016,2.1 Précédent 2016 : période de semis,int64,PKGC2017_dicoVar_global__PERIOD2016
+PKGC_2017,PKGC2017_dicoVar_global,PESEPAND,5.5.2 Pesée épandeur,int64,PKGC2017_dicoVar_global__PESEPAND
+PKGC_2017,PKGC2017_dicoVar_global,PESFUMN,7.1.1 Calcul de bilan : pesée en vert du colza,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBADJ,5.6 PHYTO cible adjuvants,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBADVDIC1,5.6 PHYTO cible adventices-dicotylédones annuelles,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBADVDIC2,5.6 PHYTO cible adventices-dicotylédones bisannuelles,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBADVENS,5.6 PHYTO cible adventices-espèces inconnues,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBADVGRAM,5.6 PHYTO cible adventices-graminées annuelles,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBADVMEL,5.6 PHYTO cible adventices-mélanges,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBADVVIV,5.6 PHYTO cible adventices-vivaces,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBAIA,5.6 PHYTO cible autres insectes et acariens,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBALT,5.6 PHYTO cible altises,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBAMA,5.6 PHYTO autres maladies,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBANT,5.6 PHYTO cible ascochytose,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBAUT,5.6 PHYTO cible autre,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBBOT,5.6 PHYTO cible botrytis,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBBRU,5.6 PHYTO cible bruches,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBCHA,5.6 PHYTO cible charançons,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBCOU,5.6 PHYTO cible destruction du couvert,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBDEF,5.6 PHYTO cible défanants,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBDES,5.6 PHYTO cible dessiccation,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBDEV,5.6 PHYTO cible dévitalisation,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBDOR,5.6 PHYTO cible doryphore,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBFUS,5.6 PHYTO cible fusariose,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBHEL,5.6 PHYTO cible helminthosporiose,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBHERB,5.6 PHYTO indicatrice cible herbicide (calculée),bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBIAC,5.6 PHYTO cible insectes et acariens,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBINSAC,5.6 PHYTO indicatrice cible insecticide-acaricide (calculée),bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBKAB,5.6 PHYTO cible kabatiellose,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBLIBIAC,5.6 PHYTO libellé cible insectes et acariens,string,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBLIBMAL,5.6 PHYTO libellé cible maladies,string,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBLIM,5.6 PHYTO cible limaces,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBMAL,5.6 PHYTO cible maladies,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBMALAD,5.6 PHYTO indicatrice cible fongicide (calculée),bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBMDF,5.6 PHYTO cible maladies du feuillage,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBMEL,5.6 PHYTO cible méligèthes,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBMIL,5.6 PHYTO cible mildiou,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBNOC,5.6 PHYTO cible heliothis/noctuelle,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBOID,5.6 PHYTO cible oïdium,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBPIE,5.6 PHYTO cible piétin-verse,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBPREC,5.6 PHYTO cible destruction précédent prairie ou jachère,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBPUC,5.6 PHYTO cible pucerons,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBPUCN,5.6 PHYTO cible pucerons noirs,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBPUCV,5.6 PHYTO cible pucerons verts,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBPUNV,5.6 PHYTO cible punaise verte,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBPYR,5.6 PHYTO cible pyrale,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBREG,5.6 PHYTO cible régulation de croissance,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBREP,5.6 PHYTO cible destruction repousses du précédent,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBRHY,5.6 PHYTO cible rhynchosporiose,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBRON,5.6 PHYTO cible rongeurs,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBROU,5.6 PHYTO cible rouilles,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBSCL,5.6 PHYTO cible sclérotinia,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBSEP,5.6 PHYTO cible septoriose,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBSES,5.6 PHYTO cible sésamie,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBSIT,5.6 PHYTO cible sitones,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBTHR,5.6 PHYTO cible thrips,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBTOR,5.6 PHYTO cible tordeuses/bruches,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBVER,5.6 PHYTO cible vers blancs,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYCIBVIR,5.6 PHYTO cible virucide,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYSIOL,6.1.4 Apport physiolith : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYTOAUTCULT,5.6 PHYTO traitement ne concerne pas la culture enquêtée,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PHYTOBOUIL,5.6 PHYTO quantité de bouillie (L/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,PHYTODOS,5.6 PHYTO dose de produit commercial apportée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,PHYTODOSHA,5.6 PHYTO dose de produit commercial apportée /ha (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,PHYTOLIBAUTRE,5.6 PHYTO libellé produit autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,PHYTOMOD,5.6 PHYTO mode de traitement,int64,PKGC2017_dicoVar_global__PHYTOMOD
+PKGC_2017,PKGC2017_dicoVar_global,PHYTOPROD,5.6 PHYTO code produit commercial,int64,PKGC2017_dicoVar_global__PHYTOPROD
+PKGC_2017,PKGC2017_dicoVar_global,PHYTOUNI,5.6 PHYTO unité,int64,PKGC2017_dicoVar_global__PHYTOUNI
+PKGC_2017,PKGC2017_dicoVar_global,PIETIN,5.1 Pression parasitaire : Piétin-verse,int64,PKGC2017_dicoVar_global__PIETIN
+PKGC_2017,PKGC2017_dicoVar_global,PILOTFUMN,7.2.1 Réévaluation dose azote avec outils pilotage,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PLANHA,4.10 Densité de plantation (nombre plants/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,PMIN2012,6.2 Apport minéral phosphaté en 2012,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PMIN2013,6.2 Apport minéral phosphaté en 2013,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PMIN2014,6.2 Apport minéral phosphaté en 2014,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PMIN2015,6.2 Apport minéral phosphaté en 2015,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PMIN2016,6.2 Apport minéral phosphaté en 2016,bool,
+PKGC_2017,PKGC2017_dicoVar_global,POIDSURF,4.8 Dose de semis : poids de semence par ha (kg/ha) (calcul?),float64,
+PKGC_2017,PKGC2017_dicoVar_global,POIDSURFSAIS,4.8 Dose de semis : poids de semence par ha (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,POURPC,11.3 Pâture : part de la parcelle concernée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,POURTRAIT,5.6 PHYTO proportion parcelle traitée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,PRDNIV,11.4 Évaluation par rapport rendement moyen,int64,PKGC2017_dicoVar_global__PRDNIV
+PKGC_2017,PKGC2017_dicoVar_global,PRDNIVPOUR,11.4.1 Baisse/hausse par rapport rendement moyen en %,float64,
+PKGC_2017,PKGC2017_dicoVar_global,PRECULT2012,2.1 Précédent 2012 : nature,int64,PKGC2017_dicoVar_global__PRECULT2012
+PKGC_2017,PKGC2017_dicoVar_global,PRECULT2013,2.1 Précédent 2013 : nature,int64,PKGC2017_dicoVar_global__PRECULT2013
+PKGC_2017,PKGC2017_dicoVar_global,PRECULT2014,2.1 Précédent 2014 : nature,int64,PKGC2017_dicoVar_global__PRECULT2014
+PKGC_2017,PKGC2017_dicoVar_global,PRECULT2015,2.1 Précédent 2015 : nature,int64,PKGC2017_dicoVar_global__PRECULT2015
+PKGC_2017,PKGC2017_dicoVar_global,PRECULT2016,2.1 Précédent 2016 : nature,int64,PKGC2017_dicoVar_global__PRECULT2016
+PKGC_2017,PKGC2017_dicoVar_global,PRECULTCAN,2.2.1 Culture présente avant canne enquêtée,int64,PKGC2017_dicoVar_global__PRECULTCAN
+PKGC_2017,PKGC2017_dicoVar_global,PRECULTCAN2016,2.2 Culture présente en 2016,int64,PKGC2017_dicoVar_global__PRECULTCAN2016
+PKGC_2017,PKGC2017_dicoVar_global,PREMAN,1.10.2 Première année de mise en place de cannes sur la parcelle,int64,PKGC2017_dicoVar_global__PREMAN
+PKGC_2017,PKGC2017_dicoVar_global,PREPBOUTR,9.5.2 Même personne prépare bouillie et réalise traitements,int64,PKGC2017_dicoVar_global__PREPBOUTR
+PKGC_2017,PKGC2017_dicoVar_global,PRESSIONAUT,5.1.1 Autre pression forte : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PREXPLOIT,11.1 Exploitation prairie en 2016-2017,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PROPPULV,9.2 Appartenance du pulvérisateur le plus couramment utilisé,int64,PKGC2017_dicoVar_global__PROPPULV
+PKGC_2017,PKGC2017_dicoVar_global,PROTEIN,1.18 Connaissance teneur en protéines,bool,
+PKGC_2017,PKGC2017_dicoVar_global,PROV,10.8 Provenance principale eau d'irrigation,int64,PKGC2017_dicoVar_global__PROV
+PKGC_2017,PKGC2017_dicoVar_global,PRUNIT,11.3 Coupe : unité,int64,PKGC2017_dicoVar_global__PRUNIT
+PKGC_2017,PKGC2017_dicoVar_global,PUCERONS,5.1 Pression parasitaire : Pucerons,int64,PKGC2017_dicoVar_global__PUCERONS
+PKGC_2017,PKGC2017_dicoVar_global,PUNAIS,5.1 Pression parasitaire : Punaises,int64,PKGC2017_dicoVar_global__PUNAIS
+PKGC_2017,PKGC2017_dicoVar_global,PYRALE,5.1 Pression parasitaire : Pyrale,int64,PKGC2017_dicoVar_global__PYRALE
+PKGC_2017,PKGC2017_dicoVar_global,QCENDRE,6.1.3.1 Apport de cendres : quantité (t MS/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QKMIN2015,6.2 Quantité de potasse apportée en 2015 (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QKMIN2016,6.2 Quantité de potasse apportée en 2016 (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QKORG,5.6 FUMO hors boues teneur K (kg/t ou kg/m3),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QKORGMS,5.6 FUMO boues teneur K (g/kg de MS),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QNMIN2015,6.2 Quantité d'azote apportée en 2015 (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QNMIN2016,6.2 Quantité d'azote apportée en 2016 (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QNORG,5.6 FUMO hors boues teneur N (kg/t ou kg/m3),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QNORGBOUE,5.6 Quantité N organique en kg/ha pour les boues (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QNORGCALC,5.6 Quantité N organique en kg/ha pour les fumures autres que boues (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QNORGMS,5.6 FUMO boues teneur N (g/kg de MS),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QNORGTHEO,5.6 Quantité N théorique par apport en kg/ha (calculée),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QNORGTOT,5.6 Quantité d'azote organique totale en kg/ha (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QPHYSIOL,6.1.4.1 Apport physiolith : quantité (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QPMIN2015,6.2 Quantité de phosphate apportée en 2015 (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QPMIN2016,6.2 Quantité de phosphate apportée en 2016 (kg/ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QPORG,5.6 FUMO hors boues teneur P (kg/t ou kg/m3),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QPORGMS,5.6 FUMO boues teneur P (g/kg de MS),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QREM,5.6 FUMO quantité par remorque (aide),float64,
+PKGC_2017,PKGC2017_dicoVar_global,QTOT,5.6 FUMO quantité totale (aide),float64,
+PKGC_2017,PKGC2017_dicoVar_global,RAISBPPC,8.2 Base déclenchement phytos : bulletins de préconisations phyto certifiés,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISBSV,8.2 Base déclenchement phytos : BSV,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISCOMPT,8.2 Base déclenchement phytos : comptages,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISCONN,8.2 Base déclenchement phytos : connaissance historique et expérience,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISENG,7.4.1 Choix type d'engrais : raisonnement prioritaire,int64,PKGC2017_dicoVar_global__RAISENG
+PKGC_2017,PKGC2017_dicoVar_global,RAISEXP,8.2 Base déclenchement phytos : expérience autres agriculteurs,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISFOURN,8.2 Base déclenchement phytos : conseils fournisseurs,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISINDEP,8.2 Base déclenchement phytos : conseils techniciens indépendants,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISMETEO,8.2 Base déclenchement phytos : prévisions météo et précipitations,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISOBS,8.2 Base déclenchement phytos : observations sans comptage,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISONAUT,8.7 Raison réduction phytos : autre,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISONCOUT,8.7 Raison réduction phytos : réduction coûts de production,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISONENVIR,8.7 Raison réduction phytos : réduction risques pour l'environnement,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISONSANTE,8.7 Raison réduction phytos : réduction risques pour la santé,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISPILOT,8.2 Base déclenchement phytos : outils de pilotage,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RAISRAISON,8.7.1 Raisons réduction phytos : raisonnement prioritaire,int64,PKGC2017_dicoVar_global__RAISRAISON
+PKGC_2017,PKGC2017_dicoVar_global,RANGPERP,1.7.6 Rangs perpendiculaires à la pente,int64,PKGC2017_dicoVar_global__RANGPERP
+PKGC_2017,PKGC2017_dicoVar_global,RATION,11.3 Pâture : part fourrage complémentaire,int64,PKGC2017_dicoVar_global__RATION
+PKGC_2017,PKGC2017_dicoVar_global,RDMESUR,1.12.5 Mesure du rendement,int64,PKGC2017_dicoVar_global__RDMESUR
+PKGC_2017,PKGC2017_dicoVar_global,RDT,11.3 Exploitation de la prairie : rendement pâture par opération t/ha (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,RDTEFUMN,7.1.1 Calcul de bilan : hypothèse de rendement,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RDTF,11.3 Exploitation de la prairie : rendement fauche t/ha (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,RDTP,11.3 Exploitation de la prairie : rendement pâture t/ha (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,RDTTOT,11.3 Exploitation de la prairie : rendement total fauche+pâture t/ha (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,RDUNI2012,2.1 Précédent 2012 : unité du rendement,int64,PKGC2017_dicoVar_global__RDUNI2012
+PKGC_2017,PKGC2017_dicoVar_global,RDUNI2013,2.1 Précédent 2013 : unité du rendement,int64,PKGC2017_dicoVar_global__RDUNI2013
+PKGC_2017,PKGC2017_dicoVar_global,RDUNI2014,2.1 Précédent 2014 : unité du rendement,int64,PKGC2017_dicoVar_global__RDUNI2014
+PKGC_2017,PKGC2017_dicoVar_global,RDUNI2015,2.1 Précédent 2015 : unité du rendement,int64,PKGC2017_dicoVar_global__RDUNI2015
+PKGC_2017,PKGC2017_dicoVar_global,RDUNI2016,2.1 Précédent 2016 : unité du rendement,int64,PKGC2017_dicoVar_global__RDUNI2016
+PKGC_2017,PKGC2017_dicoVar_global,REALREC,1.12.1 Récolte réalisée ?,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REATRAITFE,9.5.6 Cabine fermée : port masque à cartouche,int64,PKGC2017_dicoVar_global__REATRAITFE
+PKGC_2017,PKGC2017_dicoVar_global,REATRAITFI,9.5.7 Cabine filtrée : prise précautions particulières en cas de descente,int64,PKGC2017_dicoVar_global__REATRAITFI
+PKGC_2017,PKGC2017_dicoVar_global,REATRAITO,9.5.5 Pas cabine ou ouverte : utilisation EPI,int64,PKGC2017_dicoVar_global__REATRAITO
+PKGC_2017,PKGC2017_dicoVar_global,REATRPULV,9.3 Personne qui réalise la majorité des traitements,int64,PKGC2017_dicoVar_global__REATRPULV
+PKGC_2017,PKGC2017_dicoVar_global,RECDAT,5.6 Date de première récolte (calculée),datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,REDCOM,Indicateur de redressement de l'IFT,string,PKGC2017_dicoVar_global__REDCOM
+PKGC_2017,PKGC2017_dicoVar_global,REDUCAUCUNE,8.5 Pratique réduction phytos : aucune,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REDUCAUT,8.5 Pratique réduction phytos : autres moyens,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REDUCCONTROLCULT,8.5 Pratique réduction phytos : contrôle cultural,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REDUCCONTROLGEN,8.5 Pratique réduction phytos : contrôle génétique,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REDUCCONTROLROTA,8.5 Pratique réduction phytos : contrôle des rotations,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REDUCLUTTEBIO,8.5 Pratique réduction phytos : lutte biologique,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REDUCLUTTECHIM,8.5 Pratique réduction phytos : lutte chimique raisonnée,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REDUCLUTTEMECA,8.5 Pratique réduction phytos : lutte mécanique,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REG,Code nouvelle région de la parcelle,int64,
+PKGC_2017,PKGC2017_dicoVar_global,REGPAR,Région de la parcelle,int64,PKGC2017_dicoVar_global__REGPAR
+PKGC_2017,PKGC2017_dicoVar_global,REGULTOT,5.6 Traitements phytosanitaires : nombre de passages avec au moins un r?régulateur de croissance,float64,
+PKGC_2017,PKGC2017_dicoVar_global,REND2012,2.1 Rendement 2012,float64,
+PKGC_2017,PKGC2017_dicoVar_global,REND2013,2.1 Rendement 2013,float64,
+PKGC_2017,PKGC2017_dicoVar_global,REND2014,2.1 Rendement 2014,float64,
+PKGC_2017,PKGC2017_dicoVar_global,REND2015,2.1 Rendement 2015,float64,
+PKGC_2017,PKGC2017_dicoVar_global,REND2016,2.1 Rendement 2016,float64,
+PKGC_2017,PKGC2017_dicoVar_global,RENDEM,1.12.4 Rendement brut,float64,
+PKGC_2017,PKGC2017_dicoVar_global,RENDNIV,1.12.6 Niveau de rendement,int64,PKGC2017_dicoVar_global__RENDNIV
+PKGC_2017,PKGC2017_dicoVar_global,RENDNORME,1.12.4 Rendement aux normes (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,RENDSAIS,1.12.4 Rendement saisi aux normes,float64,
+PKGC_2017,PKGC2017_dicoVar_global,REPOUSDESAUT,2.7.3 Repousses du précédent : destruction autre,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REPOUSDESCHI,2.7.3 Repousses du précédent : destruction chimique,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REPOUSDESMEC,2.7.3 Repousses du précédent : destruction mécanique,bool,
+PKGC_2017,PKGC2017_dicoVar_global,REPOUSPREC,2.7.1 Repousses du précédent : présence,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RESEMIS,4.15 Resemis,int64,PKGC2017_dicoVar_global__RESEMIS
+PKGC_2017,PKGC2017_dicoVar_global,RESEMISPP,1.11.5 Resemis prairie permanente,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RESIDUS,2.6 Traitement des résidus du précédent,int64,PKGC2017_dicoVar_global__RESIDUS
+PKGC_2017,PKGC2017_dicoVar_global,RGA,1.11.8 composition prairie : Ray-grass anglais,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RGH,1.11.8 composition prairie : Ray-grass hybride,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RHIZOCT,5.1 Pression parasitaire : Rhizoctone,int64,PKGC2017_dicoVar_global__RHIZOCT
+PKGC_2017,PKGC2017_dicoVar_global,RHYNCHO,5.1 Pression parasitaire : Rhynchosporiose,int64,PKGC2017_dicoVar_global__RHYNCHO
+PKGC_2017,PKGC2017_dicoVar_global,RICSUC,1.12.4 Richesse en sucre (%),float64,
+PKGC_2017,PKGC2017_dicoVar_global,RICSUC2,1.19.1 Teneur en sucre (%),float64,
+PKGC_2017,PKGC2017_dicoVar_global,RIG,1.11.8 composition prairie : Ray-grass d'Italie,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RONGEURS,5.1 Pression parasitaire : Rongeurs,int64,PKGC2017_dicoVar_global__RONGEURS
+PKGC_2017,PKGC2017_dicoVar_global,RONPASTOT,5.6 Traitements phytosanitaires : nombre de passages avec au moins un anti-rongeurs,float64,
+PKGC_2017,PKGC2017_dicoVar_global,ROUILLES,5.1 Pression parasitaire : Rouilles,int64,PKGC2017_dicoVar_global__ROUILLES
+PKGC_2017,PKGC2017_dicoVar_global,RSHFUMN,7.1.1 Calcul de bilan : reliquats sortie hiver,bool,
+PKGC_2017,PKGC2017_dicoVar_global,RSHMESUR,7.1.1.2 Reliquat sortie hiver : mesure,int64,PKGC2017_dicoVar_global__RSHMESUR
+PKGC_2017,PKGC2017_dicoVar_global,RSHVAL,7.1.1.1 Reliquat sortie hiver : valeur,float64,
+PKGC_2017,PKGC2017_dicoVar_global,SAINFOIN,1.11.8 composition prairie : Sainfoin,bool,
+PKGC_2017,PKGC2017_dicoVar_global,SANSBOUILLIE,Produit ne nécessitant pas l'utilisation d'une bouillie,bool,
+PKGC_2017,PKGC2017_dicoVar_global,SANSENG,1.9.2 Sans engagement,bool,
+PKGC_2017,PKGC2017_dicoVar_global,SAU,1.1.1 Superficie agricole utilisée de l'exploitation (ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,SCLEROT,5.1 Pression parasitaire : Sclérotinia,int64,PKGC2017_dicoVar_global__SCLEROT
+PKGC_2017,PKGC2017_dicoVar_global,SEMDAT,5.6 Date du dernier semis (calculée),datetime64[ns],
+PKGC_2017,PKGC2017_dicoVar_global,SEMDIR,5.6 Indicatrice semis direct (calculée),bool,
+PKGC_2017,PKGC2017_dicoVar_global,SEMLIB,4.5.1.1 Produit commercial de traitement de semences?: libellé,string,
+PKGC_2017,PKGC2017_dicoVar_global,SEMLIBAUT,4.5.1.1 Libellé produit autre,string,
+PKGC_2017,PKGC2017_dicoVar_global,SEMPROD,4.5.1.1 Produit commercial de traitement de semences?: numéro AMM,int64,PKGC2017_dicoVar_global__SEMPROD
+PKGC_2017,PKGC2017_dicoVar_global,SEMPROV,4.1 Origine de la semence,int64,PKGC2017_dicoVar_global__SEMPROV
+PKGC_2017,PKGC2017_dicoVar_global,SEMPROVBIO,4.3 Provenance semence bio,int64,PKGC2017_dicoVar_global__SEMPROVBIO
+PKGC_2017,PKGC2017_dicoVar_global,SEMTRI,4.2 Mode de tri de la semence,int64,PKGC2017_dicoVar_global__SEMTRI
+PKGC_2017,PKGC2017_dicoVar_global,SEPTO,5.1 Pression parasitaire : Septoriose,int64,PKGC2017_dicoVar_global__SEPTO
+PKGC_2017,PKGC2017_dicoVar_global,SESAMIE,5.1 Pression parasitaire : Sésamie,int64,PKGC2017_dicoVar_global__SESAMIE
+PKGC_2017,PKGC2017_dicoVar_global,SIRET,I.1.1 Nouveau Siret ou Ancien Siret,string,
+PKGC_2017,PKGC2017_dicoVar_global,SITONE,5.1 Pression parasitaire : Sitones/thrips,int64,PKGC2017_dicoVar_global__SITONE
+PKGC_2017,PKGC2017_dicoVar_global,SOLFUMK,7.7 Détermination dose totale K : analyses de sol,bool,
+PKGC_2017,PKGC2017_dicoVar_global,SOLFUMP,7.6 Détermination dose totale P : analyses de sol,bool,
+PKGC_2017,PKGC2017_dicoVar_global,SORZONE,9.5.7.1 Précautions : s'éloigner zone traitée,bool,
+PKGC_2017,PKGC2017_dicoVar_global,SSCV2016,2.1 Précédent 2016 : implantation sous couvert,bool,
+PKGC_2017,PKGC2017_dicoVar_global,STRATE,Strate de la parcelle,string,PKGC2017_dicoVar_global__STRATE
+PKGC_2017,PKGC2017_dicoVar_global,SUPAUT,3.3.1 Culture dérobée - autres : superficie développée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,SUPESP,1.1.2 Superficie totale de l'espèce sur l'exploitation (ha),float64,
+PKGC_2017,PKGC2017_dicoVar_global,SUPHARIC,3.3.1 Culture dérobée - haricot : superficie développée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,SUPMAIS,3.3.1 Culture dérobée – maïs : superficie développée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,SUPMELON,3.3.1 Culture dérobée - melon : superficie développée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,SUPP,1.6 Superficie de la parcelle enquêtée en 2017,float64,
+PKGC_2017,PKGC2017_dicoVar_global,SUPTOMAT,3.3.1 Culture dérobée - tomates : superficie développée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,SUPTYP,1.11.7 Superficie totale du type de prairie temporaire enquêtée,float64,
+PKGC_2017,PKGC2017_dicoVar_global,TECHFUMN,7.1 Détermination dose totale azote : bilan complet par technicien externe,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TENAZOT,5.5.1 Connaissance teneur azote fumure organique,int64,PKGC2017_dicoVar_global__TENAZOT
+PKGC_2017,PKGC2017_dicoVar_global,TENPROT,1.18.1 Teneur en protéines (%),float64,
+PKGC_2017,PKGC2017_dicoVar_global,THRIPS,5.1 Pression parasitaire : Thrips,int64,PKGC2017_dicoVar_global__THRIPS
+PKGC_2017,PKGC2017_dicoVar_global,THUM,1.12.4 Humidité à la récolte (%),float64,
+PKGC_2017,PKGC2017_dicoVar_global,TORDEUSE,5.1 Pression parasitaire : Tordeuses/bruches,int64,PKGC2017_dicoVar_global__TORDEUSE
+PKGC_2017,PKGC2017_dicoVar_global,TRAITSEM,4.5 Semence traitée (plant traité),bool,
+PKGC_2017,PKGC2017_dicoVar_global,TRAITSEMAUT,4.5.1.2 Traitement de semences : autres répulsifs,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TRAITSEMFON,4.5.1.2 Traitement de semences : fongicides,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TRAITSEMINC,4.5.1.2 Traitement de semences : inconnus,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TRAITSEMINS,4.5.1.2 Traitement de semences : insecticides (hors anti-pucerons),bool,
+PKGC_2017,PKGC2017_dicoVar_global,TRAITSEMLIM,4.5.1.2 Traitement de semences : anti-limaces,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TRAITSEMNEM,4.5.1.2 Traitement de semences : nématicides,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TRAITSEMOIS,4.5.1.2 Traitement de semences : anti-oiseaux,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TRAITSEMPUC,4.5.1.2 Traitement de semences : anti-pucerons,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TRAITTOT,5.6 Nombre traitements phytosanitaires : total (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,TREFLEB,1.11.8 composition prairie : Trèfle blanc,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TREFLEH,1.11.8 composition prairie : Trèfle hybride,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TREFLEV,1.11.8 composition prairie : Trèfle violet,bool,
+PKGC_2017,PKGC2017_dicoVar_global,TS_AMMREF,AMM du produit de traitement des semences,string,
+PKGC_2017,PKGC2017_dicoVar_global,TXMS,5.6 FUMO boues taux MS/t,float64,
+PKGC_2017,PKGC2017_dicoVar_global,TYPBOT,11.3 Coupe : type de bottes,int64,PKGC2017_dicoVar_global__TYPBOT
+PKGC_2017,PKGC2017_dicoVar_global,TYPCAB,9.5.4 Type de cabine,int64,PKGC2017_dicoVar_global__TYPCAB
+PKGC_2017,PKGC2017_dicoVar_global,TYPCAN,1.10.3 Type de canne à sucre,int64,PKGC2017_dicoVar_global__TYPCAN
+PKGC_2017,PKGC2017_dicoVar_global,TYPDEL,9.7.1.1 Détermination délai de rentrée,int64,PKGC2017_dicoVar_global__TYPDEL
+PKGC_2017,PKGC2017_dicoVar_global,TYPE_TRAIT,Type de traitement effectué,string,PKGC2017_dicoVar_global__TYPE_TRAIT
+PKGC_2017,PKGC2017_dicoVar_global,TYPENR,11.3 Coupe : type d'enrubannage,int64,PKGC2017_dicoVar_global__TYPENR
+PKGC_2017,PKGC2017_dicoVar_global,TYPENS,11.3 Coupe : type d'ensilage,int64,PKGC2017_dicoVar_global__TYPENS
+PKGC_2017,PKGC2017_dicoVar_global,TYPEPULV,9.4.3 Type de pulvérisateur,int64,PKGC2017_dicoVar_global__TYPEPULV
+PKGC_2017,PKGC2017_dicoVar_global,TYPESOL,1.8 Type de sol de la parcelle: code,int64,PKGC2017_dicoVar_global__TYPESOL
+PKGC_2017,PKGC2017_dicoVar_global,TYPEXP,1.2 Orientation principale de l'exploitation,int64,PKGC2017_dicoVar_global__TYPEXP
+PKGC_2017,PKGC2017_dicoVar_global,TYPINTEMP,1.13.1 Type aléas exceptionnels,int64,PKGC2017_dicoVar_global__TYPINTEMP
+PKGC_2017,PKGC2017_dicoVar_global,TYPINTERV,5.6 Opération culturale,int64,PKGC2017_dicoVar_global__TYPINTERV
+PKGC_2017,PKGC2017_dicoVar_global,TYPMAT,10.9 Type de matériel d'irrigation,int64,PKGC2017_dicoVar_global__TYPMAT
+PKGC_2017,PKGC2017_dicoVar_global,TYPMECA,5.6 MECA type intervention,int64,PKGC2017_dicoVar_global__TYPMECA
+PKGC_2017,PKGC2017_dicoVar_global,TYPPERM,1.11.4 Type prairie permanente,int64,PKGC2017_dicoVar_global__TYPPERM
+PKGC_2017,PKGC2017_dicoVar_global,TYPRENQ,1.11.6 Type de prairie temporaire lors passage enquêteur,int64,PKGC2017_dicoVar_global__TYPRENQ
+PKGC_2017,PKGC2017_dicoVar_global,UGB,11.3 Exploitation de la prairie : unité gros bétail (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,UGBHA,11.3 Exploitation de la prairie : unité gros bétail par hectare (calculé),float64,
+PKGC_2017,PKGC2017_dicoVar_global,UNITE,5.6 Unité du produit,string,
+PKGC_2017,PKGC2017_dicoVar_global,VARIET,4.7.2 Variété principale,int64,PKGC2017_dicoVar_global__VARIET
+PKGC_2017,PKGC2017_dicoVar_global,VARIET2,4.7.3 Variété secondaire,int64,PKGC2017_dicoVar_global__VARIET2
+PKGC_2017,PKGC2017_dicoVar_global,VARIET2VTH,4.7.3.2 Variété secondaire : VTH,int64,PKGC2017_dicoVar_global__VARIET2VTH
+PKGC_2017,PKGC2017_dicoVar_global,VARIETDEP,4.7.4 Variété canne à sucre,int64,PKGC2017_dicoVar_global__VARIETDEP
+PKGC_2017,PKGC2017_dicoVar_global,VARIETVTH,4.7.2.2 Variété principale : VTH,int64,PKGC2017_dicoVar_global__VARIETVTH
+PKGC_2017,PKGC2017_dicoVar_global,VERIFBUS,9.4.7 Vérification des buses/pastilles du pulvé début campagne,bool,
+PKGC_2017,PKGC2017_dicoVar_global,VERSB,5.2 Dégâts vers blancs,int64,PKGC2017_dicoVar_global__VERSB
+PKGC_2017,PKGC2017_dicoVar_global,VERSBLANCS,5.1 Pression parasitaire : Vers blancs,int64,PKGC2017_dicoVar_global__VERSBLANCS
+PKGC_2017,PKGC2017_dicoVar_global,VOLSILO,11.3 Coupe : volume en m3,float64,
+PKGC_2017,PKGC2017_dicoVar_global,ZN,6.1.2 Apport zinc,bool,
+PKGC_2017,PKGC2017_dicoVar_global,ZONEVULN,0 Appartenance à une zone vulnérable,int64,PKGC2017_dicoVar_global__ZONEVULN
 PKLeg2013,PKLEG13_EXPL,NOM_DOSSIER,Identifiant,string,
 PKLeg2013,PKLEG13_EXPL,ESPECEINI,Espèce de l'enquête,string,PKLEG13_EXPL__ESPECEINI
 PKLeg2013,PKLEG13_EXPL,DEP,Département,string,

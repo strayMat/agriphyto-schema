@@ -60,7 +60,7 @@
         "OPEORDR": {
             "title": "11.1 Numéro d'ordre de l'opération culturale (numérotation des opérations sur une même parcelle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -71,7 +71,7 @@
         "OPEPAS": {
             "title": "11.1 Numéro de passage de l'opération culturale",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -82,7 +82,7 @@
         "OPEDAT": {
             "title": "11.1 Date du passage de l'opération culturale",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "datetime64[ns]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -93,7 +93,7 @@
         "OPETYP": {
             "title": "11.1 Type de passage de l'opération culturale",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__OPETYP\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -104,7 +104,7 @@
         "FUMONAT": {
             "title": "11.1 Nature de l'amendement organique",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FUMONAT\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -181,7 +181,7 @@
         "FUMODEL": {
             "title": "11.1 Délai enfouissement de l'amendement organique",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FUMODEL\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -192,7 +192,7 @@
         "FUMNAT": {
             "title": "11.2 Code de l'engrais minéral (ou organo-minéral) dans le référentiel",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FUMNAT\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -236,7 +236,7 @@
         "FUMUNI": {
             "title": "11.2 Unité de la dose d'engrais minéral (ou organo-minéral) ",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FUMUNI\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -247,7 +247,7 @@
         "FUMCONNAIS": {
             "title": "11.2 Unité des teneurs de l'engrais minéral (ou organo-minéral)  non référencé",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FUMCONNAIS\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -368,7 +368,7 @@
         "FUMDEL": {
             "title": "11.2 Délai enfouissement",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FUMDEL\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -610,7 +610,7 @@
         "PHYTOPROD": {
             "title": "11.4 Code du produit commercial phytopharmaceutique dans le référentiel",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__PHYTOPROD\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -654,7 +654,7 @@
         "PHYTOUNI": {
             "title": "11.4 Unité de la dose de produit phytopharmaceutique",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__PHYTOUNI\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -687,7 +687,7 @@
         "AMM": {
             "title": "11.4 Code AMM du produit phytopharmaceutique",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__AMM\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -709,7 +709,7 @@
         "FUMTYP": {
             "title": "11.2 Code de la famille d'engrais minéral (ou organo-minéral) dans le référentiel REF_FUMINP",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FUMTYP\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -731,7 +731,7 @@
         "FOLNAT": {
             "title": "11.3 Code du fertilisant foliaire dans le référentiel",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FOLNAT\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -775,7 +775,7 @@
         "FOLUNI": {
             "title": "11.3 Unité de la dose de fertilisant foliaire",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FOLUNI\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -885,7 +885,7 @@
         "FOLCU": {
             "title": "11.3 Unité de la concentration (ou de l'apport) en Cuivre du fertilisant foliaire",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__FOLCU\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -929,7 +929,7 @@
         "NATTRAIT": {
             "title": "Indique si le produit non référencé à but phytosanitaire entre dans le champ de l'IFT au titre de sa concentration en cuivre ou en soufre",
             "description": "{\"nomenclature\": \"PKViti2019_ope_cult_definitif__NATTRAIT\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,

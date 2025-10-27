@@ -1,0 +1,30 @@
+modality_code,label
+01,gramin?es?: Avoine
+02,gramin?es?: Orge
+03,gramin?es?: Seigle
+04,gramin?es?: Triticale
+05,gramin?es?: Bl?
+06,gramin?es : Sorgho
+07,gramin?es : Autres (pures)
+08,gramin?es : M?lange (m?teil)
+09,crucif?res  : Colza
+10,crucif?res?: Autres (pures)
+11,crucif?res?: M?lange
+12,l?gumineuses?: Pois
+13,l?gumineuses?: Vesce
+14,l?gumineuses?: Soja
+15,l?gumineuses?: Tr?fle
+16,l?gumineuses?: Autres (pures)
+17,l?gumineuses?: M?lange
+18,Sarrasin
+19,Phac?lie
+20,Tournesol
+21,M?lange l?gumineuses gramin?es
+22,M?lange l?gumineuses crucif?res
+23,M?lange l?gumineuses phac?lie
+24,M?lange gramin?es crucif?res
+25,M?lange gramin?es phac?lie
+26,M?lange crucif?res phac?lie
+27,Autre M?lange avec l?gumineuse
+28,Autre M?lange sans l?gumineuse
+29,Autres

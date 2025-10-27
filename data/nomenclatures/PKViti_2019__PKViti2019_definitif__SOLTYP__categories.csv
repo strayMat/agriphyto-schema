@@ -1,4 +1,27 @@
 modality_code,label
-1:Argile2:Argile limoneuse3:Argile limoneuse sableuse4:Argile sableuse5:Argile sableuse caillouteuse6:Argilo-calcaire7:Argilo-calcaire caillouteux8:Argilo-calcaire sur calcaire dur9:Argilo-calcaire sur craie10:Argilo-calcaire sur marne11:Argilo-calcaire sur molasse12:Limon13:Limon argileux14:Limon argileux sableux 15:Limon argileux caillouteux16:Limon caillouteux17:Limon sableux18:Sable19:Sable argileux 20:Sable argileux caillouteux 21:Sable limoneux22:Sable limoneux caillouteux 23:Sable graveleux24:Sable calcaire25:Graves26:Autre,1:Argile2:Argile limoneuse3:Argile limoneuse sableuse4:Argile sableuse5:Argile sableuse caillouteuse6:Argilo-calcaire7:Argilo-calcaire caillouteux8:Argilo-calcaire sur calcaire dur9:Argilo-calcaire sur craie10:Argilo-calcaire sur marne11:Argilo-calcaire sur molasse12:Limon13:Limon argileux14:Limon argileux sableux 15:Limon argileux caillouteux16:Limon caillouteux17:Limon sableux18:Sable19:Sable argileux 20:Sable argileux caillouteux 21:Sable limoneux22:Sable limoneux caillouteux 23:Sable graveleux24:Sable calcaire25:Graves26:Autre
-1:Argile2:Argile limoneuse3:Argile limoneuse sableuse4:Argile sableuse5:Argile sableuse caillouteuse6:Argilo-calcaire7:Argilo-calcaire caillouteux8:Argilo-calcaire sur calcaire dur9:Argilo-calcaire sur craie10:Argilo-calcaire sur marne11:Argilo-calcaire sur molasse12:Limon13:Limon argileux14:Limon argileux sableux 15:Limon argileux caillouteux16:Limon caillouteux17:Limon sableux18:Sable19:Sable argileux 20:Sable argileux caillouteux 21:Sable limoneux22:Sable limoneux caillouteux 23:Sable graveleux24:Sable calcaire25:Graves26:Autre,1:Argile2:Argile limoneuse3:Argile limoneuse sableuse4:Argile sableuse5:Argile sableuse caillouteuse6:Argilo-calcaire7:Argilo-calcaire caillouteux8:Argilo-calcaire sur calcaire dur9:Argilo-calcaire sur craie10:Argilo-calcaire sur marne11:Argilo-calcaire sur molasse12:Limon13:Limon argileux14:Limon argileux sableux 15:Limon argileux caillouteux16:Limon caillouteux17:Limon sableux18:Sable19:Sable argileux 20:Sable argileux caillouteux 21:Sable limoneux22:Sable limoneux caillouteux 23:Sable graveleux24:Sable calcaire25:Graves26:Autre
-1,Argile2:Argile limoneuse3:Argile limoneuse sableuse4:Argile sableuse5:Argile sableuse caillouteuse6:Argilo-calcaire7:Argilo-calcaire caillouteux8:Argilo-calcaire sur calcaire dur9:Argilo-calcaire sur craie10:Argilo-calcaire sur marne11:Argilo-calcaire sur molasse12:Limon13:Limon argileux14:Limon argileux sableux 15:Limon argileux caillouteux16:Limon caillouteux17:Limon sableux18:Sable19:Sable argileux 20:Sable argileux caillouteux 21:Sable limoneux22:Sable limoneux caillouteux 23:Sable graveleux24:Sable calcaire25:Graves26:Autre
+1,Argile
+2,Argile limoneuse
+3,Argile limoneuse sableuse
+4,Argile sableuse
+5,Argile sableuse caillouteuse
+6,Argilo-calcaire
+7,Argilo-calcaire caillouteux
+8,Argilo-calcaire sur calcaire dur
+9,Argilo-calcaire sur craie
+10,Argilo-calcaire sur marne
+11,Argilo-calcaire sur molasse
+12,Limon
+13,Limon argileux
+14,Limon argileux sableux 
+15,Limon argileux caillouteux
+16,Limon caillouteux
+17,Limon sableux
+18,Sable
+19,Sable argileux 
+20,Sable argileux caillouteux 
+21,Sable limoneux
+22,Sable limoneux caillouteux 
+23,Sable graveleux
+24,Sable calcaire
+25,Graves
+26,Autre

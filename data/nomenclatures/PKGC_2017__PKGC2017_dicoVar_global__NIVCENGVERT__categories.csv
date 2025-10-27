@@ -1,0 +1,5 @@
+modality_code,label
+1,Faible (<=1 tonne)
+2,Moyen (1 ? 3 t)
+3,Fort (3 ? 5 t)
+4,Tr?s fort (>5 t)

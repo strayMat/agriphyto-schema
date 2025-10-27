@@ -1,4 +1,10 @@
 modality_code,label
-1:permanent semé2:permanent spontané3:temporaire semé de type engrais vert4:autre temporaire semé5:temporaire spontané6:permanent et temporaire semé de type engrais vert7:temporaire semé et temporaire semé de type engrais vert8:temporaire spontané et temporaire semé de type engrais vert9:permanent  et autre temporaire semé,1:permanent semé2:permanent spontané3:temporaire semé de type engrais vert4:autre temporaire semé5:temporaire spontané6:permanent et temporaire semé de type engrais vert7:temporaire semé et temporaire semé de type engrais vert8:temporaire spontané et temporaire semé de type engrais vert9:permanent  et autre temporaire semé
-1:permanent semé2:permanent spontané3:temporaire semé de type engrais vert4:autre temporaire semé5:temporaire spontané6:permanent et temporaire semé de type engrais vert7:temporaire semé et temporaire semé de type engrais vert8:temporaire spontané et temporaire semé de type engrais vert9:permanent  et autre temporaire semé,1:permanent semé2:permanent spontané3:temporaire semé de type engrais vert4:autre temporaire semé5:temporaire spontané6:permanent et temporaire semé de type engrais vert7:temporaire semé et temporaire semé de type engrais vert8:temporaire spontané et temporaire semé de type engrais vert9:permanent  et autre temporaire semé
-1,permanent semé2:permanent spontané3:temporaire semé de type engrais vert4:autre temporaire semé5:temporaire spontané6:permanent et temporaire semé de type engrais vert7:temporaire semé et temporaire semé de type engrais vert8:temporaire spontané et temporaire semé de type engrais vert9:permanent  et autre temporaire semé
+1,permanent semé
+2,permanent spontané
+3,temporaire semé de type engrais vert
+4,autre temporaire semé
+5,temporaire spontané
+6,permanent et temporaire semé de type engrais vert
+7,temporaire semé et temporaire semé de type engrais vert
+8,temporaire spontané et temporaire semé de type engrais vert
+9,permanent  et autre temporaire semé

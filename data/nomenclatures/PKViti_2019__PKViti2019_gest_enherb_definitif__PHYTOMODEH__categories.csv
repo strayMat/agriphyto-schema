@@ -1,4 +1,6 @@
 modality_code,label
-1:en plein2:sous le rang3:sur l'inter-rang4:dirigé sous le rang et l'inter-rang5:localisé,1:en plein2:sous le rang3:sur l'inter-rang4:dirigé sous le rang et l'inter-rang5:localisé
-1:en plein2:sous le rang3:sur l'inter-rang4:dirigé sous le rang et l'inter-rang5:localisé,1:en plein2:sous le rang3:sur l'inter-rang4:dirigé sous le rang et l'inter-rang5:localisé
-1,en plein2:sous le rang3:sur l'inter-rang4:dirigé sous le rang et l'inter-rang5:localisé
+1,en plein
+2,sous le rang
+3,sur l'inter-rang
+4,dirigé sous le rang et l'inter-rang
+5,localisé

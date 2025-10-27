@@ -1,0 +1,7 @@
+modality_code,label
+1:Plus de 30?% en dessous2:De 20?% ? 30?% en dessous3:De 10?% ? 20?% en dessous4:Entre plus,1:Plus de 30?% en dessous2:De 20?% ? 30?% en dessous3:De 10?% ? 20?% en dessous4:Entre plus
+1:Plus de 30?% en dessous2:De 20?% ? 30?% en dessous3:De 10?% ? 20?% en dessous4:Entre plus,1:Plus de 30?% en dessous2:De 20?% ? 30?% en dessous3:De 10?% ? 20?% en dessous4:Entre plus
+1,Plus de 30?% en dessous2:De 20?% ? 30?% en dessous3:De 10?% ? 20?% en dessous4:Entre plus
+moins 10?%5:De 10?% ? 20?% au-dessus6:De 20?% ? 30?% au-dessus7:Plus de 30?% au-dessus,moins 10?%5:De 10?% ? 20?% au-dessus6:De 20?% ? 30?% au-dessus7:Plus de 30?% au-dessus
+moins 10?%5:De 10?% ? 20?% au-dessus6:De 20?% ? 30?% au-dessus7:Plus de 30?% au-dessus,moins 10?%5:De 10?% ? 20?% au-dessus6:De 20?% ? 30?% au-dessus7:Plus de 30?% au-dessus
+moins 10?%5,De 10?% ? 20?% au-dessus6:De 20?% ? 30?% au-dessus7:Plus de 30?% au-dessus

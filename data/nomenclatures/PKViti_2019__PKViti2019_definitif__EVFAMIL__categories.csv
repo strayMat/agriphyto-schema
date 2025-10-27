@@ -1,4 +1,5 @@
 modality_code,label
-1:crucifères2:graminées3: légumineuses4:autre,1:crucifères2:graminées3: légumineuses4:autre
-1:crucifères2:graminées3: légumineuses4:autre,1:crucifères2:graminées3: légumineuses4:autre
-1,crucifères2:graminées3: légumineuses4:autre
+1,crucifères
+2,graminées
+3, légumineuses
+4,autre

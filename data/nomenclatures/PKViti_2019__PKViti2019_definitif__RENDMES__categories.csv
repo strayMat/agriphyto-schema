@@ -1,4 +1,5 @@
 modality_code,label
-1:estimé2:mesuré sur l'exploitation3:mesuré sur la parcelle4:autre (demandé par la coopérative),1:estimé2:mesuré sur l'exploitation3:mesuré sur la parcelle4:autre (demandé par la coopérative)
-1:estimé2:mesuré sur l'exploitation3:mesuré sur la parcelle4:autre (demandé par la coopérative),1:estimé2:mesuré sur l'exploitation3:mesuré sur la parcelle4:autre (demandé par la coopérative)
-1,estimé2:mesuré sur l'exploitation3:mesuré sur la parcelle4:autre (demandé par la coopérative)
+1,estimé
+2,mesuré sur l'exploitation
+3,mesuré sur la parcelle
+4,autre (demandé par la coopérative)

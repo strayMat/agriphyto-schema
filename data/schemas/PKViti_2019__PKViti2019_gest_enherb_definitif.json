@@ -60,7 +60,7 @@
         "CODEGESTENHER": {
             "title": "9.0 Numéro d'ordre de gestion de l'enherbement (numérotation des opérations sur une même parcelle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -71,7 +71,7 @@
         "GESTENHERPAS": {
             "title": "9.0 Numéro de passage de gestion de l'enherbement",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -82,7 +82,7 @@
         "DATEGESTENHER": {
             "title": "9.0 Date du passage de gestion de l'enherbement",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "datetime64[ns]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -93,7 +93,7 @@
         "TYPGESTENHER": {
             "title": "9.0 Type de passage de gestion de l'enherbement",
             "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__TYPGESTENHER\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -258,7 +258,7 @@
         "PHYTOPRODH": {
             "title": "9.2 Code du produit commercial-herbicide dans le référentiel",
             "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__PHYTOPRODH\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -291,7 +291,7 @@
         "AMMH": {
             "title": "9.2 AMM correspondant au produit commercial-herbicide",
             "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__AMMH\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -302,7 +302,7 @@
         "PHYTOMODEH": {
             "title": "9.2 Mode de traitement de l'herbicide",
             "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__PHYTOMODEH\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -335,7 +335,7 @@
         "PHYTOUNIH": {
             "title": "9.2 Unité du produit utilisé pour passage herbicide",
             "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__PHYTOUNIH\"}",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
