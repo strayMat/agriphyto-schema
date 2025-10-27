@@ -134,12 +134,15 @@ AVAILABLE_DICOS = {
         },
         "parser": "dico_from_excel",
     },
-    # TODO:
     "Phytoleg_2018": {
-        "filename": "PKGC2017_dico_variables.ods",
-        "variable_sheet": "PKGC2017_dicoVar_global",
+        "filename": "20210930_DOC_BSVA_Dictionnaire_variables_Phytolégumes2018.ods",
+        "variable_sheet": [
+            "20210930_Phytolegumes2018_definitive",
+            "20210930_Phytolegumes2018_TTMT_Phyto_definitive",
+            "20210930_Phytolegumes2018_TTMT_MATACT",
+        ],
         "cols_to_use": {
-            "NOM_VARIABLE": COLNAME_VARIABLE,
+            "NOM": COLNAME_VARIABLE,
             "LIBELLE": COLNAME_LIBELLE,
             "TYPE": COLNAME_TYPE,
             "NOMENCLATURE": COLNAME_NOMENCLATURE,
