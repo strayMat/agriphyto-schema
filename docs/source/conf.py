@@ -68,6 +68,14 @@ html_theme_options = {
     "logo": {
         "image_light": "logo-light.svg",
         "image_dark": "logo-dark.svg",
+         "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/strayMat/agriphyto-schema",
+            "icon": "fab fa-github",
+            "type": "fontawesome",
+        },
+    ],
     },
 }
 html_show_sourcelink = False  # Remove 'view source code' from top of page (for html, not python)
