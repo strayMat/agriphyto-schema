@@ -107,7 +107,14 @@ AVAILABLE_DICOS = {
     },
     "PKViti_2019": {  # I manually searched and replaced all ";" code-lable separators in the modalities column with ":" to avoid confusion with the ";" used to separate modalities
         "filename": "PKViti2019_dico_variables_definitif.ods",
-        "variable_sheet": ["PKViti2019_definitif","PKViti2019_gest_enherb_definitif", "PKViti2019_ope_cult_definitif", "PKViti2019_IFT_trait_definitif", "MATACT_PKViti2019_definitif", "PKViti2019_AMM_SA"],
+        "variable_sheet": [
+            "PKViti2019_definitif",
+            "PKViti2019_gest_enherb_definitif",
+            "PKViti2019_ope_cult_definitif",
+            "PKViti2019_IFT_trait_definitif",
+            "MATACT_PKViti2019_definitif",
+            "PKViti2019_AMM_SA",
+        ],
         "cols_to_use": {
             "NOM": COLNAME_VARIABLE,
             "DESCRIPTION (avec éventuelle référence dans le questionnaire)": COLNAME_LIBELLE,
@@ -116,7 +123,7 @@ AVAILABLE_DICOS = {
         },
         "parser": "dico_from_excel",
     },
-    "PKGC_2017": { # I manually searched and replaced all ";" code-lable separators in the modalities column with ":" to avoid confusion with the ";" used to separate modalities
+    "PKGC_2017": {  # I manually searched and replaced all ";" code-lable separators in the modalities column with ":" to avoid confusion with the ";" used to separate modalities
         "filename": "PKGC2017_dico_variables.ods",
         "variable_sheet": "PKGC2017_dicoVar_global",
         "cols_to_use": {
@@ -126,7 +133,19 @@ AVAILABLE_DICOS = {
             "NOMENCLATURE": COLNAME_NOMENCLATURE,
         },
         "parser": "dico_from_excel",
-    }
+    },
+    # TODO:
+    "Phytoleg_2018": {
+        "filename": "PKGC2017_dico_variables.ods",
+        "variable_sheet": "PKGC2017_dicoVar_global",
+        "cols_to_use": {
+            "NOM_VARIABLE": COLNAME_VARIABLE,
+            "LIBELLE": COLNAME_LIBELLE,
+            "TYPE": COLNAME_TYPE,
+            "NOMENCLATURE": COLNAME_NOMENCLATURE,
+        },
+        "parser": "dico_from_excel",
+    },
 }
 CASD_BOOL_MODALITIES = ['"0 - Non";"1 - Oui"', '"1 - Oui";"0 - Non"', "oui/non"]
 USELESS_MODALITIES = [*CASD_BOOL_MODALITIES]

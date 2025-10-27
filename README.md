@@ -35,7 +35,7 @@ dictionnaire est disponible en téléchargement.
 
 | Sigle | Nom | Année | CASD id_prod | intégrée | choix fichier source nomenclature |
 |-------|-----|-------|--------------|----------|-----------------------------------|
-| PKGC | Pratiques Culturales Grandes Cultures | 2006, 2011, 2017 | 3033 | | 20190802_DOC_BSVA_dico_variables_PKGC2017.ods |
+| PKGC | Pratiques Culturales Grandes Cultures | 2006, 2011, 2017 | 3033 | ✅  | 20190802_DOC_BSVA_dico_variables_PKGC2017.ods |
 | PKPrairies | Pratiques Culturales Prairies (regroupées dans Grandes Cultures à partir de 2017) | 2006, 2011 | 1158 | ✅ | Pratiques_culturales_en_prairie_-_2011.csv |
 | PKfruits | Pratiques Culturales Fruits (aussi nommé PKArbo) | 2015 | 2597 | ✅ | 20210726_PKfruits2015_dico_variables.ods|
 | PKLEG | Pratiques Culturales Légumes | 2013 | 1393 | ✅ | PKLEG13_DESC.ods |

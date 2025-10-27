@@ -49,4 +49,3 @@ def check_db_name(db_name: str) -> None:
     if db_name not in AVAILABLE_DICOS:
         msg = f"Accepted db_name: {list(AVAILABLE_DICOS.keys())}. Got {db_name}"
         raise ValueError(msg)
-

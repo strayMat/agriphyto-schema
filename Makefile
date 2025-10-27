@@ -8,6 +8,7 @@ install-pre-commit: ## Install the pre-commit hooks
 	@echo "🚀 Installing pre-commit hooks"
 	@uv run pre-commit install
 
+# on windows, run `uvx pre-commit run -a` will do the tricks most of the time
 .PHONY: check
 check: ## Run code quality tools.
 	@echo "🚀 Checking lock file consistency with 'pyproject.toml'"
