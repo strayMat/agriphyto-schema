@@ -1,0 +1,9 @@
+modality_code,label
+non= 0,non= 0
+non,0
+agriculture biologique certifié (AB) = 1,agriculture biologique certifié (AB) = 1
+agriculture biologique certifié (AB),1
+"autre mode biologique certifié (biodynamie, nature et progrès...)= 2","autre mode biologique certifié (biodynamie, nature et progrès...)= 2"
+"autre mode biologique certifié (biodynamie, nature et progrès...)",2
+mode biologique non certifié = 3,mode biologique non certifié = 3
+mode biologique non certifié,3

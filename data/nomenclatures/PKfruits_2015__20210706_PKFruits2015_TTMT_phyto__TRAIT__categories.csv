@@ -1,0 +1,15 @@
+modality_code,label
+Type de traitement retenu : ADJ = Adjuvants,Type de traitement retenu : ADJ = Adjuvants
+Type de traitement retenu : ADJ,Adjuvants
+AUT = Autres produits phytosanitaires,AUT = Autres produits phytosanitaires
+AUT,Autres produits phytosanitaires
+FERT = Fertilisants,FERT = Fertilisants
+FERT,Fertilisants
+FONG = Fongicides,FONG = Fongicides
+FONG,Fongicides
+HERB = Herbicides,HERB = Herbicides
+HERB,Herbicides
+INS = Insecticides,INS = Insecticides
+INS,Insecticides
+NON PPP NON FERTI = produits non phytosanitaires non fertilisants,NON PPP NON FERTI = produits non phytosanitaires non fertilisants
+NON PPP NON FERTI,produits non phytosanitaires non fertilisants

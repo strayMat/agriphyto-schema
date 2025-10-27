@@ -1,0 +1,12 @@
+modality_code,label
+01,Exploitant individuel ou autre personne physique
+02,Gaec total
+03,EARL ( y compris unipersonnelle )
+04,Groupement de fait
+05,SCL (société civile laitière)
+06,Gaec partiel y c Gaec laitier
+07,"Autre société civile (SCEA, ...)"
+08,"Société commerciale, coopérative"
+09,Société dassolement en commun
+10,"Autre personne morale (établissement d enseignement, hôpitaux...)"
+12,EIRL (Exploitation individuelle à responsabilité limitée)

@@ -1,0 +1,7 @@
+modality_code,label
+Normal = 1,Normal = 1
+Normal,1
+Faible (< 20% en dessous) = 2,Faible (< 20% en dessous) = 2
+Faible (< 20% en dessous),2
+Fort (>20% au-dessus) = 3,Fort (>20% au-dessus) = 3
+Fort (>20% au-dessus),3
