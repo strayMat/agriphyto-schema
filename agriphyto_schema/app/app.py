@@ -9,10 +9,13 @@ from agriphyto_schema.constants import (
     AGRIPHYTO_DICO_NAME,
     COLNAME_OUT_DB,
     COLNAME_OUT_NOMENCLATURE,
+    COLNAME_OUT_TABLE,
     COLNAME_TABLE,
     COLNAME_VARIABLE,
     DIR2DATA,
     DIR2NOMENCLATURES,
+    COLNAME_CODE,
+    COLNAME_LIBELLE,
 )
 
 
@@ -59,8 +62,6 @@ all_nomenclatures = load_nomenclature(
     DIR2NOMENCLATURES / "all_nomenclatures.csv"
 )
 
-breakpoint()
-
 # Gestion des clics sur les lignes
 if event.selection.rows:
     selected_row_index = event.selection.rows[0]
@@ -70,15 +71,15 @@ if event.selection.rows:
         selected_row = filtered_dico.iloc[selected_row_index]
         db_name = selected_row.get(COLNAME_OUT_DB, "")
         clean_variable_name = selected_row.get(COLNAME_OUT_NOMENCLATURE, "")
+        table_name = selected_row.get(COLNAME_OUT_TABLE, "")
         selected_nomenclature = all_nomenclatures[
             (all_nomenclatures[COLNAME_OUT_DB] == db_name)
             & (
                 all_nomenclatures[COLNAME_TABLE]
-                == selected_row.get(COLNAME_TABLE, "")
+                == table_name
             )
             & (all_nomenclatures[COLNAME_VARIABLE] == clean_variable_name)
         ]
-
         # Vérification si une nomenclature existe et n'est pas vide
         if (
             clean_variable_name
@@ -86,7 +87,7 @@ if event.selection.rows:
             and (str(clean_variable_name) != "nan")
             and (len(selected_nomenclature) > 0)
         ):
-            st.dataframe(selected_nomenclature, hide_index=True)
+            st.dataframe(selected_nomenclature[[COLNAME_CODE, COLNAME_LIBELLE]], hide_index=True)
         else:
             st.info(
                 "💡 Sélectionnez une ligne avec une nomenclature pour afficher les détails."

@@ -45,6 +45,7 @@ MAP_TYPES = {
 # Configurations for loaded dictionaries
 # TODO: document this better or put this into a documented config class
 AVAILABLE_DICOS = {
+    # I replaced manually "IDENTIFICATIION" by "IDADMIN" in the nomenclature sheet to be consistent with the variable sheet
     "RA_2020": {
         "filename": "RA2020_Dictionnaire des variables_220415_CASD.xlsx",
         "variable_sheet": "1_DICO_Variables",

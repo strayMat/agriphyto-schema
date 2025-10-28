@@ -26,7 +26,7 @@
         },
         "STATUTDIRIG": {
             "title": "Statut dirigeant",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__STATUTDIRIG\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -59,7 +59,7 @@
         },
         "SITCONJ_ECH": {
             "title": "Situation conjugale",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__SITCONJ_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -70,7 +70,7 @@
         },
         "ACTCONJ_ECH": {
             "title": "Activité du conjoint",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__ACTCONJ_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -81,7 +81,7 @@
         },
         "LIENCHEF": {
             "title": "Lien familial avec le chef d'exploitation",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__LIENCHEF\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -92,7 +92,7 @@
         },
         "ACTIVEXP": {
             "title": "Temps de travail sur l'exploitation",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__ACTIVEXP\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -125,7 +125,7 @@
         },
         "INSTALLCF": {
             "title": "Installation dans un cadre familial",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__INSTALLCF\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -136,7 +136,7 @@
         },
         "MOFGENE": {
             "title": "Formation générale",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__MOFGENE\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -147,7 +147,7 @@
         },
         "MOFAGRI": {
             "title": "Formation agricole",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__MOFAGRI\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -169,7 +169,7 @@
         },
         "MOPACTDIV_ECH": {
             "title": "Participation aux activités de diversification",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__MOPACTDIV_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -180,7 +180,7 @@
         },
         "MOTYPLURACT_ECH": {
             "title": "Type de pluriactivité",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__MOTYPLURACT_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -191,7 +191,7 @@
         },
         "MOPLURACT_ECH": {
             "title": "Importance de la pluriactivité dans le temps de travail",
-            "description": "null",
+            "description": "{\"nomenclature\": \"MO_CHEF_COEXPL__MOPLURACT_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -217,7 +217,7 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "RA_2020__RA2020_MO_CHEF_COEXPL",
+    "name": "RA_2020__MO_CHEF_COEXPL",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",

@@ -14,7 +14,7 @@
             "regex": false
         },
         "MECAPAS": {
-            "title": "Numéro du passage sur la parcelle",
+            "title": "NumÃ©ro du passage sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -36,7 +36,7 @@
             "regex": false
         },
         "IRDISC": {
-            "title": "Passage inter-rang : appareil à disques",
+            "title": "Passage inter-rang : appareil Ã  disques",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -47,7 +47,7 @@
             "regex": false
         },
         "IRDENT": {
-            "title": "Passage inter-rang : appareil à dents (dont cultivateur)",
+            "title": "Passage inter-rang : appareil Ã  dents (dont cultivateur)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -80,7 +80,7 @@
             "regex": false
         },
         "ICLAM": {
-            "title": "Passage sous le rang : intercep à lames",
+            "title": "Passage sous le rang : intercep Ã  lames",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -102,7 +102,7 @@
             "regex": false
         },
         "ICDECA": {
-            "title": "Passage sous le rang : décavaillonneuse",
+            "title": "Passage sous le rang : dÃ©cavaillonneuse",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -124,7 +124,7 @@
             "regex": false
         },
         "DESINTRANG": {
-            "title": "Passage d’appareil sur inter-rang",
+            "title": "Passage dâ€™appareil sur inter-rang",
             "description": "{\"nomenclature\": \"MECA_PHYTOVITI2016__DESINTRANG\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -135,7 +135,7 @@
             "regex": false
         },
         "DESINTCEP": {
-            "title": "Passage d’appareil sous le rang",
+            "title": "Passage dâ€™appareil sous le rang",
             "description": "{\"nomenclature\": \"MECA_PHYTOVITI2016__DESINTCEP\"}",
             "dtype": "string[python]",
             "nullable": true,

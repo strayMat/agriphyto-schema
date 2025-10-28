@@ -24,8 +24,19 @@
             "required": true,
             "regex": false
         },
-        "LEGCODE": {
-            "title": "Codes légumes",
+        "DIVACTCOD": {
+            "title": "Type d'activité de diversification",
+            "description": "{\"nomenclature\": \"DIVERSIF__DIVACTCOD\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DIVACTEXP": {
+            "title": "Activité en nom propre",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -35,8 +46,8 @@
             "required": true,
             "regex": false
         },
-        "LEGFIL": {
-            "title": "Détail des légumes cultivés",
+        "DIVACTAUT": {
+            "title": "Activité par le biais d'une autre entité",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -46,8 +57,8 @@
             "required": true,
             "regex": false
         },
-        "LEGDEV": {
-            "title": "détail des surfaces développées de légumes si LEG_NB<=3 OU CULTSUR.11600000>= 2.0000",
+        "TRANSFOSST": {
+            "title": "Transformation en sous-traitance",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -67,28 +78,6 @@
             "coerce": false,
             "required": true,
             "regex": false
-        },
-        "IMPUT_LEG.x": {
-            "title": "Indicatrice de retraitement des légumes (LEGFIL)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IMPUT_LEG.y": {
-            "title": "Indicatrice de retraitement des légumes développés (LEGDEV)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
         }
     },
     "checks": null,
@@ -96,12 +85,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "RA_2020__RA2020_LEGUMES",
+    "name": "RA_2020__DIVERSIF",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table RA2020_LEGUMES from data dictionary RA_2020"
+    "description": "Schema for table RA2020_DIVERSIF from data dictionary RA_2020"
 }

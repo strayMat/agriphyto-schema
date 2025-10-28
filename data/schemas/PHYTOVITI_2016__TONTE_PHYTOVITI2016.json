@@ -14,7 +14,7 @@
             "regex": false
         },
         "TONTEPAS": {
-            "title": "Numéro du passage sur la parcelle",
+            "title": "NumÃ©ro du passage sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -58,7 +58,7 @@
             "regex": false
         },
         "TONTESR": {
-            "title": "Passage sur l'enherbement présent sous le rang (tout type d'enherbement)",
+            "title": "Passage sur l'enherbement prÃ©sent sous le rang (tout type d'enherbement)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,

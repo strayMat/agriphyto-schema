@@ -2457,7 +2457,7 @@
         },
         "BOVINPLEINAIRFIL_ECH": {
             "title": "Bovin en plein air intégral (toute l'année)",
-            "description": "null",
+            "description": "{\"nomenclature\": \"PRODANIM__BOVINPLEINAIRFIL_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3216,7 +3216,7 @@
         },
         "PORCPLEINAIRFIL_ECH": {
             "title": "Certains de vos porcs sont-ils élevés en plein air intégral",
-            "description": "null",
+            "description": "{\"nomenclature\": \"PRODANIM__PORCPLEINAIRFIL_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3953,7 +3953,7 @@
         },
         "CHAIREXTFIL_ECH": {
             "title": "Accès à un parcours extérieur pour les volailles de chair, y compris prêt à gaver",
-            "description": "null",
+            "description": "{\"nomenclature\": \"PRODANIM__CHAIREXTFIL_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4914,7 +4914,7 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "RA_2020__RA2020_PRODANIM",
+    "name": "RA_2020__PRODANIM",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",

@@ -24,8 +24,107 @@
             "required": true,
             "regex": false
         },
-        "PPAM100": {
-            "title": "Basilic",
+        "ABATTICODE": {
+            "title": "Code des cultures sous abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P1": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P2": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P3": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P4": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P5": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P6": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P7": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P8": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_SURF_P1": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -35,8 +134,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM110": {
-            "title": "Camomille",
+        "ABATTI_SURF_P2": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -46,8 +145,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM120": {
-            "title": "Ciboulette (+ cive, oignons verts)",
+        "ABATTI_SURF_P3": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -57,8 +156,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM130": {
-            "title": "Citronnelle",
+        "ABATTI_SURF_P4": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -68,8 +167,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM140": {
-            "title": "Coriandre",
+        "ABATTI_SURF_P5": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -79,8 +178,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM150": {
-            "title": "Safran (crocus)",
+        "ABATTI_SURF_P6": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -90,8 +189,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM160": {
-            "title": "Curcuma",
+        "ABATTI_SURF_P7": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -101,8 +200,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM170": {
-            "title": "Géranium",
+        "ABATTI_SURF_P8": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -112,8 +211,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM180": {
-            "title": "Gingembre",
+        "ABATTI_SERRE_P1": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -123,8 +222,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM190": {
-            "title": "Hélichryse (immortelle)",
+        "ABATTI_SERRE_P2": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -134,8 +233,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM200": {
-            "title": "Lavande",
+        "ABATTI_SERRE_P3": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -145,8 +244,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM210": {
-            "title": "Lavandin",
+        "ABATTI_SERRE_P4": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -156,8 +255,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM220": {
-            "title": "Mélisse",
+        "ABATTI_SERRE_P5": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -167,8 +266,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM230": {
-            "title": "Menthe",
+        "ABATTI_SERRE_P6": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -178,8 +277,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM240": {
-            "title": "Pavot Oeillette",
+        "ABATTI_SERRE_P7": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -189,162 +288,8 @@
             "required": true,
             "regex": false
         },
-        "PPAM250": {
-            "title": "Persil",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM260": {
-            "title": "Piment",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM270": {
-            "title": "Romarin",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM280": {
-            "title": "Roucou",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM290": {
-            "title": "Sauge sclarée",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM300": {
-            "title": "Thym",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM311": {
-            "title": "Vanille de plein champ sur tuteur naturel ou artificiel",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM312": {
-            "title": "Vanille sous abri haut",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM313": {
-            "title": "Vanille sous forêt naturelle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM320": {
-            "title": "ylang ylang",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM330": {
-            "title": "Autres plantes à parfum",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM340": {
-            "title": "Autres plantes aromatiques",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PPAM350": {
-            "title": "Autres plantes médicinales",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "SAU_11234300": {
-            "title": "plantes à parfum, aromatiques, médicinales en plein air ou sous abri bas",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "SAU_11234400": {
-            "title": "plantes à parfum, aromatiques, médicinales sous serre ou abri haut",
+        "ABATTI_SERRE_P8": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -371,12 +316,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "RA_2020__RA2020_PPAM",
+    "name": "RA_2020__ABATTIS",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table RA2020_PPAM from data dictionary RA_2020"
+    "description": "Schema for table RA2020_ABATTIS from data dictionary RA_2020"
 }

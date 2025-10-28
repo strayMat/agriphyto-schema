@@ -13,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "SIRET_1": {
-            "title": "Numéro Siret initialisé",
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,10 +24,10 @@
             "required": true,
             "regex": false
         },
-        "SIRET": {
-            "title": "Numéro Siret après collecte",
+        "PPAM100": {
+            "title": "Basilic",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -35,10 +35,10 @@
             "required": true,
             "regex": false
         },
-        "PACAGE_1": {
-            "title": "Numéro PACAGE initialisé",
+        "PPAM110": {
+            "title": "Camomille",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -46,10 +46,10 @@
             "required": true,
             "regex": false
         },
-        "PACAGESURF2020": {
-            "title": "PACAGE initialisé utilisé pour une déclaration de surfaces 2020",
+        "PPAM120": {
+            "title": "Ciboulette (+ cive, oignons verts)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -57,10 +57,10 @@
             "required": true,
             "regex": false
         },
-        "PACAGE": {
-            "title": "Numéro PACAGE final",
+        "PPAM130": {
+            "title": "Citronnelle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -68,10 +68,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_1": {
-            "title": "Numéro EDE final 1",
+        "PPAM140": {
+            "title": "Coriandre",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -79,10 +79,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_2": {
-            "title": "Numéro EDE final 2",
+        "PPAM150": {
+            "title": "Safran (crocus)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -90,10 +90,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_3": {
-            "title": "Numéro EDE final 3",
+        "PPAM160": {
+            "title": "Curcuma",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -101,10 +101,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_4": {
-            "title": "Numéro EDE final 4",
+        "PPAM170": {
+            "title": "Géranium",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -112,10 +112,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_5": {
-            "title": "Numéro EDE final 5",
+        "PPAM180": {
+            "title": "Gingembre",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -123,10 +123,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_6": {
-            "title": "Numéro EDE final 6",
+        "PPAM190": {
+            "title": "Hélichryse (immortelle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -134,10 +134,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_7": {
-            "title": "Numéro EDE final 7",
+        "PPAM200": {
+            "title": "Lavande",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -145,10 +145,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_8": {
-            "title": "Numéro EDE final 8",
+        "PPAM210": {
+            "title": "Lavandin",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -156,10 +156,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_9": {
-            "title": "Numéro EDE final 9",
+        "PPAM220": {
+            "title": "Mélisse",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -167,10 +167,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_10": {
-            "title": "Numéro EDE final 10",
+        "PPAM230": {
+            "title": "Menthe",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -178,10 +178,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_11": {
-            "title": "Identifiant EDE, final",
+        "PPAM240": {
+            "title": "Pavot Oeillette",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -189,10 +189,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_12": {
-            "title": "Identifiant EDE, final",
+        "PPAM250": {
+            "title": "Persil",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -200,10 +200,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_13": {
-            "title": "Identifiant EDE, final",
+        "PPAM260": {
+            "title": "Piment",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -211,10 +211,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_14": {
-            "title": "Identifiant EDE, final",
+        "PPAM270": {
+            "title": "Romarin",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -222,10 +222,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_15": {
-            "title": "Identifiant EDE, final",
+        "PPAM280": {
+            "title": "Roucou",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -233,10 +233,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_16": {
-            "title": "Identifiant EDE, final",
+        "PPAM290": {
+            "title": "Sauge sclarée",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -244,10 +244,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_17": {
-            "title": "Identifiant EDE, final",
+        "PPAM300": {
+            "title": "Thym",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -255,10 +255,10 @@
             "required": true,
             "regex": false
         },
-        "EDE_18": {
-            "title": "Identifiant EDE, final",
+        "PPAM311": {
+            "title": "Vanille de plein champ sur tuteur naturel ou artificiel",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -266,10 +266,10 @@
             "required": true,
             "regex": false
         },
-        "EVV_1": {
-            "title": "Numéro(s) EVV final 1",
+        "PPAM312": {
+            "title": "Vanille sous abri haut",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -277,10 +277,10 @@
             "required": true,
             "regex": false
         },
-        "EVV_2": {
-            "title": "Numéro(s) EVV final 2",
+        "PPAM313": {
+            "title": "Vanille sous forêt naturelle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -288,10 +288,65 @@
             "required": true,
             "regex": false
         },
-        "EVV_3": {
-            "title": "Numéro(s) EVV final 3",
+        "PPAM320": {
+            "title": "ylang ylang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PPAM330": {
+            "title": "Autres plantes à parfum",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PPAM340": {
+            "title": "Autres plantes aromatiques",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PPAM350": {
+            "title": "Autres plantes médicinales",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SAU_11234300": {
+            "title": "plantes à parfum, aromatiques, médicinales en plein air ou sous abri bas",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SAU_11234400": {
+            "title": "plantes à parfum, aromatiques, médicinales sous serre ou abri haut",
+            "description": "null",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -316,12 +371,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "RA_2020__RA2020_IDADMIN",
+    "name": "RA_2020__PPAM",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table RA2020_IDADMIN from data dictionary RA_2020"
+    "description": "Schema for table RA2020_PPAM from data dictionary RA_2020"
 }

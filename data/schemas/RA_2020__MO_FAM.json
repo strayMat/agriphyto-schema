@@ -2,30 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "csdep": {
-            "title": "Code département de l’adresse fiscale de traitement",
-            "description": "{\"nomenclature\": \"fideli_adresses_hors_th22__csdep\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "cne1": {
-            "title": "Code commune de l’adresse fiscale de traitement",
-            "description": "{\"nomenclature\": \"fideli_adresses_hors_th22__cne1\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "rue1": {
-            "title": "Numéro de rue au cadastre de l’adresse fiscale de traitement : Code RIVOLI",
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -35,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "noimm1": {
-            "title": "Numéro immeuble de l’adresse fiscale de traitement",
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -46,8 +24,8 @@
             "required": true,
             "regex": false
         },
-        "btq1": {
-            "title": "Indice de répétition dans la Taxe d'habitation",
+        "MOF_SEX_ECH": {
+            "title": "Sexe",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -57,9 +35,20 @@
             "required": true,
             "regex": false
         },
-        "adresse_rh": {
-            "title": "Présence d'une résidence hôtelière à l'adresse",
-            "description": "{\"nomenclature\": \"fideli_adresses_hors_th22__adresse_rh\"}",
+        "MOF_ANAIS_ECH": {
+            "title": "Année de naissance",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "LIENCHEFCOEXP_ECH": {
+            "title": "Lien familial avec le chef d'exploitation ou l'un des coexploitants",
+            "description": "{\"nomenclature\": \"MO_FAM__LIENCHEFCOEXP_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -68,9 +57,9 @@
             "required": true,
             "regex": false
         },
-        "id_scat1": {
-            "title": "Identifiant de la communauté",
-            "description": "{\"nomenclature\": \"fideli_adresses_hors_th22__id_scat1\"}",
+        "MOF_ACTIVEXP_ECH": {
+            "title": "Temps de travail sur l'exploitation",
+            "description": "{\"nomenclature\": \"MO_FAM__MOF_ACTIVEXP_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -79,9 +68,20 @@
             "required": true,
             "regex": false
         },
-        "id_scat2": {
-            "title": "Identifiant de la deuxième communauté",
-            "description": "{\"nomenclature\": \"fideli_adresses_hors_th22__id_scat2\"}",
+        "MOF_SAL_ECH": {
+            "title": "Salarié de l'exploitation",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOF_PACTDIV_ECH": {
+            "title": "Participation aux activités de diversification",
+            "description": "{\"nomenclature\": \"MO_FAM__MOF_PACTDIV_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -90,9 +90,9 @@
             "required": true,
             "regex": false
         },
-        "nature": {
-            "title": "Nature de l'adresse hors taxe d'habitation, n'étant pas une communauté connue au répertoire des communautés",
-            "description": "{\"nomenclature\": \"fideli_adresses_hors_th22__nature\"}",
+        "MOF_TYPLURACT_ECH": {
+            "title": "Type de pluriactivité",
+            "description": "{\"nomenclature\": \"MO_FAM__MOF_TYPLURACT_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -101,10 +101,21 @@
             "required": true,
             "regex": false
         },
-        "carac_adr": {
-            "title": "Nature de l'adresse hors taxe d'habitation",
-            "description": "{\"nomenclature\": \"fideli_adresses_hors_th22__carac_adr\"}",
+        "MOF_PLURACT_ECH": {
+            "title": "Importance de la pluriactivité dans le temps de travail",
+            "description": "{\"nomenclature\": \"MO_FAM__MOF_PLURACT_ECH\"}",
             "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
+            "description": "null",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -118,12 +129,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "FIDELI_2020__fideli_adresses_hors_th22",
+    "name": "RA_2020__MO_FAM",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table fideli_adresses_hors_th22 (Table des adresses absentes de la taxe d'habitation 2022)\n        from data dictionary FIDELI_2020"
+    "description": "Schema for table RA2020_MO_FAM from data dictionary RA_2020"
 }

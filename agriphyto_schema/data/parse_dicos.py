@@ -94,7 +94,7 @@ def remove_db_from_nomenclature(db_name: str):
     if path2all_nomenclatures.exists():
         all_nomenclatures = pd.read_csv(path2all_nomenclatures)
         all_nomenclatures[all_nomenclatures[COLNAME_OUT_DB] != db_name].to_csv(
-            path2all_nomenclatures
+            path2all_nomenclatures, index=False
         )
 
 
@@ -484,8 +484,8 @@ def dico_from_excel(db_name: str) -> None:
             table_dico = dico[dico[COLNAME_TABLE] == table_name].reset_index(
                 drop=True
             )
-            # Sometimes the table name contains the db_name as prefix
-            table_name_clean = table_name.replace(f"{db_name}_", "")
+            # Dirty exception for RA2020 where table names have the RA2020 as prefix
+            table_name_clean = table_name.replace("RA2020_", "")
             # Assemble pandera schema with categories when available
             pandera_schema = pa.DataFrameSchema(
                 columns={},
@@ -505,7 +505,7 @@ def dico_from_excel(db_name: str) -> None:
                 )
                 varname_clean = clean_nomenclature_name(
                     var_name, table_name_clean
-                ) 
+                )
                 if varname_clean in modalities_dic:
                     # Add strict categories instead of nomenclature dic ?
                     col_schema.metadata = {"nomenclature": varname_clean}
@@ -639,6 +639,7 @@ def dico_from_casd_csv(db_name: str) -> None:
         Saves the nomenclature CSV files in agriphyto_schema/data/nomenclatures/
     """
     check_db_name(db_name)
+    remove_db_from_nomenclature(db_name)
 
     # Load configuration from AVAILABLE_DICOS
     filepath2dico = AVAILABLE_DICOS[db_name]["filename"]
@@ -714,7 +715,6 @@ def dico_from_casd_csv(db_name: str) -> None:
         ].reset_index(drop=True)
 
         # extract nomenclature and create files
-        remove_db_from_nomenclature(db_name)
         for _, row in table_variables_w_modalities.iterrows():
             var_name = row[COLNAME_VARIABLE]
             raw_nomenclature_row = row[COLNAME_NOMENCLATURE]

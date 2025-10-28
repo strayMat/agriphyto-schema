@@ -24,9 +24,9 @@
             "required": true,
             "regex": false
         },
-        "MOF_SEX_ECH": {
-            "title": "Sexe",
-            "description": "null",
+        "CIRCOU_CODE": {
+            "title": "CIRCOU_CODE",
+            "description": "{\"nomenclature\": \"COM_CIRCOU__CIRCOU_CODE\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -35,8 +35,8 @@
             "required": true,
             "regex": false
         },
-        "MOF_ANAIS_ECH": {
-            "title": "Année de naissance",
+        "CIRCOU_COP": {
+            "title": "Produits céréaliers (meunerie, pains, pâtes, bières), oléagineux et légumes secs",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -46,30 +46,8 @@
             "required": true,
             "regex": false
         },
-        "LIENCHEFCOEXP_ECH": {
-            "title": "Lien familial avec le chef d'exploitation ou l'un des coexploitants",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "MOF_ACTIVEXP_ECH": {
-            "title": "Temps de travail sur l'exploitation",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "MOF_SAL_ECH": {
-            "title": "Salarié de l'exploitation",
+        "CIRCOU_TUB_DOM": {
+            "title": "Transformation de tubercules (farine de manioc etc)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -79,10 +57,10 @@
             "required": true,
             "regex": false
         },
-        "MOF_PACTDIV_ECH": {
-            "title": "Participation aux activités de diversification",
+        "CIRCOU_LEG": {
+            "title": "Légumes frais et transformés et pommes de terre",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -90,10 +68,10 @@
             "required": true,
             "regex": false
         },
-        "MOF_TYPLURACT_ECH": {
-            "title": "Type de pluriactivité",
+        "CIRCOU_VIN": {
+            "title": "Raisins, vins, alcools issus de vins",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -101,10 +79,76 @@
             "required": true,
             "regex": false
         },
-        "MOF_PLURACT_ECH": {
-            "title": "Importance de la pluriactivité dans le temps de travail",
+        "CIRCOU_HOLI": {
+            "title": "Huile d'olive et olives",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_FRUIT": {
+            "title": "Fruits frais et transformés",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_AUTR": {
+            "title": "Autres produits agricoles, y compris cultures industrielles (betterave etc) et fleurs, horticulture",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_LAIT": {
+            "title": "Produits laitiers",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_OVOL": {
+            "title": "Oeufs et volailles",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_ANIM": {
+            "title": "Animaux vivants et autres produits animaux (hors  œufs et volailles)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_MIEL": {
+            "title": "Miel",
+            "description": "null",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -129,12 +173,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "RA_2020__RA2020_MO_FAM",
+    "name": "RA_2020__COM_CIRCOU",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table RA2020_MO_FAM from data dictionary RA_2020"
+    "description": "Schema for table RA2020_COM_CIRCOU from data dictionary RA_2020"
 }

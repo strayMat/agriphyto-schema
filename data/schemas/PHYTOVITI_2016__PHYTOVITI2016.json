@@ -25,7 +25,7 @@
             "regex": false
         },
         "COEF2": {
-            "title": "Coefficient d'extrapolation pondéré par la superficie",
+            "title": "Coefficient d'extrapolation pondÃ©rÃ© par la superficie",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -58,7 +58,7 @@
             "regex": false
         },
         "IDPKVITI13": {
-            "title": "Parcelle répondante en 2013",
+            "title": "Parcelle rÃ©pondante en 2013",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__IDPKVITI13\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -69,7 +69,7 @@
             "regex": false
         },
         "IDBALSA": {
-            "title": "Appartenance à BALSA",
+            "title": "Appartenance Ã  BALSA",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -80,7 +80,7 @@
             "regex": false
         },
         "SIRET": {
-            "title": "Numéro SIRET de l'exploitation",
+            "title": "NumÃ©ro SIRET de l'exploitation",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -91,7 +91,7 @@
             "regex": false
         },
         "REGPCV": {
-            "title": "Région administrative de la parcelle culturale",
+            "title": "RÃ©gion administrative de la parcelle culturale",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -102,7 +102,7 @@
             "regex": false
         },
         "DEPPCV": {
-            "title": "Département de la parcelle culturale",
+            "title": "DÃ©partement de la parcelle culturale",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -113,7 +113,7 @@
             "regex": false
         },
         "REGVITI": {
-            "title": "Région viticole de la parcelle culturale",
+            "title": "RÃ©gion viticole de la parcelle culturale",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__REGVITI\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -190,7 +190,7 @@
             "regex": false
         },
         "VICEP": {
-            "title": "Code du cépage de la parcelle",
+            "title": "Code du cÃ©page de la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -201,7 +201,7 @@
             "regex": false
         },
         "CEPAGE": {
-            "title": "Libellé du cépage",
+            "title": "LibellÃ© du cÃ©page",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -223,7 +223,7 @@
             "regex": false
         },
         "LIBPG": {
-            "title": "Libellé du porte-greffe",
+            "title": "LibellÃ© du porte-greffe",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -256,7 +256,7 @@
             "regex": false
         },
         "DENSITE": {
-            "title": "Nombre de pieds de vigne à l'hectare",
+            "title": "Nombre de pieds de vigne Ã  l'hectare",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -311,7 +311,7 @@
             "regex": false
         },
         "CAHIERAUT2": {
-            "title": "Parcelle conduite en fonction d'un engagement envers une MAE (mesure agri-environnementale) de réduction de l'emploi des phytosanitaires",
+            "title": "Parcelle conduite en fonction d'un engagement envers une MAE (mesure agri-environnementale) de rÃ©duction de l'emploi des phytosanitaires",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -333,7 +333,7 @@
             "regex": false
         },
         "REALREC": {
-            "title": "Récolte de la parcelle",
+            "title": "RÃ©colte de la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -344,7 +344,7 @@
             "regex": false
         },
         "RECDQ": {
-            "title": "Date de la récolte",
+            "title": "Date de la rÃ©colte",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -355,7 +355,7 @@
             "regex": false
         },
         "MODEREC": {
-            "title": "Mode de récolte",
+            "title": "Mode de rÃ©colte",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__MODEREC\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -377,7 +377,7 @@
             "regex": false
         },
         "RENDMAXVI": {
-            "title": "Rendement maximal autorisé en vin (hl/hectare)",
+            "title": "Rendement maximal autorisÃ© en vin (hl/hectare)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -388,7 +388,7 @@
             "regex": false
         },
         "RENDMAXRAIS": {
-            "title": "Rendement maximal autorisé en raisin (q/hectare)",
+            "title": "Rendement maximal autorisÃ© en raisin (q/hectare)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -399,7 +399,7 @@
             "regex": false
         },
         "RENDMAXALC": {
-            "title": "Rendement maximal autorisé en alcool pur (hl/hectare)",
+            "title": "Rendement maximal autorisÃ© en alcool pur (hl/hectare)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -476,7 +476,7 @@
             "regex": false
         },
         "RENDMOYVI": {
-            "title": "Rendement moyen en vin sur les 5 dernières années (hl/hectare)",
+            "title": "Rendement moyen en vin sur les 5 derniÃ¨res annÃ©es (hl/hectare)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -487,7 +487,7 @@
             "regex": false
         },
         "RENDMOYRAIS": {
-            "title": "Rendement moyen en raisin sur les 5 dernières années (q/hectare)",
+            "title": "Rendement moyen en raisin sur les 5 derniÃ¨res annÃ©es (q/hectare)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -498,7 +498,7 @@
             "regex": false
         },
         "RENDMOYALC": {
-            "title": "Rendement moyen en alcool pur sur les 5 dernières années (hl/hectare)",
+            "title": "Rendement moyen en alcool pur sur les 5 derniÃ¨res annÃ©es (hl/hectare)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -509,7 +509,7 @@
             "regex": false
         },
         "DEPERIS": {
-            "title": "Constatation d’un dépérissement même faible des ceps sur la parcelle",
+            "title": "Constatation dâ€™un dÃ©pÃ©rissement mÃªme faible des ceps sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -520,7 +520,7 @@
             "regex": false
         },
         "DEPERISAN": {
-            "title": "Année du début de la constatation du dépérissement",
+            "title": "AnnÃ©e du dÃ©but de la constatation du dÃ©pÃ©rissement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -564,7 +564,7 @@
             "regex": false
         },
         "DEPERISANREMPL": {
-            "title": "Année du remplacement le plus récent",
+            "title": "AnnÃ©e du remplacement le plus rÃ©cent",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -575,7 +575,7 @@
             "regex": false
         },
         "DEPERISRECEP": {
-            "title": "Pratique ou intention de pratique du recépage",
+            "title": "Pratique ou intention de pratique du recÃ©page",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -619,7 +619,7 @@
             "regex": false
         },
         "INTEMP": {
-            "title": "Existence d'aléas exceptionnels",
+            "title": "Existence d'alÃ©as exceptionnels",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__INTEMP\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -652,7 +652,7 @@
             "regex": false
         },
         "TYPENHERBSRNUM": {
-            "title": "Modalité de l’enherbement sous le rang : x rang(s)",
+            "title": "ModalitÃ© de lâ€™enherbement sous le rangÂ : x rang(s)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -663,7 +663,7 @@
             "regex": false
         },
         "TYPENHERBSRDENOM": {
-            "title": "Modalité de l’enherbement sous le rang : sur y rang(s)",
+            "title": "ModalitÃ© de lâ€™enherbement sous le rangÂ : sur y rang(s)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -674,7 +674,7 @@
             "regex": false
         },
         "LARGENHERBSR": {
-            "title": "Largeur de l’enherbement sous le rang (cm)",
+            "title": "Largeur de lâ€™enherbement sous le rang (cm)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -707,7 +707,7 @@
             "regex": false
         },
         "TYPENHERBNUM": {
-            "title": "Numérateur de la modalité de l’enherbement inter-rang : x rang(s)",
+            "title": "NumÃ©rateur de la modalitÃ© de lâ€™enherbement inter-rangÂ : x rang(s)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -718,7 +718,7 @@
             "regex": false
         },
         "TYPENHERBDENOM": {
-            "title": "Dénominateur de la modalité de l’enherbement inter-rangs : sur y rang(s)",
+            "title": "DÃ©nominateur de la modalitÃ© de lâ€™enherbement inter-rangsÂ : sur y rang(s)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -729,7 +729,7 @@
             "regex": false
         },
         "TYPENHERBEVNUM": {
-            "title": "Numérateur de la modalité de l’enherbement inter-rang temporaire semé de type engrais vert : x rang(s)",
+            "title": "NumÃ©rateur de la modalitÃ© de lâ€™enherbement inter-rang temporaire semÃ© de type engrais vertÂ : x rang(s)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -740,7 +740,7 @@
             "regex": false
         },
         "TYPENHERBEVDENOM": {
-            "title": "Dénominateur de la modalité de l’enherbement inter-rangs  temporaire semé de type engrais vert : sur y rang(s)",
+            "title": "DÃ©nominateur de la modalitÃ© de lâ€™enherbement inter-rangsÂ  temporaire semÃ© de type engrais vertÂ : sur y rang(s)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -751,7 +751,7 @@
             "regex": false
         },
         "TYPENHERBNUMTPSE": {
-            "title": "Numérateur de la modalité de l’enherbement inter-rang temporaire semé : x rang(s)",
+            "title": "NumÃ©rateur de la modalitÃ© de lâ€™enherbement inter-rang temporaire semÃ©Â : x rang(s)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -762,7 +762,7 @@
             "regex": false
         },
         "TYPENHERBDENOMTPSE": {
-            "title": "Dénominateur de la modalité de l’enherbement inter-rangs  temporaire semé: sur y rang(s)",
+            "title": "DÃ©nominateur de la modalitÃ© de lâ€™enherbement inter-rangsÂ  temporaire semÃ©: sur y rang(s)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -773,7 +773,7 @@
             "regex": false
         },
         "LARGENHERB": {
-            "title": "Largeur de l’enherbement inter-rangs  (cm)",
+            "title": "Largeur de lâ€™enherbement inter-rangsÂ  (cm)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -784,7 +784,7 @@
             "regex": false
         },
         "LARGENHERBEV": {
-            "title": "Largeur de l’enherbement inter-rangs temporaire semé de type engrais vert  (cm)",
+            "title": "Largeur de lâ€™enherbement inter-rangs temporaire semÃ© de type engrais vertÂ  (cm)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -795,7 +795,7 @@
             "regex": false
         },
         "LARGENHERBTPSE": {
-            "title": "Largeur de l’enherbement inter-rangs temporaire semé (cm)",
+            "title": "Largeur de lâ€™enherbement inter-rangs temporaire semÃ© (cm)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -806,7 +806,7 @@
             "regex": false
         },
         "MOISEMIS": {
-            "title": "Mois du semis de l'enherbement temporaire semé (non engrais vert)",
+            "title": "Mois du semis de l'enherbement temporaire semÃ© (non engrais vert)",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__MOISEMIS\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -817,7 +817,7 @@
             "regex": false
         },
         "MOISEMISEV": {
-            "title": "Mois du semis de l'enherbement temporaire semé de type engrais vert",
+            "title": "Mois du semis de l'enherbement temporaire semÃ© de type engrais vert",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__MOISEMISEV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -828,7 +828,7 @@
             "regex": false
         },
         "DESTSEMIS": {
-            "title": "Mois de destruction de l'enherbement temporaire semé (non engrais vert)",
+            "title": "Mois de destruction de l'enherbement temporaire semÃ© (non engrais vert)",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__DESTSEMIS\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -839,7 +839,7 @@
             "regex": false
         },
         "DESTSEMISEV": {
-            "title": "Mois de destruction de l'enherbement temporaire semé de type engrais vert",
+            "title": "Mois de destruction de l'enherbement temporaire semÃ© de type engrais vert",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__DESTSEMISEV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -850,7 +850,7 @@
             "regex": false
         },
         "DESTENHTEMP": {
-            "title": "Mode de destruction de l'enherbement temporaire semé (non engrais vert)",
+            "title": "Mode de destruction de l'enherbement temporaire semÃ© (non engrais vert)",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__DESTENHTEMP\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -861,7 +861,7 @@
             "regex": false
         },
         "DESTENHTEMPEV": {
-            "title": "Mode de destruction de l'enherbement temporaire semé de type engrais vert",
+            "title": "Mode de destruction de l'enherbement temporaire semÃ© de type engrais vert",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__DESTENHTEMPEV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -872,7 +872,7 @@
             "regex": false
         },
         "NBTONTEIR": {
-            "title": "Nombre de passages relatifs à la maîtrise de l'enherbement dans l'inter-rang hors engrais vert",
+            "title": "Nombre de passages relatifs Ã  la maÃ®trise de l'enherbement dans l'inter-rang hors engrais vert",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -883,7 +883,7 @@
             "regex": false
         },
         "NBTONTEIREV": {
-            "title": "Nombre de passages relatifs à la maîtrise de l'enherbement dans l'inter-rang de type engrais vert",
+            "title": "Nombre de passages relatifs Ã  la maÃ®trise de l'enherbement dans l'inter-rang de type engrais vert",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -894,7 +894,7 @@
             "regex": false
         },
         "NBTONTESR": {
-            "title": "Nombre de passages relatifs à la maîtrise de l'enherbement sous le rang",
+            "title": "Nombre de passages relatifs Ã  la maÃ®trise de l'enherbement sous le rang",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -905,7 +905,7 @@
             "regex": false
         },
         "NBTONTES": {
-            "title": "Nombre de passages relatifs à la maîtrise de l'enherbement",
+            "title": "Nombre de passages relatifs Ã  la maÃ®trise de l'enherbement",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -916,7 +916,7 @@
             "regex": false
         },
         "ENHERB2013": {
-            "title": "Présence d'enherbement en 2013",
+            "title": "PrÃ©sence d'enherbement en 2013",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -927,7 +927,7 @@
             "regex": false
         },
         "ARENHERB": {
-            "title": "Intention d'arrêt de l'enherbement",
+            "title": "Intention d'arrÃªt de l'enherbement",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__ARENHERB\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -938,7 +938,7 @@
             "regex": false
         },
         "ARCONCHYD": {
-            "title": "Raisonnement de l'arrêt de l'enherbement : concurrence hydrique ou minérale trop élevée",
+            "title": "Raisonnement de l'arrÃªt de l'enherbementÂ : concurrence hydrique ou minÃ©rale trop Ã©levÃ©e",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -949,7 +949,7 @@
             "regex": false
         },
         "ARENDEMENT": {
-            "title": "Raisonnement de l'arrêt de l'enherbement : recherche d'un rendement plus élevé",
+            "title": "Raisonnement de l'arrÃªt de l'enherbementÂ : recherche d'un rendement plus Ã©levÃ©",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -960,7 +960,7 @@
             "regex": false
         },
         "ARCOUT": {
-            "title": "Raisonnement de l'arrêt de l'enherbement : coût et temps passés trop élevés",
+            "title": "Raisonnement de l'arrÃªt de l'enherbementÂ : coÃ»t et temps passÃ©s trop Ã©levÃ©s",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -971,7 +971,7 @@
             "regex": false
         },
         "ARINTCOMPL": {
-            "title": "Raisonnement de l'arrêt de l'enherbement : contraintes de mise en œuvre pour l'entretien (technicité, outillage, fenêtre d'action) trop élevées",
+            "title": "Raisonnement de l'arrÃªt de l'enherbementÂ : contraintes de mise en Å“uvre pour l'entretien (technicitÃ©, outillage, fenÃªtre d'action) trop Ã©levÃ©es",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -982,7 +982,7 @@
             "regex": false
         },
         "ARENHERBAUT": {
-            "title": "Raisonnement de l'arrêt de l'enherbement : autre",
+            "title": "Raisonnement de l'arrÃªt de l'enherbementÂ : autre",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1004,7 +1004,7 @@
             "regex": false
         },
         "DESHERB": {
-            "title": "Désherbage mécanique ou thermique",
+            "title": "DÃ©sherbage mÃ©canique ou thermique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1015,7 +1015,7 @@
             "regex": false
         },
         "DESINTRANG": {
-            "title": "Nombre total de passages mécaniques ou thermiques sur l'inter-rang ",
+            "title": "Nombre total de passages mÃ©caniques ou thermiques sur l'inter-rang ",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1026,7 +1026,7 @@
             "regex": false
         },
         "DESINTCEP": {
-            "title": "Nombre total de passages mécaniques ou thermiques sur l'inter-cep",
+            "title": "Nombre total de passages mÃ©caniques ou thermiques sur l'inter-cep",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1037,7 +1037,7 @@
             "regex": false
         },
         "MECATOT": {
-            "title": "Nombre total de passages mécaniques ou thermiques sur l'inter-rang et sur l'inter-cep",
+            "title": "Nombre total de passages mÃ©caniques ou thermiques sur l'inter-rang et sur l'inter-cep",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1048,7 +1048,7 @@
             "regex": false
         },
         "EBOUMANU": {
-            "title": "Nombre de passages pour ébourgeonnage manuel",
+            "title": "Nombre de passages pour Ã©bourgeonnage manuel",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1059,7 +1059,7 @@
             "regex": false
         },
         "EBOUMECA": {
-            "title": "Nombre de passages pour ébourgeonnage mécanique",
+            "title": "Nombre de passages pour Ã©bourgeonnage mÃ©canique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1070,7 +1070,7 @@
             "regex": false
         },
         "EPAMMANU": {
-            "title": "Nombre de passages pour épamprage manuel",
+            "title": "Nombre de passages pour Ã©pamprage manuel",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1081,7 +1081,7 @@
             "regex": false
         },
         "EPAMMECA": {
-            "title": "Nombre de passages pour épamprage mécanique",
+            "title": "Nombre de passages pour Ã©pamprage mÃ©canique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1092,7 +1092,7 @@
             "regex": false
         },
         "EPAMCHIM": {
-            "title": "Nombre de passages pour épamprage chimique",
+            "title": "Nombre de passages pour Ã©pamprage chimique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1114,7 +1114,7 @@
             "regex": false
         },
         "PALIMECA": {
-            "title": "Nombre de passages pour palissage mécanique",
+            "title": "Nombre de passages pour palissage mÃ©canique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1136,7 +1136,7 @@
             "regex": false
         },
         "ROGNMECA": {
-            "title": "Nombre de passages pour rognage mécanique",
+            "title": "Nombre de passages pour rognage mÃ©canique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1158,7 +1158,7 @@
             "regex": false
         },
         "EFFEMECA": {
-            "title": "Nombre de passages pour effeuillage mécanique",
+            "title": "Nombre de passages pour effeuillage mÃ©canique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1180,7 +1180,7 @@
             "regex": false
         },
         "VEVEMANU": {
-            "title": "Nombre de passages pour éclaircissage manuel",
+            "title": "Nombre de passages pour Ã©claircissage manuel",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1191,7 +1191,7 @@
             "regex": false
         },
         "VEVEMECA": {
-            "title": "Nombre de passages pour éclaircissage mécanique",
+            "title": "Nombre de passages pour Ã©claircissage mÃ©canique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1202,7 +1202,7 @@
             "regex": false
         },
         "VEVECHIM": {
-            "title": "Nombre de passages pour éclaircissage chimique",
+            "title": "Nombre de passages pour Ã©claircissage chimique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1213,7 +1213,7 @@
             "regex": false
         },
         "NBOPEBOURG": {
-            "title": "Nombre de passage pour opérations d'ébourgeonnage",
+            "title": "Nombre de passage pour opÃ©rations d'Ã©bourgeonnage",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1224,7 +1224,7 @@
             "regex": false
         },
         "NBOPEPAMP": {
-            "title": "Nombre de passage pour opérations d'épamprage",
+            "title": "Nombre de passage pour opÃ©rations d'Ã©pamprage",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1235,7 +1235,7 @@
             "regex": false
         },
         "NBOPALIS": {
-            "title": "Nombre de passage pour opérations de palissage",
+            "title": "Nombre de passage pour opÃ©rations de palissage",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1246,7 +1246,7 @@
             "regex": false
         },
         "NBOPROGN": {
-            "title": "Nombre de passage pour opérations de rognage",
+            "title": "Nombre de passage pour opÃ©rations de rognage",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1257,7 +1257,7 @@
             "regex": false
         },
         "NBOPEFFEUIL": {
-            "title": "Nombre de passage pour opérations d’effeuillage",
+            "title": "Nombre de passage pour opÃ©rations dâ€™effeuillage",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1268,7 +1268,7 @@
             "regex": false
         },
         "NBOPECLAIR": {
-            "title": "Nombre de passage pour opérations d'éclaircissage",
+            "title": "Nombre de passage pour opÃ©rations d'Ã©claircissage",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1279,7 +1279,7 @@
             "regex": false
         },
         "NBPASMAN": {
-            "title": "Nombre de passage manuel pour opérations en vert",
+            "title": "Nombre de passage manuel pour opÃ©rations en vert",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1290,7 +1290,7 @@
             "regex": false
         },
         "NBPASMEC": {
-            "title": "Nombre de passage mécanique pour opérations en vert",
+            "title": "Nombre de passage mÃ©canique pour opÃ©rations en vert",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1301,7 +1301,7 @@
             "regex": false
         },
         "NBPASTHERM": {
-            "title": "Nombre de passage thermique pour opérations en vert",
+            "title": "Nombre de passage thermique pour opÃ©rations en vert",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1312,7 +1312,7 @@
             "regex": false
         },
         "NBPASCHIM": {
-            "title": "Nombre de passage chimique pour opérations en vert",
+            "title": "Nombre de passage chimique pour opÃ©rations en vert",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1323,7 +1323,7 @@
             "regex": false
         },
         "NBOPEVERT": {
-            "title": "Nombre d'opérations en vert",
+            "title": "Nombre d'opÃ©rations en vert",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1345,7 +1345,7 @@
             "regex": false
         },
         "OIDIUM": {
-            "title": "Niveau de pression parasitaire oïdium",
+            "title": "Niveau de pression parasitaire oÃ¯dium",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__OIDIUM\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1378,7 +1378,7 @@
             "regex": false
         },
         "FLAVE": {
-            "title": "Nombre de traitements obligatoires contre la flavescence dorée",
+            "title": "Nombre de traitements obligatoires contre la flavescence dorÃ©e",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1422,7 +1422,7 @@
             "regex": false
         },
         "CONFUSNBDIF": {
-            "title": "Nombre de diffuseurs à l'hectare",
+            "title": "Nombre de diffuseurs Ã  l'hectare",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1433,7 +1433,7 @@
             "regex": false
         },
         "RAISHIST": {
-            "title": "Raisonnement traitements : historique de la parcelle",
+            "title": "Raisonnement traitementsÂ : historique de la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1444,7 +1444,7 @@
             "regex": false
         },
         "RAISOBS": {
-            "title": "Raisonnement traitements : observations maladies",
+            "title": "Raisonnement traitementsÂ : observations maladies",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1455,7 +1455,7 @@
             "regex": false
         },
         "RAISCRAV": {
-            "title": "Raisonnement traitements : comptage des ravageurs",
+            "title": "Raisonnement traitementsÂ : comptage des ravageurs",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1466,7 +1466,7 @@
             "regex": false
         },
         "RAISCAUX": {
-            "title": "Raisonnement traitements : comptage des auxiliaires",
+            "title": "Raisonnement traitementsÂ : comptage des auxiliaires",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1477,7 +1477,7 @@
             "regex": false
         },
         "RAISMETEO": {
-            "title": "Raisonnement traitements : prévisions météorologiques",
+            "title": "Raisonnement traitementsÂ : prÃ©visions mÃ©tÃ©orologiques",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1488,7 +1488,7 @@
             "regex": false
         },
         "RAISBSV": {
-            "title": "Raisonnement traitements : bulletins de santé du végétal",
+            "title": "Raisonnement traitementsÂ : bulletins de santÃ© du vÃ©gÃ©tal",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1499,7 +1499,7 @@
             "regex": false
         },
         "RAISFIURN": {
-            "title": "Raisonnement traitements : conseils fournisseurs",
+            "title": "Raisonnement traitementsÂ : conseils fournisseurs",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1510,7 +1510,7 @@
             "regex": false
         },
         "RAISINDEP": {
-            "title": "Raisonnement traitements : conseils indépendants de la vente",
+            "title": "Raisonnement traitementsÂ : conseils indÃ©pendants de la vente",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1521,7 +1521,7 @@
             "regex": false
         },
         "RAISOAD": {
-            "title": "Raisonnement traitements : Outils d'Aide à la Décision",
+            "title": "Raisonnement traitementsÂ : Outils d'Aide Ã  la DÃ©cision",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1554,7 +1554,7 @@
             "regex": false
         },
         "DEPHY": {
-            "title": "Participation démonstration ou visites des fermes réseau DEPHY",
+            "title": "Participation dÃ©monstration ou visites des fermes rÃ©seau DEPHY",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1565,7 +1565,7 @@
             "regex": false
         },
         "REDUCTIPP": {
-            "title": "Adoption d'une ou plusieurs pratiques en vue de réduire l'utilisation des produits phytosanitaires",
+            "title": "Adoption d'une ou plusieurs pratiques en vue de rÃ©duire l'utilisation des produits phytosanitaires",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1576,7 +1576,7 @@
             "regex": false
         },
         "CHOIXCPG": {
-            "title": "Choix de cépages et porte-greffes selon leur résistance ou sensibilité à certaines maladies",
+            "title": "Choix de cÃ©pages et porte-greffes selon leur rÃ©sistance ou sensibilitÃ© Ã  certaines maladies",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1587,7 +1587,7 @@
             "regex": false
         },
         "AMENAUX": {
-            "title": "Maintien ou développement d'auxiliaires prédateurs",
+            "title": "Maintien ou dÃ©veloppement d'auxiliaires prÃ©dateurs",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1609,7 +1609,7 @@
             "regex": false
         },
         "ARGILE": {
-            "title": "Traitements à l'argile",
+            "title": "Traitements Ã  l'argile",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1642,7 +1642,7 @@
             "regex": false
         },
         "ENTREPULV": {
-            "title": "Pulvérisations réalisées par une entreprise",
+            "title": "PulvÃ©risations rÃ©alisÃ©es par une entreprise",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1653,7 +1653,7 @@
             "regex": false
         },
         "NBPULVP": {
-            "title": "Nombre de pulvérisateurs intervenant sur la parcelle",
+            "title": "Nombre de pulvÃ©risateurs intervenant sur la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1664,7 +1664,7 @@
             "regex": false
         },
         "PULVDIFF": {
-            "title": "Choix du pulvérisateur en fonction du stade de développement de la vigne",
+            "title": "Choix du pulvÃ©risateur en fonction du stade de dÃ©veloppement de la vigne",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1675,7 +1675,7 @@
             "regex": false
         },
         "PROPPULVDV": {
-            "title": "Type de propriété du pulvérisateur utilisé le plus souvent en début de végétation (appelé pulvérisateur DV pour les autres variables)",
+            "title": "Type de propriÃ©tÃ© du pulvÃ©risateur utilisÃ© le plus souvent en dÃ©but de vÃ©gÃ©tation (appelÃ© pulvÃ©risateur DV pour les autres variables)",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__PROPPULVDV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1686,7 +1686,7 @@
             "regex": false
         },
         "PROPPULV": {
-            "title": "Type de propriété du pulvérisateur",
+            "title": "Type de propriÃ©tÃ© du pulvÃ©risateur",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__PROPPULV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1697,7 +1697,7 @@
             "regex": false
         },
         "AGEPULVDV": {
-            "title": "Age du pulvérisateur DV",
+            "title": "Age du pulvÃ©risateur DV",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1708,7 +1708,7 @@
             "regex": false
         },
         "AGEPULV": {
-            "title": "Age du pulvérisateur",
+            "title": "Age du pulvÃ©risateur",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1719,7 +1719,7 @@
             "regex": false
         },
         "TYPEPULVDV": {
-            "title": "Type du pulvérisateur DV",
+            "title": "Type du pulvÃ©risateur DV",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__TYPEPULVDV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1730,7 +1730,7 @@
             "regex": false
         },
         "TYPEPULV": {
-            "title": "Type du pulvérisateur",
+            "title": "Type du pulvÃ©risateur",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__TYPEPULV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1741,7 +1741,7 @@
             "regex": false
         },
         "VERIFBUSEDV": {
-            "title": "Contrôle du débit des buses ou des pastilles du pulvérisateur DV systématique avant le début de chaque traitement",
+            "title": "ContrÃ´le du dÃ©bit des buses ou des pastilles du pulvÃ©risateur DV systÃ©matique avant le dÃ©but de chaque traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1752,7 +1752,7 @@
             "regex": false
         },
         "VERIFBUSE": {
-            "title": "Contrôle du débit des buses ou des pastilles du pulvérisateur systématique avant le début de chaque traitement",
+            "title": "ContrÃ´le du dÃ©bit des buses ou des pastilles du pulvÃ©risateur systÃ©matique avant le dÃ©but de chaque traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1763,7 +1763,7 @@
             "regex": false
         },
         "TYPULVERISDV": {
-            "title": "Type de pulvérisation DV",
+            "title": "Type de pulvÃ©risation DV",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__TYPULVERISDV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1774,7 +1774,7 @@
             "regex": false
         },
         "TYPULVERIS": {
-            "title": "Type de pulvérisation",
+            "title": "Type de pulvÃ©risation",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__TYPULVERIS\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1785,7 +1785,7 @@
             "regex": false
         },
         "MODPULVDV": {
-            "title": "Mode de pulvérisation du pulvérisateur DV",
+            "title": "Mode de pulvÃ©risation du pulvÃ©risateur DV",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__MODPULVDV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1796,7 +1796,7 @@
             "regex": false
         },
         "MODPULV": {
-            "title": "Mode de pulvérisation",
+            "title": "Mode de pulvÃ©risation",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__MODPULV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1807,7 +1807,7 @@
             "regex": false
         },
         "ANTIDERIVDV": {
-            "title": "Équipé de buses anti-dérive homologuées des pulvérisateurs non pneumatiques DV",
+            "title": "Ã‰quipÃ© de buses anti-dÃ©rive homologuÃ©es des pulvÃ©risateurs non pneumatiques DV",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1818,7 +1818,7 @@
             "regex": false
         },
         "ANTIDERIV": {
-            "title": "Équipé de buses anti-dérive homologuées des pulvérisateurs non pneumatiques",
+            "title": "Ã‰quipÃ© de buses anti-dÃ©rive homologuÃ©es des pulvÃ©risateurs non pneumatiques",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1829,7 +1829,7 @@
             "regex": false
         },
         "LARGPULVDV": {
-            "title": "Capacité maximale de travail du pulvérisateur DV (nombre de rangs maximum touchés par la pulvérisation lors d'un passage)",
+            "title": "CapacitÃ© maximale de travail du pulvÃ©risateur DV (nombre de rangs maximum touchÃ©s par la pulvÃ©risation lors d'un passage)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1840,7 +1840,7 @@
             "regex": false
         },
         "LARGPULV": {
-            "title": "Capacité maximale de travail du pulvérisateur (nombre de rangs maximum touchés par la pulvérisation lors d'un passage)",
+            "title": "CapacitÃ© maximale de travail du pulvÃ©risateur (nombre de rangs maximum touchÃ©s par la pulvÃ©risation lors d'un passage)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1851,7 +1851,7 @@
             "regex": false
         },
         "DPAEDV": {
-            "title": "Équipé d'un Dispositif Proportionnel à l'avancement électronique (DPAE) du pulvérisateur DV",
+            "title": "Ã‰quipÃ© d'un Dispositif Proportionnel Ã  l'avancement Ã©lectronique (DPAE) du pulvÃ©risateur DV",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1862,7 +1862,7 @@
             "regex": false
         },
         "DPAE": {
-            "title": "Équipé d'un Dispositif Proportionnel à l'avancement électronique (DPAE)",
+            "title": "Ã‰quipÃ© d'un Dispositif Proportionnel Ã  l'avancement Ã©lectronique (DPAE)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1873,7 +1873,7 @@
             "regex": false
         },
         "TRFPARFDV": {
-            "title": "Possibilité pour le pulvérisateur DV d'effectuer un traitement face par face strict",
+            "title": "PossibilitÃ© pour le pulvÃ©risateur DV d'effectuer un traitement face par face strict",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1884,7 +1884,7 @@
             "regex": false
         },
         "TRFPARF": {
-            "title": "Possibilité d'effectuer un traitement face par face strict",
+            "title": "PossibilitÃ© d'effectuer un traitement face par face strict",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1895,7 +1895,7 @@
             "regex": false
         },
         "NBRANGTDV": {
-            "title": "Nombre de rangs traités par passage en début de végétation",
+            "title": "Nombre de rangs traitÃ©s par passage en dÃ©but de vÃ©gÃ©tation",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1906,7 +1906,7 @@
             "regex": false
         },
         "NBRANGT": {
-            "title": "Nombre de rangs traités par passage en pleine végétation",
+            "title": "Nombre de rangs traitÃ©s par passage en pleine vÃ©gÃ©tation",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1917,7 +1917,7 @@
             "regex": false
         },
         "VITPULV": {
-            "title": "Vitesse d'avancement moyenne en pleine végétation (en km/h)",
+            "title": "Vitesse d'avancement moyenne en pleine vÃ©gÃ©tation (en km/h)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1928,7 +1928,7 @@
             "regex": false
         },
         "VITPULVDV": {
-            "title": "Vitesse d'avancement moyenne en début de végétation (en km/h)",
+            "title": "Vitesse d'avancement moyenne en dÃ©but de vÃ©gÃ©tation (en km/h)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1939,7 +1939,7 @@
             "regex": false
         },
         "FERMBUSEDV": {
-            "title": "Fréquence de fermeture d'une ou plusieurs sortie(s) pour adapter la pulvérisation au développement végétatif de la vigne",
+            "title": "FrÃ©quence de fermeture d'une ou plusieurs sortie(s) pour adapter la pulvÃ©risation au dÃ©veloppement vÃ©gÃ©tatif de la vigne",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__FERMBUSEDV\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1950,7 +1950,7 @@
             "regex": false
         },
         "FERMBUSE": {
-            "title": "Fréquence de fermeture d'une ou plusieurs sortie(s) pour effectuer un traitement ciblé sur la grappe",
+            "title": "FrÃ©quence de fermeture d'une ou plusieurs sortie(s) pour effectuer un traitement ciblÃ© sur la grappe",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__FERMBUSE\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -1961,7 +1961,7 @@
             "regex": false
         },
         "VALEUR": {
-            "title": "Mode de rémunération du viticulteur",
+            "title": "Mode de rÃ©munÃ©ration du viticulteur",
             "description": "{\"nomenclature\": \"PHYTOVITI2016__VALEUR\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -2016,7 +2016,7 @@
             "regex": false
         },
         "ALCVIN": {
-            "title": "Degré de vin",
+            "title": "DegrÃ© de vin",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2027,7 +2027,7 @@
             "regex": false
         },
         "PRALC": {
-            "title": "Prix par degré d'alcool (euros par degré d'alcool et par hectolitre)",
+            "title": "Prix par degrÃ© d'alcool (euros par degrÃ© d'alcool et par hectolitre)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2049,7 +2049,7 @@
             "regex": false
         },
         "HERBITOT": {
-            "title": "Nombre de passages avec au moins un herbicide réalisés sur la parcelle",
+            "title": "Nombre de passages avec au moins un herbicide rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2060,7 +2060,7 @@
             "regex": false
         },
         "EPAMPTOT": {
-            "title": "Nombre de passages avec au moins un traitement pour épamprage ou ébourgeonnage-éclaircissage réalisés sur la parcelle",
+            "title": "Nombre de passages avec au moins un traitement pour Ã©pamprage ou Ã©bourgeonnage-Ã©claircissage rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2071,7 +2071,7 @@
             "regex": false
         },
         "FONGITOT": {
-            "title": "Nombre de passages avec au moins un traitement fongicide réalisés sur la parcelle",
+            "title": "Nombre de passages avec au moins un traitement fongicide rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2082,7 +2082,7 @@
             "regex": false
         },
         "MILTOT": {
-            "title": "Nombre de passages avec au moins une cible mildiou réalisés sur la parcelle",
+            "title": "Nombre de passages avec au moins une cible mildiou rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2093,7 +2093,7 @@
             "regex": false
         },
         "OIDTOT": {
-            "title": "Nombre de passages avec au moins une cible oïdium réalisés sur la parcelle",
+            "title": "Nombre de passages avec au moins une cible oÃ¯dium rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2104,7 +2104,7 @@
             "regex": false
         },
         "INSECTOT": {
-            "title": "Nombre de passages avec au moins un traitement insecticide- acaricide réalisés sur la parcelle",
+            "title": "Nombre de passages avec au moins un traitement insecticide- acaricide rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2115,7 +2115,7 @@
             "regex": false
         },
         "AUTOT": {
-            "title": "Nombre de passages avec au moins une cible autres traitements réalisés sur la parcelle",
+            "title": "Nombre de passages avec au moins une cible autres traitements rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2126,7 +2126,7 @@
             "regex": false
         },
         "ADJTOT": {
-            "title": "Nombre de passages avec au moins une cible adjuvants réalisés sur la parcelle",
+            "title": "Nombre de passages avec au moins une cible adjuvants rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2137,7 +2137,7 @@
             "regex": false
         },
         "FERTOT": {
-            "title": "Nombre de passages avec au moins une cible Fertilisation réalisés sur la parcelle",
+            "title": "Nombre de passages avec au moins une cible Fertilisation rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2148,7 +2148,7 @@
             "regex": false
         },
         "PASSTOT": {
-            "title": "Nombre total de passages réalisés sur la parcelle",
+            "title": "Nombre total de passages rÃ©alisÃ©s sur la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2159,7 +2159,7 @@
             "regex": false
         },
         "NBDEHTOT": {
-            "title": "Nombre de traitements réalisés avec des produits herbicides sur la parcelle",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits herbicides sur la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2170,7 +2170,7 @@
             "regex": false
         },
         "NBEPAMTOT": {
-            "title": "Nombre de traitements réalisés avec des produits d'épamprage ou d'ébourgeonnage sur la parcelle",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits d'Ã©pamprage ou d'Ã©bourgeonnage sur la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2181,7 +2181,7 @@
             "regex": false
         },
         "NBFONTOT": {
-            "title": "Nombre de traitements réalisés avec des produits fongicides sur la parcelle",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits fongicides sur la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2192,7 +2192,7 @@
             "regex": false
         },
         "NBMILTOT": {
-            "title": "Nombre de traitements réalisés avec au moins une cible mildiou sur la parcelle",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec au moins une cible mildiou sur la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2203,7 +2203,7 @@
             "regex": false
         },
         "NBOIDTOT": {
-            "title": "Nombre de traitements réalisés avec au moins une cible oïdium sur la parcelle",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec au moins une cible oÃ¯dium sur la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2214,7 +2214,7 @@
             "regex": false
         },
         "NBINSACARTOT": {
-            "title": "Nombre de traitements réalisés avec des produits insecticides-acaricides sur la parcelle",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits insecticides-acaricides sur la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2225,7 +2225,7 @@
             "regex": false
         },
         "NBPRODAUT": {
-            "title": "Nombre de traitements réalisés avec des produits ayant au moins autres traitements comme cible ",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits ayant au moins autres traitements comme cible ",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2236,7 +2236,7 @@
             "regex": false
         },
         "NBPRODADJ": {
-            "title": "Nombre de traitements réalisés avec des produits ayant adjuvant comme cible ",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits ayant adjuvant comme cible ",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2247,7 +2247,7 @@
             "regex": false
         },
         "NBCICFDTOT": {
-            "title": "Nombre de traitements réalisés avec des produits ayant au moins cicadelle de la flavescence dorée comme cible ",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits ayant au moins cicadelle de la flavescence dorÃ©e comme cible ",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2258,7 +2258,7 @@
             "regex": false
         },
         "NBCICVTOT": {
-            "title": "Nombre de traitements réalisés avec des produits ayant au moins cicadelle verte comme cible ",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits ayant au moins cicadelle verte comme cible ",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2269,7 +2269,7 @@
             "regex": false
         },
         "NBFERTOT": {
-            "title": "Nombre de traitements réalisés avec des produits ayant au moins Fertilisation comme cible ",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits ayant au moins Fertilisation comme cible ",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2280,7 +2280,7 @@
             "regex": false
         },
         "NBMULTI": {
-            "title": "Nombre de traitements réalisés avec des produits multicible sur la parcelle",
+            "title": "Nombre de traitements rÃ©alisÃ©s avec des produits multicible sur la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -2291,7 +2291,7 @@
             "regex": false
         },
         "TRAITTOT": {
-            "title": "Nombre total de traitements réalisés sur la parcelle (hors adjuvants)",
+            "title": "Nombre total de traitements rÃ©alisÃ©s sur la parcelle (hors adjuvants)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2302,7 +2302,7 @@
             "regex": false
         },
         "TRAITTOT2": {
-            "title": "Nombre total de traitements réalisés sur la parcelle (avec adjuvants)",
+            "title": "Nombre total de traitements rÃ©alisÃ©s sur la parcelle (avec adjuvants)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2324,7 +2324,7 @@
             "regex": false
         },
         "IFTOT_HBC": {
-            "title": "IFT total - hors produits de biocontrôle",
+            "title": "IFT total - hors produits de biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2335,7 +2335,7 @@
             "regex": false
         },
         "IFTOT_BC": {
-            "title": "IFT total - produits de biocontrôle",
+            "title": "IFT total - produits de biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2357,7 +2357,7 @@
             "regex": false
         },
         "IFTHH_HBC": {
-            "title": "IFT hors herbicide - hors produits de biocontrôle",
+            "title": "IFT hors herbicide - hors produits de biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2390,7 +2390,7 @@
             "regex": false
         },
         "IFTF_HBC": {
-            "title": "IFT fongicide- hors produits de biocontrôle",
+            "title": "IFT fongicide- hors produits de biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2401,7 +2401,7 @@
             "regex": false
         },
         "IFTF_BC": {
-            "title": "IFT fongicide- produits de biocontrôle",
+            "title": "IFT fongicide- produits de biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2423,7 +2423,7 @@
             "regex": false
         },
         "IFTI_HBC": {
-            "title": "IFT insecticide - hors produits de biocontrôle",
+            "title": "IFT insecticide - hors produits de biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2434,7 +2434,7 @@
             "regex": false
         },
         "IFTI_BC": {
-            "title": "IFT insecticide - produits de biocontrôle",
+            "title": "IFT insecticide - produits de biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2456,7 +2456,7 @@
             "regex": false
         },
         "IFTA_HBC": {
-            "title": "IFT autre - hors produits de biocontrôle",
+            "title": "IFT autre - hors produits de biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -2467,7 +2467,7 @@
             "regex": false
         },
         "IFTA_BC": {
-            "title": "IFT autre - produits de biocontrôle",
+            "title": "IFT autre - produits de biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,

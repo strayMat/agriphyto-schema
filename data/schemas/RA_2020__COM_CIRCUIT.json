@@ -2,8 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "identifiant_dossier": {
-            "title": "Identifiant parcelle",
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -13,9 +13,9 @@
             "required": true,
             "regex": false
         },
-        "ESPECE": {
-            "title": "Culture enquêtée",
-            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__ESPECE\"}",
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -24,9 +24,9 @@
             "required": true,
             "regex": false
         },
-        "ESPECEINI": {
-            "title": "Culture enquêtée, code initial (maïs et blé, modification entre 08 et 09 ou entre 01 et 02)",
-            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__ESPECEINI\"}",
+        "COMM_CIRCUIT_ECH": {
+            "title": "Circuit de commercialisation",
+            "description": "{\"nomenclature\": \"COM_CIRCUIT__COMM_CIRCUIT_ECH\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -35,63 +35,8 @@
             "required": true,
             "regex": false
         },
-        "REGPAR": {
-            "title": "Code région de la parcelle",
-            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__REGPAR\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DEPPAR": {
-            "title": "Département de localisation de la parcelle",
-            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__DEPPAR\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DEPCOMPAR": {
-            "title": "Code commune de la parcelle",
-            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__DEPCOMPAR\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "BIO": {
-            "title": "Appartenance à la strate « bio »",
-            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__BIO\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ZONEVULN": {
-            "title": "Appartenance à une zone vulnérable",
-            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__ZONEVULN\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COEF1": {
-            "title": "Coefficient d'extrapolation - niveau parcelle",
+        "COMM_COP_ECH": {
+            "title": "Produits céréaliers,  oléagineux et protéagineux, légumes secs",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -101,8 +46,8 @@
             "required": true,
             "regex": false
         },
-        "COEF2": {
-            "title": "Coefficient de pondération au niveau de la parcelle = COEF1*SUPP",
+        "COMM_TUB_DOM": {
+            "title": "Tubercules transformés (farine de manioc, kwak...)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -112,8 +57,8 @@
             "required": true,
             "regex": false
         },
-        "SUPP": {
-            "title": "Superficie de la parcelle",
+        "COMM_LEG_ECH": {
+            "title": "Légumes frais et transformés, pommes de terre",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -123,19 +68,8 @@
             "required": true,
             "regex": false
         },
-        "NOM_SUBSTANCE": {
-            "title": "Nom de la substance active",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "QDOSEMATSURF": {
-            "title": "Quantité de substance active en g/ha en tenant compte du pourcentage de parcelle traitée (par parcelle)",
+        "COMM_VIN_ECH": {
+            "title": "Vin, raisin de table, alcools issus de vins",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -145,8 +79,85 @@
             "required": true,
             "regex": false
         },
-        "NBPASMATACT": {
-            "title": "Nombre de traitements utilisant la substance active par parcelle",
+        "COMM_HOLI_ECH": {
+            "title": "Olive, huile d'olives",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_FRUIT_ECH": {
+            "title": "Fruits frais et transformés",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_AUTR_ECH": {
+            "title": "Autres produits végétaux, fleurs, horticulture",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_LAIT_ECH": {
+            "title": "Produits laitiers",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_OVOL_ECH": {
+            "title": "Œufs, volailles",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_ANIM_ECH": {
+            "title": "Viande hors volaille, autres produits animaux",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COMM_MIEL_ECH": {
+            "title": "Miel, produits à base de miel",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -162,12 +173,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PKGC_2014__MATACT_PHYTOGC2014",
+    "name": "RA_2020__COM_CIRCUIT",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table MATACT_PHYTOGC2014 (Fichier des substances actives utilisées lors des traitements phytosanitaires)\n        from data dictionary PKGC_2014"
+    "description": "Schema for table RA2020_COM_CIRCUIT from data dictionary RA_2020"
 }

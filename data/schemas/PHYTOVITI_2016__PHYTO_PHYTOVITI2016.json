@@ -25,7 +25,7 @@
             "regex": false
         },
         "PHYTORDR": {
-            "title": "Numéro d'ordre du traitement",
+            "title": "NumÃ©ro d'ordre du traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -36,7 +36,7 @@
             "regex": false
         },
         "PHYTOPASS": {
-            "title": "Numéro d'ordre du passage du traitement",
+            "title": "NumÃ©ro d'ordre du passage du traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -69,7 +69,7 @@
             "regex": false
         },
         "CIBEPA": {
-            "title": "Cible du traitement : épamprage",
+            "title": "Cible du traitement : Ã©pamprage",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -91,7 +91,7 @@
             "regex": false
         },
         "CIBOID": {
-            "title": "Cible du traitement : oïdium",
+            "title": "Cible du traitement : oÃ¯dium",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -234,7 +234,7 @@
             "regex": false
         },
         "CIBFONG": {
-            "title": "Cible agrégée fongicide",
+            "title": "Cible agrÃ©gÃ©e fongicide",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -245,7 +245,7 @@
             "regex": false
         },
         "CIBINSEC": {
-            "title": "Cible agrégée insecticide-acaricide",
+            "title": "Cible agrÃ©gÃ©e insecticide-acaricide",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -256,7 +256,7 @@
             "regex": false
         },
         "AUTRCIB": {
-            "title": "Cible agrégée autres",
+            "title": "Cible agrÃ©gÃ©e autres",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -267,7 +267,7 @@
             "regex": false
         },
         "AMM": {
-            "title": "Numéro d'autorisation de mise sur le marché",
+            "title": "NumÃ©ro d'autorisation de mise sur le marchÃ©",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -300,7 +300,7 @@
             "regex": false
         },
         "PHYTOPSUPPT": {
-            "title": "Part de la surface traitée (%)",
+            "title": "Part de la surface traitÃ©e (%)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -322,7 +322,7 @@
             "regex": false
         },
         "PHYTOUNI": {
-            "title": "Unité de la dose saisie quand le traitement est en plein (PHYTOPSUPPT=100)",
+            "title": "UnitÃ© de la dose saisie quand le traitement est en plein (PHYTOPSUPPT=100)",
             "description": "{\"nomenclature\": \"PHYTO_PHYTOVITI2016__PHYTOUNI\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -333,7 +333,7 @@
             "regex": false
         },
         "PHYTOUNISURF": {
-            "title": "Unité de la dose saisie quand le traitement n'est pas en plein (PHYTOPSUPPT<100)",
+            "title": "UnitÃ© de la dose saisie quand le traitement n'est pas en plein (PHYTOPSUPPT<100)",
             "description": "{\"nomenclature\": \"PHYTO_PHYTOVITI2016__PHYTOUNISURF\"}",
             "dtype": "string[python]",
             "nullable": true,
@@ -344,7 +344,7 @@
             "regex": false
         },
         "PHYTOBOUIL": {
-            "title": "Quantité de bouillie (litre/ha) à la part de surface traitée ",
+            "title": "QuantitÃ© de bouillie (litre/ha) Ã  la part de surface traitÃ©e ",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -355,7 +355,7 @@
             "regex": false
         },
         "PHYTODOS": {
-            "title": "Dose de produit à l'hectare en kg/ha ou l/ha ou 'autres' en plein",
+            "title": "Dose de produit Ã  l'hectare en kg/ha ou l/ha ou 'autres' en plein",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -377,7 +377,7 @@
             "regex": false
         },
         "MULTICIBLES2": {
-            "title": "Nombre de cibles agrégées du traitement",
+            "title": "Nombre de cibles agrÃ©gÃ©es du traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -410,7 +410,7 @@
             "regex": false
         },
         "CIBLE_APP": {
-            "title": "Cible d'appariement au référentiel pour le calcul de l'IFT",
+            "title": "Cible d'appariement au rÃ©fÃ©rentiel pour le calcul de l'IFT",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -421,7 +421,7 @@
             "regex": false
         },
         "DR": {
-            "title": "Dose de référence",
+            "title": "Dose de rÃ©fÃ©rence",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -432,7 +432,7 @@
             "regex": false
         },
         "BIOCONTROLE": {
-            "title": "Appartenance au calcul des IFT de type biocontrôle",
+            "title": "Appartenance au calcul des IFT de type biocontrÃ´le",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -443,7 +443,7 @@
             "regex": false
         },
         "COM_APPAR": {
-            "title": "Commentaire relatif à l'appariement",
+            "title": "Commentaire relatif Ã  l'appariement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -454,7 +454,7 @@
             "regex": false
         },
         "TYPE_UNITE_PHYTO": {
-            "title": "Type d'unité du traitement",
+            "title": "Type d'unitÃ© du traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -465,7 +465,7 @@
             "regex": false
         },
         "TYPE_UNITE_DR": {
-            "title": "Type d'unité de la dose de référence associée au traitement",
+            "title": "Type d'unitÃ© de la dose de rÃ©fÃ©rence associÃ©e au traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -476,7 +476,7 @@
             "regex": false
         },
         "RED": {
-            "title": "Redressement effectué ou non pour le calcul de l'IFT",
+            "title": "Redressement effectuÃ© ou non pour le calcul de l'IFT",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,

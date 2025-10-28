@@ -118,7 +118,7 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "RA_2020__RA2020_SURF_SAU",
+    "name": "RA_2020__SURF_SAU",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",

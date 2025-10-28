@@ -14,7 +14,7 @@
             "regex": false
         },
         "NOM_SUBSTANCE": {
-            "title": "Libellé de la substance active",
+            "title": "LibellÃ© de la substance active",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -25,7 +25,7 @@
             "regex": false
         },
         "QDOSEMATACT": {
-            "title": "Quantité de matière active par hectare",
+            "title": "QuantitÃ© de matiÃ¨re active par hectare",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -36,7 +36,7 @@
             "regex": false
         },
         "UNITESA": {
-            "title": "Unité de la quantité de matière par hectare",
+            "title": "UnitÃ© de la quantitÃ© de matiÃ¨re par hectare",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -47,7 +47,7 @@
             "regex": false
         },
         "NBPASMATACT": {
-            "title": "Nombre de traitements effectués sur la parcelle avec la même matière active et même cible",
+            "title": "Nombre de traitements effectuÃ©s sur la parcelle avec la mÃªme matiÃ¨re active et mÃªme cible",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -58,7 +58,7 @@
             "regex": false
         },
         "CIBLE": {
-            "title": "Cible détaillée",
+            "title": "Cible dÃ©taillÃ©e",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -69,7 +69,7 @@
             "regex": false
         },
         "CIBLEAGREG": {
-            "title": "Cible agrégée",
+            "title": "Cible agrÃ©gÃ©e",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
