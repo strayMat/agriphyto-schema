@@ -10,6 +10,7 @@ DIR2DICO = DIR2DATA / "raw"
 DIR2SCHEMA = DIR2DATA / "schemas"
 DIR2NOMENCLATURES = DIR2DATA / "nomenclatures"
 
+FILENAME_NOMENCLATURES = "all_nomenclatures.csv"
 
 COLNAME_TABLE = "table"
 COLNAME_VARIABLE = "variable"

@@ -25,9 +25,11 @@ from agriphyto_schema.constants import (
     COLNAME_LIBELLE,
     COLNAME_NOMENCLATURE,
     COLNAME_NOMENCLATURE_2,
+    COLNAME_OUT_DB,
     COLNAME_PANDERA_TYPE,
     COLNAME_TABLE,
     COLNAME_TYPE,
+    FILENAME_NOMENCLATURES,
     COLNAME_VARIABLE,
     DIR2DICO,
     DIR2NOMENCLATURES,
@@ -257,15 +259,28 @@ def nomenclature_from_nomenclature_sheet(
                 logger.warning(
                     f"!!! Variable name {var_name} differs from clean version {var_name_check}"
                 )
-            nomenclature = sub.reset_index(drop=True)
-            all_modalities_df[var_name_clean] = nomenclature
-            path2modalites = (
-                DIR2NOMENCLATURES
-                / f"{db_name}__{var_name_clean}__categories.csv"
-            )
-            nomenclature.to_csv(path2modalites, index=False)
+            modalities_df = sub.reset_index(drop=True)
+            all_modalities_df[var_name_clean] = modalities_df
+            #
+            modalities_df[COLNAME_TABLE] = table_name
+            modalities_df[COLNAME_VARIABLE] = var_name_clean
+            modalities_df[COLNAME_OUT_DB] = db_name
+            modalities_df.columns = [
+                COLNAME_OUT_DB,
+                COLNAME_TABLE,
+                COLNAME_VARIABLE,
+                COLNAME_CODE,
+                COLNAME_LIBELLE,
+            ]
+
+            path2modalites = DIR2NOMENCLATURES / FILENAME_NOMENCLATURES
+            if not path2modalites.exists():
+                # write header
+                modalities_df.to_csv(path2modalites, index=False, mode="w")
+            else:
+                modalities_df.to_csv(path2modalites, index=False, mode="a")
             logger.info(
-                f"Variable {var_name_clean} nomenclature saved at {path2modalites}"
+                f"Variable {var_name_clean} nomenclature appended in {path2modalites}"
             )
     return all_modalities_df
 
@@ -296,6 +311,7 @@ def nomenclature_from_variable_sheet(
     dict
         A dictionary mapping variable names to data frames containing the code-label mappings
         for each data modality.
+        Save nomenclatures into one centralized csv file by append mode in agriphyto_schema/data/nomenclatures/all_nomenclatures.csv
     """
 
     if COLNAME_NOMENCLATURE not in cols_to_use.values():
@@ -323,15 +339,30 @@ def nomenclature_from_variable_sheet(
         raw_nomenclature_row = row[COLNAME_NOMENCLATURE]
         modalities_df = clean_modalities(raw_nomenclature_row, code_first=True)
         if len(modalities_df) > 0:
+            table_name = row[COLNAME_TABLE]
             var_name_clean = clean_nomenclature_name(
-                var_name, row[COLNAME_TABLE]
+                var_name, table_name
             )
             all_modalities_df[var_name_clean] = modalities_df
+            modalities_df[COLNAME_TABLE] = table_name
+            modalities_df[COLNAME_VARIABLE] = var_name_clean
+            modalities_df[COLNAME_OUT_DB] = db_name
+            modalities_df.columns = [
+                COLNAME_OUT_DB,
+                COLNAME_TABLE,
+                COLNAME_VARIABLE,
+                COLNAME_CODE,
+                COLNAME_LIBELLE,
+            ]
             path2modalites = (
                 DIR2NOMENCLATURES
-                / f"{db_name}__{var_name_clean}__categories.csv"
+                / FILENAME_NOMENCLATURES
             )
-            modalities_df.to_csv(path2modalites, index=False)
+            if not path2modalites.exists():
+                # write header
+                modalities_df.to_csv(path2modalites, index=False, mode="w")
+            else:
+                modalities_df.to_csv(path2modalites, index=False, mode="a")
             logger.info(
                 f"Variable {var_name_clean} nomenclature saved at {path2modalites}"
             )
@@ -471,7 +502,7 @@ def dico_from_excel(db_name: str) -> None:
             )
             logger.info(
                 f"""Saved schema for table {table_name} to
-                {DIR2SCHEMA / f'{pandera_schema.name}.json'}"""
+                {DIR2SCHEMA / f"{pandera_schema.name}.json"}"""
             )
 
 

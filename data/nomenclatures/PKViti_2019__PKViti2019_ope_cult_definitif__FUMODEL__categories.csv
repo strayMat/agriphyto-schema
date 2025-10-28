@@ -1,8 +1,0 @@
-modality_code,label
-1,immédiat
-2,moins de 4 heures
-3,de 4h à moins de 12h
-4,de 12h à moins de 24h
-5,de 24h à moins de 48h
-6,48h et plus
-7,pas d'enfouissement

@@ -1,3 +1,0 @@
-modality_code,label
-NB_TOT = NB_HERB + NB_INS + NB_FONG + NB_AUT,NB_TOT = NB_HERB + NB_INS + NB_FONG + NB_AUT
-NB_TOT,NB_HERB + NB_INS + NB_FONG + NB_AUT

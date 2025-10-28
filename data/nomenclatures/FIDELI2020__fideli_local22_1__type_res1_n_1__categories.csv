@@ -1,9 +1,0 @@
-variable,label
-0,Local qui n'est pas considéré comme un logement
-1,Résidences principales avec des occupants dans le champ Fidéli
-2,Résidences principales avec des occupants hors champ Fidéli
-3,Résidences secondaires avec des occupants dans le champ Fidéli
-4,Résidences secondaires avec des occupants hors champ Fidéli
-5,Logements occasionnels
-6,Logements vacants
-7,Autres logements
