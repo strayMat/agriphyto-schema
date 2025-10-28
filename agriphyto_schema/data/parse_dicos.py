@@ -1,7 +1,11 @@
 """
-Parse an Excel data dictionary to create a pandera schema for data validation of the data dictionary.
 #FIXME: put this in the cli rather than here.
-The parser functions return a pandera schema JSON file for each table defined in the data dictionary.
+Parse an Excel data dictionary to create a pandera schema for data validation of
+the data dictionary.
+
+The parser functions return a pandera schema JSON file for each table defined in
+the data dictionary.
+
 A schema is named after : the data dictionary name (e.g. RA2020) and the table name.
 Schema are saved in agriphyto_schema/schemas/
 """
@@ -21,6 +25,7 @@ from agriphyto_schema.constants import (
     COLNAME_LIBELLE,
     COLNAME_NOMENCLATURE,
     COLNAME_NOMENCLATURE_2,
+    COLNAME_OUT_DB,
     COLNAME_PANDERA_TYPE,
     COLNAME_TABLE,
     COLNAME_TYPE,
@@ -28,6 +33,7 @@ from agriphyto_schema.constants import (
     DIR2DICO,
     DIR2NOMENCLATURES,
     DIR2SCHEMA,
+    FILENAME_NOMENCLATURES,
     MAP_TYPES,
     USELESS_MODALITIES,
 )
@@ -74,15 +80,27 @@ def infer_type_from_varname(var_name: str) -> str:
         ]
     ):
         pandera_type = "float"
-    elif any(pattern in var_name.upper() for pattern in ["IDENT", "CODE", "SIRET", "AMM", "ANNEE", "AN"]):
+    elif any(
+        pattern in var_name.upper()
+        for pattern in ["IDENT", "CODE", "SIRET", "AMM", "ANNEE", "AN"]
+    ):
         pandera_type = "string"
     return pandera_type
 
 
 # Nomenclature parsers and utils
+def remove_db_from_nomenclature(db_name: str):
+    path2all_nomenclatures = DIR2NOMENCLATURES / FILENAME_NOMENCLATURES
+    if path2all_nomenclatures.exists():
+        all_nomenclatures = pd.read_csv(path2all_nomenclatures)
+        all_nomenclatures[all_nomenclatures[COLNAME_OUT_DB] != db_name].to_csv(
+            path2all_nomenclatures, index=False
+        )
 
 
-def clean_nomenclature_name(var_name: str | float, table_name: str | None = None) -> str:
+def clean_nomenclature_name(
+    var_name: str | float, table_name: str | None = None
+) -> str:
     """
     Clean variable name by replacing special characters.
     Args:
@@ -108,7 +126,9 @@ def clean_nomenclature_name(var_name: str | float, table_name: str | None = None
 
 
 # util to clean modality columns
-def clean_modalities(raw_nomenclature_row: str, code_first: bool = True) -> pd.DataFrame:  # noqa: C901
+def clean_modalities(  # noqa: C901
+    raw_nomenclature_row: str, code_first: bool = True
+) -> pd.DataFrame:
     """
     Clean and parse modalities from a raw nomenclature string.
 
@@ -117,22 +137,25 @@ def clean_modalities(raw_nomenclature_row: str, code_first: bool = True) -> pd.D
     raw_nomenclature_row : str
         The raw nomenclature string containing modalities to be parsed.
     code_first : bool, optional
-        Whether the code appears before the label in the modalities, by default True. Eg. "1 - Label" vs "Label - 1".
+        Whether the code appears before the label in the modalities, by default True.
+        Eg. "1 - Label" vs "Label - 1".
     Returns
     -------
     pd.DataFrame
         A DataFrame with columns 'variable' and 'libelle' containing
-        the cleaned modalities (code and label pairs). If no modalities are found, returns an empty DataFrame with the correct columns.
+        the cleaned modalities (code and label pairs). If no modalities are found, returns an empty
+        DataFrame with the correct columns.
     """
     cleaned_modalites = []
     modality_separators = ["\n", "|", ";", ",", " ou "]
     # First, split the raw nomenclature based on different delimiters
     splitted_nomenclatures = None
     for sep in modality_separators:
-        if sep in raw_nomenclature_row:
+        if (sep in raw_nomenclature_row) and (splitted_nomenclatures is None):
             splitted_nomenclatures = raw_nomenclature_row.split(sep)
-            break
-    # If no split happened, try a regex split directly getting back code and labels based on the formatting of PK surveys dictionaries:
+
+    # If no split happened, try a regex split directly getting back code and labels based on the
+    # formatting of PK surveys dictionaries:
     pattern = r"(\d{1,3}):(.*?)(?=(?:\d{1,3}:)|$)"
     regex_search = re.search(pattern, raw_nomenclature_row)
     if (splitted_nomenclatures is None) and (regex_search is not None):
@@ -152,14 +175,17 @@ def clean_modalities(raw_nomenclature_row: str, code_first: bool = True) -> pd.D
             if mod and mod.strip() != "":
                 mod_clean = mod.strip().replace('"', "")
                 # Split on different separators to separate code from label
+                split_done = False
                 for sep in code_label_separator:
-                    if sep in mod_clean:
+                    if (sep in mod_clean) & (not split_done):
+                        split_done = True
                         code, label = mod_clean.split(sep, 1)
                         cleaned_modalites.append({
                             COLNAME_CODE: code.strip(),
                             COLNAME_LIBELLE: label.strip(),
                         })
-                        break
+                if not split_done:
+                    # no code label separtor found
                     cleaned_modalites.append({
                         COLNAME_CODE: mod_clean,
                         COLNAME_LIBELLE: mod_clean,
@@ -183,7 +209,7 @@ def nomenclature_from_nomenclature_sheet(
     filepath2dico: Path,
     nomenclature_sheet: str,
     skiprows_nomenclature: str,
-    cols_to_use_nomenclature: dict | None = None,
+    cols_to_use_nomenclature: dict | None,
 ) -> dict[str, pd.DataFrame]:
     """
     Parse nomenclatures / modalities from a separate nomenclature sheet in the data dictionary.
@@ -203,7 +229,8 @@ def nomenclature_from_nomenclature_sheet(
     Returns
     -------
     dict
-        A dictionary mapping variable names to data frames containing the code-label mappings for each data modality.
+        A dictionary mapping variable names to data frames containing the code-label mappings for
+        each data modality.
     """
     modalites_df = pd.read_excel(
         DIR2DICO / filepath2dico,
@@ -211,8 +238,11 @@ def nomenclature_from_nomenclature_sheet(
         skiprows=skiprows_nomenclature,
     )
     modalites_df.rename(columns=cols_to_use_nomenclature, inplace=True)
-    # La colonne variable contient à la fois les noms de variables et les modalités. Elle ne peut être vide. On filtre donc les lignes vides.
-    modalites_df = modalites_df[modalites_df[COLNAME_VARIABLE].notna()].reset_index(drop=True)
+    # La colonne variable contient à la fois les codes et les libellés des modalités.
+    # Elle ne peut être vide. On filtre donc les lignes vides.
+    modalites_df = modalites_df[modalites_df[COLNAME_CODE].notna()].reset_index(
+        drop=True
+    )
 
     mask = modalites_df[COLNAME_TABLE].notna()
     starts = [*modalites_df.index[mask].tolist(), len(modalites_df)]
@@ -220,21 +250,47 @@ def nomenclature_from_nomenclature_sheet(
     all_modalities_df = {}
     for i in range(len(starts) - 1):
         table_name = modalites_df.loc[starts[i], COLNAME_TABLE]
-        var_name = modalites_df.loc[starts[i], COLNAME_VARIABLE]
-        sub = modalites_df.iloc[starts[i] + 1 : starts[i + 1]].copy()[[COLNAME_VARIABLE, COLNAME_LIBELLE]]
-        sub.columns = modalites_df.iloc[starts[i], :][[COLNAME_VARIABLE, COLNAME_LIBELLE]]  # use the header row
-        sub = sub.dropna(how="all")  # drop empty lines
-        if len(sub) > 0:
+        var_name = modalites_df.loc[starts[i], COLNAME_CODE]
+        raw_modalities = modalites_df.iloc[
+            starts[i] + 1 : starts[i + 1]
+        ].copy()[[COLNAME_CODE, COLNAME_LIBELLE]]
+        raw_modalities.columns = [COLNAME_CODE, COLNAME_LIBELLE]
+        raw_modalities = raw_modalities.dropna(how="all")  # drop empty lines
+        if len(raw_modalities) > 0:
             var_name_clean = clean_nomenclature_name(var_name, table_name)
             # log if the cleaned name differs from the original
             var_name_check = var_name_clean.replace(f"{table_name}__", "")
             if var_name_check != var_name:
-                logger.warning(f"!!! Variable name {var_name} differs from clean version {var_name_check}")
-            nomenclature = sub.reset_index(drop=True)
-            all_modalities_df[var_name_clean] = nomenclature
-            path2modalites = DIR2NOMENCLATURES / f"{db_name}__{var_name_clean}__categories.csv"
-            nomenclature.to_csv(path2modalites, index=False)
-            logger.info(f"Variable {var_name_clean} nomenclature saved at {path2modalites}")
+                logger.warning(
+                    f"!!! Variable name {var_name} differs from clean version {var_name_check}"
+                )
+            modalities_df = raw_modalities.reset_index(drop=True)
+            all_modalities_df[var_name_clean] = modalities_df
+            #
+            modalities_df[COLNAME_TABLE] = table_name
+            modalities_df[COLNAME_VARIABLE] = var_name_clean
+            modalities_df[COLNAME_OUT_DB] = db_name
+            modalities_df = modalities_df[
+                [
+                    COLNAME_OUT_DB,
+                    COLNAME_TABLE,
+                    COLNAME_VARIABLE,
+                    COLNAME_CODE,
+                    COLNAME_LIBELLE,
+                ]
+            ]
+
+            path2modalites = DIR2NOMENCLATURES / FILENAME_NOMENCLATURES
+            if not path2modalites.exists():
+                # write header
+                modalities_df.to_csv(path2modalites, index=False, mode="w")
+            else:
+                modalities_df.to_csv(
+                    path2modalites, index=False, mode="a", header=False
+                )
+            logger.info(
+                f"Variable {var_name_clean} nomenclature appended in {path2modalites}"
+            )
     return all_modalities_df
 
 
@@ -262,11 +318,13 @@ def nomenclature_from_variable_sheet(
     Returns
     -------
     dict
-        A dictionary mapping variable names to data frames containing the code-label mappings for each data modality.
+        A dictionary mapping variable names to data frames containing the code-label mappings
+        for each data modality.
+        Save nomenclatures into one centralized csv file by append mode in agriphyto_schema/data/nomenclatures/all_nomenclatures.csv
     """
-
     if COLNAME_NOMENCLATURE not in cols_to_use.values():
-        msg = "This function only handles behavior 1) where modalities are in the same sheet as variables."
+        msg = """This function only handles behavior 1) where modalities are in the same sheet as
+        variables."""
         raise ValueError(msg)
     dico = pd.read_excel(
         DIR2DICO / filepath2dico,
@@ -281,19 +339,40 @@ def nomenclature_from_variable_sheet(
     dico = dico.dropna(subset=[COLNAME_VARIABLE]).reset_index(drop=True)
     # Extract nomenclatures
     all_modalities_df = {}
-    dico_w_modalities = dico[dico[COLNAME_NOMENCLATURE].notna() & (dico[COLNAME_NOMENCLATURE] != "")].reset_index(
-        drop=True
-    )
+    dico_w_modalities = dico[
+        dico[COLNAME_NOMENCLATURE].notna() & (dico[COLNAME_NOMENCLATURE] != "")
+    ].reset_index(drop=True)
     for _, row in dico_w_modalities.iterrows():
         var_name = row[COLNAME_VARIABLE]
         raw_nomenclature_row = row[COLNAME_NOMENCLATURE]
         modalities_df = clean_modalities(raw_nomenclature_row, code_first=True)
         if len(modalities_df) > 0:
-            var_name_clean = clean_nomenclature_name(var_name, row[COLNAME_TABLE])
+            table_name = row[COLNAME_TABLE]
+            var_name_clean = clean_nomenclature_name(var_name, table_name)
             all_modalities_df[var_name_clean] = modalities_df
-            path2modalites = DIR2NOMENCLATURES / f"{db_name}__{var_name_clean}__categories.csv"
-            modalities_df.to_csv(path2modalites, index=False)
-            logger.info(f"Variable {var_name_clean} nomenclature saved at {path2modalites}")
+            modalities_df[COLNAME_TABLE] = table_name
+            modalities_df[COLNAME_VARIABLE] = var_name_clean
+            modalities_df[COLNAME_OUT_DB] = db_name
+            modalities_df = modalities_df[
+                [
+                    COLNAME_OUT_DB,
+                    COLNAME_TABLE,
+                    COLNAME_VARIABLE,
+                    COLNAME_CODE,
+                    COLNAME_LIBELLE,
+                ]
+            ]
+            path2modalites = DIR2NOMENCLATURES / FILENAME_NOMENCLATURES
+            if not path2modalites.exists():
+                # write header
+                modalities_df.to_csv(path2modalites, index=False, mode="w")
+            else:
+                modalities_df.to_csv(
+                    path2modalites, index=False, mode="a", header=False
+                )
+            logger.info(
+                f"Variable {var_name_clean} nomenclature saved at {path2modalites}"
+            )
 
     return all_modalities_df
 
@@ -320,7 +399,8 @@ def dico_from_excel(db_name: str) -> None:
     Two behaviors are supported:
     - 1) either the modalities are in the same sheet as the variables,
     - 2) the modalities are in a separate sheet.
-    The behavior is set to 1) if the COLNAME_NOMENCLATURE is in the cols_to_use of the AVAILABLE_DICOS[db_name] configuration else 2).
+    The behavior is set to 1) if the COLNAME_NOMENCLATURE is in the cols_to_use of the
+    AVAILABLE_DICOS[db_name] configuration else 2).
 
     Parameters
     ----------
@@ -334,6 +414,8 @@ def dico_from_excel(db_name: str) -> None:
         Saves the nomenclature CSV files in agriphyto_schema/data/nomenclatures/
     """
     check_db_name(db_name)
+    remove_db_from_nomenclature(db_name)
+
     filepath2dico = AVAILABLE_DICOS[db_name]["filename"]
     sheet_name_variables = AVAILABLE_DICOS[db_name]["variable_sheet"]
     cols_to_use = AVAILABLE_DICOS[db_name]["cols_to_use"]
@@ -353,8 +435,12 @@ def dico_from_excel(db_name: str) -> None:
         new_cols = cols_to_use.values()
         # Handle cases where nomenclatures are in two columns
         if COLNAME_NOMENCLATURE_2 in cols_to_use.values():
-            dico[COLNAME_NOMENCLATURE] = dico[COLNAME_NOMENCLATURE].fillna(dico[COLNAME_NOMENCLATURE_2])
-            new_cols = [col for col in new_cols if col != COLNAME_NOMENCLATURE_2]
+            dico[COLNAME_NOMENCLATURE] = dico[COLNAME_NOMENCLATURE].fillna(
+                dico[COLNAME_NOMENCLATURE_2]
+            )
+            new_cols = [
+                col for col in new_cols if col != COLNAME_NOMENCLATURE_2
+            ]
         # Ensure TABLE column exists, else create it with sheet_name
         if COLNAME_TABLE not in dico.columns:
             dico[COLNAME_TABLE] = sheet_name
@@ -377,21 +463,29 @@ def dico_from_excel(db_name: str) -> None:
         else:
             # behavior 2) nomenclatures in a separate sheet
             nomenclature_sheet = AVAILABLE_DICOS[db_name]["nomenclature_sheet"]
-            skiprows_nomenclature = AVAILABLE_DICOS[db_name]["skiprows_nomenclature"]
+            skiprows_nomenclature = AVAILABLE_DICOS[db_name][
+                "skiprows_nomenclature"
+            ]
+            cols_to_use_nomenclature = AVAILABLE_DICOS[db_name][
+                "cols_to_use_nomenclature"
+            ]
             modalities_dic = nomenclature_from_nomenclature_sheet(
                 db_name=db_name,
                 filepath2dico=filepath2dico,
                 nomenclature_sheet=nomenclature_sheet,
                 skiprows_nomenclature=skiprows_nomenclature,
+                cols_to_use_nomenclature=cols_to_use_nomenclature,
             )
 
         dico[COLNAME_PANDERA_TYPE] = dico[COLNAME_TYPE].apply(map_type)
         for table_name in all_table_names:
             n_vars = dico[dico[COLNAME_TABLE] == table_name].shape[0]
             logger.info(f"Table {table_name} has {n_vars} variables")
-            table_dico = dico[dico[COLNAME_TABLE] == table_name].reset_index(drop=True)
-            # Sometimes the table name contains the db_name as prefix
-            table_name_clean = table_name.replace(f"{db_name}_", "")
+            table_dico = dico[dico[COLNAME_TABLE] == table_name].reset_index(
+                drop=True
+            )
+            # Dirty exception for RA2020 where table names have the RA2020 as prefix
+            table_name_clean = table_name.replace("RA2020_", "")
             # Assemble pandera schema with categories when available
             pandera_schema = pa.DataFrameSchema(
                 columns={},
@@ -409,13 +503,20 @@ def dico_from_excel(db_name: str) -> None:
                     nullable=True,
                     title=row.get(COLNAME_LIBELLE),
                 )
-                varname_clean = clean_nomenclature_name(var_name, table_name_clean)
+                varname_clean = clean_nomenclature_name(
+                    var_name, table_name_clean
+                )
                 if varname_clean in modalities_dic:
                     # Add strict categories instead of nomenclature dic ?
                     col_schema.metadata = {"nomenclature": varname_clean}
                 pandera_schema.columns[var_name] = col_schema
-            pandera_to_json(pandera_schema, DIR2SCHEMA / f"{pandera_schema.name}.json")
-            logger.info(f"Saved schema for table {table_name} to {DIR2SCHEMA / f'{pandera_schema.name}.json'}")
+            pandera_to_json(
+                pandera_schema, DIR2SCHEMA / f"{pandera_schema.name}.json"
+            )
+            logger.info(
+                f"""Saved schema for table {table_name} to
+                {DIR2SCHEMA / f"{pandera_schema.name}.json"}"""
+            )
 
 
 # CASD CSV parser
@@ -431,7 +532,8 @@ def detect_table_section_from_casd_csv(
     filepath2dico : str
         The path to the CASD CSV data dictionary file.
     skiprows : int
-        The number of rows to skip before reading the CSV file. These lines are often a short description of the data source as well as blank lines before the first table.
+        The number of rows to skip before reading the CSV file. These lines are often a short
+        description of the data source as well as blank lines before the first table.
     encoding : str
         The encoding of the CSV file.
     Returns
@@ -485,7 +587,10 @@ def detect_table_section_from_casd_csv(
 
                     # If we find another table name or end of file, this is the end
                     if k >= len(lines) or (
-                        k + 3 < len(lines) and lines[k + 3].strip().startswith('"Nom de la variable";Libellé;Modalités')
+                        k + 3 < len(lines)
+                        and lines[k + 3]
+                        .strip()
+                        .startswith('"Nom de la variable";Libellé;Modalités')
                     ):
                         end_line = j
                         break
@@ -506,16 +611,21 @@ def detect_table_section_from_casd_csv(
     return table_sections
 
 
+# FIXME: refactor to have the same logic for nomenclature building and saving as in dico_from_excel
 def dico_from_casd_csv(db_name: str) -> None:
     """
-    Parse a csv data dictionary from a `CASD source <https://www.casd.eu/donnees-utilisees-sur-le-casd/>`_ to create a pandera schema for data validation.
+    Parse a csv data dictionary from
+    `CASD source <https://www.casd.eu/donnees-utilisees-sur-le-casd/>`_ to create a pandera schema
+    for data validation.
     For each variable, output in the pandera schema :
     - the variable name,
     - the name of the origin table,
     - the pandera type,
     - the nomenclature / modalities of the variable if available.
 
-    Parse nomenclatures / modalities from the data dictionary. In the CASD csv, modalities are always in a "third" column (they use the same ";" separator for the modalities so I have to force all remaining values after the first two columns into a third one).
+    Parse nomenclatures / modalities from the data dictionary. In the CASD csv, modalities are
+    always in a "third" column (they use the same ";" separator for the modalities so I have to
+    force all remaining values after the first two columns into a third one).
 
     Parameters
     ----------
@@ -529,6 +639,7 @@ def dico_from_casd_csv(db_name: str) -> None:
         Saves the nomenclature CSV files in agriphyto_schema/data/nomenclatures/
     """
     check_db_name(db_name)
+    remove_db_from_nomenclature(db_name)
 
     # Load configuration from AVAILABLE_DICOS
     filepath2dico = AVAILABLE_DICOS[db_name]["filename"]
@@ -548,13 +659,19 @@ def dico_from_casd_csv(db_name: str) -> None:
         start_line = section["start_line"]
         end_line = section["end_line"]
 
-        logger.info(f"Processing table {table_name} with variables from line {start_line} to {end_line}")
+        logger.info(
+            f"Processing table {table_name} with variables from line {start_line} to {end_line}"
+        )
 
         # Read the table variables using pandas, forcing only the first 3 columns
         table_variables_lines = lines[start_line:end_line]
         # split on ';' and put all nomenclature modalities in the third column
-        table_variables = pd.DataFrame([x.strip().split(";") for x in table_variables_lines])
-        table_variables[2] = table_variables.iloc[:, 2:].apply(lambda x: ";".join(x.dropna().astype(str)), axis=1)
+        table_variables = pd.DataFrame([
+            x.strip().split(";") for x in table_variables_lines
+        ])
+        table_variables[2] = table_variables.iloc[:, 2:].apply(
+            lambda x: ";".join(x.dropna().astype(str)), axis=1
+        )
         table_variables = table_variables.iloc[:, :3]
         table_variables.columns = [
             COLNAME_VARIABLE,
@@ -562,36 +679,73 @@ def dico_from_casd_csv(db_name: str) -> None:
             COLNAME_NOMENCLATURE,
         ]
         # Clean and process the data
-        table_variables = table_variables.dropna(subset=["variable"]).reset_index(drop=True)
-        table_variables = table_variables[table_variables["variable"].str.strip() != ""].reset_index(drop=True)
+        table_variables = table_variables.dropna(
+            subset=["variable"]
+        ).reset_index(drop=True)
+        table_variables = table_variables[
+            table_variables["variable"].str.strip() != ""
+        ].reset_index(drop=True)
         # clean variable and label columns
-        table_variables[COLNAME_VARIABLE] = table_variables[COLNAME_VARIABLE].str.strip().str.replace('"', "")
-        table_variables[COLNAME_LIBELLE] = table_variables[COLNAME_LIBELLE].str.strip().str.replace('"', "")
+        table_variables[COLNAME_VARIABLE] = (
+            table_variables[COLNAME_VARIABLE].str.strip().str.replace('"', "")
+        )
+        table_variables[COLNAME_LIBELLE] = (
+            table_variables[COLNAME_LIBELLE].str.strip().str.replace('"', "")
+        )
         # add type inference
-        table_variables[COLNAME_TYPE] = table_variables[COLNAME_VARIABLE].apply(infer_type_from_varname)
-        mask_binary_nomenclature = table_variables[COLNAME_NOMENCLATURE].isin(CASD_BOOL_MODALITIES)
+        table_variables[COLNAME_TYPE] = table_variables[COLNAME_VARIABLE].apply(
+            infer_type_from_varname
+        )
+        mask_binary_nomenclature = table_variables[COLNAME_NOMENCLATURE].isin(
+            CASD_BOOL_MODALITIES
+        )
         table_variables.loc[mask_binary_nomenclature, COLNAME_TYPE] = "bool"
         # clean nomenclature column
-        table_variables[COLNAME_NOMENCLATURE] = table_variables[COLNAME_NOMENCLATURE].fillna("")
-        table_variables[COLNAME_NOMENCLATURE] = table_variables[COLNAME_NOMENCLATURE].apply(
-            lambda x: None if x in USELESS_MODALITIES else x
-        )
+        table_variables[COLNAME_NOMENCLATURE] = table_variables[
+            COLNAME_NOMENCLATURE
+        ].fillna("")
+        table_variables[COLNAME_NOMENCLATURE] = table_variables[
+            COLNAME_NOMENCLATURE
+        ].apply(lambda x: None if x in USELESS_MODALITIES else x)
 
         # Create nomenclature dictionary for this table
         table_variables_w_modalities = table_variables[
-            table_variables[COLNAME_NOMENCLATURE].notna() & (table_variables[COLNAME_NOMENCLATURE] != "")
+            table_variables[COLNAME_NOMENCLATURE].notna()
+            & (table_variables[COLNAME_NOMENCLATURE] != "")
         ].reset_index(drop=True)
 
         # extract nomenclature and create files
         for _, row in table_variables_w_modalities.iterrows():
             var_name = row[COLNAME_VARIABLE]
             raw_nomenclature_row = row[COLNAME_NOMENCLATURE]
-            modalities_df = clean_modalities(raw_nomenclature_row, code_first=True)
+            modalities_df = clean_modalities(
+                raw_nomenclature_row, code_first=True
+            )
             var_name_clean = clean_nomenclature_name(var_name, table_name)
+            modalities_df[COLNAME_TABLE] = table_name
+            modalities_df[COLNAME_VARIABLE] = var_name_clean
+            modalities_df[COLNAME_OUT_DB] = db_name
+            modalities_df = modalities_df[
+                [
+                    COLNAME_OUT_DB,
+                    COLNAME_TABLE,
+                    COLNAME_VARIABLE,
+                    COLNAME_CODE,
+                    COLNAME_LIBELLE,
+                ]
+            ]
             # Save nomenclature to CSV
-            path2modalites = DIR2NOMENCLATURES / f"{db_name}__{var_name_clean}__categories.csv"
-            modalities_df.to_csv(path2modalites, index=False)
-            logger.info(f"Variable {var_name_clean} nomenclature saved at {path2modalites}")
+            path2modalites = DIR2NOMENCLATURES / FILENAME_NOMENCLATURES
+            if not path2modalites.exists():
+                # write header
+                modalities_df.to_csv(path2modalites, index=False, mode="w")
+            else:
+                modalities_df.to_csv(
+                    path2modalites, index=False, mode="a", header=False
+                )
+            logger.info(
+                f"Variable {var_name_clean} nomenclature saved at {path2modalites}"
+            )
 
         # Create pandera schema
         pandera_schema = pa.DataFrameSchema(
@@ -599,7 +753,8 @@ def dico_from_casd_csv(db_name: str) -> None:
             strict=True,
             coerce=True,
             name=f"{db_name}__{table_name}",
-            description=f"Schema for table {table_name} ({table_description}) from data dictionary {db_name}",
+            description=f"""Schema for table {table_name} ({table_description})
+        from data dictionary {db_name}""",
         )
         # Add columns to schema
         for var_info in table_variables.to_dict(orient="records"):
@@ -610,10 +765,17 @@ def dico_from_casd_csv(db_name: str) -> None:
                 nullable=True,
                 title=var_info[COLNAME_LIBELLE],
             )
-            if var_name in table_variables_w_modalities[COLNAME_VARIABLE].tolist():
+            if (
+                var_name
+                in table_variables_w_modalities[COLNAME_VARIABLE].tolist()
+            ):
                 var_name_clean = clean_nomenclature_name(var_name, table_name)
                 col_schema.metadata = {"nomenclature": var_name_clean}
             pandera_schema.columns[var_name] = col_schema
         # Save schema
-        pandera_to_json(pandera_schema, DIR2SCHEMA / f"{pandera_schema.name}.json")
-        logger.info(f"Saved schema for table {table_name} to {DIR2SCHEMA / f'{pandera_schema.name}.json'}")
+        pandera_to_json(
+            pandera_schema, DIR2SCHEMA / f"{pandera_schema.name}.json"
+        )
+        logger.info(
+            f"Saved schema for table {table_name} to {DIR2SCHEMA / f'{pandera_schema.name}.json'}"
+        )

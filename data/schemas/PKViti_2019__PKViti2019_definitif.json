@@ -16,7 +16,7 @@
         "COEF": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -27,7 +27,7 @@
         "COEF2": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -280,7 +280,7 @@
         "NOSPCV": {
             "title": "Numéro d'ordre de la sous-parcelle cadastrale initialisé (CVI)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -324,7 +324,7 @@
         "STRATEBIO": {
             "title": "Parcelle tirée dans une strate bio",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -335,7 +335,7 @@
         "SUPESPINIT": {
             "title": "Superficie de vignes en production (raisin de cuve) de l'EVV (CVI)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -346,7 +346,7 @@
         "SUPSSP2019": {
             "title": "Surface initialisée de la sous-parcelle tirée (CVI)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -357,7 +357,7 @@
         "VIARRAC": {
             "title": "0.2 - a été arrachée avant la vendange 2019",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -368,7 +368,7 @@
         "VIAUTOC": {
             "title": "0.6 - a sa production entièrement auto-consommée",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -390,7 +390,7 @@
         "VIJEUNE": {
             "title": "0.5 - est une vigne de moins de 3 ans (plantée après le 1er août 2016)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -401,7 +401,7 @@
         "VIJFRUIT": {
             "title": "0.7 - destine son raisin à la production de jus de fruit",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -412,7 +412,7 @@
         "VINALEA": {
             "title": "0.9 - n'a pas été conduite jusqu'à la récolte",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -423,7 +423,7 @@
         "VININEX": {
             "title": "0.8 - n'a pu être identifiée ou n'est pas exploitée en 2018/2019",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -434,7 +434,7 @@
         "VIPGREF": {
             "title": "0.3 - est une vigne mère de porte-greffe ou de greffon",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -445,7 +445,7 @@
         "VIRTABL": {
             "title": "0.4 - est une vigne à raisin de table",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -478,7 +478,7 @@
         "STRATEOK": {
             "title": "Appartenance de la parcelle à la bonne strate",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -489,7 +489,7 @@
         "REMPLACEMENT": {
             "title": "Possibilité de remplacer la parcelle (au sein de la même exploitation et avec le même mode de conduite)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -555,7 +555,7 @@
         "SUPPVIGRC": {
             "title": "1.1.2 Superficie en vigne à raisin de cure en production (hectare, are)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -566,7 +566,7 @@
         "CAHIERDEPHY": {
             "title": "Fermes DEPHY",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -577,7 +577,7 @@
         "CAHIERGIEE": {
             "title": "GIEE (Groupement d'intérêt Economique et Enivronnementale)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -599,7 +599,7 @@
         "SAU": {
             "title": "1.1.1 SAU totale",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -621,7 +621,7 @@
         "DISTRANGINIT": {
             "title": "DISTRANGINIT",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -632,7 +632,7 @@
         "SUPESP": {
             "title": "SUPESP",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -643,7 +643,7 @@
         "SUPESPBIO": {
             "title": "SUPESPBIO",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -665,7 +665,7 @@
         "CAHIER30000": {
             "title": "Groupe des 30 000 du plan Ecophyto",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -687,7 +687,7 @@
         "CAHIERCEEA1": {
             "title": "CAHIERCEEA1",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -698,7 +698,7 @@
         "CAHIERCEEA2": {
             "title": "CAHIERCEEA2",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -709,7 +709,7 @@
         "CAHIERHVE": {
             "title": "CAHIERHVE",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -720,7 +720,7 @@
         "SUPP2019": {
             "title": "Superficie de la parcelle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -775,7 +775,7 @@
         "DISTCEPINIT": {
             "title": "DISTCEPINIT",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -786,7 +786,7 @@
         "DENSITE": {
             "title": "DENSITE",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -808,7 +808,7 @@
         "CONVERSION": {
             "title": "CONVERSION",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -819,7 +819,7 @@
         "MODECONV": {
             "title": "2.1 Parcelle conduite en mode conventionnel",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -830,7 +830,7 @@
         "MODERAISON": {
             "title": "2.1 Parcelle conduite en agriculture raisonnée",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -841,7 +841,7 @@
         "MODEBIO": {
             "title": "2 Parcelle conduite en mode biologique (AB et label bio de l’Union Européenne)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -852,7 +852,7 @@
         "NATETPROG": {
             "title": "2.1 Parcelle conduite selon le cahier Nature et Progrès",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -863,7 +863,7 @@
         "BIODYNAMIE": {
             "title": "2.1 Parcelle conduite en biodynamie (Demeter, Biodyvin, Bio cohérence, …)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -874,7 +874,7 @@
         "BIO": {
             "title": "Caractère bio de la parcelle ; BIO = MODEBIO ou BIODYNAMIE",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -885,7 +885,7 @@
         "BIOCOHER": {
             "title": "2.1 Parcelle conduite selon le cahier Bio Cohérence",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -896,7 +896,7 @@
         "DEMETER": {
             "title": "2.1 Parcelle conduite selon le cahier Demeter",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -907,7 +907,7 @@
         "MODEAUTR": {
             "title": "2.1 Parcelle conduite selon un autre cahier",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -918,7 +918,7 @@
         "EAEPHYTO": {
             "title": "2.1.2 Engagée dans une MAE/MAEC rémunérée de réduction des produits phytosanitaires",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -929,7 +929,7 @@
         "MAECAUT": {
             "title": "2.1.2 Engagée dans une MAE/MAEC rémunérée hors réduction des produits phytosanitaires",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -940,7 +940,7 @@
         "CAHIERPHYTO": {
             "title": "2.1.2 Engagée dans un cahier de réduction des produits phytosanitaires conclu avec un partenaire pri",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -973,7 +973,7 @@
         "DISTRANG": {
             "title": "Distance entre les rangs (cm)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -984,7 +984,7 @@
         "DISTCEP": {
             "title": "Distance entre les ceps sur le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -995,7 +995,7 @@
         "SANSENGPHYTO": {
             "title": "2.1.2 Sans engagement",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1006,7 +1006,7 @@
         "HAUTPALIS": {
             "title": "Hauteur de feuillage palissé",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1017,7 +1017,7 @@
         "SANSCEEA": {
             "title": "1.3 Aucune certification environnementtale des exploitations agricoles",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1039,7 +1039,7 @@
         "EAU": {
             "title": "3.1 Présence d’un cours d’eau sur la parcelle ou adjacent à celle-ci",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1050,7 +1050,7 @@
         "TAMPON": {
             "title": "3.1.1 Présence d’une bande tampon le long du cours d’eau",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1061,7 +1061,7 @@
         "HAIE": {
             "title": "3.2 Présence d’une haie sur au moins un des côtés",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1072,7 +1072,7 @@
         "EQUIPIRR": {
             "title": "3.3 Equipée pour irrigation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1083,7 +1083,7 @@
         "PARCIRR": {
             "title": "3.3.1 Irrigation de la parcelle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1094,7 +1094,7 @@
         "DRAINP": {
             "title": "3.4 Equipée d’un drain",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1138,7 +1138,7 @@
         "TERRASSE": {
             "title": "3.7.1 Aménagement en terrasse",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1182,7 +1182,7 @@
         "DEPERIS": {
             "title": "4.1 Dépérissement des ceps",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1193,7 +1193,7 @@
         "DEPERISMAL": {
             "title": "DEPERISMAL",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1204,7 +1204,7 @@
         "DEPERISVIRUS": {
             "title": "4.1.1 Cause principale : virus",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1215,7 +1215,7 @@
         "DEPERISBLESS": {
             "title": "4.1.1 Cause principale : blessures",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1226,7 +1226,7 @@
         "DEPERISINC": {
             "title": "4.1.1 Cause principale : inconnues",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1237,7 +1237,7 @@
         "DEPERISAUTR": {
             "title": "4.1.1 Cause principale : autre",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1281,7 +1281,7 @@
         "DEPERISREMPL": {
             "title": "4.1.4 Remplacement des pieds morts ou manquants",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1292,7 +1292,7 @@
         "DEPERISRECEP": {
             "title": "4.1.4.1 Pratique du recépage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1303,7 +1303,7 @@
         "DEPERISREGREF": {
             "title": "4.1.4.1 Pratique du regreffage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1314,7 +1314,7 @@
         "DEPERISMARCOT": {
             "title": "4.1.4.1 Pratique du marcottage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1325,7 +1325,7 @@
         "DEPERISCOMPLANT": {
             "title": "4.1.4.1 Pratique de la complantation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1336,7 +1336,7 @@
         "DEPERISCURET": {
             "title": "4.1.4.1 Pratique du curetage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1358,7 +1358,7 @@
         "RECOLT": {
             "title": "5.1 Récolte de la parcelle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1402,7 +1402,7 @@
         "RENDMAXVI": {
             "title": "5.2 Rendement maximum autorisé en vin",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1413,7 +1413,7 @@
         "RENDMAXRAIS": {
             "title": "5.2 Rendement maximum autorisé en raisin",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1424,7 +1424,7 @@
         "RENDMAXALC": {
             "title": "5.2 Rendement maximum autorisé en hl d'alcool pur",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1435,7 +1435,7 @@
         "OBJRENDVI": {
             "title": "5.3 Objectif de rendement en vin",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1446,7 +1446,7 @@
         "OBJRENDRAIS": {
             "title": "5.3 Objectif de rendement en raisin",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1457,7 +1457,7 @@
         "OBJRENDALC": {
             "title": "5.3 Objectif de rendement en hl d'alcool pur",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1468,7 +1468,7 @@
         "RENDVIN": {
             "title": "5.4 Rendement agronomique en vin",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1479,7 +1479,7 @@
         "RENDRAIS": {
             "title": "5.4 Rendement agronomique en raisin",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1490,7 +1490,7 @@
         "RENDALC": {
             "title": "5.4 Rendement agronomique en hl d'alcool pur",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1512,7 +1512,7 @@
         "EXCEPALEA": {
             "title": "5.6 Perte de production d'au moins 30 %",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1523,7 +1523,7 @@
         "INTEMP": {
             "title": "5.6.1 Influence de la perte sur les pratiques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1556,7 +1556,7 @@
         "CLIMAALEA": {
             "title": "5.6.2 Perte causée par un facteur climatique",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1567,7 +1567,7 @@
         "SANIALEA": {
             "title": "5.6.2 Perte causée par un facteur sanitaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1578,7 +1578,7 @@
         "HUMAINALEA": {
             "title": "5.6.2 Perte causée par un facteur humain",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1589,7 +1589,7 @@
         "PRINTALEA": {
             "title": "5.6.2 Perte causée par la hausse du prix des intrants",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1600,7 +1600,7 @@
         "TRESOALEA": {
             "title": "5.6.2 Perte causée par un manque de trésorerie",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1611,7 +1611,7 @@
         "AUTREALEA": {
             "title": "5.6.2 Perte causée par un autre facteur",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1622,7 +1622,7 @@
         "PRETAIL": {
             "title": "6.1 Pré-taillage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1677,7 +1677,7 @@
         "PLAIETAIL": {
             "title": "6.4 Application d'un produit sur les plaies de taille",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1710,7 +1710,7 @@
         "EBOUMANU": {
             "title": "7.1 Nombre d'ébourgeonnages manuels",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1721,7 +1721,7 @@
         "EBOUMECA": {
             "title": "7.1 Nombre d'ébourgeonnages mécaniques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1732,7 +1732,7 @@
         "NBOPEBOURG": {
             "title": "7.1 Nombre d'opérations d'ébourgeonnage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1743,7 +1743,7 @@
         "EPAMMANU": {
             "title": "7.1 Nombre d'épamprages manuels",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1754,7 +1754,7 @@
         "EPAMMECA": {
             "title": "7.1 Nombre d'épamprages mécaniques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1765,7 +1765,7 @@
         "EPAMCHIM": {
             "title": "7.1 Nombre d'épamprages chimiques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1776,7 +1776,7 @@
         "NBOPEPAMP": {
             "title": "7.1 Nombre d'opérations d'épamprage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1787,7 +1787,7 @@
         "PALIMANU": {
             "title": "7.1 Nombre de palissages manuels",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1798,7 +1798,7 @@
         "PALIMECA": {
             "title": "7.1 Nombre de palissages mécaniques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1809,7 +1809,7 @@
         "NBOPALIS": {
             "title": "7.1 Nombre d'opérations de palissage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1820,7 +1820,7 @@
         "ROGNMANU": {
             "title": "7.1 Nombre de rognages/écimages manuels",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1831,7 +1831,7 @@
         "ROGNMECA": {
             "title": "7.1 Nombre de rognages/écimages mécaniques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1842,7 +1842,7 @@
         "NBOPROGN": {
             "title": "7.1 Nombre d'opérations de de rognage/écimage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1853,7 +1853,7 @@
         "EFFEMANU": {
             "title": "7.1 Nombre d'effeuillages manuels",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1864,7 +1864,7 @@
         "EFFEMECA": {
             "title": "7.1 Nombre d'effeuillages mécaniques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1875,7 +1875,7 @@
         "EFFETHER": {
             "title": "7.1 Nombre d'effeuillages thermiques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1886,7 +1886,7 @@
         "NBOPEFFEUIL": {
             "title": "7.1 Nombre d'opérations d'effeuillage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1897,7 +1897,7 @@
         "VEVEMANU": {
             "title": "7.1 Nombre d'éclaircissages manuels",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1908,7 +1908,7 @@
         "VEVEMECA": {
             "title": "7.1 Nombre d'éclaircissages mécaniques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1919,7 +1919,7 @@
         "VEVECHIM": {
             "title": "7.1 Nombre d'éclaircissages chimiques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1930,7 +1930,7 @@
         "NBOPECLAIR": {
             "title": "7.1 Nombre d'opérations d'éclaircissage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1941,7 +1941,7 @@
         "NBPASMAN": {
             "title": "7.1 Nombre d'opérations manuelles",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1952,7 +1952,7 @@
         "NBPASMEC": {
             "title": "7.1 Nombre d'opérations mécaniques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1963,7 +1963,7 @@
         "NBPASTHERM": {
             "title": "7.1 Nombre d'opérations thermiques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1974,7 +1974,7 @@
         "NBPASCHIM": {
             "title": "7.1 Nombre d'opérations chimiques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1996,7 +1996,7 @@
         "ENHERBTOURN": {
             "title": "8.1 Enherbement des tournières",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2007,7 +2007,7 @@
         "ENHERBSR19": {
             "title": "8.2.1 Enherbement sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2029,7 +2029,7 @@
         "ENHERBIR19": {
             "title": "8.3.1 Enherbement sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2161,7 +2161,7 @@
         "ENHERBROTATION": {
             "title": "8.4 Rotation de l'enherbement inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2194,7 +2194,7 @@
         "TYPENHERBSRNUM": {
             "title": "8.2.3 Modalité d'enherbement sous le rang (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2205,7 +2205,7 @@
         "TYPENHERBSRDENOM": {
             "title": "8.2.3 Modalité de l'enherbement sous le rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2216,7 +2216,7 @@
         "LARGENHERBSR": {
             "title": "8.2.4 Largeur de l'enherbement sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2227,7 +2227,7 @@
         "TYPENHERBNUM": {
             "title": "8.3.3 Modalité de l'enherbement sur l'inter-rang (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2238,7 +2238,7 @@
         "TYPENHERBDENOM": {
             "title": "8.3.3  Modalité de l'enherbement sur l'inter-rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2249,7 +2249,7 @@
         "TYPENHERBEVNUM": {
             "title": "8.3.3  Modalité de l'enherbement sur l'inter-rang de type engrais vert (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2260,7 +2260,7 @@
         "TYPENHERBEVDENOM": {
             "title": "8.3.3 Modalité de l'enherbement sur l'inter-rang de type engrais vert (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2271,7 +2271,7 @@
         "TYPENHERBNUMTPSE": {
             "title": "8.3.3 Modalité de l'enherbement sur l'inter-rang de type temporaire semé",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2282,7 +2282,7 @@
         "TYPENHERBDENOMTPSE": {
             "title": "8.3.3 Modalité de l'enherbement sur l'inter-rang de type autre temporaire semé",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2293,7 +2293,7 @@
         "LARGENHERB": {
             "title": "8.3.4 Largeur de l'enherbement sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2304,7 +2304,7 @@
         "LARGENHERBEV": {
             "title": "8.3.4 Largeur de l'enherbement sur l'inter-rang de type engrais vert",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2315,7 +2315,7 @@
         "LARGENHERBTPSE": {
             "title": "8.3.4 Largeur de l'enherbement sur l'inter-rang de type temporaire semé",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2370,7 +2370,7 @@
         "STRESS": {
             "title": "10.2 Stress hydrique plus fort qu'habituellement",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2414,7 +2414,7 @@
         "FLAVE": {
             "title": "10.5 Nombre de traitements obligatoires contre les cicadelles de la flavescence dorée",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2568,7 +2568,7 @@
         "RAISOBJREND": {
             "title": "13.1 Stratégie reposant sur un objectif de rendement",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2579,7 +2579,7 @@
         "RAISANATER": {
             "title": "13.1 Stratégie reposant sur une analyse de terre",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2590,7 +2590,7 @@
         "RAISANAFOL": {
             "title": "13.1 Stratégie reposant sur une analyse foliaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2601,7 +2601,7 @@
         "RAISCOMPVIG": {
             "title": "13.1 Stratégie reposant sur l'observation de la vigne",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2612,7 +2612,7 @@
         "RAISCOUT": {
             "title": "13.1 Stratégie reposant sur le coût de la fertilisation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2623,7 +2623,7 @@
         "RAISINDIC": {
             "title": "13.1 Stratégie reposant sur un autre indicateur ou outil",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2645,7 +2645,7 @@
         "RAISHIST": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur les connaissances historiq",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2656,7 +2656,7 @@
         "RAISOBS": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur les observations des malad",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2667,7 +2667,7 @@
         "RAISCRAV": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur les comptages des ravageur",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2678,7 +2678,7 @@
         "RAISAUX": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur les comptages des auxiliai",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2689,7 +2689,7 @@
         "RAISMETEO": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur les prévisions météorologi",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2700,7 +2700,7 @@
         "RAISBSV": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur les bulletins de santé du",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2711,7 +2711,7 @@
         "RAISFIURN": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur les conseils de vos fourni",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2722,7 +2722,7 @@
         "RAISINDEP": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur les conseils indépendants",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2733,7 +2733,7 @@
         "RAISEXP": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur l'expérience d'autres vit",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2744,7 +2744,7 @@
         "RAISOAD": {
             "title": "13.2 Déclenchement des opérations de protection des cultures reposant sur les outils d'Aide à la Déc",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2766,7 +2766,7 @@
         "IFTCONNAIS": {
             "title": "13.4 Connaissance de l'indicateur de fréquence de traitement (IFT)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2777,7 +2777,7 @@
         "IFTANNEE": {
             "title": "13.5 Utilisation annuelle de l'IFT",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2788,7 +2788,7 @@
         "ECOPHYTOPIC": {
             "title": "13.6 Consultation du portail EcophytoPIC",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2799,7 +2799,7 @@
         "DEPHY": {
             "title": "13.7 Participation à des démonstrations ou visites des fermes du réseau DEPHY, « groupes des 30 000 ",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2810,7 +2810,7 @@
         "REDUCTIPP": {
             "title": "13.8 Mise en œuvre d'une ou plusieurs pratiques visant à limiter l'utilisation des produits phytopha",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2821,7 +2821,7 @@
         "REDUCMAT": {
             "title": "13.8.1 Adaptation du matériel (ex : panneaux récupérateurs, fermeture des buses)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2832,7 +2832,7 @@
         "REDUCCEP": {
             "title": "13.8.1 Choix des cépages et porte-greffes selon leur résistance ou sensibilité à certaines maladies",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2843,7 +2843,7 @@
         "REDUCAMENAUX": {
             "title": "13.8.1 Maintien ou développement d'auxiliaires prédateurs",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2854,7 +2854,7 @@
         "REDUCAJAUX": {
             "title": "13.8.1 Utilisation d'autres produits de biocontrôle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2865,7 +2865,7 @@
         "REDUCDIFF": {
             "title": "13.8.1 Utilisation de diffuseurs de phéromones (confusion sexuelle pour lutter contre les tordeuses)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2898,7 +2898,7 @@
         "REDUCDOSE": {
             "title": "13.8.1 Réduction de la dose appliquée par passage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2909,7 +2909,7 @@
         "REDUCTRAITEAU": {
             "title": "13.8.1 Traitement de l'eau (correction du pH) avant de préparer la bouillie de traitement",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2920,7 +2920,7 @@
         "REDUCOPMM": {
             "title": "13.8.1 Mise en oeuvre d'opérations mécaniques et,ou manuelles",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2931,7 +2931,7 @@
         "ENTREPULV": {
             "title": "14.1 Réalisation de toutes les pulvérisations par une entreprise",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2942,7 +2942,7 @@
         "PULVDIFF": {
             "title": "14.3 Choix du pulvérisateur utilisé sur la parcelle en fonction du stade de développement de la vign",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2964,7 +2964,7 @@
         "AGEPULV": {
             "title": "14.4.2 Age du pulvérisateur (nombre d’années)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -2986,7 +2986,7 @@
         "VERIFBUSE": {
             "title": "14.4.4 Contrôle annuel du débit des buses ou des pastilles du pulvérisateur (hors contrôle obligatoi",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3019,7 +3019,7 @@
         "ANTIDERIV": {
             "title": "14.4.7 Homologation du pulvérisateur comme limitant la dérive de pulvérisation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3030,7 +3030,7 @@
         "DPAE": {
             "title": "14.4.8 Equipement du pulvérisateur avec un DPAE (Dispositif Proportionnel à l'Avancement Électroniqu",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3041,7 +3041,7 @@
         "NBRANGTDV": {
             "title": "14.4.9 Nombre de rangs traités par passage pour une vigne en début de végétation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3052,7 +3052,7 @@
         "NBRANGT": {
             "title": "14.4.9 Nombre de rangs traités par passage pour une vigne en pleine de végétation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3063,7 +3063,7 @@
         "VITPULVDV": {
             "title": "14.4.10 Vitesse d'avancement moyenne du pulvérisateur (km/h) pour une vigne en début de végétation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3074,7 +3074,7 @@
         "VITPULV": {
             "title": "14.4.10 Vitesse d'avancement moyenne du pulvérisateur (km/h) pour une vigne en pleine de végétation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3096,7 +3096,7 @@
         "NBPULV": {
             "title": "NBPULV",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3107,7 +3107,7 @@
         "NBPULVHH": {
             "title": "14.2 Nombre de pulvérisateurs sur la parcelle pour les traitements hors herbicides",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3151,7 +3151,7 @@
         "PROTECTGANT": {
             "title": "15.2 Protection utilisée : gants",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3162,7 +3162,7 @@
         "PROTECTVET": {
             "title": "15.2 Protection utilisée : vêtement de protection",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3173,7 +3173,7 @@
         "PROTECTLUN": {
             "title": "15.2 Protection utilisée : lunettes/visières de protection",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3184,7 +3184,7 @@
         "PROTECTMASQ": {
             "title": "15.2 Protection utilisée : masque",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3195,7 +3195,7 @@
         "PROTECTBOTT": {
             "title": "15.2 Protection utilisée : bottes",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3217,7 +3217,7 @@
         "PROTECTAUTO": {
             "title": "15.4 Présence d'une cabine sur le tracteur ou sur le pulvérisateur automoteur (hors pulvérisation à",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3283,7 +3283,7 @@
         "DELAIREENTREE": {
             "title": "15.10 Observation d'un délai de réentrée suite à un traitement",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3327,7 +3327,7 @@
         "LOGICIEL": {
             "title": "16.1 Utilisation d'un logiciel professionnel de gestion parcellaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3338,7 +3338,7 @@
         "DONNEES": {
             "title": "16.1.2 Communication des données au SSP à des fins statistiques",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3349,7 +3349,7 @@
         "APPLIMOBILE": {
             "title": "16.2 Utilisation d'une application mobile",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3360,7 +3360,7 @@
         "CAPTEURS": {
             "title": "16.3 Utilisation de capteur(s)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3371,7 +3371,7 @@
         "CAPTELE": {
             "title": "16.3.1 Utilisation d'un capteur de télédetection",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3382,7 +3382,7 @@
         "CAPTPROXI": {
             "title": "16.3.1 Utilisation d'un capteur de proxidétection",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3393,7 +3393,7 @@
         "CAPTSOL": {
             "title": "16.3.1 Utilisation d'un capteur de caractérisation des sols",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3404,7 +3404,7 @@
         "CAPTVIGNE": {
             "title": "16.3.1 Utilisation d'un capteur de caractérisation de la vigne",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3415,7 +3415,7 @@
         "CAPTMETEO": {
             "title": "16.3.1 Utilisation d'une station météo",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3426,7 +3426,7 @@
         "CAPTGPS": {
             "title": "16.3.1 Utilisation d'un GPS",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3437,7 +3437,7 @@
         "CAPTAUTR": {
             "title": "16.3.1 Utilisation d'un autre type de capteur",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3459,7 +3459,7 @@
         "SERVINFRA": {
             "title": "SERVINFRA",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3470,7 +3470,7 @@
         "ROBOTENTR": {
             "title": "16.5.1 Assistance à l'entretien de la parcelle (désherbage mécanique, tonte…)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3481,7 +3481,7 @@
         "ROBOTVENDANG": {
             "title": "16.5.1 Assistance à la vendange (port de charge)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3492,7 +3492,7 @@
         "ROBOTPK": {
             "title": "16.5.1 Assistance aux pratiques culturales :opérations en vert (épamprage, effeuillage, prétaillage)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3503,7 +3503,7 @@
         "ROBOTCONDUITE": {
             "title": "16.5.1 Assistance à la conduite de la culture (vigueur, carences, pieds manquants, maladies)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3514,7 +3514,7 @@
         "ROBOTAUTR": {
             "title": "16.5.1 Autre type d'utilisation de robots au cours des 5 années précédentes",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3547,7 +3547,7 @@
         "ROBOT": {
             "title": "16.5 Utilisation de robots dans les 5 années précédentes",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3580,7 +3580,7 @@
         "ROBOTPREV": {
             "title": "16.6 Envisage l'utilisation de robots dans les 5 ans à venir",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3591,7 +3591,7 @@
         "ROBOTENTRPREV": {
             "title": "16.6.1 Assistance à l'entretien de la parcelle (désherbage mécanique, tonte…)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3602,7 +3602,7 @@
         "ROBOTVENDANGPREV": {
             "title": "16.6.1 Assistance à la vendange (port de charge)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3613,7 +3613,7 @@
         "ROBOTPKPREV": {
             "title": "16.6.1 Assistance aux pratiques culturales :opérations en vert (épamprage, effeuillage, prétaillage)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3624,7 +3624,7 @@
         "ROBOTCONDUITEPREV": {
             "title": "16.6.1 Assistance à la conduite de la culture (vigueur, carences, pieds manquants, maladies)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3635,7 +3635,7 @@
         "ROBOTAUTRPREV": {
             "title": "16.6.1 Autre type d'utilisation de robots dans les 5 années à venir",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3756,7 +3756,7 @@
         "ENT_DUREE_TOT": {
             "title": "Durée totale de l'entretien",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3778,7 +3778,7 @@
         "ABANDON_BC": {
             "title": "Abandon en cours d'entretien",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3822,7 +3822,7 @@
         "EXPPHYTO": {
             "title": "Expertise sur les opérations de protection des cultures",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3833,7 +3833,7 @@
         "EXPFERTI": {
             "title": "Expertise sur les opération de fertilisation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -3844,7 +3844,7 @@
         "EXPAUTRES": {
             "title": "Expertise sur autres opérations",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,

@@ -16,7 +16,7 @@
         "COEF": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -27,7 +27,7 @@
         "COEF2": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -49,7 +49,7 @@
         "ID_LIGNE": {
             "title": "numéro de ligne de l'opération culturale (numérotation des opérations sur une même parcelle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -137,7 +137,7 @@
         "FUMODOS": {
             "title": "11.1 Quantité de fumure organique par ha",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -148,7 +148,7 @@
         "QNORG": {
             "title": "11.2 Teneur en azote",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -159,7 +159,7 @@
         "QPORG": {
             "title": "11.2 Teneur en phosphore",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -170,7 +170,7 @@
         "QKORG": {
             "title": "11.2 Teneur en potassium",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -225,7 +225,7 @@
         "FUMDOS": {
             "title": "11.2 Quantité d'engrais (en Kg ou L)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -313,7 +313,7 @@
         "FUMQN": {
             "title": "11.2 Quantité d'azote comprise dans l'engrais (en Kg par hectare)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -324,7 +324,7 @@
         "FUMQP": {
             "title": "11.2 Quantité de phosphore comprise dans l'engrais (en Kg par hectare)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -335,7 +335,7 @@
         "FUMQK": {
             "title": "11.2 Quantité de potassium comprise dans l'engrais (en Kg par hectare)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -346,7 +346,7 @@
         "FUMQS": {
             "title": "11.2 Quantité de soufre comprise dans l'engrais (en Kg par hectare)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -357,7 +357,7 @@
         "FUMMG": {
             "title": "11.2 Quantité de magnésium comprise dans l'engrais (en Kg par hectare)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -379,7 +379,7 @@
         "CIBEPA": {
             "title": "11.4 Cible épamprage",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -390,7 +390,7 @@
         "CIBMIL": {
             "title": "11.4 Cible mildiou",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -401,7 +401,7 @@
         "CIBOID": {
             "title": "11.4 Cible oïdium",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -412,7 +412,7 @@
         "CIBBOT": {
             "title": "11.4 Cible botrytis",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -423,7 +423,7 @@
         "CIBBLR": {
             "title": "11.4 Cible black rot",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -434,7 +434,7 @@
         "CIBEXC": {
             "title": "11.4 Cible excoriose",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -445,7 +445,7 @@
         "CIBACT": {
             "title": "11.4 Cible nécrose bactérienne",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -456,7 +456,7 @@
         "CIBESCA": {
             "title": "11.4 Cible esca  (maladie du bois)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -467,7 +467,7 @@
         "CIBBDA": {
             "title": "11.4 Cible black dead arm  (maladie du bois)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -478,7 +478,7 @@
         "CIBEUT": {
             "title": "11.4 Cible eutypiose (maladie du bois)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -489,7 +489,7 @@
         "CIBAUTMAL": {
             "title": "11.4 Cible autres champignons parasites",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -500,7 +500,7 @@
         "CIBCICFD": {
             "title": "11.4 Cible cicadelle de la flavsecence dorée",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -511,7 +511,7 @@
         "CIBCICV": {
             "title": "11.4 Cible cicadelle verte",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -522,7 +522,7 @@
         "CIBTORD": {
             "title": "11.4 Cible tordeuse",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -533,7 +533,7 @@
         "CIBACA": {
             "title": "11.4 Cible acariens",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -544,7 +544,7 @@
         "CIBAIN": {
             "title": "11.4 Cible autres insectes et acariens",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -555,7 +555,7 @@
         "CIBADJ": {
             "title": "11.4 Cible adjuvant",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -566,7 +566,7 @@
         "CIBSUB": {
             "title": "11.4 Cible substance de croissance",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -577,7 +577,7 @@
         "CIBSDN": {
             "title": "11.4 Cible stimulateur de défense naturelle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -588,7 +588,7 @@
         "CIBAUT": {
             "title": "11.4 Cible autres traitements",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -599,7 +599,7 @@
         "CIBFERT": {
             "title": "11.4 Cible fertilisant",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -643,7 +643,7 @@
         "DOSESAIS": {
             "title": "11.4 Dose utilisée par le viticulteur",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -676,7 +676,7 @@
         "PHYTOBOUIL": {
             "title": "11.4 Quantité de bouillie utilisée",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -698,7 +698,7 @@
         "FUMOCONNAIS": {
             "title": "11.1 Connaissance des teneurs en N ou P ou K ou Mg",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -764,7 +764,7 @@
         "FOLDOS": {
             "title": "11.3 Quantité de fertilisant foliaire par ha",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -786,7 +786,7 @@
         "FOLINDN": {
             "title": "11.3 Présence de N dans fertilisant foliaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -797,7 +797,7 @@
         "FOLINDP": {
             "title": "11.3 Présence de P dans fertilisant foliaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -808,7 +808,7 @@
         "FOLINDK": {
             "title": "11.3 Présence de K dans fertilisant foliaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -819,7 +819,7 @@
         "FOLINDS": {
             "title": "11.3 Présence de S dans fertilisant foliaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -830,7 +830,7 @@
         "FOLINDMG": {
             "title": "11.3 Présence de Mg dans fertilisant foliaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -841,7 +841,7 @@
         "FOLINDCU": {
             "title": "11.3 Présence de Cu dans fertilisant foliaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -852,7 +852,7 @@
         "FOLCONNAIS": {
             "title": "11.3  Connaissance des teneurs en N ou P ou K ou S ou MgO",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -874,7 +874,7 @@
         "FOLTENCU": {
             "title": "11.3 teneur en Cu du fertilisant foliaire en kg/T ou kg/m³",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -896,7 +896,7 @@
         "VALID_DOSE": {
             "title": "Sous-dosage ou sur-dosage validé (validation régionale ou nationale) ou pas",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -907,7 +907,7 @@
         "CHAMP_IFT": {
             "title": "Traitement entrant dans le champ de calcul de l'IFT total",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -951,7 +951,7 @@
         "DOSE_EQUI": {
             "title": "Pour les traitements dont NATTRAIT prend la modalité \"2, dose calculée en équivalent du produit cuprique ou soufré de référence (cf. note de validation nationale - chapitre X)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -962,7 +962,7 @@
         "BIOCONTROLE": {
             "title": "Indicatrice d'un produit de biocontrôle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -973,7 +973,7 @@
         "DOSESAISH_HA": {
             "title": "Dose saisie (éventuellement convertie) en L ou Kg par hectare",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -984,7 +984,7 @@
         "DOSEREF_HA": {
             "title": "Dose de référence (éventuellement convertie) en L ou Kg par hectare",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1006,7 +1006,7 @@
         "IFT": {
             "title": "IFT du traitement phytosanitaire (si CHAMP_IFT est Vrai)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,

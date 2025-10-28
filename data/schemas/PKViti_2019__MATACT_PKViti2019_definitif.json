@@ -16,7 +16,7 @@
         "COEF": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -27,7 +27,7 @@
         "COEF2": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -60,7 +60,7 @@
         "QDOSEMATACT": {
             "title": "Quantité de matière active administrée par hectare de parcelle (en g/ha). Pour obtenir la quantité en g, multiplier par la surface de la parcelle : SUPP2019. Lorsque la matière active n'a pu être exprimée en g/ha, la donnée est absente (cas de certains micro-organismes notamment).",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -71,7 +71,7 @@
         "NBPASMATACT": {
             "title": "Nombre de traitements (et non de passages) effectués sur la parcelle avec un produit contenant la matière active",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -82,7 +82,7 @@
         "HERBICIDE": {
             "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type herbicide",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -93,7 +93,7 @@
         "INSECTICIDE": {
             "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type insecticide",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -104,7 +104,7 @@
         "FONGICIDE": {
             "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type fongicide",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -115,7 +115,7 @@
         "AUTRE": {
             "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement autre que fongicide, insecticide ou herbicide",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,

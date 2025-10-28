@@ -34,11 +34,23 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
         )
         if user_text_input:
             df = df[
-                (df[COLNAME_OUT_LIBELLE].astype(str).str.lower().str.contains(user_text_input))
-                | (df[COLNAME_OUT_VARIABLE].astype(str).str.lower().str.contains(user_text_input))
+                (
+                    df[COLNAME_OUT_LIBELLE]
+                    .astype(str)
+                    .str.lower()
+                    .str.contains(user_text_input)
+                )
+                | (
+                    df[COLNAME_OUT_VARIABLE]
+                    .astype(str)
+                    .str.lower()
+                    .str.contains(user_text_input)
+                )
             ]
         # Optional filters
-        modify = st.checkbox("Ajout d'un filtre par table ou par base de données")
+        modify = st.checkbox(
+            "Ajout d'un filtre par table ou par base de données"
+        )
         if modify:
             # Filter on database
             db_choices = list(df[COLNAME_OUT_DB].unique())

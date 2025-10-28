@@ -1,0 +1,30 @@
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "NOM_SUBSTANCE": {
+            "title": "Nom de la substance active",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "Phytofruits_2018__phytofruits18_AMM_SA &phytofruits18_MATACT",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table phytofruits18_AMM_SA &phytofruits18_MATACT from data dictionary Phytofruits_2018"
+}

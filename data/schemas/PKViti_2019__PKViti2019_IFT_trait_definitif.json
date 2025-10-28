@@ -16,7 +16,7 @@
         "COEF": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -27,7 +27,7 @@
         "COEF2": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -38,7 +38,7 @@
         "IFTTOT": {
             "title": "IFT global sur la parcelle (tous types de traitements confondus)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -49,7 +49,7 @@
         "IFTHERB": {
             "title": "IFT herbicides sur la parcelle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -60,7 +60,7 @@
         "IFTFONG": {
             "title": "IFT fongicides sur la parcelle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -71,7 +71,7 @@
         "IFTINS": {
             "title": "IFT insecticides sur la parcelle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -82,7 +82,7 @@
         "IFTAUT": {
             "title": "IFT autres sur la parcelle (autres traitements qu'herbicides, fongicides ou insecticides)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -93,7 +93,7 @@
         "IFTTOTBIO": {
             "title": "IFT global sur la parcelle (tous types de traitements mais uniquement avec des produits de biocontrôle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -104,7 +104,7 @@
         "IFTFONGBIO": {
             "title": "IFT fongicides (uniquement produits de biocontrôle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -115,7 +115,7 @@
         "IFTINSBIO": {
             "title": "IFT insecticides (uniquement produits de biocontrôle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -126,7 +126,7 @@
         "IFTAUTBIO": {
             "title": "IFT autres (uniquement produits de biocontrôle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -137,7 +137,7 @@
         "IFTTOTNBIO": {
             "title": "IFT global hors produits de biocontrôle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -148,7 +148,7 @@
         "IFTFONGNBIO": {
             "title": "IFT fongicides hors produits de biocontrôle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -159,7 +159,7 @@
         "IFTINSNBIO": {
             "title": "IFT insecticides hors produits de biocontrôle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -170,7 +170,7 @@
         "IFTAUTNBIO": {
             "title": "IFT autres hors produits de biocontrôle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -181,7 +181,7 @@
         "IFTTOTHORSHERB": {
             "title": "IFT global hors herbicides",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -192,7 +192,7 @@
         "IFTTOTNBIOHORSHERB": {
             "title": "IFT global hors produits de biocontrôle et hors herbicides",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -203,7 +203,7 @@
         "NB_TOT": {
             "title": "nombre total de traitements (hors adjuvants)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -214,7 +214,7 @@
         "NB_HERB": {
             "title": "nombre de traitements aux herbicides",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -225,7 +225,7 @@
         "NB_FONG": {
             "title": "nombre de traitements aux fongicides",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -236,7 +236,7 @@
         "NB_INS": {
             "title": "nombre de traitements aux insecticides",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -247,7 +247,7 @@
         "NB_AUT": {
             "title": "nombre de traitements autres",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -258,7 +258,7 @@
         "NB_ADJ": {
             "title": "nombre de traitements adjuvants",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -269,7 +269,7 @@
         "NB_TOTADJ": {
             "title": "nombre total de traitements (adjuvants compris)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -280,7 +280,7 @@
         "NB_BIO": {
             "title": "nombre de traitements par un produit de biocontrôle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,

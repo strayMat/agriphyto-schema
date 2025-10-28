@@ -10,23 +10,34 @@ DIR2DICO = DIR2DATA / "raw"
 DIR2SCHEMA = DIR2DATA / "schemas"
 DIR2NOMENCLATURES = DIR2DATA / "nomenclatures"
 
+FILENAME_NOMENCLATURES = "all_nomenclatures.csv"
 
 COLNAME_TABLE = "table"
 COLNAME_VARIABLE = "variable"
 COLNAME_LIBELLE = "label"
 COLNAME_TYPE = "type"
 COLNAME_NOMENCLATURE = "nomenclature"
-COLNAME_NOMENCLATURE_2 = "nomenclature_2"  # sometimes two columns are used for nomenclature...
 COLNAME_CODE = "modality_code"
+COLNAME_NOMENCLATURE_2 = (
+    "nomenclature_2"  # sometimes two columns are used for nomenclature...
+)
 COLNAME_PANDERA_TYPE = "pandera_type"
 
 # Simple mapping Excel type -> Pandera type
 MAP_TYPES = {
     "Numérique": "float",
+    "numérique": "float",
+    "Decimal": "float",
     "NumericalCode": "int",
+    "PositiveInteger": "int",
+    "Comment": "string",
+    "Integer": "int",
     "Entier": "int",
     "OuiNon": "bool",
     "Booléen": "bool",
+    "Boolean": "bool",
+    "String": "string",
+    "Code": "string",
     "Charactères": "string",
     "Caractère": "string",
     "Chaîne": "string",
@@ -36,21 +47,23 @@ MAP_TYPES = {
 # Configurations for loaded dictionaries
 # TODO: document this better or put this into a documented config class
 AVAILABLE_DICOS = {
+    # I replaced manually "IDENTIFICATIION" by "IDADMIN" in the nomenclature sheet to be consistent
+    #  with the variable sheet
     "RA_2020": {
         "filename": "RA2020_Dictionnaire des variables_220415_CASD.xlsx",
         "variable_sheet": "1_DICO_Variables",
         "skiprows": 3,
         "nomenclature_sheet": "2_MODALITES_Variables",
-        "skiprows_nomenclatures": 2,
+        "skiprows_nomenclature": 2,
         "cols_to_use": {
             "TABLE_DIFFUSION": COLNAME_TABLE,
             "VARIABLE_DIFFUSION": COLNAME_VARIABLE,
             "LIBELLE": COLNAME_LIBELLE,
             "TYPE": COLNAME_TYPE,
         },
-        "modalites_cols_to_use": {
+        "cols_to_use_nomenclature": {
             "TABLE": COLNAME_TABLE,
-            "VARIABLE et MODALITES par table  ": COLNAME_VARIABLE,
+            "VARIABLE et MODALITES par table  ": COLNAME_CODE,
             "LIBELLE": COLNAME_LIBELLE,
         },
         "encoding": "latin1",
@@ -74,11 +87,23 @@ AVAILABLE_DICOS = {
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
     },
-    "PKGC_2014": {
+    "PhytoGC_2014": {
         "filename": "Pratiques_phytosanitaires_en_grandes_cultures_-_2014.csv",
         "skiprows": 8,
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
+    },
+    "Phytofruits_2018": {
+        "filename": "Phytofruits18_dico_variables_casd.ods",
+        "variable_sheet": "data",
+        "cols_to_use": {
+            "Fichier": COLNAME_TABLE,
+            "NOM_variable": COLNAME_VARIABLE,
+            "LIBELLE": COLNAME_LIBELLE,
+            "TYPE": COLNAME_TYPE,
+            "NOMENCLATURE": COLNAME_NOMENCLATURE,
+        },
+        "parser": "dico_from_excel",
     },
     "PKfruits_2015": {
         "filename": "20210726_PKfruits2015_dico_variables.ods",
@@ -105,7 +130,9 @@ AVAILABLE_DICOS = {
         },
         "parser": "dico_from_excel",
     },
-    "PKViti_2019": {  # I manually searched and replaced all ";" code-lable separators in the modalities column with ":" to avoid confusion with the ";" used to separate modalities
+    # I manually searched and replaced all ";" code-lable separators in the modalities column
+    # with ":" to avoid confusion with the ";" used to separate modalities
+    "PKViti_2019": {
         "filename": "PKViti2019_dico_variables_definitif.ods",
         "variable_sheet": [
             "PKViti2019_definitif",
@@ -123,7 +150,9 @@ AVAILABLE_DICOS = {
         },
         "parser": "dico_from_excel",
     },
-    "PKGC_2017": {  # I manually searched and replaced all ";" code-lable separators in the modalities column with ":" to avoid confusion with the ";" used to separate modalities
+    # I manually searched and replaced all ";" code-lable separators in the modalities column
+    # with ":" to avoid confusion with the ";" used to separate modalities
+    "PKGC_2017": {
         "filename": "PKGC2017_dico_variables.ods",
         "variable_sheet": "PKGC2017_dicoVar_global",
         "cols_to_use": {
@@ -134,12 +163,15 @@ AVAILABLE_DICOS = {
         },
         "parser": "dico_from_excel",
     },
-    # TODO:
     "Phytoleg_2018": {
-        "filename": "PKGC2017_dico_variables.ods",
-        "variable_sheet": "PKGC2017_dicoVar_global",
+        "filename": "20210930_DOC_BSVA_Dictionnaire_variables_Phytolégumes2018.ods",
+        "variable_sheet": [
+            "20210930_Phytolegumes2018_definitive",
+            "20210930_Phytolegumes2018_TTMT_Phyto_definitive",
+            "20210930_Phytolegumes2018_TTMT_MATACT",
+        ],
         "cols_to_use": {
-            "NOM_VARIABLE": COLNAME_VARIABLE,
+            "NOM": COLNAME_VARIABLE,
             "LIBELLE": COLNAME_LIBELLE,
             "TYPE": COLNAME_TYPE,
             "NOMENCLATURE": COLNAME_NOMENCLATURE,

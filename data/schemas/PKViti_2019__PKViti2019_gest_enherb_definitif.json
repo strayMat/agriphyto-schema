@@ -16,7 +16,7 @@
         "COEF": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -27,7 +27,7 @@
         "COEF2": {
             "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -49,7 +49,7 @@
         "ID_LIGNE": {
             "title": "numéro de ligne de gestion de l'enherbement (numérotation des opérations sur une même parcelle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -104,7 +104,7 @@
         "IRDISC": {
             "title": "9.0 Type de passage de gestion de l'enherbement",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -115,7 +115,7 @@
         "IRDENT": {
             "title": "9.1 Passage de dents (dont cultivateur) sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -126,7 +126,7 @@
         "IRROTA": {
             "title": "9.1 Passage d'un appareil de type rotavator sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -137,7 +137,7 @@
         "IRAUTR": {
             "title": "9.1 Passage d'un autre type d'appareil sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -148,7 +148,7 @@
         "ICLAM": {
             "title": "9.1 Passage d'un intercep à lames sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -159,7 +159,7 @@
         "ICROTA": {
             "title": "9.1 Passage d'un intercep rotatifs sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -170,7 +170,7 @@
         "ICDECA": {
             "title": "9.1 Passage de décavaillonneuse sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -181,7 +181,7 @@
         "ICAUTR": {
             "title": "9.1 Passage d'un autre type d'appareil sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -192,7 +192,7 @@
         "CIBADVENS": {
             "title": "9.2 Cible herbicides totaux (contact ou systémique)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -203,7 +203,7 @@
         "CIBADVGRAM": {
             "title": "9.2 Cible graminées annuelles",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -214,7 +214,7 @@
         "CIBADVDIC1": {
             "title": "9.2 Cible dicotylédones annuelles",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -225,7 +225,7 @@
         "CIBADVDIC2": {
             "title": "9.2 Cible dicotylédones bisannuelles",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -236,7 +236,7 @@
         "CIBADVVIV": {
             "title": "9.2 Cible vivaces",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -247,7 +247,7 @@
         "CIBDEVIT": {
             "title": "9.2 Cible dévitalisation",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -324,7 +324,7 @@
         "DOSESAISH": {
             "title": "9.2 Dose administrée par le viticulteur→ Exprimée par ha, c'est la quantité de produit par ha de surface traitée (pour retrouver la quantité de produit en kg ou l, mutiplier par la surface traitée, autrement dit par PARTDESHERB x SUPP2019)→ Exprimée par hl, c'est la quantité de produit par hl de bouillie utilisée (pour retrouver la quantité de produit en kg ou l, multiplier par le volume de bouillie, autrement dit par PHYTOBOUILH /100)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -346,7 +346,7 @@
         "PHYTOBOUILH": {
             "title": "9.2 Volume de bouillie utilisée pour passage herbicide (en litres par hectare de surface traitée)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -357,7 +357,7 @@
         "GEST3IR": {
             "title": "9.3 Passage manuel sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -368,7 +368,7 @@
         "GEST3SR": {
             "title": "9.3 Passage manuel sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -379,7 +379,7 @@
         "TONTESR": {
             "title": "9.4 Tonte sous le rang (tout type d'enherbement)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -390,7 +390,7 @@
         "TONTEIR": {
             "title": "9.4 Tonte sur l'inter-rang hors engrais vert",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -401,7 +401,7 @@
         "TONTEIREV": {
             "title": "9.4 Tonte sur l'inter-rang de type engrais vert",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -412,7 +412,7 @@
         "COUVIRMULCH": {
             "title": "9.5 Couverture de type mulch (écorce, paillage, BRF) sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -423,7 +423,7 @@
         "COUVIRTONTE": {
             "title": "9.5 Couverture de type résidus de tonte sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -434,7 +434,7 @@
         "COUVIRCOMPOST": {
             "title": "9.5 Couverture de type compost sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -445,7 +445,7 @@
         "COUVIRAUTR": {
             "title": "9.5 Couverture d'un autre type sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -467,7 +467,7 @@
         "COUVSRMULCH": {
             "title": "9.5 Couverture de type mulch (écorce, paillage, BRF) sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -478,7 +478,7 @@
         "COUVSRTONTE": {
             "title": "9.5 Couverture de type résidus de tonte sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -489,7 +489,7 @@
         "COUVSRCOMPOST": {
             "title": "9.5 Couverture de type compost sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -500,7 +500,7 @@
         "COUVSRAUTR": {
             "title": "9.5 Couverture d'un autre type sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -522,7 +522,7 @@
         "NBDESTIR": {
             "title": "Nombre de destructions et couverture du sol dans l'inter-rang (calculé)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -533,7 +533,7 @@
         "NBDESTSR": {
             "title": "Nombre de destructions et couverture du sol sous le rang (calculé)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -544,7 +544,7 @@
         "IRTHERM": {
             "title": "9.1 Passage d'un appareil thermique sur l'inter-rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -555,7 +555,7 @@
         "ICTHERM": {
             "title": "9.1 Passage d'un appareil thermique sous le rang",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -577,7 +577,7 @@
         "GEST2IRNUM": {
             "title": "9.2 Modalité du passage sur l'inter-rang (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -588,7 +588,7 @@
         "GEST2IRDENOM": {
             "title": "9.2 Modalité du passage sur l'inter-rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -599,7 +599,7 @@
         "GEST2SRNUM": {
             "title": "9.2 Modalité du passage sous le rang (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -610,7 +610,7 @@
         "GEST2SRDENOM": {
             "title": "9.2 Modalité du passage sous le rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -621,7 +621,7 @@
         "GEST1IRNUM": {
             "title": "9.1 Modalité du passage sur l'inter-rang (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -632,7 +632,7 @@
         "GEST1IRDENOM": {
             "title": "9.1 Modalité du passage sur l'inter-rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -643,7 +643,7 @@
         "GEST1SRNUM": {
             "title": "9.1 Modalité du passage sous le rang (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -654,7 +654,7 @@
         "GEST1SRDENOM": {
             "title": "9.1 Modalité du passage sous le rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -665,7 +665,7 @@
         "GEST3IRNUM": {
             "title": "9.3 Modalité du passage manuel sur l'inter-rang (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -676,7 +676,7 @@
         "GEST3IRDENOM": {
             "title": "9.3 Modalité du passage manuel sur l'inter-rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -687,7 +687,7 @@
         "GEST3SRNUM": {
             "title": "9.3 Modalité du passage manuel sous le rang (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -698,7 +698,7 @@
         "GEST3SRDENOM": {
             "title": "9.3 Modalité du passage manuel sous le rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -709,7 +709,7 @@
         "GEST5IRNUM": {
             "title": "GEST5IRNUM",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -720,7 +720,7 @@
         "GEST5IRDENOM": {
             "title": "9.5 Modalité de la couverture sur l'inter-rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -731,7 +731,7 @@
         "GEST5SRNUM": {
             "title": "9.5 Modalité de la couverture sous le rang (numérateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -742,7 +742,7 @@
         "GEST5SRDENOM": {
             "title": "9.5 Modalité de la couverture sous le rang (dénominateur)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -753,7 +753,7 @@
         "CIBADJH": {
             "title": "9.2 Cible adjuvant",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -786,7 +786,7 @@
         "VALID_DOSE": {
             "title": "Sous-dosage ou sur-dosage validé (validation régionale ou nationale)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -797,7 +797,7 @@
         "CHAMP_IFT": {
             "title": "Traitement entrant dans le champ de calcul de l'IFT global",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -808,7 +808,7 @@
         "BIOCONTROLE": {
             "title": "Indicatrice d'un produit de biocontrôle",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -819,7 +819,7 @@
         "DOSESAISH_HA": {
             "title": "Dose saisie (DOSESAISH) ou convertie en L ou Kg par hectare",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -830,7 +830,7 @@
         "DOSEREF_HA": {
             "title": "Dose de référence (éventuellement convertie) en L ou Kg par hectare",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -852,7 +852,7 @@
         "IFT": {
             "title": "IFT du traitement herbicide (si CHAMP_IFT est Vrai)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,

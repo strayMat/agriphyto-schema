@@ -1,0 +1,173 @@
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "identifiant_dossier": {
+            "title": "Identifiant parcelle",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESPECE": {
+            "title": "Culture enquêtée",
+            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__ESPECE\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESPECEINI": {
+            "title": "Culture enquêtée, code initial (maïs et blé, modification entre 08 et 09 ou entre 01 et 02)",
+            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__ESPECEINI\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "REGPAR": {
+            "title": "Code région de la parcelle",
+            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__REGPAR\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DEPPAR": {
+            "title": "Département de localisation de la parcelle",
+            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__DEPPAR\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DEPCOMPAR": {
+            "title": "Code commune de la parcelle",
+            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__DEPCOMPAR\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "BIO": {
+            "title": "Appartenance à la strate « bio »",
+            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__BIO\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ZONEVULN": {
+            "title": "Appartenance à une zone vulnérable",
+            "description": "{\"nomenclature\": \"MATACT_PHYTOGC2014__ZONEVULN\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COEF1": {
+            "title": "Coefficient d'extrapolation - niveau parcelle",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COEF2": {
+            "title": "Coefficient de pondération au niveau de la parcelle = COEF1*SUPP",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SUPP": {
+            "title": "Superficie de la parcelle",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "NOM_SUBSTANCE": {
+            "title": "Nom de la substance active",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "QDOSEMATSURF": {
+            "title": "Quantité de substance active en g/ha en tenant compte du pourcentage de parcelle traitée (par parcelle)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "NBPASMATACT": {
+            "title": "Nombre de traitements utilisant la substance active par parcelle",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "PhytoGC_2014__MATACT_PHYTOGC2014",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table MATACT_PHYTOGC2014 (Fichier des substances actives utilisées lors des traitements phytosanitaires)\n        from data dictionary PhytoGC_2014"
+}

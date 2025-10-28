@@ -2,11 +2,24 @@ import pandas as pd
 import pytest
 
 from agriphyto_schema.constants import COLNAME_CODE, COLNAME_LIBELLE
-from agriphyto_schema.data.parse_dicos import clean_modalities
+from agriphyto_schema.data.parse_dicos import (
+    clean_modalities,
+    clean_nomenclature_name,
+)
+
+
+def test_clean_varname():
+    """Test de la fonction clean_varname avec des caractères spéciaux."""
+    # Test avec une chaîne contenant tous les caractères spéciaux traités
+    input_name = "Test*Variable Name-with;special<>chars()\xa0"
+    expected = "TeststarVariable_Name_with_special__chars_"
+    result = clean_nomenclature_name(input_name)
+    assert result == expected
 
 
 @pytest.mark.parametrize(
-    "raw_nomenclature,expected_length,expected_first_var,expected_first_label,expected_last_var,expected_last_label",
+    """raw_nomenclature,expected_length,expected_first_var,expected_first_label,
+    expected_last_var,expected_last_label""",
     [
         (
             "1 - Option One\n2 - Option Two\n3 - Option Three",
@@ -17,12 +30,33 @@ from agriphyto_schema.data.parse_dicos import clean_modalities
             "Option Three",
         ),
         (
-            "A - Apple;B - Banana;C - Cherry",
-            3,
-            "A",
-            "Apple",
-            "C",
-            "Cherry",
+            """1:Auto-produits
+2:Achetés (coopérative, grossiste,...)
+3:Achetés directement à des producteurs de plants
+4:Achat sur internet
+5:Produits par un autre agriculteur
+6:Mélange""",
+            6,
+            "1",
+            "Auto-produits",
+            "6",
+            "Mélange",
+        ),
+        (
+            """02:Carotte
+    03:Choux fleur, Brocoli à jets et Romanesco
+    04:Autres choux (hors chou à choucroute)
+    05:Tous choux
+    06:Fraise
+    07:Melon
+    09:Poireau
+    10:Salade y compris mâche (hors endive)
+    11:Tomate""",
+            9,
+            "02",
+            "Carotte",
+            "11",
+            "Tomate",
         ),
     ],
 )
