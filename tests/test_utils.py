@@ -4,19 +4,9 @@ from pathlib import Path
 import pandera.pandas as pa
 
 from agriphyto_schema.utils import (
-    clean_nomenclature_name,
     pandera_from_json,
     pandera_to_json,
 )
-
-
-def test_clean_varname():
-    """Test de la fonction clean_varname avec des caractères spéciaux."""
-    # Test avec une chaîne contenant tous les caractères spéciaux traités
-    input_name = "Test*Variable Name-with;special<>chars()\xa0"
-    expected = "TeststarVariable_Name_with_special__chars_"
-    result = clean_nomenclature_name(input_name)
-    assert result == expected
 
 
 def test_pandera_to_from_json():

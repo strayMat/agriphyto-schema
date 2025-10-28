@@ -23,10 +23,18 @@ COLNAME_PANDERA_TYPE = "pandera_type"
 # Simple mapping Excel type -> Pandera type
 MAP_TYPES = {
     "Numérique": "float",
+    "numérique": "float",
+    "Decimal": "float",
     "NumericalCode": "int",
+    "PositiveInteger": "int",
+    "Comment": "string",
+    "Integer": "int",
     "Entier": "int",
     "OuiNon": "bool",
     "Booléen": "bool",
+    "Boolean": "bool",
+    "String": "string",
+    "Code": "string",
     "Charactères": "string",
     "Caractère": "string",
     "Chaîne": "string",
@@ -105,7 +113,9 @@ AVAILABLE_DICOS = {
         },
         "parser": "dico_from_excel",
     },
-    "PKViti_2019": {  # I manually searched and replaced all ";" code-lable separators in the modalities column with ":" to avoid confusion with the ";" used to separate modalities
+    # I manually searched and replaced all ";" code-lable separators in the modalities column
+    # with ":" to avoid confusion with the ";" used to separate modalities
+    "PKViti_2019": {
         "filename": "PKViti2019_dico_variables_definitif.ods",
         "variable_sheet": [
             "PKViti2019_definitif",
@@ -123,7 +133,9 @@ AVAILABLE_DICOS = {
         },
         "parser": "dico_from_excel",
     },
-    "PKGC_2017": {  # I manually searched and replaced all ";" code-lable separators in the modalities column with ":" to avoid confusion with the ";" used to separate modalities
+    # I manually searched and replaced all ";" code-lable separators in the modalities column
+    # with ":" to avoid confusion with the ";" used to separate modalities
+    "PKGC_2017": {
         "filename": "PKGC2017_dico_variables.ods",
         "variable_sheet": "PKGC2017_dicoVar_global",
         "cols_to_use": {
