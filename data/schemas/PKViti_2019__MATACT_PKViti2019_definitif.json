@@ -4,6 +4,39 @@
     "columns": {
         "IDENTPARC": {
             "title": "Identifiant de la parcelle",
+            "description": "{\"nomenclature\": \"MATACT_PKViti2019_definitif__IDENTPARC\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COEF": {
+            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COEF2": {
+            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "NOM_SUBSTANCE": {
+            "title": "Libellé de la substance active selon la BNVD",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -13,8 +46,8 @@
             "required": true,
             "regex": false
         },
-        "MECAPAS": {
-            "title": "Numéro du passage sur la parcelle",
+        "NOM_SUBSTANCE_EUROSTAT": {
+            "title": "Libellé de la substance active dans la nomenclature Eurostat",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,10 +57,10 @@
             "required": true,
             "regex": false
         },
-        "DMECA": {
-            "title": "Date de passage",
+        "QDOSEMATACT": {
+            "title": "Quantité de matière active administrée par hectare de parcelle (en g/ha). Pour obtenir la quantité en g, multiplier par la surface de la parcelle : SUPP2019. Lorsque la matière active n'a pu être exprimée en g/ha, la donnée est absente (cas de certains micro-organismes notamment).",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -35,10 +68,10 @@
             "required": true,
             "regex": false
         },
-        "IRDISC": {
-            "title": "Passage inter-rang : appareil à disques",
+        "NBPASMATACT": {
+            "title": "Nombre de traitements (et non de passages) effectués sur la parcelle avec un produit contenant la matière active",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -46,10 +79,10 @@
             "required": true,
             "regex": false
         },
-        "IRDENT": {
-            "title": "Passage inter-rang : appareil à dents (dont cultivateur)",
+        "HERBICIDE": {
+            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type herbicide",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -57,10 +90,10 @@
             "required": true,
             "regex": false
         },
-        "IRROTA": {
-            "title": "Passage inter-rang : appareil type rotavator",
+        "INSECTICIDE": {
+            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type insecticide",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -68,10 +101,10 @@
             "required": true,
             "regex": false
         },
-        "IRAUTR": {
-            "title": "Passage inter-rang : autres appareils",
+        "FONGICIDE": {
+            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type fongicide",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -79,10 +112,10 @@
             "required": true,
             "regex": false
         },
-        "ICLAM": {
-            "title": "Passage sous le rang : intercep à lames",
+        "AUTRE": {
+            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement autre que fongicide, insecticide ou herbicide",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "bool",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -90,53 +123,9 @@
             "required": true,
             "regex": false
         },
-        "ICROTA": {
-            "title": "Passage sous le rang : intercep rotatifs",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ICDECA": {
-            "title": "Passage sous le rang : décavaillonneuse",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ICAUTR": {
-            "title": "Passage sous le rang : autres appareils (dont thermique)",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DESINTRANG": {
-            "title": "Passage d’appareil sur inter-rang",
-            "description": "{\"nomenclature\": \"MECA_PHYTOVITI2016__DESINTRANG\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DESINTCEP": {
-            "title": "Passage d’appareil sous le rang",
-            "description": "{\"nomenclature\": \"MECA_PHYTOVITI2016__DESINTCEP\"}",
+        "CIBLE_SA": {
+            "title": "Segment de la matière active selon la classification Eurostat",
+            "description": "{\"nomenclature\": \"MATACT_PKViti2019_definitif__CIBLE_SA\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -151,12 +140,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PHYTOVITI_2016__MECA_PHYTOVITI2016",
+    "name": "PKViti_2019__MATACT_PKViti2019_definitif",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table MECA_PHYTOVITI2016 (Données du tableau des désherbages mécaniques ou thermiques)\n        from data dictionary PHYTOVITI_2016"
+    "description": "Schema for table MATACT_PKViti2019_definitif from data dictionary PKViti_2019"
 }

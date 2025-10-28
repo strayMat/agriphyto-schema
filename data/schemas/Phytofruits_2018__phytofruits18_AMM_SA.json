@@ -2,8 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
+        "AMM": {
+            "title": "numéro d'autorisation de mise sur le marché du produit phytosanitaire",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -13,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "TONTEPAS": {
-            "title": "Numéro du passage sur la parcelle",
+        "CIBLE_SA": {
+            "title": "Segment de la substance active selon la classification Eurostat",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,8 +24,8 @@
             "required": true,
             "regex": false
         },
-        "DENHERB": {
-            "title": "Date de passage",
+        "concentration": {
+            "title": "Concentration de la substance active (BNVD)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -35,30 +35,8 @@
             "required": true,
             "regex": false
         },
-        "TONTEIR": {
-            "title": "Passage sur l'enherbement inter-rang hors engrais vert",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "TONTEIREV": {
-            "title": "Passage sur l'enherbement inter-rang de type engrais vert",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "TONTESR": {
-            "title": "Passage sur l'enherbement présent sous le rang (tout type d'enherbement)",
+        "unite_concentration": {
+            "title": "Unité de concentration de la substance active",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -74,12 +52,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PHYTOVITI_2016__TONTE_PHYTOVITI2016",
+    "name": "Phytofruits_2018__phytofruits18_AMM_SA",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table TONTE_PHYTOVITI2016 (Données du tableau des maîtrises de l'enherbement)\n        from data dictionary PHYTOVITI_2016"
+    "description": "Schema for table phytofruits18_AMM_SA from data dictionary Phytofruits_2018"
 }

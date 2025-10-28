@@ -84,11 +84,23 @@ AVAILABLE_DICOS = {
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
     },
-    "PKGC_2014": {
+    "PhytoGC_2014": {
         "filename": "Pratiques_phytosanitaires_en_grandes_cultures_-_2014.csv",
         "skiprows": 8,
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
+    },
+    "Phytofruits_2018": {
+        "filename": "Phytofruits18_dico_variables_casd.ods",
+        "variable_sheet": "data",
+        "cols_to_use": {
+            "Fichier": COLNAME_TABLE,
+            "NOM_variable": COLNAME_VARIABLE,
+            "LIBELLE": COLNAME_LIBELLE,
+            "TYPE": COLNAME_TYPE,
+            "NOMENCLATURE": COLNAME_NOMENCLATURE,
+        },
+        "parser": "dico_from_excel",
     },
     "PKfruits_2015": {
         "filename": "20210726_PKfruits2015_dico_variables.ods",

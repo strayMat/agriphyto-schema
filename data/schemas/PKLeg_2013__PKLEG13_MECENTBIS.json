@@ -2,8 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
+        "NUMLIGNE_MECENTBIS": {
+            "title": "Numéro de ligne table MECENTBIS",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -13,8 +13,19 @@
             "required": true,
             "regex": false
         },
-        "NOM_SUBSTANCE": {
-            "title": "Libellé de la substance active",
+        "CODENTR": {
+            "title": "MECENT - 42 - Code opé d'entretien de la culture",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ENTRLIB": {
+            "title": "MECENT - 42 - Type  d'interv° opé d'entretien cult",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,10 +35,10 @@
             "required": true,
             "regex": false
         },
-        "QDOSEMATACT": {
-            "title": "Quantité de matière active par hectare",
+        "ENTRPAS": {
+            "title": "MECENT - 42 - Nbre d'interv° opé d'entretien cult",
             "description": "null",
-            "dtype": "float64",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -35,10 +46,10 @@
             "required": true,
             "regex": false
         },
-        "UNITESA": {
-            "title": "Unité de la quantité de matière par hectare",
-            "description": "null",
-            "dtype": "string[python]",
+        "TYPENTR": {
+            "title": "MECENT - 42 - Code interv° opé d'entretien cult",
+            "description": "{\"nomenclature\": \"PKLEG13_MECENTBIS__TYPENTR\"}",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -46,43 +57,10 @@
             "required": true,
             "regex": false
         },
-        "NBPASMATACT": {
-            "title": "Nombre de traitements effectués sur la parcelle avec la même matière active et même cible",
+        "MANENTR": {
+            "title": "MECENT - 42 - Nbre d'opérat° entretien de la culture manu",
             "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBLE": {
-            "title": "Cible détaillée",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBLEAGREG": {
-            "title": "Cible agrégée",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "FAMILLESA": {
-            "title": "Famille chimique de la substance active",
-            "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -96,12 +74,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PHYTOVITI_2016__MATACT_PHYTOVITI2016",
+    "name": "PKLeg_2013__PKLEG13_MECENTBIS",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table MATACT_PHYTOVITI2016 (Quantités utilisées par hectare, par parcelle, par substances actives et par cible)\n        from data dictionary PHYTOVITI_2016"
+    "description": "Schema for table PKLEG13_MECENTBIS from data dictionary PKLeg_2013"
 }

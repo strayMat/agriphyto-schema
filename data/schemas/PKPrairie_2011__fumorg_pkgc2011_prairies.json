@@ -2,8 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
+        "Identifiant_FUMORG": {
+            "title": "Numéro unique pour la table FUMORG",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -13,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "ID_PHYTOVITI2016_TMT_PHYTO": {
-            "title": "Identifiant du traitement",
+        "Identifiantdossier": {
+            "title": "Numéro d'identifiant",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,8 +24,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTORDR": {
-            "title": "Numéro d'ordre du traitement",
+        "CODEFUMO": {
+            "title": "Fumure organique : numéro d'ordre de l'apport, classé dans l'ordre chronologique",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -35,9 +35,9 @@
             "required": true,
             "regex": false
         },
-        "PHYTOPASS": {
-            "title": "Numéro d'ordre du passage du traitement",
-            "description": "null",
+        "ESPECE": {
+            "title": "Culture enquêtée",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__ESPECE\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -46,9 +46,9 @@
             "required": true,
             "regex": false
         },
-        "PHYTODAT": {
-            "title": "Date du traitement",
-            "description": "null",
+        "ESPECEINI": {
+            "title": "Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__ESPECEINI\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -57,250 +57,8 @@
             "required": true,
             "regex": false
         },
-        "CIBHER": {
-            "title": "Cible du traitement : herbicide",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBEPA": {
-            "title": "Cible du traitement : épamprage",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMIL": {
-            "title": "Cible du traitement : mildiou",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBOID": {
-            "title": "Cible du traitement : oïdium",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBBOT": {
-            "title": "Cible du traitement : botritys",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBBLR": {
-            "title": "Cible du traitement : black-rot",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBEXC": {
-            "title": "Cible du traitement : excoriose",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAUTMAL": {
-            "title": "Cible du traitement : autres champignons parasitaires",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCIC": {
-            "title": "Cible du traitement : cicadelles",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTORD": {
-            "title": "Cible du traitement : tordeuses",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBACA": {
-            "title": "Cible du traitement : acariens",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAIN": {
-            "title": "Cible du traitement : autres insectes",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBADJ": {
-            "title": "Cible du traitement : adjuvants",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBSUB": {
-            "title": "Cible du traitement : substances de croissance",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBFERT": {
-            "title": "Cible du traitement : fertilisant foliaire",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAUT": {
-            "title": "Cible du traitement : autres traitements",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBFONG": {
-            "title": "Cible agrégée fongicide",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBINSEC": {
-            "title": "Cible agrégée insecticide-acaricide",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "AUTRCIB": {
-            "title": "Cible agrégée autres",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "AMM": {
-            "title": "Numéro d'autorisation de mise sur le marché",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOLIB": {
-            "title": "Nom du produit commercial",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOMODE": {
-            "title": "Mode de traitement (pour herbicide)",
-            "description": "{\"nomenclature\": \"PHYTO_PHYTOVITI2016__PHYTOMODE\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOPSUPPT": {
-            "title": "Part de la surface traitée (%)",
+        "PACAGEILOT": {
+            "title": "Numéro de PACAGE + Numéro de l'ilot",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -310,8 +68,8 @@
             "required": true,
             "regex": false
         },
-        "DOSESAIS": {
-            "title": "Dose saisie",
+        "PACAGE": {
+            "title": "Numéro de PACAGE de l'exploitation",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -321,30 +79,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTOUNI": {
-            "title": "Unité de la dose saisie quand le traitement est en plein (PHYTOPSUPPT=100)",
-            "description": "{\"nomenclature\": \"PHYTO_PHYTOVITI2016__PHYTOUNI\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOUNISURF": {
-            "title": "Unité de la dose saisie quand le traitement n'est pas en plein (PHYTOPSUPPT<100)",
-            "description": "{\"nomenclature\": \"PHYTO_PHYTOVITI2016__PHYTOUNISURF\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOBOUIL": {
-            "title": "Quantité de bouillie (litre/ha) à la part de surface traitée ",
+        "SIRET": {
+            "title": "Numéro SIRET de l’exploitation",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -354,8 +90,52 @@
             "required": true,
             "regex": false
         },
-        "PHYTODOS": {
-            "title": "Dose de produit à l'hectare en kg/ha ou l/ha ou 'autres' en plein",
+        "REG": {
+            "title": "Région du siège de l'exploitation",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__REG\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DEP": {
+            "title": "Département de localisation de la parcelle",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__DEP\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DEPCOMP": {
+            "title": "Code commune de l'exploitant",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__DEPCOMP\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DEPEXPLOI": {
+            "title": "Département de la commune de l'exploitation",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__DEPEXPLOI\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "BIO": {
+            "title": "Appartenance à la strate « bio »",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -365,8 +145,19 @@
             "required": true,
             "regex": false
         },
-        "NBCIBLES": {
-            "title": "Nombre de cibles du traitement",
+        "ZONE": {
+            "title": "Appartenance à la strate «zone vulnérable»",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SUPP": {
+            "title": "Superficie de la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -376,8 +167,41 @@
             "required": true,
             "regex": false
         },
-        "MULTICIBLES2": {
-            "title": "Nombre de cibles agrégées du traitement",
+        "tranche_superficie": {
+            "title": "Tranche de superficie (strates utilisées pour le calcul des coefficients de pondération)",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__tranche_superficie\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COEF1": {
+            "title": "Coefficient de pondération au niveau de la parcelle",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COEF2": {
+            "title": "Coefficient de pondération au niveau de la parcelle = COEF1*SUPP",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMODAT": {
+            "title": "Fumure organique : date de l'apport",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -387,8 +211,19 @@
             "required": true,
             "regex": false
         },
-        "CHAMP_IFT": {
-            "title": "Appartenance au calcul de l'IFT",
+        "FUMONAT": {
+            "title": "Fumure organique : code de la fumure",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__FUMONAT\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMODOS": {
+            "title": "Fumure organique : Quantité brute de fumure organique à l’ha (en t/ha ou en m3/ha)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -398,8 +233,52 @@
             "required": true,
             "regex": false
         },
-        "CL_CHAMP_IFT": {
-            "title": "Classe d'exclusion au calcul de l'IFT",
+        "FUMOUNI": {
+            "title": "Fumure organique : Unité",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__FUMOUNI\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMOPROV": {
+            "title": "Fumure organique : Provenance de la fumure",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__FUMOPROV\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMOTYP": {
+            "title": "Fumure organique : type de matériel d’épandage",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__FUMOTYP\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMODEL": {
+            "title": "Fumure organique : si enfouissement, délai entre l’apport et l’enfouissement de l’apport",
+            "description": "{\"nomenclature\": \"fumorg_pkgc2011_prairies__FUMODEL\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "QNORGTHEO": {
+            "title": "Fumure organique : quantité d’azote théorique par apport en kg/ha",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -409,8 +288,8 @@
             "required": true,
             "regex": false
         },
-        "CIBLE_APP": {
-            "title": "Cible d'appariement au référentiel pour le calcul de l'IFT",
+        "QNORG": {
+            "title": "Fumure organique, fumiers, lisiers, compost : teneur en azote en kg par tonnes ou kg par m3",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -420,8 +299,8 @@
             "required": true,
             "regex": false
         },
-        "DR": {
-            "title": "Dose de référence",
+        "QPORG": {
+            "title": "Fumure organique, fumiers, lisiers, compost : teneur en phosphore en kg par tonnes ou kg par m3",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -431,8 +310,8 @@
             "required": true,
             "regex": false
         },
-        "BIOCONTROLE": {
-            "title": "Appartenance au calcul des IFT de type biocontrôle",
+        "QKORG": {
+            "title": "Fumure organique, fumiers, lisiers, compost : teneur en potassium en kg par tonnes ou kg par m3",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -442,8 +321,8 @@
             "required": true,
             "regex": false
         },
-        "COM_APPAR": {
-            "title": "Commentaire relatif à l'appariement",
+        "QNORGCALC": {
+            "title": "Fumure organique : quantité d'azote organique calculée en kg/ha pour fumiers, lisiers, compost",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -453,8 +332,8 @@
             "required": true,
             "regex": false
         },
-        "TYPE_UNITE_PHYTO": {
-            "title": "Type d'unité du traitement",
+        "QNORGBOUE": {
+            "title": "Fumure organique : quantité d'azote organique calculée en kg/ha pour les boues",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -464,8 +343,8 @@
             "required": true,
             "regex": false
         },
-        "TYPE_UNITE_DR": {
-            "title": "Type d'unité de la dose de référence associée au traitement",
+        "FUMQNORG": {
+            "title": "Fumure organique : quantité d’azote par apport en kg/ha",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -475,8 +354,8 @@
             "required": true,
             "regex": false
         },
-        "RED": {
-            "title": "Redressement effectué ou non pour le calcul de l'IFT",
+        "FUMQPORG": {
+            "title": "Fumure organique : quantité de phosphore par apport en kg/ha",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -486,8 +365,8 @@
             "required": true,
             "regex": false
         },
-        "SEGMENT": {
-            "title": "Segmentation (pour le calcul de l'IFT)",
+        "FUMQKORG": {
+            "title": "Fumure organique : quantité de potasse par apport en kg/ha",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -503,12 +382,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PHYTOVITI_2016__PHYTO_PHYTOVITI2016",
+    "name": "PKPrairie_2011__fumorg_pkgc2011_prairies",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table PHYTO_PHYTOVITI2016 (Données du tableau des traitements phytosanitaires. L'unité statistique est le traitement phytosanitaire.)\n        from data dictionary PHYTOVITI_2016"
+    "description": "Schema for table fumorg_pkgc2011_prairies (Table des données sur la fumure organique)\n        from data dictionary PKPrairie_2011"
 }
