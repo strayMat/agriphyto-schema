@@ -2,9 +2,9 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
-            "description": "{\"nomenclature\": \"PKViti2019_IFT_trait_definitif__IDENTPARC\"}",
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -13,8 +13,19 @@
             "required": true,
             "regex": false
         },
-        "COEF": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PPAM100": {
+            "title": "Basilic",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -24,8 +35,8 @@
             "required": true,
             "regex": false
         },
-        "COEF2": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
+        "PPAM110": {
+            "title": "Camomille",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -35,8 +46,8 @@
             "required": true,
             "regex": false
         },
-        "IFTTOT": {
-            "title": "IFT global sur la parcelle (tous types de traitements confondus)",
+        "PPAM120": {
+            "title": "Ciboulette (+ cive, oignons verts)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -46,8 +57,8 @@
             "required": true,
             "regex": false
         },
-        "IFTHERB": {
-            "title": "IFT herbicides sur la parcelle",
+        "PPAM130": {
+            "title": "Citronnelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -57,8 +68,8 @@
             "required": true,
             "regex": false
         },
-        "IFTFONG": {
-            "title": "IFT fongicides sur la parcelle",
+        "PPAM140": {
+            "title": "Coriandre",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -68,8 +79,8 @@
             "required": true,
             "regex": false
         },
-        "IFTINS": {
-            "title": "IFT insecticides sur la parcelle",
+        "PPAM150": {
+            "title": "Safran (crocus)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -79,8 +90,8 @@
             "required": true,
             "regex": false
         },
-        "IFTAUT": {
-            "title": "IFT autres sur la parcelle (autres traitements qu'herbicides, fongicides ou insecticides)",
+        "PPAM160": {
+            "title": "Curcuma",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -90,8 +101,8 @@
             "required": true,
             "regex": false
         },
-        "IFTTOTBIO": {
-            "title": "IFT global sur la parcelle (tous types de traitements mais uniquement avec des produits de biocontrôle)",
+        "PPAM170": {
+            "title": "Géranium",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -101,8 +112,8 @@
             "required": true,
             "regex": false
         },
-        "IFTFONGBIO": {
-            "title": "IFT fongicides (uniquement produits de biocontrôle)",
+        "PPAM180": {
+            "title": "Gingembre",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -112,8 +123,8 @@
             "required": true,
             "regex": false
         },
-        "IFTINSBIO": {
-            "title": "IFT insecticides (uniquement produits de biocontrôle)",
+        "PPAM190": {
+            "title": "Hélichryse (immortelle)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -123,8 +134,8 @@
             "required": true,
             "regex": false
         },
-        "IFTAUTBIO": {
-            "title": "IFT autres (uniquement produits de biocontrôle)",
+        "PPAM200": {
+            "title": "Lavande",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -134,8 +145,8 @@
             "required": true,
             "regex": false
         },
-        "IFTTOTNBIO": {
-            "title": "IFT global hors produits de biocontrôle",
+        "PPAM210": {
+            "title": "Lavandin",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -145,8 +156,8 @@
             "required": true,
             "regex": false
         },
-        "IFTFONGNBIO": {
-            "title": "IFT fongicides hors produits de biocontrôle",
+        "PPAM220": {
+            "title": "Mélisse",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -156,8 +167,8 @@
             "required": true,
             "regex": false
         },
-        "IFTINSNBIO": {
-            "title": "IFT insecticides hors produits de biocontrôle",
+        "PPAM230": {
+            "title": "Menthe",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -167,8 +178,8 @@
             "required": true,
             "regex": false
         },
-        "IFTAUTNBIO": {
-            "title": "IFT autres hors produits de biocontrôle",
+        "PPAM240": {
+            "title": "Pavot Oeillette",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -178,8 +189,8 @@
             "required": true,
             "regex": false
         },
-        "IFTTOTHORSHERB": {
-            "title": "IFT global hors herbicides",
+        "PPAM250": {
+            "title": "Persil",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -189,8 +200,8 @@
             "required": true,
             "regex": false
         },
-        "IFTTOTNBIOHORSHERB": {
-            "title": "IFT global hors produits de biocontrôle et hors herbicides",
+        "PPAM260": {
+            "title": "Piment",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -200,10 +211,10 @@
             "required": true,
             "regex": false
         },
-        "NB_TOT": {
-            "title": "nombre total de traitements (hors adjuvants)",
+        "PPAM270": {
+            "title": "Romarin",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -211,10 +222,10 @@
             "required": true,
             "regex": false
         },
-        "NB_HERB": {
-            "title": "nombre de traitements aux herbicides",
+        "PPAM280": {
+            "title": "Roucou",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -222,10 +233,10 @@
             "required": true,
             "regex": false
         },
-        "NB_FONG": {
-            "title": "nombre de traitements aux fongicides",
+        "PPAM290": {
+            "title": "Sauge sclarée",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -233,10 +244,10 @@
             "required": true,
             "regex": false
         },
-        "NB_INS": {
-            "title": "nombre de traitements aux insecticides",
+        "PPAM300": {
+            "title": "Thym",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -244,10 +255,10 @@
             "required": true,
             "regex": false
         },
-        "NB_AUT": {
-            "title": "nombre de traitements autres",
+        "PPAM311": {
+            "title": "Vanille de plein champ sur tuteur naturel ou artificiel",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -255,10 +266,10 @@
             "required": true,
             "regex": false
         },
-        "NB_ADJ": {
-            "title": "nombre de traitements adjuvants",
+        "PPAM312": {
+            "title": "Vanille sous abri haut",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -266,10 +277,10 @@
             "required": true,
             "regex": false
         },
-        "NB_TOTADJ": {
-            "title": "nombre total de traitements (adjuvants compris)",
+        "PPAM313": {
+            "title": "Vanille sous forêt naturelle",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -277,10 +288,76 @@
             "required": true,
             "regex": false
         },
-        "NB_BIO": {
-            "title": "nombre de traitements par un produit de biocontrôle",
+        "PPAM320": {
+            "title": "ylang ylang",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PPAM330": {
+            "title": "Autres plantes à parfum",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PPAM340": {
+            "title": "Autres plantes aromatiques",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PPAM350": {
+            "title": "Autres plantes médicinales",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SAU_11234300": {
+            "title": "plantes à parfum, aromatiques, médicinales en plein air ou sous abri bas",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SAU_11234400": {
+            "title": "plantes à parfum, aromatiques, médicinales sous serre ou abri haut",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
+            "description": "null",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -294,12 +371,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PKViti_2019__PKViti2019_IFT_trait_definitif",
+    "name": "RA_2020__RA2020_PPAM",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table PKViti2019_IFT_trait_definitif from data dictionary PKViti_2019"
+    "description": "Schema for table RA2020_PPAM from data dictionary RA_2020"
 }

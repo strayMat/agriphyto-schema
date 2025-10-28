@@ -38,7 +38,7 @@
         "CONCENTRATION": {
             "title": "Concentration de la substance active",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,

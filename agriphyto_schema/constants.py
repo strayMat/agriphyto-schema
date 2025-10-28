@@ -17,8 +17,8 @@ COLNAME_VARIABLE = "variable"
 COLNAME_LIBELLE = "label"
 COLNAME_TYPE = "type"
 COLNAME_NOMENCLATURE = "nomenclature"
-COLNAME_NOMENCLATURE_2 = "nomenclature_2"  # sometimes two columns are used for nomenclature...
 COLNAME_CODE = "modality_code"
+COLNAME_NOMENCLATURE_2 = "nomenclature_2"  # sometimes two columns are used for nomenclature...
 COLNAME_PANDERA_TYPE = "pandera_type"
 
 # Simple mapping Excel type -> Pandera type
@@ -50,16 +50,16 @@ AVAILABLE_DICOS = {
         "variable_sheet": "1_DICO_Variables",
         "skiprows": 3,
         "nomenclature_sheet": "2_MODALITES_Variables",
-        "skiprows_nomenclatures": 2,
+        "skiprows_nomenclature": 2,
         "cols_to_use": {
             "TABLE_DIFFUSION": COLNAME_TABLE,
             "VARIABLE_DIFFUSION": COLNAME_VARIABLE,
             "LIBELLE": COLNAME_LIBELLE,
             "TYPE": COLNAME_TYPE,
         },
-        "modalites_cols_to_use": {
+        "cols_to_use_nomenclature": {
             "TABLE": COLNAME_TABLE,
-            "VARIABLE et MODALITES par table  ": COLNAME_VARIABLE,
+            "VARIABLE et MODALITES par table  ": COLNAME_CODE,
             "LIBELLE": COLNAME_LIBELLE,
         },
         "encoding": "latin1",

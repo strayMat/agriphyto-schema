@@ -2,206 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
-            "description": "{\"nomenclature\": \"PKViti2019_IFT_trait_definitif__IDENTPARC\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COEF": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COEF2": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTTOT": {
-            "title": "IFT global sur la parcelle (tous types de traitements confondus)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTHERB": {
-            "title": "IFT herbicides sur la parcelle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTFONG": {
-            "title": "IFT fongicides sur la parcelle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTINS": {
-            "title": "IFT insecticides sur la parcelle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTAUT": {
-            "title": "IFT autres sur la parcelle (autres traitements qu'herbicides, fongicides ou insecticides)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTTOTBIO": {
-            "title": "IFT global sur la parcelle (tous types de traitements mais uniquement avec des produits de biocontrôle)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTFONGBIO": {
-            "title": "IFT fongicides (uniquement produits de biocontrôle)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTINSBIO": {
-            "title": "IFT insecticides (uniquement produits de biocontrôle)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTAUTBIO": {
-            "title": "IFT autres (uniquement produits de biocontrôle)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTTOTNBIO": {
-            "title": "IFT global hors produits de biocontrôle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTFONGNBIO": {
-            "title": "IFT fongicides hors produits de biocontrôle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTINSNBIO": {
-            "title": "IFT insecticides hors produits de biocontrôle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTAUTNBIO": {
-            "title": "IFT autres hors produits de biocontrôle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTTOTHORSHERB": {
-            "title": "IFT global hors herbicides",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTTOTNBIOHORSHERB": {
-            "title": "IFT global hors produits de biocontrôle et hors herbicides",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_TOT": {
-            "title": "nombre total de traitements (hors adjuvants)",
+        "CODEFUM": {
+            "title": "FUM - 62.11 - N° ordre",
             "description": "null",
             "dtype": "int64",
             "nullable": true,
@@ -211,8 +13,19 @@
             "required": true,
             "regex": false
         },
-        "NB_HERB": {
-            "title": "nombre de traitements aux herbicides",
+        "FUMDAT": {
+            "title": "FUM - 62.11 - Date d'apport",
+            "description": "null",
+            "dtype": "datetime64[ns]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMPAS": {
+            "title": "FUM - 62.11 - N° du passage",
             "description": "null",
             "dtype": "int64",
             "nullable": true,
@@ -222,8 +35,19 @@
             "required": true,
             "regex": false
         },
-        "NB_FONG": {
-            "title": "nombre de traitements aux fongicides",
+        "FUMNAT": {
+            "title": "FUM - 62.11 - Type de fertilisant",
+            "description": "{\"nomenclature\": \"PKLEG13_FUMI__FUMNAT\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMTYPE": {
+            "title": "FUM - 62.11 - Enfouissement, Ferti-irrigation, Apport foliaire",
             "description": "null",
             "dtype": "int64",
             "nullable": true,
@@ -233,8 +57,8 @@
             "required": true,
             "regex": false
         },
-        "NB_INS": {
-            "title": "nombre de traitements aux insecticides",
+        "FUMCN_ENT": {
+            "title": "Concentration N azote (entier)",
             "description": "null",
             "dtype": "int64",
             "nullable": true,
@@ -244,8 +68,8 @@
             "required": true,
             "regex": false
         },
-        "NB_AUT": {
-            "title": "nombre de traitements autres",
+        "FUMCP_ENT": {
+            "title": "Concentration P phosphore (entier)",
             "description": "null",
             "dtype": "int64",
             "nullable": true,
@@ -255,8 +79,8 @@
             "required": true,
             "regex": false
         },
-        "NB_ADJ": {
-            "title": "nombre de traitements adjuvants",
+        "FUMCK_ENT": {
+            "title": "Concentration K potassium (entier)",
             "description": "null",
             "dtype": "int64",
             "nullable": true,
@@ -266,8 +90,8 @@
             "required": true,
             "regex": false
         },
-        "NB_TOTADJ": {
-            "title": "nombre total de traitements (adjuvants compris)",
+        "FUMCS_ENT": {
+            "title": "Concentration S soufre (entier)",
             "description": "null",
             "dtype": "int64",
             "nullable": true,
@@ -277,10 +101,142 @@
             "required": true,
             "regex": false
         },
-        "NB_BIO": {
-            "title": "nombre de traitements par un produit de biocontrôle",
+        "FUMCMG_ENT": {
+            "title": "Concentration Mg magnesium (entier)",
             "description": "null",
             "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMUNI": {
+            "title": "FUM - 62.11 - Unité",
+            "description": "{\"nomenclature\": \"PKLEG13_FUMI__FUMUNI\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMDOS": {
+            "title": "FUM - 62.11 - Qté d’engrais à l’ha (en kg ou en litre)",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMQN": {
+            "title": "FUM - 62.11 - Qté par ha N azote",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMQP": {
+            "title": "FUM - 62.11 - Qté par ha P phosphore",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMQK": {
+            "title": "FUM - 62.11 - Qté par ha K potassium",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMQS": {
+            "title": "FUM - 62.11 - Qté par ha S soufre",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMQMG": {
+            "title": "FUM - 62.11 - Qté par ha Mg magnésium",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMCN": {
+            "title": "FUM - 62.11 - Concentration N azote",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMCP": {
+            "title": "FUM - 62.11 - Concentration P phosphore",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMCK": {
+            "title": "FUM - 62.11 - Concentration K potassium",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMCS": {
+            "title": "FUM - 62.11 - Concentration S soufre",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMCMG": {
+            "title": "FUM - 62.11 - Concentration Mg magnesium",
+            "description": "null",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -294,12 +250,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PKViti_2019__PKViti2019_IFT_trait_definitif",
+    "name": "PKLeg_2013__PKLEG13_FUMI",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table PKViti2019_IFT_trait_definitif from data dictionary PKViti_2019"
+    "description": "Schema for table PKLEG13_FUMI from data dictionary PKLeg_2013"
 }

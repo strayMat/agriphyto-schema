@@ -1,0 +1,41 @@
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "id_loc": {
+            "title": "Identifiant local",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "cconad": {
+            "title": "Nature de dépendance",
+            "description": "{\"nomenclature\": \"fideli_dependance22__cconad\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "FIDELI_2020__fideli_dependance22",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table fideli_dependance22 (Table des dépendances des locaux 2022)\n        from data dictionary FIDELI_2020"
+}

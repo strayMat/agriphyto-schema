@@ -59,6 +59,8 @@ all_nomenclatures = load_nomenclature(
     DIR2NOMENCLATURES / "all_nomenclatures.csv"
 )
 
+breakpoint()
+
 # Gestion des clics sur les lignes
 if event.selection.rows:
     selected_row_index = event.selection.rows[0]

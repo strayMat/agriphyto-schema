@@ -2,9 +2,9 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
-            "description": "{\"nomenclature\": \"PKViti2019_IFT_trait_definitif__IDENTPARC\"}",
+        "Identifiant_MECANIC": {
+            "title": "Numéro unique pour la table MECANIC",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -13,8 +13,162 @@
             "required": true,
             "regex": false
         },
-        "COEF": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
+        "Identifiantdossier": {
+            "title": "Numéro d'identifiant",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESPECE": {
+            "title": "Culture enquêtée",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__ESPECE\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESPECEINI": {
+            "title": "Culture enquêtée, code initial (maïs et prairie ont pu changer de code, soit modification entre 08 et 09 ou entre 12 et 13)",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__ESPECEINI\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PACAGEILOT": {
+            "title": "Numéro de PACAGE  + Numéro de l'ilot",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PACAGE": {
+            "title": "Numéro de PACAGE de l'exploitation",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SIRET": {
+            "title": "Numéro SIRET de l’exploitation",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "REG": {
+            "title": "Région du siège de l'exploitation",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__REG\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DEP": {
+            "title": "Département de localisation de la parcelle",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__DEP\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DEPCOMP": {
+            "title": "Code commune de l'exploitant",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__DEPCOMP\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DEPEXPLOI": {
+            "title": "Département de la commune de l'exploitation",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__DEPEXPLOI\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "BIO": {
+            "title": "Appartenance à la strate « bio »",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__BIO\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ZONE": {
+            "title": "Appartenance à la strate «zone vulnérable»",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__ZONE\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SUPP": {
+            "title": "Superficie de la parcelle",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "tranche_superficie": {
+            "title": "Tranche de superficie en hectares (strates utilisées pour le calcul des coefficients de pondération)",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__tranche_superficie\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COEF1": {
+            "title": "Coefficient de pondération au niveau de la parcelle",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -25,7 +179,7 @@
             "regex": false
         },
         "COEF2": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
+            "title": "Coefficient de pondération au niveau de la parcelle = COEF1*SUPP",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -35,10 +189,10 @@
             "required": true,
             "regex": false
         },
-        "IFTTOT": {
-            "title": "IFT global sur la parcelle (tous types de traitements confondus)",
+        "CODMECA": {
+            "title": "Numéro d'ordre de l'intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse, dans l'ordre chronologique",
             "description": "null",
-            "dtype": "float64",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -46,10 +200,10 @@
             "required": true,
             "regex": false
         },
-        "IFTHERB": {
-            "title": "IFT herbicides sur la parcelle",
+        "MECAPAS": {
+            "title": "Numéro de passage de l'intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse",
             "description": "null",
-            "dtype": "float64",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -57,10 +211,10 @@
             "required": true,
             "regex": false
         },
-        "IFTFONG": {
-            "title": "IFT fongicides sur la parcelle",
+        "DMECA": {
+            "title": "Date de l’intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse",
             "description": "null",
-            "dtype": "float64",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -68,10 +222,10 @@
             "required": true,
             "regex": false
         },
-        "IFTINS": {
-            "title": "IFT insecticides sur la parcelle",
+        "MECALIB": {
+            "title": "Libellé de l'intervention mécanique",
             "description": "null",
-            "dtype": "float64",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -79,10 +233,10 @@
             "required": true,
             "regex": false
         },
-        "IFTAUT": {
-            "title": "IFT autres sur la parcelle (autres traitements qu'herbicides, fongicides ou insecticides)",
-            "description": "null",
-            "dtype": "float64",
+        "TYPMECA": {
+            "title": "Code Intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__TYPMECA\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -90,10 +244,10 @@
             "required": true,
             "regex": false
         },
-        "IFTTOTBIO": {
-            "title": "IFT global sur la parcelle (tous types de traitements mais uniquement avec des produits de biocontrôle)",
-            "description": "null",
-            "dtype": "float64",
+        "TYPMECA1": {
+            "title": "Code Intervention mécanique simplifié 1",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__TYPMECA1\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -101,186 +255,10 @@
             "required": true,
             "regex": false
         },
-        "IFTFONGBIO": {
-            "title": "IFT fongicides (uniquement produits de biocontrôle)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTINSBIO": {
-            "title": "IFT insecticides (uniquement produits de biocontrôle)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTAUTBIO": {
-            "title": "IFT autres (uniquement produits de biocontrôle)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTTOTNBIO": {
-            "title": "IFT global hors produits de biocontrôle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTFONGNBIO": {
-            "title": "IFT fongicides hors produits de biocontrôle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTINSNBIO": {
-            "title": "IFT insecticides hors produits de biocontrôle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTAUTNBIO": {
-            "title": "IFT autres hors produits de biocontrôle",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTTOTHORSHERB": {
-            "title": "IFT global hors herbicides",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFTTOTNBIOHORSHERB": {
-            "title": "IFT global hors produits de biocontrôle et hors herbicides",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_TOT": {
-            "title": "nombre total de traitements (hors adjuvants)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_HERB": {
-            "title": "nombre de traitements aux herbicides",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_FONG": {
-            "title": "nombre de traitements aux fongicides",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_INS": {
-            "title": "nombre de traitements aux insecticides",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_AUT": {
-            "title": "nombre de traitements autres",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_ADJ": {
-            "title": "nombre de traitements adjuvants",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_TOTADJ": {
-            "title": "nombre total de traitements (adjuvants compris)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_BIO": {
-            "title": "nombre de traitements par un produit de biocontrôle",
-            "description": "null",
-            "dtype": "int64",
+        "TYPMECA2": {
+            "title": "Code Intervention mécanique simplifié 2",
+            "description": "{\"nomenclature\": \"mecanic_pkgc2011_prairies__TYPMECA2\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -294,12 +272,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PKViti_2019__PKViti2019_IFT_trait_definitif",
+    "name": "PKPrairie_2011__mecanic_pkgc2011_prairies",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table PKViti2019_IFT_trait_definitif from data dictionary PKViti_2019"
+    "description": "Schema for table mecanic_pkgc2011_prairies (Table des données sur les interventions mécaniques)\n        from data dictionary PKPrairie_2011"
 }

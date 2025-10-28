@@ -2,19 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "ID_DOSSIER": {
-            "title": "numero interne capibara",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "BALSA": {
-            "title": "BALSA",
+        "SIEGE_CODE_COM": {
+            "title": "Code commune",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "NOM_DOSSIER": {
-            "title": NaN,
+        "pb01": {
+            "title": "Production brute de la commune pour :  Blé tendre et épeautre",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -35,8 +24,8 @@
             "required": true,
             "regex": false
         },
-        "espece": {
-            "title": NaN,
+        "pb02": {
+            "title": "Production brute de la commune pour :  Blé dur",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -46,19 +35,8 @@
             "required": true,
             "regex": false
         },
-        "ID_LIGNE": {
-            "title": NaN,
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IDLIGNE_BIS": {
-            "title": "mise de l id_ligne en format chaine",
+        "pb03": {
+            "title": "Production brute de la commune pour :  Seigle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -68,8 +46,8 @@
             "required": true,
             "regex": false
         },
-        "idlignephyto": {
-            "title": "concatenation NOM_DOSSIER, IDLIGNE_BIS) pour rendre unique chaque ligne saisie",
+        "pb04": {
+            "title": "Production brute de la commune pour :  Orge",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -79,41 +57,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTORDR": {
-            "title": "4.2 : Iterventions de pulvérisation : numéro d'ordre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOPASS": {
-            "title": "4.2 Numéro de passage",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NUMERO_PASSAGE": {
-            "title": "4.2 Numéro de passage remis chronologiquement",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODAT": {
-            "title": "4.2 Date du passage",
+        "pb05": {
+            "title": "Production brute de la commune pour :  Avoine",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -123,8 +68,8 @@
             "required": true,
             "regex": false
         },
-        "QUALIFenquete": {
-            "title": "concatenation des fonctions (herbicide,fongicide, insecticide-acaricide, autrespredateurs,stimulant, adjuvant,divers,fertilisants)",
+        "pb06": {
+            "title": "Production brute de la commune pour :  Maïs grain (non irrigué)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -134,8 +79,8 @@
             "required": true,
             "regex": false
         },
-        "QUALIFCorrige": {
-            "title": "concatenation des fonctions corrigees (herbicide,fongicide, insecticide-acaricide, autrespredateurs,stimulant, adjuvant,divers,fertilisants)",
+        "pb07": {
+            "title": "Production brute de la commune pour :  Riz",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -145,8 +90,8 @@
             "required": true,
             "regex": false
         },
-        "PRODCOURT": {
-            "title": "2.5 Libellé court",
+        "pb08": {
+            "title": "Production brute de la commune pour :  Autres céréales",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -156,8 +101,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTOLIBAUTRE": {
-            "title": "4.2 Nom du produit Autre",
+        "pb10": {
+            "title": "Production brute de la commune pour :  Légumes secs et protéagineux - total",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -167,8 +112,8 @@
             "required": true,
             "regex": false
         },
-        "COMMENTAIRE": {
-            "title": NaN,
+        "pb11": {
+            "title": "Production brute de la commune pour :  Pois, fèves et lupins doux",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -178,8 +123,8 @@
             "required": true,
             "regex": false
         },
-        "commentaire_corrections": {
-            "title": NaN,
+        "pb12": {
+            "title": "Production brute de la commune pour :  Pommes de terre (y c les primeurs et les plants)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -189,19 +134,8 @@
             "required": true,
             "regex": false
         },
-        "CIBHER": {
-            "title": "4.2 Cible adventices (herbicides)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "HERBICIDE": {
-            "title": "4.2 Fonction Herbicide",
+        "pb13": {
+            "title": "Production brute de la commune pour :  Betteraves  sucrières (à l'exception des semences)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -211,129 +145,8 @@
             "required": true,
             "regex": false
         },
-        "CIBBACT": {
-            "title": "4.2 Cible maladies : bactérioses",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCERCO": {
-            "title": "4.2 Cible maladies : cercosporiose",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCLOQUE": {
-            "title": "4.2 Cible maladies : cloque",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCYLIN": {
-            "title": "4.2 Cible maladies : cylindrosporiose",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBFUSA": {
-            "title": "4.2 Cible maladies : fusariose",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMONI": {
-            "title": "4.2 Cible maladies : monilia",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBOID": {
-            "title": "4.2 Cible maladies : oïdium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBROUIL": {
-            "title": "4.2 Cible maladies : rouille",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTAV": {
-            "title": "4.2 Cible maladies : tavelure",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMALCONS": {
-            "title": "4.2 Cible maladies de conservation",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAUTMAL": {
-            "title": "4.2 Cible autres maladies",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "FONG": {
-            "title": "4.2 Fonction Fongicide",
+        "pb14": {
+            "title": "Production brute de la commune pour :  Plantes sarclées fourragères (à l'exception des semences)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -343,173 +156,8 @@
             "required": true,
             "regex": false
         },
-        "NFONG": {
-            "title": "4.2 Nombre de fongicides",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBACA": {
-            "title": "4.2 Cible insectes et acariens : acariens",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBALEU": {
-            "title": "4.2 Cible insectes et acariens : aleurodes",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBANA": {
-            "title": "4.2 Cible insectes et acariens : anarsia",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCARPO": {
-            "title": "4.2 Cible insectes et acariens : carpocapse",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCHAR": {
-            "title": "4.2 Cible insectes et acariens : charançons",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCOCH": {
-            "title": "4.2 Cible insectes et acariens : cochenilles",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCOLEO": {
-            "title": "4.2 Cible insectes et acariens : coléoptères",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMOUCHE": {
-            "title": "4.2 Cible insectes et acariens : mouches autres que susuki",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBSUSUKI": {
-            "title": "4.2 Cible insectes et acariens : mouche suzukii",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBPUCE": {
-            "title": "4.2 Cible insectes et acariens : pucerons",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTHR": {
-            "title": "4.2 Cible insectes et acariens : thrips",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTORD": {
-            "title": "4.2 Cible insectes et acariens : tordeuses",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBNEM": {
-            "title": "4.2 Cible nématodes",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAIA": {
-            "title": "4.2 Cible autres insectes et acariens",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "INSAC": {
-            "title": "4.2 Fonction Inecticide-acaricide",
+        "pb15": {
+            "title": "Production brute de la commune pour :  Tabac",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -519,30 +167,8 @@
             "required": true,
             "regex": false
         },
-        "NINSAC": {
-            "title": "4.2 Nombre d insecticides-acaricides",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBRONG": {
-            "title": "4.2 Cible rongeurs",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "AUTPRED": {
-            "title": "4.2 Fonction Autres Prédateurs",
+        "pb16": {
+            "title": "Production brute de la commune pour :  Houblon",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -552,19 +178,8 @@
             "required": true,
             "regex": false
         },
-        "CIBEEE": {
-            "title": "4.2 Cible éclaircissage chimique régulateur de croissance activateur chute de fruits",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "STIMUL": {
-            "title": "4.2 Fonction Stimulant",
+        "pb18": {
+            "title": "Production brute de la commune pour :  Colza ou navette",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -574,19 +189,8 @@
             "required": true,
             "regex": false
         },
-        "CIBADJ": {
-            "title": "4.2 Cible adjuvants",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ADJUVANT": {
-            "title": "4.2 Fonction Adjuvant",
+        "pb19": {
+            "title": "Production brute de la commune pour :  Tournesol",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -596,19 +200,8 @@
             "required": true,
             "regex": false
         },
-        "CIBDIV": {
-            "title": "4.2 Cible : divers (autres ravageurs, ...)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DIVERS": {
-            "title": "4.2 Fonction Divers",
+        "pb20": {
+            "title": "Production brute de la commune pour :  Soja",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -618,19 +211,8 @@
             "required": true,
             "regex": false
         },
-        "CIBFERT": {
-            "title": "4.2 Cible fertilisation",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "FERTILISANT": {
-            "title": "4.2 Fonction Fertilisant",
+        "pb21": {
+            "title": "Production brute de la commune pour :  Lin oléagineux",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -640,8 +222,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTOPROD": {
-            "title": "4.2 Produit commercial",
+        "pb22": {
+            "title": "Production brute de la commune pour :  Autres plantes oléagineuses ou textiles",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -651,19 +233,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTODOSE": {
-            "title": "4.2 Dose de produit commercial utilisée /ha",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOUNI": {
-            "title": "4.2 Unité de la dose de produit commercial apportée",
+        "pb23": {
+            "title": "Production brute de la commune pour :  Lin textile",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -673,19 +244,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTOPSUPPT": {
-            "title": "4.2 Part du lot traitée (% de superficie)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CONAIDOFERTIF": {
-            "title": "4.2 Composition du fertilisant connue.",
+        "pb24": {
+            "title": "Production brute de la commune pour :  Chanvre",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -695,19 +255,8 @@
             "required": true,
             "regex": false
         },
-        "QFUMF": {
-            "title": "4.2 Quantité de fertilisant apportée à l'ha",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "UFUMF": {
-            "title": "4.2 Unité quantité fertilisant apportée à l'ha",
+        "pb25": {
+            "title": "Production brute de la commune pour :  Autres plantes textiles",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -717,85 +266,8 @@
             "required": true,
             "regex": false
         },
-        "EFUMCN": {
-            "title": "4.2 Concentration en azote",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCP": {
-            "title": "4.2 Concentration en phosphore",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCK": {
-            "title": "4.2 Concentration en potassium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCSO": {
-            "title": "4.2 Concentration en soufre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCMAG": {
-            "title": "4.2 Concentration en magnésium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCCA": {
-            "title": "4.2 Concentration en calcium-chaux",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCCU": {
-            "title": "4.2 Concentration en cuivre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMUNI": {
-            "title": "4.2 Unité des éléments apportés",
+        "pb26": {
+            "title": "Production brute de la commune pour :  Plantes aromatiques, médicinales et condimentaires",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -805,85 +277,8 @@
             "required": true,
             "regex": false
         },
-        "EFUMQN": {
-            "title": "4.2 Qté par ha d'azote",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQP": {
-            "title": "4.2 Qté par ha de phosphore",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQK": {
-            "title": "4.2 Qté par ha de potassium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQSO": {
-            "title": "4.2 Qté par ha de soufre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQMAG": {
-            "title": "4.2 Qté par ha de magnésium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQCA": {
-            "title": "4.2 Qté par ha de calcium-chaux",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQCU": {
-            "title": "4.2 Qté par ha de cuivre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COMMENTFICHEPHYTO": {
-            "title": "4.2 Observations (Fiche de saisie phytosanitaire)",
+        "pb27": {
+            "title": "Production brute de la commune pour :  Autres plantes industrielles  non mentionnées ailleurs",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -893,8 +288,8 @@
             "required": true,
             "regex": false
         },
-        "CONAIDOSE": {
-            "title": "4.2 DOM Connaissez vous la dose utilisee /ha",
+        "pb28": {
+            "title": "Production brute de la commune pour :  Légumes frais, melons, fraises, culture maraîchère",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -904,41 +299,8 @@
             "required": true,
             "regex": false
         },
-        "VOLMESURE": {
-            "title": "4.2 DOM Volume de la mesure utilisee pour le produit en centilitres",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "VOLUMEFUT": {
-            "title": "4.2 DOM Volume en litres du fut ou de la pompe utilisee",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NOMBREFUT": {
-            "title": "4.2 DOM Nombre de futs ou de pompe passés sur le lot",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "LIBINTRANT": {
-            "title": NaN,
+        "pb29": {
+            "title": "Production brute de la commune pour :  Légumes frais, melons, fraises, culture de plein champ",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -948,8 +310,8 @@
             "required": true,
             "regex": false
         },
-        "CULTURE": {
-            "title": NaN,
+        "pb30": {
+            "title": "Production brute de la commune pour :  Légumes frais, melons, fraises, sous serre ou sous autre abri (accessible)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -959,19 +321,8 @@
             "required": true,
             "regex": false
         },
-        "TRAIT": {
-            "title": "Type du traitement applliqué",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__TRAIT\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "LISTE_CIBLES": {
-            "title": "Liste des cibles du traitement",
+        "pb31": {
+            "title": "Production brute de la commune pour :  Fleurs et plantes ornementales (non compris pépinières) de plein air ou sous abri bas (non accessible)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -981,19 +332,8 @@
             "required": true,
             "regex": false
         },
-        "dose_equivalent_bouillie_bordelaise": {
-            "title": "pour les produits fertilisants utilisés comme produit phyto, c'est l'équivalent en dose de bouillie bordelaise.",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "N_AMM": {
-            "title": "numéro d'AMM",
+        "pb32": {
+            "title": "Production brute de la commune pour :  Fleurs et plantes ornementales (non compris pépinières) sous serre ou sous autre abri (accessible)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1003,30 +343,8 @@
             "required": true,
             "regex": false
         },
-        "UNITE_DR": {
-            "title": "unité de la dose de référence",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__UNITE_DR\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "Biocontrole": {
-            "title": "Produit de bio-contrôle",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__Biocontrole\"}",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DR": {
-            "title": "dose de référence du traitement",
+        "pb33": {
+            "title": "Production brute de la commune pour :  Prairies temporaires",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1036,8 +354,8 @@
             "required": true,
             "regex": false
         },
-        "CIBLE_AP": {
-            "title": "Cible d'appariement pour le calcul de l'IFT",
+        "pb34": {
+            "title": "Production brute de la commune pour :  Maïs fourrage",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1047,30 +365,8 @@
             "required": true,
             "regex": false
         },
-        "TYPE_TRAIT": {
-            "title": "Type de traitement retenu pour le calcul de l'IFT",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__TYPE_TRAIT\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODOSE.comp": {
-            "title": "dose de produit commercial utilisée",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__PHYTODOSE.comp\"}",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODOSE.ha": {
-            "title": "dose de produit commercial utilisé rapportée à l'hectare",
+        "pb35": {
+            "title": "Production brute de la commune pour :  Légumineuses",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1080,8 +376,8 @@
             "required": true,
             "regex": false
         },
-        "DR_dose_ha": {
-            "title": "Dose de référence du traitement rapportée à l'hectare",
+        "pb36": {
+            "title": "Production brute de la commune pour :  Autres plantes fourragères annuelles",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1091,19 +387,8 @@
             "required": true,
             "regex": false
         },
-        "REDCOM": {
-            "title": "Traitement IFT redressé",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__REDCOM\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFT_TRAIT_red": {
-            "title": "IFT du traitement après redressement",
+        "pb37": {
+            "title": "Production brute de la commune pour :  Semences et plants de terres arables",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1113,10 +398,780 @@
             "required": true,
             "regex": false
         },
-        "PHYTOBOUIL": {
-            "title": " Quantité de bouillie utilisée  à l'ha (eau + produits + adjuvant)",
+        "pb39": {
+            "title": "Production brute de la commune pour :  jachères (0)",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb41": {
+            "title": "Production brute de la commune pour :  jardins et vergers familiaux (0)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb42": {
+            "title": "Production brute de la commune pour :  Prairies permanentes hors pâturages pauvres",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb43": {
+            "title": "Production brute de la commune pour :  Pâturages pauvres",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb46": {
+            "title": "Production brute de la commune pour :  Espèces fruitières d'origine subtropicale",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb47": {
+            "title": "Production brute de la commune pour :  Baies ",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb48": {
+            "title": "Production brute de la commune pour :  Fruits à coque",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb49": {
+            "title": "Production brute de la commune pour :  Agrumeraies",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb50": {
+            "title": "Production brute de la commune pour :  Oliveraies",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb53a": {
+            "title": "Production brute de la commune pour :  Raisins pour les vins d'appelation d'origine protégée (AOP)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb53b": {
+            "title": "Production brute de la commune pour :  Raisins pour les vins sous IGP",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb54": {
+            "title": "Production brute de la commune pour :  Raisins pour les autres vins (sans AOP ni IGP)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb55": {
+            "title": "Production brute de la commune pour :  Vignes pour raisins de table",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb57": {
+            "title": "Production brute de la commune pour :  Pépinières",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb58a": {
+            "title": "Production brute de la commune pour :  Arbres de Noël",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb58b": {
+            "title": "Production brute de la commune pour :  Autres cultures permanentes",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb45": {
+            "title": "Production brute de la commune pour :  Fruits à pépins, Fruits à noyaux",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb62": {
+            "title": "Production brute de la commune pour :  équidés",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb63": {
+            "title": "Production brute de la commune pour :  Bovins de moins de 1 an",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb64": {
+            "title": "Production brute de la commune pour :  Bovins mâles de 1 à moins de 2 ans",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb65": {
+            "title": "Production brute de la commune pour :  Bovins femelles de 1 à moins de 2 ans ",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb66": {
+            "title": "Production brute de la commune pour :  Bovins mâles de 2 ans et plus",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb67": {
+            "title": "Production brute de la commune pour :  Génisses de 2 ans et plus",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb68": {
+            "title": "Production brute de la commune pour :  Vaches laitières",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb69": {
+            "title": "Production brute de la commune pour :  Autres vaches",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb70": {
+            "title": "Production brute de la commune pour :  Brebis et agnelles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb71": {
+            "title": "Production brute de la commune pour :  Autres ovins",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb72": {
+            "title": "Production brute de la commune pour :  Chèvres et chevrettes",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb73": {
+            "title": "Production brute de la commune pour :  Autres caprins",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb75": {
+            "title": "Production brute de la commune pour :  Truies reproductrices de 50 kg ou plus",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb74": {
+            "title": "Production brute de la commune pour :  Porcelets d'un poids vif de moins de 20 kg",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb76": {
+            "title": "Production brute de la commune pour :  Autres porcins",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb77": {
+            "title": "Production brute de la commune pour :  Poulets de chair",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb78": {
+            "title": "Production brute de la commune pour :  Poules pondeuses",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb79": {
+            "title": "Production brute de la commune pour :  Autres volailles (cf nomenclature =  cailles d'élevage) ; Canards ; Oies ; Dindes ; Pintades ; Autruches",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb80": {
+            "title": "Production brute de la commune pour :  Lapines mères",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb81": {
+            "title": "Production brute de la commune pour :  Ruches",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb60": {
+            "title": "Production brute de la commune pour :  Champignons",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb61": {
+            "title": "Production brute de la commune pour :  Chicons",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "GL": {
+            "title": "PBS de la commune pour : herbivores",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p151": {
+            "title": "PBS de la commune pour :céréales hors riz",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p15": {
+            "title": "PBS de la commune pour :céréales avec riz",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p16": {
+            "title": "PBS de la commune pour :plantes oléagineuses",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FCP1": {
+            "title": "PBS de la commune pour :fourrage destiné à la vente ",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FCP4": {
+            "title": "PBS de la commune pour :fourrage pour herbivores ",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p17": {
+            "title": "PBS de la commune pour :plantes sarclées",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p1": {
+            "title": "PBS de la commune pour : : grandes cultures",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "cop": {
+            "title": "PBS de la commune pour : céréales oléagineux protéagineux",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p2": {
+            "title": "PBS de la commune pour : horticulture",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "serre": {
+            "title": "PBS de la commune pour : légumes et fleurs sous serres",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pleinair": {
+            "title": "PBS de la commune pour :maraichage et fleurs de plein air",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb53": {
+            "title": "PBS de la commune pour :vins de qualité",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p3": {
+            "title": "PBS de la commune pour :cultures permanentes",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "vignobl": {
+            "title": "PBS de la commune pour : vins de de qualité + vins sans IG + raisin de table",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "pb58": {
+            "title": "PBS de la commune pour : autres cultures permanentes et arbres de noel",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "fruit": {
+            "title": "PBS de la commune pour :ensemble des fruits",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "oliv": {
+            "title": "PBS de la commune pour : oliviers",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p4": {
+            "title": "PBS de la commune pour : herbivores et fourrage ",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p45": {
+            "title": "PBS de la commune pour :bovins lait",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p46": {
+            "title": "PBS de la commune pour : bovins (bovins lait + bovins males de 1 a 2 ans+Bovins mâles de 2 ans et plus +vaches nourrices ou allaitantes)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p51": {
+            "title": "PBS de la commune pour : porcins",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p52": {
+            "title": "PBS de la commune pour :volailles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "p5": {
+            "title": "PBS de la commune pour : granivores (porcins, volailles, lapins)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "veget": {
+            "title": "PBS de la commune pour : productions végétales (grandes cultures+horticulture+cultures permanentes)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ani": {
+            "title": "PBS de la commune pour : prodcutions animales (herbivores et fourrage+granivores)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PBSTOT_COEF17": {
+            "title": "PBS de la commune pour : totale coefficients 2017",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CDEX_COEF2017": {
+            "title": "Classe de dimention économique de la commune, coefficients PBS 2017",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DIMECO_COEF2017": {
+            "title": "Dimention économique de la commune, coefficients PBS 2017",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "OTE64_COEF2017": {
+            "title": "Orientation économique de la commune, coefficients PBS 2017 (64 postes)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "OTEFDD_COEF17": {
+            "title": "Orientation économique de la commune,, coefficients PBS 2017 (nomenclature détaillée)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "OTEFDA_COEF17": {
+            "title": "Orientation économique de la commune,, coefficients PBS 2017 (nomenclature agrégée)",
+            "description": "null",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1130,12 +1185,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PKfruits_2015__20210706_PKFruits2015_TTMT_phyto",
+    "name": "RA_2020__RA2020_PBS_OTEX_COMMUNALES",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table 20210706_PKFruits2015_TTMT_phyto from data dictionary PKfruits_2015"
+    "description": "Schema for table RA2020_PBS_OTEX_COMMUNALES from data dictionary RA_2020"
 }

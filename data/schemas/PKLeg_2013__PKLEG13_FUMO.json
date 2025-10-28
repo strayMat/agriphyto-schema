@@ -2,8 +2,85 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "NOM_DOSSIER ": {
-            "title": "Nom du dossier",
+        "CODEFUMO": {
+            "title": "FUMO - 61.1 - N° de pass fumure organique",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMONAT": {
+            "title": "FUMO - 61.1 - Nature de la fumure organique",
+            "description": "{\"nomenclature\": \"PKLEG13_FUMO__FUMONAT\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "NBREM": {
+            "title": "FUMO - 61.1 - Nb de remorques fumure organique",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "QREM_ENT": {
+            "title": "Qté / remorque de fumure organique (entier)",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "QTOT_ENT": {
+            "title": "Qté totale de fumure organique (entier)",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMODOS_ENT": {
+            "title": "Qté à l'ha de fumure organique (entier)",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMOUNI": {
+            "title": "FUMO - 61.1 - Unité de la fumure organique",
+            "description": "{\"nomenclature\": \"PKLEG13_FUMO__FUMOUNI\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMOPOUR": {
+            "title": "FUMO - 61.1 - pourcentage de la parcelle",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -13,10 +90,43 @@
             "required": true,
             "regex": false
         },
-        "NOM_SUBSTANCE": {
-            "title": "Libellé de la substance active",
+        "FUMOPROV": {
+            "title": "FUMO - 61.1 - provenance de la fumure",
+            "description": "{\"nomenclature\": \"PKLEG13_FUMO__FUMOPROV\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMOTYP": {
+            "title": "FUMO - 61.1 - type de matériel d’épandage",
+            "description": "{\"nomenclature\": \"PKLEG13_FUMO__FUMOTYP\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMODEL": {
+            "title": "FUMO - 61.1 - délai entre l’apport et l’enfouissement",
+            "description": "{\"nomenclature\": \"PKLEG13_FUMO__FUMODEL\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMODAT": {
+            "title": "FUMO - 61.1 - Date d’apport fumure organique",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "datetime64[ns]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -24,151 +134,8 @@
             "required": true,
             "regex": false
         },
-        "QDOSEMATSURF": {
-            "title": "Quantité de matière active utilisée, par ha ",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NBPASMATACT": {
-            "title": "Nombre de traitements effectués (lignes du tableau des passages phytosanitaires) sur la parcelle avec la même matière active ",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "AUTRE": {
-            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement autre que fongicide, insecticide ou herbicide",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "FONGICIDE": {
-            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type fongicide",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "HERBICIDE": {
-            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type herbicide",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "INSECTICIDE": {
-            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type insecticide",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ESPECEENQ": {
-            "title": "Espèce de l'enquête (calculée)",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_MATACT__ESPECEENQ\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "LIB_ESPECE": {
-            "title": "Libelle espèce enquêtée",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "REG": {
-            "title": "Région",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "LIB_REG": {
-            "title": "Libelle (ancienne) région d'enquête",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NVREG": {
-            "title": "Nouvelle Région",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "LIB_NVREG": {
-            "title": "Libelle nouvelles régions",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ABRISHAUT ": {
-            "title": "Espèce conduite sous abris haut : Sous double tunnel ou sous chenille sous abris haut ou sous tunnel sous abris haut, Sous tunnel haut simple paroi ; Sous tunnel à parois gonflables ; Sous-serre et/ou multi-chapelle",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_MATACT__ABRISHAUT_\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COEF1": {
-            "title": "Coefficient exploitation calé sur la SAA au niveau régional",
+        "QREM": {
+            "title": "FUMO - 61.1 - Qté / remorque de fumure organique",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -178,10 +145,10 @@
             "required": true,
             "regex": false
         },
-        "COEF2": {
-            "title": "Coefficient parcellaire calé sur la SAA au niveau régional",
+        "QTOT": {
+            "title": "FUMO - 61.1 - Qté totale de fumure organique",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -189,10 +156,32 @@
             "required": true,
             "regex": false
         },
-        "CIBLE_SA": {
-            "title": "Segment de la matière active selon la classification Eurostat",
+        "FUMODOS": {
+            "title": "FUMO - 61.1 - Qté à l'ha de fumure organique",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMOANNEE": {
+            "title": "FUMO - 61.1 - Année d’apport fumure organique",
+            "description": "{\"nomenclature\": \"PKLEG13_FUMO__FUMOANNEE\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FUMOMOIS": {
+            "title": "FUMO - 61.1 - Mois d’apport fumure organique",
+            "description": "{\"nomenclature\": \"PKLEG13_FUMO__FUMOMOIS\"}",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -206,12 +195,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "Phytoleg_2018__20210930_Phytolegumes2018_TTMT_MATACT",
+    "name": "PKLeg_2013__PKLEG13_FUMO",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table 20210930_Phytolegumes2018_TTMT_MATACT from data dictionary Phytoleg_2018"
+    "description": "Schema for table PKLEG13_FUMO from data dictionary PKLeg_2013"
 }

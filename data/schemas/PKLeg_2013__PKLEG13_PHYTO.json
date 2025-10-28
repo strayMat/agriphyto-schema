@@ -2,41 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
-            "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__IDENTPARC\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COEF": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COEF2": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ID_PKVITI2019_GEST_ENHERB": {
-            "title": "Identifiant de l'opération de gestion de l'enherbement",
+        "CODEPHYTO": {
+            "title": "PHYTO - 9 - N° ordre",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -46,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "ID_LIGNE": {
-            "title": "numéro de ligne de gestion de l'enherbement (numérotation des opérations sur une même parcelle)",
+        "PHYTOPASS": {
+            "title": "PHYTO - 9 - N° passage",
             "description": "null",
             "dtype": "int64",
             "nullable": true,
@@ -57,30 +24,8 @@
             "required": true,
             "regex": false
         },
-        "CODEGESTENHER": {
-            "title": "9.0 Numéro d'ordre de gestion de l'enherbement (numérotation des opérations sur une même parcelle)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GESTENHERPAS": {
-            "title": "9.0 Numéro de passage de gestion de l'enherbement",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DATEGESTENHER": {
-            "title": "9.0 Date du passage de gestion de l'enherbement",
+        "PHYTODAT": {
+            "title": "PHYTO - 9 - Date d’apport",
             "description": "null",
             "dtype": "datetime64[ns]",
             "nullable": true,
@@ -90,195 +35,8 @@
             "required": true,
             "regex": false
         },
-        "TYPGESTENHER": {
-            "title": "9.0 Type de passage de gestion de l'enherbement",
-            "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__TYPGESTENHER\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IRDISC": {
-            "title": "9.0 Type de passage de gestion de l'enherbement",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IRDENT": {
-            "title": "9.1 Passage de dents (dont cultivateur) sur l'inter-rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IRROTA": {
-            "title": "9.1 Passage d'un appareil de type rotavator sur l'inter-rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IRAUTR": {
-            "title": "9.1 Passage d'un autre type d'appareil sur l'inter-rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ICLAM": {
-            "title": "9.1 Passage d'un intercep à lames sous le rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ICROTA": {
-            "title": "9.1 Passage d'un intercep rotatifs sous le rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ICDECA": {
-            "title": "9.1 Passage de décavaillonneuse sous le rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ICAUTR": {
-            "title": "9.1 Passage d'un autre type d'appareil sous le rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBADVENS": {
-            "title": "9.2 Cible herbicides totaux (contact ou systémique)",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBADVGRAM": {
-            "title": "9.2 Cible graminées annuelles",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBADVDIC1": {
-            "title": "9.2 Cible dicotylédones annuelles",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBADVDIC2": {
-            "title": "9.2 Cible dicotylédones bisannuelles",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBADVVIV": {
-            "title": "9.2 Cible vivaces",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBDEVIT": {
-            "title": "9.2 Cible dévitalisation",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOPRODH": {
-            "title": "9.2 Code du produit commercial-herbicide dans le référentiel",
-            "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__PHYTOPRODH\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NOMINTRANTH": {
-            "title": "Libellé du produit commercial-herbicide administré",
-            "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__NOMINTRANTH\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOLIBAUTRH": {
-            "title": "9.2 Libellé du produit herbicide non référencé (si absent du référentiel)",
+        "PHYTOLIB": {
+            "title": "Produit commercial",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -288,32 +46,10 @@
             "required": true,
             "regex": false
         },
-        "AMMH": {
-            "title": "9.2 AMM correspondant au produit commercial-herbicide",
-            "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__AMMH\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOMODEH": {
-            "title": "9.2 Mode de traitement de l'herbicide",
-            "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__PHYTOMODEH\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PARTDESHERB": {
-            "title": "9.2 Part de surface traitée (en%)",
+        "PHYTOPROD": {
+            "title": "PHYTO - 9 - Produit commercial",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -321,8 +57,8 @@
             "required": true,
             "regex": false
         },
-        "DOSESAISH": {
-            "title": "9.2 Dose administrée par le viticulteur→ Exprimée par ha, c'est la quantité de produit par ha de surface traitée (pour retrouver la quantité de produit en kg ou l, mutiplier par la surface traitée, autrement dit par PARTDESHERB x SUPP2019)→ Exprimée par hl, c'est la quantité de produit par hl de bouillie utilisée (pour retrouver la quantité de produit en kg ou l, multiplier par le volume de bouillie, autrement dit par PHYTOBOUILH /100)",
+        "PHYTODOS": {
+            "title": "PHYTO - 9 - dose de produit commercial à l'ha",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -332,9 +68,9 @@
             "required": true,
             "regex": false
         },
-        "PHYTOUNIH": {
-            "title": "9.2 Unité du produit utilisé pour passage herbicide",
-            "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__PHYTOUNIH\"}",
+        "PHYOUNI": {
+            "title": "PHYTO - 9 - Unité produit",
+            "description": "{\"nomenclature\": \"PKLEG13_PHYTO__PHYOUNI\"}",
             "dtype": "int64",
             "nullable": true,
             "checks": null,
@@ -343,118 +79,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTOBOUILH": {
-            "title": "9.2 Volume de bouillie utilisée pour passage herbicide (en litres par hectare de surface traitée)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST3IR": {
-            "title": "9.3 Passage manuel sur l'inter-rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST3SR": {
-            "title": "9.3 Passage manuel sous le rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "TONTESR": {
-            "title": "9.4 Tonte sous le rang (tout type d'enherbement)",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "TONTEIR": {
-            "title": "9.4 Tonte sur l'inter-rang hors engrais vert",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "TONTEIREV": {
-            "title": "9.4 Tonte sur l'inter-rang de type engrais vert",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COUVIRMULCH": {
-            "title": "9.5 Couverture de type mulch (écorce, paillage, BRF) sur l'inter-rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COUVIRTONTE": {
-            "title": "9.5 Couverture de type résidus de tonte sur l'inter-rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COUVIRCOMPOST": {
-            "title": "9.5 Couverture de type compost sur l'inter-rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COUVIRAUTR": {
-            "title": "9.5 Couverture d'un autre type sur l'inter-rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COUVIRLIBAUTR": {
-            "title": "9.5 Libellé d'un autre type de couverture dans l'inter-rang",
+        "POURTRAIT": {
+            "title": "PHYTO - 9 - % de la parcelle traitée",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -464,10 +90,10 @@
             "required": true,
             "regex": false
         },
-        "COUVSRMULCH": {
-            "title": "9.5 Couverture de type mulch (écorce, paillage, BRF) sous le rang",
+        "PHYTOBOUIL": {
+            "title": "PHYTO - 9 - Quantité de bouille à l'ha",
             "description": "null",
-            "dtype": "bool",
+            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -475,41 +101,8 @@
             "required": true,
             "regex": false
         },
-        "COUVSRTONTE": {
-            "title": "9.5 Couverture de type résidus de tonte sous le rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COUVSRCOMPOST": {
-            "title": "9.5 Couverture de type compost sous le rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COUVSRAUTR": {
-            "title": "9.5 Couverture d'un autre type sous le rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COUVSRLIBAUTR": {
-            "title": "9.5 Libellé d'un autre type de couverture sous le rang",
+        "MALIB": {
+            "title": "Matière active",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -519,305 +112,8 @@
             "required": true,
             "regex": false
         },
-        "NBDESTIR": {
-            "title": "Nombre de destructions et couverture du sol dans l'inter-rang (calculé)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NBDESTSR": {
-            "title": "Nombre de destructions et couverture du sol sous le rang (calculé)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IRTHERM": {
-            "title": "9.1 Passage d'un appareil thermique sur l'inter-rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ICTHERM": {
-            "title": "9.1 Passage d'un appareil thermique sous le rang",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GESTDESCRIPTION": {
-            "title": "GESTDESCRIPTION",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST2IRNUM": {
-            "title": "9.2 Modalité du passage sur l'inter-rang (numérateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST2IRDENOM": {
-            "title": "9.2 Modalité du passage sur l'inter-rang (dénominateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST2SRNUM": {
-            "title": "9.2 Modalité du passage sous le rang (numérateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST2SRDENOM": {
-            "title": "9.2 Modalité du passage sous le rang (dénominateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST1IRNUM": {
-            "title": "9.1 Modalité du passage sur l'inter-rang (numérateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST1IRDENOM": {
-            "title": "9.1 Modalité du passage sur l'inter-rang (dénominateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST1SRNUM": {
-            "title": "9.1 Modalité du passage sous le rang (numérateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST1SRDENOM": {
-            "title": "9.1 Modalité du passage sous le rang (dénominateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST3IRNUM": {
-            "title": "9.3 Modalité du passage manuel sur l'inter-rang (numérateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST3IRDENOM": {
-            "title": "9.3 Modalité du passage manuel sur l'inter-rang (dénominateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST3SRNUM": {
-            "title": "9.3 Modalité du passage manuel sous le rang (numérateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST3SRDENOM": {
-            "title": "9.3 Modalité du passage manuel sous le rang (dénominateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST5IRNUM": {
-            "title": "GEST5IRNUM",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST5IRDENOM": {
-            "title": "9.5 Modalité de la couverture sur l'inter-rang (dénominateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST5SRNUM": {
-            "title": "9.5 Modalité de la couverture sous le rang (numérateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "GEST5SRDENOM": {
-            "title": "9.5 Modalité de la couverture sous le rang (dénominateur)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBADJH": {
-            "title": "9.2 Cible adjuvant",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PARTSRCALCFICHE": {
-            "title": "9.2 Affiche PARTSRCALC",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PARTIRCALCFICHE": {
-            "title": "9.2 Affiche PARTIRCALC",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "VALID_DOSE": {
-            "title": "Sous-dosage ou sur-dosage validé (validation régionale ou nationale)",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CHAMP_IFT": {
-            "title": "Traitement entrant dans le champ de calcul de l'IFT global",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "BIOCONTROLE": {
-            "title": "Indicatrice d'un produit de biocontrôle",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DOSESAISH_HA": {
-            "title": "Dose saisie (DOSESAISH) ou convertie en L ou Kg par hectare",
+        "MACONC": {
+            "title": "PHYTO - 9 - Concentration de la matière active",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -827,8 +123,19 @@
             "required": true,
             "regex": false
         },
-        "DOSEREF_HA": {
-            "title": "Dose de référence (éventuellement convertie) en L ou Kg par hectare",
+        "MAUNIT": {
+            "title": "PHYTO - 9 - Unité de la concentration de matière active",
+            "description": "{\"nomenclature\": \"PKLEG13_PHYTO__MAUNIT\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MADOSE": {
+            "title": "PHYTO - 9 - Dose de matière active à lha",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -838,9 +145,603 @@
             "required": true,
             "regex": false
         },
-        "REDRESS": {
-            "title": "Motif d'un éventuel redressement de l'IFT",
-            "description": "{\"nomenclature\": \"PKViti2019_gest_enherb_definitif__REDRESS\"}",
+        "CIBDESHER": {
+            "title": "PHYTO - 9 - desherbant",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBDEFANA": {
+            "title": "PHYTO - 9 - Défanant",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBAUTINS": {
+            "title": "PHYTO - 9 - autres insectes",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBAUTACA": {
+            "title": "PHYTO - 9 - autres acariens",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBAMALAD": {
+            "title": "PHYTO - 9 - autres maladies",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBAUTTRT": {
+            "title": "PHYTO - 9 - Autres cibles (corvicides, rodonticides, répulsif gibier, ….etc )",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBAUTPAS": {
+            "title": "PHYTO - 9 - Autres Parasites du sol (Champignon, Nématode,...)",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBANTHRA": {
+            "title": "PHYTO - 9 - Anthracnose",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBMILDIO": {
+            "title": "PHYTO - 9 - Mildiou",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBPYTHIU": {
+            "title": "PHYTO - 9 - Pythium, Fonte des semis",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBSCLERO": {
+            "title": "PHYTO - 9 - Sclérotiniose",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBBOTRYT": {
+            "title": "PHYTO - 9 - Pourriture grise, botrytis",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBBACTER": {
+            "title": "PHYTO - 9 - Bactériose",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBNECMAR": {
+            "title": "PHYTO - 9 - Nécrose marginale",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBRHIZPBA": {
+            "title": "PHYTO - 9 - Rhizoctone, pourriture basale",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBOIDIUM": {
+            "title": "PHYTO - 9 - Oïdium",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBPUCERO": {
+            "title": "PHYTO - 9 - Pucerons",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBNOCTUE": {
+            "title": "PHYTO - 9 - Noctuelles",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBALEURO": {
+            "title": "PHYTO - 9 - Aleurodes",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBTHRIPS": {
+            "title": "PHYTO - 9 - Thrips",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBACARIE": {
+            "title": "PHYTO - 9 - Acariens",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBTUTAOB": {
+            "title": "PHYTO - 9 - Tuta absoluta",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBNUILES": {
+            "title": "PHYTO - 9 - Nuiles",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBFUSARI": {
+            "title": "PHYTO - 9 - Fusariose",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBTAUPIN": {
+            "title": "PHYTO - 9 - Taupin",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBPHYTOP": {
+            "title": "PHYTO - 9 - Phytophtora",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBTARSOM": {
+            "title": "PHYTO - 9 - Tarsomème",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBDUPONC": {
+            "title": "PHYTO - 9 - Duponchelia fovealis",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBALTERN": {
+            "title": "PHYTO - 9 - Alternariose (Alternaria), taches noires",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBCHENIPT": {
+            "title": "PHYTO - 9 - Chenilles : Piérides, tenthèdes,…",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBPUCECV": {
+            "title": "PHYTO - 9 - Pucerons : P cendré, ver",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBTEIGNE": {
+            "title": "PHYTO - 9 - Teigne des crucifères",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBALTISE": {
+            "title": "PHYTO - 9 - Altises",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBTEIPOI": {
+            "title": "PHYTO - 9 - Teigne du poireau",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBRHIZBR": {
+            "title": "PHYTO - 9 - Rhizoctone brun",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBRHIZVB": {
+            "title": "PHYTO - 9 - Rhizoctone violet ou bleu",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBMOUCAR": {
+            "title": "PHYTO - 9 - Mouche de la carotte",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBNEMATO": {
+            "title": "PHYTO - 9 - Nématodes",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBDEPRAC": {
+            "title": "PHYTO - 9 - Dépérissement racinaire",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBGRAISSE": {
+            "title": "PHYTO - 9 - Graisse",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBMOUOIS": {
+            "title": "PHYTO - 9 - Mouche oignon et/ou semis",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBMOUMAS": {
+            "title": "PHYTO - 9 - Mouche mâche et/ou semis",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBTHRTAB": {
+            "title": "PHYTO - 9 - Thrips tabaci",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBMOUMIN": {
+            "title": "PHYTO - 9 - Mouche mineuse",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBPHOMA": {
+            "title": "PHYTO - 9 - Phoma",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBROUILL": {
+            "title": "PHYTO - 9 - Rouille",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBLIMACE": {
+            "title": "PHYTO - 9 - Limaces, escargots",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBDESINP": {
+            "title": "PHYTO - 9 - Disinfection plaies de taille",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBADJUVA": {
+            "title": "PHYTO - 9 - Adjuvant",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBFERTIL": {
+            "title": "PHYTO - 9 - Effet secondaire : fertilisant, renforcement défenses, durcissement",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBDESINSOL": {
+            "title": "PHYTO - 9 - Désinfection du sol ou substrat culture hors sol",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIBHORMON": {
+            "title": "PHYTO - 9 - Hormone (régulateur de croissance, nouaison, maturation.. )",
+            "description": "null",
+            "dtype": "bool",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MADOSUNI": {
+            "title": "PHYTO - 9 - Unité matière active",
+            "description": "{\"nomenclature\": \"PKLEG13_PHYTO__MADOSUNI\"}",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PHYTOMATACT": {
+            "title": "PHYTO - 9 - Matière active",
+            "description": "null",
+            "dtype": "int64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CODEAMM": {
+            "title": "Code AMM du produit commercial",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -849,10 +750,10 @@
             "required": true,
             "regex": false
         },
-        "IFT": {
-            "title": "IFT du traitement herbicide (si CHAMP_IFT est Vrai)",
+        "PLANTE": {
+            "title": "Plante de la matière active bio",
             "description": "null",
-            "dtype": "float64",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -866,12 +767,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PKViti_2019__PKViti2019_gest_enherb_definitif",
+    "name": "PKLeg_2013__PKLEG13_PHYTO",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table PKViti2019_gest_enherb_definitif from data dictionary PKViti_2019"
+    "description": "Schema for table PKLEG13_PHYTO from data dictionary PKLeg_2013"
 }

@@ -89,6 +89,13 @@ def infer_type_from_varname(var_name: str) -> str:
 
 
 # Nomenclature parsers and utils
+def remove_db_from_nomenclature(db_name: str):
+    path2all_nomenclatures = DIR2NOMENCLATURES / FILENAME_NOMENCLATURES
+    if path2all_nomenclatures.exists():
+        all_nomenclatures = pd.read_csv(path2all_nomenclatures)
+        all_nomenclatures[all_nomenclatures[COLNAME_OUT_DB] != db_name].to_csv(
+            path2all_nomenclatures
+        )
 
 
 def clean_nomenclature_name(
@@ -202,7 +209,7 @@ def nomenclature_from_nomenclature_sheet(
     filepath2dico: Path,
     nomenclature_sheet: str,
     skiprows_nomenclature: str,
-    cols_to_use_nomenclature: dict | None = None,
+    cols_to_use_nomenclature: dict | None,
 ) -> dict[str, pd.DataFrame]:
     """
     Parse nomenclatures / modalities from a separate nomenclature sheet in the data dictionary.
@@ -225,17 +232,18 @@ def nomenclature_from_nomenclature_sheet(
         A dictionary mapping variable names to data frames containing the code-label mappings for
         each data modality.
     """
+    remove_db_from_nomenclature(db_name)
     modalites_df = pd.read_excel(
         DIR2DICO / filepath2dico,
         sheet_name=nomenclature_sheet,
         skiprows=skiprows_nomenclature,
     )
     modalites_df.rename(columns=cols_to_use_nomenclature, inplace=True)
-    # La colonne variable contient à la fois les noms de variables et les modalités.
+    # La colonne variable contient à la fois les codes et les libellés des modalités.
     # Elle ne peut être vide. On filtre donc les lignes vides.
-    modalites_df = modalites_df[
-        modalites_df[COLNAME_VARIABLE].notna()
-    ].reset_index(drop=True)
+    modalites_df = modalites_df[modalites_df[COLNAME_CODE].notna()].reset_index(
+        drop=True
+    )
 
     mask = modalites_df[COLNAME_TABLE].notna()
     starts = [*modalites_df.index[mask].tolist(), len(modalites_df)]
@@ -243,15 +251,13 @@ def nomenclature_from_nomenclature_sheet(
     all_modalities_df = {}
     for i in range(len(starts) - 1):
         table_name = modalites_df.loc[starts[i], COLNAME_TABLE]
-        var_name = modalites_df.loc[starts[i], COLNAME_VARIABLE]
-        sub = modalites_df.iloc[starts[i] + 1 : starts[i + 1]].copy()[
-            [COLNAME_VARIABLE, COLNAME_LIBELLE]
-        ]
-        sub.columns = modalites_df.iloc[starts[i], :][
-            [COLNAME_VARIABLE, COLNAME_LIBELLE]
-        ]  # use the header row
-        sub = sub.dropna(how="all")  # drop empty lines
-        if len(sub) > 0:
+        var_name = modalites_df.loc[starts[i], COLNAME_CODE]
+        raw_modalities = modalites_df.iloc[
+            starts[i] + 1 : starts[i + 1]
+        ].copy()[[COLNAME_CODE, COLNAME_LIBELLE]]
+        raw_modalities.columns = [COLNAME_CODE, COLNAME_LIBELLE]
+        raw_modalities = raw_modalities.dropna(how="all")  # drop empty lines
+        if len(raw_modalities) > 0:
             var_name_clean = clean_nomenclature_name(var_name, table_name)
             # log if the cleaned name differs from the original
             var_name_check = var_name_clean.replace(f"{table_name}__", "")
@@ -259,7 +265,7 @@ def nomenclature_from_nomenclature_sheet(
                 logger.warning(
                     f"!!! Variable name {var_name} differs from clean version {var_name_check}"
                 )
-            modalities_df = sub.reset_index(drop=True)
+            modalities_df = raw_modalities.reset_index(drop=True)
             all_modalities_df[var_name_clean] = modalities_df
             #
             modalities_df[COLNAME_TABLE] = table_name
@@ -280,7 +286,9 @@ def nomenclature_from_nomenclature_sheet(
                 # write header
                 modalities_df.to_csv(path2modalites, index=False, mode="w")
             else:
-                modalities_df.to_csv(path2modalites, index=False, mode="a")
+                modalities_df.to_csv(
+                    path2modalites, index=False, mode="a", header=False
+                )
             logger.info(
                 f"Variable {var_name_clean} nomenclature appended in {path2modalites}"
             )
@@ -315,7 +323,7 @@ def nomenclature_from_variable_sheet(
         for each data modality.
         Save nomenclatures into one centralized csv file by append mode in agriphyto_schema/data/nomenclatures/all_nomenclatures.csv
     """
-
+    remove_db_from_nomenclature(db_name)
     if COLNAME_NOMENCLATURE not in cols_to_use.values():
         msg = """This function only handles behavior 1) where modalities are in the same sheet as
         variables."""
@@ -361,7 +369,9 @@ def nomenclature_from_variable_sheet(
                 # write header
                 modalities_df.to_csv(path2modalites, index=False, mode="w")
             else:
-                modalities_df.to_csv(path2modalites, index=False, mode="a")
+                modalities_df.to_csv(
+                    path2modalites, index=False, mode="a", header=False
+                )
             logger.info(
                 f"Variable {var_name_clean} nomenclature saved at {path2modalites}"
             )
@@ -456,11 +466,15 @@ def dico_from_excel(db_name: str) -> None:
             skiprows_nomenclature = AVAILABLE_DICOS[db_name][
                 "skiprows_nomenclature"
             ]
+            cols_to_use_nomenclature = AVAILABLE_DICOS[db_name][
+                "cols_to_use_nomenclature"
+            ]
             modalities_dic = nomenclature_from_nomenclature_sheet(
                 db_name=db_name,
                 filepath2dico=filepath2dico,
                 nomenclature_sheet=nomenclature_sheet,
                 skiprows_nomenclature=skiprows_nomenclature,
+                cols_to_use_nomenclature=cols_to_use_nomenclature,
             )
 
         dico[COLNAME_PANDERA_TYPE] = dico[COLNAME_TYPE].apply(map_type)
@@ -491,7 +505,7 @@ def dico_from_excel(db_name: str) -> None:
                 )
                 varname_clean = clean_nomenclature_name(
                     var_name, table_name_clean
-                )
+                ) 
                 if varname_clean in modalities_dic:
                     # Add strict categories instead of nomenclature dic ?
                     col_schema.metadata = {"nomenclature": varname_clean}
@@ -700,6 +714,7 @@ def dico_from_casd_csv(db_name: str) -> None:
         ].reset_index(drop=True)
 
         # extract nomenclature and create files
+        remove_db_from_nomenclature(db_name)
         for _, row in table_variables_w_modalities.iterrows():
             var_name = row[COLNAME_VARIABLE]
             raw_nomenclature_row = row[COLNAME_NOMENCLATURE]
@@ -725,7 +740,9 @@ def dico_from_casd_csv(db_name: str) -> None:
                 # write header
                 modalities_df.to_csv(path2modalites, index=False, mode="w")
             else:
-                modalities_df.to_csv(path2modalites, index=False, mode="a")
+                modalities_df.to_csv(
+                    path2modalites, index=False, mode="a", header=False
+                )
             logger.info(
                 f"Variable {var_name_clean} nomenclature saved at {path2modalites}"
             )

@@ -2,19 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "ID_DOSSIER": {
-            "title": "numero interne capibara",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "BALSA": {
-            "title": "BALSA",
+        "id_log": {
+            "title": "Identifiant logement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "NOM_DOSSIER": {
-            "title": NaN,
+        "id_loc": {
+            "title": "Identifiant local",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -35,8 +24,19 @@
             "required": true,
             "regex": false
         },
-        "espece": {
-            "title": NaN,
+        "dteloc": {
+            "title": "Type de local",
+            "description": "{\"nomenclature\": \"fideli_local22_1__dteloc\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "dloy48a": {
+            "title": "Loyer de 48 en valeur de l'année",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -46,8 +46,8 @@
             "required": true,
             "regex": false
         },
-        "ID_LIGNE": {
-            "title": NaN,
+        "nbniv": {
+            "title": "Nombre de niveaux",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -57,8 +57,85 @@
             "required": true,
             "regex": false
         },
-        "IDLIGNE_BIS": {
-            "title": "mise de l id_ligne en format chaine",
+        "elec": {
+            "title": "Présence d'électricité",
+            "description": "{\"nomenclature\": \"fideli_local22_1__elec\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "gaz": {
+            "title": "Présence du gaz",
+            "description": "{\"nomenclature\": \"fideli_local22_1__gaz\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbpp": {
+            "title": "Nombre de pièces principales",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbcuis8": {
+            "title": "Nombre de cuisines de moins de 9 m2",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbcuis9": {
+            "title": "Nombre de cuisines d'au moins 9 m2",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbpiec": {
+            "title": "Nombre de pièces",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "cne": {
+            "title": "Code commune de l’adresse fiscale de traitement",
+            "description": "{\"nomenclature\": \"fideli_local22_1__cne\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "rue": {
+            "title": "Numéro de rue au cadastre de l’adresse fiscale de traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -68,8 +145,8 @@
             "required": true,
             "regex": false
         },
-        "idlignephyto": {
-            "title": "concatenation NOM_DOSSIER, IDLIGNE_BIS) pour rendre unique chaque ligne saisie",
+        "imm": {
+            "title": "Numéro d’immeuble de l’adresse fiscale de traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -79,41 +156,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTORDR": {
-            "title": "4.2 : Iterventions de pulvérisation : numéro d'ordre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOPASS": {
-            "title": "4.2 Numéro de passage",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NUMERO_PASSAGE": {
-            "title": "4.2 Numéro de passage remis chronologiquement",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODAT": {
-            "title": "4.2 Date du passage",
+        "btq": {
+            "title": "Indice de répétition de l’adresse fiscale de traitement",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -123,8 +167,19 @@
             "required": true,
             "regex": false
         },
-        "QUALIFenquete": {
-            "title": "concatenation des fonctions (herbicide,fongicide, insecticide-acaricide, autrespredateurs,stimulant, adjuvant,divers,fertilisants)",
+        "occ": {
+            "title": "Occupation du local (propriétaire, locataire, vacant...)",
+            "description": "{\"nomenclature\": \"fideli_local22_1__occ\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nivf": {
+            "title": "Etage du local",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -134,8 +189,30 @@
             "required": true,
             "regex": false
         },
-        "QUALIFCorrige": {
-            "title": "concatenation des fonctions corrigees (herbicide,fongicide, insecticide-acaricide, autrespredateurs,stimulant, adjuvant,divers,fertilisants)",
+        "natloc": {
+            "title": "Code nature du local",
+            "description": "{\"nomenclature\": \"fideli_local22_1__natloc\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "catloc": {
+            "title": "Catégorie du local",
+            "description": "{\"nomenclature\": \"fideli_local22_1__catloc\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "refcad": {
+            "title": "Références cadastrales",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -145,8 +222,85 @@
             "required": true,
             "regex": false
         },
-        "PRODCOURT": {
-            "title": "2.5 Libellé court",
+        "nbsam": {
+            "title": "Nombre de salles à manger",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbch": {
+            "title": "Nombre de chambres",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbcuis": {
+            "title": "Nombre de cuisines",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbsdb": {
+            "title": "Nombre de salles de bain",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbwc": {
+            "title": "Nombre de WC",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbbaig": {
+            "title": "Nombre de baignoires",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbdouc": {
+            "title": "Nombre de douches",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "surftot": {
+            "title": "Surface totale du local",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -156,8 +310,19 @@
             "required": true,
             "regex": false
         },
-        "PHYTOLIBAUTRE": {
-            "title": "4.2 Nom du produit Autre",
+        "loi48": {
+            "title": "Logement soumis à la loi de 1948",
+            "description": "{\"nomenclature\": \"fideli_local22_1__loi48\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "datachev": {
+            "title": "Année d'achèvement du local",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -167,8 +332,30 @@
             "required": true,
             "regex": false
         },
-        "COMMENTAIRE": {
-            "title": NaN,
+        "ascenseur": {
+            "title": "Présence d'ascenseur (appartement)",
+            "description": "{\"nomenclature\": \"fideli_local22_1__ascenseur\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "typpmo": {
+            "title": "Type de personne morale",
+            "description": "{\"nomenclature\": \"fideli_local22_1__typpmo\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "dateacte": {
+            "title": "Date acte de propriété correspondant à la dernière mutation du local",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -178,8 +365,85 @@
             "required": true,
             "regex": false
         },
-        "commentaire_corrections": {
-            "title": NaN,
+        "csdep": {
+            "title": "Code département de l’adresse fiscale de traitement",
+            "description": "{\"nomenclature\": \"fideli_local22_1__csdep\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "logement": {
+            "title": "Indicatrice de logement suivant le filtre Recensement de la Population (RP)",
+            "description": "{\"nomenclature\": \"fideli_local22_1__logement\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "eau": {
+            "title": "Présence d'eau",
+            "description": "{\"nomenclature\": \"fideli_local22_1__eau\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "egout": {
+            "title": "Présence du tout à l'égout",
+            "description": "{\"nomenclature\": \"fideli_local22_1__egout\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "chauff": {
+            "title": "Présence du chauffage central",
+            "description": "{\"nomenclature\": \"fideli_local22_1__chauff\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "adrenv": {
+            "title": "Adresse d'envoi du propriétaire : code commune",
+            "description": "{\"nomenclature\": \"fideli_local22_1__adrenv\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "reg": {
+            "title": "Code région dans la taxe d'habitation",
+            "description": "{\"nomenclature\": \"fideli_local22_1__reg\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "x": {
+            "title": "Coordonnées géographiques x",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -189,19 +453,8 @@
             "required": true,
             "regex": false
         },
-        "CIBHER": {
-            "title": "4.2 Cible adventices (herbicides)",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "HERBICIDE": {
-            "title": "4.2 Fonction Herbicide",
+        "y": {
+            "title": "Coordonnées géographiques y",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -211,10 +464,10 @@
             "required": true,
             "regex": false
         },
-        "CIBBACT": {
-            "title": "4.2 Cible maladies : bactérioses",
-            "description": "null",
-            "dtype": "float64",
+        "iris": {
+            "title": "Numéro d'Ilots Regroupés pour l'Information Statistique (IRIS)",
+            "description": "{\"nomenclature\": \"fideli_local22_1__iris\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -222,118 +475,8 @@
             "required": true,
             "regex": false
         },
-        "CIBCERCO": {
-            "title": "4.2 Cible maladies : cercosporiose",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCLOQUE": {
-            "title": "4.2 Cible maladies : cloque",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCYLIN": {
-            "title": "4.2 Cible maladies : cylindrosporiose",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBFUSA": {
-            "title": "4.2 Cible maladies : fusariose",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMONI": {
-            "title": "4.2 Cible maladies : monilia",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBOID": {
-            "title": "4.2 Cible maladies : oïdium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBROUIL": {
-            "title": "4.2 Cible maladies : rouille",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTAV": {
-            "title": "4.2 Cible maladies : tavelure",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMALCONS": {
-            "title": "4.2 Cible maladies de conservation",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAUTMAL": {
-            "title": "4.2 Cible autres maladies",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "FONG": {
-            "title": "4.2 Fonction Fongicide",
+        "qpv": {
+            "title": "Nouveau Quartier Prioritaire de la politique de la Ville (QPV)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -343,10 +486,10 @@
             "required": true,
             "regex": false
         },
-        "NFONG": {
-            "title": "4.2 Nombre de fongicides",
-            "description": "null",
-            "dtype": "float64",
+        "depcom_geo_n": {
+            "title": "Code commune en géographie",
+            "description": "{\"nomenclature\": \"fideli_local22_1__depcom_geo_n\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -354,10 +497,10 @@
             "required": true,
             "regex": false
         },
-        "CIBACA": {
-            "title": "4.2 Cible insectes et acariens : acariens",
-            "description": "null",
-            "dtype": "float64",
+        "type_res1": {
+            "title": "Occupation du local version 1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__type_res1\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -365,10 +508,10 @@
             "required": true,
             "regex": false
         },
-        "CIBALEU": {
-            "title": "4.2 Cible insectes et acariens : aleurodes",
-            "description": "null",
-            "dtype": "float64",
+        "type_res2": {
+            "title": "Occupation du local version 2",
+            "description": "{\"nomenclature\": \"fideli_local22_1__type_res2\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -376,10 +519,10 @@
             "required": true,
             "regex": false
         },
-        "CIBANA": {
-            "title": "4.2 Cible insectes et acariens : anarsia",
-            "description": "null",
-            "dtype": "float64",
+        "dteloc_n_1": {
+            "title": "Type de local l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__dteloc_n_1\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -387,129 +530,8 @@
             "required": true,
             "regex": false
         },
-        "CIBCARPO": {
-            "title": "4.2 Cible insectes et acariens : carpocapse",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCHAR": {
-            "title": "4.2 Cible insectes et acariens : charançons",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCOCH": {
-            "title": "4.2 Cible insectes et acariens : cochenilles",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCOLEO": {
-            "title": "4.2 Cible insectes et acariens : coléoptères",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMOUCHE": {
-            "title": "4.2 Cible insectes et acariens : mouches autres que susuki",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBSUSUKI": {
-            "title": "4.2 Cible insectes et acariens : mouche suzukii",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBPUCE": {
-            "title": "4.2 Cible insectes et acariens : pucerons",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTHR": {
-            "title": "4.2 Cible insectes et acariens : thrips",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTORD": {
-            "title": "4.2 Cible insectes et acariens : tordeuses",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBNEM": {
-            "title": "4.2 Cible nématodes",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAIA": {
-            "title": "4.2 Cible autres insectes et acariens",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "INSAC": {
-            "title": "4.2 Fonction Inecticide-acaricide",
+        "dloy48a_n_1": {
+            "title": "Loyer de 48 en valeur de l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -519,8 +541,8 @@
             "required": true,
             "regex": false
         },
-        "NINSAC": {
-            "title": "4.2 Nombre d insecticides-acaricides",
+        "nbniv_n_1": {
+            "title": "Nombre de niveaux l'année N-1",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -530,8 +552,30 @@
             "required": true,
             "regex": false
         },
-        "CIBRONG": {
-            "title": "4.2 Cible rongeurs",
+        "elec_n_1": {
+            "title": "Présence d'électricité l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__elec_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "gaz_n_1": {
+            "title": "Présence du gaz l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__gaz_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbpp_n_1": {
+            "title": "Nombre de pièces principales l'année N-1",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -541,8 +585,52 @@
             "required": true,
             "regex": false
         },
-        "AUTPRED": {
-            "title": "4.2 Fonction Autres Prédateurs",
+        "nbcuis8_n_1": {
+            "title": "Nombre de cuisines de moins de 9 m2 l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbcuis9_n_1": {
+            "title": "Nombre de cuisines d'au moins 9 m2 l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbpiec_n_1": {
+            "title": "Nombre de pièces l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "cne_n_1": {
+            "title": "Code commune de l’adresse fiscale de traitement l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__cne_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "rue_n_1": {
+            "title": "Numéro de rue au cadastre de l’adresse fiscale de traitement l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -552,19 +640,8 @@
             "required": true,
             "regex": false
         },
-        "CIBEEE": {
-            "title": "4.2 Cible éclaircissage chimique régulateur de croissance activateur chute de fruits",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "STIMUL": {
-            "title": "4.2 Fonction Stimulant",
+        "imm_n_1": {
+            "title": "Numéro d’immeuble de l’adresse fiscale de traitement l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -574,19 +651,8 @@
             "required": true,
             "regex": false
         },
-        "CIBADJ": {
-            "title": "4.2 Cible adjuvants",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ADJUVANT": {
-            "title": "4.2 Fonction Adjuvant",
+        "btq_n_1": {
+            "title": "Indice de répétition de l’adresse fiscale de traitement l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -596,10 +662,10 @@
             "required": true,
             "regex": false
         },
-        "CIBDIV": {
-            "title": "4.2 Cible : divers (autres ravageurs, ...)",
-            "description": "null",
-            "dtype": "float64",
+        "occ_n_1": {
+            "title": "Occupation du local (propriétaire, locataire, vacant...) l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__occ_n_1\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -607,8 +673,8 @@
             "required": true,
             "regex": false
         },
-        "DIVERS": {
-            "title": "4.2 Fonction Divers",
+        "nivf_n_1": {
+            "title": "Etage du local l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -618,10 +684,10 @@
             "required": true,
             "regex": false
         },
-        "CIBFERT": {
-            "title": "4.2 Cible fertilisation",
-            "description": "null",
-            "dtype": "float64",
+        "natloc_n_1": {
+            "title": "Code nature du local l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__natloc_n_1\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -629,8 +695,19 @@
             "required": true,
             "regex": false
         },
-        "FERTILISANT": {
-            "title": "4.2 Fonction Fertilisant",
+        "catloc_n_1": {
+            "title": "Catégorie du local l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__catloc_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "refcad_n_1": {
+            "title": "Références cadastrales l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -640,8 +717,85 @@
             "required": true,
             "regex": false
         },
-        "PHYTOPROD": {
-            "title": "4.2 Produit commercial",
+        "nbsam_n_1": {
+            "title": "Nombre de salles à manger l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbch_n_1": {
+            "title": "Nombre de chambres l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbcuis_n_1": {
+            "title": "Nombre de cuisines l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbsdb_n_1": {
+            "title": "Nombre de salles de bain l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbwc_n_1": {
+            "title": "Nombre de WC l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbbaig_n_1": {
+            "title": "Nombre de baignoires l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbdouc_n_1": {
+            "title": "Nombre de douches l'année N-1",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "surftot_n_1": {
+            "title": "Surface totale du local l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -651,10 +805,10 @@
             "required": true,
             "regex": false
         },
-        "PHYTODOSE": {
-            "title": "4.2 Dose de produit commercial utilisée /ha",
-            "description": "null",
-            "dtype": "float64",
+        "loi48_n_1": {
+            "title": "Logement soumis à la loi de 1948 l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__loi48_n_1\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -662,8 +816,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTOUNI": {
-            "title": "4.2 Unité de la dose de produit commercial apportée",
+        "datachev_n_1": {
+            "title": "Année d'achèvement du local l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -673,10 +827,10 @@
             "required": true,
             "regex": false
         },
-        "PHYTOPSUPPT": {
-            "title": "4.2 Part du lot traitée (% de superficie)",
-            "description": "null",
-            "dtype": "float64",
+        "ascenseur_n_1": {
+            "title": "Présence d'ascenseur (appartement) l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__ascenseur_n_1\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -684,8 +838,19 @@
             "required": true,
             "regex": false
         },
-        "CONAIDOFERTIF": {
-            "title": "4.2 Composition du fertilisant connue.",
+        "typpmo_n_1": {
+            "title": "Type de personne morale l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__typpmo_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "dateacte_n_1": {
+            "title": "Date acte de propriété correspondant à la dernière mutation du local l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -695,10 +860,10 @@
             "required": true,
             "regex": false
         },
-        "QFUMF": {
-            "title": "4.2 Quantité de fertilisant apportée à l'ha",
-            "description": "null",
-            "dtype": "float64",
+        "csdep_n_1": {
+            "title": "Code département de l’adresse fiscale de traitement l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__csdep_n_1\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -706,8 +871,96 @@
             "required": true,
             "regex": false
         },
-        "UFUMF": {
-            "title": "4.2 Unité quantité fertilisant apportée à l'ha",
+        "logement_n_1": {
+            "title": "Indicatrice de logement suivant le filtre Recensement de la Population (RP) l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__logement_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "eau_n_1": {
+            "title": "Présence d'eau l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__eau_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "egout_n_1": {
+            "title": "Présence du tout à l'égout l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__egout_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "chauff_n_1": {
+            "title": "Présence du chauffage central l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__chauff_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "reg_n_1": {
+            "title": "Code région dans la taxe d'habitation l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__reg_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "depcom_n_1": {
+            "title": "Code commune en géographie l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__depcom_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "type_res1_n_1": {
+            "title": "Occupation du local version 1 l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__type_res1_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "type_res2_n_1": {
+            "title": "Occupation du local version 2 l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__type_res2_n_1\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "date_const": {
+            "title": "Année de construction redressée",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -717,85 +970,8 @@
             "required": true,
             "regex": false
         },
-        "EFUMCN": {
-            "title": "4.2 Concentration en azote",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCP": {
-            "title": "4.2 Concentration en phosphore",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCK": {
-            "title": "4.2 Concentration en potassium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCSO": {
-            "title": "4.2 Concentration en soufre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCMAG": {
-            "title": "4.2 Concentration en magnésium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCCA": {
-            "title": "4.2 Concentration en calcium-chaux",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMCCU": {
-            "title": "4.2 Concentration en cuivre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMUNI": {
-            "title": "4.2 Unité des éléments apportés",
+        "id_copro": {
+            "title": "Numéro de copropriété",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -805,8 +981,52 @@
             "required": true,
             "regex": false
         },
-        "EFUMQN": {
-            "title": "4.2 Qté par ha d'azote",
+        "tax": {
+            "title": "Taxation du logement",
+            "description": "{\"nomenclature\": \"fideli_local22_1__tax\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "datenais": {
+            "title": "Année de naissance du propriétaire",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "lgt_soc": {
+            "title": "Indicatrice de logement social",
+            "description": "{\"nomenclature\": \"fideli_local22_1__lgt_soc\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ind_bati": {
+            "title": "Indicatrice d’appartenance au bâti",
+            "description": "{\"nomenclature\": \"fideli_local22_1__ind_bati\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "nbimput": {
+            "title": "Nombre de variables imputées à l’aide de l’information disponible en N-1",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -816,74 +1036,8 @@
             "required": true,
             "regex": false
         },
-        "EFUMQP": {
-            "title": "4.2 Qté par ha de phosphore",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQK": {
-            "title": "4.2 Qté par ha de potassium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQSO": {
-            "title": "4.2 Qté par ha de soufre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQMAG": {
-            "title": "4.2 Qté par ha de magnésium",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQCA": {
-            "title": "4.2 Qté par ha de calcium-chaux",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "EFUMQCU": {
-            "title": "4.2 Qté par ha de cuivre",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COMMENTFICHEPHYTO": {
-            "title": "4.2 Observations (Fiche de saisie phytosanitaire)",
+        "x_n_1": {
+            "title": "Coordonnées géographiques x l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -893,8 +1047,8 @@
             "required": true,
             "regex": false
         },
-        "CONAIDOSE": {
-            "title": "4.2 DOM Connaissez vous la dose utilisee /ha",
+        "y_n_1": {
+            "title": "Coordonnées géographiques y l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -904,10 +1058,10 @@
             "required": true,
             "regex": false
         },
-        "VOLMESURE": {
-            "title": "4.2 DOM Volume de la mesure utilisee pour le produit en centilitres",
-            "description": "null",
-            "dtype": "float64",
+        "iris_n_1": {
+            "title": "Numéro d'Ilots Regroupés pour l'Information Statistique (IRIS) l'année N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__iris_n_1\"}",
+            "dtype": "string[python]",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -915,30 +1069,8 @@
             "required": true,
             "regex": false
         },
-        "VOLUMEFUT": {
-            "title": "4.2 DOM Volume en litres du fut ou de la pompe utilisee",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NOMBREFUT": {
-            "title": "4.2 DOM Nombre de futs ou de pompe passés sur le lot",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "LIBINTRANT": {
-            "title": NaN,
+        "qpv_n_1": {
+            "title": "Nouveau Quartier Prioritaire de la politique de la Ville (QPV) l'année N-1",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -948,8 +1080,19 @@
             "required": true,
             "regex": false
         },
-        "CULTURE": {
-            "title": NaN,
+        "pres_loc": {
+            "title": "Présence du local en N et N-1",
+            "description": "{\"nomenclature\": \"fideli_local22_1__pres_loc\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "dvltrt": {
+            "title": "Valeur locative d’un local complet (1970)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -959,19 +1102,8 @@
             "required": true,
             "regex": false
         },
-        "TRAIT": {
-            "title": "Type du traitement applliqué",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__TRAIT\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "LISTE_CIBLES": {
-            "title": "Liste des cibles du traitement",
+        "dvlpera": {
+            "title": "Valeur locative actualisée",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -981,19 +1113,8 @@
             "required": true,
             "regex": false
         },
-        "dose_equivalent_bouillie_bordelaise": {
-            "title": "pour les produits fertilisants utilisés comme produit phyto, c'est l'équivalent en dose de bouillie bordelaise.",
-            "description": "null",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "N_AMM": {
-            "title": "numéro d'AMM",
+        "dvltpe": {
+            "title": "Valeur locative d’une PEV (partie d'évaluation) (1970)",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1003,9 +1124,9 @@
             "required": true,
             "regex": false
         },
-        "UNITE_DR": {
-            "title": "unité de la dose de référence",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__UNITE_DR\"}",
+        "prec_xy_diffusion": {
+            "title": "Indicateur de qualité du point (x, y)",
+            "description": "{\"nomenclature\": \"fideli_local22_1__prec_xy_diffusion\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1014,20 +1135,9 @@
             "required": true,
             "regex": false
         },
-        "Biocontrole": {
-            "title": "Produit de bio-contrôle",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__Biocontrole\"}",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DR": {
-            "title": "dose de référence du traitement",
-            "description": "null",
+        "prec_nqpv_diffusion": {
+            "title": "Indicateur de précision du géocodage pour les Quartiers Prioritaires de la Ville (QPV)",
+            "description": "{\"nomenclature\": \"fideli_local22_1__prec_nqpv_diffusion\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1036,9 +1146,9 @@
             "required": true,
             "regex": false
         },
-        "CIBLE_AP": {
-            "title": "Cible d'appariement pour le calcul de l'IFT",
-            "description": "null",
+        "prec_qva_diffusion": {
+            "title": "Indicateur de précision du géocodage pour les Quartiers de Veille Active (QVA)",
+            "description": "{\"nomenclature\": \"fideli_local22_1__prec_qva_diffusion\"}",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1047,76 +1157,10 @@
             "required": true,
             "regex": false
         },
-        "TYPE_TRAIT": {
-            "title": "Type de traitement retenu pour le calcul de l'IFT",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__TYPE_TRAIT\"}",
+        "prec_iris_diffusion": {
+            "title": "Indicateur de précision du géocodage pour les Ilots Regroupés pour l'Information Statistique (IRIS)",
+            "description": "{\"nomenclature\": \"fideli_local22_1__prec_iris_diffusion\"}",
             "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODOSE.comp": {
-            "title": "dose de produit commercial utilisée",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__PHYTODOSE.comp\"}",
-            "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODOSE.ha": {
-            "title": "dose de produit commercial utilisé rapportée à l'hectare",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DR_dose_ha": {
-            "title": "Dose de référence du traitement rapportée à l'hectare",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "REDCOM": {
-            "title": "Traitement IFT redressé",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_TTMT_phyto__REDCOM\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFT_TRAIT_red": {
-            "title": "IFT du traitement après redressement",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOBOUIL": {
-            "title": " Quantité de bouillie utilisée  à l'ha (eau + produits + adjuvant)",
-            "description": "null",
-            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1130,12 +1174,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PKfruits_2015__20210706_PKFruits2015_TTMT_phyto",
+    "name": "FIDELI_2020__fideli_local22_1",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table 20210706_PKFruits2015_TTMT_phyto from data dictionary PKfruits_2015"
+    "description": "Schema for table fideli_local22_1 (Table des locaux 2022)\n        from data dictionary FIDELI_2020"
 }

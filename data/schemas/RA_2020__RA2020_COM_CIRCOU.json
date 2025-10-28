@@ -2,9 +2,9 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
-            "description": "{\"nomenclature\": \"MATACT_PKViti2019_definitif__IDENTPARC\"}",
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -13,8 +13,30 @@
             "required": true,
             "regex": false
         },
-        "COEF": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_CODE": {
+            "title": "CIRCOU_CODE",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_COP": {
+            "title": "Produits céréaliers (meunerie, pains, pâtes, bières), oléagineux et légumes secs",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -24,8 +46,8 @@
             "required": true,
             "regex": false
         },
-        "COEF2": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
+        "CIRCOU_TUB_DOM": {
+            "title": "Transformation de tubercules (farine de manioc etc)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -35,30 +57,8 @@
             "required": true,
             "regex": false
         },
-        "NOM_SUBSTANCE": {
-            "title": "Libellé de la substance active selon la BNVD",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NOM_SUBSTANCE_EUROSTAT": {
-            "title": "Libellé de la substance active dans la nomenclature Eurostat",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "QDOSEMATACT": {
-            "title": "Quantité de matière active administrée par hectare de parcelle (en g/ha). Pour obtenir la quantité en g, multiplier par la surface de la parcelle : SUPP2019. Lorsque la matière active n'a pu être exprimée en g/ha, la donnée est absente (cas de certains micro-organismes notamment).",
+        "CIRCOU_LEG": {
+            "title": "Légumes frais et transformés et pommes de terre",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -68,10 +68,10 @@
             "required": true,
             "regex": false
         },
-        "NBPASMATACT": {
-            "title": "Nombre de traitements (et non de passages) effectués sur la parcelle avec un produit contenant la matière active",
+        "CIRCOU_VIN": {
+            "title": "Raisins, vins, alcools issus de vins",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -79,10 +79,10 @@
             "required": true,
             "regex": false
         },
-        "HERBICIDE": {
-            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type herbicide",
+        "CIRCOU_HOLI": {
+            "title": "Huile d'olive et olives",
             "description": "null",
-            "dtype": "bool",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -90,10 +90,10 @@
             "required": true,
             "regex": false
         },
-        "INSECTICIDE": {
-            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type insecticide",
+        "CIRCOU_FRUIT": {
+            "title": "Fruits frais et transformés",
             "description": "null",
-            "dtype": "bool",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -101,10 +101,10 @@
             "required": true,
             "regex": false
         },
-        "FONGICIDE": {
-            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement de type fongicide",
+        "CIRCOU_AUTR": {
+            "title": "Autres produits agricoles, y compris cultures industrielles (betterave etc) et fleurs, horticulture",
             "description": "null",
-            "dtype": "bool",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -112,10 +112,10 @@
             "required": true,
             "regex": false
         },
-        "AUTRE": {
-            "title": "Indicatrice d'utilisation de la matière active dans au moins un traitement autre que fongicide, insecticide ou herbicide",
+        "CIRCOU_LAIT": {
+            "title": "Produits laitiers",
             "description": "null",
-            "dtype": "bool",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -123,10 +123,43 @@
             "required": true,
             "regex": false
         },
-        "CIBLE_SA": {
-            "title": "Segment de la matière active selon la classification Eurostat",
-            "description": "{\"nomenclature\": \"MATACT_PKViti2019_definitif__CIBLE_SA\"}",
-            "dtype": "string[python]",
+        "CIRCOU_OVOL": {
+            "title": "Oeufs et volailles",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_ANIM": {
+            "title": "Animaux vivants et autres produits animaux (hors  œufs et volailles)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CIRCOU_MIEL": {
+            "title": "Miel",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
+            "description": "null",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -140,12 +173,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PKViti_2019__MATACT_PKViti2019_definitif",
+    "name": "RA_2020__RA2020_COM_CIRCOU",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table MATACT_PKViti2019_definitif from data dictionary PKViti_2019"
+    "description": "Schema for table RA2020_COM_CIRCOU from data dictionary RA_2020"
 }

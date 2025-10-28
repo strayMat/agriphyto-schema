@@ -2,8 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -13,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "NOM_SUBSTANCE": {
-            "title": "Libellé de la substance active",
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,8 +24,19 @@
             "required": true,
             "regex": false
         },
-        "QDOSEMATACT": {
-            "title": "Quantité de matière active par hectare",
+        "DIVACTCOD": {
+            "title": "Type d'activité de diversification",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DIVACTEXP": {
+            "title": "Activité en nom propre",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -35,19 +46,8 @@
             "required": true,
             "regex": false
         },
-        "UNITESA": {
-            "title": "Unité de la quantité de matière par hectare",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NBPASMATACT": {
-            "title": "Nombre de traitements effectués sur la parcelle avec la même matière active et même cible",
+        "DIVACTAUT": {
+            "title": "Activité par le biais d'une autre entité",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -57,10 +57,10 @@
             "required": true,
             "regex": false
         },
-        "CIBLE": {
-            "title": "Cible détaillée",
+        "TRANSFOSST": {
+            "title": "Transformation en sous-traitance",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -68,21 +68,10 @@
             "required": true,
             "regex": false
         },
-        "CIBLEAGREG": {
-            "title": "Cible agrégée",
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
             "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "FAMILLESA": {
-            "title": "Famille chimique de la substance active",
-            "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -96,12 +85,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PHYTOVITI_2016__MATACT_PHYTOVITI2016",
+    "name": "RA_2020__RA2020_DIVERSIF",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table MATACT_PHYTOVITI2016 (Quantités utilisées par hectare, par parcelle, par substances actives et par cible)\n        from data dictionary PHYTOVITI_2016"
+    "description": "Schema for table RA2020_DIVERSIF from data dictionary RA_2020"
 }

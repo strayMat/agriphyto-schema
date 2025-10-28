@@ -2,9 +2,9 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
-            "description": "{\"nomenclature\": \"PKViti2019_IFT_trait_definitif__IDENTPARC\"}",
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -13,8 +13,118 @@
             "required": true,
             "regex": false
         },
-        "COEF": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de nombre de parcelles représentées→ voir les préconisations d'usage dans la note de diffusion",
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTICODE": {
+            "title": "Code des cultures sous abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P1": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P2": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P3": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P4": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P5": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P6": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P7": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_P8": {
+            "title": "Déclaration des surfaces abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_SURF_P1": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -24,8 +134,8 @@
             "required": true,
             "regex": false
         },
-        "COEF2": {
-            "title": "Coefficient d'extrapolation lié à la parcelle culturale : poids de la parcelle en termes de surface représentée (en ha) ; COEF2 = COEF x SUPP2019→ voir les préconisations d'usage dans la note de diffusion",
+        "ABATTI_SURF_P2": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -35,8 +145,8 @@
             "required": true,
             "regex": false
         },
-        "IFTTOT": {
-            "title": "IFT global sur la parcelle (tous types de traitements confondus)",
+        "ABATTI_SURF_P3": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -46,8 +156,8 @@
             "required": true,
             "regex": false
         },
-        "IFTHERB": {
-            "title": "IFT herbicides sur la parcelle",
+        "ABATTI_SURF_P4": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -57,8 +167,8 @@
             "required": true,
             "regex": false
         },
-        "IFTFONG": {
-            "title": "IFT fongicides sur la parcelle",
+        "ABATTI_SURF_P5": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -68,8 +178,8 @@
             "required": true,
             "regex": false
         },
-        "IFTINS": {
-            "title": "IFT insecticides sur la parcelle",
+        "ABATTI_SURF_P6": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -79,8 +189,8 @@
             "required": true,
             "regex": false
         },
-        "IFTAUT": {
-            "title": "IFT autres sur la parcelle (autres traitements qu'herbicides, fongicides ou insecticides)",
+        "ABATTI_SURF_P7": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -90,8 +200,8 @@
             "required": true,
             "regex": false
         },
-        "IFTTOTBIO": {
-            "title": "IFT global sur la parcelle (tous types de traitements mais uniquement avec des produits de biocontrôle)",
+        "ABATTI_SURF_P8": {
+            "title": "Déclaration des surfaces unitaires des parcelles d'abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -101,8 +211,8 @@
             "required": true,
             "regex": false
         },
-        "IFTFONGBIO": {
-            "title": "IFT fongicides (uniquement produits de biocontrôle)",
+        "ABATTI_SERRE_P1": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -112,8 +222,8 @@
             "required": true,
             "regex": false
         },
-        "IFTINSBIO": {
-            "title": "IFT insecticides (uniquement produits de biocontrôle)",
+        "ABATTI_SERRE_P2": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -123,8 +233,8 @@
             "required": true,
             "regex": false
         },
-        "IFTAUTBIO": {
-            "title": "IFT autres (uniquement produits de biocontrôle)",
+        "ABATTI_SERRE_P3": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -134,8 +244,8 @@
             "required": true,
             "regex": false
         },
-        "IFTTOTNBIO": {
-            "title": "IFT global hors produits de biocontrôle",
+        "ABATTI_SERRE_P4": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -145,8 +255,8 @@
             "required": true,
             "regex": false
         },
-        "IFTFONGNBIO": {
-            "title": "IFT fongicides hors produits de biocontrôle",
+        "ABATTI_SERRE_P5": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -156,8 +266,8 @@
             "required": true,
             "regex": false
         },
-        "IFTINSNBIO": {
-            "title": "IFT insecticides hors produits de biocontrôle",
+        "ABATTI_SERRE_P6": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -167,8 +277,8 @@
             "required": true,
             "regex": false
         },
-        "IFTAUTNBIO": {
-            "title": "IFT autres hors produits de biocontrôle",
+        "ABATTI_SERRE_P7": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -178,8 +288,8 @@
             "required": true,
             "regex": false
         },
-        "IFTTOTHORSHERB": {
-            "title": "IFT global hors herbicides",
+        "ABATTI_SERRE_P8": {
+            "title": "Déclaration des surfaces de serres ou d'abri hauts sur les abattis / jardins mahorais ou créoles",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -189,98 +299,10 @@
             "required": true,
             "regex": false
         },
-        "IFTTOTNBIOHORSHERB": {
-            "title": "IFT global hors produits de biocontrôle et hors herbicides",
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
             "description": "null",
             "dtype": "float64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_TOT": {
-            "title": "nombre total de traitements (hors adjuvants)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_HERB": {
-            "title": "nombre de traitements aux herbicides",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_FONG": {
-            "title": "nombre de traitements aux fongicides",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_INS": {
-            "title": "nombre de traitements aux insecticides",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_AUT": {
-            "title": "nombre de traitements autres",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_ADJ": {
-            "title": "nombre de traitements adjuvants",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_TOTADJ": {
-            "title": "nombre total de traitements (adjuvants compris)",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NB_BIO": {
-            "title": "nombre de traitements par un produit de biocontrôle",
-            "description": "null",
-            "dtype": "int64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -294,12 +316,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PKViti_2019__PKViti2019_IFT_trait_definitif",
+    "name": "RA_2020__RA2020_ABATTIS",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table PKViti2019_IFT_trait_definitif from data dictionary PKViti_2019"
+    "description": "Schema for table RA2020_ABATTIS from data dictionary RA_2020"
 }

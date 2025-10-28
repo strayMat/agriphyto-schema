@@ -2,8 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "NOM_DOSSIER ": {
-            "title": "Nom du dossier",
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -13,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "REG": {
-            "title": "Région",
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,63 +24,8 @@
             "required": true,
             "regex": false
         },
-        "LIB_REG": {
-            "title": "Nom de l'ancienne région en clair",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DEP": {
-            "title": "Département",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "STRATE": {
-            "title": "STRATE de tirage",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ESPECEENQ": {
-            "title": "Espèce de l'enquête (calculée)",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__ESPECEENQ\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "LIB_ESPECE": {
-            "title": "libellé de l'espèce en clair",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COEF1": {
-            "title": "Coefficient exploitation calé sur la SAA au niveau régional",
+        "IRRIFIL": {
+            "title": "Irrigation : avez-vous irrigué au cours de la campagne  ?",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -90,712 +35,8 @@
             "required": true,
             "regex": false
         },
-        "COEF2": {
-            "title": "Coefficient parcellaire calé sur la SAA au niveau régional",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PLEINTERHORSSOL": {
-            "title": "0.31 - Parcelle pleine terre ou hors sol ",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__PLEINTERHORSSOL\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ABRISHAUT ": {
-            "title": "Espèce conduite sous abris haut : Sous double tunnel ou sous chenille sous abris haut ou sous tunnel sous abris haut, Sous tunnel haut simple paroi ; Sous tunnel à parois gonflables ; Sous-serre et/ou multi-chapelle ",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__ABRISHAUT_\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CODEPHYTO": {
-            "title": "numéro d'ordre",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOPASS": {
-            "title": "n° de passage",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODAT": {
-            "title": "date de passage",
-            "description": "null",
-            "dtype": "datetime64[ns]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "INTERV": {
-            "title": "Type d'intervention",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__INTERV\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBDEFANA": {
-            "title": "Défanage",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYCIBADVENS": {
-            "title": "Adventices - herbicides totaux",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYCIBADVGRAM": {
-            "title": "Adventices graminées annuelles",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYCIBADVDIC1": {
-            "title": "Adventices - dicotylédones annuelles",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYCIBADVDIC2": {
-            "title": "Adventices - dicotylédones bisannuelles",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYCIBADVVIV": {
-            "title": "Adventices - vivaces",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBALTERN": {
-            "title": "cible Alternariose (Alternaria), taches noires",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBANTHRA": {
-            "title": "Anthracnose",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBBACTER": {
-            "title": "cible : nécrose bactérienne",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBBOTRYT": {
-            "title": "cible : botrytis",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBDEPRAC": {
-            "title": "cible dépérissement racinaire",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBFUSARI": {
-            "title": "cible fusariose",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBGRAISSE": {
-            "title": "cible graisse",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMILDIO": {
-            "title": "cible : mildiou",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBNECMAR": {
-            "title": "cible nécrose marginale",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBNUILES": {
-            "title": "cible nuiles",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBOIDIUM": {
-            "title": "cible : oidium",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBPHOMA": {
-            "title": "cible phoma",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBPHYTOP": {
-            "title": "cible phytophtora",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBPYTHIU": {
-            "title": "cible pythium",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBRHIZBR": {
-            "title": "cible rhizoctone brun",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBRHIZPBA": {
-            "title": "cible rhizoctone pourriture basale",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBRHIZVB": {
-            "title": "cible rhizoctone violet ou bleu",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBROUILL": {
-            "title": "cible rouille",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBSCLERO": {
-            "title": "cible sclérotiniose",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAMALAD": {
-            "title": "cible : autres champignons parasites",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBALEURO": {
-            "title": "cible aleurode",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBALTISE": {
-            "title": "cible altises",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBCHENIPT": {
-            "title": "cible chenilles pierides",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBDUPONC": {
-            "title": "cible duponchelia fovealis",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMOUCAR": {
-            "title": "cible mouche de la carotte",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMOUMAS": {
-            "title": "cible mouche mache et semis",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMOUMIN": {
-            "title": "cible mouche mineuse",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBMOUOIS": {
-            "title": "cible mouche oignon et/ou semis",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBNEMATO": {
-            "title": "cible nématodes",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBNOCTUE": {
-            "title": "cible noctuelles",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBPUCERO": {
-            "title": "cible pucerons",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTARSOM": {
-            "title": "cible tarsomeme",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTAUPIN": {
-            "title": "cible taupin",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTEIGNE": {
-            "title": "cible teigne des crucifères",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTEIPOI": {
-            "title": "cible teigne du poireau",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTENTHREDE": {
-            "title": "cible : tenthède",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTHRIPS": {
-            "title": "cible thrips",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBTUTAOB": {
-            "title": "cible tuta absoluta",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAUTACA": {
-            "title": "cible : acariens",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAUTINS": {
-            "title": "cible : autres insectes et nématodes",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBADJUVA": {
-            "title": "cible : adjuvant",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBAUTTRT": {
-            "title": "cibles : autres cibles (corvicides...)",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBLIMACE": {
-            "title": "cible limaces",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBRONGEUR": {
-            "title": "cible rongeurs",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBDESINSOL": {
-            "title": "cible desinfection du sol",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBDESINP": {
-            "title": "cible desinfection des plaies de taille",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBHORMON": {
-            "title": "cible hormones",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBFERTIL": {
-            "title": "cible : fertilisant",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOPROD": {
-            "title": "produit commercial",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__PHYTOPROD\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOLIBAUTR": {
-            "title": "libelle des produits non référencées",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "POURTRAIT": {
-            "title": "pourcentage de la surface traitée",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODOS": {
-            "title": "dose de produit commercial utilisée",
+        "COLLECTIFFIL": {
+            "title": "L'exploitation est elle une structure collective",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -805,52 +46,8 @@
             "required": true,
             "regex": false
         },
-        "PHYTOUNI": {
-            "title": "unité du produit utilisé",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__PHYTOUNI\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "UNITESELECT": {
-            "title": "unité du produit utilisé",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__UNITESELECT\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "UNITECONFIRMEE": {
-            "title": "UNITECONFIRMEE",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOBOUIL": {
-            "title": "quantité de bouillie utilisée ",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODOSCALC": {
-            "title": "Dose de produit calculée à l'hectare",
+        "BIOSURCERTIF": {
+            "title": "SAU certifiée bio",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -860,63 +57,8 @@
             "required": true,
             "regex": false
         },
-        "COMPOPDTAUT": {
-            "title": "Composition de produit autre",
-            "description": "null",
-            "dtype": "bool",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "SUBST1": {
-            "title": "Substance active ",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__SUBST1\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "SUBST2": {
-            "title": "Substance active ",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__SUBST2\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "SUBST3": {
-            "title": "Substance active ",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__SUBST3\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "SUBST4": {
-            "title": "Substance active ",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__SUBST4\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "MACONC1": {
-            "title": "Concentration matière active",
+        "BIOSURCONV": {
+            "title": "SAU en cours de conversion",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -926,8 +68,8 @@
             "required": true,
             "regex": false
         },
-        "MACONC2": {
-            "title": "Concentration matière active",
+        "BIOSURTOT": {
+            "title": "Total SAU bio calculé : BIOCERTSUR + BIOCONVSUR (code = 10000000)",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -937,8 +79,8 @@
             "required": true,
             "regex": false
         },
-        "MACONC3": {
-            "title": "Concentration matière active",
+        "CHAMPFIL": {
+            "title": "Existence production champignons",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -948,8 +90,8 @@
             "required": true,
             "regex": false
         },
-        "MACONC4": {
-            "title": "Concentration matière active",
+        "CHAMPQ": {
+            "title": "Production de champignons – Quantité",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -959,162 +101,8 @@
             "required": true,
             "regex": false
         },
-        "MAUNI1": {
-            "title": "Unité de MA utilisée",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__MAUNI1\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "MAUNI2": {
-            "title": "Unité de MA utilisée",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__MAUNI2\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "MAUNI3": {
-            "title": "Unité de MA utilisée",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__MAUNI3\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "MAUNI4": {
-            "title": "Unité de MA utilisée",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__MAUNI4\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CODEAMM_int": {
-            "title": "code AMM du produit",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CODEMACT": {
-            "title": "code matière active",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "FONCTIONA": {
-            "title": "FONCTIONA",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "FONCTIONB": {
-            "title": "FONCTIONB",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "FONCTIONC": {
-            "title": "FONCTIONC",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTOMATACT": {
-            "title": "Type de préparation biologique",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__PHYTOMATACT\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "MATACTLIBAUTR": {
-            "title": "Précision du type de préparation biologique si autre",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ESPPREPABIOL": {
-            "title": "Espèces végétales",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__ESPPREPABIOL\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "ESPPREPABIOLIB": {
-            "title": "espèce végétale autre",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NBINDSR": {
-            "title": "NBINDSR",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTODOSEREFCALC": {
-            "title": "PHYTODOSEREFCALC",
+        "CHAMPBIO": {
+            "title": "Production de champignons en bio",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1124,63 +112,8 @@
             "required": true,
             "regex": false
         },
-        "SOCIETE": {
-            "title": "Société vendant les kits de lachers",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__SOCIETE\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "LISTAUX": {
-            "title": "Liste des kits ou des auxiliaires",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__LISTAUX\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NOMPRODAUX": {
-            "title": "Précision si autre auxilliaire",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NOMSOCIETEAUT": {
-            "title": "Précision si autre auxilliaire",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CONDIBIO": {
-            "title": "Conditionnement du kit (calculé)",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "QUANTITEBC": {
-            "title": "Quantité à l'hectare",
+        "CHICONFIL": {
+            "title": "Production de chicons – Existence",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1190,8 +123,8 @@
             "required": true,
             "regex": false
         },
-        "NBR_INDIVIDUS": {
-            "title": "nombre d'individus par hectare (calculé)",
+        "CHICONQ": {
+            "title": "Production de chicons – Quantité",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1201,63 +134,8 @@
             "required": true,
             "regex": false
         },
-        "PIEGE": {
-            "title": "Pièges massifs",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__PIEGE\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PIEGEAUT": {
-            "title": "Nom du piège",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PIEGENB": {
-            "title": "Nombre de pièges à l'hectare",
-            "description": "null",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "COMMENTFICHEPHYTO": {
-            "title": "commentaire fiche phyto",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "POURTRAITBIOL": {
-            "title": "pourcentage de la surface traitée avec une préparation biologique",
-            "description": "null",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CONCBIOL": {
-            "title": "Concentration matière active",
+        "CHICONBIO": {
+            "title": "Production de chicons en bio",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1267,19 +145,8 @@
             "required": true,
             "regex": false
         },
-        "UNICONCBIOL": {
-            "title": "Unité de MA utilisée",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__UNICONCBIOL\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "DOSEBIOL": {
-            "title": "dose calculée utilisée à l'hectare",
+        "SURF_MADFIL": {
+            "title": "Pratique de la mise à disposition de terre",
             "description": "null",
             "dtype": "float64",
             "nullable": true,
@@ -1289,21 +156,10 @@
             "required": true,
             "regex": false
         },
-        "UNIBIOL": {
-            "title": "unité du produit utilisé",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__UNIBIOL\"}",
-            "dtype": "int64",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "BOUILBIOL": {
-            "title": "quantité de bouillie utilisée ",
+        "SURF_MAD_MEL": {
+            "title": "Surface pour production de melon",
             "description": "null",
-            "dtype": "int64",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1311,10 +167,10 @@
             "required": true,
             "regex": false
         },
-        "POURTRAITAUX": {
-            "title": "pourcentage de la surface traitée avec une préparation biologique",
+        "SURF_MAD_PDT": {
+            "title": "Surface pour production de pomme de terre",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1322,10 +178,10 @@
             "required": true,
             "regex": false
         },
-        "POURTRAITPIEG": {
-            "title": "pourcentage de la surface traitée avec une préparation biologique",
+        "SURF_MAD_LIN": {
+            "title": "Surface pour production de lin oléagineux ou textile",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1333,10 +189,10 @@
             "required": true,
             "regex": false
         },
-        "PHYTOUNITEAUT": {
-            "title": "précision unité autre ",
+        "SURF_MAD_AUT": {
+            "title": "Surface pour autre production",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1344,8 +200,8 @@
             "required": true,
             "regex": false
         },
-        "UNITEBIOAUT": {
-            "title": "précision unité autre ",
+        "CULT_MAD_AUT": {
+            "title": "Précision pour autre production",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -1355,10 +211,10 @@
             "required": true,
             "regex": false
         },
-        "AMM_remplacement": {
-            "title": "AMM toujours autorisée choisie en remplacement de l'AMM saisie mais retirée depuis plus de deux ans",
+        "FV_PROP_IND": {
+            "title": "Propriété (individuelle)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1366,10 +222,10 @@
             "required": true,
             "regex": false
         },
-        "CODEAMM_corr": {
-            "title": "AMM utilisée pour la recherche des doses de référence (CODEAMM saisie si ind_corrAMM = 0, AMM_remplacement sinon)",
+        "FV_COPRO_IND_DOM": {
+            "title": "Co-propriété et indivision (individuel))",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1377,10 +233,10 @@
             "required": true,
             "regex": false
         },
-        "ind_corrAMM": {
-            "title": "indicatrice repérant les traitements dont l'AMM saisie, mais retirée depuis plus de deux ans, a été remplacée par une AMM toujours autorisée d'un produit au nom semblable",
+        "FV_FERM_IND": {
+            "title": "Fermage (individuel)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1388,10 +244,10 @@
             "required": true,
             "regex": false
         },
-        "com_CHAMP": {
-            "title": "Traitement entrant dans le champ de l'IFT – détail",
+        "FV_AUT_IND": {
+            "title": "Métayage ou autre faire valoir (individuel)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1399,21 +255,10 @@
             "required": true,
             "regex": false
         },
-        "CHAMP": {
-            "title": "Traitement entrant dans le champ de l'IFT",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__CHAMP\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NBCIBLES": {
-            "title": "Nombre de cibles",
+        "FV_ETAT_IND_DOM": {
+            "title": "Location auprès de l'ETAT (individuel)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1421,10 +266,10 @@
             "required": true,
             "regex": false
         },
-        "LISTE_CIBLES": {
-            "title": "Listes des cibles ",
+        "FV_MET_IND_DOM": {
+            "title": "Métayage – Colonage (individuel)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1432,10 +277,10 @@
             "required": true,
             "regex": false
         },
-        "VALIDDOSESRISE": {
-            "title": "Validation de la dose par le SRISE",
+        "FV_LOCPRO_IND_DOM": {
+            "title": "Location provisoire (individuel)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1443,10 +288,10 @@
             "required": true,
             "regex": false
         },
-        "N_AMM": {
-            "title": "Numéro d'AMM",
+        "FV_PRET_IND_DOM": {
+            "title": "Prêt à titre gratuit (individuel)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1454,21 +299,10 @@
             "required": true,
             "regex": false
         },
-        "UNITE_DR": {
-            "title": "unité de la dose de référence",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__UNITE_DR\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "Biocontrole": {
-            "title": "Produit de biocontrôle ",
+        "FV_COUTUM_IND_DOM": {
+            "title": "Occupation coutumière (individuel)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1476,10 +310,10 @@
             "required": true,
             "regex": false
         },
-        "DR": {
-            "title": "dose de référence du traitement",
+        "FV_STITRE_IND_DOM": {
+            "title": "Occupation sans titre (individuel)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1487,21 +321,10 @@
             "required": true,
             "regex": false
         },
-        "COM": {
-            "title": "résultat de l'appariement avec le référentiel",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__COM\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "CIBLE_APP": {
-            "title": "Cible d'appariement pour calcul IFT",
+        "FV_DOM_AUT_IND_DOM": {
+            "title": "Autre (individuel)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1509,43 +332,10 @@
             "required": true,
             "regex": false
         },
-        "TYPE_APP": {
-            "title": "Type d'appariement",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__TYPE_APP\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "TYPE_TRAIT": {
-            "title": "Type de traitement",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__TYPE_TRAIT\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "UNITE_FIN": {
-            "title": "Unité retenu pour calcul IFT ",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__UNITE_FIN\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "PHYTO_dose_ha": {
-            "title": "Dose de produit commercial utilisé rapportée à l'hectare",
+        "FV_DOM_COMMENT_IND_DOM": {
+            "title": "Autre (individuel) : commentaire",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1553,10 +343,10 @@
             "required": true,
             "regex": false
         },
-        "DR_dose_ha": {
-            "title": "Dose de référence du traitement rapportée à l'hectare",
+        "FV_TOT_IND": {
+            "title": "Total des modes d'occupation (calculé) – individuel",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1564,43 +354,10 @@
             "required": true,
             "regex": false
         },
-        "ecart": {
-            "title": "Produit à forte amplitude de doses d'homologation selon les cibles",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__ecart\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "VALID": {
-            "title": "Traitement IFT à redresser / à la dose faible ou forte",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__VALID\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "REDCOM": {
-            "title": "Traitement IFT redressé",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__REDCOM\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "IFT_TRAIT_red": {
-            "title": "IFT du traitement après redressement",
+        "FV_PROP_ENT": {
+            "title": "Propriété (entreprise)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1608,10 +365,10 @@
             "required": true,
             "regex": false
         },
-        "INFLUENTE": {
-            "title": "Unité inlfuente",
+        "FV_FERM_ENT": {
+            "title": "Fermage (entreprise)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1619,21 +376,10 @@
             "required": true,
             "regex": false
         },
-        "CAHIERBIO": {
-            "title": "CAHIERBIO",
-            "description": "{\"nomenclature\": \"20210930_Phytolegumes2018_TTMT_Phyto_definitive__CAHIERBIO\"}",
-            "dtype": "string[python]",
-            "nullable": true,
-            "checks": null,
-            "unique": false,
-            "coerce": false,
-            "required": true,
-            "regex": false
-        },
-        "NVREG": {
-            "title": "Nouvelle Région",
+        "FV_ETAT_ENT_DOM": {
+            "title": "Location auprès de l'ETAT (entreprise)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1641,10 +387,923 @@
             "required": true,
             "regex": false
         },
-        "LIB_NVREG": {
-            "title": "Libellé nouvelle région",
+        "FV_MAD_PROP_ENT": {
+            "title": "Mise à dispo par associés propriétaires (entreprise)",
             "description": "null",
-            "dtype": "string[python]",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_MAD_LOC_ENT": {
+            "title": "Mise à dispo par associés locataires (entreprise)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_AUT_ENT": {
+            "title": "Métayage ou autre faire valoir (entreprise)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_MET_ENT_DOM": {
+            "title": "Métayage – Colonage (entreprise)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_LOCPRO_ENT_DOM": {
+            "title": "Location provisoire (entreprise)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_PRET_ENT_DOM": {
+            "title": "Prêt à titre gratuit (entreprise)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_COUTUM_ENT_DOM": {
+            "title": "Occupation coutumière (entreprise)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_STITRE_ENT_DOM": {
+            "title": "Occupation sans titre (entreprise)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_DOM_AUT_ENT_DOM": {
+            "title": "Autre (entreprise)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_DOM_COMMENT_ENT_DOM": {
+            "title": "Autre (entreprise): commentaire",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FV_TOT_ENT": {
+            "title": "Total des modes d'occupation (calculé) – entreprise",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "AGROFORFIL": {
+            "title": "Pratique de l'agroforesterie",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "AGROFOR_SURF": {
+            "title": "Surface en agroforesterie",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIGABFIL": {
+            "title": "Avez-vous des surfaces irrigables",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIGAB": {
+            "title": "Surface totale irrigable",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIRESEAUEXT": {
+            "title": "Prélèvement depuis réseau collectif",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIRESEAUIND": {
+            "title": "Prélèvement depuis réseau individuel",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIETANG": {
+            "title": "Origine de l'eau : retenues collinaires",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIEAUEXT": {
+            "title": "Origine de l'eau : eaux de surface, cours d'eau, canaux, lacs,…",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIPUITS": {
+            "title": "Origine de l'eau : forage, puits",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIEAUAUTRE": {
+            "title": "Origine de l'eau : autres origines",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIEAUPOT_DOM": {
+            "title": "Origine de l'eau : réseau d'adduction d'eau potable",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIEAUPLUIE_DOM": {
+            "title": "Origine de l'eau : récupération eau de pluie",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIASPERSION": {
+            "title": "surface irrigable par aspersion",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIMICROIRRIGATION": {
+            "title": "Surface irrigable par micro irrigation",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIGRAVITE": {
+            "title": "Surface irrigable par gravité",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIGOUT_DOM": {
+            "title": "Surface irrigable par goutte à goutte",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRIMANU_DOM": {
+            "title": "Surface irrigable manuellement (tuyau, cuve sur tracteur…)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "INTERMFIL_ECH": {
+            "title": "Implantation de cultures intermédiaires",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "INTERM_CIPAN_ECH": {
+            "title": "Cultures intermédiaire piège à nitrate : CIPAN",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "INTERM_ENERG_ECH": {
+            "title": "Cultures intermédiaire à valorisation énergétique",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "INTERM_AUT_ECH": {
+            "title": "Cultures intermédiaire à valorisation autre",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "INTERM_DEROB_DOM": {
+            "title": "Cultures dérobées suite récolte",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "LABOUR_ECH": {
+            "title": "Labour profond",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CONSERVATION_ECH": {
+            "title": "Sans retournement ou retournement réduit",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SEMISDIRECT_ECH": {
+            "title": "Semis direct sans travail du sol",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "STOCK_GRAIN_FIL_ECH": {
+            "title": "Stockage de grain à la ferme",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "STOCK_GRAIN_Q_ECH": {
+            "title": "Capacité de stockage des grains",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "STOCK_POM_FIL": {
+            "title": "Stockage de pommes ou poires",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "STOCK_POM_Q": {
+            "title": "Capacité de stockage des pommes et des poires",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTI_NB_PARC": {
+            "title": "Nombre de parcelles de l'abattis / jardins mahorais ou créoles",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ABATTIFIL": {
+            "title": "Présence d'abattis",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CEREALES_SUR_TOT": {
+            "title": "Surface totale de céréales",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "OLEAG_SUR_TOT": {
+            "title": "Surface totale d'oléagineux",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PROTEA_SUR_TOT": {
+            "title": "Surface totale de protéagineux et légumes secs",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FIBRE_SUR_TOT": {
+            "title": "Surface totale de plantes à fibre",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "INDUST_SUR_TOT": {
+            "title": "Surface totale des autres plantes industrielles",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "PPAM_SUR_TOT": {
+            "title": "Surface totale de PPAM",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "TUBER_SUR_TOT": {
+            "title": "Surface totale de pommes de terre et autres tubercules",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "LEGUME_SUR_TOT": {
+            "title": "Surface totale de légumes, fraises et melons",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "LEGUME_AIR_TOT": {
+            "title": "Surface totale de legumes, qui ne sont pas sous serre ni abri hauts",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "LEGUME_SERR_TOT": {
+            "title": "Surface totale de legumes,  sous serre ou abri hauts",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FOUR_STH_SUR_TOT": {
+            "title": "Surface totale de cultures fourragères et STH",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "STH_SUR_TOT": {
+            "title": "Surface Toujours en Herbe, total",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "HORTI_SUR_TOT": {
+            "title": "Surface totale de fleurs et plantes ornementales",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "HORTI_AIR_TOT": {
+            "title": "Surface de cultures ornementales plein air ou abri bas",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "HORTI_SERR_TOT": {
+            "title": "Surface de cultures ornementales sous serre ou abri haut",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "AUTRES_SUR_TOT": {
+            "title": "Surface totale en « autres » (jachères, semences, abattis, jardins familiaux)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "VIGNE_SUR_TOT": {
+            "title": "Surface totale en vigne",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FRUITS_SUR_TOT": {
+            "title": "Surface totale en fruits",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "AUT_PERM_SUR_TOT": {
+            "title": "Surface totale autres cultures permanentes",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "TERRE_ARABLE_HORSSERRE_TOT": {
+            "title": "Somme des terres arables, surfaces sous serre ou abri haut exclues",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "TERRE_ARABLE_TOT": {
+            "title": "Somme des terres arables, surfaces sous serre ou abri haut inclues",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "CULT_ANNUELLES": {
+            "title": "somme des cultures annuelles",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SAU_TOT": {
+            "title": "Surface Agricole Utilisée Totale, comprenant toutes les surfaces de la table SAU. Non comptées : superficies en estives et en abattis (ventilées en différentes cultures)\n(ventilées en différentes cultures)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "JARDIN_MAHORAIS_ABATTIS": {
+            "title": "Surface de l'exploitation en jardin mahoaires ou abattis, ventilée dans les différentes cutlures réalisées",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRRISUR_CULT_TOT": {
+            "title": "Somme des cultures irriguées",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "BIOSUR_CULT_TOT": {
+            "title": "Somme des cultures cultivées en bio en bio",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "TAILLIS": {
+            "title": "Déclaration des surfaces hors SAU : Taillis à courte rotation",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FORETS": {
+            "title": "Déclaration des surfaces hors SAU : Bois et forêts",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "FRICHE": {
+            "title": "Déclaration des surfaces hors SAU : superficies non exploitées",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "COURSFERME": {
+            "title": "Déclaration des surfaces hors SAU : bâtiments et cours de ferme",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "AUTSUPERFICIES": {
+            "title": "Déclaration des surfaces hors SAU : autres superficies",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESTIVE_GRAPH_PT": {
+            "title": "Surface en estive au prorata de l'utilisation, graphique, pour les prairies temporaires",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESTIVE_ADM_PT": {
+            "title": "Surface en estive au prorata de l'utilisation, admissibles, pour les prairies temporaires (pour mémoire)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESTIVE_GRAPH_Ppprod": {
+            "title": "Surface en estive au prorata de l'utilisation, graphiques, pour les prairies permanentes productives",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESTIVE_ADM_Ppprod": {
+            "title": "Surface en estive au prorata de l'utilisation, admissibles, pour les prairies permanentes productives  (pour mémoire)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESTIVE_GRAPH_Pppeuprod": {
+            "title": "Surface en estive au prorata de l'utilisation, graphiques, pour les prairies permanentes peu productives (pour mémoire)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESTIVE_ADM_Pppeuprod": {
+            "title": "Surface en estive au prorata de l'utilisation, admissibles, pour les prairies permanentes peu productives",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESTIVE_GRAPH_BP": {
+            "title": "Surface en estive au prorata de l'utilisation, graphiques, pour les bois pâturés (pour mémoire)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESTIVE_ADM_BP": {
+            "title": "Surface en estive au prorata de l'utilisation, admissibles, pour les bois pâturés ",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ESTIVE_TOT": {
+            "title": "Superficie totale utilisée en estive, au prorata de l'utilisation \n(ESTIVE_GRAPH_PT+ESTIVE_GRAPH_PPprod+ESTIVE_ADM_PPpeuprod+ESTIVE_ADM_BP)",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "RETRAITMT_SURF_ADM": {
+            "title": "Indicatrice de retraitement des surfaces par les admissibles pour les prairies peu productives et bois pâturés",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
+            "description": "null",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -1658,12 +1317,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "Phytoleg_2018__20210930_Phytolegumes2018_TTMT_Phyto_definitive",
+    "name": "RA_2020__RA2020_PRODVEG",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table 20210930_Phytolegumes2018_TTMT_Phyto_definitive from data dictionary Phytoleg_2018"
+    "description": "Schema for table RA2020_PRODVEG from data dictionary RA_2020"
 }

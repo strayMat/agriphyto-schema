@@ -2,8 +2,8 @@
     "schema_type": "dataframe",
     "version": "0.26.1",
     "columns": {
-        "IDENTPARC": {
-            "title": "Identifiant de la parcelle",
+        "NOM_DOSSIER": {
+            "title": "Numéro interne de dossier",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -13,8 +13,8 @@
             "required": true,
             "regex": false
         },
-        "MECAPAS": {
-            "title": "Numéro du passage sur la parcelle",
+        "TYPE_QUESTIONNAIRE": {
+            "title": "Type de questionnaire",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -24,8 +24,8 @@
             "required": true,
             "regex": false
         },
-        "DMECA": {
-            "title": "Date de passage",
+        "STATUTDIRIG": {
+            "title": "Statut dirigeant",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -35,8 +35,8 @@
             "required": true,
             "regex": false
         },
-        "IRDISC": {
-            "title": "Passage inter-rang : appareil à disques",
+        "SEX": {
+            "title": "Sexe",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -46,8 +46,19 @@
             "required": true,
             "regex": false
         },
-        "IRDENT": {
-            "title": "Passage inter-rang : appareil à dents (dont cultivateur)",
+        "ANAIS": {
+            "title": "Année de naissance",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "SITCONJ_ECH": {
+            "title": "Situation conjugale",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -57,8 +68,8 @@
             "required": true,
             "regex": false
         },
-        "IRROTA": {
-            "title": "Passage inter-rang : appareil type rotavator",
+        "ACTCONJ_ECH": {
+            "title": "Activité du conjoint",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -68,8 +79,8 @@
             "required": true,
             "regex": false
         },
-        "IRAUTR": {
-            "title": "Passage inter-rang : autres appareils",
+        "LIENCHEF": {
+            "title": "Lien familial avec le chef d'exploitation",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -79,8 +90,8 @@
             "required": true,
             "regex": false
         },
-        "ICLAM": {
-            "title": "Passage sous le rang : intercep à lames",
+        "ACTIVEXP": {
+            "title": "Temps de travail sur l'exploitation",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -90,8 +101,30 @@
             "required": true,
             "regex": false
         },
-        "ICROTA": {
-            "title": "Passage sous le rang : intercep rotatifs",
+        "MOSAL": {
+            "title": "Salarié de l'exploitation",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ANCHEF": {
+            "title": "Année de début de fonction du chef",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "INSTALLCF": {
+            "title": "Installation dans un cadre familial",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -101,8 +134,8 @@
             "required": true,
             "regex": false
         },
-        "ICDECA": {
-            "title": "Passage sous le rang : décavaillonneuse",
+        "MOFGENE": {
+            "title": "Formation générale",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -112,8 +145,8 @@
             "required": true,
             "regex": false
         },
-        "ICAUTR": {
-            "title": "Passage sous le rang : autres appareils (dont thermique)",
+        "MOFAGRI": {
+            "title": "Formation agricole",
             "description": "null",
             "dtype": "string[python]",
             "nullable": true,
@@ -123,9 +156,20 @@
             "required": true,
             "regex": false
         },
-        "DESINTRANG": {
-            "title": "Passage d’appareil sur inter-rang",
-            "description": "{\"nomenclature\": \"MECA_PHYTOVITI2016__DESINTRANG\"}",
+        "MOFCONTI": {
+            "title": "Formations agricoles courtes",
+            "description": "null",
+            "dtype": "float64",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOPACTDIV_ECH": {
+            "title": "Participation aux activités de diversification",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -134,10 +178,32 @@
             "required": true,
             "regex": false
         },
-        "DESINTCEP": {
-            "title": "Passage d’appareil sous le rang",
-            "description": "{\"nomenclature\": \"MECA_PHYTOVITI2016__DESINTCEP\"}",
+        "MOTYPLURACT_ECH": {
+            "title": "Type de pluriactivité",
+            "description": "null",
             "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MOPLURACT_ECH": {
+            "title": "Importance de la pluriactivité dans le temps de travail",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IMPUT_NR_TOT": {
+            "title": "Indicatrice d'imputation de la non réponse totale (dossiers entièrement imputés)",
+            "description": "null",
+            "dtype": "float64",
             "nullable": true,
             "checks": null,
             "unique": false,
@@ -151,12 +217,12 @@
     "dtype": null,
     "coerce": true,
     "strict": true,
-    "name": "PHYTOVITI_2016__MECA_PHYTOVITI2016",
+    "name": "RA_2020__RA2020_MO_CHEF_COEXPL",
     "ordered": false,
     "unique": null,
     "report_duplicates": "all",
     "unique_column_names": false,
     "add_missing_columns": false,
     "title": null,
-    "description": "Schema for table MECA_PHYTOVITI2016 (Données du tableau des désherbages mécaniques ou thermiques)\n        from data dictionary PHYTOVITI_2016"
+    "description": "Schema for table RA2020_MO_CHEF_COEXPL from data dictionary RA_2020"
 }
