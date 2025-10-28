@@ -1,10 +1,16 @@
 import streamlit as st
 
-from agriphyto_schema.app.utils import filter_dataframe, load_dico, load_nomenclature
+from agriphyto_schema.app.utils import (
+    filter_dataframe,
+    load_dico,
+    load_nomenclature,
+)
 from agriphyto_schema.constants import (
     AGRIPHYTO_DICO_NAME,
     COLNAME_OUT_DB,
     COLNAME_OUT_NOMENCLATURE,
+    COLNAME_TABLE,
+    COLNAME_VARIABLE,
     DIR2DATA,
     DIR2NOMENCLATURES,
 )
@@ -42,7 +48,15 @@ config = {
 
 # Affichage du dataframe principal avec selection des événements
 event = st.dataframe(
-    filtered_dico, column_config=config, hide_index=True, on_select="rerun", selection_mode="single-row"
+    filtered_dico,
+    column_config=config,
+    hide_index=True,
+    on_select="rerun",
+    selection_mode="single-row",
+)
+
+all_nomenclatures = load_nomenclature(
+    DIR2NOMENCLATURES / "all_nomenclatures.csv"
 )
 
 # Gestion des clics sur les lignes
@@ -53,23 +67,31 @@ if event.selection.rows:
     if selected_row_index < len(filtered_dico):
         selected_row = filtered_dico.iloc[selected_row_index]
         db_name = selected_row.get(COLNAME_OUT_DB, "")
-        nomenclature_name = selected_row.get(COLNAME_OUT_NOMENCLATURE, "")
-        nomenclature_file = f"{db_name}__{nomenclature_name}__categories.csv"
-        path2nomenclature = DIR2NOMENCLATURES / nomenclature_file
-        # Vérification si une nomenclature existe et n'est pas vide
-        if nomenclature_name and str(nomenclature_name).strip() and str(nomenclature_name) != "nan":
-            # Vérification de l'existence du fichier
-            if path2nomenclature.is_file():
-                st.subheader(f"📋 Nomenclature : {nomenclature_name}")
+        clean_variable_name = selected_row.get(COLNAME_OUT_NOMENCLATURE, "")
+        selected_nomenclature = all_nomenclatures[
+            (all_nomenclatures[COLNAME_OUT_DB] == db_name)
+            & (
+                all_nomenclatures[COLNAME_TABLE]
+                == selected_row.get(COLNAME_TABLE, "")
+            )
+            & (all_nomenclatures[COLNAME_VARIABLE] == clean_variable_name)
+        ]
 
-                # Chargement et affichage de la nomenclature
-                nomenclature_df = load_nomenclature(path2nomenclature)
-                st.dataframe(nomenclature_df, hide_index=True)
-            else:
-                st.info(f"💡 Aucun fichier de nomenclature trouvé pour `{path2nomenclature}`")
+        # Vérification si une nomenclature existe et n'est pas vide
+        if (
+            clean_variable_name
+            and str(clean_variable_name).strip()
+            and (str(clean_variable_name) != "nan")
+            and (len(selected_nomenclature) > 0)
+        ):
+            st.dataframe(selected_nomenclature, hide_index=True)
         else:
-            st.info("💡 Sélectionnez une ligne avec une nomenclature pour afficher les détails.")
+            st.info(
+                "💡 Sélectionnez une ligne avec une nomenclature pour afficher les détails."
+            )
 
 # Information d'aide
 st.markdown("---")
-st.markdown("💡 **Aide :** Cliquez sur une ligne de la colonne 'Nomenclature' pour afficher le détail des catégories.")
+st.markdown(
+    "💡 **Aide :** Cliquez sur une ligne de la colonne 'Nomenclature' pour afficher le détail des catégories."
+)

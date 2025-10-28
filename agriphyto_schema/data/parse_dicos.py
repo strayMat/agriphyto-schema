@@ -29,11 +29,11 @@ from agriphyto_schema.constants import (
     COLNAME_PANDERA_TYPE,
     COLNAME_TABLE,
     COLNAME_TYPE,
-    FILENAME_NOMENCLATURES,
     COLNAME_VARIABLE,
     DIR2DICO,
     DIR2NOMENCLATURES,
     DIR2SCHEMA,
+    FILENAME_NOMENCLATURES,
     MAP_TYPES,
     USELESS_MODALITIES,
 )
@@ -244,7 +244,7 @@ def nomenclature_from_nomenclature_sheet(
     for i in range(len(starts) - 1):
         table_name = modalites_df.loc[starts[i], COLNAME_TABLE]
         var_name = modalites_df.loc[starts[i], COLNAME_VARIABLE]
-        sub = modalites_df.iloc[starts[i] + 1: starts[i + 1]].copy()[
+        sub = modalites_df.iloc[starts[i] + 1 : starts[i + 1]].copy()[
             [COLNAME_VARIABLE, COLNAME_LIBELLE]
         ]
         sub.columns = modalites_df.iloc[starts[i], :][
@@ -265,12 +265,14 @@ def nomenclature_from_nomenclature_sheet(
             modalities_df[COLNAME_TABLE] = table_name
             modalities_df[COLNAME_VARIABLE] = var_name_clean
             modalities_df[COLNAME_OUT_DB] = db_name
-            modalities_df.columns = [
-                COLNAME_OUT_DB,
-                COLNAME_TABLE,
-                COLNAME_VARIABLE,
-                COLNAME_CODE,
-                COLNAME_LIBELLE,
+            modalities_df = modalities_df[
+                [
+                    COLNAME_OUT_DB,
+                    COLNAME_TABLE,
+                    COLNAME_VARIABLE,
+                    COLNAME_CODE,
+                    COLNAME_LIBELLE,
+                ]
             ]
 
             path2modalites = DIR2NOMENCLATURES / FILENAME_NOMENCLATURES
@@ -340,24 +342,21 @@ def nomenclature_from_variable_sheet(
         modalities_df = clean_modalities(raw_nomenclature_row, code_first=True)
         if len(modalities_df) > 0:
             table_name = row[COLNAME_TABLE]
-            var_name_clean = clean_nomenclature_name(
-                var_name, table_name
-            )
+            var_name_clean = clean_nomenclature_name(var_name, table_name)
             all_modalities_df[var_name_clean] = modalities_df
             modalities_df[COLNAME_TABLE] = table_name
             modalities_df[COLNAME_VARIABLE] = var_name_clean
             modalities_df[COLNAME_OUT_DB] = db_name
-            modalities_df.columns = [
-                COLNAME_OUT_DB,
-                COLNAME_TABLE,
-                COLNAME_VARIABLE,
-                COLNAME_CODE,
-                COLNAME_LIBELLE,
+            modalities_df = modalities_df[
+                [
+                    COLNAME_OUT_DB,
+                    COLNAME_TABLE,
+                    COLNAME_VARIABLE,
+                    COLNAME_CODE,
+                    COLNAME_LIBELLE,
+                ]
             ]
-            path2modalites = (
-                DIR2NOMENCLATURES
-                / FILENAME_NOMENCLATURES
-            )
+            path2modalites = DIR2NOMENCLATURES / FILENAME_NOMENCLATURES
             if not path2modalites.exists():
                 # write header
                 modalities_df.to_csv(path2modalites, index=False, mode="w")
@@ -598,6 +597,7 @@ def detect_table_section_from_casd_csv(
     return table_sections
 
 
+# FIXME: refactor to have the same logic for nomenclature building and saving as in dico_from_excel
 def dico_from_casd_csv(db_name: str) -> None:
     """
     Parse a csv data dictionary from
@@ -707,12 +707,25 @@ def dico_from_casd_csv(db_name: str) -> None:
                 raw_nomenclature_row, code_first=True
             )
             var_name_clean = clean_nomenclature_name(var_name, table_name)
+            modalities_df[COLNAME_TABLE] = table_name
+            modalities_df[COLNAME_VARIABLE] = var_name_clean
+            modalities_df[COLNAME_OUT_DB] = db_name
+            modalities_df = modalities_df[
+                [
+                    COLNAME_OUT_DB,
+                    COLNAME_TABLE,
+                    COLNAME_VARIABLE,
+                    COLNAME_CODE,
+                    COLNAME_LIBELLE,
+                ]
+            ]
             # Save nomenclature to CSV
-            path2modalites = (
-                DIR2NOMENCLATURES
-                / f"{db_name}__{var_name_clean}__categories.csv"
-            )
-            modalities_df.to_csv(path2modalites, index=False)
+            path2modalites = DIR2NOMENCLATURES / FILENAME_NOMENCLATURES
+            if not path2modalites.exists():
+                # write header
+                modalities_df.to_csv(path2modalites, index=False, mode="w")
+            else:
+                modalities_df.to_csv(path2modalites, index=False, mode="a")
             logger.info(
                 f"Variable {var_name_clean} nomenclature saved at {path2modalites}"
             )

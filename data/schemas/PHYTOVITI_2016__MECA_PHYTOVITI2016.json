@@ -1,0 +1,162 @@
+{
+    "schema_type": "dataframe",
+    "version": "0.26.1",
+    "columns": {
+        "IDENTPARC": {
+            "title": "Identifiant de la parcelle",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "MECAPAS": {
+            "title": "NumÃ©ro du passage sur la parcelle",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DMECA": {
+            "title": "Date de passage",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRDISC": {
+            "title": "Passage inter-rang : appareil Ã  disques",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRDENT": {
+            "title": "Passage inter-rang : appareil Ã  dents (dont cultivateur)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRROTA": {
+            "title": "Passage inter-rang : appareil type rotavator",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "IRAUTR": {
+            "title": "Passage inter-rang : autres appareils",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ICLAM": {
+            "title": "Passage sous le rang : intercep Ã  lames",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ICROTA": {
+            "title": "Passage sous le rang : intercep rotatifs",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ICDECA": {
+            "title": "Passage sous le rang : dÃ©cavaillonneuse",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "ICAUTR": {
+            "title": "Passage sous le rang : autres appareils (dont thermique)",
+            "description": "null",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DESINTRANG": {
+            "title": "Passage dâ€™appareil sur inter-rang",
+            "description": "{\"nomenclature\": \"MECA_PHYTOVITI2016__DESINTRANG\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        },
+        "DESINTCEP": {
+            "title": "Passage dâ€™appareil sous le rang",
+            "description": "{\"nomenclature\": \"MECA_PHYTOVITI2016__DESINTCEP\"}",
+            "dtype": "string[python]",
+            "nullable": true,
+            "checks": null,
+            "unique": false,
+            "coerce": false,
+            "required": true,
+            "regex": false
+        }
+    },
+    "checks": null,
+    "index": null,
+    "dtype": null,
+    "coerce": true,
+    "strict": true,
+    "name": "PHYTOVITI_2016__MECA_PHYTOVITI2016",
+    "ordered": false,
+    "unique": null,
+    "report_duplicates": "all",
+    "unique_column_names": false,
+    "add_missing_columns": false,
+    "title": null,
+    "description": "Schema for table MECA_PHYTOVITI2016 (Données du tableau des désherbages mécaniques ou thermiques)\n        from data dictionary PHYTOVITI_2016"
+}
