@@ -23,7 +23,9 @@ from agriphyto_schema.utils import pandera_from_json
 logger = logging.getLogger(__name__)
 
 
-def pandera_schema2df(schema: pa.DataFrameSchema, db_name: str, table_name: str) -> pd.DataFrame:
+def pandera_schema2df(
+    schema: pa.DataFrameSchema, db_name: str, table_name: str
+) -> pd.DataFrame:
     """
     Convert a pandera DataFrameSchema into a pandas DataFrame representing the data dictionary.
     Parameters
@@ -38,7 +40,11 @@ def pandera_schema2df(schema: pa.DataFrameSchema, db_name: str, table_name: str)
     """
     table_dico = []
     for colname, col_schema in schema.columns.items():
-        nomenclature = col_schema.metadata.get("nomenclature", None) if col_schema.metadata else None
+        nomenclature = (
+            col_schema.metadata.get("nomenclature", None)
+            if col_schema.metadata
+            else None
+        )
         col_line = {
             COLNAME_OUT_DB: db_name,
             COLNAME_OUT_TABLE: table_name,

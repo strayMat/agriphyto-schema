@@ -7,6 +7,8 @@ from agriphyto_schema.app.utils import (
 )
 from agriphyto_schema.constants import (
     AGRIPHYTO_DICO_NAME,
+    COLNAME_CODE,
+    COLNAME_LIBELLE,
     COLNAME_OUT_DB,
     COLNAME_OUT_NOMENCLATURE,
     COLNAME_OUT_TABLE,
@@ -14,8 +16,6 @@ from agriphyto_schema.constants import (
     COLNAME_VARIABLE,
     DIR2DATA,
     DIR2NOMENCLATURES,
-    COLNAME_CODE,
-    COLNAME_LIBELLE,
 )
 
 
@@ -74,10 +74,7 @@ if event.selection.rows:
         table_name = selected_row.get(COLNAME_OUT_TABLE, "")
         selected_nomenclature = all_nomenclatures[
             (all_nomenclatures[COLNAME_OUT_DB] == db_name)
-            & (
-                all_nomenclatures[COLNAME_TABLE]
-                == table_name
-            )
+            & (all_nomenclatures[COLNAME_TABLE] == table_name)
             & (all_nomenclatures[COLNAME_VARIABLE] == clean_variable_name)
         ]
         # Vérification si une nomenclature existe et n'est pas vide
@@ -87,7 +84,10 @@ if event.selection.rows:
             and (str(clean_variable_name) != "nan")
             and (len(selected_nomenclature) > 0)
         ):
-            st.dataframe(selected_nomenclature[[COLNAME_CODE, COLNAME_LIBELLE]], hide_index=True)
+            st.dataframe(
+                selected_nomenclature[[COLNAME_CODE, COLNAME_LIBELLE]],
+                hide_index=True,
+            )
         else:
             st.info(
                 "💡 Sélectionnez une ligne avec une nomenclature pour afficher les détails."

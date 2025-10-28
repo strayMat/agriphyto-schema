@@ -18,7 +18,9 @@ COLNAME_LIBELLE = "label"
 COLNAME_TYPE = "type"
 COLNAME_NOMENCLATURE = "nomenclature"
 COLNAME_CODE = "modality_code"
-COLNAME_NOMENCLATURE_2 = "nomenclature_2"  # sometimes two columns are used for nomenclature...
+COLNAME_NOMENCLATURE_2 = (
+    "nomenclature_2"  # sometimes two columns are used for nomenclature...
+)
 COLNAME_PANDERA_TYPE = "pandera_type"
 
 # Simple mapping Excel type -> Pandera type

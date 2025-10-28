@@ -42,6 +42,22 @@ def test_clean_varname():
             "6",
             "Mélange",
         ),
+        (
+            """02:Carotte
+    03:Choux fleur, Brocoli à jets et Romanesco
+    04:Autres choux (hors chou à choucroute)
+    05:Tous choux
+    06:Fraise
+    07:Melon
+    09:Poireau
+    10:Salade y compris mâche (hors endive)
+    11:Tomate""",
+            9,
+            "02",
+            "Carotte",
+            "11",
+            "Tomate",
+        ),
     ],
 )
 def test_clean_modalities(

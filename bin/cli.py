@@ -5,8 +5,6 @@ import click
 
 from agriphyto_schema.constants import (
     AVAILABLE_DICOS,
-    DIR2NOMENCLATURES,
-    FILENAME_NOMENCLATURES,
     LOG_LEVEL,
 )
 from agriphyto_schema.data.parse_dicos import parse_dico

@@ -232,7 +232,6 @@ def nomenclature_from_nomenclature_sheet(
         A dictionary mapping variable names to data frames containing the code-label mappings for
         each data modality.
     """
-    remove_db_from_nomenclature(db_name)
     modalites_df = pd.read_excel(
         DIR2DICO / filepath2dico,
         sheet_name=nomenclature_sheet,
@@ -323,7 +322,6 @@ def nomenclature_from_variable_sheet(
         for each data modality.
         Save nomenclatures into one centralized csv file by append mode in agriphyto_schema/data/nomenclatures/all_nomenclatures.csv
     """
-    remove_db_from_nomenclature(db_name)
     if COLNAME_NOMENCLATURE not in cols_to_use.values():
         msg = """This function only handles behavior 1) where modalities are in the same sheet as
         variables."""
@@ -416,6 +414,8 @@ def dico_from_excel(db_name: str) -> None:
         Saves the nomenclature CSV files in agriphyto_schema/data/nomenclatures/
     """
     check_db_name(db_name)
+    remove_db_from_nomenclature(db_name)
+
     filepath2dico = AVAILABLE_DICOS[db_name]["filename"]
     sheet_name_variables = AVAILABLE_DICOS[db_name]["variable_sheet"]
     cols_to_use = AVAILABLE_DICOS[db_name]["cols_to_use"]
