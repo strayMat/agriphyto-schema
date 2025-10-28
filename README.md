@@ -42,7 +42,7 @@ dictionnaire est disponible en téléchargement.
 | PhytoViti | Phytosanitaires Viticulture | 2010, 2016 | 2609 | ✅ | Pratiques_phytosanitaires_en_viticulture_-_2016.csv|
 | PKViti | Pratiques Culturales Viticulture | 2006, 2014, 2019 | 4173 | ✅ | PKViti2019_dico_variables_definitif.ods |
 | PhytoGC | Phytosanitaires Grandes Cultures | 2014 | 1639 | ✅ | Pratiques_phytosanitaires_en_grandes_cultures_-_2014.csv |
-| Phytoleg | Phytosanitaires Légumes | 2018 | 3836 | | 20210930_DOC_BSVA_Dictionnaire_variables_Phytolégumes2018.ods |
+| Phytoleg | Phytosanitaires Légumes | 2018 | 3836 |✅ | 20210930_DOC_BSVA_Dictionnaire_variables_Phytolégumes2018.ods |
 | Phytofruits | Phytosanitaires Fruits | 2012, 2018 | 3945 | | Phytofruits18_dico_variables_casd.xlsx |
 | RA | Recensement Agricole | 2000, 2010, 2020 | 4411 | ✅ | RA2020_Dictionnaire des variables_220415_CASD.xlsx |
 | Fideli | Fideli | 2018-2023 | 5169 | ✅ | Fichier_Démographique_sur_les_Logements_et_les_Individus_(FIDELI)_-_2022.csv |
