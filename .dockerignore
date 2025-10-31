@@ -1,0 +1,62 @@
+# Git
+.git
+.gitignore
+
+# Python
+.venv # avoid copying virtual environment folders
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# Documentation
+docs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+reports/
+notebooks/
+tests/
+.pre-commit-config.yaml
+tox.ini
+Makefile
+CONTRIBUTING.md
+LICENSE
+
+# don't include raw and schemas (not useful for the app)
+data/raw/
+data/schemas/
+
+# Docker
+Dockerfile*
+.dockerignore
