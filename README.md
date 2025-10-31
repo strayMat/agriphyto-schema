@@ -1,7 +1,9 @@
 # agriphyto-schema
 
 [![Pipeline status](https://github.com/straymat/agriphyto-schema/actions/workflows/ci.yml/badge.svg)](https://github.com/straymat/agriphyto-schema/actions)
+
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://straymat.github.io/agriphyto-schema/readme.html)
+
 [![License](https://img.shields.io/github/license/strayMat/agriphyto-schema)](https://github.com/strayMat/agriphyto-schema/blob/main/LICENSE)
 
 ---
@@ -28,11 +30,6 @@
 Bases de données composant Agriphyto. Seuls les dictionnaires des dernières
 années pour chaque base sont intégrés dans ce projet.
 
-Si une documentation propre est disponible sur le CASD, l'id_prod de la dernière
-édition disponible est indiqué. Il faut ensuite visiter la page :
-https://www.casd.eu/page-produit/?id_prd={id_prod}. Une version consolidée du
-dictionnaire est disponible en téléchargement.
-
 | Sigle | Nom | Année | CASD id_prod | intégrée | choix fichier source nomenclature |
 |-------|-----|-------|--------------|----------|-----------------------------------|
 | PKGC | Pratiques Culturales Grandes Cultures | 2006, 2011, 2017 | 3033 | ✅  | 20190802_DOC_BSVA_dico_variables_PKGC2017.ods |
@@ -49,11 +46,16 @@ dictionnaire est disponible en téléchargement.
 | BTS | Base tous salariés | 2016-2023 | 5012 | | |
 | BNS | Base non salariés | 2006-2023 | 4848 | | |
 
+
+NB: Pour certaines bases, j'utilise la documentation des variables du CASD.
+
 ### Schéma flux de données (optionnel)
 
 ### Technologies
 
-python 3.13, pandera, streamlit
+- construction des schémas et application : python 3.13, pandera, streamlit
+
+- application : streamlit, docker, helm, kubernetes
 
 ### Maintenance
 
