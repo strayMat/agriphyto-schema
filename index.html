@@ -363,9 +363,9 @@
                   
   <section id="agriphyto-schema">
 <h1>agriphyto-schema<a class="headerlink" href="#agriphyto-schema" title="Link to this heading">#</a></h1>
-<p><a class="reference external" href="https://github.com/straymat/agriphyto-schema/actions"><img alt="Pipeline status" src="https://github.com/straymat/agriphyto-schema/actions/workflows/ci.yml/badge.svg" /></a>
-<a class="reference external" href="https://straymat.github.io/agriphyto-schema/readme.html"><img alt="Documentation" src="https://img.shields.io/badge/docs-latest-blue.svg" /></a>
-<a class="reference external" href="https://github.com/strayMat/agriphyto-schema/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/strayMat/agriphyto-schema" /></a></p>
+<p><a class="reference external" href="https://github.com/straymat/agriphyto-schema/actions"><img alt="Pipeline status" src="https://github.com/straymat/agriphyto-schema/actions/workflows/ci.yml/badge.svg" /></a></p>
+<p><a class="reference external" href="https://straymat.github.io/agriphyto-schema/readme.html"><img alt="Documentation" src="https://img.shields.io/badge/docs-latest-blue.svg" /></a></p>
+<p><a class="reference external" href="https://github.com/strayMat/agriphyto-schema/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/strayMat/agriphyto-schema" /></a></p>
 <hr class="docutils" />
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
@@ -391,10 +391,6 @@
 <h3>Données utilisées<a class="headerlink" href="#donnees-utilisees" title="Link to this heading">#</a></h3>
 <p>Bases de données composant Agriphyto. Seuls les dictionnaires des dernières
 années pour chaque base sont intégrés dans ce projet.</p>
-<p>Si une documentation propre est disponible sur le CASD, l’id_prod de la dernière
-édition disponible est indiqué. Il faut ensuite visiter la page :
-https://www.casd.eu/page-produit/?id_prd={id_prod}. Une version consolidée du
-dictionnaire est disponible en téléchargement.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Sigle</p></th>
@@ -500,13 +496,17 @@ dictionnaire est disponible en téléchargement.</p>
 </tbody>
 </table>
 </div>
+<p>NB: Pour certaines bases, j’utilise la documentation des variables du CASD.</p>
 </section>
 <section id="schema-flux-de-donnees-optionnel">
 <h3>Schéma flux de données (optionnel)<a class="headerlink" href="#schema-flux-de-donnees-optionnel" title="Link to this heading">#</a></h3>
 </section>
 <section id="technologies">
 <h3>Technologies<a class="headerlink" href="#technologies" title="Link to this heading">#</a></h3>
-<p>python 3.13, pandera, streamlit</p>
+<ul class="simple">
+<li><p>construction des schémas et application : python 3.13, pandera, streamlit</p></li>
+<li><p>application : streamlit, docker, helm, kubernetes</p></li>
+</ul>
 </section>
 <section id="maintenance">
 <h3>Maintenance<a class="headerlink" href="#maintenance" title="Link to this heading">#</a></h3>
