@@ -45,7 +45,7 @@
     <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Data documentation" href="data.html" />
+    <link rel="next" title="CLI Usage" href="cli-usage.html" />
     <link rel="prev" title="agriphyto-schema" href="readme.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -146,49 +146,25 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="data.html">
-    Data
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="notebooks.html">
-    Notebooks
-  </a>
-</li>
-
-
-<li class="nav-item ">
   <a class="nav-link nav-internal" href="cli-usage.html">
     CLI usage
   </a>
 </li>
 
-            <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false"
-                aria-controls="pst-nav-more-links">
-                    More
-                </button>
-                <ul id="pst-nav-more-links" class="dropdown-menu">
-                    
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="license.html">
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="license.html">
     License
   </a>
 </li>
 
 
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="changelog.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="changelog.html">
     Changelog
   </a>
 </li>
 
-                </ul>
-            </li>
-            
   </ul>
 </nav></div>
       
@@ -272,20 +248,6 @@
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
     Usage
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="data.html">
-    Data
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="notebooks.html">
-    Notebooks
   </a>
 </li>
 
@@ -397,70 +359,57 @@
 <h1>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h1>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
-<section id="with-uv-recommended">
-<h3>With uv (recommended)<a class="headerlink" href="#with-uv-recommended" title="Link to this heading">#</a></h3>
 <p>You can install agriphyto-schema via <a class="reference external" href="https://docs.astral.sh/uv/">uv</a>:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>install<span class="w"> </span>agriphyto_schema
 </pre></div>
 </div>
 </section>
-<section id="with-pip">
-<h3>With pip<a class="headerlink" href="#with-pip" title="Link to this heading">#</a></h3>
-<p>You can install agriphyto-schema via <a class="reference external" href="https://pip.pypa.io/">pip</a>:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>agriphyto_schema
-</pre></div>
-</div>
-</section>
-</section>
 <section id="using-the-project">
 <h2>Using the project<a class="headerlink" href="#using-the-project" title="Link to this heading">#</a></h2>
 <section id="running-the-application">
 <h3>Running the application<a class="headerlink" href="#running-the-application" title="Link to this heading">#</a></h3>
+<p>Pre-requisite:
+v</p>
+<ul class="simple">
+<li><p>Make sure you have installed the package as per the
+<a class="reference internal" href="#installation"><span class="xref myst">Installation</span></a> instructions.</p></li>
+</ul>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>streamlit<span class="w"> </span>run<span class="w"> </span>agriphyto_schema/app/app.py
 </pre></div>
 </div>
 </section>
-<section id="running-the-project">
-<h3>Running the project<a class="headerlink" href="#running-the-project" title="Link to this heading">#</a></h3>
-<blockquote>
-<div><p>📝 <strong>Note</strong>
-All following commands are relative to the project root directory and assume
-<code class="docutils literal notranslate"><span class="pre">make</span></code> is installed.</p>
-</div></blockquote>
-<p>You can run the project as follows:</p>
-</section>
-<section id="locally-via-uv">
-<h3>Locally via uv<a class="headerlink" href="#locally-via-uv" title="Link to this heading">#</a></h3>
+<section id="creating-appropriate-data-schemas-for-the-application">
+<h3>Creating appropriate data schemas for the application<a class="headerlink" href="#creating-appropriate-data-schemas-for-the-application" title="Link to this heading">#</a></h3>
+<p>The application relies on pre-defined data schemas for each dictionary. These schemas are generated from the raw dictionary files with two steps:</p>
+<p>NB: The detailed commands are detailed in the CLI <a class="reference external" href="https://straymat.github.io/agriphyto-schema/cli-usage.html">CLI documentation</a>.</p>
 <section id="parse-a-dictionary">
-<h4>Parse a dictionary<a class="headerlink" href="#parse-a-dictionary" title="Link to this heading">#</a></h4>
+<h4>1 - Parse a dictionary<a class="headerlink" href="#parse-a-dictionary" title="Link to this heading">#</a></h4>
+<p>Parse the dictionary file and create a pandera schema file for each table in the raw dictionnary file in
+<code class="docutils literal notranslate"><span class="pre">data/schemas/{DICO_NAME}.json</span></code>. This step also extracts nomenclatures for each variable in the dictionary. It stores them in one nomenclature file with append mode at <code class="docutils literal notranslate"><span class="pre">data/nomenclatures/all_nomenclatures.json</span></code>.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>bin/cli.py<span class="w"> </span>parse<span class="w"> </span>--dico<span class="w"> </span>&lt;DICO_NAME&gt;<span class="w"> </span><span class="c1"># eg. RA2020</span>
 </pre></div>
 </div>
 </section>
 <section id="aggregate-dictionaries">
 <h4>Aggregate dictionaries<a class="headerlink" href="#aggregate-dictionaries" title="Link to this heading">#</a></h4>
-<p>It aggregates all available schemas in the “data/schema” folder.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>bin/cli.py<span class="w"> </span>aggregate<span class="w"> </span><span class="c1">#</span>
+<p>It aggregates all available pandera schemas in the “data/schema” folder into one csv file for the application.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>bin/cli.py<span class="w"> </span>aggregate<span class="w"> </span>--dico<span class="w"> </span>&lt;DICO_NAME&gt;<span class="w"> </span><span class="c1"># eg. RA2020</span>
 </pre></div>
 </div>
 </section>
 </section>
 </section>
+<section id="deployment-of-the-application-on-onyxia-sspcloud">
+<h2>Deployment of the application on Onyxia (SSPCloud)<a class="headerlink" href="#deployment-of-the-application-on-onyxia-sspcloud" title="Link to this heading">#</a></h2>
+<p>The application is deployed on Onyxia (SSPCloud) using kubernetes and helm, following <a class="reference external" href="https://github.com/InseeFrLab/sspcloud-tutorials/blob/main/deployment/shiny-app.md">the online instructions</a> (adapted from shiny).</p>
+<p>The <a class="reference external" href="https://github.com/straymat/agriphyto-schema-deployment">deployment code for the helm chart</a> inherits from the (poorly named) <a class="reference external" href="https://github.com/InseeFrLab/helm-charts/tree/master/charts/shiny">shiny helm chart</a> built by Insee. No modification to this dependency is needed since it should work for multiple web applications frameworks. The chart is pulling the docker image from the public docker hub repository <a class="reference external" href="https://hub.docker.com/r/straymat/agriphyto-dico-app">straymat/agriphyto-dico-app</a>.</p>
+<p>The application should be accessible at : https://agriphyto-dictionnaire-donnees.lab.sspcloud.fr/</p>
+</section>
 <section id="development">
 <h2>Development<a class="headerlink" href="#development" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>📝 <strong>Note</strong>
-For convenience, many of the below processes are abstracted away
-and encapsulated in single <a class="reference external" href="https://www.gnu.org/software/make/">Make</a> targets.</p>
-</div></blockquote>
-<blockquote>
-<div><p>🔥 <strong>Tip</strong>
-Invoking <code class="docutils literal notranslate"><span class="pre">make</span></code> without any arguments will display
-auto-generated documentation on available commands.</p>
-</div></blockquote>
 <section id="package-and-dependencies-installation">
 <h3>Package and Dependencies Installation<a class="headerlink" href="#package-and-dependencies-installation" title="Link to this heading">#</a></h3>
-<p>Make sure you have Python 3.11+ and <a class="reference external" href="https://docs.astral.sh/uv/">uv</a>
+<p>Make sure you have Python 3.13+ and <a class="reference external" href="https://docs.astral.sh/uv/">uv</a>
 installed and configured.</p>
 <p>To install the package and all dev dependencies, run:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>install
@@ -539,11 +488,11 @@ The home page is the <code class="docutils literal notranslate"><span class="pre
       </div>
     </a>
     <a class="right-next"
-       href="data.html"
+       href="cli-usage.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data documentation</p>
+        <p class="prev-next-title">CLI Usage</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -566,21 +515,17 @@ The home page is the <code class="docutils literal notranslate"><span class="pre
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#with-uv-recommended">With uv (recommended)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#with-pip">With pip</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-project">Using the project</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#running-the-application">Running the application</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#running-the-project">Running the project</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#locally-via-uv">Locally via uv</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#parse-a-dictionary">Parse a dictionary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-appropriate-data-schemas-for-the-application">Creating appropriate data schemas for the application</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#parse-a-dictionary">1 - Parse a dictionary</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregate-dictionaries">Aggregate dictionaries</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-of-the-application-on-onyxia-sspcloud">Deployment of the application on Onyxia (SSPCloud)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development">Development</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#package-and-dependencies-installation">Package and Dependencies Installation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a></li>

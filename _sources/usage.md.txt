@@ -2,41 +2,35 @@
 
 ## Installation
 
-### With uv (recommended)
-
 You can install agriphyto-schema via [uv](https://docs.astral.sh/uv/):
 
 ```shell script
 uv install agriphyto_schema
 ```
 
-### With pip
-
-You can install agriphyto-schema via [pip](https://pip.pypa.io/):
-
-```shell script
-pip install agriphyto_schema
-```
-
 ## Using the project
 
 ### Running the application
+
+Pre-requisite:
+v
+ - Make sure you have installed the package as per the
+[Installation](#installation) instructions.
 
 ```shell
 uv run streamlit run agriphyto_schema/app/app.py
 ```
 
-### Running the project
+### Creating appropriate data schemas for the application
 
-> 📝 **Note**
-> All following commands are relative to the project root directory and assume
-> `make` is installed.
+The application relies on pre-defined data schemas for each dictionary. These schemas are generated from the raw dictionary files with two steps:
 
-You can run the project as follows:
+NB: The detailed commands are detailed in the CLI [CLI documentation](https://straymat.github.io/agriphyto-schema/cli-usage.html).
 
-### Locally via uv
+#### 1 - Parse a dictionary
 
-#### Parse a dictionary
+Parse the dictionary file and create a pandera schema file for each table in the raw dictionnary file in
+  `data/schemas/{DICO_NAME}.json`. This step also extracts nomenclatures for each variable in the dictionary. It stores them in one nomenclature file with append mode at `data/nomenclatures/all_nomenclatures.json`.
 
 ```shell script
 uv run python bin/cli.py parse --dico <DICO_NAME> # eg. RA2020
@@ -44,25 +38,24 @@ uv run python bin/cli.py parse --dico <DICO_NAME> # eg. RA2020
 
 #### Aggregate dictionaries
 
-It aggregates all available schemas in the "data/schema" folder.
+It aggregates all available pandera schemas in the "data/schema" folder into one csv file for the application.
 
 ```shell script
-uv run python bin/cli.py aggregate #
+uv run python bin/cli.py aggregate --dico <DICO_NAME> # eg. RA2020
 ```
+## Deployment of the application on Onyxia (SSPCloud)
+
+The application is deployed on Onyxia (SSPCloud) using kubernetes and helm, following [the online instructions](https://github.com/InseeFrLab/sspcloud-tutorials/blob/main/deployment/shiny-app.md) (adapted from shiny).
+
+The [deployment code for the helm chart](https://github.com/straymat/agriphyto-schema-deployment) inherits from the (poorly named) [shiny helm chart](https://github.com/InseeFrLab/helm-charts/tree/master/charts/shiny) built by Insee. No modification to this dependency is needed since it should work for multiple web applications frameworks. The chart is pulling the docker image from the public docker hub repository [straymat/agriphyto-dico-app](https://hub.docker.com/r/straymat/agriphyto-dico-app).
+
+The application should be accessible at : https://agriphyto-dictionnaire-donnees.lab.sspcloud.fr/
 
 ## Development
 
-> 📝 **Note**
-> For convenience, many of the below processes are abstracted away
-> and encapsulated in single [Make](https://www.gnu.org/software/make/) targets.
-
-> 🔥 **Tip**
-> Invoking `make` without any arguments will display
-> auto-generated documentation on available commands.
-
 ### Package and Dependencies Installation
 
-Make sure you have Python 3.11+ and [uv](https://docs.astral.sh/uv/)
+Make sure you have Python 3.13+ and [uv](https://docs.astral.sh/uv/)
 installed and configured.
 
 To install the package and all dev dependencies, run:
@@ -70,8 +63,6 @@ To install the package and all dev dependencies, run:
 ```shell script
 make install
 ```
-
-
 
 
 ### Testing
