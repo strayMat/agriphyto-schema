@@ -1,10 +1,9 @@
 # agriphyto-schema
 
 [![Pipeline status](https://github.com/straymat/agriphyto-schema/actions/workflows/ci.yml/badge.svg)](https://github.com/straymat/agriphyto-schema/actions)
-
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://straymat.github.io/agriphyto-schema/readme.html)
-
 [![License](https://img.shields.io/github/license/strayMat/agriphyto-schema)](https://github.com/strayMat/agriphyto-schema/blob/main/LICENSE)
+[![Application en ligne](https://img.shields.io/badge/application-en_ligne-brightgreen)](https://agriphyto-dictionnaire-donnees.lab.sspcloud.fr/)
 
 ---
 
@@ -14,14 +13,20 @@
 - Livrables : schéma de données (standard [pandera](https://pandera.readthedocs.io/en/stable/)) et application du dictionnaire.
 - Public visé : utilisateurs de la base Agriphyto.
 - Acteurs impliqués : D2E, Insee.
-- Temporalité du projet : octobre 2025 pour le prototype.
+- Temporalité du projet : novembre 2025 pour une v0 déployée sur internet.
 
 ![Aperçu du projet](docs/source/_static/app_capture.png)
 
 ## Liens utiles
 
+- Application en ligne : https://straymat-insee-fr.github.io/agriphyto-dico-app/
+
 - Documentation : https://straymat.github.io/agriphyto-schema/readme.html
+
 - Code source : https://github.com/straymat/agriphyto-schema
+
+- Code source du déploiement kubernetes (Onyxia) : https://agriphyto-dictionnaire-donnees.lab.sspcloud.fr/
+
 
 ## Contexte technique
 
@@ -67,4 +72,4 @@ D2E, division RPS ou macro : matthieu.doutreligne@insee.fr
 
 ## Détails techniques
 
-Se référer à la documentation en ligne : https://straymat.github.io/agriphyto-schema/readme.html
+Se référer à la documentation en ligne : https://straymat.github.io/agriphyto-schema/usage.html

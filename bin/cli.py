@@ -31,7 +31,7 @@ def cli():
 )
 def parse(dico_name: str) -> None:
     """
-    Parse an Excel data dictionary to create a pandera schema for data validation.
+    Parse an Excel or a csv data dictionary to create a pandera schema for data validation. The configurations for each dictionary are in `agriphyto_schema/constants.py`.
     """
 
     if dico_name == "all":

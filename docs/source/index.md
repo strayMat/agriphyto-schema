@@ -9,8 +9,6 @@
 
    readme
    Usage <usage.md>
-   Data <data>
-   Notebooks <notebooks>
    CLI usage <cli-usage>
    License <license>
    Changelog <changelog>
