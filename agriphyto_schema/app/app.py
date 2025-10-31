@@ -26,7 +26,8 @@ def wide_space_default():
 
 wide_space_default()
 
-
+# TAB config
+st.set_page_config(page_title="Dico Agriphyto", page_icon="🥕", layout="wide")
 # Application
 st.title("Dico Agriphyto 🥕")
 st.markdown(
