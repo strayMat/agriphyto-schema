@@ -25,8 +25,12 @@ COPY . .
 # Install dependencies only (no dev dependencies, no cache)
 RUN uv sync --frozen --no-dev --no-cache
 
-# Expose Streamlit port
-EXPOSE 8501
+# Expose Streamlit port same as for the [onyxia template shiny app](https://github.com/InseeFrLab/template-shiny-app/blob/main/Dockerfile)
 
+ARG STREAMLIT_PORT=3838
+EXPOSE $STREAMLIT_PORT
+
+# Need to set STREAMLIT_PORT as environment variable for Streamlit to pick it up
+ENV STREAMLIT_PORT=$STREAMLIT_PORT
 # Run the Streamlit app without syncing (avoid installing dev dependencies)
-ENTRYPOINT ["uv", "run", "--no-sync", "streamlit", "run", "agriphyto_schema/app/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["sh", "-c", "uv run --no-sync streamlit run agriphyto_schema/app/app.py --server.port=${STREAMLIT_PORT} --server.address=0.0.0.0"]
