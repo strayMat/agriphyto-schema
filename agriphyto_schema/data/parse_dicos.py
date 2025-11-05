@@ -149,28 +149,34 @@ def clean_modalities(  # noqa: C901
     cleaned_modalites = []
     modality_separators = ["\n", "|", ";", ",", " ou "]
     # First, split the raw nomenclature based on different delimiters
-    splitted_nomenclatures = None
+    splitted_nomenclatures = []
     for sep in modality_separators:
-        if (sep in raw_nomenclature_row) and (splitted_nomenclatures is None):
+        if (sep in raw_nomenclature_row) and (len(splitted_nomenclatures) == 0):
             splitted_nomenclatures = raw_nomenclature_row.split(sep)
-
-    # If no split happened, try a regex split directly getting back code and labels based on the
+    splitted_nomenclatures = [
+        mod for mod in splitted_nomenclatures if mod.strip() != ""
+    ]
+    # try a regex split directly getting back code and labels based on the
     # formatting of PK surveys dictionaries:
-    pattern = r"(\d{1,3}):(.*?)(?=(?:\d{1,3}:)|$)"
-    regex_search = re.search(pattern, raw_nomenclature_row)
-    if (splitted_nomenclatures is None) and (regex_search is not None):
+    # if the regex split finds at least as many modalities as the previous split, use it
+    pattern = r"(\d{1,4}):(.*?)(?=(?:\d{1,4}:)|$)"
+    regex_split = re.findall(pattern, raw_nomenclature_row)
+    # heuristic to guess if the regex worked better than the modality separators
+    # if more split found in regex, use it
+    choose_regex = len(regex_split) >= len(splitted_nomenclatures)
+    # if a a bad matched code pattern in splitted_nomenclature, use regex split: ex. 'orages' instead of '03:Orages'
+    if (len(splitted_nomenclatures) > 0) & (len(regex_split) > 0):
+        for mod in splitted_nomenclatures:
+            if not re.match(r"^(\d{1,4})", mod.strip()):
+                choose_regex = True
+    if choose_regex:
         nomenclature = pd.DataFrame(
-            re.findall(pattern, raw_nomenclature_row),
+            regex_split,
             columns=[COLNAME_CODE, COLNAME_LIBELLE],
         )
-    else:
-        if splitted_nomenclatures is None:
-            splitted_nomenclatures = [raw_nomenclature_row]
+    elif len(splitted_nomenclatures) > 0:
         # Process each modality
         code_label_separator = [" - ", "=", ":"]
-        if len(splitted_nomenclatures) == 0:
-            return pd.DataFrame(columns=[COLNAME_CODE, COLNAME_LIBELLE])
-
         for mod in splitted_nomenclatures:
             if mod and mod.strip() != "":
                 mod_clean = mod.strip().replace('"', "")
@@ -192,12 +198,21 @@ def clean_modalities(  # noqa: C901
                     })
         # Create DataFrame with proper column names
         nomenclature = pd.DataFrame(cleaned_modalites)
-    # Switch column order if nomenclature are of the form:  label - code
-    if len(nomenclature) > 0:
-        if not code_first:
-            nomenclature = nomenclature[[COLNAME_LIBELLE, COLNAME_CODE]]
-            nomenclature.columns = [COLNAME_CODE, COLNAME_LIBELLE]
     else:
+        nomenclature = pd.DataFrame(columns=[COLNAME_CODE, COLNAME_LIBELLE])
+    if (len(nomenclature) > 0) and (not code_first):
+        # Switch column order if nomenclature are of the form:  label - code
+        nomenclature = nomenclature[[COLNAME_LIBELLE, COLNAME_CODE]]
+        nomenclature.columns = [COLNAME_CODE, COLNAME_LIBELLE]
+    # Fallback cases
+    if (len(nomenclature) == 0) and (raw_nomenclature_row.strip() != ""):
+        nomenclature = pd.DataFrame(
+            [(raw_nomenclature_row, raw_nomenclature_row)],
+            columns=[COLNAME_CODE, COLNAME_LIBELLE],
+        )
+    if (
+        raw_nomenclature_row.strip() in USELESS_MODALITIES
+    ) or raw_nomenclature_row.strip() == "":
         # Return empty DataFrame with correct columns
         nomenclature = pd.DataFrame(columns=[COLNAME_CODE, COLNAME_LIBELLE])
     return nomenclature

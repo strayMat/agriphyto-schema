@@ -59,7 +59,7 @@
         },
         "ABANDON_BC": {
             "title": "Abandon en cours d'entretien",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ABANDON_BC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -70,7 +70,7 @@
         },
         "ABORE": {
             "title": "2.3 présence ou non Bore",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ABORE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -81,7 +81,7 @@
         },
         "ACALC": {
             "title": "2.3 présence ou non Chaux vive calcium",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ACALC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -136,7 +136,7 @@
         },
         "ACUIVRE": {
             "title": "2.3 présence ou non Cuivre",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ACUIVRE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -147,7 +147,7 @@
         },
         "AFER": {
             "title": "2.3 présence ou non Fer",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AFER\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -169,7 +169,7 @@
         },
         "AJUSTDOSE": {
             "title": "5.4 DOM Ajustement dose en fonction pression parasitaire ou développement végétatif",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AJUSTDOSE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -191,7 +191,7 @@
         },
         "AMAGNE": {
             "title": "2.3 présence ou non Magnésie/magnésium",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AMAGNE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -202,7 +202,7 @@
         },
         "AMANGA": {
             "title": "2.3 présence ou non Manganèse",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AMANGA\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -213,7 +213,7 @@
         },
         "AMOLYB": {
             "title": "2.3 présence ou non Molybdène",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AMOLYB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -235,7 +235,7 @@
         },
         "APPHYTO": {
             "title": "4.1 Y-a-t-il eu au moins un passage de pulvérisation sur le lot ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__APPHYTO\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -257,7 +257,7 @@
         },
         "ASOUFRE": {
             "title": "2.3 présence ou non Soufre",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ASOUFRE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -323,7 +323,7 @@
         },
         "AUTREDPP": {
             "title": "5.4 DOM Autres pratiques pour réduire l utilisation des produits phytosanitaires",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AUTREDPP\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -334,7 +334,7 @@
         },
         "AZINC": {
             "title": "2.3 présence ou non Zinc",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AZINC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -400,7 +400,7 @@
         },
         "BUSEAD": {
             "title": "6.8 Le pulvérisateur est-il équipé de buses anti-dérive homologuées ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__BUSEAD\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -411,7 +411,7 @@
         },
         "BUSEAG": {
             "title": "6.9 Le pulvérisateur est-il équipé de buses anti-gouttes ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__BUSEAG\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -422,7 +422,7 @@
         },
         "CABINE": {
             "title": "6.13 Disposez-vous d'une cabine sur le tracteur ou le pulvérisateur?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__CABINE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -444,7 +444,7 @@
         },
         "CAHIERPHYTO": {
             "title": "1.29 Existence d'un cahier des charges de réduction des phytosanitaires hors MAE",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__CAHIERPHYTO\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -499,7 +499,7 @@
         },
         "CERTIPHYTO": {
             "title": "5.1 Suivi formation pour obtention certiphyto ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__CERTIPHYTO\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -521,7 +521,7 @@
         },
         "CMULCH": {
             "title": "3.6 Comme couverture du sol sur le rang utilisez vous du mulch des écorces du paillage ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__CMULCH\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -675,7 +675,7 @@
         },
         "COMMERPLANTA": {
             "title": "1.42 DOM Commercialisation de la production",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMMERPLANTA\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -697,7 +697,7 @@
         },
         "COMPTALEBAN": {
             "title": "13.21 Banane Réalisation comptages pour Aleurodes",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTALEBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -708,7 +708,7 @@
         },
         "COMPTCERCOBAN": {
             "title": "13.31 Banane Réalisation comptages pour Cercosporiose",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTCERCOBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -719,7 +719,7 @@
         },
         "COMPTCHABAN": {
             "title": "13.31 Banane Réalisation comptages pour Charançons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTCHABAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -730,7 +730,7 @@
         },
         "COMPTCOLBAN": {
             "title": "13.31 Banane Réalisation comptages pour Coléoptères",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTCOLBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -741,7 +741,7 @@
         },
         "COMPTFUSABAN": {
             "title": "13.31 Banane Réalisation comptages pour Fusariose",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTFUSABAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -752,7 +752,7 @@
         },
         "COMPTMCOBAN": {
             "title": "13.31 Banane Réalisation comptages pour Maladies de conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMCOBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -763,7 +763,7 @@
         },
         "COMPTNEMBAN": {
             "title": "13.31 Banane Réalisation comptages pour Nématodes",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTNEMBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -774,7 +774,7 @@
         },
         "COMPTRONBAN": {
             "title": "13.31 Banane Réalisation comptages pour Rongeurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTRONBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -785,7 +785,7 @@
         },
         "COMPTTHRBAN": {
             "title": "13.31 Banane Réalisation comptages pour Thrips",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTTHRBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -884,7 +884,7 @@
         },
         "DEPHY": {
             "title": "5.1 Participation fermes Dephy",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__DEPHY\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -917,7 +917,7 @@
         },
         "DESTAUT": {
             "title": "1.8 DOM Destruction de la plantation précédente par un autre mode",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__DESTAUT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -928,7 +928,7 @@
         },
         "DESTCHIM": {
             "title": "1.8 DOM Destruction chimique de la plantation précédente",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__DESTCHIM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -961,7 +961,7 @@
         },
         "DESTINTEMP": {
             "title": "1.8 DOM Destruction de la plantation précédente par les intempéries",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__DESTINTEMP\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -972,7 +972,7 @@
         },
         "DESTMECA": {
             "title": "1.8 DOM Destruction mécanique de la plantation précédente",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__DESTMECA\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1093,7 +1093,7 @@
         },
         "DRAINP": {
             "title": "1.22 Le lot est-il drainé (drains fonctionnels) ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__DRAINP\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1126,7 +1126,7 @@
         },
         "EAEPHYTO": {
             "title": "1.29 Existence engagement agri-environnemental rémunéré (MAE) de réduction des phytosanitaires",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__EAEPHYTO\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1137,7 +1137,7 @@
         },
         "EAU": {
             "title": "1.21 Y a-t-il  un  cours d'eau adjacent au (ou sur) lot ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__EAU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1148,7 +1148,7 @@
         },
         "ECOPHYTOPIC": {
             "title": "5.1 Consultation portail écophytoPIC ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ECOPHYTOPIC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1181,7 +1181,7 @@
         },
         "ENGAIN": {
             "title": "5.4 DOM Engainage precoce",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ENGAIN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1247,7 +1247,7 @@
         },
         "EPISTCH": {
             "title": "5.4 DOM Epistillage au champ",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__EPISTCH\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1258,7 +1258,7 @@
         },
         "EQEPI": {
             "title": "6.18 Mettre un équipement de protection individuel (EPI) adapte",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__EQEPI\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1269,7 +1269,7 @@
         },
         "EQGANT": {
             "title": "6.18 Porter des gants (imperméables)",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__EQGANT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1280,7 +1280,7 @@
         },
         "EST_PERS_PHYS": {
             "title": "Indicatrice du REF personne physique",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__EST_PERS_PHYS\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1302,7 +1302,7 @@
         },
         "FERTIMIN": {
             "title": "2.4 Apport élément fertilisant minéral ou organo-minéral au sol ou en fertirrigation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__FERTIMIN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1313,7 +1313,7 @@
         },
         "FERTIRRI": {
             "title": "1.25 Pratiquez-vous la fertirrigation ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__FERTIRRI\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1324,7 +1324,7 @@
         },
         "FOSSE": {
             "title": "1.221 DOM Y a-t-il des fossés sur le lot ou en bordure du lot ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__FOSSE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1357,7 +1357,7 @@
         },
         "HNAGE": {
             "title": "1.341 DOM Rendement hors norme en raison de l'age de plantation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__HNAGE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1368,7 +1368,7 @@
         },
         "HNAUT": {
             "title": "1.341 DOM Rendement hors norme pour d'autres raisons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__HNAUT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1379,7 +1379,7 @@
         },
         "HNNAT": {
             "title": "1.341 DOM Rendement hors norme en raison de la nature du sol",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__HNNAT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1390,7 +1390,7 @@
         },
         "INFDEPHY": {
             "title": "5.1 Connaissance réseau fermes DEPHY ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__INFDEPHY\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1401,7 +1401,7 @@
         },
         "INTEMP": {
             "title": "1.35 Le lot a-t-il subi durant la campagne des aléas exceptionnels ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__INTEMP\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1412,7 +1412,7 @@
         },
         "INTEMPCLIM": {
             "title": "1.36 Aléas climatiques",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__INTEMPCLIM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1434,7 +1434,7 @@
         },
         "INTEMPSAN": {
             "title": "1.36 Aléas sanitaires",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__INTEMPSAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1478,7 +1478,7 @@
         },
         "IRRILOT": {
             "title": "1.23 Le lot est-il irrigué ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__IRRILOT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1500,7 +1500,7 @@
         },
         "JACHERE": {
             "title": "5.4 DOM utilisation Jachere pour reduire utilisation produits phytos",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__JACHERE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -1643,7 +1643,7 @@
         },
         "LVMAIN": {
             "title": "6.18 Avant de remonter se laver les mains et si équipement le retirer",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__LVMAIN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2028,7 +2028,7 @@
         },
         "OBSALEBAN": {
             "title": "13.21 Banane Réalisation observations pour Aleurodes",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSALEBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2039,7 +2039,7 @@
         },
         "OBSCERCOBAN": {
             "title": "13.21 Banane Réalisation observations pour Cercosporiose",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSCERCOBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2050,7 +2050,7 @@
         },
         "OBSCHABAN": {
             "title": "13.21 Banane Réalisation observations pour Charançons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSCHABAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2061,7 +2061,7 @@
         },
         "OBSCOLBAN": {
             "title": "13.21 Banane Réalisation observations pour Coléoptères",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSCOLBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2072,7 +2072,7 @@
         },
         "OBSFUSABAN": {
             "title": "13.21 Banane Réalisation observations pour Fusariose",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSFUSABAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2083,7 +2083,7 @@
         },
         "OBSMCOBAN": {
             "title": "13.21 Banane Réalisation observations pour Maladies de conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMCOBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2094,7 +2094,7 @@
         },
         "OBSNEMBAN": {
             "title": "13.21 Banane Réalisation observations pour Nématodes",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSNEMBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2105,7 +2105,7 @@
         },
         "OBSRONBAN": {
             "title": "13.21 Banane Réalisation observations pour Rongeurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSRONBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2116,7 +2116,7 @@
         },
         "OBSTHRBAN": {
             "title": "13.21 Banane Réalisation observations pour Thrips",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSTHRBAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2226,7 +2226,7 @@
         },
         "PATVERG": {
             "title": "3.8 Faites-vous pÃ¢turer des animaux pour entretenir le verger ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__PATVERG\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2237,7 +2237,7 @@
         },
         "PATVERGDOM": {
             "title": "3.8 Faites-vous paturer des animaux pour entretenir la plantation ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__PATVERGDOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2336,7 +2336,7 @@
         },
         "PIEGMAS": {
             "title": "5.4 Piégeage massif (pièges bandes pièges  )",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__PIEGMAS\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2358,7 +2358,7 @@
         },
         "PLANTESER": {
             "title": "5.4 DOM Utilisation de plantes de service",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__PLANTESER\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2369,7 +2369,7 @@
         },
         "POSTRECBUBV": {
             "title": "4.31  Traitement post recolte par buse bas volume",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__POSTRECBUBV\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2380,7 +2380,7 @@
         },
         "POSTRECBUS": {
             "title": "4.31  Traitement post recolte par buses à debit eleve",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__POSTRECBUS\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2391,7 +2391,7 @@
         },
         "POSTRECLAM": {
             "title": "4.31  Traitement post recolte par lame",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__POSTRECLAM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2402,7 +2402,7 @@
         },
         "POSTRECPULV": {
             "title": "4.31  Traitement post recolte par pulverisateur",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__POSTRECPULV\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2413,7 +2413,7 @@
         },
         "POSTRECTREMP": {
             "title": "4.31  Traitement post recolte par trempage",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__POSTRECTREMP\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2501,7 +2501,7 @@
         },
         "PREPBOUTR": {
             "title": "6.12 La personne qui prépare la bouillie est-elle la même que celle qui réalise le traitement ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__PREPBOUTR\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2512,7 +2512,7 @@
         },
         "PREPEPI": {
             "title": "6.11  équipement de protection individuelle ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__PREPEPI\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2622,7 +2622,7 @@
         },
         "PROD": {
             "title": "0.2 Ce lot est-il toujours en production ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__PROD\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2633,7 +2633,7 @@
         },
         "PRODREF": {
             "title": "0.3 L'exploitation a-t-elle d'autres lots en production de l'espèce enquêtée ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__PRODREF\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2688,7 +2688,7 @@
         },
         "RAISANAFOL": {
             "title": "2.6 Analyse foliaire",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISANAFOL\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2699,7 +2699,7 @@
         },
         "RAISANATER": {
             "title": "2.6 Analyse de terre",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISANATER\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2710,7 +2710,7 @@
         },
         "RAISAUT": {
             "title": "2.6 Autre raisonnement",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISAUT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2732,7 +2732,7 @@
         },
         "RAISAVIS": {
             "title": "2.6 Avis de techniciens",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISAVIS\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2754,7 +2754,7 @@
         },
         "RAISCLIM": {
             "title": "2.6 Conditions climatiques",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISCLIM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2765,7 +2765,7 @@
         },
         "RAISCOMPARB": {
             "title": "2.6 Comportement des arbres",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISCOMPARB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2776,7 +2776,7 @@
         },
         "RAISCOUT": {
             "title": "2.6 CoÃ»t de la fertilisation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISCOUT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2798,7 +2798,7 @@
         },
         "RAISFOUR": {
             "title": "2.6  Avis de fournisseurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISFOUR\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2820,7 +2820,7 @@
         },
         "RAISFUM": {
             "title": "2.6 Apports éléments fertilisants années précédentes",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISFUM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2853,7 +2853,7 @@
         },
         "RAISINDIC": {
             "title": "2.6 Autre indicateur ou outil",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISINDIC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -2875,7 +2875,7 @@
         },
         "RAISOBJREND": {
             "title": "2.6 Objectif de rendement",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RAISOBJREND\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3029,7 +3029,7 @@
         },
         "RCOUT": {
             "title": "5.5 Réduction coÃ»ts de production",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RCOUT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3084,7 +3084,7 @@
         },
         "RECOLT": {
             "title": "1.31 Une récolte (même partielle) a-t-elle été réalisée ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RECOLT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3095,7 +3095,7 @@
         },
         "REDEFFEU": {
             "title": "5.4 DOM Effeuillage",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__REDEFFEU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3106,7 +3106,7 @@
         },
         "REDUCDENS": {
             "title": "5.4 DOM Réduction de la densité des plants",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__REDUCDENS\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3117,7 +3117,7 @@
         },
         "REDUTIPP": {
             "title": "5.3 Pratiques pour réduire utilisation produits phytosanitaires",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__REDUTIPP\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3128,7 +3128,7 @@
         },
         "REENTREE": {
             "title": "6.19 Connaissance délai de re-entrée approprié pour les produits utilisés sur ce lot",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__REENTREE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3282,7 +3282,7 @@
         },
         "RIMAGE": {
             "title": "5.5 Amélioration image de marque de votre production",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RIMAGE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3293,7 +3293,7 @@
         },
         "ROTCULT": {
             "title": "5.4 DOM La rotation de cultures",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ROTCULT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3315,7 +3315,7 @@
         },
         "RRAUT": {
             "title": "5.5 Autre raison pour réduction phytos",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RRAUT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3326,7 +3326,7 @@
         },
         "RRISQUE": {
             "title": "5.5 Réduction risques pour environnement (eau air)",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RRISQUE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3337,7 +3337,7 @@
         },
         "RSAN": {
             "title": "5.5 Réduction risques pour votre santé",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__RSAN\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3359,7 +3359,7 @@
         },
         "SANSENGPHYTO": {
             "title": "1.29 Absence engagement réduction des phytosanitaires",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__SANSENGPHYTO\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3425,7 +3425,7 @@
         },
         "SORZONE": {
             "title": "6.18 Sortir du rang pour sÂ’éloigner de la zone traitée",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__SORZONE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3634,7 +3634,7 @@
         },
         "TRAITPOSTREC": {
             "title": "4.3 Des traitements post-récolte sont-ils réalisés sur la plantation ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__TRAITPOSTREC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3645,7 +3645,7 @@
         },
         "TRENHERBGIR": {
             "title": "3.32 Double rang Tous les grands inter-rangs sont-ils enherbés ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__TRENHERBGIR\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3656,7 +3656,7 @@
         },
         "TRENHERBPIR": {
             "title": "3.33 Double rang Tous les petits inter-rangs sont-ils enherbés ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__TRENHERBPIR\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3667,7 +3667,7 @@
         },
         "TRENHERBSR": {
             "title": "3.31 DOM Simple rang  Tous les inter-rangs sont-ils enherbés ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__TRENHERBSR\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -3832,7 +3832,7 @@
         },
         "VALVERG": {
             "title": "0.82 Validation du verger",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__VALVERG\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4063,7 +4063,7 @@
         },
         "AJAUX": {
             "title": "5.4 Ajouts directs auxiliaires prédateurs par des lÃ¢chers",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AJAUX\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4074,7 +4074,7 @@
         },
         "AMENAUX": {
             "title": "5.4 Aménagements habitat (haies bandes enherbées) apports aliments pour auxiliaires prédateurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AMENAUX\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4096,7 +4096,7 @@
         },
         "APENAZ": {
             "title": "8.2  Pomme Réal appli engrais azoté (urée) pour diminution inoculum tavelure d'automne",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__APENAZ\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4107,7 +4107,7 @@
         },
         "APPOP": {
             "title": "1.30 Appartenez-vous à une OP pour l' espèce enquêtée ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__APPOP\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4129,7 +4129,7 @@
         },
         "ARGILE": {
             "title": "5.4 Traitements à l argile contre les pucerons mouches...",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ARGILE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4140,7 +4140,7 @@
         },
         "ASPGEL": {
             "title": "1.41 Aspersion (classique mini-aspersion micro-aspersion)",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ASPGEL\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4151,7 +4151,7 @@
         },
         "ASSGRELE": {
             "title": "1.37 Disposez vous d'une assurance contre la grêle ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ASSGRELE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4162,7 +4162,7 @@
         },
         "AUTCULT": {
             "title": "0.5 Indicatrice d'exploitation déjà enquêtée pour une autre culture",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__AUTCULT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4173,7 +4173,7 @@
         },
         "BACHES": {
             "title": "5.4 Utilisation de bÃ¢ches anti-pluie",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__BACHES\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4184,7 +4184,7 @@
         },
         "BROYFAT": {
             "title": "5.4 Broyage spécifique des feuilles au sol avant la taille",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__BROYFAT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4195,7 +4195,7 @@
         },
         "CANONGRELE": {
             "title": "1.39 Canons pare-grêle",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__CANONGRELE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4206,7 +4206,7 @@
         },
         "CHAUFGEL": {
             "title": "1.41 Chauffage (bougies anti-gel...)",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__CHAUFGEL\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4217,7 +4217,7 @@
         },
         "CHOIXPGV": {
             "title": "5.4 Choix des variétés et porte-greffe selon leur résistance à certaines maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__CHOIXPGV\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4239,7 +4239,7 @@
         },
         "COMMERCOURT": {
             "title": "1.43 Vente directe frais ou transformé",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMMERCOURT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4250,7 +4250,7 @@
         },
         "COMMERLONG": {
             "title": "1.43 Autres circuits de commercialisation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMMERLONG\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4261,7 +4261,7 @@
         },
         "COMMERLOT": {
             "title": "1.42 La production du lot pour la campagne a-t-elle été commercialisée ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMMERLOT\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4272,7 +4272,7 @@
         },
         "COMMERTRANS": {
             "title": "1.43 Vente destinée à la transformation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMMERTRANS\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4305,7 +4305,7 @@
         },
         "COMPTACAPOM": {
             "title": "8.13 Pomme Réalisation comptages  pour  Acariens",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTACAPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4327,7 +4327,7 @@
         },
         "COMPTACAPRU": {
             "title": "10.13 Prune Réalisation comptages pour Acariens",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTACAPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4338,7 +4338,7 @@
         },
         "COMPTANAAB": {
             "title": "11.13 Abricot Réalisation comptages pour Anarsia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTANAAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4349,7 +4349,7 @@
         },
         "COMPTAUTMALAB": {
             "title": "11.13 Abricot Réalisation comptages pour Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTMALAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4360,7 +4360,7 @@
         },
         "COMPTAUTMALCE": {
             "title": "12.13 Cerise Réalisation comptages pour Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTMALCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4371,7 +4371,7 @@
         },
         "COMPTAUTMALPEC": {
             "title": "9.13 Pêche Réalisation comptages pour Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTMALPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4382,7 +4382,7 @@
         },
         "COMPTAUTMALPOM": {
             "title": "8.13 Pomme Réalisation comptages  pour Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTMALPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4393,7 +4393,7 @@
         },
         "COMPTAUTMALPRU": {
             "title": "10.13 Prune Réalisation comptages pour Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTMALPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4404,7 +4404,7 @@
         },
         "COMPTAUTPOM": {
             "title": "8.13 Pomme Réalisation comptages  pour  Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4415,7 +4415,7 @@
         },
         "COMPTAUTRAVAB": {
             "title": "11.13 Abricot Réalisation comptages pour Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTRAVAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4426,7 +4426,7 @@
         },
         "COMPTAUTRAVCE": {
             "title": "12.13 Cerise Réalisation comptages pour Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTRAVCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4437,7 +4437,7 @@
         },
         "COMPTAUTRAVPEC": {
             "title": "9.13 Pêche Réalisation comptages pour Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTRAVPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4448,7 +4448,7 @@
         },
         "COMPTAUTRAVPRU": {
             "title": "10.13 Prune Réalisation comptages pour Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTAUTRAVPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4459,7 +4459,7 @@
         },
         "COMPTBACAB": {
             "title": "11.13 Abricot Réalisation comptages pour Bacterioses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTBACAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4470,7 +4470,7 @@
         },
         "COMPTBACCE": {
             "title": "12.13 Cerise Réalisation comptages pour Bacteriose",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTBACCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4481,7 +4481,7 @@
         },
         "COMPTCARPOPOM": {
             "title": "8.13 Pomme Réalisation comptages  pour  Carpocapses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTCARPOPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4492,7 +4492,7 @@
         },
         "COMPTCARPOPRU": {
             "title": "10.13 Prune Réalisation comptages pour Carpocapses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTCARPOPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4503,7 +4503,7 @@
         },
         "COMPTCLOPEC": {
             "title": "9.13 Pêche Réalisation comptages pour Cloque",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTCLOPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4514,7 +4514,7 @@
         },
         "COMPTCOCPEC": {
             "title": "9.13 Pêche Réalisation comptages pour Cochenilles",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTCOCPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4525,7 +4525,7 @@
         },
         "COMPTCYLCE": {
             "title": "12.13 Cerise Réalisation comptages pour Cylindrosporiose",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTCYLCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4536,7 +4536,7 @@
         },
         "COMPTMALCONSAB": {
             "title": "11.13 Abricot Réalisation comptages pour Maladies de conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMALCONSAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4547,7 +4547,7 @@
         },
         "COMPTMALCONSPEC": {
             "title": "9.13 Pêche Réalisation comptages pour Maladies de conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMALCONSPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4558,7 +4558,7 @@
         },
         "COMPTMALCONSPRU": {
             "title": "10.13 Prune Réalisation comptages pour Maladies de conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMALCONSPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4569,7 +4569,7 @@
         },
         "COMPTMCOPOM": {
             "title": "8.13 Pomme Réalisation comptages  pour Maladies conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMCOPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4580,7 +4580,7 @@
         },
         "COMPTMONAB": {
             "title": "11.13 Abricot Réalisation comptages pour Monilia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMONAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4591,7 +4591,7 @@
         },
         "COMPTMONCE": {
             "title": "12.13 Cerise Réalisation comptages pour Monilia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMONCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4602,7 +4602,7 @@
         },
         "COMPTMONPEC": {
             "title": "9.13 Pêche Réalisation comptages pour Monilia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMONPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4613,7 +4613,7 @@
         },
         "COMPTMONPRU": {
             "title": "10.13 Prune Réalisation comptages pour Monilia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMONPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4624,7 +4624,7 @@
         },
         "COMPTMOUCE": {
             "title": "12.13 Cerise Réalisation comptages pour Mouches de la cerise",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTMOUCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4635,7 +4635,7 @@
         },
         "COMPTOIDAB": {
             "title": "11.13 Abricot Réalisation comptages pour Oïdium",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTOIDAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4646,7 +4646,7 @@
         },
         "COMPTOIDPEC": {
             "title": "9.13 Pêche Réalisation comptages pour  Oïdium",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTOIDPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4657,7 +4657,7 @@
         },
         "COMPTOIDPOM": {
             "title": "8.13 Pomme Réalisation comptages  pour Oidium",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTOIDPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4668,7 +4668,7 @@
         },
         "COMPTPUCAB": {
             "title": "11.13 Abricot Réalisation comptages pour Pucerons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTPUCAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4679,7 +4679,7 @@
         },
         "COMPTPUCCE": {
             "title": "12.13 Cerise Réalisation comptages pour Pucerons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTPUCCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4690,7 +4690,7 @@
         },
         "COMPTPUCPEC": {
             "title": "9.13 Pêche Réalisation comptages pour Pucerons noirs verts",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTPUCPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4701,7 +4701,7 @@
         },
         "COMPTPUCPOM": {
             "title": "8.13 Pomme Réalisation comptages  pour  Pucerons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTPUCPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4712,7 +4712,7 @@
         },
         "COMPTPUCPRU": {
             "title": "10.13 Prune Réalisation comptages pour Pucerons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTPUCPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4723,7 +4723,7 @@
         },
         "COMPTROUPRU": {
             "title": "10.13 Prune Réalisation comptages pour Rouille",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTROUPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4734,7 +4734,7 @@
         },
         "COMPTSHAPRU": {
             "title": "10.13 Prune Réalisation comptages pour Sharka",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTSHAPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4745,7 +4745,7 @@
         },
         "COMPTSUKAB": {
             "title": "11.13 Abricot Réalisation comptages pour Mouche susuki",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTSUKAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4756,7 +4756,7 @@
         },
         "COMPTSUKCE": {
             "title": "12.13 Cerise Réalisation comptages pour Mouche susuki",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTSUKCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4767,7 +4767,7 @@
         },
         "COMPTTAVPOM": {
             "title": "8.13 Pomme Réalisation comptages  pour Tavelure",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTTAVPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4778,7 +4778,7 @@
         },
         "COMPTTAVPRU": {
             "title": "10.13 Prune Réalisation comptages pour Tavelure",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTTAVPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4789,7 +4789,7 @@
         },
         "COMPTTORDPEC": {
             "title": "9.13 Pêche Réalisation comptages pour Tordeuses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTTORDPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4800,7 +4800,7 @@
         },
         "COMPTTORDPOM": {
             "title": "8.13 Pomme Réalisation comptages  pour  Tordeuses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__COMPTTORDPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4811,7 +4811,7 @@
         },
         "CONFSEX": {
             "title": "5.4 Confusion sexuelle",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__CONFSEX\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4822,7 +4822,7 @@
         },
         "CONFSEXU": {
             "title": "7.1  Confusion sexuelle pour lutte contre chenilles (carpocapses tordeuse)",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__CONFSEXU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4943,7 +4943,7 @@
         },
         "DEJA_ENQUETEE": {
             "title": "0.5 Exploitation aussi enquêtée pour autre espèce",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__DEJA_ENQUETEE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -4998,7 +4998,7 @@
         },
         "EGECVEG": {
             "title": "5.4 Egourmandage et éclaircissage pour aérer la végétation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__EGECVEG\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5031,7 +5031,7 @@
         },
         "ENLEVFR": {
             "title": "5.4 Enlèvement des fruits tombés au sol",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ENLEVFR\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5042,7 +5042,7 @@
         },
         "ENLEVMOM": {
             "title": "5.4 Enlèvement des momies sur les arbres en dehors de la taille",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ENLEVMOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5053,7 +5053,7 @@
         },
         "ENLEVPAL": {
             "title": "5.4 Entreposage des palox en bois loin du verger (hors période de récolte)",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__ENLEVPAL\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5064,7 +5064,7 @@
         },
         "FILCARPO": {
             "title": "5.4 Utilisation de filets type Alt'Carpo",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__FILCARPO\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5075,7 +5075,7 @@
         },
         "FILETGRELE": {
             "title": "1.39 Filets pare-grêle couvertures parapluie",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__FILETGRELE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5108,7 +5108,7 @@
         },
         "FUSEGRELE": {
             "title": "1.39 Fusées vortex",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__FUSEGRELE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5163,7 +5163,7 @@
         },
         "LUTTEGEL": {
             "title": "1.40 Utilisez-vous un moyen de lutte contre le gel ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__LUTTEGEL\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5174,7 +5174,7 @@
         },
         "LUTTEGRELE": {
             "title": "1.38 Utilisez-vous un moyen de lutte contre la grêle",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__LUTTEGRELE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5273,7 +5273,7 @@
         },
         "OBSACAPOM": {
             "title": "8.12 Pomme Réalisation observations pour Acariens",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSACAPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5284,7 +5284,7 @@
         },
         "OBSACAPRU": {
             "title": "10.12 Prune Réalisation observations pour Acariens",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSACAPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5295,7 +5295,7 @@
         },
         "OBSANAAB": {
             "title": "11.12 Abricot Réalisation observations pour Anarsia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSANAAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5306,7 +5306,7 @@
         },
         "OBSAUTMALAB": {
             "title": "11.12 Abricot Réalisation observations pour Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTMALAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5317,7 +5317,7 @@
         },
         "OBSAUTMALCE": {
             "title": "12.12 Cerise Réalisation observations pour Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTMALCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5328,7 +5328,7 @@
         },
         "OBSAUTMALPEC": {
             "title": "9.12 Pêche Réalisation observations pour  Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTMALPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5339,7 +5339,7 @@
         },
         "OBSAUTMALPOM": {
             "title": "8.12 Pomme Réalisation observations pour Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTMALPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5350,7 +5350,7 @@
         },
         "OBSAUTMALPRU": {
             "title": "10.12 Prune Réalisation observations pour Autres maladies",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTMALPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5361,7 +5361,7 @@
         },
         "OBSAUTPOM": {
             "title": "8.12 Pomme Réalisation observations pour Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5372,7 +5372,7 @@
         },
         "OBSAUTRAVAB": {
             "title": "11.12 Abricot Réalisation observations pour Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTRAVAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5383,7 +5383,7 @@
         },
         "OBSAUTRAVCE": {
             "title": "12.12 Cerise Réalisation observations pour Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTRAVCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5394,7 +5394,7 @@
         },
         "OBSAUTRAVPEC": {
             "title": "9.12 Pêche Réalisation observations pour  Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTRAVPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5405,7 +5405,7 @@
         },
         "OBSAUTRAVPRU": {
             "title": "10.12 Prune Réalisation observations pour Autres ravageurs",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSAUTRAVPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5416,7 +5416,7 @@
         },
         "OBSBACAB": {
             "title": "11.12 Abricot Réalisation observations pour Bacterioses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSBACAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5427,7 +5427,7 @@
         },
         "OBSBACCE": {
             "title": "12.12 Cerise Réalisation observations pour Bacteriose",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSBACCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5438,7 +5438,7 @@
         },
         "OBSCARPOPOM": {
             "title": "8.12 Pomme Réalisation observations pour Carpocapses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSCARPOPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5449,7 +5449,7 @@
         },
         "OBSCARPOPRU": {
             "title": "10.12 Prune Réalisation observations pour Carpocapses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSCARPOPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5460,7 +5460,7 @@
         },
         "OBSCLOPEC": {
             "title": "9.12 Pêche Réalisation observations pour  Cloque",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSCLOPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5471,7 +5471,7 @@
         },
         "OBSCOCPEC": {
             "title": "9.12 Pêche Réalisation observations pour Cochenilles",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSCOCPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5482,7 +5482,7 @@
         },
         "OBSCYLCE": {
             "title": "12.12 Cerise Réalisation observations pour Cylindrosporiose",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSCYLCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5493,7 +5493,7 @@
         },
         "OBSMALCONSAB": {
             "title": "11.12 Abricot Réalisation observations pour Maladies de conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMALCONSAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5504,7 +5504,7 @@
         },
         "OBSMALCONSPEC": {
             "title": "9.12 Pêche Réalisation observations pour  Maladies de conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMALCONSPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5515,7 +5515,7 @@
         },
         "OBSMALCONSPRU": {
             "title": "10.12 Prune Réalisation observations pour Maladies de conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMALCONSPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5526,7 +5526,7 @@
         },
         "OBSMCOPOM": {
             "title": "8.12 Pomme Réalisation observations pour Maladies conservation",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMCOPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5537,7 +5537,7 @@
         },
         "OBSMONAB": {
             "title": "11.12 Abricot Réalisation observations pour Monilia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMONAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5548,7 +5548,7 @@
         },
         "OBSMONCE": {
             "title": "12.12 Cerise Réalisation observations pour Monilia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMONCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5559,7 +5559,7 @@
         },
         "OBSMONPEC": {
             "title": "9.12 Pêche Réalisation observations pour  Monilia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMONPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5570,7 +5570,7 @@
         },
         "OBSMONPRU": {
             "title": "10.12 Prune Réalisation observations pour Monilia",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMONPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5581,7 +5581,7 @@
         },
         "OBSMOUCE": {
             "title": "12.12 Cerise Réalisation observations pour Mouches de la cerise",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSMOUCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5592,7 +5592,7 @@
         },
         "OBSOIDAB": {
             "title": "11.12 Abricot Réalisation observations pour Oïdium",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSOIDAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5603,7 +5603,7 @@
         },
         "OBSOIDPEC": {
             "title": "9.12 Pêche Réalisation observations pour  Oïdium",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSOIDPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5614,7 +5614,7 @@
         },
         "OBSOIDPOM": {
             "title": "8.12 Pomme Réalisation observations pour Oidium",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSOIDPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5625,7 +5625,7 @@
         },
         "OBSPUCAB": {
             "title": "11.12 Abricot Réalisation observations pour Pucerons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSPUCAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5636,7 +5636,7 @@
         },
         "OBSPUCCE": {
             "title": "12.12 Cerise Réalisation observations pour Pucerons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSPUCCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5647,7 +5647,7 @@
         },
         "OBSPUCPEC": {
             "title": "9.12 Pêche Réalisation observations pour  Pucerons noirs verts",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSPUCPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5658,7 +5658,7 @@
         },
         "OBSPUCPOM": {
             "title": "8.12 Pomme Réalisation observations pour Pucerons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSPUCPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5669,7 +5669,7 @@
         },
         "OBSPUCPRU": {
             "title": "10.12 Prune Réalisation observations pour Pucerons",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSPUCPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5680,7 +5680,7 @@
         },
         "OBSROUPRU": {
             "title": "10.12 Prune Réalisation observations pour Rouille",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSROUPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5691,7 +5691,7 @@
         },
         "OBSSHAPRU": {
             "title": "10.12 Prune Réalisation observations pour Sharka",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSSHAPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5702,7 +5702,7 @@
         },
         "OBSSUKAB": {
             "title": "11.12 Abricot Réalisation observations pour Mouche susuki",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSSUKAB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5713,7 +5713,7 @@
         },
         "OBSSUKCE": {
             "title": "12.12 Cerise Réalisation observations pour Mouche susuki",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSSUKCE\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5724,7 +5724,7 @@
         },
         "OBSTAVPOM": {
             "title": "8.12 Pomme Réalisation observations pour Tavelure",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSTAVPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5735,7 +5735,7 @@
         },
         "OBSTAVPRU": {
             "title": "10.12 Prune Réalisation observations pour Tavelure",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSTAVPRU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5746,7 +5746,7 @@
         },
         "OBSTORDPEC": {
             "title": "9.12 Pêche Réalisation observations pour  Tordeuses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSTORDPEC\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5757,7 +5757,7 @@
         },
         "OBSTORDPOM": {
             "title": "8.12 Pomme Réalisation observations pour Tordeuses",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__OBSTORDPOM\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -5779,7 +5779,7 @@
         },
         "POUSSINF": {
             "title": "5.4 Elimination manuelle des pousses infectées",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__POUSSINF\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -6615,7 +6615,7 @@
         },
         "TRAITCU": {
             "title": "5.4 Traitements à base de cuivre à la chute des feuilles",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__TRAITCU\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -6626,7 +6626,7 @@
         },
         "TRENHERB": {
             "title": "3.3 Tous les inter-rangs sont-ils enherbés ?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__TRENHERB\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -6648,7 +6648,7 @@
         },
         "VENTGEL": {
             "title": "1.41 Ventilation-brassage de l'air tours à vent éoliennes",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__VENTGEL\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,
@@ -6659,7 +6659,7 @@
         },
         "VERG": {
             "title": "0.4 L'exploitation cultive-t-elle d''autres vergers que celui de l espèce enquêtée?",
-            "description": "{\"nomenclature\": \"20210706_PKFruits2015_definitif__VERG\"}",
+            "description": "null",
             "dtype": "string[python]",
             "nullable": true,
             "checks": null,

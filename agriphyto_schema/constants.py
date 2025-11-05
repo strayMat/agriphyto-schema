@@ -152,6 +152,7 @@ AVAILABLE_DICOS = {
     },
     # I manually searched and replaced all ";" code-lable separators in the modalities column
     # with ":" to avoid confusion with the ";" used to separate modalities
+    # I manually modified the nomenclature for the variable "TYPENR", "TYPENS" and "REDCOM" which were not easily parsable with rules
     "PKGC_2017": {
         "filename": "PKGC2017_dico_variables.ods",
         "variable_sheet": "PKGC2017_dicoVar_global",

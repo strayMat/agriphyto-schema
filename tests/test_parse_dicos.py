@@ -58,6 +58,18 @@ def test_clean_varname():
             "11",
             "Tomate",
         ),
+        (
+            """1:30% MS, 600 kg brut, 180 kg MS
+2:40% MS, 500 kg brut, 200 kg MS
+3:50% MS, 440 kg brut, 220 kg MS
+4:60% MS, 365 kg brut, 220 kg MS
+""",
+            4,
+            "1",
+            "30% MS, 600 kg brut, 180 kg MS",
+            "4",
+            "60% MS, 365 kg brut, 220 kg MS",
+        ),
     ],
 )
 def test_clean_modalities(
