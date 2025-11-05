@@ -1,7 +1,8 @@
 import streamlit as st
 
 from agriphyto_schema.app.utils import (
-    filter_dataframe,
+    filter_dt_nomenclatures,
+    filter_dt_variables,
     load_dico,
     load_nomenclature,
 )
@@ -41,61 +42,94 @@ st.markdown(
 
 dico = load_dico(DIR2DATA / f"{AGRIPHYTO_DICO_NAME}.csv")
 
-# Filtrage des données
-filtered_dico = filter_dataframe(dico)
-
-# Database output logic
-config = {
-    "Preview": st.column_config.ImageColumn(),
-    "Progress": st.column_config.ProgressColumn(),
-}
-
-# Affichage du dataframe principal avec selection des événements
-event = st.dataframe(
-    filtered_dico,
-    column_config=config,
-    hide_index=True,
-    on_select="rerun",
-    selection_mode="single-row",
-)
 
 all_nomenclatures = load_nomenclature(
     DIR2NOMENCLATURES / "all_nomenclatures.csv"
 )
 
-# Gestion des clics sur les lignes
-if event.selection.rows:
-    selected_row_index = event.selection.rows[0]
+tab_variables, tab_nomenclatures = st.tabs(["Variables", "Nomenclatures"])
 
-    # Récupération des informations de la ligne sélectionnée
-    if selected_row_index < len(filtered_dico):
-        selected_row = filtered_dico.iloc[selected_row_index]
-        db_name = selected_row.get(COLNAME_OUT_DB, "")
-        clean_variable_name = selected_row.get(COLNAME_OUT_NOMENCLATURE, "")
-        table_name = selected_row.get(COLNAME_OUT_TABLE, "")
-        selected_nomenclature = all_nomenclatures[
-            (all_nomenclatures[COLNAME_OUT_DB] == db_name)
-            & (all_nomenclatures[COLNAME_TABLE] == table_name)
-            & (all_nomenclatures[COLNAME_VARIABLE] == clean_variable_name)
+with tab_variables:
+    # Filtrage des données
+    filtered_dico = filter_dt_variables(dico)
+
+    # Database output logic
+    config = {
+        "Preview": st.column_config.ImageColumn(),
+        "Progress": st.column_config.ProgressColumn(),
+    }
+    # Affichage du dataframe principal avec selection des événements
+    event = st.dataframe(
+        filtered_dico,
+        column_config=config,
+        hide_index=True,
+        on_select="rerun",
+        selection_mode="single-row",
+    )
+
+    # Gestion des clics sur les lignes
+    if event.selection.rows:
+        selected_row_index = event.selection.rows[0]
+
+        # Récupération des informations de la ligne sélectionnée
+        if selected_row_index < len(filtered_dico):
+            selected_row = filtered_dico.iloc[selected_row_index]
+            db_name = selected_row.get(COLNAME_OUT_DB, "")
+            clean_variable_name = selected_row.get(COLNAME_OUT_NOMENCLATURE, "")
+            table_name = selected_row.get(COLNAME_OUT_TABLE, "")
+            selected_nomenclature = all_nomenclatures[
+                (all_nomenclatures[COLNAME_OUT_DB] == db_name)
+                & (all_nomenclatures[COLNAME_TABLE] == table_name)
+                & (all_nomenclatures[COLNAME_VARIABLE] == clean_variable_name)
+            ]
+            # Vérification si une nomenclature existe et n'est pas vide
+            if (
+                clean_variable_name
+                and str(clean_variable_name).strip()
+                and (str(clean_variable_name) != "nan")
+                and (len(selected_nomenclature) > 0)
+            ):
+                st.dataframe(
+                    selected_nomenclature[[COLNAME_CODE, COLNAME_LIBELLE]],
+                    hide_index=True,
+                )
+            else:
+                st.info(
+                    "💡 Sélectionnez une ligne avec une nomenclature pour afficher les détails."
+                )
+
+    # Information d'aide
+    st.markdown("---")
+    st.markdown(
+        "💡 **Aide :** Cliquez sur une ligne de la colonne 'Nomenclature' pour afficher le détail des catégories."
+    )
+
+with tab_nomenclatures:
+    all_nomenclatures_simple = all_nomenclatures.copy()
+    all_nomenclatures_simple[COLNAME_VARIABLE] = (
+        all_nomenclatures_simple[COLNAME_VARIABLE]
+        .astype(str)
+        .apply(lambda x: x.split("__")[-1])
+    )
+    filtered_nomenclatures = filter_dt_nomenclatures(
+        all_nomenclatures_simple[
+            [
+                COLNAME_TABLE,
+                COLNAME_VARIABLE,
+                COLNAME_LIBELLE,
+                COLNAME_CODE,
+            ]
         ]
-        # Vérification si une nomenclature existe et n'est pas vide
-        if (
-            clean_variable_name
-            and str(clean_variable_name).strip()
-            and (str(clean_variable_name) != "nan")
-            and (len(selected_nomenclature) > 0)
-        ):
-            st.dataframe(
-                selected_nomenclature[[COLNAME_CODE, COLNAME_LIBELLE]],
-                hide_index=True,
-            )
-        else:
-            st.info(
-                "💡 Sélectionnez une ligne avec une nomenclature pour afficher les détails."
-            )
-
-# Information d'aide
-st.markdown("---")
-st.markdown(
-    "💡 **Aide :** Cliquez sur une ligne de la colonne 'Nomenclature' pour afficher le détail des catégories."
-)
+    )
+    config_nomenclatures_df = {
+        "Preview": st.column_config.ImageColumn(),
+        "Progress": st.column_config.ProgressColumn(),
+    }
+    # Affichage du dataframe principal avec selection des événements
+    event_nomenclature = st.dataframe(
+        filtered_nomenclatures,
+        column_config=config_nomenclatures_df,
+        hide_index=True,
+        on_select="rerun",
+        selection_mode="single-row",
+    )

@@ -4,6 +4,7 @@ import pandas as pd
 import streamlit as st
 
 from agriphyto_schema.constants import (
+    COLNAME_LIBELLE,
     COLNAME_OUT_DB,
     COLNAME_OUT_LIBELLE,
     COLNAME_OUT_TABLE,
@@ -12,7 +13,7 @@ from agriphyto_schema.constants import (
 
 
 # credits: https://blog.streamlit.io/auto-generate-a-dataframe-filtering-ui-in-streamlit-with-filter_dataframe/
-def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
+def filter_dt_variables(df: pd.DataFrame) -> pd.DataFrame:
     """
     Adds a UI on top of a dataframe to let viewers filter columns
 
@@ -38,13 +39,13 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
                     df[COLNAME_OUT_LIBELLE]
                     .astype(str)
                     .str.lower()
-                    .str.contains(user_text_input)
+                    .str.contains(user_text_input.strip())
                 )
                 | (
                     df[COLNAME_OUT_VARIABLE]
                     .astype(str)
                     .str.lower()
-                    .str.contains(user_text_input)
+                    .str.contains(user_text_input.strip())
                 )
             ]
         # Optional filters
@@ -68,6 +69,38 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
             )
             df = df[df[COLNAME_OUT_TABLE].isin(user_cat_input)]
 
+    return df
+
+
+def filter_dt_nomenclatures(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Adds a UI on top of a dataframe to let viewers filter by regex on COLNAME_LIBELLE
+
+    Args:
+        df (pd.DataFrame): Original dataframe
+
+    Returns:
+        pd.DataFrame: Filtered dataframe
+    """
+    df = df.copy()
+    modification_container = st.container()
+
+    with modification_container:
+        _, right = st.columns((1, 20))
+
+        # Filter in the label and variable columns using text
+        user_text_input = right.text_input(
+            f"Match exact ou regex sur la colonne {COLNAME_LIBELLE} (non sensible à la casse)",
+        )
+        if user_text_input:
+            df = df[
+                (
+                    df[COLNAME_LIBELLE]
+                    .astype(str)
+                    .str.lower()
+                    .str.contains(user_text_input.strip())
+                )
+            ]
     return df
 
 
