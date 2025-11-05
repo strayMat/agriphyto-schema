@@ -48,8 +48,8 @@ années pour chaque base sont intégrés dans ce projet.
 | Phytofruits | Phytosanitaires Fruits | 2012, 2018 | 3945 | | Phytofruits18_dico_variables_casd.xlsx |
 | RA | Recensement Agricole | 2000, 2010, 2020 | 4411 | ✅ | RA2020_Dictionnaire des variables_220415_CASD.xlsx |
 | Fideli | Fideli | 2018-2023 | 5169 | ✅ | Fichier_Démographique_sur_les_Logements_et_les_Individus_(FIDELI)_-_2022.csv |
-| BTS | Base tous salariés | 2016-2023 | 5012 | | |
-| BNS | Base non salariés | 2006-2023 | 4848 | | |
+| BTS | Base tous salariés | 2016-2023 | 5012 | ✅ | Base_Tous_Salariés___fichier_Postes_-_2021.csv|
+| BNS | Base non salariés | 2006-2023 | 4848 | ✅ | Base_non_salariés_(BNS)_-_2020.csv |
 
 
 NB: Pour certaines bases, j'utilise la documentation des variables du CASD.

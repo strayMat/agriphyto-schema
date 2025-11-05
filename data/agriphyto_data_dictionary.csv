@@ -486,6 +486,118 @@ PKPrairie_2011,mecanic_pkgc2011_prairies,MECALIB,Libellé de l'intervention méc
 PKPrairie_2011,mecanic_pkgc2011_prairies,TYPMECA,Code Intervention mécanique réalisée de la récolte du précédent exclue à la récolte de la culture enquêtée incluse,string,mecanic_pkgc2011_prairies__TYPMECA
 PKPrairie_2011,mecanic_pkgc2011_prairies,TYPMECA1,Code Intervention mécanique simplifié 1,string,mecanic_pkgc2011_prairies__TYPMECA1
 PKPrairie_2011,mecanic_pkgc2011_prairies,TYPMECA2,Code Intervention mécanique simplifié 2,string,mecanic_pkgc2011_prairies__TYPMECA2
+BNS_2020,bns_msa_2020,IDENT_NS,Identifiant du non-salarié,string,
+BNS_2020,bns_msa_2020,AGE,Âge atteint par le non-salarié au cours de l'année de validité,float64,
+BNS_2020,bns_msa_2020,ANNAI,Année de naissance du non-salarié,string,
+BNS_2020,bns_msa_2020,DEPNAI,Département de naissance du non-salarié,string,bns_msa_2020__DEPNAI
+BNS_2020,bns_msa_2020,SX,Genre du non-salarié,string,bns_msa_2020__SX
+BNS_2020,bns_msa_2020,FILT,Indicatrice de détection des affiliés à l'Agence centrale des organismes de sécurité sociale (Acoss) ou la Mutualité sociale agricole (MSA) au cours de l'année de validité N,string,bns_msa_2020__FILT
+BNS_2020,bns_msa_2020,FILT_1,Indicatrice de détection des affiliés à l'Agence centrale des organismes de sécurité sociale (Acoss) ou la Mutualité sociale agricole (MSA) au cours de l'année de validité N - 1,string,bns_msa_2020__FILT_1
+BNS_2020,bns_msa_2020,s_act_part,Montant brut de l’indemnité versée au salarié au titre du chômage partiel,string,
+BNS_2020,bns_msa_2020,S_NBHEUR_AP,Nombre total d’heures indemnisées de chômage partiel,float64,
+BNS_2020,bns_msa_2020,DEPT,Département d'activité du non-salarié,string,bns_msa_2020__DEPT
+BNS_2020,bns_msa_2020,DEPT_1,Département d'activité du non-salarié N - 1,string,bns_msa_2020__DEPT_1
+BNS_2020,bns_msa_2020,COMT,Code géographique de la commune d'activité du non-salarié,string,bns_msa_2020__COMT
+BNS_2020,bns_msa_2020,COMT_1,Code géographique de la commune d'activité du non-salarié durant l'année N - 1,string,bns_msa_2020__COMT_1
+BNS_2020,bns_msa_2020,AN,Année de validité,string,
+BNS_2020,bns_msa_2020,AN_1,Année de validité N - 1,string,
+BNS_2020,bns_msa_2020,TAX_PROV,Indicatrice de taxation provisoire,string,
+BNS_2020,bns_msa_2020,TAX_PROV_1,Indicatrice de taxation provisoire N - 1,string,
+BNS_2020,bns_msa_2020,SIR,Numéro SIREN de l’entreprise principale,string,
+BNS_2020,bns_msa_2020,SIR_1,Numéro SIREN de l’entreprise principale N - 1,string,
+BNS_2020,bns_msa_2020,ID_SIRUS,Présence du numéro SIREN dans le référentiel Sirus de l'année,string,bns_msa_2020__ID_SIRUS
+BNS_2020,bns_msa_2020,ID_SIRUS_1,Présence du numéro SIREN dans le référentiel Sirus de l'année N - 1,string,bns_msa_2020__ID_SIRUS_1
+BNS_2020,bns_msa_2020,CREAT_DATE_ref,Date de création de l'entreprise,string,
+BNS_2020,bns_msa_2020,CREAT_DATE_ref_1,Date de création de l'entreprise N - 1,string,
+BNS_2020,bns_msa_2020,CESSA_DATE_ref,Date de cessation éventuelle de l'entreprise,string,
+BNS_2020,bns_msa_2020,CESSA_DATE_ref_1,Date de cessation éventuelle de l'entreprise N - 1,string,
+BNS_2020,bns_msa_2020,A130,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A129 plus 1 poste pour les gérants sans lien)",string,bns_msa_2020__A130
+BNS_2020,bns_msa_2020,A130_1,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A129 plus 1 poste pour les gérants sans lien) N - 1",string,bns_msa_2020__A130_1
+BNS_2020,bns_msa_2020,A18,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A17 plus 1 poste pour les gérants sans lien)",string,bns_msa_2020__A18
+BNS_2020,bns_msa_2020,A18_1,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A17 plus 1 poste pour les gérants sans lien) N - 1",string,bns_msa_2020__A18_1
+BNS_2020,bns_msa_2020,A39,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A38 plus 1 poste pour les gérants sans lien)",string,bns_msa_2020__A39
+BNS_2020,bns_msa_2020,A39_1,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A38 plus 1 poste pour les gérants sans lien) N - 1",string,bns_msa_2020__A39_1
+BNS_2020,bns_msa_2020,A6,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A5 plus 1 poste pour les gérants sans lien)",string,bns_msa_2020__A6
+BNS_2020,bns_msa_2020,A6_1,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A5 plus 1 poste pour les gérants sans lien) N - 1",string,bns_msa_2020__A6_1
+BNS_2020,bns_msa_2020,TYPENS,Type de non-salarié,string,bns_msa_2020__TYPENS
+BNS_2020,bns_msa_2020,TYPENS_1,Type de non-salarié N - 1,string,bns_msa_2020__TYPENS_1
+BNS_2020,bns_msa_2020,APEN2,Activité principale de l'entreprise (NAF révision 2),string,bns_msa_2020__APEN2
+BNS_2020,bns_msa_2020,APEN2_1,Activité principale de l'entreprise (NAF révision 2) N - 1,string,bns_msa_2020__APEN2_1
+BNS_2020,bns_msa_2020,SECT,Secteur d'activité agrégé de l'entreprise (regroupement en 39 postes),string,bns_msa_2020__SECT
+BNS_2020,bns_msa_2020,SECT_1,Secteur d'activité agrégé de l'entreprise (regroupement en 39 postes) N - 1,string,bns_msa_2020__SECT_1
+BNS_2020,bns_msa_2020,SECTR,Secteur d'activité agrégé de l'entreprise (regroupement en 9 postes),string,bns_msa_2020__SECTR
+BNS_2020,bns_msa_2020,SECTR_1,Secteur d'activité agrégé de l'entreprise (regroupement en 9 postes) N - 1,string,bns_msa_2020__SECTR_1
+BNS_2020,bns_msa_2020,IND_AGRIC,Indicatrice d'appartenance au secteur agricole,string,
+BNS_2020,bns_msa_2020,IND_AGRIC_1,Indicatrice d'appartenance au secteur agricole N - 1,string,
+BNS_2020,bns_msa_2020,ACTISEC,Activité secondaire du non-salarié,string,bns_msa_2020__ACTISEC
+BNS_2020,bns_msa_2020,ACTISEC_1,Activité secondaire du non-salarié N - 1,string,bns_msa_2020__ACTISEC_1
+BNS_2020,bns_msa_2020,CRIS_ATE,Catégorie de risque de l’exploitant ATEXA (Assurance accident du travail des exploitants agricoles),string,bns_msa_2020__CRIS_ATE
+BNS_2020,bns_msa_2020,CRIS_ATE_1,Catégorie de risque de l’exploitant ATEXA (Assurance accident du travail des exploitants agricoles) N - 1,string,bns_msa_2020__CRIS_ATE_1
+BNS_2020,bns_msa_2020,CATJUR,Catégorie juridique de l'entreprise,string,bns_msa_2020__CATJUR
+BNS_2020,bns_msa_2020,CATJUR_1,Catégorie juridique de l'entreprise N - 1,string,bns_msa_2020__CATJUR_1
+BNS_2020,bns_msa_2020,EMPLOYEUR,Indicatrice de détection des non-salariés employeurs au 31 décembre de l'année,string,bns_msa_2020__EMPLOYEUR
+BNS_2020,bns_msa_2020,EMPLOYEUR_1,Indicatrice de détection des non-salariés employeurs au 31 décembre de l'année N - 1,string,bns_msa_2020__EMPLOYEUR_1
+BNS_2020,bns_msa_2020,NBSA_ENT,Nombre de salariés employés par l'entreprise au 31 décembre de l'année,float64,bns_msa_2020__NBSA_ENT
+BNS_2020,bns_msa_2020,NBSA_ENT_1,Nombre de salariés employés par l'entreprise au 31 décembre de l'année N - 1,float64,bns_msa_2020__NBSA_ENT_1
+BNS_2020,bns_msa_2020,SALAIRVERS,Montant des salaires versés aux salariés de l'exploitation au cours de l'année de validité,string,
+BNS_2020,bns_msa_2020,SALAIRVERS_1,Montant des salaires versés aux salariés de l'exploitation au cours de l'année de validité N - 1,string,
+BNS_2020,bns_msa_2020,IND_3112,Indicatrice d'activité au 31 décembre de l'année,string,
+BNS_2020,bns_msa_2020,IND_3112_1,Indicatrice d'activité au 31 décembre de l'année N - 1,string,
+BNS_2020,bns_msa_2020,CESSATION,Indicatrice de cessation de l’activité en cours d’année,string,
+BNS_2020,bns_msa_2020,CESSATION_1,Indicatrice de cessation de l’activité en cours d’année N - 1,string,
+BNS_2020,bns_msa_2020,DURACTJOURS,Nombre de jours d'affiliation dans l’année,string,
+BNS_2020,bns_msa_2020,DURACTJOURS_1,Nombre de jours d'affiliation dans l’année N - 1,string,
+BNS_2020,bns_msa_2020,DATEASSUJ,Date d'assujettissement la plus ancienne connue pour le non-salarié,string,
+BNS_2020,bns_msa_2020,DATEASSUJ_1,Date d'assujettissement la plus ancienne connue pour le non-salarié N - 1,string,
+BNS_2020,bns_msa_2020,DATEASSUJET,"Première date d'assujettissement du compte, présente l'année de validité",string,
+BNS_2020,bns_msa_2020,DATEASSUJET_1,"Première date d'assujettissement du compte, présente l'année de validité N - 1",string,
+BNS_2020,bns_msa_2020,DURASSUJET,"Nombre de jours d'affiliation, depuis la date d'assujettissement du compte",string,
+BNS_2020,bns_msa_2020,DURASSUJET_1,"Nombre de jours d'affiliation, depuis la date d'assujettissement du compte N - 1",string,
+BNS_2020,bns_msa_2020,TYPE_IMP,Type d'imposition utilisé lors de l'année de validité,string,bns_msa_2020__TYPE_IMP
+BNS_2020,bns_msa_2020,TYPE_IMP_1,Type d'imposition utilisé lors de l'année de validité N - 1,string,bns_msa_2020__TYPE_IMP_1
+BNS_2020,bns_msa_2020,REGIMAL,Régime maladie auprès duquel le non-salarié perçoit ses prestations maladie,string,bns_msa_2020__REGIMAL
+BNS_2020,bns_msa_2020,REGIMAL_1,Régime maladie auprès duquel le non-salarié perçoit ses prestations maladie N - 1,string,bns_msa_2020__REGIMAL_1
+BNS_2020,bns_msa_2020,REVACTMSA,Revenu d'activité annuel du non-salarié (dernière définition du revenu en vigueur),string,
+BNS_2020,bns_msa_2020,REVACTMSA_1,Revenu d'activité annuel du non-salarié (dernière définition du revenu en vigueur) N - 1,string,
+BNS_2020,bns_msa_2020,DEFICIT,Montant du revenu déficitaire (dernière définition du revenu en vigueur),string,
+BNS_2020,bns_msa_2020,DEFICIT_1,Montant du revenu déficitaire (dernière définition du revenu en vigueur) N - 1,string,
+BNS_2020,bns_msa_2020,STATRMSA,Statut principal agrégé au 31 décembre de l'année,string,bns_msa_2020__STATRMSA
+BNS_2020,bns_msa_2020,STATRMSA_1,Statut principal agrégé au 31 décembre de l'année N - 1,string,bns_msa_2020__STATRMSA_1
+BNS_2020,bns_msa_2020,STATUTMSA,Statut principal au 31 décembre de l'année,string,bns_msa_2020__STATUTMSA
+BNS_2020,bns_msa_2020,STATUTMSA_1,Statut principal au 31 décembre de l'année N - 1,string,bns_msa_2020__STATUTMSA_1
+BNS_2020,bns_msa_2020,S_APET2,Activité de l'établissement d'exercice de l'activité salariée (poste principal),string,bns_msa_2020__S_APET2
+BNS_2020,bns_msa_2020,S_APET2_1,Activité de l'établissement d'exercice de l'activité salariée (poste principal) N - 1,string,bns_msa_2020__S_APET2_1
+BNS_2020,bns_msa_2020,S_CE,Condition d'emploi de l'activité salariée (poste principal),string,bns_msa_2020__S_CE
+BNS_2020,bns_msa_2020,S_CE_1,Condition d'emploi de l'activité salariée (poste principal) N - 1,string,bns_msa_2020__S_CE_1
+BNS_2020,bns_msa_2020,S_DEBREMU_MIN,Jour de début de l'activité salariée dans l'année,string,bns_msa_2020__S_DEBREMU_MIN
+BNS_2020,bns_msa_2020,S_DEBREMU_MIN_1,Jour de début de l'activité salariée dans l'année N - 1,string,bns_msa_2020__S_DEBREMU_MIN_1
+BNS_2020,bns_msa_2020,S_FINREMU_MAX,Jour de fin de l'activité salariée dans l'année,string,bns_msa_2020__S_FINREMU_MAX
+BNS_2020,bns_msa_2020,S_FINREMU_MAX_1,Jour de fin de l'activité salariée dans l'année N - 1,string,bns_msa_2020__S_FINREMU_MAX_1
+BNS_2020,bns_msa_2020,S_DP,Durée de paie de l'activité salariée dans l'année,string,bns_msa_2020__S_DP
+BNS_2020,bns_msa_2020,S_DP_1,Durée de paie de l'activité salariée dans l'année N - 1,string,bns_msa_2020__S_DP_1
+BNS_2020,bns_msa_2020,S_DOMEMPL_EMPL,Domaine d'emploi de l'employeur pour l'activité salariée (poste principal),string,bns_msa_2020__S_DOMEMPL_EMPL
+BNS_2020,bns_msa_2020,S_DOMEMPL_EMPL_1,Domaine d'emploi de l'employeur pour l'activité salariée (poste principal) N - 1,string,bns_msa_2020__S_DOMEMPL_EMPL_1
+BNS_2020,bns_msa_2020,S_NBSA_ENT,Nombre de postes non annexes de l'établissement d'exercice de l'activité salariée (poste principal),float64,
+BNS_2020,bns_msa_2020,S_NBSA_ENT_1,Nombre de postes non annexes de l'établissement d'exercice de l'activité salariée (poste principal) N - 1,float64,
+BNS_2020,bns_msa_2020,S_FILT_MIN,Présence d'un poste salarié non annexe au cours de l'année de validité,string,bns_msa_2020__S_FILT_MIN
+BNS_2020,bns_msa_2020,S_FILT_MIN_1,Présence d'un poste salarié non annexe au cours de l'année de validité N - 1,string,bns_msa_2020__S_FILT_MIN_1
+BNS_2020,bns_msa_2020,S_IND_3112,Indicatrice d'activité salariée en fin d'année,string,bns_msa_2020__S_IND_3112
+BNS_2020,bns_msa_2020,S_IND_3112_1,Indicatrice d'activité salariée en fin d'année N - 1,string,bns_msa_2020__S_IND_3112_1
+BNS_2020,bns_msa_2020,S_NBHEUR,Nombre total d'heures salariées associées aux postes salariés dans l'année (hors postes d'élus),float64,
+BNS_2020,bns_msa_2020,S_NBHEUR_1,Nombre total d'heures salariées associées aux postes salariés dans l'année (hors postes d'élus) N - 1,float64,
+BNS_2020,bns_msa_2020,S_NBLIG,Nombre de postes salariés au cours de l'année de validité (hors postes d'élus),float64,
+BNS_2020,bns_msa_2020,S_NBLIG_1,Nombre de postes salariés au cours de l'année de validité (hors postes d'élus) N - 1,float64,
+BNS_2020,bns_msa_2020,S_PCS4,Code des Professions et Catégories Socioprofessionnelles des Emplois Salariés des Employeurs privés et publiques (PCS-ESE) de l'activité salariée (poste principal),string,bns_msa_2020__S_PCS4
+BNS_2020,bns_msa_2020,S_PCS4_1,Code des Professions et Catégories Socioprofessionnelles des Emplois Salariés des Employeurs privés et publiques (PCS-ESE) de l'activité salariée (poste principal) N - 1,string,bns_msa_2020__S_PCS4_1
+BNS_2020,bns_msa_2020,S_NIC4,Numéro SIRET de l'établissement d'exercice de l'activité salariée (poste principal),string,
+BNS_2020,bns_msa_2020,S_NIC4_1,Numéro SIRET de l'établissement d'exercice de l'activité salariée (poste principal) N - 1,string,
+BNS_2020,bns_msa_2020,S_BRUT,Somme des salaires bruts associés aux postes salariés (hors indemnités d'élus),string,
+BNS_2020,bns_msa_2020,S_BRUT_1,Somme des salaires bruts associés aux postes salariés (hors indemnités d'élus) N - 1,string,
+BNS_2020,bns_msa_2020,S_NET,Somme des salaires nets associés aux postes salariés (hors indemnités d'élus),string,
+BNS_2020,bns_msa_2020,S_NET_1,Somme des salaires nets associés aux postes salariés (hors indemnités d'élus) N - 1,string,
+BNS_2020,bns_msa_2020,S_NETycCSG,"Somme des salaires nets associés aux postes salariés, y compris Contribution sociale généralisée (CSG) et Contribution pour le remboursement de la dette sociale (CRDS) (hors indemnités d'élus)",string,
+BNS_2020,bns_msa_2020,S_NETycCSG_1,"Somme des salaires nets associés aux postes salariés, y compris Contribution sociale généralisée (CSG) et Contribution pour le remboursement de la dette sociale (CRDS) (hors indemnités d'élus) N - 1",string,
+BNS_2020,bns_msa_2020,S_NETycCSG_ap,"Somme des salaires nets associés aux postes salariés et du montant net de l’indemnité versée au titre du chômage partiel, y compris Contribution sociale généralisée (CSG) non déductible et Contribution pour le remboursement de la dette sociale (CRDS) (hors indemnités d’élus)",string,
 Phytofruits_2018,phytofruits18_MATACT,AUTRE,"Indicatrice d'utilisation de la matière active dans au moins un traitement autre que fongicide, insecticide ou herbicide.",string,
 Phytofruits_2018,phytofruits18_MATACT,ESPECE_DETAIL,Espece,string,
 Phytofruits_2018,phytofruits18_MATACT,FONGICIDE,Indicatrice d'utilisation de la matière active dans au moins un traitement fongicide.,string,
@@ -2391,6 +2503,134 @@ PHYTOVITI_2016,PHYTO_PHYTOVITI2016,TYPE_UNITE_PHYTO,Type d'unité du traitement,
 PHYTOVITI_2016,PHYTO_PHYTOVITI2016,TYPE_UNITE_DR,Type d'unité de la dose de référence associée au traitement,string,
 PHYTOVITI_2016,PHYTO_PHYTOVITI2016,RED,Redressement effectué ou non pour le calcul de l'IFT,string,
 PHYTOVITI_2016,PHYTO_PHYTOVITI2016,SEGMENT,Segmentation (pour le calcul de l'IFT),string,
+BNS_2020,bns_acoss_2020,IDENT_NS,Identifiant du non-salarié,string,
+BNS_2020,bns_acoss_2020,AGE,Âge atteint par le non-salarié au cours de l'année de validité,float64,
+BNS_2020,bns_acoss_2020,ANNAI,Année de naissance du non-salarié,string,
+BNS_2020,bns_acoss_2020,DEPNAI,Département de naissance du non-salarié,string,bns_acoss_2020__DEPNAI
+BNS_2020,bns_acoss_2020,SX,Genre du non-salarié,string,bns_acoss_2020__SX
+BNS_2020,bns_acoss_2020,FILT,Indicatrice de détection des affiliés à l'Agence centrale des organismes de sécurité sociale (Acoss) ou la Mutualité sociale agricole (MSA) au cours de l'année de validité N,string,bns_acoss_2020__FILT
+BNS_2020,bns_acoss_2020,FILT_1,Indicatrice de détection des affiliés à l'Agence centrale des organismes de sécurité sociale (Acoss) ou la Mutualité sociale agricole (MSA) au cours de l'année de validité N - 1,string,bns_acoss_2020__FILT_1
+BNS_2020,bns_acoss_2020,S_ACT_PART,Montant brut de l’indemnité versée au salarié au titre du chômage partiel,string,
+BNS_2020,bns_acoss_2020,S_NBHEUR_AP,Nombre total d’heures indemnisées de chômage partiel,float64,
+BNS_2020,bns_acoss_2020,DEPT,Département d'activité du non-salarié,string,bns_acoss_2020__DEPT
+BNS_2020,bns_acoss_2020,DEPT_1,Département d'activité du non-salarié N - 1,string,bns_acoss_2020__DEPT_1
+BNS_2020,bns_acoss_2020,COMT,Code géographique de la commune d'activité du non-salarié,string,bns_acoss_2020__COMT
+BNS_2020,bns_acoss_2020,COMT_1,Code géographique de la commune d'activité du non-salarié durant l'année N - 1,string,bns_acoss_2020__COMT_1
+BNS_2020,bns_acoss_2020,AN,Année de validité,string,
+BNS_2020,bns_acoss_2020,AN_1,Année de validité N - 1,string,
+BNS_2020,bns_acoss_2020,CODEBASE_NEW,Numéro de la caisse Union de recouvrement des cotisations de sécurité sociale et d'allocations familiales (URSSAF) de rattachement du compte (selon les caisses existantes fin 2015),string,bns_acoss_2020__CODEBASE_NEW
+BNS_2020,bns_acoss_2020,CODEBASE_NEW_1,Numéro de la caisse Union de recouvrement des cotisations de sécurité sociale et d'allocations familiales (URSSAF) de rattachement du compte (selon les caisses existantes fin 2015) N - 1,string,bns_acoss_2020__CODEBASE_NEW_1
+BNS_2020,bns_acoss_2020,INDICTO,Indicatrice de taxation d'office du non-salarié,string,
+BNS_2020,bns_acoss_2020,INDICTO_1,Indicatrice de taxation d'office du non-salarié N - 1,string,
+BNS_2020,bns_acoss_2020,TO_EXCEDENT,Indicatrice de suppression des non-salariés taxés d’office excédentaires pour l'année de validité,string,bns_acoss_2020__TO_EXCEDENT
+BNS_2020,bns_acoss_2020,TO_EXCEDENT_1,Indicatrice de suppression des non-salariés taxés d’office excédentaires pour l'année N - 1,string,bns_acoss_2020__TO_EXCEDENT_1
+BNS_2020,bns_acoss_2020,SIR,Numéro SIREN de l’entreprise principale,string,
+BNS_2020,bns_acoss_2020,SIR_1,Numéro SIREN de l’entreprise principale N - 1,string,
+BNS_2020,bns_acoss_2020,ID_SIRUS,Présence du numéro SIREN dans le référentiel Sirus de l'année,string,bns_acoss_2020__ID_SIRUS
+BNS_2020,bns_acoss_2020,ID_SIRUS_1,Présence du numéro SIREN dans le référentiel Sirus de l'année N - 1,string,bns_acoss_2020__ID_SIRUS_1
+BNS_2020,bns_acoss_2020,CREAT_DATE_REF,Date de création de l'entreprise,string,
+BNS_2020,bns_acoss_2020,CREAT_DATE_REF_1,Date de création de l'entreprise N - 1,string,
+BNS_2020,bns_acoss_2020,CESSA_DATE_REF,Date de cessation éventuelle de l'entreprise,string,
+BNS_2020,bns_acoss_2020,CESSA_DATE_REF_1,Date de cessation éventuelle de l'entreprise N - 1,string,
+BNS_2020,bns_acoss_2020,A130,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A129 plus 1 poste pour les gérants sans lien)",string,bns_acoss_2020__A130
+BNS_2020,bns_acoss_2020,A130_1,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A129 plus 1 poste pour les gérants sans lien) N - 1",string,bns_acoss_2020__A130_1
+BNS_2020,bns_acoss_2020,A18,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A17 plus 1 poste pour les gérants sans lien)",string,bns_acoss_2020__A18
+BNS_2020,bns_acoss_2020,A18_1,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A17 plus 1 poste pour les gérants sans lien) N - 1",string,bns_acoss_2020__A18_1
+BNS_2020,bns_acoss_2020,A39,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A38 plus 1 poste pour les gérants sans lien)",string,bns_acoss_2020__A39
+BNS_2020,bns_acoss_2020,A39_1,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A38 plus 1 poste pour les gérants sans lien) N - 1",string,bns_acoss_2020__A39_1
+BNS_2020,bns_acoss_2020,A6,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A5 plus 1 poste pour les gérants sans lien)",string,bns_acoss_2020__A6
+BNS_2020,bns_acoss_2020,A6_1,"Activité principale de l'entreprise, selon la nomenclature agrégée (NA niveau A5 plus 1 poste pour les gérants sans lien) N - 1",string,bns_acoss_2020__A6_1
+BNS_2020,bns_acoss_2020,TYPENS,Type de non-salarié,string,bns_acoss_2020__TYPENS
+BNS_2020,bns_acoss_2020,TYPENS_1,Type de non-salarié N - 1,string,bns_acoss_2020__TYPENS_1
+BNS_2020,bns_acoss_2020,AE,Indicatrice de détection des auto-entrepreneurs,string,
+BNS_2020,bns_acoss_2020,AE_1,Indicatrice de détection des auto-entrepreneurs N - 1,string,
+BNS_2020,bns_acoss_2020,AE_ACTIF,Indicatrice d'activité au 31 décembre de l'année pour les auto-entrepreneurs (sur 4 trimestres glissants pour les auto-entrepreneurs nouvellement affiliés),string,bns_acoss_2020__AE_ACTIF
+BNS_2020,bns_acoss_2020,AE_ACTIF_1,Indicatrice d'activité au 31 décembre de l'année pour les auto-entrepreneurs (sur 4 trimestres glissants pour les auto-entrepreneurs nouvellement affiliés) N - 1,string,bns_acoss_2020__AE_ACTIF_1
+BNS_2020,bns_acoss_2020,APEN2,Activité principale de l'entreprise (NAF révision 2),string,bns_acoss_2020__APEN2
+BNS_2020,bns_acoss_2020,APEN2_1,Activité principale de l'entreprise (NAF révision 2) N - 1,string,bns_acoss_2020__APEN2_1
+BNS_2020,bns_acoss_2020,SECT,Secteur d'activité agrégé de l'entreprise (regroupement en 39 postes),string,bns_acoss_2020__SECT
+BNS_2020,bns_acoss_2020,SECT_1,Secteur d'activité agrégé de l'entreprise (regroupement en 39 postes) N - 1,string,bns_acoss_2020__SECT_1
+BNS_2020,bns_acoss_2020,SECTR,Secteur d'activité agrégé de l'entreprise (regroupement en 9 postes),string,bns_acoss_2020__SECTR
+BNS_2020,bns_acoss_2020,SECTR_1,Secteur d'activité agrégé de l'entreprise (regroupement en 9 postes) N - 1,string,bns_acoss_2020__SECTR_1
+BNS_2020,bns_acoss_2020,IND_AGRIC,Indicatrice d'appartenance au secteur agricole,string,
+BNS_2020,bns_acoss_2020,IND_AGRIC_1,Indicatrice d'appartenance au secteur agricole N - 1,string,
+BNS_2020,bns_acoss_2020,IND_PL,Indicatrice de détection des professions libérales,string,
+BNS_2020,bns_acoss_2020,IND_PL_1,Indicatrice de détection des professions libérales N - 1,string,
+BNS_2020,bns_acoss_2020,CATJUR,Catégorie juridique de l'entreprise,string,bns_acoss_2020__CATJUR
+BNS_2020,bns_acoss_2020,CATJUR_1,Catégorie juridique de l'entreprise N - 1,string,bns_acoss_2020__CATJUR_1
+BNS_2020,bns_acoss_2020,EMPLOYEUR,Indicatrice de détection des non-salariés employeurs au 31 décembre de l'année,string,bns_acoss_2020__EMPLOYEUR
+BNS_2020,bns_acoss_2020,EMPLOYEUR_1,Indicatrice de détection des non-salariés employeurs au 31 décembre de l'année N - 1,string,bns_acoss_2020__EMPLOYEUR_1
+BNS_2020,bns_acoss_2020,NBSA_ENT,Nombre de salariés employés par l'entreprise au 31 décembre de l'année,float64,bns_acoss_2020__NBSA_ENT
+BNS_2020,bns_acoss_2020,NBSA_ENT_1,Nombre de salariés employés par l'entreprise au 31 décembre de l'année N - 1,float64,bns_acoss_2020__NBSA_ENT_1
+BNS_2020,bns_acoss_2020,IND_3112,Indicatrice d'activité au 31 décembre de l'année,string,
+BNS_2020,bns_acoss_2020,IND_3112_1,Indicatrice d'activité au 31 décembre de l'année N - 1,string,
+BNS_2020,bns_acoss_2020,DURACTJOURS,Nombre de jours d'affiliation dans l’année,string,
+BNS_2020,bns_acoss_2020,DURACTJOURS_1,Nombre de jours d'affiliation dans l’année N - 1,string,
+BNS_2020,bns_acoss_2020,DATEASSUJ,Date d'assujettissement la plus ancienne connue pour le non-salarié,string,
+BNS_2020,bns_acoss_2020,DATEASSUJ_1,Date d'assujettissement la plus ancienne connue pour le non-salarié N - 1,string,
+BNS_2020,bns_acoss_2020,DATEASSUJET,"Première date d'assujettissement du compte, présente l'année de validité",string,
+BNS_2020,bns_acoss_2020,DATEASSUJET_1,"Première date d'assujettissement du compte, présente l'année de validité N - 1",string,
+BNS_2020,bns_acoss_2020,DURASSUJET,"Nombre de jours d'affiliation, depuis la date d'assujettissement du compte",string,
+BNS_2020,bns_acoss_2020,DURASSUJET_1,"Nombre de jours d'affiliation, depuis la date d'assujettissement du compte N - 1",string,
+BNS_2020,bns_acoss_2020,REVACT,Revenu d'activité annuel du non-salarié (dernière définition du revenu en vigueur),string,
+BNS_2020,bns_acoss_2020,REVACT_1,Revenu d'activité annuel du non-salarié (dernière définition du revenu en vigueur) N - 1,string,
+BNS_2020,bns_acoss_2020,REVCOTSOC,"Somme perçue au titre d'un accord d'intéressement, abondement versé dans un plan d'épargne entreprise ou un Plan d'épargne pour la retraite collectif (PERCO), et somme des cotisations sociales versées l'année de validité au titre des revenus non-salariaux perçus les années précédentes",string,
+BNS_2020,bns_acoss_2020,REVCOTSOC_1,"Somme perçue au titre d'un accord d'intéressement, abondement versé dans un plan d'épargne entreprise ou un Plan d'épargne pour la retraite collectif (PERCO), et somme des cotisations sociales versées l'année de validité au titre des revenus non-salariaux perçus les années précédentes N - 1",string,
+BNS_2020,bns_acoss_2020,REVREMPL,"Revenu de remplacement éventuel (indemnités journalières de maternité, paternité, maladie, ...)",string,
+BNS_2020,bns_acoss_2020,REVREMPL_1,"Revenu de remplacement éventuel (indemnités journalières de maternité, paternité, maladie, …) N - 1",string,
+BNS_2020,bns_acoss_2020,REVBRUT,Revenu d'activité annuel brut du non-salarié (dernière définition du revenu en vigueur),string,
+BNS_2020,bns_acoss_2020,REVBRUT_1,Revenu d'activité annuel brut du non-salarié (dernière définition du revenu en vigueur) N - 1,string,
+BNS_2020,bns_acoss_2020,CA_T1,Chiffre d'affaires de l'auto-entrepreneur au cours du 1ᵉ trimestre de l'année,string,
+BNS_2020,bns_acoss_2020,CA_T1_1,Chiffre d'affaires de l'auto-entrepreneur au cours du 1ᵉ trimestre de l'année N - 1,string,
+BNS_2020,bns_acoss_2020,CA_T2,Chiffre d'affaires de l'auto-entrepreneur au cours du 2ᵉ trimestre de l'année,string,
+BNS_2020,bns_acoss_2020,CA_T2_1,Chiffre d'affaires de l'auto-entrepreneur au cours du 2ᵉ trimestre de l'année N - 1,string,
+BNS_2020,bns_acoss_2020,CA_T3,Chiffre d'affaires de l'auto-entrepreneur au cours du 3ᵉ trimestre de l'année,string,
+BNS_2020,bns_acoss_2020,CA_T3_1,Chiffre d'affaires de l'auto-entrepreneur au cours du 3ᵉ trimestre de l'année N - 1,string,
+BNS_2020,bns_acoss_2020,CA_T4,Chiffre d'affaires de l'auto-entrepreneur au cours du 4ᵉ trimestre de l'année,string,
+BNS_2020,bns_acoss_2020,CA_T4_1,Chiffre d'affaires de l'auto-entrepreneur au cours du 4ᵉ trimestre de l'année N - 1,string,
+BNS_2020,bns_acoss_2020,BIC_PRESTAS,Chiffre d'affaires annuel de l'auto-entrepreneur pour les prestations de services,string,
+BNS_2020,bns_acoss_2020,BIC_PRESTAS_1,Chiffre d'affaires annuel de l'auto-entrepreneur pour les prestations de services N - 1,string,
+BNS_2020,bns_acoss_2020,BIC_VENTES,Chiffre d'affaires annuel de l'auto-entrepreneur pour les activités de ventes,string,
+BNS_2020,bns_acoss_2020,BIC_VENTES_1,Chiffre d'affaires annuel de l'auto-entrepreneur pour les activités de ventes N - 1,string,
+BNS_2020,bns_acoss_2020,BNC,Chiffre d'affaires annuel de l'auto-entrepreneur pour les activités libérales,string,
+BNS_2020,bns_acoss_2020,BNC_1,Chiffre d'affaires annuel de l'auto-entrepreneur pour les activités libérales N - 1,string,
+BNS_2020,bns_acoss_2020,STATR,Statut principal agrégé au 31 décembre de l'année (dernière définition du revenu en vigueur),string,bns_acoss_2020__STATR
+BNS_2020,bns_acoss_2020,STATR_1,Statut principal agrégé au 31 décembre de l'année N - 1 (dernière définition du revenu en vigueur),string,bns_acoss_2020__STATR_1
+BNS_2020,bns_acoss_2020,STATUT,Statut principal au 31 décembre de l'année (dernière définition du revenu en vigueur),string,bns_acoss_2020__STATUT
+BNS_2020,bns_acoss_2020,STATUT_1,Statut principal au 31 décembre de l'année N - 1 (dernière définition du revenu en vigueur),string,bns_acoss_2020__STATUT_1
+BNS_2020,bns_acoss_2020,S_APET2,Activité de l'établissement d'exercice de l'activité salariée (poste principal),string,bns_acoss_2020__S_APET2
+BNS_2020,bns_acoss_2020,S_APET2_1,Activité de l'établissement d'exercice de l'activité salariée (poste principal) N - 1,string,bns_acoss_2020__S_APET2_1
+BNS_2020,bns_acoss_2020,S_CE,Condition d'emploi de l'activité salariée (poste principal),string,bns_acoss_2020__S_CE
+BNS_2020,bns_acoss_2020,S_CE_1,Condition d'emploi de l'activité salariée (poste principal) N - 1,string,bns_acoss_2020__S_CE_1
+BNS_2020,bns_acoss_2020,S_DEBREMU_MIN,Jour de début de l'activité salariée dans l'année,string,bns_acoss_2020__S_DEBREMU_MIN
+BNS_2020,bns_acoss_2020,S_DEBREMU_MIN_1,Jour de début de l'activité salariée dans l'année N - 1,string,bns_acoss_2020__S_DEBREMU_MIN_1
+BNS_2020,bns_acoss_2020,S_FINREMU_MAX,Jour de fin de l'activité salariée dans l'année,string,bns_acoss_2020__S_FINREMU_MAX
+BNS_2020,bns_acoss_2020,S_FINREMU_MAX_1,Jour de fin de l'activité salariée dans l'année N - 1,string,bns_acoss_2020__S_FINREMU_MAX_1
+BNS_2020,bns_acoss_2020,S_DP,Durée de paie de l'activité salariée dans l'année,string,bns_acoss_2020__S_DP
+BNS_2020,bns_acoss_2020,S_DP_1,Durée de paie de l'activité salariée dans l'année N - 1,string,bns_acoss_2020__S_DP_1
+BNS_2020,bns_acoss_2020,S_DOMEMPL_EMPL,Domaine d'emploi de l'employeur pour l'activité salariée (poste principal),string,bns_acoss_2020__S_DOMEMPL_EMPL
+BNS_2020,bns_acoss_2020,S_DOMEMPL_EMPL_1,Domaine d'emploi de l'employeur pour l'activité salariée (poste principal) N - 1,string,bns_acoss_2020__S_DOMEMPL_EMPL_1
+BNS_2020,bns_acoss_2020,S_NBSA_ENT,Nombre de postes non annexes de l'établissement d'exercice de l'activité salariée (poste principal),float64,
+BNS_2020,bns_acoss_2020,S_NBSA_ENT_1,Nombre de postes non annexes de l'établissement d'exercice de l'activité salariée (poste principal) N - 1,float64,
+BNS_2020,bns_acoss_2020,S_FILT_MIN,Présence d'un poste salarié non annexe au cours de l'année de validité,string,bns_acoss_2020__S_FILT_MIN
+BNS_2020,bns_acoss_2020,S_FILT_MIN_1,Présence d'un poste salarié non annexe au cours de l'année de validité N - 1,string,bns_acoss_2020__S_FILT_MIN_1
+BNS_2020,bns_acoss_2020,S_IND_3112,Indicatrice d'activité salariée en fin d'année,string,bns_acoss_2020__S_IND_3112
+BNS_2020,bns_acoss_2020,S_IND_3112_1,Indicatrice d'activité salariée en fin d'année N - 1,string,bns_acoss_2020__S_IND_3112_1
+BNS_2020,bns_acoss_2020,S_NBHEUR,Nombre total d'heures salariées associées aux postes salariés dans l'année (hors postes d'élus),float64,
+BNS_2020,bns_acoss_2020,S_NBHEUR_1,Nombre total d'heures salariées associées aux postes salariés dans l'année (hors postes d'élus) N - 1,float64,
+BNS_2020,bns_acoss_2020,S_NBLIG,Nombre de postes salariés au cours de l'année de validité (hors postes d'élus),float64,
+BNS_2020,bns_acoss_2020,S_NBLIG_1,Nombre de postes salariés au cours de l'année de validité (hors postes d'élus) N - 1,float64,
+BNS_2020,bns_acoss_2020,S_PCS4,Code des Professions et Catégories Socioprofessionnelles des Emplois Salariés des Employeurs privés et publiques (PCS-ESE) de l'activité salariée (poste principal),string,bns_acoss_2020__S_PCS4
+BNS_2020,bns_acoss_2020,S_PCS4_1,Code des Professions et Catégories Socioprofessionnelles des Emplois Salariés des Employeurs privés et publiques (PCS-ESE) de l'activité salariée (poste principal) N - 1,string,bns_acoss_2020__S_PCS4_1
+BNS_2020,bns_acoss_2020,S_NIC4,Numéro SIRET de l'établissement d'exercice de l'activité salariée (poste principal),string,
+BNS_2020,bns_acoss_2020,S_NIC4_1,Numéro SIRET de l'établissement d'exercice de l'activité salariée (poste principal) N - 1,string,
+BNS_2020,bns_acoss_2020,S_BRUT,Somme des salaires bruts associés aux postes salariés (hors indemnités d'élus),string,
+BNS_2020,bns_acoss_2020,S_BRUT_1,Somme des salaires bruts associés aux postes salariés (hors indemnités d'élus) N - 1,string,
+BNS_2020,bns_acoss_2020,S_NET,Somme des salaires nets associés aux postes salariés (hors indemnités d'élus),string,
+BNS_2020,bns_acoss_2020,S_NET_1,Somme des salaires nets associés aux postes salariés (hors indemnités d'élus) N - 1,string,
+BNS_2020,bns_acoss_2020,S_NETYCCSG,"Somme des salaires nets associés aux postes salariés, y compris Contribution sociale généralisée (CSG) et Contribution pour le remboursement de la dette sociale (CRDS) (hors indemnités d'élus)",string,
+BNS_2020,bns_acoss_2020,S_NETYCCSG_1,"Somme des salaires nets associés aux postes salariés, y compris Contribution sociale généralisée (CSG) et Contribution pour le remboursement de la dette sociale (CRDS) (hors indemnités d'élus) N - 1",string,
+BNS_2020,bns_acoss_2020,S_NETYCCSG_AP,"Somme des salaires nets associés aux postes salariés et du montant net de l’indemnité versée au titre du chômage partiel, y compris Contribution sociale généralisée (CSG) non déductible et Contribution pour le remboursement de la dette sociale (CRDS) (hors indemnités d’élus)",string,
 Phytoleg_2018,20210930_Phytolegumes2018_definitive,NOM_DOSSIER ,Nom du dossier,string,
 Phytoleg_2018,20210930_Phytolegumes2018_definitive,REG,Région,string,
 Phytoleg_2018,20210930_Phytolegumes2018_definitive,LIB_REG,Libelle (ancienne) région d'enquête,string,
@@ -6026,6 +6266,180 @@ FIDELI_2020,fideli_revenus_menage22,revdispm_n_1,Revenu disponible monétaire l'
 FIDELI_2020,fideli_revenus_menage22,nivviem_n_1,Niveau de vie l'année N-1,string,
 FIDELI_2020,fideli_revenus_menage22,i_pauvre60m_n_1,Indicatrice de ménage pauvre à 60% l'année N-1,string,fideli_revenus_menage22__i_pauvre60m_n_1
 FIDELI_2020,fideli_revenus_menage22,nb_uc_n_1,Nombre d’unités de consommation l'année N-1,float64,
+BTS_2021,post,a6,APET ou APEN agrégée en 6 postes,string,post__a6
+BTS_2021,post,a17,APET ou APEN agrégée en 17 postes,string,post__a17
+BTS_2021,post,a38,APET ou APEN agrégée en 38 postes,string,post__a38
+BTS_2021,post,a88,APET ou APEN agrégée en 88 postes,string,post__a88
+BTS_2021,post,activite_partielle,Montant brut des indemnités d'activité partielle,string,
+BTS_2021,post,annee_naiss,Année de naissance du salarié,string,
+BTS_2021,post,apen,"Activité principale exercée de l'entreprise, codée en Nomenclature d'activités française (NAF) révision 2",string,post__apen
+BTS_2021,post,apet,"Activité principale exercée de l'établissement, codée en Nomenclature d'activités française (NAF) révision 2",string,post__apet
+BTS_2021,post,apet_utilisateur,"Activité principale exercée de l'établissement où l'intérimaire réalise sa mission, codée en Nomenclature d'activités française (NAF) révision 2",string,post__apet_utilisateur
+BTS_2021,post,bascsg,Sommes soumises à la Contribution sociale généralisée (CSG) et à la Contribution pour le remboursement de la dette sociale (CRDS),string,
+BTS_2021,post,brut_f,Montant brut des rémunérations,string,
+BTS_2021,post,brut_s,La base brute de sécurité sociale (ou rémunération brute déplafonnée) correspond aux sommes soumises à des cotisations sociales,string,
+BTS_2021,post,catjur,Catégorie juridique du lieu de travail,string,post__catjur
+BTS_2021,post,catjur_empl,Catégorie juridique de l'employeur,string,post__catjur_empl
+BTS_2021,post,champ,Champ des données (regroupement de modalités de la variable ORIGINE),string,post__champ
+BTS_2021,post,codecom_siege,Commune d'implantation de l'établissement (siège social),string,post__codecom_siege
+BTS_2021,post,com_empl,Commune de l'employeur,string,post__com_empl
+BTS_2021,post,comr,Commune de résidence du salarié,string,post__comr
+BTS_2021,post,comt,Commune du lieu de travail,string,post__comt
+BTS_2021,post,contrat_travail,Type de contrat de travail,string,post__contrat_travail
+BTS_2021,post,conv_coll,Convention collective de branche selon la nomenclature IDCC (Identifiant De la Convention Commune) gérée par le Ministère du Travail,string,post__conv_coll
+BTS_2021,post,conv_meta,Type de couverture par une convention collective,string,post__conv_meta
+BTS_2021,post,cpfd,Condition d'emploi,string,post__cpfd
+BTS_2021,post,cris,Convention collective regroupée pour l'information statistique,string,post__cris
+BTS_2021,post,datdeb,Date de début de rémunération de la première période du poste,string,
+BTS_2021,post,datdeb2,Date de début de rémunération de la deuxième période du poste,string,
+BTS_2021,post,datfin,Date de fin de rémunération de la dernière période du poste,string,
+BTS_2021,post,datfin1,Date de fin de rémunération de la première période du poste,string,
+BTS_2021,post,date_debut_contrat,Date de début du contrat de travail,string,
+BTS_2021,post,decal_paie_decl,Décalage de paie déclaré pour le poste,string,post__decal_paie_decl
+BTS_2021,post,dep_naiss,Département de naissance du salarié,string,post__dep_naiss
+BTS_2021,post,depr,Département de résidence du salarié,string,post__depr
+BTS_2021,post,dept,Département du lieu de travail,string,post__dept
+BTS_2021,post,dispol,Dispositif de politique publique associé au contrat,string,post__dispol
+BTS_2021,post,domempl,Domaine d'emploi du lieu de travail (établissement d'affectation),string,post__domempl
+BTS_2021,post,domempl_empl,Domaine d'emploi de l'employeur,string,post__domempl_empl
+BTS_2021,post,duree,Durée de paie en jours,string,
+BTS_2021,post,eff_0101,"Effectif au 01/01 de l'entreprise (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eff_0101_et,"Effectif au 01/01 de l'établissement (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eff_3112,"Effectif au 31/12 de l'entreprise (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eff_3112_et,"Effectif au 31/12 de l'établissement (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eff_moy_et,"Effectif moyen de l'établissement (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eqtp,Équivalent temps plein,string,
+BTS_2021,post,filt,Type de poste,string,post__filt
+BTS_2021,post,frontalier,Code frontalier,string,post__frontalier
+BTS_2021,post,ident_s,Identifiant salarié,string,
+BTS_2021,post,ind_3112,Indicateur de présence au 31/12,string,post__ind_3112
+BTS_2021,post,ind_nir,Mode de redressement du NIR,string,post__ind_nir
+BTS_2021,post,ir_comr,Indicateur de redressement de la variable COMR,string,post__ir_comr
+BTS_2021,post,ir_dates,Indicateur de redressement de la variable DATES,string,post__ir_dates
+BTS_2021,post,ir_fronta,Indicateur de redressement de la variable FRONTA,string,post__ir_fronta
+BTS_2021,post,ir_nbheur,Indicateur de redressement de la variable NBHEUR,float64,post__ir_nbheur
+BTS_2021,post,ir_pcs,Indicateur de redressement de la variable PCS,string,post__ir_pcs
+BTS_2021,post,ir_sexe,Indicateur de redressement de la variable SEXE,string,post__ir_sexe
+BTS_2021,post,marchet,Caractère marchand de l'établissement,string,post__marchet
+BTS_2021,post,motifcdd,Motif d'embauche d'un CDD,string,post__motifcdd
+BTS_2021,post,nat_contrat,Nature du contrat,string,post__nat_contrat
+BTS_2021,post,nb_per,Nombre de périodes annexes et non annexes,float64,
+BTS_2021,post,nb_postes_du_nir,"Nombre de postes du salarié (nombre d'établissement, lieux de travail différents)",float64,
+BTS_2021,post,nbh_activite_partielle,Nombre d’heures indemnisées au titre de l’activité partielle,float64,
+BTS_2021,post,nbheur,Nombre d'heures salariées du poste dans l'année,float64,
+BTS_2021,post,net,Net fiscal déclaré du salarié,string,
+BTS_2021,post,nic,Numéro interne de classement (NIC) du lieu de travail,string,
+BTS_2021,post,nic_empl,Numéro interne de classement (NIC) de l'employeur,string,
+BTS_2021,post,origine,Origine et format de la déclaration administrative,string,post__origine
+BTS_2021,post,pcs,Profession et catégorie socio-professionnelle codée selon la nomenclature PCS-ESE,string,post__pcs
+BTS_2021,post,pepa,Prime exceptionnelle de pouvoir d'achat,string,
+BTS_2021,post,pps,Indicateur de poste principal du salarié,string,post__pps
+BTS_2021,post,reg_siege,Région d'implantation du siège de l'entreprise,string,post__reg_siege
+BTS_2021,post,regr,Région de résidence du salarié,string,post__regr
+BTS_2021,post,regt,Région d'implantation du lieu de travail,string,post__regt
+BTS_2021,post,s_brut,Salaire brut du salarié,string,
+BTS_2021,post,s_net,Salaire net du salarié,string,
+BTS_2021,post,sexe,Sexe du salarié,string,post__sexe
+BTS_2021,post,siren,SIREN du lieu de travail,string,
+BTS_2021,post,siren_empl,SIREN de l'employeur,string,
+BTS_2021,post,siret,SIRET de l'établissement,string,
+BTS_2021,post,siret_utilisateur,SIRET de l'établissement où l'intérimaire réalise sa mission (pour l'intérim),string,
+BTS_2021,post,sonde,Présence du salarié dans l'échantillon au 12ème,string,post__sonde
+BTS_2021,post,source,Source de données (l'application dans laquelle ont été traitées les données),string,post__source
+BTS_2021,post,treffect,Tranche d'effectif de l'établissement au 31/12 (postes non annexes) ,string,post__treffect
+BTS_2021,post,treffen,Tranche d'effectif de l'entreprise au 31/12 (postes non annexes) ,string,post__treffen
+BTS_2021,post,typ_emploi,Type d'emploi,string,post__typ_emploi
+BTS_2021,post,typ_rupture_contrat,Raison de la rupture du contrat,string,post__typ_rupture_contrat
+BTS_2021,post,unitmesureref,Unité déclarée du temps de travail (déclaration en clair),string,
+BTS_2021,post,uur,Unité urbaine de résidence du salarié (zonage définition 2010),string,post__uur
+BTS_2021,post,uut,Unité urbaine du lieu de travail (zonage définition 2010),string,post__uut
+BTS_2021,post,zempr,Zone d'emploi de résidence du salarié  (zonage définition 2010),string,post__zempr
+BTS_2021,post,zempt,Zone d'emploi du lieu de travail  (zonage définition 2010),string,post__zempt
+BTS_2021,post,a6_1,APET ou APEN agrégée en 6 postes de l'année N-1,string,post__a6_1
+BTS_2021,post,a17_1,APET ou APEN agrégée en 17 postes de l'année N-1,string,post__a17_1
+BTS_2021,post,a38_1,APET ou APEN agrégée en 38 postes de l'année N-1,string,post__a38_1
+BTS_2021,post,a88_1,APET ou APEN agrégée en 88 postes de l'année N-1,string,post__a88_1
+BTS_2021,post,activite_partielle_1,Montant brut d'activité partielle en N-1,string,
+BTS_2021,post,annee_naiss_1,Année de naissance du salarié en N-1,string,
+BTS_2021,post,apen_1,"Activité principale exercée de l'entreprise de l'année N-1, codée en Nomenclature d'activités française (NAF) révision 2",string,post__apen_1
+BTS_2021,post,apet_1,"Activité principale exercée de l'établissement de l'année N-1, codée en Nomenclature d'activités française (NAF) révision 2",string,post__apet_1
+BTS_2021,post,apet_utilisateur_1,"Activité principale exercée de l'établissement où l'intérimaire réalise sa mission de l'année N-1, codée en Nomenclature d'activités française (NAF) révision 2",string,post__apet_utilisateur_1
+BTS_2021,post,bascsg_1,Sommes soumises à la Contribution sociale généralisée (CSG) et à la Contribution pour le remboursement de la dette sociale (CRDS) de l'année N-1,string,
+BTS_2021,post,brut_f_1,Montant brut des rémunérations de l'année N-1,string,
+BTS_2021,post,brut_s_1,La base brute de sécurité sociale (ou rémunération brute déplafonnée) correspond aux sommes soumises à des cotisations sociales de l'année N-1,string,
+BTS_2021,post,catjur_1,Catégorie juridique du lieu de travail de l'année N-1,string,post__catjur_1
+BTS_2021,post,catjur_empl_1,Catégorie juridique de l'employeur de l'année N-1,string,post__catjur_empl_1
+BTS_2021,post,champ_1,Champ des données (regroupement de modalités de la variable ORIGINE) de l'année N-1,string,post__champ_1
+BTS_2021,post,codecom_siege_1,Commune d'implantation de l'établissement (siège social) de l'année N-1,string,post__codecom_siege_1
+BTS_2021,post,com_empl_1,Commune de l'employeur de l'année N-1,string,post__com_empl_1
+BTS_2021,post,comr_1,Commune de résidence du salarié de l'année N-1,string,post__comr_1
+BTS_2021,post,comt_1,Commune du lieu de travail de l'année N-1,string,post__comt_1
+BTS_2021,post,contrat_travail_1,Type de contrat de travail de l'année N-1,string,post__contrat_travail_1
+BTS_2021,post,conv_coll_1,Convention collective de branche de l'année N-1 selon la nomenclature IDCC (Identifiant De la Convention Commune) gérée par le Ministère du Travail,string,post__conv_coll_1
+BTS_2021,post,conv_meta_1,Type de couverture par une convention collective de l'année N-1,string,post__conv_meta_1
+BTS_2021,post,cpfd_1,Condition d'emploi de l'année N-1,string,post__cpfd_1
+BTS_2021,post,cris_1,Convention collective de l'année N-1 regroupée pour l'information statistique,string,post__cris_1
+BTS_2021,post,datdeb_1,Date de début de rémunération de la première période du poste de l'année N-1,string,
+BTS_2021,post,datdeb2_1,Date de début de rémunération de la deuxième période du poste de l'année N-1,string,
+BTS_2021,post,datfin_1,Date de fin de rémunération de la dernière période du poste de l'année N-1,string,
+BTS_2021,post,datfin1_1,Date de fin de rémunération de la première période du poste de l'année N-1,string,
+BTS_2021,post,date_debut_contrat_1,Date de début du contrat de travail de l'année N-1,string,
+BTS_2021,post,decal_paie_decl_1,Décalage de paie déclaré pour le poste l'année N-1,string,post__decal_paie_decl_1
+BTS_2021,post,dep_naiss_1,Département de naissance du salarié en N-1,string,post__dep_naiss_1
+BTS_2021,post,depr_1,Département de résidence du salarié de l'année N-1,string,post__depr_1
+BTS_2021,post,dept_1,Département du lieu de travail de l'année N-1,string,post__dept_1
+BTS_2021,post,dispol_1,Dispositif de politique publique associé au contrat de l'année N-1,string,post__dispol_1
+BTS_2021,post,domempl_1,Domaine d'emploi du lieu de travail (établissement d'affectation) de l'année N-1,string,post__domempl_1
+BTS_2021,post,domempl_empl_1,Domaine d'emploi de l'employeur de l'année N-1,string,post__domempl_empl_1
+BTS_2021,post,duree_1,Durée de paie en jours de l'année N-1,string,
+BTS_2021,post,eff_0101_1,"Effectif au 01/01 de l'entreprise de l'année N-1 (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eff_0101_et_1,"Effectif au 01/01 de l'établissement de l'année N-1 (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eff_3112_1,"Effectif au 31/12 de l'entreprise de l'année N-1 (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eff_3112_et_1,"Effectif au 31/12 de l'établissement de l'année N-1 (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eff_moy_et_1,"Effectif moyen de l'établissement de  l'année N_1 (postes non annexes, hors intérimaires)",string,
+BTS_2021,post,eqtp_1,Équivalent temps plein de l'année N-1,string,
+BTS_2021,post,filt_1,Type de poste de l'année N-1,string,post__filt_1
+BTS_2021,post,frontalier_1,Code frontalier de l'année N-1,string,post__frontalier_1
+BTS_2021,post,ind_3112_1,Indicateur de présence au 31/12 de l'année N-1,string,post__ind_3112_1
+BTS_2021,post,ind_nir_1,Mode de redressement du Numéro d'inscription au répertoire (NIR) de l'année N-1,string,post__ind_nir_1
+BTS_2021,post,ir_comr_1,Indicateur de redressement de la variable COMR_1,string,post__ir_comr_1
+BTS_2021,post,ir_dates_1,Indicateur de redressement de la variable DATES_1,string,post__ir_dates_1
+BTS_2021,post,ir_fronta_1,Indicateur de redressement de la variable FRONTA_1,string,post__ir_fronta_1
+BTS_2021,post,ir_nbheur_1,Indicateur de redressement de la variable NBHEUR_1,float64,post__ir_nbheur_1
+BTS_2021,post,ir_pcs_1,Indicateur de redressement de la variable PCS_1,string,post__ir_pcs_1
+BTS_2021,post,ir_sexe_1,Indicateur de redressement de la variable SEXE_1,string,post__ir_sexe_1
+BTS_2021,post,marchet_1,Caractère marchand de l'établissement de  l'année N-1,string,post__marchet_1
+BTS_2021,post,motifcdd_1,Motif d'embauche d'un CDD de l'année N-1,string,post__motifcdd_1
+BTS_2021,post,nat_contrat_1,Nature du contrat de l'année N-1,string,post__nat_contrat_1
+BTS_2021,post,nb_per_1,Nombre de périodes annexes et non annexes de l'année N-1,float64,
+BTS_2021,post,nb_postes_du_nir_1,"Nombre de postes du salarié de l'année N-1 (nombre d'établissement, lieux de travail différents)",float64,
+BTS_2021,post,nbh_activite_partielle_1,Nombre d'heures d'activité partielle en N-1,float64,
+BTS_2021,post,nbheur_1,Nombre d'heures salariées du poste dans l'année de l'année N-1,float64,
+BTS_2021,post,net_1,Net fiscal déclaré du salarié de l'année N-1,string,
+BTS_2021,post,nic_empl_1,Numéro d'inscription au répertoire (NIC) de l'employeur dans l'année N-1,string,
+BTS_2021,post,origine_1,Origine et format de la déclaration administrative de l'année N-1,string,post__origine_1
+BTS_2021,post,pcs_1,Profession et catégorie socio-professionnelle de l'année N-1 codée selon la nomenclature PCS-ESE,string,post__pcs_1
+BTS_2021,post,pepa_1,Prime exceptionnelle de pouvoir d'achat N-1,string,
+BTS_2021,post,pps_1,Indicateur de poste principal du salarié de l'année N-1,string,post__pps_1
+BTS_2021,post,reg_siege_1,Région d'implantation du siège de l'entreprise de l'année N-1,string,post__reg_siege_1
+BTS_2021,post,regr_1,Région de résidence du salarié dans l'année N-1,string,post__regr_1
+BTS_2021,post,regt_1,Région d'implantation du lieu de travail de l'année N-1,string,post__regt_1
+BTS_2021,post,s_brut_1,Salaire brut du salarié de l'année N-1,string,
+BTS_2021,post,s_net_1,Salaire net du salarié de l'année N-1,string,
+BTS_2021,post,sexe_1,Sexe du salarié N-1,string,post__sexe_1
+BTS_2021,post,siren_empl_1,SIREN de l'employeur de l'année N-1,string,
+BTS_2021,post,siret_utilisateur_1,SIRET de l'établissement où l'intérimaire réalise sa mission de l'année N-1 (pour l'intérim),string,
+BTS_2021,post,sonde_1,Présence du salarié dans l'échantillon au 12ème de l'année N-1,string,post__sonde_1
+BTS_2021,post,source_1,Source de données de l'année N-1 (l'application dans laquelle ont été traitées les données),string,post__source_1
+BTS_2021,post,treffect_1,Tranche d'effectif de l'établissement au 31/12 de l'année N-1 (postes non annexes) ,string,post__treffect_1
+BTS_2021,post,treffen_1,Tranche d'effectif de l'entreprise au 31/12 de l'année N-1 (postes non annexes) ,string,post__treffen_1
+BTS_2021,post,typ_emploi_1,Type d'emploi de l'année N-1,string,post__typ_emploi_1
+BTS_2021,post,typ_rupture_contrat_1,Raison de la rupture du contrat de l'année N-1,string,post__typ_rupture_contrat_1
+BTS_2021,post,unitmesureref_1,Unité déclarée du temps de travail de l'année N-1 (déclaration en clair),string,
+BTS_2021,post,uur_1,Unité urbaine de résidence de l'année N-1 du salarié (zonage définition 2010),string,post__uur_1
+BTS_2021,post,uut_1,Unité urbaine du lieu de travail de l'année N-1 (zonage définition 2010),string,post__uut_1
+BTS_2021,post,zempr_1,Zone d'emploi de résidence du salarié de l'année N-1  (zonage définition 2010),string,post__zempr_1
+BTS_2021,post,zempt_1,Zone d'emploi du lieu de travail de l'année N-1  (zonage définition 2010),string,post__zempt_1
 PKPrairie_2011,fumorg_pkgc2011_prairies,Identifiant_FUMORG,Numéro unique pour la table FUMORG,string,
 PKPrairie_2011,fumorg_pkgc2011_prairies,Identifiantdossier,Numéro d'identifiant,string,
 PKPrairie_2011,fumorg_pkgc2011_prairies,CODEFUMO,"Fumure organique : numéro d'ordre de l'apport, classé dans l'ordre chronologique",string,
