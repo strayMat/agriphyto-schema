@@ -45,11 +45,24 @@ uv run python bin/cli.py aggregate --dico <DICO_NAME> # eg. RA2020
 ```
 ## Deployment of the application on Onyxia (SSPCloud)
 
-The application is deployed on Onyxia (SSPCloud) using kubernetes and helm, following [the online instructions](https://github.com/InseeFrLab/sspcloud-tutorials/blob/main/deployment/shiny-app.md) (adapted from shiny).
+The application is deployed on the [SSPCloud](https://datalab.sspcloud.fr/) using kubernetes and helm, following [the onyxia online instructions](https://github.com/InseeFrLab/sspcloud-tutorials/blob/main/deployment/shiny-app.md) (adapted from shiny).
 
 The [deployment code for the helm chart](https://github.com/straymat/agriphyto-schema-deployment) inherits from the (poorly named) [shiny helm chart](https://github.com/InseeFrLab/helm-charts/tree/master/charts/shiny) built by Insee. No modification to this dependency is needed since it should work for multiple web applications frameworks. The chart is pulling the docker image from the public docker hub repository [straymat/agriphyto-dico-app](https://hub.docker.com/r/straymat/agriphyto-dico-app).
 
 The application should be accessible at : https://agriphyto-dictionnaire-donnees.lab.sspcloud.fr/
+
+### Maintenance of the application after deployment
+
+Here are the main steps to maintain the deployment of the application. Precise instructions can be found on [the onyxia online instructions](https://github.com/InseeFrLab/sspcloud-tutorials/blob/main/deployment/shiny-app.md) listed above.
+
+To update the application, you need to:
+1. Update the application code and push it to the main branch of the [agriphyto-schema](https://github.com/straymat/agriphyto-schema) repository. The github CI should automatically build and push a new docker image to the docker hub repository [straymat/agriphyto-dico-app](https://hub.docker.com/r/straymat/agriphyto-dico-app).
+2. Create a new vscode service on the [SSPCloud](https://datalab.sspcloud.fr/) with kubernetes admin rights (Role tab in the service configuration).
+3. Redeploy the helm chart:
+```shell script
+kubectl get pods # get the release name of the chart
+kubectl rollout restart deployment <RELEASE_NAME> # restart the deployment
+```
 
 ## Development
 
