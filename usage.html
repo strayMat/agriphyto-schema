@@ -192,6 +192,34 @@
   <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
 </button></div>
       
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/strayMat/agriphyto-schema" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://agriphyto-dictionnaire-donnees.lab.sspcloud.fr/" title="Agriphyto application" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-carrot fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Agriphyto application</span></a>
+        </li>
+</ul></div>
+      
     </div>
     
   </div>
@@ -289,6 +317,34 @@
   <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
   <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
 </button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/strayMat/agriphyto-schema" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://agriphyto-dictionnaire-donnees.lab.sspcloud.fr/" title="Agriphyto application" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-carrot fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Agriphyto application</span></a>
+        </li>
+</ul></div>
         
       </div>
     
@@ -401,9 +457,23 @@ v</p>
 </section>
 <section id="deployment-of-the-application-on-onyxia-sspcloud">
 <h2>Deployment of the application on Onyxia (SSPCloud)<a class="headerlink" href="#deployment-of-the-application-on-onyxia-sspcloud" title="Link to this heading">#</a></h2>
-<p>The application is deployed on Onyxia (SSPCloud) using kubernetes and helm, following <a class="reference external" href="https://github.com/InseeFrLab/sspcloud-tutorials/blob/main/deployment/shiny-app.md">the online instructions</a> (adapted from shiny).</p>
+<p>The application is deployed on the <a class="reference external" href="https://datalab.sspcloud.fr/">SSPCloud</a> using kubernetes and helm, following <a class="reference external" href="https://github.com/InseeFrLab/sspcloud-tutorials/blob/main/deployment/shiny-app.md">the onyxia online instructions</a> (adapted from shiny).</p>
 <p>The <a class="reference external" href="https://github.com/straymat/agriphyto-schema-deployment">deployment code for the helm chart</a> inherits from the (poorly named) <a class="reference external" href="https://github.com/InseeFrLab/helm-charts/tree/master/charts/shiny">shiny helm chart</a> built by Insee. No modification to this dependency is needed since it should work for multiple web applications frameworks. The chart is pulling the docker image from the public docker hub repository <a class="reference external" href="https://hub.docker.com/r/straymat/agriphyto-dico-app">straymat/agriphyto-dico-app</a>.</p>
 <p>The application should be accessible at : https://agriphyto-dictionnaire-donnees.lab.sspcloud.fr/</p>
+<section id="maintenance-of-the-application-after-deployment">
+<h3>Maintenance of the application after deployment<a class="headerlink" href="#maintenance-of-the-application-after-deployment" title="Link to this heading">#</a></h3>
+<p>Here are the main steps to maintain the deployment of the application. Precise instructions can be found on <a class="reference external" href="https://github.com/InseeFrLab/sspcloud-tutorials/blob/main/deployment/shiny-app.md">the onyxia online instructions</a> listed above.</p>
+<p>To update the application, you need to:</p>
+<ol class="arabic simple">
+<li><p>Update the application code and push it to the main branch of the <a class="reference external" href="https://github.com/straymat/agriphyto-schema">agriphyto-schema</a> repository. The github CI should automatically build and push a new docker image to the docker hub repository <a class="reference external" href="https://hub.docker.com/r/straymat/agriphyto-dico-app">straymat/agriphyto-dico-app</a>.</p></li>
+<li><p>Create a new vscode service on the <a class="reference external" href="https://datalab.sspcloud.fr/">SSPCloud</a> with kubernetes admin rights (Role tab in the service configuration).</p></li>
+<li><p>Redeploy the helm chart:</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span><span class="c1"># get the release name of the chart</span>
+kubectl<span class="w"> </span>rollout<span class="w"> </span>restart<span class="w"> </span>deployment<span class="w"> </span>&lt;RELEASE_NAME&gt;<span class="w"> </span><span class="c1"># restart the deployment</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="development">
 <h2>Development<a class="headerlink" href="#development" title="Link to this heading">#</a></h2>
@@ -525,7 +595,10 @@ The home page is the <code class="docutils literal notranslate"><span class="pre
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-of-the-application-on-onyxia-sspcloud">Deployment of the application on Onyxia (SSPCloud)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment-of-the-application-on-onyxia-sspcloud">Deployment of the application on Onyxia (SSPCloud)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance-of-the-application-after-deployment">Maintenance of the application after deployment</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development">Development</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#package-and-dependencies-installation">Package and Dependencies Installation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a></li>
