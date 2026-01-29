@@ -1,55 +1,38 @@
-#! /usr/bin/env python
-import logging
+#!/usr/bin/env python3
+"""
+Entrée de commande principale du projet agriphyto.
 
-import click
+Ce script se trouve dans le répertoire ``bin`` afin de pouvoir être
+exécuté directement depuis la ligne de commande (ex. ``bin/cli.py``).
 
-from agriphyto_schema.constants import (
-    AVAILABLE_DICOS,
-    LOG_LEVEL,
-)
-from agriphyto_schema.data.parse_dicos import parse_dico
+Il invoque la fonction ``main`` du module ``agriphyto_schema.parse_cli``,
+qui se charge de parser les dictionnaires de données définis dans
+``agriphyto_schema.constants.AVAILABLE_DICOS`` et d’enregistrer les
+résultats au format JSON.
 
-logging.basicConfig(
-    level=logging.getLevelNamesMapping()[LOG_LEVEL],
-    format="%(asctime)s %(name)-12s %(levelname)-8s %(message)s",
-)
+Utilisation
+-----------
 
+    python bin/cli.py -d BTS_2021_Etablissements
 
-@click.group()
-@click.version_option(package_name="agriphyto_schema")
-def cli():
-    pass
+ou, si le répertoire ``bin`` est dans le PATH :
 
+    ./bin/cli.py -d BTS_2021_Etablissements
+"""
 
-@cli.command()
-@click.option(
-    "--dico_name",
-    "-d",
-    required=True,
-    type=click.Choice([*AVAILABLE_DICOS.keys(), "all"]),
-    help="Parse an Excel data dictionary to create a pandera schema for data validation.",
-)
-def parse(dico_name: str) -> None:
-    """
-    Parse an Excel or a csv data dictionary to create a pandera schema for data validation. The configurations for each dictionary are in `agriphyto_schema/constants.py`.
-    """
+import sys
+from pathlib import Path
 
-    if dico_name == "all":
-        for dico in AVAILABLE_DICOS:
-            parse_dico(dico)
-    else:
-        parse_dico(dico_name)
+# Ajoute le répertoire racine du projet au PYTHONPATH afin que les imports
+# relatifs fonctionnent même lorsque le script est exécuté depuis ``bin``.
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
-
-@cli.command()
-def create_dico() -> None:
-    """
-    Create the aggregated data dictionary CSV from all pandera schemas.
-    """
-    from agriphyto_schema.data.create_agriphyto_dico import aggregate_schemas
-
-    aggregate_schemas()
-
+def _run():
+    """Lance le parser via le module ``agriphyto_schema.parse_cli``."""
+    from agriphyto_schema.parse_cli import main as parse_main
+    parse_main()
 
 if __name__ == "__main__":
-    cli()
+    _run()
