@@ -1,0 +1,362 @@
+﻿"Base Tous Salariés fichier Etablissements - 2021"
+
+
+
+
+
+etab
+"Fichier national « Établissements » enrichi, contenant des données 2021 par établissement, des données de niveau entreprise redescendues au niveau établissement et des données de niveau poste agrégées au niveau établissement"
+
+"Nom de la variable";Libellé;Modalités
+a6;"Activité principale de l'établissement selon la nomenclature agrégée A6";"A6 - <a href correspondant à 'https://www.insee.fr/fr/information/2028155' target correspondant à ""_blank""> cliquer ici</a>"
+a17;"Activité principale de l'établissement selon la nomenclature agrégée A17";"A17 - <a href correspondant à 'https://www.insee.fr/fr/information/2028155' target correspondant à ""_blank""> cliquer ici</a>"
+a38;"Activité principale de l'établissement selon la nomenclature agrégée A38";"A38 - <a href correspondant à 'https://www.insee.fr/fr/information/2028155' target correspondant à ""_blank""> cliquer ici</a>"
+a88;"Activité principale de l'établissement selon la nomenclature agrégée A88";"A88 - <a href correspondant à 'https://www.insee.fr/fr/information/2028155' target correspondant à ""_blank""> cliquer ici</a>"
+apen;"Activité principale de l'entreprise selon la NAF rév. 2";"NAF rév.2 - <a href correspondant à 'https://www.insee.fr/fr/information/2120875' target correspondant à ""_blank""> cliquer ici</a>"
+apet;"Activité principale de l'établissement selon la NAF rév. 2";"NAF rév.2 - <a href correspondant à 'https://www.insee.fr/fr/information/2120875' target correspondant à ""_blank""> cliquer ici</a>"
+catjur;"Catégorie juridique du lieu de travail";"Niveau III - <a href correspondant à 'https://www.insee.fr/fr/information/2028129' target correspondant à ""_blank ""> cliquer ici</a>"
+codecom_siege;"Code géographique de la commune d'implantation de l'établissement siège de l'entreprise";"Code commune - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+comt;"Commune du lieu de travail";"Code commune - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_1;"1ère convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_10;"10ème convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_2;"2ème convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_3;"3ème convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_4;"4ème convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_5;"5ème convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_6;"6ème convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_7;"7ème convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_8;"8ème convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_9;"9ème convention collective par ordre d’effectif";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+dat_cess;"Date de cessation économique";
+dept;"Département du lieu de travail";"Code département - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+domempl;"Domaine d'emploi du lieu de travail";"1 - Fonction Publique d'Etat";"2 - Fonction Publique Territoriale";"3 - Fonction Publique Hospitalière";"4 - Autres organismes publics administratifs";"5 - Personnes morales de droit public soumises au droit commercial";"6 - Entreprises individuelles";"7 - Particuliers Employeurs (PE)";"8 - Organismes privés spécialisés et groupements de droit privé";"9 - Autres sociétés privées";"Vide - Entreprises sans catégorie juridique renseignée"
+eff_0101_et;"Effectif au 01/01 de l'établissement (postes non annexes)";
+eff_3112_et;"Effectif au 31/12 de l’établissement (postes non annexes)";
+eff_eqtp_et;"Effectif en équivalent temps plein de l'établissement (postes non annexes, hors intérimaires)";
+eff_moy_et;"Effectif moyen de de l’établissement (postes non annexes)";
+etat_deb_date_et;"Date du caractère actif de l'établissement";
+etat_et;"Caractère actif de l'établissement";"0 - Unité sans activité";"1 - Unité active";"2 - Unité présumée inactive";"3 - Unité inactive ou mise en sommeil";"4 - Unité cessée";"6 - Poursuite de l'activité suite au décès de l'exploitant (pour une personne physique), ou suite à la dissolution (pour une personne morale)"
+expl_et;"Caractère exploitant de l'établissement";"O - Exploitant";"N - Non exploitant participant au système productif";"X - Non exploitant ne participant pas au système productif"
+marchet;"Caractère marchand de l'établissement";"MA - Marchand";"PR - Non marchand à caractère privé";"PU - Non marchand à caractère public";"HC - Hors champ";"N - Non renseigné"
+nat_etab;"Nature de l'établissement";"CCP - Caisse de congés payés";"COM - Comité d'œuvres sociales";"STD - Standard (cas le plus fréquent)"
+nb_postes;"Nombre de postes annexes et non annexes";
+nb_postes_na;"Nombre de postes non annexes";
+nb_typ_emploi_a;"Nombre d’apprentis (postes annexes et non annexes)";
+nb_typ_emploi_e;"Nombre d’emplois aidés (postes annexes et non annexes)";
+nb_typ_emploi_o;"Nombre d’emplois ordinaires (postes annexes et non annexes)";
+nb_typ_emploi_s;"Nombre de stagiaires (postes annexes et non annexes)";
+nbp_conv_coll_1;"Nombre de postes annexes et non annexes de la 1ère convention collective";
+nbp_conv_coll_10;"Nombre de postes annexes et non annexes de la 10ème convention collective";
+nbp_conv_coll_2;"Nombre de postes annexes et non annexes de la 2ème convention collective";
+nbp_conv_coll_3;"Nombre de postes annexes et non annexes de la 3ème convention collective";
+nbp_conv_coll_4;"Nombre de postes annexes et non annexes de la 4ème convention collective";
+nbp_conv_coll_5;"Nombre de postes annexes et non annexes de la 5ème convention collective";
+nbp_conv_coll_6;"Nombre de postes annexes et non annexes de la 6ème convention collective";
+nbp_conv_coll_7;"Nombre de postes annexes et non annexes de la 7ème convention collective";
+nbp_conv_coll_8;"Nombre de postes annexes et non annexes de la 8ème convention collective";
+nbp_conv_coll_9;"Nombre de postes annexes et non annexes de la 9ème convention collective";
+nbp_sexecs_11;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1";
+nbp_sexecs_12;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2";
+nbp_sexecs_13;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3";
+nbp_sexecs_14;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4";
+nbp_sexecs_15;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5";
+nbp_sexecs_16;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6";
+nbp_sexecs_21;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1";
+nbp_sexecs_22;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2";
+nbp_sexecs_23;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3";
+nbp_sexecs_24;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4";
+nbp_sexecs_25;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5";
+nbp_sexecs_26;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6";
+nbpna_sexecs_11;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1";
+nbpna_sexecs_12;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2";
+nbpna_sexecs_13;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3";
+nbpna_sexecs_14;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4";
+nbpna_sexecs_15;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5";
+nbpna_sexecs_16;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6";
+nbpna_sexecs_21;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1";
+nbpna_sexecs_22;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2";
+nbpna_sexecs_23;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3";
+nbpna_sexecs_24;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4";
+nbpna_sexecs_25;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5";
+nbpna_sexecs_26;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6";
+nbpna_trim1;"Nombre de postes non annexes en fin de 1er trimestre";
+nbpna_trim2;"Nombre de postes non annexes en fin de 2eme trimestre";
+nbpna_trim3;"Nombre de postes non annexes en fin de 3ème trimestre";
+nbpna3112_aid;"Nombre de postes non annexes au 31/12 avec un contrat aidé";
+nbpna3112_app;"Nombre de postes non annexes au 31/12 avec un contrat apprenti";
+nbpna3112_aut;"Nombre de postes non annexes au 31/12 avec un contrat autre";
+nbpna3112_cdd;"Nombre de postes non annexes au 31/12 avec un contrat CDD";
+nbpna3112_cdi;"Nombre de postes non annexes au 31/12 avec un contrat CDI";
+nbpna3112_cs10;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 10 (Agriculteurs salariés)";
+nbpna3112_cs21;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 21 (Artisans salariés)";
+nbpna3112_cs22;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 22 (Commerçants et assimilés, salariés de leur entreprise)";
+nbpna3112_cs23;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 23 (Chefs d'entreprises de 10 salariés ou plus)";
+nbpna3112_cs31;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 31 (Professions libérales exercées sous statut salarié)";
+nbpna3112_cs33;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 33 (Cadres de la fonction publique)";
+nbpna3112_cs34;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 34 (Professeurs, professions scientifiques)";
+nbpna3112_cs35;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 35 (Professions de l'information, des arts et des spectacles)";
+nbpna3112_cs37;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 37 (Cadres administratifs et commerciaux d'entreprises)";
+nbpna3112_cs38;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 38 (Ingénieurs et cadres techniques d'entreprises)";
+nbpna3112_cs42;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 42 (Professeurs des écoles, instituteurs et professions assimilées)";
+nbpna3112_cs43;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 43 (Professions intermédiaires de la santé et du travail social)";
+nbpna3112_cs44;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 44 (Clergé, religieux)";
+nbpna3112_cs45;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 45 (Professions intermédiaires administratives de la fonction publique)";
+nbpna3112_cs46;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 46 (Professions intermédiaires administratives et commerciales des entreprises)";
+nbpna3112_cs47;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 47 (Techniciens (sauf techniciens tertiaires))";
+nbpna3112_cs48;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 48 (Contremaîtres, agents de maîtrise (maîtrise administrative exclue))";
+nbpna3112_cs52;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 52 (Employés civils et agents de service de la fonction publique)";
+nbpna3112_cs53;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 53 (Agents de surveillance)";
+nbpna3112_cs54;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 54 (Employés administratifs d'entreprise)";
+nbpna3112_cs55;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 55 (Employés de commerce)";
+nbpna3112_cs56;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 56 (Personnels des services directs aux particuliers)";
+nbpna3112_cs62;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 62 (Ouvriers qualifiés de type industriel)";
+nbpna3112_cs63;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 63 (Ouvriers qualifiés de type artisanal)";
+nbpna3112_cs64;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 64 (Chauffeurs)";
+nbpna3112_cs65;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 65 (Ouvriers qualifiés de la manutention, du magasinage et du transport)";
+nbpna3112_cs67;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 67 (Ouvriers non qualifiés de type industriel)";
+nbpna3112_cs68;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 68 (Ouvriers non qualifiés de type artisanal)";
+nbpna3112_cs69;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 69 (Ouvriers agricoles et assimilés)Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 69 (Ouvriers agricoles et assimilés)";
+nbpna3112_sexecs_11;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1";
+nbpna3112_sexecs_12;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2";
+nbpna3112_sexecs_13;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3";
+nbpna3112_sexecs_14;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4";
+nbpna3112_sexecs_15;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5";
+nbpna3112_sexecs_16;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6";
+nbpna3112_sexecs_21;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1";
+nbpna3112_sexecs_22;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2";
+nbpna3112_sexecs_23;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3";
+nbpna3112_sexecs_24;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4";
+nbpna3112_sexecs_25;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5";
+nbpna3112_sexecs_26;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6";
+nbpna3112_stg;"Nombre de postes non annexes au 31/12 avec un contrat stagiaire";
+nbpna3112_ttp;"Nombre de postes non annexes au 31/12 avec un contrat intérim (travail temporaire)";
+nic;"Numéro Interne de Classement de l’établissement : lieu de travail (donnée issue du répertoire Sirene)";
+reg_siege;"Région de l'établissement siège";"Code région - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+regt;"Région du lieu de travail";"Code région - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+s_brut;"Salaire brut";
+s_brut_eqtp_d_10;"1er décile par établissement du salaire brut par équivalent temps plein";
+s_brut_eqtp_d_20;"2ème décile par établissement du salaire brut par équivalent temps plein";
+s_brut_eqtp_d_30;"3ème décile par établissement du salaire brut par équivalent temps plein";
+s_brut_eqtp_d_40;"4ème décile par établissement du salaire brut par équivalent temps plein";
+s_brut_eqtp_d_50;"5ème décile par établissement du salaire brut par équivalent temps plein";
+s_brut_eqtp_d_60;"6ème décile par établissement du salaire brut par équivalent temps plein";
+s_brut_eqtp_d_70;"7ème décile par établissement du salaire brut par équivalent temps plein";
+s_brut_eqtp_d_80;"8ème décile par établissement du salaire brut par équivalent temps plein";
+s_brut_eqtp_d_90;"9ème décile par établissement du salaire brut par équivalent temps plein";
+s_brut_sexecs_11;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1";
+s_brut_sexecs_12;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2";
+s_brut_sexecs_13;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3";
+s_brut_sexecs_14;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4";
+s_brut_sexecs_15;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5";
+s_brut_sexecs_16;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6";
+s_brut_sexecs_21;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1";
+s_brut_sexecs_22;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2";
+s_brut_sexecs_23;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3";
+s_brut_sexecs_24;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4";
+s_brut_sexecs_25;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5";
+s_brut_sexecs_26;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6";
+s_nbh;"Total des heures salariées (postes annexes et non annexes)";
+s_nbh_sexecs_11;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1";
+s_nbh_sexecs_12;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2";
+s_nbh_sexecs_13;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3";
+s_nbh_sexecs_14;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4";
+s_nbh_sexecs_15;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5";
+s_nbh_sexecs_16;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6";
+s_nbh_sexecs_21;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1";
+s_nbh_sexecs_22;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2";
+s_nbh_sexecs_23;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3";
+s_nbh_sexecs_24;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4";
+s_nbh_sexecs_25;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5";
+s_nbh_sexecs_26;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6";
+s_net;"Salaire net";
+s_net_eqtp_d_10;"1er décile par établissement du salaire net par équivalent temps plein";
+s_net_eqtp_d_20;"2éme décile par établissement du salaire net par équivalent temps plein";
+s_net_eqtp_d_30;"3ème décile par établissement du salaire net par équivalent temps plein";
+s_net_eqtp_d_40;"4ème décile par établissement du salaire net par équivalent temps plein";
+s_net_eqtp_d_50;"5ème décile par établissement du salaire net par équivalent temps plein";
+s_net_eqtp_d_60;"6ème décile par établissement du salaire net par équivalent temps plein";
+s_net_eqtp_d_70;"7ème décile par établissement du salaire net par équivalent temps plein";
+s_net_eqtp_d_80;"8ème décile par établissement du salaire net par équivalent temps plein";
+s_net_eqtp_d_90;"9ème décile par établissement du salaire net par équivalent temps plein";
+saison;"Caractère saisonnier de l'établissement";"P - Activité permanente";"S - Activité saisonnière";"NR - Non renseigné"
+siren;"SIREN du lieu de travail";
+siret;"SIRET du lieu de travail";
+treffect;"Tranche d’effectif au 31/12 (postes non annexes) de l’établissement";"00 - 0 poste";"01 - 1 à 4 postes";"02 - 5 à 9 postes";"03 - 10 à 19 postes";"04 - 20 à 49 postes";"05 - 50 à 99 postes";"06 - 100 à 249 postes";"07 - 250 à 499 postes";"08 - 500 à 999 postes";"09 - 1000 à 1999 postes";"10 - 2000 à 4999 postes";"11 - 5000 postes et plus"
+uut;"Unité urbaine du lieu de travail";"Base des unités urbaines 2020 - <a href correspondant à 'https://www.insee.fr/fr/information/4802589' target correspondant à ""_blank""> cliquer ici</a>"
+zempt;"Zone d'emploi du lieu de travail";"Base des zones d'emploi 2020 - <a href correspondant à 'https://www.insee.fr/fr/information/4652957' target correspondant à ""_blank""> cliquer ici</a>"
+a6_1;"Activité principale de l'établissement selon la nomenclature agrégée A6 N-1";"A6 - <a href correspondant à 'https://www.insee.fr/fr/information/2028155' target correspondant à ""_blank""> cliquer ici</a>"
+a17_1;"Activité principale de l'établissement selon la nomenclature agrégée A17 N-1";"A17 - <a href correspondant à 'https://www.insee.fr/fr/information/2028155' target correspondant à ""_blank""> cliquer ici</a>"
+a38_1;"Activité principale de l'établissement selon la nomenclature agrégée A38 N-1";"A38 - <a href correspondant à 'https://www.insee.fr/fr/information/2028155' target correspondant à ""_blank""> cliquer ici</a>"
+a88_1;"Activité principale de l'établissement selon la nomenclature agrégée A88 N-1";"A88 - <a href correspondant à 'https://www.insee.fr/fr/information/2028155' target correspondant à ""_blank""> cliquer ici</a>"
+apen_1;"Activité principale de l'entreprise selon la NAF révision 2 N-1";"NAF révision 2 - <a href correspondant à 'https://www.insee.fr/fr/information/2120875' target correspondant à ""_blank""> cliquer ici</a>"
+apet_1;"Activité principale de l'établissement selon la NAF révision 2 N-1";"NAF révision 2 - <a href correspondant à 'https://www.insee.fr/fr/information/2120875' target correspondant à ""_blank""> cliquer ici</a>"
+catjur_1;"Catégorie juridique du lieu de travail N-1";"Niveau III - <a href correspondant à 'https://www.insee.fr/fr/information/2028129' target correspondant à ""_blank ""> cliquer ici</a>"
+codecom_siege_1;"Code géographique de la commune d'implantation de l'établissement siège de l'entreprise N-1";"Code commune - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+comt_1;"Commune du lieu de travail N-1";"Code commune - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_1_1;"1ère convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_10_1;"10ème convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_2_1;"2ème convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_3_1;"3ème convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_4_1;"4ème convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_5_1;"5ème convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_6_1;"6ème convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_7_1;"7ème convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_8_1;"8ème convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+conv_coll_eta_9_1;"9ème convention collective par ordre d’effectif N-1";"Nomenclatures des conventions collectives - <a href correspondant à 'https://travail-emploi.gouv.fr/dialogue-social/negociation-collective/article/conventions-collectives-nomenclatures' target correspondant à ""_blank""> cliquer ici</a>"
+dat_cess_1;"Date de cessation économique N-1";
+dept_1;"Département du lieu de travail N-1";"Code département - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+domempl_1;"Domaine d’emploi du lieu de travail N-1";"1 - Fonction Publique d'Etat";"2 - Fonction Publique Territoriale";"3 - Fonction Publique Hospitalière";"4 - Autres organismes publics administratifs";"5 - Personnes morales de droit public soumises au droit commercial";"6 - Entreprises individuelles";"7 - Particuliers Employeurs (PE)";"8 - Organismes privés spécialisés et groupements de droit privé";"9 - Autres sociétés privées";"Vide - Entreprises sans catégorie juridique renseignée"
+eff_0101_et_1;"Effectif au 01/01 de l'établissement (postes non annexes) N-1";
+eff_3112_et_1;"Effectif au 31/12 de l'établissement (postes non annexes) N-1";
+eff_eqtp_et_1;"Effectif en équivalent temps plein de l'établissement (postes non annexes, hors intérimaires) N-1";
+eff_moy_et_1;"Effectif moyen de l’établissement (postes non annexes) N-1";
+etat_deb_date_et_1;"Date du caractère actif de l’établissement N-1";
+etat_et_1;"Caractère actif de l’établissement N-1";"0 - Unité sans activité";"1 - Unité active";"2 - Unité présumée inactive";"3 - Unité inactive ou mise en sommeil";"4 - Unité cessée";"6 - Poursuite de l'activité suite au décès de l'exploitant (pour une personne physique), ou suite à la dissolution (pour une personne morale)"
+expl_et_1;"Caractère exploitant de l’établissement N-1";"O - Exploitant";"N - Non exploitant participant au système productif";"X - Non exploitant ne participant pas au système productif"
+marchet_1;"Caractère marchand de l’établissement N-1";"MA - Marchand";"PR - Non marchand à caractère privé";"PU - Non marchand à caractère public";"HC - Hors champ";"N - Non renseigné"
+nat_etab_1;"Nature de l’établissement N-1";"CCP - Caisse de congés payés";"COM - Comité d'œuvres sociales";"STD - Standard (cas le plus fréquent)"
+nb_postes_1;"Nombre de postes annexes et non annexes N-1";
+nb_postes_na_1;"Nombre de postes non annexes N-1";
+nb_typ_emploi_a_1;"Nombre d’apprentis (postes annexes et non annexes) N-1";
+nb_typ_emploi_e_1;"Nombre d’emplois aides (postes annexes et non annexes) N-1";
+nb_typ_emploi_o_1;"Nombre d’emplois ordinaires (postes annexes et non annexes) N-1";
+nb_typ_emploi_s_1;"Nombre de stagiaires (postes annexes et non annexes) N-1";
+nbp_conv_coll_1_1;"Nombre de postes annexes et non annexes de la 1ère convention collective N-1";
+nbp_conv_coll_10_1;"Nombre de postes annexes et non annexes de la 10ème convention collective N-1";
+nbp_conv_coll_2_1;"Nombre de postes annexes et non annexes de la 2ème convention collective N-1";
+nbp_conv_coll_3_1;"Nombre de postes annexes et non annexes de la 3ème convention collective N-1";
+nbp_conv_coll_4_1;"Nombre de postes annexes et non annexes de la 4ème convention collective N-1";
+nbp_conv_coll_5_1;"Nombre de postes annexes et non annexes de la 5ème convention collective N-1";
+nbp_conv_coll_6_1;"Nombre de postes annexes et non annexes de la 6ème convention collective N-1";
+nbp_conv_coll_7_1;"Nombre de postes annexes et non annexes de la 7ème convention collective N-1";
+nbp_conv_coll_8_1;"Nombre de postes annexes et non annexes de la 8ème convention collective N-1";
+nbp_conv_coll_9_1;"Nombre de postes annexes et non annexes de la 9ème convention collective N-1";
+nbp_sexecs_11_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1 N-1";
+nbp_sexecs_12_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2 N-1";
+nbp_sexecs_13_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3 N-1";
+nbp_sexecs_14_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4 N-1";
+nbp_sexecs_15_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5 N-1";
+nbp_sexecs_16_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6 N-1";
+nbp_sexecs_21_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1 N-1";
+nbp_sexecs_22_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2 N-1";
+nbp_sexecs_23_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3 N-1";
+nbp_sexecs_24_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4 N-1";
+nbp_sexecs_25_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5 N-1";
+nbp_sexecs_26_1;"Nombre de postes annexes et non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6 N-1";
+nbpna_sexecs_11_1;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1 N-1";
+nbpna_sexecs_12_1;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2 N-1";
+nbpna_sexecs_13_1;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3 N-1";
+nbpna_sexecs_14_1;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4 N-1";
+nbpna_sexecs_15_1;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5 N-1";
+nbpna_sexecs_16_1;"Nombre de postes non annexes pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6 N-1";
+nbpna_sexecs_21_1;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1 N-1";
+nbpna_sexecs_22_1;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2 N-1";
+nbpna_sexecs_23_1;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3 N-1";
+nbpna_sexecs_24_1;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4 N-1";
+nbpna_sexecs_25_1;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5 N-1";
+nbpna_sexecs_26_1;"Nombre de postes non annexes pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6 N-1";
+nbpna_trim1_1;"Nombre de postes non annexes en fin de 1er trimestre N-1";
+nbpna_trim2_1;"Nombre de postes non annexes en fin de 2ème trimestre N-1";
+nbpna_trim3_1;"Nombre de postes non annexes en fin de 3ème trimestre N-1";
+nbpna3112_aid_1;"Nombre de postes non annexes au 31/12 avec un contrat aidé N-1";
+nbpna3112_app_1;"Nombre de postes non annexes au 31/12 avec un contrat apprenti N-1";
+nbpna3112_aut_1;"Nombre de postes non annexes au 31/12 avec un contrat autre N-1";
+nbpna3112_cdd_1;"Nombre de postes non annexes au 31/12 avec un contrat CDD N-1";
+nbpna3112_cdi_1;"Nombre de postes non annexes au 31/12 avec un contrat CDI N-1";
+nbpna3112_cs10_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 10 (Agriculteurs salariés) N-1";
+nbpna3112_cs21_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 21 (Artisans salariés) N-1";
+nbpna3112_cs22_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 22 (Commerçants et assimilés, salariés de leur entreprise) N-1";
+nbpna3112_cs23_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 23 (Chefs d'entreprises de 10 salariés ou plus) N-1";
+nbpna3112_cs31_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 31 (Professions libérales exercées sous statut salarié) N-1";
+nbpna3112_cs33_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 33 (Cadres de la fonction publique) N-1";
+nbpna3112_cs34_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 34 (Professeurs, professions scientifiques) N-1";
+nbpna3112_cs35_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 35 (Professions de l'information, des arts et des spectacles) N-1";
+nbpna3112_cs37_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 37 (Cadres administratifs et commerciaux d'entreprises) N-1";
+nbpna3112_cs38_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 38 (Ingénieurs et cadres techniques d'entreprises) N-1";
+nbpna3112_cs42_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 42 (Professeurs des écoles, instituteurs et professions assimilées) N-1";
+nbpna3112_cs43_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 43 (Professions intermédiaires de la santé et du travail social) N-1";
+nbpna3112_cs44_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 44 (Clergé, religieux) N-1";
+nbpna3112_cs45_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 45 (Professions intermédiaires administratives de la fonction publique) N-1";
+nbpna3112_cs46_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 46 (Professions intermédiaires administratives et commerciales des entreprises) N-1";
+nbpna3112_cs47_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 47 (Techniciens (sauf techniciens tertiaires)) N-1";
+nbpna3112_cs48_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 48 (Contremaîtres, agents de maîtrise (maîtrise administrative exclue)) N-1";
+nbpna3112_cs52_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 52 (Employés civils et agents de service de la fonction publique) N-1";
+nbpna3112_cs53_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 53 (Agents de surveillance) N-1";
+nbpna3112_cs54_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 54 (Employés administratifs d'entreprise) N-1";
+nbpna3112_cs55_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 55 (Employés de commerce) N-1";
+nbpna3112_cs56_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 56 (Personnels des services directs aux particuliers) N-1";
+nbpna3112_cs62_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 62 (Ouvriers qualifiés de type industriel) N-1";
+nbpna3112_cs63_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 63 (Ouvriers qualifiés de type artisanal) N-1";
+nbpna3112_cs64_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 64 (Chauffeurs) N-1";
+nbpna3112_cs65_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 65 (Ouvriers qualifiés de la manutention, du magasinage et du transport) N-1";
+nbpna3112_cs67_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 67 (Ouvriers non qualifiés de type industriel) N-1";
+nbpna3112_cs68_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 68 (Ouvriers non qualifiés de type artisanal) N-1";
+nbpna3112_cs69_1;"Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 69 (Ouvriers agricoles et assimilés)Nombre de postes non annexes au 31/12 pour la catégorie socioprofessionnelle 69 (Ouvriers agricoles et assimilés) N-1";
+nbpna3112_sexecs_11_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1 N-1";
+nbpna3112_sexecs_12_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2 N-1";
+nbpna3112_sexecs_13_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3 N-1";
+nbpna3112_sexecs_14_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4 N-1";
+nbpna3112_sexecs_15_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5 N-1";
+nbpna3112_sexecs_16_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6 N-1";
+nbpna3112_sexecs_21_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1 N-1";
+nbpna3112_sexecs_22_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2 N-1";
+nbpna3112_sexecs_23_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3 N-1";
+nbpna3112_sexecs_24_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4 N-1";
+nbpna3112_sexecs_25_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5 N-1";
+nbpna3112_sexecs_26_1;"Nombre de postes non annexes au 31/12 pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6 N-1";
+nbpna3112_stg_1;"Nombre de postes non annexes au 31/12 avec un contrat stagiaire N-1";
+nbpna3112_ttp_1;"Nombre de postes non annexes au 31/12 avec un contrat intérim (travail temporaire) N-1";
+reg_siege_1;"Région de l'établissement siège N-1";"Code région - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+regt_1;"Région du lieu de travail N-1";"Code région - <a href correspondant à 'https://www.insee.fr/fr/information/2560452' target correspondant à ""_blank""> cliquer ici</a>"
+s_brut_1;"Salaire brut N-1";
+s_brut_eqtp_d_10_1;"1er décile par établissement du salaire brut par équivalent temps plein N-1";
+s_brut_eqtp_d_20_1;"2ème décile par établissement du salaire brut par équivalent temps plein N-1";
+s_brut_eqtp_d_30_1;"3ème décile par établissement du salaire brut par équivalent temps plein N-1";
+s_brut_eqtp_d_40_1;"4ème décile par établissement du salaire brut par équivalent temps plein N-1";
+s_brut_eqtp_d_50_1;"5ème décile par établissement du salaire brut par équivalent temps plein N-1";
+s_brut_eqtp_d_60_1;"6ème décile par établissement du salaire brut par équivalent temps plein N-1";
+s_brut_eqtp_d_70_1;"7ème décile par établissement du salaire brut par équivalent temps plein N-1";
+s_brut_eqtp_d_80_1;"8ème décile par établissement du salaire brut par équivalent temps plein N-1";
+s_brut_eqtp_d_90_1;"9ème décile par établissement du salaire brut par équivalent temps plein N-1";
+s_brut_sexecs_11_1;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1 N-1";
+s_brut_sexecs_12_1;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2 N-1";
+s_brut_sexecs_13_1;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3 N-1";
+s_brut_sexecs_14_1;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4 N-1";
+s_brut_sexecs_15_1;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5 N-1";
+s_brut_sexecs_16_1;"Salaire brut total pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6 N-1";
+s_brut_sexecs_21_1;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1 N-1";
+s_brut_sexecs_22_1;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2 N-1";
+s_brut_sexecs_23_1;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3 N-1";
+s_brut_sexecs_24_1;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4 N-1";
+s_brut_sexecs_25_1;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5 N-1";
+s_brut_sexecs_26_1;"Salaire brut total pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6 N-1";
+s_nbh_1;"Total des heures salariées (postes annexes et non annexes) N-1";
+s_nbh_sexecs_11_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 1 N-1";
+s_nbh_sexecs_12_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 2 N-1";
+s_nbh_sexecs_13_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 3 N-1";
+s_nbh_sexecs_14_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 4 N-1";
+s_nbh_sexecs_15_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 5 N-1";
+s_nbh_sexecs_16_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 1 et catégorie socioprofessionnelle correspondant à 6 N-1";
+s_nbh_sexecs_21_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 1 N-1";
+s_nbh_sexecs_22_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 2 N-1";
+s_nbh_sexecs_23_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 3 N-1";
+s_nbh_sexecs_24_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 4 N-1";
+s_nbh_sexecs_25_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 5 N-1";
+s_nbh_sexecs_26_1;"Total des heures salariées (postes annexes et non annexes) pour sexe correspondant à 2 et catégorie socioprofessionnelle correspondant à 6 N-1";
+s_net_1;"Salaire net N-1";
+s_net_eqtp_d_10_1;"1er décile par établissement du salaire net par équivalent temps plein N-1";
+s_net_eqtp_d_20_1;"2ème décile par établissement du salaire net par équivalent temps plein N-1";
+s_net_eqtp_d_30_1;"3ème décile par établissement du salaire net par équivalent temps plein N-1";
+s_net_eqtp_d_40_1;"4ème décile par établissement du salaire net par équivalent temps plein N-1";
+s_net_eqtp_d_50_1;"5ème décile par établissement du salaire net par équivalent temps plein N-1";
+s_net_eqtp_d_60_1;"6ème décile par établissement du salaire net par équivalent temps plein N-1";
+s_net_eqtp_d_70_1;"7ème décile par établissement du salaire net par équivalent temps plein N-1";
+s_net_eqtp_d_80_1;"8ème décile par établissement du salaire net par équivalent temps plein N-1";
+s_net_eqtp_d_90_1;"9ème décile par établissement du salaire net par équivalent temps plein N-1";
+saison_1;"Caractère saisonnier de l’établissement N-1";"P - Activité permanente";"S - Activité saisonnière";"NR - Non renseigné"
+treffect_1;"Tranche d’effectif au 31/12 (postes non annexes) de l’établissement N-1";"00 - 0 poste";"01 - 1 à 4 postes";"02 - 5 à 9 postes";"03 - 10 à 19 postes";"04 - 20 à 49 postes";"05 - 50 à 99 postes";"06 - 100 à 249 postes";"07 - 250 à 499 postes";"08 - 500 à 999 postes";"09 - 1000 à 1999 postes";"10 - 2000 à 4999 postes";"11 - 5000 postes et plus"
+uut_1;"Unité urbaine du lieu de travail N-1";"Base des unités urbaines 2020 - <a href correspondant à 'https://www.insee.fr/fr/information/4802589' target correspondant à ""_blank""> cliquer ici</a>"
+zempt_1;"Zone d’emploi du lieu de travail N-1";"Base des zones d'emploi 2020 - <a href correspondant à 'https://www.insee.fr/fr/information/4652957' target correspondant à ""_blank""> cliquer ici</a>"
+
+
+

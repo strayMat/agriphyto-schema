@@ -105,6 +105,12 @@ AVAILABLE_DICOS = {
         "encoding": "utf-8-sig",
         "parser": "dico_from_casd_csv",
     },
+    "BTS_2021_Etablissements": {
+        "filename": "Base_Tous_Salariés_fichier_Etablissements_-_2021.csv",
+        "skiprows": 6,
+        "encoding": "utf-8-sig",
+        "parser": "dico_from_casd_csv",
+    },
     "Phytofruits_2018": {
         "filename": "Phytofruits18_dico_variables_casd.ods",
         "variable_sheet": "data",
